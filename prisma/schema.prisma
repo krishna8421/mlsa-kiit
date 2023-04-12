@@ -1,0 +1,36 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+generator docs {
+  provider = "node node_modules/prisma-docs-generator"
+}
+
+generator dbml {
+  provider = "prisma-dbml-generator"
+}
+
+datasource db {
+  provider = "postgres"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id   String @id @default(cuid())
+  name String @unique
+}
+
+// model EventRegistration {
+//   id                    String @id @default(auto()) @map("_id") @db.ObjectId
+//   eventId               String
+//   name                  String
+//   roll                  Int    @unique
+//   currentYear           Int
+//   Branch                String
+//   kiitEmail             String @unique
+//   personalEmail         String @unique
+//   phoneNumber           String @unique
+//   linkedin              String @unique
+//   Github                String @unique
+//   expectationsFromEvent String
+// }
