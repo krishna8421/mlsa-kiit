@@ -15,9 +15,72 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model User {
-  id   String @id @default(cuid())
-  name String @unique
+enum POSITION {
+    LEAD
+    VICE_LEAD
+    EXECUTIVE
+    MEMBER
+}
+
+enum ROLE {
+    WEB_DEVELOPER
+    APP_DEVELOPER
+    ML_DEVELOPER
+    UI_UX_DEVELOPER
+    CONTENT_WRITER
+    MARKETING
+    DESIGNER
+}
+
+model Member {
+    id             String @id @default(uuid())
+    name           String
+    personal_email String @unique
+    kiit_email     String @unique
+    password       String
+    imageUrl       String
+    githubUrl      String
+    linkedinUrl    String
+    portfolioUrl   String?
+
+    position POSITION @default(MEMBER)
+    role     ROLE?
+
+    // EventMember EventMember[]
+    Contact Contact_Us[]
+}
+
+// model Event {
+//     id          String        @id @default(uuid())
+//     EventMember EventMember[]
+// }
+
+model Gallery {
+    id      String @id @default(uuid())
+    caption String
+    url     String
+}
+
+// model EventMember {
+//     id       String @id @default(uuid())
+//     eventId  String
+//     memberId String
+//     event    Event  @relation(fields: [eventId], references: [id], onDelete: Cascade)
+//     member   Member @relation(fields: [memberId], references: [id], onDelete: Cascade)
+// }
+
+// For Contact Us Page
+model Contact_Us {
+    id                String   @id @default(uuid())
+    name              String
+    email             String
+    message           String
+    issue_resolved    Boolean? @default(false)
+    memberId          String
+    issue_resolved_by Member?  @relation(fields: [memberId], references: [id])
+
+    createdAt DateTime @default(now())
+    updatedAt DateTime @updatedAt
 }
 
 // model EventRegistration {
