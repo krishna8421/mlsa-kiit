@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <main className="min-h-screen flex justify-center items-center text-lg text-white bg-slate-950">
+    <main className="flex min-h-screen items-center justify-center bg-slate-950 text-lg text-white">
       Work in progress . . .
     </main>
   );

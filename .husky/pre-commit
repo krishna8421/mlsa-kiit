@@ -6,6 +6,8 @@ echo "Running pre-commit hook...🍺"
 npx lint-staged
 echo "ESLint & Prettier check completed successfully. ✅ "
 
+git add -A .
+
 yarn test || (
   echo "Test failed. ❌ "
   exit 1
