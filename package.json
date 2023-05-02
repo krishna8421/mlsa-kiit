@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "commit": "git-cz",
     "lint": "next lint",
     "lint:fix": "next lint --fix",
     "format": "prettier --write .",
@@ -44,14 +45,17 @@
   "devDependencies": {
     "@commitlint/cli": "^17.5.1",
     "@commitlint/config-conventional": "^17.4.4",
+    "@commitlint/cz-commitlint": "^17.5.0",
     "@types/lodash": "^4.14.192",
     "@types/node": "^18.15.11",
     "@types/react": "^18.0.34",
     "@types/react-dom": "^18.0.11",
     "autoprefixer": "^10.4.14",
+    "commitizen": "^4.3.0",
     "eslint": "^8.38.0",
     "eslint-config-next": "^13.3.0",
     "husky": "^8.0.3",
+    "inquirer": "8",
     "lint-staged": "^13.2.1",
     "postcss": "^8.4.21",
     "prettier": "^2.8.7",
@@ -70,5 +74,10 @@
   "lint-staged": {
     "**/*.{ts,js}": "eslint --cache --cache-location .next/cache/eslint/ --fix",
     "**/*.{ts,js,md,json}": "prettier --write"
+  },
+  "config": {
+    "commitizen": {
+      "path": "@commitlint/cz-commitlint"
+    }
   }
 }
