@@ -82,11 +82,15 @@ model ContactUs {
 // record of him/her in the Students table and all event records
 // that he/she is registered for in the Events table.
 // Caviat: Student will use it to get details of other students.
+// So for now we will only store the data of the students and not
+// use it for any other purpose.
 
 // model Students {
 //   id    String @id @default(uuid())
 //   email String @unique
 // }
+
+
 
 // model Event {
 //     id          String        @id @default(uuid())
