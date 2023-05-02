@@ -16,50 +16,82 @@ datasource db {
 }
 
 enum POSITION {
-    LEAD
-    VICE_LEAD
-    EXECUTIVE
-    MEMBER
+  LEAD //  Anvit Dubey
+  VICE_LEAD //  Saniya Bhargav
+  TECH_LEAD // Prashant Upadhyay, Atig Purohit, Akshita Sah
+  EXECUTIVE //  Swastika Bishnoi
+  CREATIVE_LEAD //  Mayank Jain
+  CONTENT_LEAD //  Aradhya Kumar
+  MARKETING_LEAD //  Ayush Raj
+  PR_CR_LEAD //  Rishab Barik // Public Relations and Corporate Relations
+  MEMBER //  All others
+  ALUMNI //  Past Members
 }
 
 enum ROLE {
-    WEB_DEVELOPER
-    APP_DEVELOPER
-    ML_DEVELOPER
-    UI_UX_DEVELOPER
-    CONTENT_WRITER
-    MARKETING
-    DESIGNER
+  // Tech Team
+  BACKEND
+  FRONTEND
+  AI_ML
+  APP
+  AR_VR
+  CLOUD
+  CYBER_SECURITY
+
+  // Creative Team
+  CONTENT
+  YOUTUBE
+  DESIGNER
+  VIDEO_EDITOR
+  UI_UX
+
+  // Marketing Team
+  PR_CR
 }
 
 model Member {
-    id             String @id @default(uuid())
-    name           String
-    personal_email String @unique
-    kiit_email     String @unique
-    password       String
-    imageUrl       String
-    githubUrl      String
-    linkedinUrl    String
-    portfolioUrl   String?
+  id            String  @id @default(uuid())
+  name          String
+  personalEmail String  @unique
+  kiitEmail     String  @unique
+  password      String
+  imageUrl      String
+  githubUrl     String
+  linkedinUrl   String
+  portfolioUrl  String?
 
-    position POSITION @default(MEMBER)
-    role     ROLE?
-
-    // EventMember EventMember[]
-    Contact Contact_Us[]
+  position      POSITION    @default(MEMBER)
+  role          ROLE
+  issueResolved ContactUs[]
 }
+
+model ContactUs {
+  id              String   @id @default(uuid())
+  name            String
+  email           String
+  message         String
+  issue_resolved  Boolean? @default(false)
+  memberId        String
+  issueResolvedBy Member?  @relation(fields: [memberId], references: [id])
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+// When a student registers for an event, we create a Student 
+// record of him/her in the Students table and all event records
+// that he/she is registered for in the Events table.
+// Caviat: Student will use it to get details of other students.
+
+// model Students {
+//   id    String @id @default(uuid())
+//   email String @unique
+// }
 
 // model Event {
 //     id          String        @id @default(uuid())
 //     EventMember EventMember[]
 // }
-
-model Gallery {
-    id      String @id @default(uuid())
-    caption String
-    url     String
-}
 
 // model EventMember {
 //     id       String @id @default(uuid())
@@ -68,20 +100,6 @@ model Gallery {
 //     event    Event  @relation(fields: [eventId], references: [id], onDelete: Cascade)
 //     member   Member @relation(fields: [memberId], references: [id], onDelete: Cascade)
 // }
-
-// For Contact Us Page
-model Contact_Us {
-    id                String   @id @default(uuid())
-    name              String
-    email             String
-    message           String
-    issue_resolved    Boolean? @default(false)
-    memberId          String
-    issue_resolved_by Member?  @relation(fields: [memberId], references: [id])
-
-    createdAt DateTime @default(now())
-    updatedAt DateTime @updatedAt
-}
 
 // model EventRegistration {
 //   id                    String @id @default(auto()) @map("_id") @db.ObjectId
