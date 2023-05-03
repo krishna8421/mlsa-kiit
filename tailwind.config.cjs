@@ -17,9 +17,14 @@ module.exports = {
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
+
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
+          300: "#1F3A60",
+          500: "#1C3255",
+          700: "#172B48",
+          900: "#152741",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
