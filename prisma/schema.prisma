@@ -85,12 +85,18 @@ model ContactUs {
 // So for now we will only store the data of the students and not
 // use it for any other purpose.
 
-// model Students {
-//   id    String @id @default(uuid())
-//   email String @unique
-// }
-
-
+model Students {
+  id            String @id @default(uuid())
+  name          String
+  rollNumber    Int    @unique
+  currentYear   Int
+  branch        String
+  kiitEmail     String @unique
+  personalEmail String
+  phoneNumber   Int
+  linkedin      String
+  github        String
+}
 
 // model Event {
 //     id          String        @id @default(uuid())
