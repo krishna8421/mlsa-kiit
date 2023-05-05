@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: ILayoutProps) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className="min-h-screen">{children}</body>
     </html>
   );
 }
