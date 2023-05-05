@@ -5,8 +5,8 @@ export default function HomeLayout({ children }: ILayoutProps) {
   return (
     <>
       <Navbar />
-      <Footer />
       {children}
+      <Footer />
     </>
   );
 }
