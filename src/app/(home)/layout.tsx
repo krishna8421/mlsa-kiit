@@ -1,5 +1,13 @@
-import { ILayoutProps } from "@/types";
+import Navbar from "@/components/navbar";
+import Footer from "@/components/footer";
 
+import { ILayoutProps } from "@/types";
 export default function HomeLayout({ children }: ILayoutProps) {
-  return <>{children}</>;
+  return (
+    <>
+      <Navbar />
+      {children}
+      <Footer />
+    </>
+  );
 }
