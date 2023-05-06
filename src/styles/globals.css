@@ -34,6 +34,10 @@
     --ring: 215 20.2% 65.1%;
 
     --radius: 0.5rem;
+
+    --swiper-navigation-color: #0f0f0f;
+    --swiper-navigation-size: 1rem;
+    /* --swiper-navigation-backgound: rgba(35, 63, 146, 0.8); */
   }
 
   .dark {
@@ -77,5 +81,14 @@
   body {
     @apply bg-background text-foreground;
     font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer components {
+  .shadowCard {
+    @apply shadow-gray transition duration-300 ease-in-out;
+  }
+  .shadowCard:hover {
+    @apply shadow-blue;
   }
 }
