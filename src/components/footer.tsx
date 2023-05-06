@@ -1,6 +1,5 @@
 import { INSTAGRAM_URL, LINKEDIN_URL, TWITTER_URL } from "@/constants";
 import Image from "next/image";
-import { TWITTER_URL, INSTAGRAM_URL, LINKEDIN_URL } from "@/constants";
 
 const Footer = () => {
   return (
