@@ -1,5 +1,6 @@
 import { INSTAGRAM_URL, LINKEDIN_URL, TWITTER_URL } from "@/constants";
 import Image from "next/image";
+
 const Footer = () => {
   return (
     <div className="fixed bottom-0 ml-8 flex gap-24">
