@@ -91,11 +91,11 @@ export const OUR_SPONSORS = [
   {
     name: "SawoLabs",
     site: "https://sawolabs.com/",
-    image: "",
+    image: "/sponsors/sawolabs.png",
   },
   {
     name: "Koii",
     site: "https://koii.network/",
-    image: "",
+    image: "/sponsors/koii.png",
   },
 ];

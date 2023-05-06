@@ -1,8 +1,10 @@
+import { INSTAGRAM_URL, LINKEDIN_URL, TWITTER_URL } from "@/constants";
 import Image from "next/image";
 import { TWITTER_URL, INSTAGRAM_URL, LINKEDIN_URL } from "@/constants";
+
 const Footer = () => {
   return (
-    <div className="fix bottom-0 ml-8 flex gap-24">
+    <div className="fixed bottom-0 ml-8 flex gap-24">
       <div className="flex h-20 gap-4">
         <Image src="/mlsa-logo.png" alt="MLSA Logo" width={72} height={82} loading="eager" />
         <div className="flex-col">
