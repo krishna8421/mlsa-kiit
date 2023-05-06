@@ -61,32 +61,32 @@ export const OUR_SPONSORS = [
   {
     name: "UiPath",
     site: "https://www.uipath.com/",
-    image: "",
+    image: "/sponsors/uipath.png",
   },
   {
     name: "RedBull",
     site: "https://www.redbull.com/in-en/",
-    image: "",
+    image: "/sponsors/redbull.png",
   },
   {
     name: "Snapchat",
     site: "https://www.snapchat.com/en-GB",
-    image: "",
+    image: "/sponsors/snapchat.png",
   },
   {
     name: "JetBrains",
     site: "https://www.jetbrains.com/",
-    image: "",
+    image: "/sponsors/jetbrains.png",
   },
   {
     name: "SymblAI",
     site: "https://symbl.ai/",
-    image: "",
+    image: "/sponsors/symbl.png",
   },
   {
     name: "Coding Ninjas",
     site: "https://www.codingninjas.com/",
-    image: "",
+    image: "/sponsors/codingninjas.png",
   },
   {
     name: "SawoLabs",
