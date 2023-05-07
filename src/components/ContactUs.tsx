@@ -3,7 +3,7 @@ import Link from "next/link";
 const ContactUs = () => {
   return (
     <div className="mt-36 flex h-[339px] ">
-      <Image width={200} height={200} src="/Rectangle.png" alt="rectangle " className="w-[47%]" />
+      <Image width={1920} height={1080} src="/Rectangle.png" alt="rectangle " className="w-[47%]" />
 
       <div className="w-[63%] bg-[#f4f4f4]">
         <div className="pl-[90px] pt-[70px] text-2xl font-bold">

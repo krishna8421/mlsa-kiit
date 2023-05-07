@@ -10,6 +10,45 @@ export const TWITTER_URL = "https://twitter.com/msckiit";
 export const INSTAGRAM_URL = "https://www.instagram.com/mlsakiit/";
 export const YOUTUBE_URL = "https://www.youtube.com/c/KIITKAKSHA";
 
+export const HERO_SECTION_EVENTS = [
+  {
+    bgColor: "#9CE7FF",
+    img: "/EventItem1.png",
+    ProjectName: "Flutter Verse 1.0",
+    date: "1st-28th Feb 2022",
+    numParticipants: "280+ Participants",
+    isButton: false,
+    link: "",
+  },
+  {
+    bgColor: "#EDFFB9",
+    img: "/EventItem2.png",
+    ProjectName: "Flutter Verse 2.0",
+    date: "1st-28th Feb 2022",
+    numParticipants: "Upcoming Event",
+    isButton: true,
+    link: "",
+  },
+  {
+    bgColor: "#9CE7FF",
+    img: "/EventItem1.png",
+    ProjectName: "Flutter Verse 3.0",
+    date: "1st-28th Feb 2022",
+    numParticipants: "280+ Participants",
+    isButton: false,
+    link: "",
+  },
+  {
+    bgColor: "#EDFFB9",
+    img: "/EventItem2.png",
+    ProjectName: "Flutter Verse 4.0",
+    date: "1st-28th Feb 2022",
+    numParticipants: "Upcoming Event",
+    isButton: true,
+    link: "",
+  },
+];
+
 export const ABOUT_US = {
   title: "ABOUT US",
   heading: "We have been doing projects and events since 2017.",
@@ -35,20 +74,44 @@ export const CONTACT_US = {
   address: "KIIT University, Bhubaneswar, Odisha, India",
 };
 
-export const OUR_DOMAINS = {
-  technical:
-    "Tech a.k.a the Heart of our Community. From thinking to revolutionizing a simple idea, all of the good stuff happens here. It is the hub of the most innovative and tech-savvy people, thus making learning lively and fun!",
-  creative:
-    "The Creative Domain consists of some of the most creative and imaginative minds on campus. We believe in nurturing our team's creativity and incorporating it to make simple text innovative and attractive.",
-  operations:
-    "The MLSA Operation Team believes in harmonious working among all the members of the community. Its task is to ensure the smooth functioning of events with even distribution of work. Also, to avoid dissent and maintain good inter-relationships of the members of our community.",
-  marketing:
-    "As the name suggests, this department is the point of contact for the community to the outside world. For all the brands that you see MLSA interact with, this team is responsible for building the right connections with them. Members here are the community's eyes and ears for making the proper connections!",
-  graphic:
-    "This is the team responsible for all the innovative and creative stuff when it comes to graphics. Be it the website or the socials, the graphic designing team ensures that the correct ideas are communicated to the users through captivating and inspiring graphics.",
-  youtube:
-    "From taking informative interviews to curating powerful visual content, the YouTube hosting team ensures that they bring out new and exciting stuff for the audience consistently. They are responsible for curating absolutely flawless and insightful content in order to impart as much information to the audience as possible.",
-};
+export const OUR_DOMAINS = [
+  {
+    name: "Technical",
+    about:
+      "Tech a.k.a the Heart of our Community. From thinking to revolutionizing a simple idea, all of the good stuff happens here. It is the hub of the most innovative and tech-savvy people, thus making learning lively and fun!",
+    imgSrc: "/domainLogos/ComputerSupport.png",
+  },
+  {
+    name: "Creative",
+    about:
+      "The Creative Domain consists of some of the most creative and imaginative minds on campus. We believe in nurturing our team's creativity and incorporating it to make simple text innovative and attractive.",
+    imgSrc: "/domainLogos/PaintBrush.png",
+  },
+  {
+    name: "Operations",
+    about:
+      "The MLSA Operation Team believes in harmonious working among all the members of the community. Its task is to ensure the smooth functioning of events with even distribution of work. Also, to avoid dissent and maintain good inter-relationships of the members of our community.",
+    imgSrc: "/domainLogos/Idea.png",
+  },
+  {
+    name: "Marketing",
+    about:
+      "As the name suggests, this department is the point of contact for the community to the outside world. For all the brands that you see MLSA interact with, this team is responsible for building the right connections with them.",
+    imgSrc: "/domainLogos/Omnichannel.png",
+  },
+  {
+    name: "Youtube",
+    about:
+      "From taking informative interviews to curating powerful visual content, the YouTube hosting team ensures that they bring out new and exciting stuff for the audience consistently.",
+    imgSrc: "/domainLogos/TVShow.png",
+  },
+  {
+    name: "Graphics",
+    about:
+      "This is the team responsible for all the innovative and creative stuff when it comes to graphics. Be it the website or the socials, the graphic designing team ensures that the correct ideas are communicated to the users through captivating and inspiring graphics.",
+    imgSrc: "/domainLogos/Vector.png",
+  },
+];
 
 export const FOUNDER = {
   name: "Achyuta Samanta",
@@ -61,12 +124,12 @@ export const OUR_SPONSORS = [
   {
     name: "UiPath",
     site: "https://www.uipath.com/",
-    image: "/sponsors/uipath.png",
+    image: "/sponsors/uiPath.png",
   },
   {
     name: "RedBull",
     site: "https://www.redbull.com/in-en/",
-    image: "/sponsors/redbull.png",
+    image: "/sponsors/redBull.png",
   },
   {
     name: "Snapchat",
@@ -76,17 +139,17 @@ export const OUR_SPONSORS = [
   {
     name: "JetBrains",
     site: "https://www.jetbrains.com/",
-    image: "/sponsors/jetbrains.png",
+    image: "/sponsors/jetBrains.png",
   },
   {
     name: "SymblAI",
     site: "https://symbl.ai/",
-    image: "/sponsors/symbl.png",
+    image: "/sponsors/symbolAI.png",
   },
   {
     name: "Coding Ninjas",
     site: "https://www.codingninjas.com/",
-    image: "/sponsors/codingninjas.png",
+    image: "/sponsors/codingNinja.png",
   },
   {
     name: "SawoLabs",

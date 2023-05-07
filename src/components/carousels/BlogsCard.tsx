@@ -1,7 +1,7 @@
 "use client";
-
 import Image from "next/image";
 import { BsCalendar4Week } from "react-icons/bs";
+
 interface Props {
   image: string;
   title: string;
@@ -14,12 +14,12 @@ const imgStyle: any = {
 };
 const BlogsCard = ({ image, title, date, message }: Props) => {
   return (
-    <div className="shadowCard mx-3 my-4 box-border h-[387px] w-[324] rounded-[10px] bg-white px-4 py-4 text-start">
+    <div className="carousel-div shadow-gray hover:shadow-blue transition duration-300 mx-3 my-4 box-border h-[387px] w-[324] rounded-[10px] bg-white px-4 py-4 text-start">
       <div className=" pb-6">
         <Image
           src={image}
-          height={157}
-          width={100}
+          height={700}
+          width={700}
           className=" h-[157px] w-[291px] rounded-lg"
           style={imgStyle}
           alt="name"

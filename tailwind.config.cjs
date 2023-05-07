@@ -16,10 +16,36 @@ module.exports = {
       center: true,
       padding: "2rem",
       screens: {
-        "2xl": "1400px",
+        sm: "480px",
+        md: "768px",
+        lg: "976px",
+        "2xl": "1440px",
+        "3xl": "1990px",
       },
     },
     extend: {
+      backgroundImage: {
+        "gradient-blue": "linear-gradient(98.63deg, #3B61CF 3.76%, #3BABCF 114.18%)",
+        "gradient-blue-reverse":
+          "linear-gradient(99.63deg, #a6e2f6 3.76%, #44c9f5 35.76%, #5e83f2 114.18%)",
+        "gradient-green": "linear-gradient(98.23deg, #1E7543 -15.4%, #90E6B5 113.98%)",
+        "white-line":
+          "linear-gradient(90deg, rgba(255,255,255,0) 2%, rgba(255,255,255,0.28335084033613445) 23%, rgba(255,255,255,0.4234068627450981) 48%, rgba(255,255,255,0.5858718487394958) 68%, rgba(255,255,255,0.7987570028011204) 82%);",
+        "blue-line":
+          "linear-gradient(90deg, rgba(40,111,217,0.8799894957983193) 11%, rgba(40,111,217,0.7819502801120448) 33%, rgba(40,111,217,0.4514180672268907) 55%, rgba(40,111,217,0.31416316526610644) 78%, rgba(40,111,217,0) 97%);",
+        "footer-blue-line":
+          "linear-gradient(180deg, rgba(40,111,217,0.8799894957983193) 11%, rgba(40,111,217,0.7819502801120448) 33%, rgba(40,111,217,0.4514180672268907) 55%, rgba(40,111,217,0.31416316526610644) 78%, rgba(40,111,217,0) 97%);",
+      },
+      boxShadow: {
+        blue: "0px 0px 4px 4px rgb(90, 123, 223, 0.6), 0 2px 4px -1px rgba(83, 124, 248, 0.4)",
+        gray: "0px 0px 4px 3px rgba(125, 125, 125, 0.1), 0px 3px 4px 2px rgba(125, 125, 125, 0.1)",
+      },
+      spacing: {
+        "hero-height": "254px",
+        "hero-width": "252px",
+        "event-height": "304px",
+        "event-width": "302px",
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
