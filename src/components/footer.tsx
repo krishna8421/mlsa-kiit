@@ -3,13 +3,27 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <div className="fixed bottom-0 ml-8 flex gap-24">
-      <div className="flex h-20 gap-4">
-        <Image src="/mlsa-logo.png" alt="MLSA Logo" width={72} height={82} loading="eager" />
+    <div>
+    <div className="ml-8 flex gap-24">
+      <div className="flex gap-4">
+        <div className="flex-col justify-center">
+          <Image src="/mlsa-logo.png" alt="MLSA Logo" width={72} height={82} loading="eager" />
+          <div className="flex justify-center content-center mt-3 ">
+            <svg width="2" height="209" viewBox="0 0 2 209" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 1.5V208" stroke="url(#paint0_linear_277_89)" stroke-width="2" stroke-linecap="round"/>
+            <defs>
+            <linearGradient id="paint0_linear_277_89" x1="1" y1="1.49998" x2="1" y2="207" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#286FD9"/>
+            <stop offset="1" stop-color="#286FD9" stop-opacity="0"/>
+            </linearGradient>
+            </defs>
+            </svg>
+          </div>
+        </div>
         <div className="flex-col">
-          <div className="bg-gradient-to-r from-[#0070C5] to-[#3BABCF] bg-clip-text text-2xl font-semibold text-transparent">
+          <div className="text-2xl font-semibold text-[#286FD9]">
             MLSA
-            <div className="bg-gradient-to-r from-[#0070C5] to-[#3BABCF] bg-clip-text text-xs font-semibold text-transparent">
+            <div className="text-[#0070C5] text-xs font-semibold">
               We encourage young minds <br /> to pursue knowledge and <br /> excellence in unique
               ways.
             </div>
@@ -20,7 +34,7 @@ const Footer = () => {
         <div className="flex gap-2 text-2xl font-semibold">
           {" "}
           <div> Follow </div>
-          <div className="bg-gradient-to-r from-[#286FD9] to-[#286FD9] bg-clip-text font-semibold text-transparent">
+          <div className="font-semibold text-[#286FD9]">
             Us
           </div>
         </div>
@@ -38,7 +52,7 @@ const Footer = () => {
         <div className="flex gap-2 text-2xl font-semibold">
           {" "}
           <div>Contact </div>
-          <div className="bg-gradient-to-r from-[#286FD9] to-[#286FD9] bg-clip-text font-semibold text-transparent">
+          <div className="font-semibold text-[#286FD9]">
             Us
           </div>
         </div>
@@ -50,7 +64,7 @@ const Footer = () => {
         <div className="flex gap-2 text-2xl font-semibold">
           {" "}
           <div>Visit </div>
-          <div className="bg-gradient-to-r from-[#286FD9] to-[#286FD9] bg-clip-text font-semibold text-transparent">
+          <div className="font-semibold text-[#286FD9]">
             Us
           </div>
           <div>At</div>
@@ -60,7 +74,13 @@ const Footer = () => {
         <div className="mt-1">India</div>
       </div>
     </div>
+    <div className="flex-col justfy-center content-center font-[12px]">
+    <div className="flex justify-center">© 2023 mLSAKIIT</div>
+    <div className="flex justify-center">Designed by MSC KIIT DESIGN TEAM</div>
+    </div>
+    </div>
   );
 };
 
 export default Footer;
+
