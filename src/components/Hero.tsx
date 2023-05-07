@@ -41,7 +41,7 @@ const Hero = () => {
           <h1 className="my-3.5 pl-8 text-[25px] font-semibold text-white md:text-[2.3vw]">
             Recent Events
           </h1>
-          <div className="relative pl-6">
+          <div className="relative pl-6 swiper-container">
             <Swiper
               spaceBetween={10}
               slidesPerView={2}

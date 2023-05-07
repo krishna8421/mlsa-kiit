@@ -2,6 +2,7 @@ import React from "react";
 import EventSlideItem from "@/components/EventSlideItem";
 import EventsHero from "@/components/EventsHero";
 import Navbar from "@/components/navbar";
+import Footer from "@/components/Footer";
 import Link from "next/link";
 import { RiHeart2Fill } from "react-icons/ri";
 
@@ -18,7 +19,7 @@ const EventLine: React.FC<eventLineProp> = ({ year, lineNum, yearLink }) => {
         <div className="flex h-[61px] w-[61px] items-center justify-center rounded-full bg-[#083475] text-white md:text-2xl lg:text-[25px] 2xl:text-[2.1vw]">
           {lineNum}
         </div>
-        <div className="h-[3px]  w-full bg-blue-line hover:bg-[#286FD9]"></div>
+        <div className="h-[3px] w-full bg-blue-line hover:bg-[#286FD9]"></div>
       </div>
       <div className="text-lg font-semibold">
         Year
@@ -152,6 +153,7 @@ const Events = () => {
           ></EventSlideItem>
         </div>
       </div>
+      <Footer />
     </>
   );
 };

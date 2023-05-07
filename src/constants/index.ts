@@ -4,10 +4,10 @@ export const SITE_URL = "https://mlsakiit.tech";
 export const SITE_DESCRIPTION = `${SITE_NAME} is a community of students who are interested in learning about the latest technologies and trends in the field of computer science and technology.`;
 export const QUOTE = "We encourage young minds to pursue knowledge and excellence in unique ways.";
 export const MEDIUM_BLOG_URL = "https://medium.com/msackiit";
-export const LINKEDIN_URL = "";
+export const LINKEDIN_URL = "https://www.linkedin.com/company/msckiit/mycompany/";
 export const GITHUB_URL = "";
-export const TWITTER_URL = "";
-export const INSTAGRAM_URL = "";
+export const TWITTER_URL = "https://twitter.com/msckiit";
+export const INSTAGRAM_URL = "https://www.instagram.com/mlsakiit/";
 export const YOUTUBE_URL = "https://www.youtube.com/c/KIITKAKSHA";
 
 export const HERO_SECTION_EVENTS = [
@@ -124,41 +124,41 @@ export const OUR_SPONSORS = [
   {
     name: "UiPath",
     site: "https://www.uipath.com/",
-    image: "",
+    image: "/sponsors/uiPath.png",
   },
   {
     name: "RedBull",
     site: "https://www.redbull.com/in-en/",
-    image: "",
+    image: "/sponsors/redBull.png",
   },
   {
     name: "Snapchat",
     site: "https://www.snapchat.com/en-GB",
-    image: "",
+    image: "/sponsors/snapchat.png",
   },
   {
     name: "JetBrains",
     site: "https://www.jetbrains.com/",
-    image: "",
+    image: "/sponsors/jetBrains.png",
   },
   {
     name: "SymblAI",
     site: "https://symbl.ai/",
-    image: "",
+    image: "/sponsors/symbolAI.png",
   },
   {
     name: "Coding Ninjas",
     site: "https://www.codingninjas.com/",
-    image: "",
+    image: "/sponsors/codingNinja.png",
   },
   {
     name: "SawoLabs",
     site: "https://sawolabs.com/",
-    image: "",
+    image: "/sponsors/sawolabs.png",
   },
   {
     name: "Koii",
     site: "https://koii.network/",
-    image: "",
+    image: "/sponsors/koii.png",
   },
 ];
