@@ -2,14 +2,14 @@
 import { HERO_SECTION_EVENTS } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
-import SwiperCore, { Navigation } from "swiper";
-import "swiper/css";
-import "swiper/css/navigation";
+import { Navigation } from "swiper";
+// import "swiper/css";
+// import "swiper/css/navigation";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.min.css";
 import EventSlideItem from "./EventSlideItem";
 
-SwiperCore.use([Navigation]);
+// SwiperCore.use([Navigation]);
 
 const Hero = () => {
   return (
@@ -41,7 +41,7 @@ const Hero = () => {
           <h1 className="my-3.5 pl-8 text-[25px] font-semibold text-white md:text-[2.3vw]">
             Recent Events
           </h1>
-          <div className="relative pl-6 swiper-container">
+          <div className="swiper-container relative pl-6">
             <Swiper
               spaceBetween={10}
               slidesPerView={2}
@@ -54,18 +54,16 @@ const Hero = () => {
             >
               {HERO_SECTION_EVENTS.map((item, index) => (
                 <SwiperSlide key={index}>
-                  <div>
-                    <EventSlideItem
-                      bgColor={item.bgColor}
-                      img={item.img}
-                      ProjectName={item.ProjectName}
-                      date={item.date}
-                      numParticipants={item.numParticipants}
-                      isButton={item.isButton}
-                      isHero={true}
-                      link=""
-                    ></EventSlideItem>
-                  </div>
+                  <EventSlideItem
+                    bgColor={item.bgColor}
+                    img={item.img}
+                    ProjectName={item.ProjectName}
+                    date={item.date}
+                    numParticipants={item.numParticipants}
+                    isButton={item.isButton}
+                    isHero={true}
+                    link=""
+                  ></EventSlideItem>
                 </SwiperSlide>
               ))}
             </Swiper>

@@ -1,13 +1,12 @@
 "use client";
-import Hero from "@/components/Hero";
 import About from "@/components/About";
-import Domain from "@/components/Domain";
 import ContactUs from "@/components/ContactUs";
+import Domain from "@/components/Domain";
+import Hero from "@/components/Hero";
+import Sponsors from "@/components/Sponsors";
 import OurAlumuni from "@/components/carousels/Alumuni";
 import OurBlogs from "@/components/carousels/OurBlogs";
 import OurLeads from "@/components/carousels/OurLeads";
-import { Outdent } from "lucide-react";
-import Sponsors from "@/components/Sponsors";
 
 export default function Home() {
   return (
@@ -17,11 +16,11 @@ export default function Home() {
         <About />
         <Domain />
       </div>
-        <OurLeads />
-        <ContactUs />
-        <OurAlumuni />
-        <OurBlogs />
-        <Sponsors />
+      <OurLeads />
+      <ContactUs />
+      <OurAlumuni />
+      <OurBlogs />
+      <Sponsors />
     </main>
   );
 }

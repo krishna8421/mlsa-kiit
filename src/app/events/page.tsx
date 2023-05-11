@@ -1,9 +1,9 @@
-import React from "react";
 import EventSlideItem from "@/components/EventSlideItem";
 import EventsHero from "@/components/EventsHero";
-import Navbar from "@/components/navbar";
 import Footer from "@/components/Footer";
+import Navbar from "@/components/navbar";
 import Link from "next/link";
+import React from "react";
 import { RiHeart2Fill } from "react-icons/ri";
 
 interface eventLineProp {

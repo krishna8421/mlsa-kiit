@@ -81,28 +81,14 @@ const OurAlumuni = () => {
           slidesPerView="auto"
           cssMode={true}
           mousewheel={true}
-          className="ml-16 pl-3"
+          className="ml-16 "
           loop={false}
           navigation={true}
           modules={[Navigation]}
-          // breakpoints={{
-          //   320: {
-          //     width: 320,
-          //     slidesPerView: 1,
-          //   },
-          //   720: {
-          //     width: 720,
-          //     slidesPerView: 1.7,
-          //   },
-          //   1200: {
-          //     width: 1200,
-          //     slidesPerView: 2.65,
-          //   },
-          // }}
         >
           {OUR_ALUMNI.map((Lead, index) => {
             return (
-              <SwiperSlide key={index} className="w-[460px] overflow-visible">
+              <SwiperSlide key={index} className=" w-[460px] overflow-visible">
                 <AlumuniCard {...Lead} />
               </SwiperSlide>
             );

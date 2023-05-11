@@ -1,5 +1,5 @@
 "use client";
-import Link from "next/link";
+
 // import QuoteLeft from ".../assets/QuoteLeft.png";
 import { useEffect, useState } from "react";
 import { Navigation } from "swiper";
@@ -89,9 +89,7 @@ const OurBlogs = () => {
         {OUR_BLOGS.map((Lead, index) => {
           return (
             <SwiperSlide key={index} className=" w-[345px] overflow-visible">
-              <Link href="">
-                <BlogsCard {...Lead} />
-              </Link>
+              <BlogsCard {...Lead} />
             </SwiperSlide>
           );
         })}

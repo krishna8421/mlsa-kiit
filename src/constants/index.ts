@@ -48,6 +48,57 @@ export const HERO_SECTION_EVENTS = [
     link: "",
   },
 ];
+export const OUR_PROJECTS = [
+  {
+    img: "/projects/project1.png",
+    ProjectName: "Tasker Msc",
+    techStack1: "Flutter",
+    techStack2: "Firebase",
+    techImg: "/projects/Flutter.png",
+    techImg2: "/projects/Firebase.png",
+  },
+  {
+    img: "/projects/project2.png",
+    ProjectName: "Scavenger Hunt Game",
+    techStack1: "NextJs",
+    techStack2: "Firebase",
+
+    techImg: "/projects/NextJs.png",
+    techImg2: "/projects/Firebase.png",
+  },
+  {
+    img: "/projects/project3.png",
+    ProjectName: "Music Recommendation",
+    techStack1: "Mern",
+    techStack2: "ML, Python",
+    techImg: "/projects/Python.png",
+    techImg2: "/projects/Firebase.png",
+  },
+  {
+    img: "/projects/project4.png",
+    ProjectName: "Flutter verse",
+    techStack1: "Flutter",
+    techStack2: "Firebse",
+    techImg: "/projects/Flutter.png",
+    techImg2: "/projects/Firebase.png",
+  },
+  {
+    img: "/projects/project1.png",
+    ProjectName: "Tasker Msc",
+    techStack1: "Flutter",
+    techStack2: "Firebse",
+    techImg: "/projects/Flutter.png",
+    techImg2: "/projects/Firebase.png",
+  },
+  {
+    img: "/projects/project2.png",
+    ProjectName: "Scavenger Hunt Game",
+    techStack1: "Flutter",
+    techStack2: "Firebse",
+    techImg: "/projects/NextJs.png",
+    techImg2: "/projects/Firebase.png",
+  },
+];
 
 export const ABOUT_US = {
   title: "ABOUT US",

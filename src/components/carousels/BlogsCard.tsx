@@ -14,7 +14,7 @@ const imgStyle: any = {
 };
 const BlogsCard = ({ image, title, date, message }: Props) => {
   return (
-    <div className="carousel-div shadow-gray hover:shadow-blue transition duration-300 mx-3 my-4 box-border h-[387px] w-[324] rounded-[10px] bg-white px-4 py-4 text-start">
+    <div className="carousel-div mx-3 my-4 box-border h-[387px] w-[324px] rounded-[10px] bg-white px-4 py-4 text-start shadow-gray transition duration-300 hover:shadow-blue">
       <div className=" pb-6">
         <Image
           src={image}
