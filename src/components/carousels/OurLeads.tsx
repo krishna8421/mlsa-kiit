@@ -62,7 +62,7 @@ const OurLeads = () => {
         Our <span className="text-[#3B61CF]">Leads</span>
       </h1>
       <Swiper
-        className="ml-20 px-4"
+        className="ml-20 "
         spaceBetween={14}
         slidesPerView="auto"
         cssMode={true}
@@ -70,24 +70,6 @@ const OurLeads = () => {
         loop={false}
         navigation={true}
         modules={[Navigation]}
-        // breakpoints={{
-        //   320: {
-        //     width: 320,
-        //     slidesPerView: 1,
-        //   },
-        //   520: {
-        //     width: 320,
-        //     slidesPerView: 1.3,
-        //   },
-        //   720: {
-        //     width: 720,
-        //     slidesPerView: 1.7,
-        //   },
-        //   1200: {
-        //     width: 1200,
-        //     slidesPerView: 2.55,
-        //   },
-        // }}
       >
         {OUR_LEADS.map((Lead, index) => {
           return (
