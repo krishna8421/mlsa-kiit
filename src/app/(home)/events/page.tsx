@@ -1,7 +1,5 @@
 import EventSlideItem from "@/components/EventSlideItem";
 import EventsHero from "@/components/EventsHero";
-import Footer from "@/components/Footer";
-import Navbar from "@/components/navbar";
 import Link from "next/link";
 import React from "react";
 import { RiHeart2Fill } from "react-icons/ri";
@@ -34,7 +32,6 @@ const EventLine: React.FC<eventLineProp> = ({ year, lineNum, yearLink }) => {
 const Events = () => {
   return (
     <>
-      <Navbar />
       <EventsHero
         eventName="Android Development Submit"
         eventDate="12 March 2023"
@@ -153,7 +150,6 @@ const Events = () => {
           ></EventSlideItem>
         </div>
       </div>
-      <Footer />
     </>
   );
 };

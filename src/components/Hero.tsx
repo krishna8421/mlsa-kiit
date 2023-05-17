@@ -1,29 +1,31 @@
 "use client";
-import { HERO_SECTION_EVENTS } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
-import { Navigation } from "swiper";
-// import "swiper/css";
-// import "swiper/css/navigation";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/swiper-bundle.min.css";
-import EventSlideItem from "./EventSlideItem";
 
-// SwiperCore.use([Navigation]);
+import "swiper/css";
+import "swiper/css/free-mode";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+
+import { FreeMode, Navigation, Pagination } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+import { HERO_SECTION_EVENTS } from "@/constants";
+import EventSlideItem from "./EventSlideItem";
 
 const Hero = () => {
   return (
     <>
-      <div className="relative h-screen w-screen">
+      <div className="relative mb-12 h-screen w-screen">
         <Image
           src="/Corrugated_Glass.png"
           alt="Hero Image"
           width={1920}
           height={1080}
-          className="absolute z-0 h-full w-full"
-        ></Image>
-        <div className="z-29 absolute left-[7vw] top-[43vh] flex h-screen w-full flex-col font-semibold md:text-2xl lg:left-[11vw] lg:text-3xl lg:leading-[40px] 2xl:text-[2.1vw] 2xl:leading-[6vh]">
-          <div className="">
+          className="absolute z-0 h-full w-full object-cover"
+        />
+        <div className="z-29 absolute left-[6vw] top-[25vh] flex h-screen w-full flex-col gap-3 text-2xl font-semibold transition-all duration-150 delay-100 sm:text-3xl md:left-[11vw] md:text-4xl lg:top-[40vh]  lg:leading-[40px] 2xl:leading-[6vh]">
+          <div>
             Microsoft Learn
             <span className="ml-2 text-[#3B61CF]">Student</span>
           </div>
@@ -37,20 +39,23 @@ const Hero = () => {
             </span>
           </Link>
         </div>
-        <div className="absolute bottom-9 right-7">
+        <div className="absolute bottom-[-5rem] w-full sm:right-7  sm:w-[520px]">
+          {/* <div className="absolute bottom-[-5rem] right-7"> */}
           <h1 className="my-3.5 pl-8 text-[25px] font-semibold text-white md:text-[2.3vw]">
             Recent Events
           </h1>
-          <div className="swiper-container relative pl-6">
+          <div className="relative">
             <Swiper
-              spaceBetween={10}
               slidesPerView={2}
-              cssMode={true}
-              mousewheel={true}
+              freeMode={true}
               loop={true}
+              spaceBetween={10}
+              pagination={{
+                clickable: true,
+              }}
               navigation={true}
-              modules={[Navigation]}
-              className="w-[550px] pl-3"
+              modules={[Pagination, Navigation, FreeMode]}
+              className=""
             >
               {HERO_SECTION_EVENTS.map((item, index) => (
                 <SwiperSlide key={index}>
@@ -63,7 +68,7 @@ const Hero = () => {
                     isButton={item.isButton}
                     isHero={true}
                     link=""
-                  ></EventSlideItem>
+                  />
                 </SwiperSlide>
               ))}
             </Swiper>

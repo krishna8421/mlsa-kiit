@@ -14,7 +14,7 @@ const imgStyle: any = {
 };
 const LeadsCard = ({ image, name, domain, message }: Props) => {
   return (
-    <div className="carousel-div shadow-gray hover:shadow-blue transition duration-300 m-3 box-border flex w-[447px] gap-x-[18px] rounded-[10px] bg-white px-6 py-4 text-start font-sans font-normal">
+    <div className="carousel-div m-3 box-border flex w-[447px] gap-x-[18px] rounded-[10px] bg-white px-6 py-4 text-start font-sans font-normal shadow-gray transition duration-300 hover:shadow-blue">
       <Image
         src={image}
         style={imgStyle}

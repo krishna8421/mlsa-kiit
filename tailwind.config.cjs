@@ -40,7 +40,7 @@ module.exports = {
       },
       spacing: {
         "hero-height": "254px",
-        "hero-width": "252px",
+        "hero-width": "224px",
         "event-height": "304px",
         "event-width": "302px",
       },

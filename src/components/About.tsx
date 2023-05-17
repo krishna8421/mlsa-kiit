@@ -15,14 +15,14 @@ const AboutLogo: React.FC<AboutLogoProps> = ({ icon, label, line }) => {
   return (
     <div className="flex flex-col justify-start">
       <div className="flex items-center">
-        <div className="cursor-pointer self-center rounded-full px-5 py-5 md:px-7 md:py-7 text-[#3B61CF] shadow-gray transition duration-300 hover:shadow-blue">
+        <div className="cursor-pointer self-center rounded-full px-5 py-5 text-[#3B61CF] shadow-gray transition duration-300 hover:shadow-blue md:px-7 md:py-7">
           {icon}
         </div>
         {line && (
-          <span className="mx-4 h-0 md:w-[15vw] w-[8vw] border-[1px] border-[#3B61CF] border-opacity-60"></span>
+          <span className="mx-4 h-0 w-[8vw] border-[1px] border-[#3B61CF] border-opacity-60 md:w-[15vw]"></span>
         )}
       </div>
-      <span className="mt-6 w-[78px] md:w-[96px] text-center md:text-2xl lg:text-[25px] 2xl:text-[2.1vw]">
+      <span className="mt-6 w-[78px] text-center md:w-[96px] md:text-2xl lg:text-[25px] 2xl:text-[2.1vw]">
         {label}
       </span>
     </div>

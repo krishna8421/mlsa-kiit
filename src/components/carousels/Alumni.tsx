@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import AlumuniCard from "./AlumuniCard";
+import AlumniCard from "./AlumniCard";
 
 import { Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -59,7 +59,7 @@ const OUR_ALUMNI = [
   },
 ];
 
-const OurAlumuni = () => {
+const OurAlumni = () => {
   const [AlumniData, setAlumniData] = useState([]);
   useEffect(() => {
     const fetachAlumni = async () => {
@@ -89,7 +89,7 @@ const OurAlumuni = () => {
           {OUR_ALUMNI.map((Lead, index) => {
             return (
               <SwiperSlide key={index} className=" w-[460px] overflow-visible">
-                <AlumuniCard {...Lead} />
+                <AlumniCard {...Lead} />
               </SwiperSlide>
             );
           })}
@@ -104,4 +104,4 @@ const OurAlumuni = () => {
   );
 };
 
-export default OurAlumuni;
+export default OurAlumni;

@@ -10,7 +10,7 @@ interface EventSlideItemProps {
   numParticipants: string;
   link: string;
   isButton: boolean;
-  isHero: boolean
+  isHero: boolean;
 }
 
 const EventSlideItem: React.FC<EventSlideItemProps> = ({
@@ -26,17 +26,19 @@ const EventSlideItem: React.FC<EventSlideItemProps> = ({
   const containerStyle = {
     width: "calc(100% - 16px)",
   };
-  const maindivBG = {
+  const mainDivBG = {
     backgroundColor: bgColor,
   };
 
   return (
     <div
-      className={`${isHero ? "w-hero-width h-hero-height": "w-event-width h-event-height"} flex-grow overflow-visible rounded-[10px]`}
-      style={maindivBG}
+      className={`${
+        isHero ? "h-hero-height w-hero-width" : "h-event-height w-event-width"
+      } rounded-md`}
+      style={mainDivBG}
     >
       <div className="mx-auto pt-2" style={containerStyle}>
-        <Image src={img} alt="event item" width={1440} height={720} className="w-full"></Image>
+        <Image src={img} alt="event item" width={1200} height={720} className="w-full"></Image>
         <div className="ml-[18px] pt-3">
           <div>
             <h2 className="text-lg">{ProjectName}</h2>
@@ -50,7 +52,7 @@ const EventSlideItem: React.FC<EventSlideItemProps> = ({
               {!isButton ? (
                 <div>View More</div>
               ) : (
-                <button className="border-0 bg-none font-semibold text-[#3B61CF] outline-0">
+                <button className="bg-none border-0 font-semibold text-[#3B61CF] outline-0">
                   Register Now
                 </button>
               )}
