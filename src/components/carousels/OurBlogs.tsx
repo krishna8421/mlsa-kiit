@@ -64,7 +64,7 @@ const OurBlogs = () => {
       </h1>
       <Swiper
         spaceBetween={18}
-        slidesPerView="auto"
+        slidesPerView={4}
         cssMode={true}
         mousewheel={true}
         className="ml-16 pl-3"

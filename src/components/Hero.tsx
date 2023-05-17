@@ -39,8 +39,7 @@ const Hero = () => {
             </span>
           </Link>
         </div>
-        <div className="absolute bottom-[-5rem] w-full sm:right-7  sm:w-[520px]">
-          {/* <div className="absolute bottom-[-5rem] right-7"> */}
+        <div className="absolute bottom-[-5rem] w-full sm:right-7 sm:w-[520px]">
           <h1 className="my-3.5 pl-8 text-[25px] font-semibold text-white md:text-[2.3vw]">
             Recent Events
           </h1>
@@ -55,7 +54,7 @@ const Hero = () => {
               }}
               navigation={true}
               modules={[Pagination, Navigation, FreeMode]}
-              className=""
+              className="hero-swiper"
             >
               {HERO_SECTION_EVENTS.map((item, index) => (
                 <SwiperSlide key={index}>

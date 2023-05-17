@@ -78,7 +78,7 @@ const OurAlumni = () => {
         </h1>
         <Swiper
           spaceBetween={10}
-          slidesPerView="auto"
+          slidesPerView={3}
           cssMode={true}
           mousewheel={true}
           className="ml-16 "

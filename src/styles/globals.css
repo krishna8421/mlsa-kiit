@@ -84,14 +84,14 @@
   }
 }
 
-.swiper {
+.hero-swiper {
   width: 520px;
   height: 320px;
   padding: 1.8rem !important;
 }
 
 @media only screen and (max-width: 540px) {
-  .swiper {
+  .hero-swiper {
     width: 100%;
     padding: 1.8rem !important;
   }

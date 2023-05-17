@@ -1,6 +1,6 @@
-import React from "react";
 import { ABOUT_US } from "@/constants";
 import Link from "next/link";
+import React from "react";
 import { BsFillRocketTakeoffFill } from "react-icons/bs";
 import { FaEye } from "react-icons/fa";
 import { TbTargetArrow } from "react-icons/tb";
@@ -33,7 +33,7 @@ const About = () => {
   return (
     <>
       <div className="flex flex-col  items-center py-[72px]">
-        <h1 className="font-semibold md:text-2xl  lg:text-3xl lg:leading-[40px] 2xl:text-[2.1vw] 2xl:leading-[6vh]">
+        <h1 className="text-3xl font-semibold lg:leading-[40px] 2xl:text-[2.1vw] 2xl:leading-[6vh]">
           About <span className="text-[#3B61CF]">Us</span>
         </h1>
         <h2 className="mt-8 flex flex-col items-center gap-2 font-semibold md:text-2xl  lg:text-[25px] lg:leading-[33px] 2xl:text-[2.1vw] 2xl:leading-[4vh]">

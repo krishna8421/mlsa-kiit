@@ -5,9 +5,9 @@ import { MdOutlineCopyright } from "react-icons/md";
 
 const Footer = () => {
   return (
-    <>
+    <div className="flex w-screen flex-col overflow-hidden">
       <hr className="mb-[42px] mt-[93px] border-t-2 border-solid" />
-      <div className="bottom-0 mb-[145px] ml-8 mr-8 flex gap-24">
+      <div className="bottom-0 mb-[145px] ml-8 mr-8 flex flex-wrap justify-center gap-24">
         <div className="h-20">
           <div className="flex gap-4">
             <Image src="/mlsa-logo.png" alt="MLSA Logo" width={82} height={72} loading="eager" />
@@ -20,7 +20,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="mt-3.5 flex w-[82px] justify-center">
+          <div className="mt-3.5 hidden w-[82px] justify-center lg:flex">
             <div className="h-[206px] w-[2px] bg-blue-line hover:bg-[#286FD9]"></div>
           </div>
         </div>
@@ -72,7 +72,7 @@ const Footer = () => {
         </div>
         <div className="">Designed by MSC KIIT TEAM</div>
       </div>
-    </>
+    </div>
   );
 };
 
