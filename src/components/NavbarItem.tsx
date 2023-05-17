@@ -1,14 +1,17 @@
-import React from "react";
+import { ILayoutProps } from "@/types";
+import Link from "next/link";
 
-interface NavbarItemsProps {
-  item: string;
+interface NavbarItemProps extends ILayoutProps {
+  href: string;
 }
 
-const NavbarItem: React.FC<NavbarItemsProps> = ({ item }) => {
+const NavbarItem = ({ children, href }: NavbarItemProps) => {
   return (
-    <div className="cursor-pointer text-sm transition hover:text-gray-500 2xl:text-[1vw]">
-      {item}
-    </div>
+    <Link href={href}>
+      <div className="cursor-pointer text-sm transition hover:text-gray-500 2xl:text-md">
+        {children}
+      </div>
+    </Link>
   );
 };
 
