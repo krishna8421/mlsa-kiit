@@ -3,12 +3,6 @@ module.exports = {
   darkMode: ["class"],
   content: ["./src/app/**/*.{js,ts,jsx,tsx}", "./src/components/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    backgroundImage: {
-      "gradient-blue": "linear-gradient(98.63deg, #3B61CF 3.76%, #3BABCF 114.18%)",
-      "gradient-blue-reverse":
-        "linear-gradient(98.63deg, #a6e2f6 3.76%, #44c9f5 35.76%, #5e83f2 114.18%)",
-      "gradient-white": "linear-gradient(270.21deg, #286FD9 0.18%, rgba(255, 255, 255, 0) 99.84%)",
-    },
     boxShadow: {
       blue: "0px 0px 4px 4px rgba(59, 171, 207, 0.2), 0 2px 4px -1px rgba(35, 63, 146, 0.8)",
       gray: "0px 1px 10px rgba(0, 0, 0, 0.15), 2px 2px 2px -1px rgba(125, 125, 125, 0.1)",
@@ -37,6 +31,8 @@ module.exports = {
           "linear-gradient(90deg, rgba(40,111,217,0.8799894957983193) 11%, rgba(40,111,217,0.7819502801120448) 33%, rgba(40,111,217,0.4514180672268907) 55%, rgba(40,111,217,0.31416316526610644) 78%, rgba(40,111,217,0) 97%);",
         "footer-blue-line":
           "linear-gradient(180deg, rgba(40,111,217,0.8799894957983193) 11%, rgba(40,111,217,0.7819502801120448) 33%, rgba(40,111,217,0.4514180672268907) 55%, rgba(40,111,217,0.31416316526610644) 78%, rgba(40,111,217,0) 97%);",
+        "gradient-white":
+          "linear-gradient(270.21deg, #286FD9 0.18%, rgba(255, 255, 255, 0) 99.84%)",
       },
       spacing: {
         "hero-height": "254px",

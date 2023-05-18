@@ -7,7 +7,6 @@ interface Props {
   bgColor: string;
   img: string;
   ProjectName: string;
-  // tech: string[];
   techStack1: string;
   techStack2: string;
   link: string;
@@ -31,41 +30,44 @@ const ProjectCard = ({
   const maindivBG = {
     backgroundColor: bgColor,
   };
-  //   w-event-width h-event-height
   return (
     <div
-      className={` m-3 mr-5 h-[302px] w-[304px] overflow-visible rounded-[10px] border-[1.6px] border-white text-start transition duration-300 ease-in-out hover:border-[1.6px] hover:border-black hover:shadow-project`}
+      className={` m-3 mr-5 h-[302px] w-[304px] overflow-hidden rounded-[10px] border-[1.6px] border-white text-start transition duration-300 ease-in-out hover:border-[1.6px] hover:border-black hover:shadow-project`}
       style={maindivBG}
     >
       <div className="mx-auto pt-2" style={containerStyle}>
         <Image src={img} alt="event item" width={1440} height={720} className="w-full"></Image>
-        <div className="ml-[18px]   pt-3">
+        <div className="ml-[18px] pt-3">
           <div>
-            <h2 className="text-lg">{ProjectName}</h2>
-            <div className="mt-1.5 flex flex-col text-[16px] font-[350] leading-[20px]">
-              {/* {tech.map((techStack) => {
-                return <p>{techStack}</p>;
-              })} */}
+            <h2 className="text-lg cursor-pointer">{ProjectName}</h2>
+            <div className="mt-1.5 flex flex-col text-[16px] font-[350] leading-[20px] cursor-default">
               <span>{techStack1}</span>
               <span>{techStack2}</span>
             </div>
           </div>
-          <div className="relative mt-3 flex cursor-pointer items-center justify-between text-lg font-normal">
-            <div className="flex">
-              <img
-                src={techImg}
-                alt="Techstack"
-                // width={20}
-                // height={20}
-                className="  h-4 w-[15px] bg-white  "
-              ></img>
-              <img
+          <div className="flex items-center justify-between text-lg font-normal mt-6">
+            <div className="relative flex w-12">
+              <div className="tech-stack-container relative">
+                <style jsx>{`
+                  .tech-stack-container::after {
+                    background-color: ${bgColor};
+                  }
+                `}</style>
+                <Image
+                  src={techImg}
+                  alt="tech stack image"
+                  width={100}
+                  height={100}
+                  className="tech-stack-left absolute left-[4px] top-[6px] h-[13px] w-[13px] rounded-full"
+                ></Image>
+              </div>
+              <Image
                 src={techImg2}
-                alt="Techstack"
-                // width={20}
-                // height={20}
-                className="   left-12 z-30 h-4 w-[15px] bg-white "
-              ></img>
+                alt="tech stack image"
+                width={100}
+                height={100}
+                className="absolute right-[4px] ml-2 h-6 w-6 rounded-full bg-white px-1 py-2"
+              ></Image>
             </div>
             <Link href={link}>
               <AiOutlineGithub className=" h-6 w-6 text-white" />
