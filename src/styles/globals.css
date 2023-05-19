@@ -126,3 +126,26 @@
 .swiper-button-prev::after {
   content: "" !important;
 }
+
+.tech-stack-container {
+  background: white;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%
+}
+
+.tech-stack-container::before{
+  background: #5bc236;
+  content: "";
+  position: absolute;
+}
+
+.tech-stack-container::after{
+  content: "";
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  margin: 0px 0 0 17px;
+  border-radius: 50%;
+}
+

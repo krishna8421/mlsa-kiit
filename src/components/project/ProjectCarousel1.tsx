@@ -25,7 +25,7 @@ const ProjectCarousel1 = () => {
     <div className="ml-[89px] mt-5  text-center">
       <Swiper
         spaceBetween={18}
-        slidesPerView="auto"
+        slidesPerView={4}
         cssMode={true}
         mousewheel={true}
         loop={false}
