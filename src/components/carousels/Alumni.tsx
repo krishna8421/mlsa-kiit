@@ -1,6 +1,5 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import AlumniCard from "./AlumniCard";
 
 import { Navigation } from "swiper";
@@ -60,15 +59,15 @@ const OUR_ALUMNI = [
 ];
 
 const OurAlumni = () => {
-  const [AlumniData, setAlumniData] = useState([]);
-  useEffect(() => {
-    const fetachAlumni = async () => {
-      const response = await fetch("https://locahost:3000/api/alumni");
-      const data = await response.json();
-      setAlumniData(data);
-    };
-    // fetachAlumni();
-  });
+  // const [AlumniData, setAlumniData] = useState([]);
+  // useEffect(() => {
+  //   const fetachAlumni = async () => {
+  //     const response = await fetch("https://locahost:3000/api/alumni");
+  //     const data = await response.json();
+  //     setAlumniData(data);
+  //   };
+  //   // fetachAlumni();
+  // });
   return (
     <div className="relative py-[117px]">
       <img src="/quoteLeft.png" alt="quoted" className="absolute left-0 top-[11%] h-48 w-52" />
@@ -78,10 +77,10 @@ const OurAlumni = () => {
         </h1>
         <Swiper
           spaceBetween={10}
-          slidesPerView={3}
+          slidesPerView="auto"
           cssMode={true}
           mousewheel={true}
-          className="ml-16 "
+          className="ml-6 px-3 md:ml-16 "
           loop={false}
           navigation={true}
           modules={[Navigation]}

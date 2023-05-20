@@ -2,7 +2,7 @@ import DomainCard from "../DomainCard";
 // import ProjectVector2 from ""
 const ProjectCommuntiy = () => {
   return (
-    <div className=" ml-24 flex cursor-default  flex-col md:flex-row items-center justify-between">
+    <div className=" ml-24 flex cursor-default  flex-col items-center justify-between lg:flex-row">
       <h1 className="w-[240px] text-3xl font-semibold ">
         We Are Proud Of Our <span className="text-[#286FD9]"> Community Members </span>
       </h1>

@@ -48,15 +48,15 @@ const OUR_BLOGS = [
 ];
 
 const OurBlogs = () => {
-  const [BolgsData, setBlogsData] = useState([]);
-  useEffect(() => {
-    const fetachBlogs = async () => {
-      const response = await fetch("https://locahost:3000/api/blogs");
-      const data = await response.json();
-      setBlogsData(data);
-    };
-    // fetachBlogs();
-  });
+  // const [BolgsData, setBlogsData] = useState([]);
+  // useEffect(() => {
+  //   const fetachBlogs = async () => {
+  //     const response = await fetch("https://locahost:3000/api/blogs");
+  //     const data = await response.json();
+  //     setBlogsData(data);
+  //   };
+  //   // fetachBlogs();
+  // });
   return (
     <div className="mt-5 text-center">
       <h1 className="mb-10 text-3xl font-semibold">
@@ -64,27 +64,13 @@ const OurBlogs = () => {
       </h1>
       <Swiper
         spaceBetween={18}
-        slidesPerView={4}
+        slidesPerView="auto"
         cssMode={true}
         mousewheel={true}
-        className="ml-16 pl-3"
+        className="ml-6 pl-3 md:ml-16"
         loop={false}
         navigation={true}
         modules={[Navigation]}
-        // breakpoints={{
-        //   320: {
-        //     width: 320,
-        //     slidesPerView: 1,
-        //   },
-        //   720: {
-        //     width: 720,
-        //     slidesPerView: 1.7,
-        //   },
-        //   // 1200: {
-        //   //   width: 1200,
-        //   //   slidesPerView: 3.4,
-        //   // },
-        // }}
       >
         {OUR_BLOGS.map((Lead, index) => {
           return (

@@ -3,8 +3,8 @@ import Link from "next/link";
 import { AiFillPlayCircle, AiOutlineGithub } from "react-icons/ai";
 const FeatureProject = () => {
   return (
-    <div className="ml-[107px] mr-8 mt-[34px] mb-[81px]">
-      <h1 className=" pb-4 text-3xl font-semibold cursor-default">
+    <div className="mb-[81px] ml-10 mr-8 mt-[34px] md:ml-[107px]">
+      <h1 className=" cursor-default pb-4 text-3xl font-semibold">
         Feature <span className="text-[#286FD9]">Project</span>
       </h1>
 
@@ -14,7 +14,7 @@ const FeatureProject = () => {
           alt="feature Image"
           width={1000}
           height={1000}
-          className="mix-blend-multiply ml-5 h-[261px] w-[261px]"
+          className="ml-5 h-[261px] w-[261px] mix-blend-multiply"
         />
         <Link href="/">
           <button className="absolute left-[79px] top-[198px] flex h-[52px] w-[160px] items-center justify-center rounded-[102px] bg-white transition duration-300 ease-in-out hover:scale-[1.15]">

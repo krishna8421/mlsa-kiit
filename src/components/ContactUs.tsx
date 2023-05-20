@@ -2,10 +2,16 @@ import Image from "next/image";
 import Link from "next/link";
 const ContactUs = () => {
   return (
-    <div className="mt-36 flex h-[339px] ">
-      <Image width={1920} height={1080} src="/Rectangle.png" alt="rectangle " className="w-[47%]" />
+    <div className="mt-36 flex h-[339px] w-full ">
+      <Image
+        width={1920}
+        height={1080}
+        src="/Rectangle.png"
+        alt="rectangle "
+        className="w-0 sm:w-[47%]"
+      />
 
-      <div className="w-[63%] bg-[#f4f4f4]">
+      <div className="w-full bg-[#f4f4f4] sm:w-[63%]">
         <div className="pl-[90px] pt-[70px] text-2xl font-bold">
           <h1 className="text-[#286FD9]">Join</h1>
           <h1>
