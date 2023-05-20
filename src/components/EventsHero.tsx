@@ -12,7 +12,7 @@ interface EventsHeroProps {
 
 const EventsHero: React.FC<EventsHeroProps> = ({ eventName, eventDate, lastDate, isLive }) => {
   return (
-    <div className="relative mx-auto mt-[8rem] h-[275px] w-[98vw] rounded-xl ">
+    <div className="relative mx-auto mt-[8rem] h-[275px] w-[98vw] max-w-[1920px] rounded-xl ">
       <Image
         src="/EventHeroAndroid.png"
         alt="Event Hero Android Image"
@@ -34,19 +34,19 @@ const EventsHero: React.FC<EventsHeroProps> = ({ eventName, eventDate, lastDate,
         </div>
       )}
       <div className="absolute right-0 top-0 flex flex-col justify-end px-7 py-6 text-right">
-        <h1 className="font-semibold text-white md:text-2xl  lg:text-[25px] 2xl:text-[2.1vw]">
+        <h1 className="font-semibold text-white md:text-2xl  lg:text-[25px] 2xl:text-4xl 2xl:mb-2">
           {eventName}
         </h1>
         <div className="flex items-center justify-end gap-2.5">
           <RxCalendar className="text-2xl text-white"></RxCalendar>
-          <h1 className="mt-1 font-normal text-white md:text-2xl lg:text-[25px] 2xl:text-[2.1vw] ">
+          <h1 className="mt-1 font-normal text-white md:text-2xl lg:text-[25px] 2xl:text-3xl ">
             {eventDate}
           </h1>
         </div>
-        <div className="duration-50 mb-[21px] mt-3.5 h-[2px] w-[382px] bg-white-line transition hover:bg-white"></div>
+        <div className="duration-50 mb-[21px] mt-3.5 h-[2px] self-end w-[30vw] 2xl:mb-2 2xl:mt-2  bg-white-line transition hover:bg-white"></div>
         <div className="flex items-center justify-end gap-2.5">
           <RxCalendar className="text-2xl text-white"></RxCalendar>
-          <h1 className="font-normal text-white md:text-2xl lg:text-[25px] 2xl:text-[2.1vw]">
+          <h1 className="font-normal text-white md:text-2xl lg:text-[25px] 2xl:text-3xl">
             {lastDate}
           </h1>
         </div>

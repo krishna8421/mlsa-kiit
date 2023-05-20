@@ -7,7 +7,7 @@ import NavbarItem from "./NavbarItem";
 
 const Navbar = () => {
   return (
-    <nav className="fixed left-0 right-0 top-0 z-40 w-screen px-6 py-3 backdrop-blur-md">
+    <nav className="fixed left-0 right-0 top-0 z-40 w-screen px-6 py-3 backdrop-blur-md max-w-[1920px] m-auto">
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-4">
           <Link href="/">
