@@ -45,7 +45,7 @@ const Hero = () => {
           </h1>
           <div className="relative">
             <Swiper
-              slidesPerView={2}
+              slidesPerView="auto"
               freeMode={true}
               loop={true}
               spaceBetween={10}

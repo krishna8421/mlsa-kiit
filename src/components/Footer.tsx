@@ -5,7 +5,7 @@ import { MdOutlineCopyright } from "react-icons/md";
 
 const Footer = () => {
   return (
-    <div className="flex w-screen flex-col overflow-hidden">
+    <div className="flex w-full flex-col overflow-hidden">
       <hr className="mb-[42px] mt-[93px] border-t-2 border-solid" />
       <div className="bottom-0 mb-[145px] ml-8 mr-8 flex flex-wrap gap-24 md:justify-center">
         <div className="h-20">

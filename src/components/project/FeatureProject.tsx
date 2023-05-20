@@ -3,8 +3,8 @@ import Link from "next/link";
 import { AiFillPlayCircle, AiOutlineGithub } from "react-icons/ai";
 const FeatureProject = () => {
   return (
-    <div className="lg:ml-[107px] lg:mr-8 mt-[34px] mb-[81px] sm:mx-8">
-      <h1 className=" pb-4 text-3xl font-semibold cursor-default">
+    <div className="mb-[81px] ml-10 mr-8 mt-[34px] md:ml-[107px]">
+      <h1 className=" cursor-default pb-4 text-3xl font-semibold">
         Feature <span className="text-[#286FD9]">Project</span>
       </h1>
       <div className="relative box-border flex justify-between rounded-lg bg-gradient-white text-white shadow-gray w-[97vw] lg:w-[100%] m-auto ">

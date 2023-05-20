@@ -22,12 +22,13 @@ const ProjectCarousel1 = () => {
   //   // fetachBlogs();
   // });
   return (
-    <div className="ml-[89px] mt-5  text-center">
+    <div className="ml-10 mt-5 text-center  md:ml-[89px]">
       <Swiper
         spaceBetween={18}
-        slidesPerView={4}
+        slidesPerView="auto"
         cssMode={true}
         mousewheel={true}
+        className="px-3"
         loop={false}
         navigation={true}
         modules={[Navigation]}
