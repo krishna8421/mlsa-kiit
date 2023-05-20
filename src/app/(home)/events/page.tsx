@@ -32,22 +32,22 @@ const EventLine: React.FC<eventLineProp> = ({ year, lineNum, yearLink }) => {
 const Events = () => {
   return (
     <>
-      <EventsHero
-        eventName="Android Development Submit"
-        eventDate="12 March 2023"
-        lastDate="9 March 2023"
-        isLive={true}
-      />
-      <div className="mt-16 flex items-center justify-center gap-8">
-        <h1 className="font-semibold md:text-2xl  lg:text-[25px] 2xl:text-[2.1vw]">
-          Our Past
-          <span className="ml-2 text-[#286FD9]">Successful Events</span>
-        </h1>
-        <RiHeart2Fill className="text-lg text-[#286FD9]"></RiHeart2Fill>
-      </div>
-      <EventLine year={2023} lineNum={1} yearLink="" />
-      <div className="mb-8 mt-10 w-full justify-center">
-        <div className="mx-auto flex w-[1010px] gap-12">
+      <div className="m-auto max-w-[1920px]">
+        <EventsHero
+          eventName="Android Development Submit"
+          eventDate="12 March 2023"
+          lastDate="9 March 2023"
+          isLive={true}
+        />
+        <div className="mt-16 flex items-center justify-center gap-8">
+          <h1 className="font-semibold md:text-2xl  lg:text-[25px] 2xl:text-[2.1vw]">
+            Our Past
+            <span className="ml-2 text-[#286FD9]">Successful Events</span>
+          </h1>
+          <RiHeart2Fill className="text-lg text-[#286FD9]"></RiHeart2Fill>
+        </div>
+        <EventLine year={2023} lineNum={1} yearLink="" />
+        <div className="mx-auto mb-8 mt-10 flex w-[1010px] gap-12 overflow-auto">
           <EventSlideItem
             bgColor="#9CE7FF"
             img="/eventImages/img1.png"
@@ -79,75 +79,75 @@ const Events = () => {
             link=""
           ></EventSlideItem>
         </div>
-      </div>
-      <EventLine year={2022} lineNum={2} yearLink="" />
-      <div className="mb-8 mt-10 w-full justify-center">
-        <div className="mx-auto flex w-[1010px] gap-12">
-          <EventSlideItem
-            bgColor="#DBAEFF"
-            img="/eventImages/img4.png"
-            ProjectName="Flutter Verse 1.0"
-            date="1st-28th Feb 2022"
-            numParticipants="280+ participants"
-            isButton={false}
-            isHero={false}
-            link=""
-          ></EventSlideItem>
-          <EventSlideItem
-            bgColor="#9CE1FF"
-            img="/eventImages/img5.png"
-            ProjectName="Flutter Verse 1.0"
-            date="1st-28th Feb 2022"
-            numParticipants="280+ participants"
-            isButton={false}
-            isHero={false}
-            link=""
-          ></EventSlideItem>
-          <EventSlideItem
-            bgColor="#D9FF9C"
-            img="/eventImages/img6.png"
-            ProjectName="Flutter Verse 1.0"
-            date="1st-28th Feb 2022"
-            numParticipants="280+ participants"
-            isButton={false}
-            isHero={false}
-            link=""
-          ></EventSlideItem>
+        <EventLine year={2022} lineNum={2} yearLink="" />
+        <div className="mb-8 mt-10 w-full justify-center">
+          <div className="mx-auto flex w-[1010px] gap-12">
+            <EventSlideItem
+              bgColor="#DBAEFF"
+              img="/eventImages/img4.png"
+              ProjectName="Flutter Verse 1.0"
+              date="1st-28th Feb 2022"
+              numParticipants="280+ participants"
+              isButton={false}
+              isHero={false}
+              link=""
+            ></EventSlideItem>
+            <EventSlideItem
+              bgColor="#9CE1FF"
+              img="/eventImages/img5.png"
+              ProjectName="Flutter Verse 1.0"
+              date="1st-28th Feb 2022"
+              numParticipants="280+ participants"
+              isButton={false}
+              isHero={false}
+              link=""
+            ></EventSlideItem>
+            <EventSlideItem
+              bgColor="#D9FF9C"
+              img="/eventImages/img6.png"
+              ProjectName="Flutter Verse 1.0"
+              date="1st-28th Feb 2022"
+              numParticipants="280+ participants"
+              isButton={false}
+              isHero={false}
+              link=""
+            ></EventSlideItem>
+          </div>
         </div>
-      </div>
-      <EventLine year={2021} lineNum={3} yearLink="" />
-      <div className="mb-8 mt-10 w-full justify-center">
-        <div className="mx-auto flex w-[1010px] gap-12">
-          <EventSlideItem
-            bgColor="#DBAEFF"
-            img="/eventImages/img7.png"
-            ProjectName="Flutter Verse 1.0"
-            date="1st-28th Feb 2022"
-            numParticipants="280+ participants"
-            isButton={false}
-            isHero={false}
-            link=""
-          ></EventSlideItem>
-          <EventSlideItem
-            bgColor="#9CE1FF"
-            img="/eventImages/img8.png"
-            ProjectName="Flutter Verse 1.0"
-            date="1st-28th Feb 2022"
-            numParticipants="280+ participants"
-            isButton={false}
-            isHero={false}
-            link=""
-          ></EventSlideItem>
-          <EventSlideItem
-            bgColor="#D9FF9C"
-            img="/eventImages/img9.png"
-            ProjectName="Flutter Verse 1.0"
-            date="1st-28th Feb 2022"
-            numParticipants="280+ participants"
-            isButton={false}
-            isHero={false}
-            link=""
-          ></EventSlideItem>
+        <EventLine year={2021} lineNum={3} yearLink="" />
+        <div className="mb-8 mt-10 w-full justify-center">
+          <div className="mx-auto flex w-[1010px] gap-12">
+            <EventSlideItem
+              bgColor="#DBAEFF"
+              img="/eventImages/img7.png"
+              ProjectName="Flutter Verse 1.0"
+              date="1st-28th Feb 2022"
+              numParticipants="280+ participants"
+              isButton={false}
+              isHero={false}
+              link=""
+            ></EventSlideItem>
+            <EventSlideItem
+              bgColor="#9CE1FF"
+              img="/eventImages/img8.png"
+              ProjectName="Flutter Verse 1.0"
+              date="1st-28th Feb 2022"
+              numParticipants="280+ participants"
+              isButton={false}
+              isHero={false}
+              link=""
+            ></EventSlideItem>
+            <EventSlideItem
+              bgColor="#D9FF9C"
+              img="/eventImages/img9.png"
+              ProjectName="Flutter Verse 1.0"
+              date="1st-28th Feb 2022"
+              numParticipants="280+ participants"
+              isButton={false}
+              isHero={false}
+              link=""
+            ></EventSlideItem>
+          </div>
         </div>
       </div>
     </>
