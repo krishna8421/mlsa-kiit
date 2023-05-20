@@ -17,7 +17,7 @@ const imgStyle: any = {
 
 const AlumniCard = ({ image, name, position, company, message }: Props) => {
   return (
-    <div className="mx-3 my-10 box-border flex h-[249px] w-[447px] flex-col rounded-[10px] bg-white px-5 py-4 text-start font-sans font-normal shadow-gray transition  duration-300 hover:shadow-blue">
+    <div className="mx-3 my-10 box-border flex h-[249px] w-[447px] flex-col rounded-[10px] bg-white px-5 py-4 text-start font-sans font-normal shadow-gray transition  duration-300 hover:shadow-blue flex-grow-0">
       <div className="relative pb-7 ">
         <Image
           src={image}

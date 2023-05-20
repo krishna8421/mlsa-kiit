@@ -9,7 +9,7 @@ const Sponsors = () => {
         <div>Our</div>
         <div className="text-[#3B61CF]">Sponsors</div>
       </div>
-      <div className="flex flex-wrap items-center justify-center gap-24 px-10 pt-10">
+      <div className="flex flex-wrap items-center justify-center gap-12 px-10 pt-10">
         {OUR_SPONSORS.map((sponsor) => (
           <Link href={sponsor.site} key={sponsor.site} target="_blank">
             <Image

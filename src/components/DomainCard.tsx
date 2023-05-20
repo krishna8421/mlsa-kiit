@@ -14,7 +14,7 @@ const DomainCard = ({ logo, heading, about }: Props) => {
         <div
           className={`${
             logoTyp === "number" ? " text-black" : "text-[#3B61CF]"
-          } absolute left-[12px] top-[-48px] flex h-[96px] w-[96px] cursor-pointer items-center justify-center rounded-full border-2 border-[#286FD9] bg-white px-5 py-5 text-4xl font-semibold  md:px-6 md:py-4`}
+          } absolute left-[12px] top-[-48px] flex h-[96px] w-[96px] items-center justify-center rounded-full border-2 border-[#286FD9] bg-white px-5 py-5 text-4xl font-semibold  md:px-6 md:py-4`}
         >
           {logo}
         </div>

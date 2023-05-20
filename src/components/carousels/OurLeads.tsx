@@ -57,18 +57,29 @@ const OurLeads = () => {
     // fetachLeads();
   });
   return (
-    <div className="  text-center">
+    <div className="mx-auto max-w-[1440px] text-center pl-[80px]">
       <h1 className="mb-9 text-3xl font-semibold">
         Our <span className="text-[#3B61CF]">Leads</span>
       </h1>
       <Swiper
         className="ml-20 !w-full"
         spaceBetween={14}
-        slidesPerView={3}
+        slidesPerView={1}
         cssMode={true}
         mousewheel={true}
         navigation={true}
         modules={[Navigation]}
+        breakpoints={{
+          670: {
+            slidesPerView: 1.5,
+          },
+          950: {
+            slidesPerView: 2,
+          },
+          1240: {
+            slidesPerView: 2.5,
+          },
+        }}
       >
         {OUR_LEADS.map((Lead, index) => {
           return (

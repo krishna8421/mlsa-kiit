@@ -1,5 +1,6 @@
 import EventSlideItem from "@/components/EventSlideItem";
 import EventsHero from "@/components/EventsHero";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { RiHeart2Fill } from "react-icons/ri";
@@ -48,6 +49,13 @@ const Events = () => {
         </div>
         <EventLine year={2023} lineNum={1} yearLink="" />
         <div className="mx-auto mb-8 mt-10 flex w-[1010px] gap-12 overflow-auto">
+          <Image
+            src="/eventImages/eventsBgLogo.png"
+            alt="events design"
+            width={600}
+            height={600}
+            className="absolute left-[-126px] h-[254px] w-[254px] z-[-10]"
+          ></Image>
           <EventSlideItem
             bgColor="#9CE7FF"
             img="/eventImages/img1.png"
@@ -80,8 +88,15 @@ const Events = () => {
           ></EventSlideItem>
         </div>
         <EventLine year={2022} lineNum={2} yearLink="" />
-        <div className="mb-8 mt-10 w-full justify-center">
+        <div className="mb-8 mt-10 w-full relative overflow-hidden justify-center">
           <div className="mx-auto flex w-[1010px] gap-12">
+            <Image
+              src="/eventImages/eventsBgLogo.png"
+              alt="events design"
+              width={600}
+              height={600}
+              className="absolute right-[-126px] h-[254px] w-[254px] z-[-10]"
+            ></Image>
             <EventSlideItem
               bgColor="#DBAEFF"
               img="/eventImages/img4.png"
@@ -117,6 +132,14 @@ const Events = () => {
         <EventLine year={2021} lineNum={3} yearLink="" />
         <div className="mb-8 mt-10 w-full justify-center">
           <div className="mx-auto flex w-[1010px] gap-12">
+            <Image
+              src="/eventImages/eventsBgLogo.png"
+              alt="events design"
+              width={600}
+              height={600}
+              className="absolute left-[-126px] rotate-180 h-[254px] w-[254px] z-[-10]"
+              style={{ transformOrigin: 'center', transform: 'rotate(-90deg)' }}
+            ></Image>
             <EventSlideItem
               bgColor="#DBAEFF"
               img="/eventImages/img7.png"
