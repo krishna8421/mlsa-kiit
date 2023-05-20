@@ -4,10 +4,30 @@ import { YOUTUBE_URL } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
 import NavbarItem from "./NavbarItem";
+import { useEffect, useState } from "react";
+
+const OFFSET = 66;
 
 const Navbar = () => {
+  const [showBackground, setShowBackground] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY >= OFFSET) {
+        setShowBackground(true)
+      }
+      else setShowBackground(false)
+    }
+
+    window.addEventListener('scroll', handleScroll)
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
+
   return (
-    <nav className="fixed left-0 right-0 top-0 z-40 w-screen px-6 py-3 backdrop-blur-md">
+    <nav className={`fixed left-0 right-0 top-0 z-40 w-screen px-6 py-3 max-w-[1920px] m-auto ${showBackground ? "backdrop-blur-md": ""}`}>
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-4">
           <Link href="/">
