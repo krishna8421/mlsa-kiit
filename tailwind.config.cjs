@@ -8,17 +8,18 @@ module.exports = {
       gray: "0px 1px 10px rgba(0, 0, 0, 0.15), 2px 2px 2px -1px rgba(125, 125, 125, 0.1)",
       project: "0px 4px 4px rgba(0, 0, 0, 0.25)",
     },
+     screens: {
+      sm: "480px",
+      md: "768px",
+      lg: "976px",
+      "2xl": "1440px",
+      "3xl": "1990px",
+
+      recentEvents: "542px",
+    },
     container: {
       center: true,
       padding: "2rem",
-      screens: {
-        sm: "480px",
-        md: "768px",
-        lg: "976px",
-        lg2: "1059px",
-        "2xl": "1440px",
-        "3xl": "1990px",
-      },
     },
     extend: {
       backgroundImage: {

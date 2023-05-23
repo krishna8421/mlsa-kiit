@@ -3,36 +3,51 @@
 import { YOUTUBE_URL } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
-import NavbarItem from "./NavbarItem";
 import { useEffect, useState } from "react";
+import NavbarItem from "./NavbarItem";
 
 const OFFSET = 66;
 
 const Navbar = () => {
-  const [showBackground, setShowBackground] = useState(false)
+  const [showBackground, setShowBackground] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY >= OFFSET) {
-        setShowBackground(true)
-      }
-      else setShowBackground(false)
-    }
+        setShowBackground(true);
+      } else setShowBackground(false);
+    };
 
-    window.addEventListener('scroll', handleScroll)
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll)
-    }
-  }, [])
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
-    <nav className={`fixed left-0 right-0 top-0 z-40 w-screen px-6 py-3 max-w-[1920px] m-auto ${showBackground ? "backdrop-blur-md": ""}`}>
+    <nav
+      className={`fixed left-0 right-0 top-0 z-40 m-auto w-screen max-w-[1920px] px-6 py-3 ${
+        showBackground ? "backdrop-blur-md" : ""
+      }`}
+    >
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-4">
           <Link href="/">
-            <Image src="/mlsa-logo.png" alt="MLSA Logo" width={40} height={40} loading="eager" />
+            <Image src="/mlsa-logo.png" alt="MLSA Logo" width={400} height={400} loading="eager"  className="w-[40px] h-[40px]"/>
           </Link>
+          <span className="bg-gradient-to-r from-[#0070C5] to-[#3BABCF] bg-clip-text text-[20px] font-semibold text-transparent lg:text-[1.7vw]">
+            MLSA <span className="hidden md:inline-block">KIIT</span>
+          </span>
+        </div>
+        <div>
+          <Image
+            src="/menu_duo_alt.png"
+            alt="navbar menu"
+            width={200}
+            height={200}
+            className="h-6 w-6 md:hidden"
+          ></Image>
         </div>
         <div className="hidden items-center gap-8 md:flex">
           <NavbarItem href="/events">Events</NavbarItem>

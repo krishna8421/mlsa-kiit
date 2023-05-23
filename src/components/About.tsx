@@ -32,14 +32,14 @@ const AboutLogo: React.FC<AboutLogoProps> = ({ icon, label, line }) => {
 const About = () => {
   return (
     <>
-      <div className="flex flex-col  items-center py-[72px]">
-        <h1 className="text-3xl font-semibold lg:leading-[40px] 2xl:text-[2.1vw] 2xl:leading-[6vh]">
+      <div className="flex flex-col items-center py-[72px]">
+        <h1 className="text-lg font-semibold md:text-3xl lg:leading-[40px] 2xl:text-[2.1vw] 2xl:leading-[6vh]">
           About <span className="text-[#3B61CF]">Us</span>
         </h1>
-        <h2 className="mt-8 flex flex-col items-center gap-2 font-semibold md:text-2xl  lg:text-[25px] lg:leading-[33px] 2xl:text-[2.1vw] 2xl:leading-[4vh]">
+        <h2 className="mt-8 flex flex-col items-center gap-2 text-[15px] font-semibold leading-3 md:text-2xl lg:text-[25px] lg:leading-[33px] 2xl:text-[2.1vw] 2xl:leading-[4vh]">
           We Have Been Doing Projects And<span>Events since 2017.</span>
         </h2>
-        <h3 className="leading-23 mx-auto mt-[18px] w-[65vw] text-center text-[18px]">
+        <h3 className="leading-23 mx-auto mt-[18px] w-[90vw] text-center text-[15px] md:w-[65vw] md:text-[18px]">
           {ABOUT_US.description}
         </h3>
         <div className="relative mt-[56px] flex items-center md:flex-row">
