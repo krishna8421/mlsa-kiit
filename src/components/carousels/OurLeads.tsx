@@ -1,6 +1,5 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import { Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import LeadsCard from "./LeadsCard";
@@ -98,7 +97,7 @@ const OurLeads = () => {
   //   // fetachLeads();
   // }, []);
   return (
-    <div className="mx-auto max-w-[1440px] text-center pl-[80px]">
+    <div className=" text-center">
       <h1 className="mb-9 text-3xl font-semibold">
         Our <span className="text-[#3B61CF]">Leads</span>
       </h1>
@@ -111,17 +110,6 @@ const OurLeads = () => {
         mousewheel={true}
         navigation={true}
         modules={[Navigation]}
-        breakpoints={{
-          670: {
-            slidesPerView: 1.5,
-          },
-          950: {
-            slidesPerView: 2,
-          },
-          1240: {
-            slidesPerView: 2.5,
-          },
-        }}
       >
         {OUR_LEADS.map((Lead, index) => {
           return (

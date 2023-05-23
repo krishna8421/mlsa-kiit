@@ -22,7 +22,7 @@ const Hero = () => {
           alt="Hero Image"
           width={1920}
           height={1080}
-          className="absolute z-0 h-full w-full object-cover"
+          className="h- absolute z-0 h-full w-full object-cover"
         />
         <div className="z-29 absolute left-[6vw] top-[25vh] flex h-screen w-full flex-col gap-3 text-2xl font-semibold transition-all duration-150 delay-100 sm:text-3xl md:left-[11vw] md:text-4xl lg:top-[40vh]  lg:leading-[40px] 2xl:leading-[6vh]">
           <div>
@@ -39,8 +39,8 @@ const Hero = () => {
             </span>
           </Link>
         </div>
-        <div className="absolute bottom-[-5rem] w-full sm:right-7 sm:w-[520px]">
-          <h1 className="my-3.5 pl-8 text-[25px] font-semibold text-white md:text-[2.3vw]">
+        <div className="absolute bottom-[-1rem] w-full sm:right-7 sm:w-[520px]">
+          <h1 className=" pl-8 text-[25px] font-semibold text-white md:text-[2.3vw]">
             Recent Events
           </h1>
           <div className="relative">
@@ -48,7 +48,7 @@ const Hero = () => {
               slidesPerView="auto"
               freeMode={true}
               loop={true}
-              spaceBetween={10}
+              spaceBetween={5}
               pagination={{
                 clickable: true,
               }}
@@ -57,7 +57,7 @@ const Hero = () => {
               className="hero-swiper"
             >
               {HERO_SECTION_EVENTS.map((item, index) => (
-                <SwiperSlide key={index}>
+                <SwiperSlide key={index} className="h-[258px] w-[254px]">
                   <EventSlideItem
                     bgColor={item.bgColor}
                     img={item.img}

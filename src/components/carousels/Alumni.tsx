@@ -69,7 +69,7 @@ const OurAlumni = () => {
   //   // fetachAlumni();
   // });
   return (
-    <div className="relative max-w-[1440px] py-[117px] mx-auto pl-[80px]">
+    <div className="relative  py-[117px] ">
       <img src="/quoteLeft.png" alt="quoted" className="absolute left-0 top-[11%] h-48 w-52" />
       <div className="py-5  text-center">
         <h1 className="mb-14 text-3xl font-semibold">
@@ -84,17 +84,6 @@ const OurAlumni = () => {
           loop={false}
           navigation={true}
           modules={[Navigation]}
-          breakpoints={{
-            670: {
-              slidesPerView: 1.5,
-            },
-            950: {
-              slidesPerView: 2,
-            },
-            1240: {
-              slidesPerView: 2.5,
-            },
-          }}
         >
           {OUR_ALUMNI.map((Lead, index) => {
             return (
