@@ -58,7 +58,7 @@ const OurBlogs = () => {
   //   // fetachBlogs();
   // });
   return (
-    <div className="mt-5 text-center max-w-[1440px] mx-auto pl-[80px]">
+    <div className=" mt-5  text-center">
       <h1 className="mb-10 text-3xl font-semibold">
         Our<span className="text-[#3B61CF]"> Blogs</span>
       </h1>
@@ -71,24 +71,6 @@ const OurBlogs = () => {
         loop={false}
         navigation={true}
         modules={[Navigation]}
-        breakpoints={{
-            500: {
-              slidesPerView: 1.5,
-            },
-            660: {
-              slidesPerView: 2,
-            },
-            900: {
-              slidesPerView: 2.5,
-            },
-            1100: {
-              slidesPerView: 3,
-            },
-            1300: {
-              slidesPerView: 3.5,
-            },
-            
-          }}
       >
         {OUR_BLOGS.map((Lead, index) => {
           return (
