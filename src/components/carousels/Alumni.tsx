@@ -69,25 +69,35 @@ const OurAlumni = () => {
   //   // fetachAlumni();
   // });
   return (
-    <div className="relative  py-[117px] ">
-      <img src="/quoteLeft.png" alt="quoted" className="absolute left-0 top-[11%] h-48 w-52" />
+    <div className="relative  pt-16 md:py-[117px] ">
+      <img
+        src="/quoteLeft.png"
+        alt="quoted"
+        className="left-0 top-[11%] hidden h-48 w-52 md:absolute"
+      />
       <div className="py-5  text-center">
-        <h1 className="mb-14 text-3xl font-semibold">
+        <h1 className="mb-14 text-lg font-semibold md:text-3xl">
           Message From <span className="text-[#3B61CF]">Our Alumni</span>
         </h1>
         <Swiper
           spaceBetween={10}
-          slidesPerView="auto"
+          slidesPerView={1}
           cssMode={true}
           mousewheel={true}
           className="ml-6 px-3 md:ml-16 "
           loop={false}
           navigation={true}
           modules={[Navigation]}
+          breakpoints={{
+            480: {
+              slidesPerView: "auto",
+              spaceBetween: 2,
+            },
+          }}
         >
           {OUR_ALUMNI.map((Lead, index) => {
             return (
-              <SwiperSlide key={index} className=" w-[460px] overflow-visible">
+              <SwiperSlide key={index} className=" overflow-visible sm:w-[460px]">
                 <AlumniCard {...Lead} />
               </SwiperSlide>
             );
@@ -97,7 +107,7 @@ const OurAlumni = () => {
       <img
         src="/quoteLeft.png"
         alt="quoted"
-        className="absolute bottom-[1.1%]  right-0 h-48 w-52 rotate-180"
+        className="bottom-[1.1%] right-0  hidden  h-48 w-52 rotate-180 md:absolute"
       />
     </div>
   );
