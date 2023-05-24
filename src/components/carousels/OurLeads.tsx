@@ -98,7 +98,7 @@ const OurLeads = () => {
   // }, []);
   return (
     <div className=" text-center">
-      <h1 className="mb-9 text-3xl font-semibold">
+      <h1 className="mb-9 text-lg font-semibold md:text-3xl">
         Our <span className="text-[#3B61CF]">Leads</span>
       </h1>
       <Swiper

@@ -1,7 +1,6 @@
 "use client";
 
 // import QuoteLeft from ".../assets/QuoteLeft.png";
-import { useEffect, useState } from "react";
 import { Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import BlogsCard from "./BlogsCard";
@@ -58,23 +57,29 @@ const OurBlogs = () => {
   //   // fetachBlogs();
   // });
   return (
-    <div className=" mt-5  text-center">
-      <h1 className="mb-10 text-3xl font-semibold">
+    <div className=" text-center  sm:mt-5">
+      <h1 className="mb-10 text-lg font-semibold md:text-3xl">
         Our<span className="text-[#3B61CF]"> Blogs</span>
       </h1>
       <Swiper
         spaceBetween={18}
-        slidesPerView="auto"
+        slidesPerView={1}
         cssMode={true}
         mousewheel={true}
-        className="ml-6 pl-3 md:ml-16"
+        className="ml-5 pl-3 md:ml-16"
         loop={false}
         navigation={true}
         modules={[Navigation]}
+        breakpoints={{
+          420: {
+            slidesPerView: "auto",
+            spaceBetween: 2,
+          },
+        }}
       >
         {OUR_BLOGS.map((Lead, index) => {
           return (
-            <SwiperSlide key={index} className=" w-[345px] overflow-visible">
+            <SwiperSlide key={index} className=" overflow-visible sm:w-[345px]">
               <BlogsCard {...Lead} />
             </SwiperSlide>
           );
