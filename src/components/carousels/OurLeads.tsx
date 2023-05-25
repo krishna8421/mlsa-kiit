@@ -102,7 +102,7 @@ const OurLeads = () => {
         Our <span className="text-[#3B61CF]">Leads</span>
       </h1>
       <Swiper
-        className="ml-8 px-3 md:ml-20"
+        className="ml-6 px-3 md:ml-20"
         spaceBetween={14}
         slidesPerView="auto"
         cssMode={true}

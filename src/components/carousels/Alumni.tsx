@@ -69,7 +69,7 @@ const OurAlumni = () => {
   //   // fetachAlumni();
   // });
   return (
-    <div className="relative  pt-16 md:py-[117px] ">
+    <div className="relative mx-3 pt-16 md:py-[117px] ">
       <img
         src="/quoteLeft.png"
         alt="quoted"
@@ -84,7 +84,7 @@ const OurAlumni = () => {
           slidesPerView={1}
           cssMode={true}
           mousewheel={true}
-          className="ml-6 px-3 md:ml-16 "
+          className=" px-3 md:ml-16 "
           loop={false}
           navigation={true}
           modules={[Navigation]}
