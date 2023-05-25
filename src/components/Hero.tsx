@@ -40,7 +40,7 @@ const Hero = () => {
           </Link>
         </div>
       </div>
-      <div className="bottom-[-1rem] w-full sm:right-7 mx-auto sm:w-[520px] md:absolute">
+      <div className="bottom-[-2rem] mx-auto w-full sm:right-7 sm:w-[520px] md:absolute">
         <h1 className="pl-3 text-lg font-semibold md:my-2.5 md:pl-8 md:text-2xl md:text-white lg:text-[2.3vw]">
           Recent Events
         </h1>
@@ -57,17 +57,9 @@ const Hero = () => {
             modules={[Pagination, Navigation, FreeMode]}
             className="hero-swiper"
             breakpoints={{
-              300: {
-                slidesPerView: 1,
-              },
-              350: {
-                slidesPerView: 1.2,
-              },
               420: {
-                slidesPerView: 1.5,
-              },
-              550: {
-                slidesPerView: 2,
+                slidesPerView: "auto",
+                spaceBetween: 1,
               },
             }}
           >
