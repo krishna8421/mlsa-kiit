@@ -57,7 +57,7 @@ const OurBlogs = () => {
   //   // fetachBlogs();
   // });
   return (
-    <div className=" mx-3 text-center  sm:mt-5">
+    <div className=" mx-3 text-center sm:mr-0  sm:mt-5">
       <h1 className="mb-10 text-lg font-semibold md:text-3xl">
         Our<span className="text-[#3B61CF]"> Blogs</span>
       </h1>
@@ -66,7 +66,7 @@ const OurBlogs = () => {
         slidesPerView={1}
         cssMode={true}
         mousewheel={true}
-        className=" px-4 md:ml-16"
+        className=" px-4 sm:px-2 md:ml-16"
         loop={false}
         navigation={true}
         modules={[Navigation]}

@@ -1,5 +1,5 @@
 "use client";
-import { OUR_PROJECTS } from "@/constants";
+import { OUR_PROJECTS2 } from "@/constants";
 import { Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import ProjectCard from "./ProjectCard";
@@ -30,7 +30,7 @@ const ProjectCarousel2 = () => {
         navigation={true}
         modules={[Navigation]}
       >
-        {OUR_PROJECTS.map((project, index) => {
+        {OUR_PROJECTS2.map((project, index) => {
           {
             if (bgIndex > 3) {
               bgIndex = 0;
