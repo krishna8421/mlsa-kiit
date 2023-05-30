@@ -1,6 +1,7 @@
 "use client";
 
 import AlumniCard from "./AlumniCard";
+import Image from "next/image";
 
 import { Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -69,8 +70,10 @@ const OurAlumni = () => {
   //   // fetachAlumni();
   // });
   return (
-    <div className="relative mx-3 pt-16 md:py-[117px] ">
-      <img
+    <div className="relative mx-3 pt-16 sm:mx-0 md:py-[117px] ">
+      <Image
+        width={20}
+        height={20}
         src="/quoteLeft.png"
         alt="quoted"
         className="left-0 top-[11%] hidden h-48 w-52 md:absolute"
@@ -84,7 +87,7 @@ const OurAlumni = () => {
           slidesPerView={1}
           cssMode={true}
           mousewheel={true}
-          className=" px-3 md:ml-16 "
+          className="  md:ml-16 "
           loop={false}
           navigation={true}
           modules={[Navigation]}
@@ -104,7 +107,9 @@ const OurAlumni = () => {
           })}
         </Swiper>
       </div>
-      <img
+      <Image
+        width={20}
+        height={20}
         src="/quoteLeft.png"
         alt="quoted"
         className="bottom-[1.1%] right-0  hidden  h-48 w-52 rotate-180 md:absolute"

@@ -1,6 +1,6 @@
 "use client";
 // import QuoteLeft from ".../assets/QuoteLeft.png";
-import { OUR_PROJECTS } from "@/constants";
+import { OUR_PROJECTS1 } from "@/constants";
 import { Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import ProjectCard from "./ProjectCard";
@@ -33,7 +33,7 @@ const ProjectCarousel1 = () => {
         navigation={true}
         modules={[Navigation]}
       >
-        {OUR_PROJECTS.map((project, index) => {
+        {OUR_PROJECTS1.map((project, index) => {
           {
             if (bgIndex > 3) {
               bgIndex = 0;
