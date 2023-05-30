@@ -1,5 +1,6 @@
 import EventSlideItem from "@/components/EventSlideItem";
 import EventsHero from "@/components/EventsHero";
+import { EVENTS2021, EVENTS2022, EVENTS2023 } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -18,7 +19,7 @@ const EventLine: React.FC<eventLineProp> = ({ year, lineNum, yearLink }) => {
         <div className="flex h-[61px] w-[61px] items-center justify-center rounded-full bg-[#083475] text-white md:text-2xl lg:text-[25px] 2xl:text-[2.1vw]">
           {lineNum}
         </div>
-        <div className="h-[3px] w-full bg-blue-line hover:bg-[#286FD9]"></div>
+        <div className="h-[3px] w-full bg-blue-line hover:bg-[#286FD9] "></div>
       </div>
       <div className="text-lg font-semibold">
         Year
@@ -54,79 +55,45 @@ const Events = () => {
             alt="events design"
             width={600}
             height={600}
-            className="absolute left-[-126px] h-[254px] w-[254px] z-[-10]"
+            className="absolute left-[-126px] z-[-10] h-[254px] w-[254px]"
           ></Image>
-          <EventSlideItem
-            bgColor="#9CE7FF"
-            img="/eventImages/img1.png"
-            ProjectName="Flutter Verse 1.0"
-            date="1st-28th Feb 2022"
-            numParticipants="280+ participants"
-            isButton={false}
-            isHero={false}
-            link=""
-          ></EventSlideItem>
-          <EventSlideItem
-            bgColor="#9CFFE1"
-            img="/eventImages/img2.png"
-            ProjectName="Flutter Verse 1.0"
-            date="1st-28th Feb 2022"
-            numParticipants="280+ participants"
-            isButton={false}
-            isHero={false}
-            link=""
-          ></EventSlideItem>
-          <EventSlideItem
-            bgColor="#FFCC9C"
-            img="/eventImages/img3.png"
-            ProjectName="Flutter Verse 1.0"
-            date="1st-28th Feb 2022"
-            numParticipants="280+ participants"
-            isButton={false}
-            isHero={false}
-            link=""
-          ></EventSlideItem>
+          {EVENTS2023.map((event) => (
+            <EventSlideItem
+              key={event.ProjectName}
+              bgColor={event.bgColor}
+              img={event.img}
+              ProjectName={event.ProjectName}
+              date={event.date}
+              numParticipants={event.numParticipants}
+              isButton={false}
+              isHero={false}
+              link=""
+            ></EventSlideItem>
+          ))}
         </div>
         <EventLine year={2022} lineNum={2} yearLink="" />
-        <div className="mb-8 mt-10 w-full relative overflow-hidden justify-center">
+        <div className="relative mb-8 mt-10 w-full justify-center overflow-hidden">
           <div className="mx-auto flex w-[1010px] gap-12">
             <Image
               src="/eventImages/eventsBgLogo.png"
               alt="events design"
               width={600}
               height={600}
-              className="absolute right-[-126px] h-[254px] w-[254px] z-[-10]"
+              className="absolute right-[-126px] z-[-10] h-[254px] w-[254px]"
             ></Image>
-            <EventSlideItem
-              bgColor="#DBAEFF"
-              img="/eventImages/img4.png"
-              ProjectName="Flutter Verse 1.0"
-              date="1st-28th Feb 2022"
-              numParticipants="280+ participants"
-              isButton={false}
-              isHero={false}
-              link=""
-            ></EventSlideItem>
-            <EventSlideItem
-              bgColor="#9CE1FF"
-              img="/eventImages/img5.png"
-              ProjectName="Flutter Verse 1.0"
-              date="1st-28th Feb 2022"
-              numParticipants="280+ participants"
-              isButton={false}
-              isHero={false}
-              link=""
-            ></EventSlideItem>
-            <EventSlideItem
-              bgColor="#D9FF9C"
-              img="/eventImages/img6.png"
-              ProjectName="Flutter Verse 1.0"
-              date="1st-28th Feb 2022"
-              numParticipants="280+ participants"
-              isButton={false}
-              isHero={false}
-              link=""
-            ></EventSlideItem>
+            {EVENTS2022.map((event) => (
+              <EventSlideItem
+                key={event.ProjectName}
+                bgColor={event.bgColor}
+                img={event.img}
+                ProjectName={event.ProjectName}
+                date={event.date}
+                numParticipants={event.numParticipants}
+                isButton={false}
+                isHero={false}
+                link=""
+              ></EventSlideItem>
+            ))}
           </div>
         </div>
         <EventLine year={2021} lineNum={3} yearLink="" />
@@ -137,39 +104,22 @@ const Events = () => {
               alt="events design"
               width={600}
               height={600}
-              className="absolute left-[-126px] rotate-180 h-[254px] w-[254px] z-[-10]"
-              style={{ transformOrigin: 'center', transform: 'rotate(-90deg)' }}
+              className="absolute left-[-126px] z-[-10] h-[254px] w-[254px] rotate-180"
+              style={{ transformOrigin: "center", transform: "rotate(-90deg)" }}
             ></Image>
-            <EventSlideItem
-              bgColor="#DBAEFF"
-              img="/eventImages/img7.png"
-              ProjectName="Flutter Verse 1.0"
-              date="1st-28th Feb 2022"
-              numParticipants="280+ participants"
-              isButton={false}
-              isHero={false}
-              link=""
-            ></EventSlideItem>
-            <EventSlideItem
-              bgColor="#9CE1FF"
-              img="/eventImages/img8.png"
-              ProjectName="Flutter Verse 1.0"
-              date="1st-28th Feb 2022"
-              numParticipants="280+ participants"
-              isButton={false}
-              isHero={false}
-              link=""
-            ></EventSlideItem>
-            <EventSlideItem
-              bgColor="#D9FF9C"
-              img="/eventImages/img9.png"
-              ProjectName="Flutter Verse 1.0"
-              date="1st-28th Feb 2022"
-              numParticipants="280+ participants"
-              isButton={false}
-              isHero={false}
-              link=""
-            ></EventSlideItem>
+            {EVENTS2021.map((event) => (
+              <EventSlideItem
+                key={event.ProjectName}
+                bgColor={event.bgColor}
+                img={event.img}
+                ProjectName={event.ProjectName}
+                date={event.date}
+                numParticipants={event.numParticipants}
+                isButton={false}
+                isHero={false}
+                link=""
+              ></EventSlideItem>
+            ))}
           </div>
         </div>
       </div>
