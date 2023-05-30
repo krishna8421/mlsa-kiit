@@ -1,6 +1,5 @@
 import { ILayoutProps } from "@/types";
 import Link from "next/link";
-import { useState } from "react";
 
 interface NavbarItemProps extends ILayoutProps {
   href: string;
