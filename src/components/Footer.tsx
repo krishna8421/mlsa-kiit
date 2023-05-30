@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <div className="flex w-full flex-col overflow-hidden">
       <hr className="mb-[42px] mt-[93px] border-t-2 border-solid" />
-      <div className="bottom-0 mb-[145px] ml-8 mr-8 flex flex-wrap gap-24 md:justify-center">
+      <div className="bottom-0 mb-[145px] ml-8 mr-8 flex flex-wrap justify-center gap-24">
         <div className="h-20">
           <div className="flex gap-4">
             <Image src="/mlsa-logo.png" alt="MLSA Logo" width={82} height={72} loading="eager" />
@@ -24,7 +24,7 @@ const Footer = () => {
             <div className="h-[206px] w-[2px] bg-blue-line hover:bg-[#286FD9]"></div>
           </div>
         </div>
-        <div className="flex-col text-xl font-normal ">
+        <div className="flex-col text-center md:text-start text-xl font-normal">
           <div className="flex gap-2 text-2xl font-semibold">
             <div className="">Follow</div>
             <span className="text-[#286FD9]">Us</span>
@@ -45,16 +45,18 @@ const Footer = () => {
             </Link>
           </div>
         </div>
-        <div className="flex-col text-xl font-normal">
+        <div className="flex-col text-center md:text-start text-xl font-normal">
           <div className="flex gap-2 text-2xl font-semibold">
-            <div>Contact </div>
-            <span className="text-[#286FD9]">Us</span>
+            <div className="w-full">
+              <span>Contact</span>
+              <span className="text-[#286FD9] ml-2">Us</span>
+            </div>
           </div>
           <div className=" mt-2">T : +91 080045 09825</div>
           <div className=" mt-1">F : +91 080031 99063</div>
           <div className=" mt-1">E : MSCKIIT@OUTLOOK.COM</div>
         </div>
-        <div className="flex-col text-xl font-normal ">
+        <div className="flex-col text-xl font-normal text-center md:text-start">
           <div className="flex gap-2 text-2xl font-semibold">
             <div>Visit </div>
             <span className="text-[#286FD9]">Us</span>

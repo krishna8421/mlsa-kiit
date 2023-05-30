@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Sponsors = () => {
   return (
-    <div className="mt-24 flex-col justify-around overflow-x-auto pl-8">
+    <div className="mt-24 flex-col justify-around overflow-x-auto md:pl-8">
       <div className="mb-8 flex justify-center gap-3 text-3xl font-semibold">
         <div>Our</div>
         <div className="text-[#3B61CF]">Sponsors</div>

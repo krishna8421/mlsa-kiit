@@ -3,13 +3,17 @@
 import { YOUTUBE_URL } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import NavbarItem from "./NavbarItem";
+import MobileView from "./MobileView";
+import { VscChromeClose } from 'react-icons/vsc'
 
 const OFFSET = 66;
 
 const Navbar = () => {
   const [showBackground, setShowBackground] = useState(false);
+  const [showMobileMenu , setShowmobileMenu] = useState(false)
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,6 +28,11 @@ const Navbar = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  const toggleMobileMenu = useCallback(() => {
+    setShowmobileMenu((current) => !current)
+  }, [])
+
 
   return (
     <nav
@@ -40,25 +49,28 @@ const Navbar = () => {
             MLSA <span className="hidden md:inline-block">KIIT</span>
           </span>
         </div>
-        <div>
-          <Image
-            src="/menu_duo_alt.png"
-            alt="navbar menu"
-            width={200}
-            height={200}
-            className="h-6 w-6 md:hidden"
-          ></Image>
+        <div onClick={toggleMobileMenu}>
+          {!showMobileMenu ? (
+            <Image
+              src="/menu_duo_alt.png"
+              alt="navbar menu"
+              width={200}
+              height={200}
+              className="h-6 w-6 md:hidden relative"
+            ></Image>
+          ): (
+            <VscChromeClose />
+          )}
+          <MobileView visible={showMobileMenu}/>
         </div>
-        <div className="hidden items-center gap-8 md:flex">
+        <div className="hidden md:items-center gap-8 md:flex">
           <NavbarItem href="/events">Events</NavbarItem>
           <NavbarItem href="/projects">Projects</NavbarItem>
-          <NavbarItem href="/blogs">Blog</NavbarItem>
+          <NavbarItem href="/blog">Blog</NavbarItem>
           <NavbarItem href="/gallery">Gallery</NavbarItem>
           <NavbarItem href="/teams">Teams</NavbarItem>
           <NavbarItem href={YOUTUBE_URL}>Youtube</NavbarItem>
-          <NavbarItem href="/contact" type="button">
-            Contact
-          </NavbarItem>
+          <NavbarItem href="/contact" type="button">Contact</NavbarItem>
         </div>
       </div>
     </nav>
