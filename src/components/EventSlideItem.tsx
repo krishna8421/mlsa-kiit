@@ -38,7 +38,13 @@ const EventSlideItem: React.FC<EventSlideItemProps> = ({
       style={mainDivBG}
     >
       <div className="mx-auto pt-2" style={containerStyle}>
-        <Image src={img} alt="event item" width={1200} height={720} className="w-full"></Image>
+        <Image
+          src={img}
+          alt="event item"
+          width={1200}
+          height={720}
+          className={`h-[134px] w-full object-cover rounded-xl object-top ${isHero ? "h-[105px]":""}`}
+        ></Image>
         <div className="ml-[12px] pt-3">
           <div>
             <h2 className="text-xs md:text-lg">{ProjectName}</h2>
@@ -50,7 +56,7 @@ const EventSlideItem: React.FC<EventSlideItemProps> = ({
           <div className="mt-3 cursor-pointer text-xs font-normal md:text-lg">
             <Link href={link}>
               {!isButton ? (
-                <div>View More</div>
+                <div className="hover:font-medium">View More</div>
               ) : (
                 <button className="border-0 bg-none font-semibold text-[#3B61CF] outline-0">
                   Register Now
