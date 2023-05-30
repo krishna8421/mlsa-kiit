@@ -36,16 +36,22 @@ const ProjectCard = ({
       style={maindivBG}
     >
       <div className="mx-auto pt-2" style={containerStyle}>
-        <Image src={img} alt="event item" width={1440} height={720} className="w-full"></Image>
+        <Image
+          src={img}
+          alt="event item"
+          width={1440}
+          height={720}
+          className="h-[134px] w-full rounded-lg"
+        ></Image>
         <div className="ml-[18px] pt-3">
           <div>
-            <h2 className="text-lg cursor-pointer">{ProjectName}</h2>
-            <div className="mt-1.5 flex flex-col text-[16px] font-[350] leading-[20px] cursor-default">
+            <h2 className="cursor-pointer text-lg">{ProjectName}</h2>
+            <div className="mt-1.5 flex cursor-default flex-col text-[16px] font-[350] leading-[20px]">
               <span>{techStack1}</span>
               <span>{techStack2}</span>
             </div>
           </div>
-          <div className="flex items-center justify-between text-lg font-normal mt-6">
+          <div className="mt-6 flex items-center justify-between text-lg font-normal">
             <div className="relative flex w-12">
               <div className="tech-stack-container relative">
                 <style jsx>{`

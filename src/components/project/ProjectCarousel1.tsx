@@ -22,7 +22,7 @@ const ProjectCarousel1 = () => {
   //   // fetachBlogs();
   // });
   return (
-    <div className="ml-10 mt-5 text-center  md:ml-[89px]">
+    <div className="ml-9 mt-5 text-center sm:ml-10  md:ml-[89px]">
       <Swiper
         spaceBetween={18}
         slidesPerView="auto"
