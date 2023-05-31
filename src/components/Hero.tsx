@@ -10,7 +10,7 @@ import "swiper/css/pagination";
 import { FreeMode, Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-import { HERO_SECTION_EVENTS } from "@/constants";
+import { EVENTS2023 } from "@/constants";
 import EventSlideItem from "./EventSlideItem";
 
 const Hero = () => {
@@ -63,7 +63,7 @@ const Hero = () => {
               },
             }}
           >
-            {HERO_SECTION_EVENTS.map((item, index) => (
+            {EVENTS2023.map((item, index) => (
               <SwiperSlide key={index} className="h-[258px] w-[254px]">
                 <EventSlideItem
                   bgColor={item.bgColor}
