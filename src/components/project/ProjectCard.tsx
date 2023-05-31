@@ -67,12 +67,26 @@ const ProjectCard = ({
                   className="tech-stack-left absolute left-[4px] top-[6px] h-[13px] w-[13px] rounded-full"
                 ></Image>
               </div>
+              <div className="tech-stack-container relative">
+                <style jsx>{`
+                  .tech-stack-container::after {
+                    background-color: ${bgColor};
+                  }
+                `}</style>
+                <Image
+                  src={techImg2}
+                  alt="tech stack image"
+                  width={100}
+                  height={100}
+                  className="tech-stack-left absolute left-[4px] top-[6px] h-[13px] w-[13px] rounded-full"
+                ></Image>
+              </div>
               <Image
                 src={techImg2}
                 alt="tech stack image"
                 width={100}
                 height={100}
-                className="absolute right-[4px] ml-2 h-6 w-6 rounded-full bg-white px-1 py-2"
+                className="absolute right-[-20px] ml-2 h-6 w-6 rounded-full bg-white px-1 py-2"
               ></Image>
             </div>
             <Link href={link}>

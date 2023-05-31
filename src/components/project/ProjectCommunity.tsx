@@ -2,13 +2,14 @@ import DomainCard from "../DomainCard";
 
 const ProjectCommuntiy = () => {
   return (
-    <div className="ml-12 flex cursor-default flex-col  items-center justify-between sm:ml-24 lg:flex-row">
-      <h1 className="w-[240px] text-3xl font-semibold ">
+    <div className="mx-auto flex  w-[80%] cursor-default flex-col items-center justify-between  md:w-auto  lg:ml-24 lg:flex-row">
+      <h1 className="w-[240px] text-center text-[15px] font-semibold sm:text-3xl ">
         We Are Proud Of Our <span className="text-[#286FD9]"> Community Members </span>
       </h1>
 
-      <div className="mx-5 mt-8 flex flex-col gap-7 md:mt-0 md:flex-row">
+      <div className="mt-8 flex flex-col sm:mx-5 sm:gap-12 md:mt-0  md:flex-row lg:gap-7">
         <DomainCard
+          isHome={false}
           logo={20}
           heading="Finished Projects"
           about={
@@ -16,6 +17,7 @@ const ProjectCommuntiy = () => {
           }
         ></DomainCard>
         <DomainCard
+          isHome={false}
           logo={27}
           heading="Sponsors"
           about={

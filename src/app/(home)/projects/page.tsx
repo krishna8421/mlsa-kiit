@@ -12,7 +12,7 @@ const Projects = () => {
       <div className="m-auto max-w-[1920px]">
         <div className="relative">
           <div className="mb-6 mt-20">
-            <div className="relative mt-16 h-[220px] md:h-[300px] lg:h-[400px] xl:h-[451px] 2xl:h-[600px]">
+            <div className="xl:h-[451px] relative mt-16 h-[220px] md:h-[300px] lg:h-[400px] 2xl:h-[600px]">
               <Image
                 src="/projects/projectHeroArrow.png"
                 alt="project hero white background"
@@ -31,7 +31,7 @@ const Projects = () => {
             <div className="z-4 absolute top-[-20%] ml-4 mt-12 h-full cursor-default font-semibold md:left-[60px] md:ml-0 lg:left-[90px]">
               <div className="flex h-full flex-col justify-center">
                 <div className="flex gap-5">
-                  <h1 className="cursor-default text-2xl md:text-3xl 2xl:text-4xl">
+                  <h1 className="cursor-default text-xl md:text-3xl 2xl:text-4xl">
                     Our <span className="text-[#286FD9]">Projects</span>
                   </h1>
                   <Image
@@ -42,7 +42,7 @@ const Projects = () => {
                     className="h-7 w-7 md:h-10 md:w-10"
                   ></Image>
                 </div>
-                <p className="mt-4 w-[70vw] text-lg font-normal md:text-xl lg:w-[542px] lg:text-2xl 2xl:w-[55vw]">
+                <p className="mt-4 w-[70vw] text-sm font-normal md:text-xl lg:w-[542px] lg:text-2xl 2xl:w-[55vw]">
                   Go through our amazing projects, ranging from Web Development to Machine Learning
                   to Augmented and Virtual Reality
                 </p>

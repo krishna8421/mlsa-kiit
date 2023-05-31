@@ -12,6 +12,7 @@ const Domain = () => {
         {OUR_DOMAINS.map((domain, index) => {
           return (
             <DomainCard
+              isHome={true}
               key={index}
               logo={<Image src={domain.imgSrc} alt="support" width={500} height={500}></Image>}
               heading={domain.name}
