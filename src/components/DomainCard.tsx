@@ -20,7 +20,7 @@ const DomainCard = ({ isHome, logo, heading, about }: Props) => {
           className={`${
             logoTyp === "number"
               ? " top-[-30px] h-[58px] w-[58px]    text-lg text-black"
-              : "[96px] top-[-48px] h-[96px] text-4xl text-[#3B61CF] "
+              : "[96px] top-[-48px] h-[96px] w-[96px]  text-4xl text-[#3B61CF] "
           } absolute left-[12px] flex items-center justify-center rounded-full border-2 border-[#286FD9] bg-white px-5 py-5 font-semibold sm:top-[-48px] sm:h-[96px] sm:w-[96px] sm:text-4xl  md:px-6 md:py-4`}
         >
           {logo}
