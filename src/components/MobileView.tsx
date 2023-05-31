@@ -20,9 +20,9 @@ const MobileView = ({visible}: MobileMenuProps) => {
         <NavbarItem href="/gallery" mobileView={true}>Gallery</NavbarItem>
         <NavbarItem href="/teams"mobileView={true}>Teams</NavbarItem>
         <NavbarItem href={YOUTUBE_URL} mobileView={true}>Youtube</NavbarItem>
-        <NavbarItem href="/contact" type="button" mobileView={true}>
+        {/* <NavbarItem href="/contact" type="button" mobileView={true}>
           Contact
-        </NavbarItem>
+        </NavbarItem> */}
       </div>
     </>
   );
