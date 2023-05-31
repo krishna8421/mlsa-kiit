@@ -9,6 +9,7 @@ const ProjectHero = () => {
 
       <div className="mr-8 flex  gap-7  ">
         <DomainCard
+          isHome={false}
           logo={20}
           heading="Finished Projects"
           about={
@@ -16,6 +17,7 @@ const ProjectHero = () => {
           }
         ></DomainCard>
         <DomainCard
+          isHome={false}
           logo={27}
           heading="Sponsors"
           about={

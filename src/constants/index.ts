@@ -275,7 +275,151 @@ export const FOUNDER = {
   site: "https://achyutasamanta.com/",
 };
 
-export const MESSAGE_FROM_ALUMNI = {};
+export const OUR_ALUMNI = [
+  {
+    image: "	https://drive.google.com/uc?export=view&id=1F7PBkc6aicMS58DJ0mQTS-7aruCfBCF7",
+    name: "Parnav Shekar",
+    position: "USI Consultant",
+    company: "Deloitte",
+    message:
+      "MSC community helped me embrace self-discovery and learn the significance of humility over power and intelligence, leading to personal growth and fearlessness.",
+  },
+  {
+    image: "	https://drive.google.com/uc?export=view&id=1hJAHISB0oFlVp1NNi49bStWEz-RPZFZG",
+    name: "Ayush Padia",
+    position: "Associate Software Engg-1",
+    company: "Highradius Technologies",
+    message:
+      "MSC journey: growth, learning, and joy. Founding team, leading talented KIIT society. Wrong project impact on career, global student positive impact aspirations.",
+  },
+  {
+    image: "	https://drive.google.com/uc?export=view&id=1XYcjEjmY97czJeaIS_DFBKultJdpQvuz",
+    name: "Rajatav Dutta",
+    position: "Associate Developer",
+    company: "SAP Labs India",
+    message:
+      " MSC has greatly influenced my personal growth, connecting me with bright minds and fostering my passion. Excited for the community's future achievements and new heights. ",
+  },
+  {
+    image: "https://drive.google.com/uc?export=view&id=1MXVbcLMP9eiKr2H_N4L94h--Se17SNU8",
+    name: "Anshika Verma",
+    position: "Software Developer",
+    company: "IBN ISL Role",
+    message:
+      " MSC gave me a career and cherished memories, breaking free from corporate cocoons. The unforgettable bond with Pranav, Simran, and Anshika brought life to college, making goodbye difficult.",
+  },
+  {
+    image: "	https://drive.google.com/uc?export=view&id=1XH11vD0tx3_zMgVeUSJkLR8tpTkh3GfS",
+    name: "Ankita Bera",
+    position: "Software Developer",
+    company: "Optum United Health Group",
+    message:
+      "You come as a rookie, but you leave like a bawse!, my journey with MSC has been nothing short of incredible with a pinch of awesome.",
+  },
+  {
+    image: "	https://drive.google.com/uc?export=view&id=1tZiCIEC8VIi80IDMiAMPnM9b7THOKMgr",
+    name: "Abhinav Srivastav",
+    position: "SDE-1",
+    company: "Highradius Technologies",
+    message:
+      "Imagining my college life without MSC is hard. We both grew together. It feels more like a family than a community.",
+  },
+  {
+    image: "	https://drive.google.com/uc?export=view&id=16-TS1iQNgKDSqiGma7JtqPnNvag-mcGu",
+    name: "M Taneesh",
+    position: "Associate Software Engineer - I",
+    company: "Highradius Technologies",
+    message:
+      "Had fun building the society during this online era made a few long lasting friendships and experiences :)",
+  },
+  {
+    image: "https://drive.google.com/uc?export=view&id=1mecDyPBcbMPpM4MvdqvD9zVF4ElgR1V4",
+    name: "Simran Banerjee",
+    position: "USI Consultant",
+    company: "Deloitte",
+    message:
+      "I am so grateful that I got to be a part of this society and work with such amazing people. I made some great friends and learnt so much from each and everyone of them. ",
+  },
+];
+export const OUR_LEADS = [
+  {
+    image: "/Leads/Anvitdubey.JPG",
+    name: "Anvit Dubey",
+    domain: "Lead",
+    message: "lending my hands in developing a better technical society",
+    link: "https://www.linkedin.com/in/anvit-dubey-b0a205200",
+  },
+  {
+    image: "/Leads/saniya.jpg",
+    name: "Saniya Bhargav",
+    domain: "Vice Lead",
+    message: "lending my hands in developing a better technical society",
+    link: "hhttps://www.linkedin.com/in/saniya-bhargav-a660111bb",
+  },
+  {
+    image: "/hero4.png",
+    name: "Prashant Upadhyay",
+    domain: "Tech Lead",
+    message: "lending my hands in developing a better technical society",
+    link: "https://www.linkedin.com/in/anvit-dubey-b0a205200",
+  },
+  {
+    image: "/Leads/atig.jpeg",
+    name: "Atig Purohit",
+    domain: "Tech Lead",
+    message: "lending my hands in developing a better technical society",
+    link: "https://www.linkedin.com/in/atig-purohit-a83233183/",
+  },
+  {
+    image: "/Leads/mayank.png",
+    name: "Mayank Jain",
+    domain: "Creative Lead",
+    message: "lending my hands in developing a better technical society",
+    link: "https://www.linkedin.com/in/mayank-jain-688409208/",
+  },
+  {
+    image: "/Leads/aradhya.jpg",
+    name: "Aradhya Kumar",
+    domain: "Content Lead",
+    message: "lending my hands in developing a better technical society",
+    link: "https://www.linkedin.com/in/aradhya-kumar-84078a21b/",
+  },
+  {
+    image: "/Leads/sagar.jpg",
+    name: "Sagar Satapathy",
+    domain: "Treasurer Lead",
+    message: "lending my hands in developing a better technical society",
+    link: "https://www.linkedin.com/in/sagar-satapathy-a4579b173/",
+  },
+  {
+    image: "/hero4.png",
+    name: "Ayush Raj",
+    domain: "Marketing Lead",
+    message: "lending my hands in developing a better technical society",
+    link: "https://www.linkedin.com/in/anvit-dubey-b0a205200",
+  },
+  {
+    image: "/hero4.png",
+    name: "Akshita Sah",
+    domain: "Tech Lead",
+    message: "lending my hands in developing a better technical society",
+    link: "https://www.linkedin.com/in/anvit-dubey-b0a205200",
+  },
+  {
+    image: "/hero4.png",
+    name: "Swasktika Bishnoi",
+    domain: "Executive",
+    message: "lending my hands in developing a better technical society",
+    link: "https://www.linkedin.com/in/anvit-dubey-b0a205200",
+  },
+  {
+    image: "/hero4.png",
+    name: "Rishab Barik",
+    domain: "PR/CR Lead",
+    message: "lending my hands in developing a better technical society",
+    link: "https://www.linkedin.com/in/anvit-dubey-b0a205200",
+  },
+];
 
 export const OUR_SPONSORS = [
   {
