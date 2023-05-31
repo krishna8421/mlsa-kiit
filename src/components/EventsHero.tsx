@@ -12,7 +12,7 @@ interface EventsHeroProps {
 
 const EventsHero: React.FC<EventsHeroProps> = ({ eventName, eventDate, lastDate, isLive }) => {
   return (
-    <div className="relative mx-auto mt-[8rem] h-[275px] w-[98vw] max-w-[1920px] rounded-xl ">
+    <div className="relative mx-auto mt-[8rem] h-[200px] md:h-[275px] w-[98vw] max-w-[1920px] rounded-xl ">
       <Image
         src="/EventHeroAndroid.png"
         alt="Event Hero Android Image"
@@ -43,7 +43,7 @@ const EventsHero: React.FC<EventsHeroProps> = ({ eventName, eventDate, lastDate,
             {eventDate}
           </h1>
         </div>
-        <div className="duration-50 mb-[21px] mt-3.5 h-[2px] self-end w-[30vw] 2xl:mb-2 2xl:mt-2  bg-white-line transition hover:bg-white"></div>
+        <div className="duration-50 mb-2 md:mb-[21px] mt-2 md:mt-3.5 h-[2px] self-end w-[70vw] md:w-[50vw] lg:w-[30vw] 2xl:mb-2 2xl:mt-2  bg-white-line transition hover:bg-white"></div>
         <div className="flex items-center justify-end gap-2.5">
           <RxCalendar className="text-2xl text-white"></RxCalendar>
           <h1 className="font-normal text-white md:text-2xl lg:text-[25px] 2xl:text-3xl">
@@ -51,9 +51,9 @@ const EventsHero: React.FC<EventsHeroProps> = ({ eventName, eventDate, lastDate,
           </h1>
         </div>
         <h3 className="text-lg text-white">Last day to register</h3>
-        <div className="mt-[18px] flex justify-end">
+        <div className="mt-2 md:mt-5 flex justify-end">
           <Link href="">
-            <button className="h-[45px] w-[170px] rounded-full bg-gradient-green px-[27px] py-[8px] text-lg text-white">
+            <button className="h-7 w-[105px] md:h-[45px] md:w-[170px] rounded-full bg-gradient-green md:px-[27px] md:py-[8px] text-xs md:text-lg text-white">
               Register Now
             </button>
           </Link>
