@@ -8,7 +8,7 @@ export const metadata = {
 
 const Contact = () => {
   return (
-    <div className="mt-32 max-w-3xl m-auto">
+    <div className="mt-32 max-w-3xl m-auto px-4">
       <h1 className="text-center text-4xl font-semibold">Contact Us</h1>
       <ContactForm />
     </div>
