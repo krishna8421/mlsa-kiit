@@ -88,6 +88,38 @@
   }
 }
 
+/* events scrollbar invisibility code  */
+.scrollbar::-webkit-scrollbar {
+  width: 0.5em;
+  height: 0.5em;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+
+.scrollbar::-webkit-scrollbar {
+  width: 0.5em;
+  height: 0.5em;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
 .hero-swiper {
   width: 520px;
   height: 320px;

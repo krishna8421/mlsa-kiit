@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 
 interface EventSlideItemProps {
   bgColor: string;
@@ -12,6 +12,19 @@ interface EventSlideItemProps {
   isButton: boolean;
   isHero: boolean;
 }
+
+const formatDate = (inputString: any) => {
+  const regex = /(\b[A-Za-z]+)/g;
+  const formattedString = inputString.replace(regex, (match: any) => {
+    if (match.length > 1) {
+      const firstLetter = match.charAt(0).toUpperCase();
+      const restOfString = match.slice(1).toLowerCase();
+      return `${firstLetter}${restOfString}`;
+    }
+    return match;
+  });
+  return formattedString;
+};
 
 const EventSlideItem: React.FC<EventSlideItemProps> = ({
   bgColor,
@@ -33,24 +46,30 @@ const EventSlideItem: React.FC<EventSlideItemProps> = ({
   return (
     <div
       className={`${
-        isHero ? "h-[230px] w-hero-width md:h-hero-height" : "h-event-height w-event-width"
-      } rounded-xl`}
+        isHero ? "h-[230px] w-hero-width md:h-hero-height" : "md:h-event-height md:w-event-width w-[159px] h-[200px]"
+      } rounded-xl shrink-0 `}
       style={mainDivBG}
     >
       <div className="mx-auto pt-2" style={containerStyle}>
-        <Image src={img} alt="event item" width={1200} height={720} className="w-full"></Image>
-        <div className="ml-[12px] pt-3">
+        <Image
+          src={img}
+          alt="event item"
+          width={1200}
+          height={720}
+          className={`rounded-xl object-cover object-top ${isHero ? "h-[105px]" : "h-[71px] md:h-[134px]"}`}
+        ></Image>
+        <div className="ml-1 md:ml-[12px] pt-3">
           <div>
             <h2 className="text-xs md:text-lg">{ProjectName}</h2>
             <div className="mt-1.5 flex flex-col text-xs font-[350] leading-[20px] md:text-[16px]">
-              <span className="">{date}</span>
-              <span className="">{numParticipants}</span>
+              <span className="">{formatDate(date)}</span>
+              <span className="">{formatDate(numParticipants)}</span>
             </div>
           </div>
           <div className="mt-3 cursor-pointer text-xs font-normal md:text-lg">
             <Link href={link}>
               {!isButton ? (
-                <div>View More</div>
+                <div className="hover:font-medium">View More</div>
               ) : (
                 <button className="border-0 bg-none font-semibold text-[#3B61CF] outline-0">
                   Register Now

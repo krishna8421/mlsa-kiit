@@ -16,8 +16,8 @@ const FeatureProject = () => {
           className="h-[131px]  w-[131px] mix-blend-multiply sm:ml-5 sm:h-[261px] sm:w-[261px] "
         />
         <Link href="/">
-          <button className="absolute bottom-[10px] left-[10px] flex h-[40px] w-[140px] items-center justify-center rounded-[102px] bg-white transition duration-300 ease-in-out hover:scale-[1.15] sm:left-[5vw] sm:h-[52px] sm:w-[160px]">
-            <AiFillPlayCircle className="h-[45px] w-[45px]  text-[#F94545]" />{" "}
+          <button className="absolute bottom-[10px] left-[10px] flex h-7 w-[100px] md:h-[40px] md:w-[140px] items-center justify-center rounded-[102px] bg-white transition duration-300 ease-in-out hover:scale-[1.15] sm:left-[5vw] sm:h-[52px] sm:w-[160px]">
+            <AiFillPlayCircle className="h-6 w-6 text-[#F94545] md:h-[45px]  md:w-[45px]" />{" "}
             <p className="pl-1 pr-3 text-[10px] font-semibold text-black sm:text-[15px] ">
               {" "}
               Watch Demo
