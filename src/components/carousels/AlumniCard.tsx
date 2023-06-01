@@ -1,4 +1,6 @@
 "use client";
+import { useState } from "react";
+
 
 import Image from "next/image";
 interface Props {
@@ -16,8 +18,14 @@ const imgStyle: any = {
 };
 
 const AlumniCard = ({ image, name, position, company, message }: Props) => {
+  const[readmore,setReadmore] = useState(false);
+    
+    const description = readmore ? message :`${message.substring(0,100)}....`;
+    function readmoreHandler() {
+        setReadmore(!readmore);
+    }
   return (
-    <div className="mx-3 my-10 box-border flex  flex-grow-0 flex-col rounded-[8px] bg-white px-5 py-4 text-start font-sans font-normal shadow-gray transition duration-300  hover:shadow-blue sm:mr-0 sm:h-[249px] sm:w-[447px]">
+    <div className="mx-3 my-10 box-border flex  flex-grow-0 flex-col rounded-[8px] bg-white px-5 py-4 text-start font-sans font-normal shadow-gray transition duration-300  hover:shadow-blue sm:mr-0  sm:w-[447px]">
       <div className="relative pb-7 ">
         <Image
           src={image}
@@ -33,7 +41,11 @@ const AlumniCard = ({ image, name, position, company, message }: Props) => {
           <h2 className=" text-lg leading-6">{company}</h2>
         </div>
       </div>
-      <p className="text-xs leading-4 sm:text-lg sm:leading-6">{message}</p>
+      <p className="text-xs leading-4 sm:text-lg sm:leading-6">
+        {description}
+                    <span className="read-more text-[#12b0e8]" onClick={readmoreHandler}>
+                        {readmore ? `Show Less`:`Read More`}
+                    </span></p>
     </div>
   );
 };
