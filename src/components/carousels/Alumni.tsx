@@ -104,7 +104,7 @@ const OurAlumni = () => {
           slidesPerView={1}
           cssMode={true}
           mousewheel={true}
-          className="  md:ml-16 "
+          className="sm:ml-16 "
           loop={false}
           navigation={true}
           modules={[Navigation]}
