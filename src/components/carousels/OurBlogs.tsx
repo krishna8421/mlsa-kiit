@@ -66,7 +66,7 @@ const OurBlogs = () => {
         slidesPerView={1}
         cssMode={true}
         mousewheel={true}
-        className=" px-4 sm:px-2 md:ml-16"
+        className=" px-4 sm:ml-16 sm:px-2"
         loop={false}
         navigation={true}
         modules={[Navigation]}

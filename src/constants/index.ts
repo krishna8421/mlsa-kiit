@@ -276,7 +276,7 @@ export const FOUNDER = {
 
 export const OUR_ALUMNI = [
   {
-    image: "	https://drive.google.com/uc?export=view&id=1F7PBkc6aicMS58DJ0mQTS-7aruCfBCF7",
+    image: "/Alumni/pranav.jpg",
     name: "Parnav Shekar",
     position: "USI Consultant",
     company: "Deloitte",
@@ -284,7 +284,7 @@ export const OUR_ALUMNI = [
       "MSC community helped me embrace self-discovery and learn the significance of humility over power and intelligence, leading to personal growth and fearlessness.",
   },
   {
-    image: "	https://drive.google.com/uc?export=view&id=1hJAHISB0oFlVp1NNi49bStWEz-RPZFZG",
+    image: "/Alumni/ayush.jpeg",
     name: "Ayush Padia",
     position: "Associate Software Engg-1",
     company: "Highradius Technologies",
@@ -292,7 +292,7 @@ export const OUR_ALUMNI = [
       "MSC journey: growth, learning, and joy. Founding team, leading talented KIIT society. Wrong project impact on career, global student positive impact aspirations.",
   },
   {
-    image: "	https://drive.google.com/uc?export=view&id=1XYcjEjmY97czJeaIS_DFBKultJdpQvuz",
+    image: "/Alumni/Rajatav.jpeg",
     name: "Rajatav Dutta",
     position: "Associate Developer",
     company: "SAP Labs India",
@@ -300,7 +300,7 @@ export const OUR_ALUMNI = [
       " MSC has greatly influenced my personal growth, connecting me with bright minds and fostering my passion. Excited for the community's future achievements and new heights. ",
   },
   {
-    image: "https://drive.google.com/uc?export=view&id=1MXVbcLMP9eiKr2H_N4L94h--Se17SNU8",
+    image: "/Alumni/ANSHIKA.jpeg",
     name: "Anshika Verma",
     position: "Software Developer",
     company: "IBN ISL Role",
@@ -308,7 +308,7 @@ export const OUR_ALUMNI = [
       " MSC gave me a career and cherished memories, breaking free from corporate cocoons. The unforgettable bond with Pranav, Simran, and Anshika brought life to college, making goodbye difficult.",
   },
   {
-    image: "	https://drive.google.com/uc?export=view&id=1XH11vD0tx3_zMgVeUSJkLR8tpTkh3GfS",
+    image: "/Alumni/ANKITA.jpeg",
     name: "Ankita Bera",
     position: "Software Developer",
     company: "Optum United Health Group",
@@ -316,7 +316,7 @@ export const OUR_ALUMNI = [
       "You come as a rookie, but you leave like a bawse!, my journey with MSC has been nothing short of incredible with a pinch of awesome.",
   },
   {
-    image: "	https://drive.google.com/uc?export=view&id=1tZiCIEC8VIi80IDMiAMPnM9b7THOKMgr",
+    image: "/Alumni/ABHINAV.jpg",
     name: "Abhinav Srivastav",
     position: "SDE-1",
     company: "Highradius Technologies",
@@ -324,7 +324,7 @@ export const OUR_ALUMNI = [
       "Imagining my college life without MSC is hard. We both grew together. It feels more like a family than a community.",
   },
   {
-    image: "	https://drive.google.com/uc?export=view&id=16-TS1iQNgKDSqiGma7JtqPnNvag-mcGu",
+    image: "/Alumni/Taneesh.jpg",
     name: "M Taneesh",
     position: "Associate Software Engineer - I",
     company: "Highradius Technologies",
@@ -332,7 +332,7 @@ export const OUR_ALUMNI = [
       "Had fun building the society during this online era made a few long lasting friendships and experiences :)",
   },
   {
-    image: "https://drive.google.com/uc?export=view&id=1mecDyPBcbMPpM4MvdqvD9zVF4ElgR1V4",
+    image: "/Alumni/SIMRAN.jpg",
     name: "Simran Banerjee",
     position: "USI Consultant",
     company: "Deloitte",
