@@ -66,7 +66,7 @@ const Navbar = () => {
         <div className="hidden md:items-center gap-8 md:flex">
           <NavbarItem href="/events">Events</NavbarItem>
           <NavbarItem href="/projects">Projects</NavbarItem>
-          <NavbarItem href="/blog">Blog</NavbarItem>
+          <NavbarItem href="/blogs">Blog</NavbarItem>
           <NavbarItem href="/gallerys">Gallery</NavbarItem>
           <NavbarItem href="/teams">Teams</NavbarItem>
           <NavbarItem href={YOUTUBE_URL}>Youtube</NavbarItem>

@@ -1,6 +1,7 @@
 {
   "extends": ["next", "next/core-web-vitals", "eslint:recommended"],
   "rules": {
-    "no-unused-vars": [1, { "args": "after-used", "argsIgnorePattern": "^_" }]
+    "no-unused-vars": [1, { "args": "after-used", "argsIgnorePattern": "^_" }],
+    "@next/next/no-img-element": "off"
   }
 }

@@ -8,10 +8,9 @@ import { RiHeart2Fill } from "react-icons/ri";
 interface eventLineProp {
   year: number;
   lineNum: number;
-  yearLink: string;
 }
 
-const EventLine: React.FC<eventLineProp> = ({ year, lineNum, yearLink }) => {
+const EventLine: React.FC<eventLineProp> = ({ year, lineNum }) => {
   return (
     <div className="mx-auto flex w-[90vw] items-center justify-between">
       <div className="flex w-full items-center pr-8">
@@ -45,7 +44,7 @@ const Events = () => {
           </h1>
           <RiHeart2Fill className="text-lg text-[#286FD9]"></RiHeart2Fill>
         </div>
-        <EventLine year={2023} lineNum={1} yearLink="" />
+        <EventLine year={2023} lineNum={1}/>
         <div className="scrollbar mx-auto mb-8 mt-10 flex w-auto gap-8 overflow-auto md:flex md:w-[1010px] md:flex-wrap md:gap-12">
           <Image
             src="/eventImages/eventsBgLogo.png"
@@ -68,7 +67,7 @@ const Events = () => {
             ></EventSlideItem>
           ))}
         </div>
-        <EventLine year={2022} lineNum={2} yearLink="" />
+        <EventLine year={2022} lineNum={2}  />
         <div className="scrollbar relative mx-auto mb-8 mt-10 flex w-auto gap-8 overflow-auto md:w-[1010px] md:flex-wrap md:gap-12">
           <Image
             src="/eventImages/eventsBgLogo.png"
@@ -91,7 +90,7 @@ const Events = () => {
             ></EventSlideItem>
           ))}
         </div>
-        <EventLine year={2021} lineNum={3} yearLink="" />
+        <EventLine year={2021} lineNum={3} />
         <div className="scrollbar mx-auto mb-8 mt-10 flex w-auto gap-8 overflow-auto md:w-[1010px] md:flex-wrap md:gap-12">
           <Image
             src="/eventImages/eventsBgLogo.png"
@@ -115,7 +114,7 @@ const Events = () => {
             ></EventSlideItem>
           ))}
         </div>
-        <EventLine year={2020} lineNum={4} yearLink="" />
+        <EventLine year={2020} lineNum={4} />
         <div className="scrollbar mx-auto mb-8 mt-10 flex w-auto gap-8 overflow-auto md:w-[1010px] md:flex-wrap md:gap-12">
           <Image
             src="/eventImages/eventsBgLogo.png"
