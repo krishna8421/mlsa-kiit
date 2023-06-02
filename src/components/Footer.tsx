@@ -10,7 +10,7 @@ const Footer = () => {
       <div className="bottom-0 mb-[145px] ml-8 mr-8 flex flex-wrap justify-center gap-24">
         <div className="h-20">
           <div className="flex gap-4">
-            <Image src="/mlsa-logo.png" alt="MLSA Logo" width={82} height={72} loading="eager" />
+            <Image src="/mlsa-logo.png" alt="MLSA Logo" width={200} height={200} loading="eager" className="w-[82px] h-[72px]" />
             <div>
               <span className="text-[30px] font-semibold text-[#2366ca] 2xl:text-[1.7vw]">
                 MLSA

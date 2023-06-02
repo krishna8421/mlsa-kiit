@@ -10,10 +10,9 @@ import ProjectWingGal from "@/components/gallery/ProjectWingGal";
 interface eventLineProp {
     year: number;
     lineNum: number;
-    yearLink: string;
   }
 
-const EventLine: React.FC<eventLineProp> = ({ year, lineNum, yearLink }) => {
+const EventLine: React.FC<eventLineProp> = ({ year, lineNum }) => {
     return (
       <div className="mx-auto flex w-[90vw] items-center justify-between">
         <div className="flex w-full items-center pr-8">
@@ -80,7 +79,7 @@ const Gallerys = () => {
             <span className="ml-2 text-[#286FD9]">Squid</span>
           </h1>
         </div>
-        <EventLine year={2023} lineNum={1} yearLink="" />
+        <EventLine year={2023} lineNum={1} />
         <EyespyGal/>
         
 
@@ -91,7 +90,7 @@ const Gallerys = () => {
             <span className="ml-2 text-[#286FD9]">Benefits</span>
           </h1>
         </div>
-        <EventLine year={2022} lineNum={1} yearLink="" />
+        <EventLine year={2022} lineNum={1} />
 
         <FrontendWithBenifitsGal/>
 
@@ -102,7 +101,7 @@ const Gallerys = () => {
             Dev<span className=" text-[#286FD9]">ops</span>
           </h1>
         </div>
-        <EventLine year={2022} lineNum={1} yearLink="" />
+        <EventLine year={2022} lineNum={1} />
         <DevopsGal/>
 
 
@@ -113,7 +112,7 @@ const Gallerys = () => {
             <span className="ml-2 text-[#286FD9]">Wing</span>
           </h1>
         </div>
-        <EventLine year={2022} lineNum={1} yearLink="" />
+        <EventLine year={2022} lineNum={1} />
         <ProjectWingGal/>
 
       </>
