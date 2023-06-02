@@ -63,7 +63,7 @@ const Blogs = () => {
             data={blog[0]}
           />
           {blog.map((_, index) => {
-            if (index % 2 === 1 && index + 1 <= showMoreClick) {
+            if (index % 2 === 1 && index + 1 < showMoreClick) {
               return generateBlogItems(index, index + 1);
             } else {
               return null;
