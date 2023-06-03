@@ -5,29 +5,7 @@ import EyespyGal from "@/components/gallery/EyeSpyGal";
 import FrontendWithBenifitsGal from "@/components/gallery/FrontendWithBenifitsGal";
 import DevopsGal from "@/components/gallery/DevopsGal";
 import ProjectWingGal from "@/components/gallery/ProjectWingGal";
-
-
-interface eventLineProp {
-    year: number;
-    lineNum: number;
-  }
-
-const EventLine: React.FC<eventLineProp> = ({ year, lineNum }) => {
-    return (
-      <div className="mx-auto flex w-[90vw] items-center justify-between">
-        <div className="flex w-full items-center pr-8">
-          <div className="flex h-[61px] w-[61px] items-center justify-center rounded-full bg-[#083475] text-white md:text-2xl lg:text-[25px] 2xl:text-[2.1vw]">
-            {lineNum}
-          </div>
-          <div className="h-[3px] w-full bg-blue-line hover:bg-[#286FD9] "></div>
-        </div>
-        <div className="text-lg font-semibold">
-          Year
-          <span className="ml-2 text-[#286FD9]">{year}</span>
-        </div>
-      </div>
-    );
-  };
+import { EventLine } from "../events/page";
 
 const Gallerys = () => {
     return (
