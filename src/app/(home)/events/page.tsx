@@ -10,7 +10,7 @@ interface eventLineProp {
   lineNum: number;
 }
 
-const EventLine: React.FC<eventLineProp> = ({ year, lineNum }) => {
+export const EventLine: React.FC<eventLineProp> = ({ year, lineNum }) => {
   return (
     <div className="mx-auto flex w-[90vw] items-center justify-between">
       <div className="flex w-full items-center pr-8">
@@ -28,6 +28,13 @@ const EventLine: React.FC<eventLineProp> = ({ year, lineNum }) => {
 };
 
 const Events = () => {
+  const eventSections = [
+    { year: 2023, events: EVENTS2023 },
+    { year: 2022, events: EVENTS2022 },
+    { year: 2021, events: EVENTS2021 },
+    { year: 2020, events: EVENTS2020 },
+  ];
+
   return (
     <>
       <div className="m-auto max-w-[1920px] px-3 md:px-6">
@@ -42,102 +49,40 @@ const Events = () => {
             Our Past
             <span className="ml-2 text-[#286FD9]">Successful Events</span>
           </h1>
-          <RiHeart2Fill className="text-lg text-[#286FD9]"></RiHeart2Fill>
+          <RiHeart2Fill className="text-lg text-[#286FD9]" />
         </div>
-        <EventLine year={2023} lineNum={1}/>
-        <div className="scrollbar mx-auto mb-8 mt-10 flex w-auto gap-8 overflow-auto md:flex md:w-[1010px] md:flex-wrap md:gap-12">
-          <Image
-            src="/eventImages/eventsBgLogo.png"
-            alt="events design"
-            width={600}
-            height={600}
-            className="absolute left-[-126px] z-[-10] hidden h-[254px] w-[254px] md:block"
-          ></Image>
-          {EVENTS2023.map((event, index) => (
-            <EventSlideItem
-              key={index}
-              bgColor={event.bgColor}
-              img={event.img}
-              ProjectName={event.ProjectName}
-              date={event.date}
-              numParticipants={event.numParticipants}
-              isButton={false}
-              isHero={false}
-              link=""
-            ></EventSlideItem>
-          ))}
-        </div>
-        <EventLine year={2022} lineNum={2}  />
-        <div className="scrollbar relative mx-auto mb-8 mt-10 flex w-auto gap-8 overflow-auto md:w-[1010px] md:flex-wrap md:gap-12">
-          <Image
-            src="/eventImages/eventsBgLogo.png"
-            alt="events design"
-            width={600}
-            height={600}
-            className="absolute right-[-126px] z-[-10] hidden h-[254px] w-[254px] md:block"
-          ></Image>
-          {EVENTS2022.map((event, index) => (
-            <EventSlideItem
-              key={index}
-              bgColor={event.bgColor}
-              img={event.img}
-              ProjectName={event.ProjectName}
-              date={event.date}
-              numParticipants={event.numParticipants}
-              isButton={false}
-              isHero={false}
-              link=""
-            ></EventSlideItem>
-          ))}
-        </div>
-        <EventLine year={2021} lineNum={3} />
-        <div className="scrollbar mx-auto mb-8 mt-10 flex w-auto gap-8 overflow-auto md:w-[1010px] md:flex-wrap md:gap-12">
-          <Image
-            src="/eventImages/eventsBgLogo.png"
-            alt="events design"
-            width={600}
-            height={600}
-            className="absolute left-[-126px] z-[-10] h-[254px] w-[254px] rotate-180"
-            style={{ transformOrigin: "center", transform: "rotate(-90deg)" }}
-          ></Image>
-          {EVENTS2021.map((event, index) => (
-            <EventSlideItem
-              key={index}
-              bgColor={event.bgColor}
-              img={event.img}
-              ProjectName={event.ProjectName}
-              date={event.date}
-              numParticipants={event.numParticipants}
-              isButton={false}
-              isHero={false}
-              link=""
-            ></EventSlideItem>
-          ))}
-        </div>
-        <EventLine year={2020} lineNum={4} />
-        <div className="scrollbar mx-auto mb-8 mt-10 flex w-auto gap-8 overflow-auto md:w-[1010px] md:flex-wrap md:gap-12">
-          <Image
-            src="/eventImages/eventsBgLogo.png"
-            alt="events design"
-            width={600}
-            height={600}
-            className="absolute left-[-126px] z-[-10] h-[254px] w-[254px] rotate-180"
-            style={{ transformOrigin: "center", transform: "rotate(-90deg)" }}
-          ></Image>
-          {EVENTS2020.map((event, index) => (
-            <EventSlideItem
-              key={index}
-              bgColor={event.bgColor}
-              img={event.img}
-              ProjectName={event.ProjectName}
-              date={event.date}
-              numParticipants={event.numParticipants}
-              isButton={false}
-              isHero={false}
-              link=""
-            ></EventSlideItem>
-          ))}
-        </div>
+        
+        {eventSections.map((section, index) => (
+          <React.Fragment key={index}>
+            <EventLine year={section.year} lineNum={index + 1} />
+            <div className="scrollbar mx-auto mb-8 mt-10 flex w-auto gap-8 overflow-auto md:w-[1010px] lg:flex-wrap md:gap-12">
+              <Image
+                src="/eventImages/eventsBgLogo.png"
+                alt="events design"
+                width={600}
+                height={600}
+                className={
+                  section.year % 2 !== 0
+                    ? "absolute left-[-126px] z-[-10] hidden h-[254px] w-[254px] md:block"
+                    : "absolute right-[-126px] z-[-10] hidden h-[254px] w-[254px] md:block"
+                }
+              ></Image>
+              {section.events.map((event, eventIndex) => (
+                <EventSlideItem
+                  key={eventIndex}
+                  bgColor={event.bgColor}
+                  img={event.img}
+                  ProjectName={event.ProjectName}
+                  date={event.date}
+                  numParticipants={event.numParticipants}
+                  isButton={false}
+                  isHero={false}
+                  link=""
+                />
+              ))}
+            </div>
+          </React.Fragment>
+        ))}
       </div>
     </>
   );
