@@ -4,9 +4,9 @@ import { YOUTUBE_URL } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
 import { useCallback, useEffect, useState } from "react";
-import NavbarItem from "./NavbarItem";
+import { VscChromeClose } from 'react-icons/vsc';
 import MobileView from "./MobileView";
-import { VscChromeClose } from 'react-icons/vsc'
+import NavbarItem from "./NavbarItem";
 
 const OFFSET = 66;
 
@@ -69,6 +69,7 @@ const Navbar = () => {
           <NavbarItem href="/blogs">Blog</NavbarItem>
           <NavbarItem href="/gallerys">Gallery</NavbarItem>
           <NavbarItem href="/teams">Teams</NavbarItem>
+          <NavbarItem href="/members">Members</NavbarItem>
           <NavbarItem href={YOUTUBE_URL}>Youtube</NavbarItem>
           {/* <NavbarItem href="/contact" type="button">Contact</NavbarItem> */}
         </div>
