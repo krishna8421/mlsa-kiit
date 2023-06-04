@@ -9,44 +9,6 @@ import BlogsCard from "./BlogsCard";
 import "swiper/swiper-bundle.min.css";
 
 // import "swiper/css/bundle";
-const OUR_BLOGS = [
-  {
-    image: "/banner.png",
-    title: "All about android 13 go",
-    date: "12-april-2023",
-    message:
-      "With Android 13 (Go edition), we're bringing Google Play System Updates to Go devices which helps ensure devices can  ...",
-  },
-  {
-    image: "/banner2.png",
-    title: "All about android 13 go",
-    date: "12-april-2023",
-    message:
-      "With Android 13 (Go edition), we're bringing Google Play System Updates to Go devices which helps ensure devices can  ...",
-  },
-  {
-    image: "/banner3.png",
-    title: "All about android 13 go",
-    date: "12-april-2023",
-    message:
-      "With Android 13 (Go edition), we're bringing Google Play System Updates to Go devices which helps ensure devices can  ...",
-  },
-  {
-    image: "/banner.png",
-    title: "All about android 13 go",
-    date: "12-april-2023",
-    message:
-      "With Android 13 (Go edition), we're bringing Google Play System Updates to Go devices which helps ensure devices can  ...",
-  },
-  {
-    image: "/banner2.png",
-    title: "All about android 13 go",
-    date: "12-april-2023",
-    message:
-      "With Android 13 (Go edition), we're bringing Google Play System Updates to Go devices which helps ensure devices can  ...",
-  },
-];
-
 const OurBlogs = () => {
   return (
     <div className=" mx-3 text-center sm:mr-0  sm:mt-5">
