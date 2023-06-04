@@ -12,7 +12,7 @@ const imgStyle: any = {
   objectFit: "cover",
   objectPosition: "center",
 };
-const BlogsCard = ({ image, title, date, message }: Props) => {
+const BlogsCard = ({ date, image, title, message }: Props) => {
   return (
     <div className="carousel-div  mx-3 my-4 box-border w-[310px] rounded-[10px] bg-white px-4 py-4 text-start shadow-gray transition duration-300 hover:shadow-blue sm:h-[387px] sm:w-[324px]">
       <div className=" pb-6">

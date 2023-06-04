@@ -12,7 +12,7 @@ interface eventLineProp {
 
 export const EventLine: React.FC<eventLineProp> = ({ year, lineNum }) => {
   return (
-    <div className="mx-auto flex w-[90vw] items-center justify-between">
+    <div className="mx-auto flex w-[95vw] lg:w-[90vw] items-center justify-between">
       <div className="flex w-full items-center pr-8">
         <div className="flex h-11 w-12 items-center justify-center rounded-full bg-[#083475] text-white md:h-[61px] md:w-[61px] md:text-2xl lg:text-[25px] 2xl:text-[2.1vw]">
           {lineNum}
@@ -37,7 +37,7 @@ const Events = () => {
 
   return (
     <>
-      <div className="m-auto max-w-[1920px] px-3 md:px-6">
+      <div className="m-auto max-w-[1920px]">
         <EventsHero
           eventName="Android Development Submit"
           eventDate="12 March 2023"
@@ -51,11 +51,11 @@ const Events = () => {
           </h1>
           <RiHeart2Fill className="text-lg text-[#286FD9]" />
         </div>
-        
+
         {eventSections.map((section, index) => (
-          <React.Fragment key={index}>
+          <React.Fragment key={index} >
             <EventLine year={section.year} lineNum={index + 1} />
-            <div className="scrollbar mx-auto mb-8 mt-10 flex w-auto gap-8 overflow-auto md:w-[1010px] lg:flex-wrap md:gap-12">
+            <div className="px-4 md:px-6 lg:px-0 scrollbar mx-auto mb-8 mt-10 flex w-auto gap-8 overflow-auto lg:w-[1010px]  md:gap-12 lg:flex-wrap">
               <Image
                 src="/eventImages/eventsBgLogo.png"
                 alt="events design"

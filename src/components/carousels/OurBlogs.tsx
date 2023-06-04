@@ -4,6 +4,8 @@
 import { Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import BlogsCard from "./BlogsCard";
+import BLOGS from '../../app/(home)/blogs/blog.json'
+
 
 import "swiper/swiper-bundle.min.css";
 
@@ -47,15 +49,6 @@ const OUR_BLOGS = [
 ];
 
 const OurBlogs = () => {
-  // const [BolgsData, setBlogsData] = useState([]);
-  // useEffect(() => {
-  //   const fetachBlogs = async () => {
-  //     const response = await fetch("https://locahost:3000/api/blogs");
-  //     const data = await response.json();
-  //     setBlogsData(data);
-  //   };
-  //   // fetachBlogs();
-  // });
   return (
     <div className=" mx-3 text-center sm:mr-0  sm:mt-5">
       <h1 className="mb-10 text-lg font-semibold md:text-3xl">
@@ -83,7 +76,7 @@ const OurBlogs = () => {
       >
         {OUR_BLOGS.map((Lead, index) => {
           return (
-            <SwiperSlide key={index} className=" w-[320px] overflow-visible sm:w-[345px]">
+            <SwiperSlide key={index} className="w-[320px] overflow-visible sm:w-[345px]">
               <BlogsCard {...Lead} />
             </SwiperSlide>
           );
