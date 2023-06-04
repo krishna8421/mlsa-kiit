@@ -3,9 +3,8 @@
 // import QuoteLeft from ".../assets/QuoteLeft.png";
 import { Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
+import BLOGS from "../../app/(home)/blogs/blog.json";
 import BlogsCard from "./BlogsCard";
-import BLOGS from '../../app/(home)/blogs/blog.json'
-
 
 import "swiper/swiper-bundle.min.css";
 
@@ -67,14 +66,23 @@ const OurBlogs = () => {
           400: {
             slidesPerView: 1.1,
             spaceBetween: 2,
+            slidesPerGroup: 1,
           },
           420: {
             slidesPerView: "auto",
             spaceBetween: 2,
           },
+          786: {
+            slidesPerView: "auto",
+            slidesPerGroup: 2,
+          },
+          1400: {
+            slidesPerView: "auto",
+            slidesPerGroup: 3,
+          },
         }}
       >
-        {OUR_BLOGS.map((Lead, index) => {
+        {BLOGS.slice(0, 10).map((Lead, index) => {
           return (
             <SwiperSlide key={index} className="w-[320px] overflow-visible sm:w-[345px]">
               <BlogsCard {...Lead} />
