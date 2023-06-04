@@ -61,11 +61,11 @@ const About = () => {
             line={false}
           ></AboutLogo>
         </div>
-        <Link href="">
+        {/* <Link href="">
           <button className="mt-12 rounded-full bg-gradient-blue px-7 py-2 text-[22px] font-normal text-white">
             Know More
           </button>
-        </Link>
+        </Link> */}
       </div>
     </>
   );

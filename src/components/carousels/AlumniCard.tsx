@@ -43,7 +43,7 @@ const AlumniCard = ({ image, name, position, company, message }: Props) => {
       </div>
       <p className="text-xs leading-4 sm:text-lg sm:leading-6">
         {description}
-                    <span className="read-more text-[#12b0e8]" onClick={readmoreHandler}>
+                    <span className="read-more text-[#12b0e8] cursor-pointer" onClick={readmoreHandler}>
                         {readmore ? `Show Less`:`Read More`}
                     </span></p>
     </div>

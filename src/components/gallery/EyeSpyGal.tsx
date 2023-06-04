@@ -7,82 +7,82 @@ const EyespyGal = () => {
     <div className="columns-1 sm:columns-2 lg:columns-3 gap-4">
 
         
-            <div className="w-full h-auto elative overflow-hidden bg-cover bg-no-repeat mb-4">
+            <div className="w-full h-auto relative overflow-hidden bg-cover bg-no-repeat mb-4">
             <Image
               src="/gallery/Eyespy/DSC_0017.JPG"
-              alt="projects heading arrow"
+              alt="Gallery image"
               width={360}
               height={500}
               className="w-full  object-cover rounded-sm transition duration-1000 ease-in-out hover:scale-105"
             ></Image>
             </div>
-            <div className="w-full h-auto elative overflow-hidden bg-cover bg-no-repeat mb-4">
+            <div className="w-full h-auto relative overflow-hidden bg-cover bg-no-repeat mb-4">
             <Image
               src="/gallery/Eyespy/DSC_0031.JPG"
-              alt="projects heading arrow"
+              alt="Gallery image"
               width={360}
               height={500}
               className="w-full  object-cover rounded-sm transition duration-1000 ease-in-out hover:scale-105"
             ></Image>
             </div>
-            <div className="w-full h-auto elative overflow-hidden bg-cover bg-no-repeat">
+            <div className="w-full h-auto relative overflow-hidden bg-cover bg-no-repeat mb-4">
             <Image
               src="/gallery/Eyespy/DSC03931.JPG"
-              alt="projects heading arrow"
+              alt="Gallery image"
               width={360}
               height={500}
               className="w-full  object-cover rounded-sm transition duration-1000 ease-in-out hover:scale-105"
             ></Image>
             </div>
-            <div className="w-full h-auto elative overflow-hidden bg-cover bg-no-repeat mb-4">
+            <div className="w-full h-auto relative overflow-hidden bg-cover bg-no-repeat mb-4">
             <Image
               src="/gallery/Eyespy/IMG_9107.JPG"
-              alt="projects heading arrow"
+              alt="Gallery image"
               width={360}
               height={500}
               className="w-full  object-cover rounded-sm transition duration-1000 ease-in-out hover:scale-105"
             ></Image>
             </div>
-            <div className="w-full h-auto elative overflow-hidden bg-cover bg-no-repeat mb-4">
+            <div className="w-full h-auto relative overflow-hidden bg-cover bg-no-repeat mb-4">
             <Image
               src="/gallery/Eyespy/DSC04072.JPG"
-              alt="projects heading arrow"
+              alt="Gallery image"
               width={360}
               height={500}
               className="w-full  object-cover rounded-sm transition duration-1000 ease-in-out hover:scale-105"
             ></Image>
             </div>
-            <div className="w-full h-auto elative overflow-hidden bg-cover bg-no-repeat mb-4">
+            <div className="w-full h-auto relative overflow-hidden bg-cover bg-no-repeat mb-4">
             <Image
               src="/gallery/Eyespy/DSC03942.JPG"
-              alt="projects heading arrow"
+              alt="Gallery image"
               width={360}
               height={500}
               className="w-full  object-cover rounded-sm transition duration-1000 ease-in-out hover:scale-105"
             ></Image>
             </div>
-            <div className="w-full h-auto elative overflow-hidden bg-cover bg-no-repeat mb-4">
+            <div className="w-full h-auto relative overflow-hidden bg-cover bg-no-repeat mb-4">
             <Image
-              src="/gallery/Eyespy/IMG_4240.JPG"
-              alt="projects heading arrow"
+              src="/gallery/Eyespy/1684148146644.jpg"
+              alt="Gallery image"
               width={360}
               height={500}
               className="w-full  object-cover rounded-sm transition duration-1000 ease-in-out hover:scale-105"
             ></Image>
             </div>
-            <div className="w-full h-auto elative overflow-hidden bg-cover bg-no-repeat mb-4">
+            <div className="w-full h-auto relative overflow-hidden bg-cover bg-no-repeat mb-4">
             <Image
               src="/gallery/Eyespy/IMG_4206.JPG"
-              alt="projects heading arrow"
+              alt="Gallery image"
               width={360}
               height={500}
               className="w-full  object-cover rounded-sm transition duration-1000 ease-in-out hover:scale-105"
             ></Image>
             </div>
-            <div className="w-full h-auto elative overflow-hidden bg-cover bg-no-repeat mb-4">
+            <div className="w-full h-auto relative overflow-hidden bg-cover bg-no-repeat mb-4">
             <Image
               src="/gallery/Eyespy/IMG_4157.JPG"
-              alt="projects heading arrow"
+              alt="Gallery image"
               width={360}
               height={500}
               className="w-full  object-cover rounded-sm transition duration-1000 ease-in-out hover:scale-105"

@@ -71,7 +71,7 @@ const Navbar = () => {
           <NavbarItem href="/teams">Teams</NavbarItem>
           <NavbarItem href="/members">Members</NavbarItem>
           <NavbarItem href={YOUTUBE_URL}>Youtube</NavbarItem>
-          {/* <NavbarItem href="/contact" type="button">Contact</NavbarItem> */}
+          <NavbarItem href="/contact" type="button">Contact</NavbarItem>
         </div>
       </div>
     </nav>
