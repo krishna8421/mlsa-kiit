@@ -1,16 +1,12 @@
 "use client";
 import Image from "next/image";
-import Link from "next/link";
 
+import { EVENTS2023 } from "@/constants";
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-import { FreeMode, Navigation, Pagination } from "swiper";
-import { Swiper, SwiperSlide } from "swiper/react";
-
-import { EVENTS2023 } from "@/constants";
 import EventSlideItem from "./EventSlideItem";
 
 const Hero = () => {
@@ -40,44 +36,24 @@ const Hero = () => {
           </Link> */}
         </div>
       </div>
-      <div className="bottom-[-2rem] mx-auto w-full sm:right-7 sm:w-[520px] md:absolute">
-        <h1 className="pl-3 text-lg font-semibold md:my-2.5 md:pl-8 md:text-2xl md:text-white lg:text-[2.3vw]">
+      <div className="scrollbar bottom-4 mx-auto flex flex-col flex-wrap items-center overflow-auto px-3 sm:right-7 md:absolute md:w-auto md:items-start">
+        <h1 className="absolute mb-4 pl-2 text-start text-lg font-semibold md:my-2.5 md:block md:text-2xl md:text-white ">
           Recent Events
         </h1>
-        <div className="relative">
-          <Swiper
-            slidesPerView="auto"
-            freeMode={true}
-            loop={true}
-            spaceBetween={5}
-            pagination={{
-              clickable: true,
-            }}
-            navigation={true}
-            modules={[Pagination, Navigation, FreeMode]}
-            className="hero-swiper"
-            breakpoints={{
-              420: {
-                slidesPerView: "auto",
-                spaceBetween: 1,
-              },
-            }}
-          >
-            {EVENTS2023.map((item, index) => (
-              <SwiperSlide key={index} className="h-[258px] w-[254px]">
-                <EventSlideItem
-                  bgColor={item.bgColor}
-                  img={item.img}
-                  ProjectName={item.ProjectName}
-                  date={item.date}
-                  numParticipants={item.numParticipants}
-                  isButton={item.isButton}
-                  isHero={true}
-                  link=""
-                />
-              </SwiperSlide>
-            ))}
-          </Swiper>
+        <div className="relative mt-10 flex gap-4 md:mt-12">
+          {EVENTS2023.slice(0, 2).map((event, eventIndex) => (
+            <EventSlideItem
+              key={eventIndex}
+              bgColor={event.bgColor}
+              img={event.img}
+              ProjectName={event.ProjectName}
+              date={event.date}
+              numParticipants={event.numParticipants}
+              isButton={event.isButton}
+              isHero={true}
+              link={event.link}
+            />
+          ))}
         </div>
       </div>
     </>

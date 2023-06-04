@@ -10,7 +10,7 @@ interface EventSlideItemProps {
   numParticipants: string;
   link: string;
   isButton: boolean;
-  isHero: boolean;
+  isHero?: boolean;
 }
 
 const formatDate = (inputString: any) => {
