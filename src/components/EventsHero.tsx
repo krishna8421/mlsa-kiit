@@ -25,7 +25,7 @@ const EventsHero: React.FC<EventsHeroProps> = ({ eventName, eventDate, lastDate,
         alt="Event Hero Image"
         width={1920}
         height={1080}
-        className="absolute left-0 top-0 h-full w-full"
+        className="absolute left-0 top-0 h-full w-full "
       ></Image>
       {isLive && (
         <div className="absolute flex items-center gap-1.5 px-1.5 py-1.5">

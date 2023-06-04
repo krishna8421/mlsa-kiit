@@ -45,11 +45,9 @@ const BlogsItem = ({ classname, isMain = false, data, blogContent }: blogsItemsP
                 <span className="text-[#557df6]"></span>
               </h1>
               {isMain && (
-                <>
                   <p className="mt-2 text-xl font-medium text-white sm:w-[80%] md:text-2xl lg:w-[60%] lg:text-2xl 3xl:text-[2vw]">
                     {blogContent}
                   </p>
-                </>
               )}
               <div className="ml-1 mt-4 flex items-center text-base text-white">
                 <span>{data.writer}</span>

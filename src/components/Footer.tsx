@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <div className="flex w-full flex-col overflow-hidden">
       <hr className="mb-[42px] mt-[93px] border-t-2 border-solid" />
-      <div className="bottom-0 mb-[145px] ml-8 mr-8 flex flex-wrap justify-center gap-24">
+      <div className="bottom-0 mb-[70px] md:mb-[145px] ml-8 mr-8 flex flex-wrap justify-center gap-20 md:gap-24">
         <div className="h-20">
           <div className="flex gap-4">
             <Image src="/mlsa-logo.png" alt="MLSA Logo" width={200} height={200} loading="eager" className="w-[82px] h-[72px]" />
