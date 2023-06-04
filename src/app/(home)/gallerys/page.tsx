@@ -91,7 +91,7 @@ const Gallerys = () => {
             <span className="ml-2 text-[#286FD9]">Benefits</span>
           </h1>
         </div>
-        <EventLine year={2022} lineNum={1} yearLink="" />
+        <EventLine year={2022} lineNum={2} yearLink="" />
 
         <FrontendWithBenifitsGal/>
 
@@ -102,7 +102,7 @@ const Gallerys = () => {
             Dev<span className=" text-[#286FD9]">ops</span>
           </h1>
         </div>
-        <EventLine year={2022} lineNum={1} yearLink="" />
+        <EventLine year={2022} lineNum={3} yearLink="" />
         <DevopsGal/>
 
 
@@ -113,7 +113,7 @@ const Gallerys = () => {
             <span className="ml-2 text-[#286FD9]">Wing</span>
           </h1>
         </div>
-        <EventLine year={2022} lineNum={1} yearLink="" />
+        <EventLine year={2022} lineNum={4} yearLink="" />
         <ProjectWingGal/>
 
       </>

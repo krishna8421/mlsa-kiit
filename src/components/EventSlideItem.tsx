@@ -66,7 +66,7 @@ const EventSlideItem: React.FC<EventSlideItemProps> = ({
               <span className="">{formatDate(numParticipants)}</span>
             </div>
           </div>
-          <div className="mt-3 cursor-pointer text-xs font-normal md:text-lg">
+          {/* <div className="mt-3 cursor-pointer text-xs font-normal md:text-lg">
             <Link href={link}>
               {!isButton ? (
                 <div className="hover:font-medium">View More</div>
@@ -76,7 +76,7 @@ const EventSlideItem: React.FC<EventSlideItemProps> = ({
                 </button>
               )}
             </Link>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

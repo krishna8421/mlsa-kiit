@@ -31,13 +31,13 @@ const Hero = () => {
           </div>
           <span>Ambassadors</span>
           <span className="font-normal">KIIT Chapter</span>
-          <Link href="">
+          {/* <Link href="">
             <span>
               <button className="absolute rounded-full bg-gradient-blue px-4 py-1.5 text-sm font-normal text-white md:mt-6 md:px-7 md:py-3 md:text-[22px] lg:left-[-10px]">
                 Join Us Now
               </button>
             </span>
-          </Link>
+          </Link> */}
         </div>
       </div>
       <div className="bottom-[-2rem] mx-auto w-full sm:right-7 sm:w-[520px] md:absolute">

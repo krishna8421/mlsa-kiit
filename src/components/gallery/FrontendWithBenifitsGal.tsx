@@ -5,82 +5,82 @@ const FrontendWithBenifitsGal = () => {
     <div className="mb-8 mt-10 px-1 w-full relative">
             <div className="  lg:mx-auto max-w-[1340px]">
                 <div className="columns-1 sm:columns-2 lg:columns-3 gap-4">
-                    <div className="w-full h-auto elative overflow-hidden bg-cover bg-no-repeat mb-4">
+                    <div className="w-full h-auto relative overflow-hidden bg-cover bg-no-repeat mb-4">
                     <Image
                       src="/gallery/Frontend/Untitled design (13).png"
-                      alt="projects heading arrow"
+                      alt="Gallery image"
                       width={360}
                       height={500}
                       className="w-full  object-cover rounded-sm transition duration-1000 ease-in-out hover:scale-105"
                     ></Image>
                     </div>
-                    <div className="w-full h-auto elative overflow-hidden bg-cover bg-no-repeat mb-4">
+                    <div className="w-full h-auto relative overflow-hidden bg-cover bg-no-repeat mb-4">
                     <Image
                       src="/gallery/Frontend/Untitled design (5).png"
-                      alt="projects heading arrow"
+                      alt="Gallery image"
                       width={360}
                       height={500}
                       className="w-full  object-cover rounded-sm transition duration-1000 ease-in-out hover:scale-105"
                     ></Image>
                     </div>
-                    <div className="w-full h-auto elative overflow-hidden bg-cover bg-no-repeat">
+                    <div className="w-full h-auto relative overflow-hidden bg-cover bg-no-repeat mb-4">
                     <Image
                       src="/gallery/Frontend/Untitled design (8).png"
-                      alt="projects heading arrow"
+                      alt="Gallery image"
                       width={360}
                       height={500}
                       className="w-full  object-cover rounded-sm transition duration-1000 ease-in-out hover:scale-105"
                     ></Image>
                     </div>
-                    <div className="w-full h-auto elative overflow-hidden bg-cover bg-no-repeat mb-4">
+                    <div className="w-full h-auto relative overflow-hidden bg-cover bg-no-repeat mb-4">
                     <Image
                       src="/gallery/Frontend/Untitled design (6).png"
-                      alt="projects heading arrow"
+                      alt="Gallery image"
                       width={360}
                       height={500}
                       className="w-full  object-cover rounded-sm transition duration-1000 ease-in-out hover:scale-105"
                     ></Image>
                     </div>
-                    <div className="w-full h-auto elative overflow-hidden bg-cover bg-no-repeat mb-4">
+                    <div className="w-full h-auto relative overflow-hidden bg-cover bg-no-repeat mb-4">
                     <Image
                       src="/gallery/Frontend/Untitled design (17).png"
-                      alt="projects heading arrow"
+                      alt="Gallery image"
                       width={360}
                       height={500}
                       className="w-full  object-cover rounded-sm transition duration-1000 ease-in-out hover:scale-105"
                     ></Image>
                     </div>
-                    <div className="w-full h-auto elative overflow-hidden bg-cover bg-no-repeat mb-4">
+                    <div className="w-full h-auto relative overflow-hidden bg-cover bg-no-repeat mb-4">
                     <Image
                       src="/gallery/Frontend/Untitled design (9).png"
-                      alt="projects heading arrow"
+                      alt="Gallery image"
                       width={360}
                       height={500}
                       className="w-full  object-cover rounded-sm transition duration-1000 ease-in-out hover:scale-105"
                     ></Image>
                     </div>
-                    <div className="w-full h-auto elative overflow-hidden bg-cover bg-no-repeat mb-4">
+                    <div className="w-full h-auto relative overflow-hidden bg-cover bg-no-repeat mb-4">
                     <Image
                       src="/gallery/Frontend/IMG_0434.JPG"
-                      alt="projects heading arrow"
+                      alt="Gallery image"
                       width={360}
                       height={500}
                       className="w-full  object-cover rounded-sm transition duration-1000 ease-in-out hover:scale-105"
                     ></Image>
                     </div>
-                    <div className="w-full h-auto elative overflow-hidden bg-cover bg-no-repeat mb-4">
+                    <div className="w-full h-auto relative overflow-hidden bg-cover bg-no-repeat mb-4">
                     <Image
                       src="/gallery/Frontend/Img_0422.JPG"
-                      alt="projects heading arrow"
+                      alt="Gallery image"
                       width={360}
                       height={500}
                       className="w-full  object-cover rounded-sm transition duration-1000 ease-in-out hover:scale-105"
                     ></Image>
                     </div>
-                    <div className="w-full h-auto elative overflow-hidden bg-cover bg-no-repeat mb-4">
+                    <div className="w-full h-auto relative overflow-hidden bg-cover bg-no-repeat mb-4">
                     <Image
                       src="/gallery/Frontend/Untitled design (11).png"
-                      alt="projects heading arrow"
+                      alt="Gallery image"
                       width={360}
                       height={500}
                       className="w-full  object-cover rounded-sm transition duration-1000 ease-in-out hover:scale-105"

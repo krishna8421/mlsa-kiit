@@ -70,7 +70,7 @@ const Navbar = () => {
           <NavbarItem href="/gallerys">Gallery</NavbarItem>
           <NavbarItem href="/teams">Teams</NavbarItem>
           <NavbarItem href={YOUTUBE_URL}>Youtube</NavbarItem>
-          {/* <NavbarItem href="/contact" type="button">Contact</NavbarItem> */}
+          <NavbarItem href="/contact" type="button">Contact</NavbarItem>
         </div>
       </div>
     </nav>
