@@ -7,10 +7,17 @@ const Footer = () => {
   return (
     <div className="flex w-full flex-col overflow-hidden">
       <hr className="mb-[42px] mt-[93px] border-t-2 border-solid" />
-      <div className="bottom-0 mb-[70px] md:mb-[145px] ml-8 mr-8 flex flex-wrap justify-center gap-20 md:gap-24">
+      <div className="bottom-0 mb-[70px] ml-8 mr-8 flex flex-wrap justify-center gap-20 md:mb-[145px] md:gap-24">
         <div className="h-20">
           <div className="flex gap-4">
-            <Image src="/mlsa-logo.png" alt="MLSA Logo" width={200} height={200} loading="eager" className="w-[82px] h-[72px]" />
+            <Image
+              src="/mlsa-logo.png"
+              alt="MLSA Logo"
+              width={200}
+              height={200}
+              loading="eager"
+              className="h-[72px] w-[82px]"
+            />
             <div>
               <span className="text-[30px] font-semibold text-[#2366ca] 2xl:text-[1.7vw]">
                 MLSA
@@ -21,10 +28,10 @@ const Footer = () => {
             </div>
           </div>
           <div className="mt-3.5 hidden w-[82px] justify-center lg:flex">
-            <div className="h-[206px] w-[2px] bg-blue-line hover:bg-[#286FD9]"></div>
+            <div className="h-[206px] w-[2px] bg-blue-line "></div>
           </div>
         </div>
-        <div className="flex-col text-center md:text-start text-xl font-normal">
+        <div className="flex-col text-center text-xl font-normal md:text-start">
           <div className="flex gap-2 text-2xl font-semibold">
             <div className="">Follow</div>
             <span className="text-[#286FD9]">Us</span>
@@ -45,18 +52,18 @@ const Footer = () => {
             </Link>
           </div>
         </div>
-        <div className="flex-col text-center md:text-start text-xl font-normal">
+        <div className="flex-col text-center text-xl font-normal md:text-start">
           <div className="flex gap-2 text-2xl font-semibold">
             <div className="w-full">
               <span>Contact</span>
-              <span className="text-[#286FD9] ml-2">Us</span>
+              <span className="ml-2 text-[#286FD9]">Us</span>
             </div>
           </div>
           <div className=" mt-2">T : +91 080045 09825</div>
           <div className=" mt-1">F : +91 080031 99063</div>
           <div className=" mt-1">E : MSCKIIT@OUTLOOK.COM</div>
         </div>
-        <div className="flex-col text-xl font-normal text-center md:text-start">
+        <div className="flex-col text-center text-xl font-normal md:text-start">
           <div className="flex gap-2 text-2xl font-semibold">
             <div>Visit </div>
             <span className="text-[#286FD9]">Us</span>
