@@ -17,32 +17,32 @@ const OurBlogs = () => {
       </h1>
       <Swiper
         spaceBetween={18}
-        slidesPerView={1}
-        cssMode={true}
+        slidesPerView={3.4}
+        // cssMode={true}
         mousewheel={true}
         className=" px-4 sm:ml-16 sm:px-2"
         loop={false}
         navigation={true}
         modules={[Navigation]}
-        breakpoints={{
-          400: {
-            slidesPerView: 1.1,
-            spaceBetween: 2,
-            slidesPerGroup: 1,
-          },
-          420: {
-            slidesPerView: "auto",
-            spaceBetween: 2,
-          },
-          786: {
-            slidesPerView: "auto",
-            slidesPerGroup: 2,
-          },
-          1400: {
-            slidesPerView: "auto",
-            slidesPerGroup: 3,
-          },
-        }}
+        // breakpoints={{
+        //   400: {
+        //     slidesPerView: 1.1,
+        //     spaceBetween: 2,
+        //     slidesPerGroup: 1,
+        //   },
+        //   420: {
+        //     slidesPerView: "auto",
+        //     spaceBetween: 2,
+        //   },
+        //   786: {
+        //     slidesPerView: "auto",
+        //     slidesPerGroup: 2,
+        //   },
+        //   1400: {
+        //     slidesPerView: "auto",
+        //     slidesPerGroup: 3,
+        //   },
+        // }}
       >
         {BLOGS.slice(0, 10).map((Lead, index) => {
           return (

@@ -14,7 +14,6 @@ module.exports = {
       lg: "976px",
       "2xl": "1440px",
       "3xl": "1990px",
-
       recentEvents: "542px",
     },
     container: {

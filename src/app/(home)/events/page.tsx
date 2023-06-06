@@ -12,12 +12,12 @@ interface eventLineProp {
 
 export const EventLine: React.FC<eventLineProp> = ({ year, lineNum }) => {
   return (
-    <div className="mx-auto flex w-[95vw] lg:w-[90vw] items-center justify-between">
+    <div className="mx-auto flex w-[95vw] items-center justify-between lg:w-[90vw]">
       <div className="flex w-full items-center pr-8">
-        <div className="flex h-11 w-12 items-center justify-center rounded-full bg-[#083475] text-white md:h-[61px] md:w-[61px] md:text-2xl lg:text-[25px] 2xl:text-[2.1vw]">
+        <div className="flex h-11 w-12 items-center justify-center rounded-[50%] bg-[#083475] text-white md:h-[61px] md:w-[61px] md:text-2xl lg:text-[25px] 2xl:text-[2.1vw]">
           {lineNum}
         </div>
-        <div className="h-[3px] w-full bg-blue-line hover:bg-[#286FD9] "></div>
+        <div className="h-[3px] w-full bg-blue-line  "></div>
       </div>
       <div className="text-lg font-semibold">
         Year
@@ -53,9 +53,9 @@ const Events = () => {
         </div>
 
         {eventSections.map((section, index) => (
-          <React.Fragment key={index} >
+          <React.Fragment key={index}>
             <EventLine year={section.year} lineNum={index + 1} />
-            <div className="px-4 md:px-6 lg:px-0 scrollbar mx-auto mb-8 mt-10 flex w-auto gap-8 overflow-auto lg:w-[1010px]  md:gap-12 lg:flex-wrap">
+            <div className="scrollbar mx-auto mb-8 mt-10 flex w-auto flex-wrap gap-8 overflow-auto px-4 md:gap-12 md:px-6  lg:w-[1010px] lg:flex-wrap lg:px-0">
               <Image
                 src="/eventImages/eventsBgLogo.png"
                 alt="events design"

@@ -4,7 +4,7 @@ import { YOUTUBE_URL } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
 import { useCallback, useEffect, useState } from "react";
-import { VscChromeClose } from 'react-icons/vsc';
+import { VscChromeClose } from "react-icons/vsc";
 import MobileView from "./MobileView";
 import NavbarItem from "./NavbarItem";
 
@@ -12,8 +12,7 @@ const OFFSET = 66;
 
 const Navbar = () => {
   const [showBackground, setShowBackground] = useState(false);
-  const [showMobileMenu , setShowmobileMenu] = useState(false)
-
+  const [showMobileMenu, setShowmobileMenu] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -30,9 +29,8 @@ const Navbar = () => {
   }, []);
 
   const toggleMobileMenu = useCallback(() => {
-    setShowmobileMenu((current) => !current)
-  }, [])
-
+    setShowmobileMenu((current) => !current);
+  }, []);
 
   return (
     <nav
@@ -43,7 +41,14 @@ const Navbar = () => {
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-4">
           <Link href="/">
-            <Image src="/mlsa-logo.png" alt="MLSA Logo" width={400} height={400} loading="eager"  className="w-[40px] h-[40px]"/>
+            <Image
+              src="/mlsa-logo.png"
+              alt="MLSA Logo"
+              width={400}
+              height={400}
+              loading="eager"
+              className="h-[40px] w-[40px]"
+            />
           </Link>
           <span className="bg-gradient-to-r from-[#0070C5] to-[#3BABCF] bg-clip-text text-[20px] font-semibold text-transparent lg:text-[1.7vw]">
             MLSA <span className="hidden md:inline-block">KIIT</span>
@@ -56,22 +61,30 @@ const Navbar = () => {
               alt="navbar menu"
               width={200}
               height={200}
-              className="h-6 w-6 md:hidden relative"
+              className="relative h-6 w-6 md:hidden"
             ></Image>
-          ): (
+          ) : (
             <VscChromeClose />
           )}
-          <MobileView visible={showMobileMenu}/>
+          <MobileView visible={showMobileMenu} />
         </div>
-        <div className="hidden md:items-center gap-8 md:flex">
+        <div className="hidden gap-8 md:flex md:items-center">
           <NavbarItem href="/events">Events</NavbarItem>
           <NavbarItem href="/projects">Projects</NavbarItem>
           <NavbarItem href="/blogs">Blog</NavbarItem>
           <NavbarItem href="/gallerys">Gallery</NavbarItem>
-          <NavbarItem href="/teams">Teams</NavbarItem>
+
           <NavbarItem href="/members">Members</NavbarItem>
-          <NavbarItem href={YOUTUBE_URL}>Youtube</NavbarItem>
-          <NavbarItem href="/contact" type="button">Contact</NavbarItem>
+          <a
+            href={YOUTUBE_URL}
+            target="_blank"
+            className="2xl:text-md  cursor-pointer text-sm transition hover:text-gray-500"
+          >
+            Youtube
+          </a>
+          <NavbarItem href="/contact" type="button">
+            Contact
+          </NavbarItem>
         </div>
       </div>
     </nav>

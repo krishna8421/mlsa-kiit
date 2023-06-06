@@ -1,14 +1,13 @@
 "use client";
 import Image from "next/image";
 
-import { EVENTS2023 } from "@/constants";
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-import EventSlideItem from "./EventSlideItem";
-
+import { Navigation } from "swiper";
+import { Swiper } from "swiper/react";
 const Hero = () => {
   return (
     <>
@@ -36,12 +35,12 @@ const Hero = () => {
           </Link> */}
         </div>
       </div>
-      <div className="scrollbar bottom-4 mx-auto flex flex-col flex-wrap items-center overflow-auto px-3 sm:right-7 md:absolute md:w-auto md:items-start">
+      <div className="scrollbar relative bottom-4 mx-auto flex flex-col flex-wrap items-center overflow-auto px-3 sm:right-7 md:absolute md:w-auto md:items-start">
         <h1 className="absolute mb-4 pl-2 text-start text-lg font-semibold md:my-2.5 md:block md:text-2xl md:text-white ">
           Recent Events
         </h1>
-        <div className="relative mt-10 flex gap-4 md:mt-12">
-          {EVENTS2023.slice(0, 2).map((event, eventIndex) => (
+        <div className="  h-[50vw] w-[40vw] ">
+          {/* {EVENTS2023.slice(0, 2).map((event, eventIndex) => (
             <EventSlideItem
               key={eventIndex}
               bgColor={event.bgColor}
@@ -53,7 +52,54 @@ const Hero = () => {
               isHero={true}
               link={event.link}
             />
-          ))}
+          ))} */}
+          <Swiper
+            spaceBetween={18}
+            slidesPerView={1}
+            // cssMode={true}
+            mousewheel={true}
+            // className=" px-4 sm:ml-16 sm:px-2"
+            loop={false}
+            navigation={true}
+            modules={[Navigation]}
+            // breakpoints={{
+            //   400: {
+            //     slidesPerView: 1.1,
+            //     spaceBetween: 2,
+            //     slidesPerGroup: 1,
+            //   },
+            //   420: {
+            //     slidesPerView: "auto",
+            //     spaceBetween: 2,
+            //   },
+            //   786: {
+            //     slidesPerView: "auto",
+            //     slidesPerGroup: 2,
+            //   },
+            //   1400: {
+            //     slidesPerView: "auto",
+            //     slidesPerGroup: 3,
+            //   },
+            // }}
+          >
+            {/* {EVENTS2023.slice(0, 10).map((event, eventIndex) => {
+              return (
+                <SwiperSlide key={eventIndex} className="w-[320px]  ">
+                  <EventSlideItem
+                    key={eventIndex}
+                    bgColor={event.bgColor}
+                    img={event.img}
+                    ProjectName={event.ProjectName}
+                    date={event.date}
+                    numParticipants={event.numParticipants}
+                    isButton={event.isButton}
+                    isHero={true}
+                    link={event.link}
+                  />
+                </SwiperSlide>
+              );
+            })} */}
+          </Swiper>
         </div>
       </div>
     </>

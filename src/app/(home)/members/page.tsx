@@ -27,7 +27,7 @@ const EventLine: React.FC<eventLineProp> = ({ name, lineNum }) => {
         >
           <b>{name}</b>
         </h1>
-        <div className="h-[3px] w-full bg-blue-line hover:bg-[#286FD9] "></div>
+        <div className="h-[3px] w-full bg-blue-line  "></div>
       </div>
     </div>
   );
