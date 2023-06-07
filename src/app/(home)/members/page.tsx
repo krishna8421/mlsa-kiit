@@ -1999,13 +1999,9 @@ const page = () => {
 </main>
 
 
-
-
-
-
 </div>
 </div>
-      </div>
+</div>
       
     </>
   )

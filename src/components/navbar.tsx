@@ -68,8 +68,7 @@ const Navbar = () => {
           <NavbarItem href="/projects">Projects</NavbarItem>
           <NavbarItem href="/blogs">Blog</NavbarItem>
           <NavbarItem href="/gallerys">Gallery</NavbarItem>
-          <NavbarItem href="/teams">Teams</NavbarItem>
-          <NavbarItem href="/members">Members</NavbarItem>
+          <NavbarItem href="/mem">Members</NavbarItem>
           <NavbarItem href={YOUTUBE_URL}>Youtube</NavbarItem>
           <NavbarItem href="/contact" type="button">Contact</NavbarItem>
         </div>

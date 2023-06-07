@@ -4,7 +4,6 @@
 import { Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import BlogsCard from "./BlogsCard";
-import BLOGS from '../../app/(home)/blogs/blog.json'
 
 
 import "swiper/swiper-bundle.min.css";
