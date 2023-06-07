@@ -26,12 +26,41 @@ const ProjectCarousel1 = () => {
       <Swiper
         spaceBetween={18}
         slidesPerView={3}
-        cssMode={true}
+        // cssMode={true}
         mousewheel={true}
-        className="px-3"
+        className=" border-2 border-red-500 px-3"
         loop={false}
         navigation={true}
         modules={[Navigation]}
+        centerInsufficientSlides={true}
+        breakpoints={{
+          360: {
+            slidesPerView: 1,
+            // centeredSlides = true,
+            spaceBetween: 100,
+          },
+          400: {
+            spaceBetween: 2,
+            // slidesPerGroup: 1,
+          },
+          420: {
+            slidesPerView: 2,
+            spaceBetween: 2,
+          },
+          786: {
+            slidesPerView: 3,
+            spaceBetween: 100,
+            // slidesPerGroup: 2,
+          },
+          1000: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+          1400: {
+            // slidesPerView: 2,
+            slidesPerGroup: 3,
+          },
+        }}
       >
         {OUR_PROJECTS1.map((project, index) => {
           {
@@ -40,7 +69,7 @@ const ProjectCarousel1 = () => {
             }
           }
           return (
-            <SwiperSlide key={index} className=" w-[320px]">
+            <SwiperSlide key={index} className=" w-[320px] ">
               <ProjectCard
                 bgColor={`${bgColorArr[bgIndex++]}`}
                 img={project.img}

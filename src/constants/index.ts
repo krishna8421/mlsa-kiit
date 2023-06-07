@@ -332,14 +332,14 @@ export const OUR_ALUMNI = [
     message:
       "Had fun building the society during this online era made a few long lasting friendships and experiences :)",
   },
-  {
-    image: "/Alumni/SIMRAN.jpg",
-    name: "Simran Banerjee",
-    position: "USI Consultant",
-    company: "Deloitte",
-    message:
-      "I am so grateful that I got to be a part of this society and work with such amazing people. I made some great friends and learnt so much from each and everyone of them. ",
-  },
+  // {
+  //   image: "/Alumni/SIMRAN.jpg",
+  //   name: "Simran Banerjee",
+  //   position: "USI Consultant",
+  //   company: "Deloitte",
+  //   message:
+  //     "I am so grateful that I got to be a part of this society and work with such amazing people. I made some great friends and learnt so much from each and everyone of them. ",
+  // },
 ];
 export const OUR_LEADS = [
   {
@@ -686,5 +686,463 @@ export const EVENTS2020 = [
     isButton: false,
     isHero: false,
     link: "",
+  },
+];
+
+// members
+
+export const videoediting = [
+  {
+    id: 1,
+    img: "/members/Pratik.jpeg",
+    name: "Pratik Mohanty",
+    domain: "Video Editing",
+  },
+  {
+    id: 1,
+    img: "/members/Shresth Rakesh Kumar.jpg",
+    name: "Shresth Rakesh Kumar",
+    domain: "Video Editing",
+  },
+  {
+    id: 1,
+    img: "/members/Parivesh.jpeg",
+    name: "Parivesh Srivastava",
+    domain: "Video Editing",
+  },
+  {
+    id: 1,
+    img: "/members/SASWATI PADHY.jpg",
+    name: "Saswati Padhy",
+    domain: "Video Editing",
+  },
+  {
+    id: 1,
+    img: "/members/PIYALI MURMU.jpg",
+    name: "Piyali Murmu",
+    domain: "Video Editing",
+  },
+  {
+    id: 1,
+    img: "/members/V N Ayush Mudaliyar.png",
+    name: "V N Ayush Mudaliyar",
+    domain: "Video Editing",
+  },
+];
+
+export const Marketing = [
+  {
+    id: 1,
+    img: "/members/YASHASWINI SARANGI.jpg",
+    name: "Yashaswini Sarangi",
+    domain: "Marketing",
+  },
+  {
+    id: 1,
+    img: "/members/2.jpg",
+    name: "Debesh Acharya",
+    domain: "Marketing",
+  },
+  {
+    id: 1,
+    img: "/members/VAISHNAVI SINGH.jpg",
+    name: "Vaishnavi Singh",
+    domain: "Marketing",
+  },
+  {
+    id: 1,
+    img: "/members/DHYANAM ATTREYA.jpg",
+    name: "Dhyanam Attreya",
+    domain: "Marketing",
+  },
+  {
+    id: 1,
+    img: "/members/Deepika Soni.png",
+    name: "Deepika Soni",
+    domain: "Marketing",
+  },
+  {
+    id: 1,
+    img: "/members/RajivMishra.jpg",
+    name: "Rajiv Mishra",
+    domain: "Marketing",
+  },
+  {
+    id: 1,
+    img: "/members/Shouryjeet Gupta.jpeg",
+    name: "Shouryjeet Gupta",
+    domain: "Marketing",
+  },
+  {
+    id: 1,
+    img: "/members/PRANSHU SAHAY.jpg",
+    name: "Pranshu Sahay",
+    domain: "Marketing",
+  },
+  {
+    id: 1,
+    img: "/members/GIRISH KYAL.jpg",
+    name: "Girish Kayal",
+    domain: "Marketing",
+  },
+  {
+    id: 1,
+    img: "/members/ABHISHREEBHADRA.jpg",
+    name: "Abhishreebhadra",
+    domain: "Marketing",
+  },
+  {
+    id: 1,
+    img: "/members/ANKIT KUMAR.png",
+    name: "Ankit Kumar",
+    domain: "Marketing",
+  },
+  {
+    id: 1,
+    img: "/members/Adarsh Kumar Rath.jpg",
+    name: "Adarsh Kumar Rath",
+    domain: "Marketing",
+  },
+  {
+    id: 1,
+    img: "/members/Krishna Agrawal.jpg",
+    name: "Krishna Agrawal",
+    domain: "Marketing",
+  },
+  {
+    id: 1,
+    img: "/members/UTSAV ANAND.jpg",
+    name: "Utsav Anand",
+    domain: "Marketing",
+  },
+  {
+    id: 1,
+    img: "/members/AVINAV ROY.png",
+    name: "Avinav Roy",
+    domain: "Marketing",
+  },
+  {
+    id: 1,
+    img: "/members/Anand.jpg",
+    name: "Anand",
+    domain: "Marketing",
+  },
+];
+
+export const MachineLearning = [
+  {
+    id: 1,
+    img: "/members/Indranil_Nag.png",
+    name: "Indranil Nag",
+    domain: "Machine Learning",
+  },
+  {
+    id: 1,
+    img: "/members/ATIG PUROHIT.jpeg",
+    name: "Atig Purohit",
+    domain: "Machine Learning",
+  },
+  {
+    id: 1,
+    img: "/members/MITUL GOSWAMI.png",
+    name: "Mitul Goswami",
+    domain: "Machine Learning",
+  },
+  {
+    id: 1,
+    img: "/members/AlokKumarJha.png",
+    name: "Alok Kumar Jha",
+    domain: "Machine Learning",
+  },
+  {
+    id: 1,
+    img: "/members/ANURAG PRASOON.jpg",
+    name: "Anurag Prasoon",
+    domain: "Machine Learning",
+  },
+  {
+    id: 1,
+    img: "/members/NISHARG.jpg",
+    name: "Nisharg Nargund",
+    domain: "Machine Learning",
+  },
+  {
+    id: 1,
+    img: "/members/ArunopalDutta.png",
+    name: "Arunopal Dutta",
+    domain: "Machine Learning",
+  },
+  {
+    id: 1,
+    img: "/members/KARTIK AGARWAL.jpeg",
+    name: "Kartik Agarwal",
+    domain: "Machine Learning",
+  },
+  {
+    id: 1,
+    img: "/members/Rohan Volety.jpeg",
+    name: "Rohan Volety",
+    domain: "Machine Learning",
+  },
+  {
+    id: 1,
+    img: "/members/anir.jpeg",
+    name: "Anirban Roy",
+    domain: "Machine Learning",
+  },
+];
+
+export const GraphicDesign = [
+  {
+    id: 1,
+    img: "/members/ASHISH POTHAL.png",
+    name: "Ashish Pothal",
+    domain: "Graphic Design",
+  },
+  {
+    id: 1,
+    img: "/members/Harsh Singh.jpg",
+    name: "Harsh Singh",
+    domain: "Graphic Design",
+  },
+];
+
+export const Creative = [
+  {
+    id: 1,
+    img: "/members/DAWAR SHAFAQUE.jpg",
+    name: "Dawar Shafaque",
+    domain: "Creative",
+  },
+  {
+    id: 1,
+    img: "/members/sachi.jpg",
+    name: "Sachi Verma",
+    domain: "Creative",
+  },
+  {
+    id: 1,
+    img: "/members/Isha Mishra.jpg",
+    name: "Isha Mishra",
+    domain: "Creative",
+  },
+  {
+    id: 1,
+    img: "/members/TANVI UPADHYAY.jpg",
+    name: "Tanvi Upadhyay",
+    domain: "Creative",
+  },
+  {
+    id: 1,
+    img: "/members/SAKSHI PATHAK.jpg",
+    name: "Sakshi Pathak",
+    domain: "Creative",
+  },
+  {
+    id: 1,
+    img: "/members/SUDIPTA SUBHAM.jpg",
+    name: "Sudipta Subham",
+    domain: "Creative",
+  },
+  {
+    id: 1,
+    img: "/members/ANUBHAV KAKATI.jpg",
+    name: "Anubhav Kakati",
+    domain: "Creative",
+  },
+  {
+    id: 1,
+    img: "/members/ANKIT MOHAPATRA.jpg",
+    name: "Ankit Mohapatra",
+    domain: "Creative",
+  },
+  {
+    id: 1,
+    img: "/members/DIBYOJYOTI DEB.jpg",
+    name: "Dibyojyoti Deb",
+    domain: "Creative",
+  },
+];
+
+export const WebDevelopment = [
+  {
+    id: 1,
+    img: "/members/Harshit2.jpg",
+    name: "Harshit Yadav",
+    domain: "Web Development",
+  },
+  {
+    id: 1,
+    img: "/members/amaan.jpg",
+    name: "Amaan Bhaati",
+    domain: "Web Development",
+  },
+  {
+    id: 1,
+    img: "/members/MANISH KUMAR.webp",
+    name: "Manish Kumar",
+    domain: "Web Development",
+  },
+  {
+    id: 1,
+    img: "/members/anshul.jpg",
+    name: "Anshul Kumar",
+    domain: "Web Development",
+  },
+  {
+    id: 1,
+    img: "/members/akshat.jpg",
+    name: "Akshat Srivastava ",
+    domain: "Web Development",
+  },
+  {
+    id: 1,
+    img: "/members/harsh.jpg",
+    name: "Harsh Raj",
+    domain: "Web Development",
+  },
+  {
+    id: 1,
+    img: "/members/GARV AGARWAL.png",
+    name: "Garv Agarwal",
+    domain: "Web Development",
+  },
+  {
+    id: 1,
+    img: "/members/Ashish Mishra.jpeg",
+    name: "Ashish Mishra",
+    domain: "Web Development",
+  },
+  {
+    id: 1,
+    img: "/members/RISHABH KUMAR.jpg",
+    name: "Rishabh Kumar",
+    domain: "Web Development",
+  },
+  {
+    id: 1,
+    img: "/members/pfp.jpg",
+    name: "Yashwardhan Singh",
+    domain: "Web Development",
+  },
+];
+
+export const AndroidDevelopment = [
+  {
+    id: 1,
+    img: "/members/Aritra Pal.jpg",
+    name: "Aritra Pal",
+    domain: "Android Development",
+  },
+  {
+    id: 1,
+    img: "/members/Pranshu sarthak.jpg",
+    name: "Pranshu Sarthak",
+    domain: "Android Development",
+  },
+  {
+    id: 1,
+    img: "/members/SHASHANK DEEPAK.jpg",
+    name: "Shashank Deepak",
+    domain: "Android Development",
+  },
+  {
+    id: 1,
+    img: "/members/Shivangi.png",
+    name: "Shivangi",
+    domain: "Android Development",
+  },
+  {
+    id: 1,
+    img: "/members/G Dhvani Iyer.jpeg",
+    name: "G Dhvani Iyer",
+    domain: "Android Development",
+  },
+  {
+    id: 1,
+    img: "/members/shubhankar shahi.jpg",
+    name: "Shubhankar Shahi",
+    domain: "Android Development",
+  },
+];
+
+export const ARVR = [
+  {
+    id: 1,
+    img: "/members/ANISH ROY.jpg",
+    name: "Anish Roy",
+    domain: "AR/VR",
+  },
+  {
+    id: 1,
+    img: "/members/PRITAM KUMAR PAL.png",
+    name: "Pritam Kumar Pal",
+    domain: "AR/VR",
+  },
+];
+
+export const cloud = [
+  {
+    id: 1,
+    img: "/members/Archit Gupta.jpg",
+    name: "Archit Gupta",
+    domain: "Cloud and CyberSecurity",
+  },
+  {
+    id: 1,
+    img: "/members/Subandhu.png",
+    name: "Subandhu",
+    domain: "Cloud and CyberSecurity",
+  },
+  {
+    id: 1,
+    img: "/members/sourasish.png",
+    name: "Sourasish Basu",
+    domain: "Cloud and CyberSecurity",
+  },
+  {
+    id: 1,
+    img: "/members/Tanisha.png",
+    name: "Tanisha Verma",
+    domain: "Cloud and CyberSecurity",
+  },
+  {
+    id: 1,
+    img: "/members/rahul.jpeg",
+    name: "Rahul Biswas",
+    domain: "Cloud and CyberSecurity",
+  },
+  {
+    id: 1,
+    img: "/members/dhruv.png",
+    name: "Dhruv Agarwal",
+    domain: "Cloud and CyberSecurity",
+  },
+];
+
+export const YT = [
+  {
+    id: 1,
+    img: "/members/Paarth Pareek.jpeg",
+    name: "Paarth Pareek",
+    domain: "Youtube Hosting",
+  },
+  {
+    id: 1,
+    img: "/members/Prakhar Singh.png",
+    name: "Prakhar Singh",
+    domain: "Youtube Hosting",
+  },
+  {
+    id: 1,
+    img: "/members/APOORVA AANAND.jpg",
+    name: "Apoorva Aanand",
+    domain: "Youtube Hosting",
+  },
+  {
+    id: 1,
+    img: "/members/bhoomika.jpg",
+    name: "Bhoomika",
+    domain: "Youtube Hosting",
   },
 ];

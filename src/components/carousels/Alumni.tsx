@@ -101,19 +101,59 @@ const OurAlumni = () => {
         </h1>
         <Swiper
           spaceBetween={10}
-          slidesPerView={2.5}
+          // slidesPerView={2.5}
           // cssMode={true}
           mousewheel={true}
           className="sm:ml-20 "
           loop={false}
           navigation={true}
           modules={[Navigation]}
-          // breakpoints={{
-          //   480: {
-          //     slidesPerView: "auto",
-          //     spaceBetween: 2,
-          //   },
-          // }}
+          centeredSlides={true}
+          // centerInsufficientSlides={true}
+          breakpoints={{
+            320: {
+              slidesPerView: 1,
+              spaceBetween: 100,
+            },
+            // when window width is >= 480px
+            480: {
+              slidesPerView: 1,
+              spaceBetween: 30,
+            },
+            // when window width is >= 640px
+            640: {
+              slidesPerView: 1.8,
+              spaceBetween: 80,
+            },
+            760: {
+              slidesPerView: 1.9,
+              spaceBetween: 180,
+            },
+            800: {
+              slidesPerView: 2.1,
+              spaceBetween: 150,
+            },
+            820: {
+              slidesPerView: 2.5,
+              spaceBetween: 350,
+            },
+            900: {
+              slidesPerView: 2.3,
+              spaceBetween: 90,
+            },
+            1000: {
+              slidesPerView: 3.1,
+              spaceBetween: 250,
+            },
+            1200: {
+              slidesPerView: 3.5,
+              spaceBetween: 450,
+            },
+            1400: {
+              slidesPerView: 3.4,
+              spaceBetween: 150,
+            },
+          }}
         >
           {OUR_ALUMNI.map((Lead, index) => {
             return (
