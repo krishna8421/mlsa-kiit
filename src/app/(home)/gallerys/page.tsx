@@ -1,10 +1,9 @@
 
-import Image from "next/image";
-import React from "react";
+import DevopsGal from "@/components/gallery/DevopsGal";
 import EyespyGal from "@/components/gallery/EyeSpyGal";
 import FrontendWithBenifitsGal from "@/components/gallery/FrontendWithBenifitsGal";
-import DevopsGal from "@/components/gallery/DevopsGal";
 import ProjectWingGal from "@/components/gallery/ProjectWingGal";
+import Image from "next/image";
 import { EventLine } from "../events/page";
 
 const Gallerys = () => {

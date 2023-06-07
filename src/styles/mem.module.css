@@ -1,0 +1,37 @@
+.name{
+    text-align: center;
+    color:white; 
+  }
+.para{
+  text-align: center;
+  color:white;
+ }
+  .img{
+    width:19rem;
+    height:21.875rem;
+    object-fit:cover;
+    overflow:hidden;
+  }
+  .imgdiv{
+    width:19rem;
+    height:21.875rem;
+  }
+  .cardcontent{
+   visibility:hidden;
+   margin-top:-3rem;
+  }
+   .card:hover{
+    color:white;
+    cursor:pointer;
+      opacity:0.7;
+      transition:0.3s ease-in;
+     .cardcontent{
+      visibility:visible;
+      margin-top:-3rem;              
+    }
+  }
+  @media (min-width: 640px) { 
+    .img{
+      display:flex;   
+    }
+}

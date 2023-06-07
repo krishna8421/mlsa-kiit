@@ -74,7 +74,7 @@ const Navbar = () => {
           <NavbarItem href="/blogs">Blog</NavbarItem>
           <NavbarItem href="/gallerys">Gallery</NavbarItem>
 
-          <NavbarItem href="/members">Members</NavbarItem>
+          <NavbarItem href="/mem">Members</NavbarItem>
           <a
             href={YOUTUBE_URL}
             target="_blank"
