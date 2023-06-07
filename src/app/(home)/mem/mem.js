@@ -231,6 +231,11 @@ export const WebDevelopment =[
         domain:"Web Development",
     },
     {
+        img:"/members/MANISH KUMAR.webp",
+        name:"Manish Kumar",
+        domain:"Web Development",
+    },
+    {
         img:"/members/anshul.jpg",
         name:"Anshul Kumar",
         domain:"Web Development",
@@ -243,11 +248,6 @@ export const WebDevelopment =[
     {
         img:"/members/harsh.jpg",
         name:"Harsh Raj",
-        domain:"Web Development",
-    },
-    {
-        img:"/members/MANISH KUMAR.webp",
-        name:"Manish Kumar",
         domain:"Web Development",
     },
     {

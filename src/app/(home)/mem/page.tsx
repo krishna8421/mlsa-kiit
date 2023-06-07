@@ -2,7 +2,7 @@
 import Image from "next/image";
 import React from "react";
 import { RiHeart2Fill } from "react-icons/ri";
-
+import mem from "../../../styles/mem.module.css";
 import { ARVR, AndroidDevelopment, Creative, GraphicDesign, MachineLearning, Marketing, WebDevelopment, YT, cloud, videoediting } from "./mem";
 interface eventLineProp {
   lineNum: number;
@@ -72,7 +72,7 @@ const page = () => {
           </h1>
           <RiHeart2Fill className="text-lg text-[#286FD9]"></RiHeart2Fill>
         </div>
-        <EventLine name="Video Editing" lineNum={1} />
+        <EventLine name="Web Development" lineNum={1} />
         <div className="mx-auto mb-8 mt-10 flex w-[1010px] flex-wrap gap-12 overflow-auto">
           <Image
             src="/eventImages/eventsBgLogo.png"
@@ -81,64 +81,29 @@ const page = () => {
             height={600}
             className="absolute left-[-126px] z-[-10] h-[254px] w-[254px]"
           ></Image>
-         {videoediting?.map((item,index)=>{
+
+         {WebDevelopment?.map((item,index)=>{
           return(<>
-             <style jsx>{`
-        h2{
-          text-align: center;
-          color:white; 
-        }
-       p{
-        text-align: center;
-        color:white;
-       }
-        .img{
-          width:19rem;
-          height:21.875rem;
-          object-fit:cover;
-          overflow:hidden;
-        }
-        .imgdiv{
-          width:19rem;
-          height:21.875rem;
-        }
-        .card-content{
-         visibility:hidden;
-         margin-top:-3rem;
-        }
-         .card:hover{
-          color:white;
-          cursor:pointer;
-            opacity:0.7;
-            transition:0.3s ease-in;
-           .card-content{
-            visibility:visible;
-            margin-top:-3rem;              
-          }
-        }
-        @media (min-width: 640px) { 
-          .img{
-            display:flex;   
-          }
-        } 
-      `}</style>
-        <main>
-  <div className = "card">
-    <div className="imgdiv">
-    <img src={videoediting[index].img} alt="img" className="img"/>
+             
+
+          <main>
+  <div className = {mem.card}>
+    <div className={mem.imgdiv}>
+    <img src={WebDevelopment[index].img} alt="img" className={mem.img}/>
     </div>
-    <div className="card-content ">
-      <h2>
-        {videoediting[index].name}
+    <div className={mem.cardcontent}>
+      <h2 className={mem.name}>
+        {WebDevelopment[index].name}
       </h2>
-      <p>
-       {videoediting[index].domain}
+      <p className={mem.para}>
+       {WebDevelopment[index].domain}
       </p>
     </div>
   </div>
 </main>
           </>)
-        })}    
+        })}   
+       
 </div>
 <EventLine name="Marketing" lineNum={2} />
         <div className="mx-auto mb-8 mt-10 flex w-[1010px] flex-wrap gap-12 overflow-auto">
@@ -168,7 +133,7 @@ const page = () => {
           overflow:hidden;
         }
         .imgdiv{
-          width:19rem;
+          width:13.5rem;
           height:21.875rem;
         }
         .card-content{
@@ -421,7 +386,7 @@ const page = () => {
         })}   
        
 </div>
-<EventLine name="Web Development" lineNum={6} />
+<EventLine name="Video Editing" lineNum={6} />
         <div className="mx-auto mb-8 mt-10 flex w-[1010px] flex-wrap gap-12 overflow-auto">
           <Image
             src="/eventImages/eventsBgLogo.png"
@@ -430,12 +395,13 @@ const page = () => {
             height={600}
             className="absolute right-[-126px] z-[-10] h-[254px] w-[254px]"
           ></Image>
-           {WebDevelopment?.map((item,index)=>{
+          
+         {videoediting?.map((item,index)=>{
           return(<>
              <style jsx>{`
         h2{
           text-align: center;
-          color:white;
+          color:white; 
         }
        p{
         text-align: center;
@@ -453,7 +419,7 @@ const page = () => {
         }
         .card-content{
          visibility:hidden;
-         margin-top:-3rem; 
+         margin-top:-3rem;
         }
          .card:hover{
           color:white;
@@ -462,34 +428,32 @@ const page = () => {
             transition:0.3s ease-in;
            .card-content{
             visibility:visible;
-            margin-top:-3rem;      
+            margin-top:-3rem;              
           }
         }
         @media (min-width: 640px) { 
           .img{
-            display:flex;            
+            display:flex;   
           }
-        }
- `}</style>
-
-          <main>
+        } 
+      `}</style>
+        <main>
   <div className = "card">
     <div className="imgdiv">
-    <img src={WebDevelopment[index].img} alt="img" className="img"/>
+    <img src={videoediting[index].img} alt="img" className="img"/>
     </div>
     <div className="card-content ">
       <h2>
-        {WebDevelopment[index].name}
+        {videoediting[index].name}
       </h2>
       <p>
-       {WebDevelopment[index].domain}
+       {videoediting[index].domain}
       </p>
     </div>
   </div>
 </main>
           </>)
-        })}   
-       
+        })}    
 </div>
 <EventLine name="Android Development" lineNum={7} />
         <div className="mx-auto mb-8 mt-10 flex w-[1010px] flex-wrap gap-12 overflow-auto">

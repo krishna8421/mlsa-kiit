@@ -1,8 +1,8 @@
 "use client";
 
-import AlumniCard from "./AlumniCard";
-import Image from "next/image";
 import { OUR_ALUMNI } from "@/constants";
+import Image from "next/image";
+import AlumniCard from "./AlumniCard";
 
 import { Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -89,11 +89,11 @@ const OurAlumni = () => {
   return (
     <div className="relative mx-3 pt-16 sm:mx-0 md:py-[117px] ">
       <Image
-        width={20}
-        height={20}
+        width={700}
+        height={700}
         src="/quoteLeft.png"
         alt="quoted"
-        className="left-0 top-[11%] hidden h-48 w-52 md:absolute"
+        className="left-0 top-[11%]  h-48 w-52 md:absolute"
       />
       <div className="py-5  text-center">
         <h1 className="mb-14 text-lg font-semibold md:text-3xl">
@@ -101,19 +101,19 @@ const OurAlumni = () => {
         </h1>
         <Swiper
           spaceBetween={10}
-          slidesPerView={1}
-          cssMode={true}
+          slidesPerView={2.5}
+          // cssMode={true}
           mousewheel={true}
-          className="sm:ml-16 "
+          className="sm:ml-20 "
           loop={false}
           navigation={true}
           modules={[Navigation]}
-          breakpoints={{
-            480: {
-              slidesPerView: "auto",
-              spaceBetween: 2,
-            },
-          }}
+          // breakpoints={{
+          //   480: {
+          //     slidesPerView: "auto",
+          //     spaceBetween: 2,
+          //   },
+          // }}
         >
           {OUR_ALUMNI.map((Lead, index) => {
             return (
