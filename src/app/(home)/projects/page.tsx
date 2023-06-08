@@ -43,8 +43,8 @@ const Projects = () => {
                   ></Image>
                 </div>
                 <p className="mt-4 w-[70vw] text-sm font-normal md:text-xl lg:w-[542px] lg:text-2xl 2xl:w-[55vw]">
-                  Go through our amazing projects, ranging from Web Development to Machine Learning
-                  to Augmented and Virtual Reality
+                  Our speciality lies in diversity! We've ensured to assort our domains from web
+                  development to machine learning, cybersecurity to augmented and virtual reality.
                 </p>
               </div>
             </div>

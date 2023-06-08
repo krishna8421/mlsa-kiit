@@ -343,7 +343,7 @@ export const OUR_ALUMNI = [
 ];
 export const OUR_LEADS = [
   {
-    image: "/BgColored_Leads/Anvitdubey_bg.png",
+    image: "/BgColored_Leads/anvit_bg.jpg",
     name: "Anvit Dubey",
     domain: "Lead",
     message: "lending my hands in developing a better technical society",
@@ -357,6 +357,13 @@ export const OUR_LEADS = [
     link: "https://www.linkedin.com/in/saniya-bhargav-a660111bb",
   },
   {
+    image: "/BgColored_Leads/swastika_bg.png",
+    name: "Swasktika Bishnoi",
+    domain: "Executive",
+    message: "lending my hands in developing a better technical society",
+    link: "https://www.linkedin.com/in/anvit-dubey-b0a205200",
+  },
+  {
     image: "/Leads/prashant.jpeg",
     name: "Prashant Upadhyay",
     domain: "Tech Lead",
@@ -364,7 +371,7 @@ export const OUR_LEADS = [
     link: "https://www.linkedin.com/in/prashant-upadhyay254/",
   },
   {
-    image: "/Leads/atig.jpeg",
+    image: "/BgColored_Leads/atig_bg.png",
     name: "Atig Purohit",
     domain: "Tech Lead",
     message: "lending my hands in developing a better technical society",
@@ -387,7 +394,7 @@ export const OUR_LEADS = [
   {
     image: "/BgColored_Leads/sagar_bg.png",
     name: "Sagar Satapathy",
-    domain: "Treasurer Lead",
+    domain: "Treasurer",
     message: "lending my hands in developing a better technical society",
     link: "https://www.linkedin.com/in/sagar-satapathy-a4579b173/",
   },
@@ -405,13 +412,7 @@ export const OUR_LEADS = [
     message: "lending my hands in developing a better technical society",
     link: "https://www.linkedin.com/in/anvit-dubey-b0a205200",
   },
-  {
-    image: "/BgColored_Leads/swastika_bg.png",
-    name: "Swasktika Bishnoi",
-    domain: "Executive",
-    message: "lending my hands in developing a better technical society",
-    link: "https://www.linkedin.com/in/anvit-dubey-b0a205200",
-  },
+
   {
     image: "/Leads/rishab.jpg",
     name: "Rishab Barik",
