@@ -209,7 +209,7 @@ export const ABOUT_US = {
   title: "ABOUT US",
   heading: "We have been doing projects and events since 2017.",
   description:
-    "Microsoft Learn Student Ambassador, KIIT Chapter, is a technical community that focuses on showcasing and nurturing talented enthusiasts. Starting years back, our community has been committed to elevating the technological coding culture of Kalinga Institute of Industrial Technology, Bhubaneswar by providing opportunities to students to work on projects and boost their analytical and logical capabilities which aids them in developing technical and career skills for the future. We regularly conduct events, organize workshops, technical talks, and webinars, build community projects to develop young minds, and help them recognize and uncover their potential, under the esteemed name of the organization, to carry forth and express its legacy",
+    "Microsoft Learn Student Ambassador, KIIT Chapter is a community dedicated towards promoting technology by engaging enthusiastic individuals to innovate and exhibit their knowledge and skills in the field of technology. It brings together bright-minded individuals and keen learners passionate about techware and offers them a platform to both learn and implement their ideas thereby living up to their motto of “tech for all”. Be it workshops, podcasts or hackathons, we conduct many such fun-filled tech activities with the aim to aid shape the future of tech-minded individuals in turn helping them realize their true potential. It is our determination to preserve the reputation and legacy of our esteemed organization and with this belief, we continue to strive for nothing less but the best.",
   our_vision:
     "Our vision is to elevate the coding culture of Kalinga Institute of Industrial Technology, Bhubaneswar by providing opportunities to students to work on projects and boost their analytical and logical skills along with the coding.",
   our_goal:
@@ -235,37 +235,37 @@ export const OUR_DOMAINS = [
   {
     name: "Technical",
     about:
-      "Tech a.k.a the Heart of our Community. From thinking to revolutionizing a simple idea, all of the good stuff happens here. It is the hub of the most innovative and tech-savvy people, thus making learning lively and fun!",
+      "MLSA being a technical community, the Technical domain behaves as the core of all innovations and ideas that are worked with. The domain comprises members remarkable in the field of technology and are skilled to work wonders with tech.",
     imgSrc: "/domainLogos/ComputerSupport.png",
   },
   {
     name: "Creative",
     about:
-      "The Creative Domain consists of some of the most creative and imaginative minds on campus. We believe in nurturing our team's creativity and incorporating it to make simple text innovative and attractive.",
+      "A cohort of elite minds, full of colors and designs. This domain is responsible for exhibiting the creativity of the community by showcasing the skills and talent to make something dull and boring appear colorful, innovative and catchy.",
     imgSrc: "/domainLogos/PaintBrush.png",
   },
   {
     name: "Operations",
     about:
-      "The MLSA Operation Team believes in harmonious working among all the members of the community. Its task is to ensure the smooth functioning of events with even distribution of work. Also, to avoid dissent and maintain good inter-relationships of the members of our community.",
+      " Tranquility is where innovation thrives. And to maintain the peaceful environment in the community,  the domain of Operations ensures that the coordination among the members is stable and our ship sails smoothly even through storms.",
     imgSrc: "/domainLogos/Idea.png",
   },
   {
     name: "Marketing",
     about:
-      "As the name suggests, this department is the point of contact for the community to the outside world. For all the brands that you see MLSA interact with, this team is responsible for building the right connections with them.",
+      "The connection our community has with the outside world for sponsorships and branding, is to be attributed to the domain of Marketing. The people in this domain are exceptionally persuasive and ensure that the community stays well funded.",
     imgSrc: "/domainLogos/Omnichannel.png",
   },
   {
     name: "Youtube",
     about:
-      "From taking informative interviews to curating powerful visual content, the YouTube hosting team ensures that they bring out new and exciting stuff for the audience consistently.",
+      "It is the domain of Youtube hosting that engages with the audience through visual content and interviews that keep people updated about tech. It links us to the outside world and lets them know what is cooking inside the community of MLSA.",
     imgSrc: "/domainLogos/TVShow.png",
   },
   {
     name: "Graphics",
     about:
-      "This is the team responsible for all the innovative and creative stuff when it comes to graphics. Be it the website or the socials, the graphic designing team ensures that the correct ideas are communicated to the users through captivating and inspiring graphics.",
+      "The domain of Graphics aims in elevating the quality of the content overall. It is the responsibility of this domain to creatively add the requisite graphics in our website and socials. It is their innovative work that helps the audience engage better with us.",
     imgSrc: "/domainLogos/Vector.png",
   },
 ];
@@ -343,7 +343,7 @@ export const OUR_ALUMNI = [
 ];
 export const OUR_LEADS = [
   {
-    image: "/Leads/Anvitdubey.JPG",
+    image: "/BgColored_Leads/Anvitdubey_bg.png",
     name: "Anvit Dubey",
     domain: "Lead",
     message: "lending my hands in developing a better technical society",
@@ -354,14 +354,14 @@ export const OUR_LEADS = [
     name: "Saniya Bhargav",
     domain: "Vice Lead",
     message: "lending my hands in developing a better technical society",
-    link: "hhttps://www.linkedin.com/in/saniya-bhargav-a660111bb",
+    link: "https://www.linkedin.com/in/saniya-bhargav-a660111bb",
   },
   {
     image: "/Leads/prashant.jpeg",
     name: "Prashant Upadhyay",
     domain: "Tech Lead",
     message: "lending my hands in developing a better technical society",
-    link: "https://www.linkedin.com/in/anvit-dubey-b0a205200",
+    link: "https://www.linkedin.com/in/prashant-upadhyay254/",
   },
   {
     image: "/Leads/atig.jpeg",
@@ -378,14 +378,14 @@ export const OUR_LEADS = [
     link: "https://www.linkedin.com/in/mayank-jain-688409208/",
   },
   {
-    image: "/Leads/aradhya.jpg",
+    image: "/BgColored_Leads/aradhya_bg.png",
     name: "Aradhya Kumar",
     domain: "Content Lead",
     message: "lending my hands in developing a better technical society",
     link: "https://www.linkedin.com/in/aradhya-kumar-84078a21b/",
   },
   {
-    image: "/Leads/sagar.jpg",
+    image: "/BgColored_Leads/sagar_bg.png",
     name: "Sagar Satapathy",
     domain: "Treasurer Lead",
     message: "lending my hands in developing a better technical society",
@@ -399,14 +399,14 @@ export const OUR_LEADS = [
     link: "https://www.linkedin.com/in/anvit-dubey-b0a205200",
   },
   {
-    image: "/Leads/akshita.jpeg",
+    image: "/BgColored_Leads/akshita_bg.png",
     name: "Akshita Sah",
     domain: "Tech Lead",
     message: "lending my hands in developing a better technical society",
     link: "https://www.linkedin.com/in/anvit-dubey-b0a205200",
   },
   {
-    image: "/Leads/swastika.jpeg",
+    image: "/BgColored_Leads/swastika_bg.png",
     name: "Swasktika Bishnoi",
     domain: "Executive",
     message: "lending my hands in developing a better technical society",

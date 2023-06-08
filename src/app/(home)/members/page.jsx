@@ -1,23 +1,13 @@
 import Image from "next/image";
 import { RiHeart2Fill } from "react-icons/ri";
-import { ARVR, AndroidDevelopment, Creative, GraphicDesign, MachineLearning, Marketing, WebDevelopment, YT, cloud } from "../../../constants/index";
+import { Creative, GraphicDesign, MachineLearning, Marketing, YT, cloud } from "../../../constants/index";
+import { EventLine } from "../events/page";
 import { videoediting } from "../mem/mem";
 import "./index.css";
-const EventLine = ({ name, lineNum }) => {
-  return (
-    <div className="mx-auto flex w-[90vw] items-center justify-between">
-      <div className="flex w-full items-center pr-8">
-        <div className="flex h-[4vw] w-[4vw] items-center justify-center rounded-[100%] bg-[#083475] text-white md:text-2xl lg:text-[25px] 2xl:text-[2.1vw]">
-          {lineNum}
 
-        </div>
-        <h1 className="text-xl" style={{ display: "inline-block", whiteSpace: "nowrap", paddingLeft: "1rem", paddingRight: "1rem" }}><b>{name}</b></h1>
-        <div className="h-[3px] w-full bg-blue-line hover:bg-[#286FD9] "></div>
-      </div>
-    </div>
-  );
-}
-
+import ARVRTeam from "./ARVRTeam";
+import AppTeam from "./appTeam";
+import WebTeam from "./webTeam";
 
 const page = () => {
   return (
@@ -59,7 +49,6 @@ const page = () => {
             </div>
           </div>
         </div>
-
       </div>
       <div className="m-auto max-w-[1920px] px-4 md:px-6">
 
@@ -73,74 +62,12 @@ const page = () => {
       </div>
 
       {/* web team */}
-      <div className="w-[80vw] ml-[10vw] mr-[10vw] ">
-        <EventLine name="Web Development" lineNum={1} />
-        <div className="w-full grid gap-x-8 lg:gap-y-4 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 xsm:grid-cols-2 ">
-          {WebDevelopment.map((item, index) => {
-            return (
-              <div className="w-[90%] lg:h-[40vh] md:h-[15vh] sm:h-[40vh] xsm:h-[20vh] mt-3 relative  " key={item.id} >
-                <Image
-                  fill
-                  className="w-full  h-full z-10"
-                  src={item.img}
-                  alt={item.name}
-                />
-                <div className="absolute w-full h-[30%] flex justify-center items-center gradientImageHover z-20 bottom-0 text-center  ">
-                  <p className="text-white text-2xl  lg:text-lg sm:text-sm md:text-base " > {item.name}</p>
-                  {/* <p className="text-white" > {item.domain}</p> */}
-                </div>
-              </div>
-            )
-          })}
-        </div>
-      </div>
 
+      <WebTeam />
       {/* app team */}
-      <div className="w-[80vw] ml-[10vw] mr-[10vw] mt-5 ">
-        <EventLine name="App Team" lineNum={2} />
-        <div className="w-full grid gap-x-8 lg:gap-y-4 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 xsm:grid-cols-2 ">
-          {AndroidDevelopment.map((item, index) => {
-            return (
-              <div className="w-[90%] lg:h-[40vh] md:h-[15vh] sm:h-[40vh] xsm:h-[20vh] mt-3 relative  " key={item.id} >
-                <Image
-                  fill
-                  className="w-full  h-full z-10"
-                  src={item.img}
-                  alt={item.name}
-                />
-                <div className="absolute w-full h-[30%] flex justify-center items-center gradientImageHover z-20 bottom-0 text-center  ">
-                  <p className="text-white" > {item.name}</p>
-                  {/* <p className="text-white" > {item.domain}</p> */}
-                </div>
-              </div>
-            )
-          })}
-        </div>
-      </div>
-
+      <AppTeam />
       {/* AR VR Team */}
-      <div className="w-[80vw] ml-[10vw] mr-[10vw] mt-5 ">
-        <EventLine name="AR-VR Team" lineNum={3} />
-        <div className="w-full grid gap-x-8 lg:gap-y-4 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 xsm:grid-cols-2 ">
-          {ARVR.map((item, index) => {
-            return (
-              <div className="w-[90%] lg:h-[40vh] md:h-[15vh] sm:h-[40vh] xsm:h-[20vh] mt-3 relative  " key={item.id} >
-                <Image
-                  fill
-                  className="w-full  h-full z-10"
-                  src={item.img}
-                  alt={item.name}
-                />
-                <div className="absolute w-full h-[30%] flex justify-center items-center gradientImageHover z-20 bottom-0 text-center  ">
-                  <p className="text-white" > {item.name}</p>
-                  {/* <p className="text-white" > {item.domain}</p> */}
-                </div>
-              </div>
-            )
-          })}
-        </div>
-      </div>
-
+      <ARVRTeam />
       {/* Cloud team */}
       <div className="w-[80vw] ml-[10vw] mr-[10vw] mt-5 ">
         <EventLine name="Cloud Team" lineNum={4} />
