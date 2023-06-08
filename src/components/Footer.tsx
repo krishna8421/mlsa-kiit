@@ -37,18 +37,30 @@ const Footer = () => {
             <span className="text-[#286FD9]">Us</span>
           </div>
           <div className="mt-2">
-            <Link href={INSTAGRAM_URL} target="_blank">
-              Instagram
+            <Link
+              href={INSTAGRAM_URL}
+              target="_blank"
+              className="hover:cursor-pointer hover:font-semibold"
+            >
+              Instagram.
             </Link>
           </div>
           <div className="mt-1">
-            <Link href={LINKEDIN_URL} target="_blank">
-              LinkedIn
+            <Link
+              href={LINKEDIN_URL}
+              target="_blank"
+              className="hover:cursor-pointer hover:font-semibold"
+            >
+              LinkedIn.
             </Link>
           </div>
           <div className=" mt-1">
-            <Link href={TWITTER_URL} target="_blank">
-              Twitter
+            <Link
+              href={TWITTER_URL}
+              target="_blank"
+              className="hover:cursor-pointer hover:font-semibold"
+            >
+              Twitter.
             </Link>
           </div>
         </div>

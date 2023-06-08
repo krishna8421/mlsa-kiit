@@ -15,12 +15,12 @@ const ContactUs = () => {
         <div className="pl-8 pt-[70px] text-2xl font-bold md:pl-[90px]">
           <h1 className="text-[#286FD9]">Join</h1>
           <h1>
-            Micrsoft Learn <span className=" text-[#286FD9]">Student</span>
+            Microsoft Learn <span className=" text-[#286FD9]">Student</span>
           </h1>
-          <h1>Amabasder</h1>
+          <h1>Ambassador</h1>
           <h1 className="font-normal">KIIT Chapter</h1>
         </div>
-        <Link href="#" className="">
+        <Link href="/contact" className="">
           <button className="my-[24px] mb-16 ml-8 flex h-[44px] w-[151px] items-center justify-center whitespace-nowrap rounded-[100px] bg-gradient-blue px-7 py-[15px] text-xl font-normal text-white sm:text-2xl  md:ml-[82px] ">
             Contact Us
           </button>

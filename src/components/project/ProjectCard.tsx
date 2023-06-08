@@ -32,7 +32,7 @@ const ProjectCard = ({
   };
   return (
     <div
-      className={` m-3 mr-5 h-[302px] w-[304px] overflow-hidden rounded-[10px] border-[1.6px] border-white text-start transition duration-300 ease-in-out hover:border-[1.6px] hover:border-black hover:shadow-project`}
+      className={`mr-5 h-[302px] w-[304px] overflow-hidden rounded-[10px] border-2 border-[1.6px] border-black border-white text-start transition duration-300 ease-in-out hover:border-[1.6px] hover:border-black hover:shadow-project xsm:ml-5 lg:m-3 `}
       style={maindivBG}
     >
       <div className="mx-auto pt-2" style={containerStyle}>

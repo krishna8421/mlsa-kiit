@@ -6,7 +6,7 @@ const Sponsors = () => {
   return (
     <div className="mt-24 flex-col justify-around overflow-x-auto md:pl-8">
       <div className="mb-8 flex justify-center gap-3 text-3xl font-semibold">
-        <div>Our</div>
+        <div>Our Top</div>
         <div className="text-[#3B61CF]">Sponsors</div>
       </div>
       <div className="flex flex-wrap items-center justify-center gap-12 px-10 pt-10">
