@@ -43,7 +43,7 @@ const Projects = () => {
                   ></Image>
                 </div>
                 <p className="mt-4 w-[70vw] text-sm font-normal md:text-xl lg:w-[542px] lg:text-2xl 2xl:w-[55vw]">
-                  Our speciality lies in diversity! We've ensured to assort our domains from web
+                  Our speciality lies in diversity! We have ensured to assort our domains from web
                   development to machine learning, cybersecurity to augmented and virtual reality.
                 </p>
               </div>
