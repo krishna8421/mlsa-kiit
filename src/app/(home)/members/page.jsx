@@ -1,18 +1,16 @@
 import Image from "next/image";
 import { RiHeart2Fill } from "react-icons/ri";
-import { Creative, GraphicDesign, MachineLearning, Marketing, YT, cloud } from "../../../constants/index";
+import { ARVR, AndroidDevelopment, Creative, GraphicDesign, MachineLearning, Marketing, WebDevelopment, YT, cloud } from "../../../constants/index";
 import { EventLine } from "../events/page";
 import { videoediting } from "../mem/mem";
 import "./index.css";
 
-import ARVRTeam from "./ARVRTeam";
-import AppTeam from "./appTeam";
-import WebTeam from "./webTeam";
+import CardSection from "./CardSection";
 
 const page = () => {
   return (
     <>
-      <div className='w-[100vw] border-2 border-red-500 '>
+      <div className='w-[100vw] overflow-hidden '>
         <div className="relative">
           <div className="mb-6 mt-20">
             <div className="xl:h-[451px] relative mt-16 h-[220px] md:h-[300px] lg:h-[400px] 2xl:h-[600px]">
@@ -62,34 +60,21 @@ const page = () => {
       </div>
 
       {/* web team */}
+      <CardSection team={WebDevelopment} lineNum={1} teamName={"Web Team"} />
 
-      <WebTeam />
       {/* app team */}
-      <AppTeam />
+      <CardSection team={AndroidDevelopment} lineNum={2} teamName={"App Team"} />
+
       {/* AR VR Team */}
-      <ARVRTeam />
+      <CardSection team={ARVR} lineNum={3} teamName={"ARVR Team"} />
+
       {/* Cloud team */}
-      <div className="w-[80vw] ml-[10vw] mr-[10vw] mt-5 ">
-        <EventLine name="Cloud Team" lineNum={4} />
-        <div className="w-full grid gap-x-8 lg:gap-y-4 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 xsm:grid-cols-2 ">
-          {cloud.map((item, index) => {
-            return (
-              <div className="w-[90%] lg:h-[40vh] md:h-[15vh] sm:h-[40vh] xsm:h-[20vh] mt-3 relative  " key={item.id} >
-                <Image
-                  fill
-                  className="w-full  h-full z-10"
-                  src={item.img}
-                  alt={item.name}
-                />
-                <div className="absolute w-full h-[30%] flex justify-center items-center gradientImageHover z-20 bottom-0 text-center  ">
-                  <p className="text-white" > {item.name}</p>
-                  {/* <p className="text-white" > {item.domain}</p> */}
-                </div>
-              </div>
-            )
-          })}
-        </div>
-      </div>
+      <CardSection team={cloud} lineNum={4} teamName={"Cloud Team"} />
+
+
+
+
+
       {/* Youtube team */}
       <div className="w-[80vw] ml-[10vw] mr-[10vw] mt-5 ">
         <EventLine name="Youtube Team" lineNum={5} />
@@ -136,7 +121,7 @@ const page = () => {
       </div>
 
       {/* Graphic dDesign team */}
-      <div className="w-[80vw] ml-[10vw] mr-[10vw] mt-5 ">
+      {/* <div className="w-[80vw] ml-[10vw] mr-[10vw] mt-5 ">
         <EventLine name="Design Team" lineNum={7} />
         <div className="w-full grid gap-x-8 lg:gap-y-4 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 xsm:grid-cols-2 ">
           {GraphicDesign.map((item, index) => {
@@ -150,13 +135,14 @@ const page = () => {
                 />
                 <div className="absolute w-full h-[30%] flex justify-center items-center gradientImageHover z-20 bottom-0 text-center  ">
                   <p className="text-white" > {item.name}</p>
-                  {/* <p className="text-white" > {item.domain}</p> */}
+                 
                 </div>
               </div>
             )
           })}
         </div>
-      </div>
+      </div> */}
+      <CardSection team={GraphicDesign} lineNum={7} teamName={"Graphic Design"} />
       {/* MAchine Learning */}
       <div className="w-[80vw] ml-[10vw] mr-[10vw] mt-5 ">
         <EventLine name="ML Team" lineNum={8} />
