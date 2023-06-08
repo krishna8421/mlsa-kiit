@@ -1,5 +1,6 @@
 import Image from "next/image";
 import EventLine from "./EventLine";
+import "./index.css";
 const CardSection = ({ team, lineNum, teamName }) => {
     return (
         <div className="w-[80vw] ml-[10vw] mr-[10vw] mt-5 ">
@@ -15,7 +16,7 @@ const CardSection = ({ team, lineNum, teamName }) => {
                                 alt={item.name}
                             />
                             <div className="absolute w-full h-[30%] flex justify-center items-center gradientImageHover z-20 bottom-0 text-center  ">
-                                <p className="text-white" > {item.name}</p>
+                                <p className="text-white md:text-sm"> {item.name}</p>
                                 {/* <p className="text-white" > {item.domain}</p> */}
                             </div>
                         </div>
@@ -26,4 +27,4 @@ const CardSection = ({ team, lineNum, teamName }) => {
     )
 }
 
-export default CardSection
+export default CardSection;

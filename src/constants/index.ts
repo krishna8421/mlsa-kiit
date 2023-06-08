@@ -694,7 +694,7 @@ export const EVENTS2020 = [
 export const videoediting = [
   {
     id: 1,
-    img: "/members/Pratik.jpeg",
+    img: "/members/pratik.JPG",
     name: "Pratik Mohanty",
     domain: "Video Editing",
   },
@@ -706,7 +706,7 @@ export const videoediting = [
   },
   {
     id: 1,
-    img: "/members/Parivesh.jpeg",
+    img: "/members/xyz.jpeg",
     name: "Parivesh Srivastava",
     domain: "Video Editing",
   },
@@ -991,7 +991,7 @@ export const WebDevelopment = [
   },
   {
     id: 1,
-    img: "/members/akshat.jpg",
+    img: "/members/akshat.jpeg",
     name: "Akshat Srivastava ",
     domain: "Web Development",
   },
