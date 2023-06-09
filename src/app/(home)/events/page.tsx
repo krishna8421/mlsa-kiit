@@ -76,6 +76,7 @@ const Events = () => {
                   date={event.date}
                   numParticipants={event.numParticipants}
                   isButton={false}
+                  description={event.description}
                   isHero={false}
                   link=""
                 />

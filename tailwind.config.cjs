@@ -6,6 +6,7 @@ module.exports = {
     boxShadow: {
       blue: "0px 0px 4px 4px rgba(59, 171, 207, 0.2), 0 2px 4px -1px rgba(35, 63, 146, 0.8)",
       gray: "0px 1px 10px rgba(0, 0, 0, 0.15), 2px 2px 2px -1px rgba(125, 125, 125, 0.1)",
+      contactFormBoxShadow: "rgba(99, 99, 99, 0.2) 0px 2px 8px 0px ",
       project: "0px 4px 4px rgba(0, 0, 0, 0.25)",
     },
     screens: {

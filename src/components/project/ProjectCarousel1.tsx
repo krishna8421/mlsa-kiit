@@ -32,41 +32,11 @@ const ProjectCarousel1 = () => {
         loop={false}
         navigation={true}
         modules={[Navigation]}
-        // centerInsufficientSlides={true}
-        // breakpoints={{
-        //   360: {
-        //     slidesPerView: 1,
-        //     // centeredSlides = true,
-        //     spaceBetween: 100,
-        //   },
-        //   400: {
-        //     spaceBetween: 2,
-        //     // slidesPerGroup: 1,
-        //   },
-        //   420: {
-        //     slidesPerView: 2,
-        //     spaceBetween: 2,
-        //   },
-        //   786: {
-        //     slidesPerView: 3,
-        //     spaceBetween: 100,
-        //     // slidesPerGroup: 2,
-        //   },
-        //   1000: {
-        //     slidesPerView: 3,
-        //     spaceBetween: 40,
-        //   },
-        //   1400: {
-        //     // slidesPerView: 2,
-        //     slidesPerGroup: 3,
-        //   },
-        // }}
         breakpoints={{
           320: {
             slidesPerView: 1,
             spaceBetween: 100,
           },
-          // when window width is >= 480px
           480: {
             slidesPerView: 1.3,
             spaceBetween: 30,
@@ -75,7 +45,6 @@ const ProjectCarousel1 = () => {
             slidesPerView:1.7,
             spaceBetween: 30,
           },
-          // when window width is >= 640px
           640: {
             slidesPerView: 2.1,
             spaceBetween: 30,

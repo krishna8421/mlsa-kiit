@@ -14,14 +14,14 @@ const OurLeads = () => {
         Our <span className="text-[#3B61CF]">Leads</span>
       </h1>
       <Swiper
-        className="ml-[10%] flex h-[100%] w-[90%] items-center justify-center  px-3 md:ml-20  "
+        className="ml-[10%] flex h-[100%] w-[90%] items-center justify-center  px-4 md:ml-20  "
         spaceBetween={14}
         slidesPerView={2.6}
         cssMode={true}
         loop={false}
         mousewheel={true}
         navigation={true}
-        // centeredSlides={true}
+        centeredSlides={true}
         // Autoplay={true}
         modules={[Navigation, Autoplay]}
         breakpoints={{
