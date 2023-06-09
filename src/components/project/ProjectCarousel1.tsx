@@ -28,7 +28,7 @@ const ProjectCarousel1 = () => {
         slidesPerView={3}
         // cssMode={true}
         mousewheel={true}
-        className=" border-2 border-red-500 px-3"
+        className=" px-3"
         loop={false}
         navigation={true}
         modules={[Navigation]}

@@ -13,13 +13,13 @@ const ProjectCommuntiy = () => {
           logo={20}
           heading="Finished Projects"
           about={
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble"
+            "MLSA shelters a collection of unique projects empowered by embracing new ideas, adapting to the best and latest and revolutionizing perception through tech. We believe in working together and would love you to join alongside our team by adding your skills to our workforce."
           }
         ></DomainCard>
         <DomainCard
           isHome={false}
-          logo={27}
-          heading="Sponsors"
+          logo={"20+"}
+          heading="Project Wing"
           about={
             "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble"
           }

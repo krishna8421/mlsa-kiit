@@ -16,7 +16,7 @@ const imgStyle: any = {
 };
 const LeadsCard = ({ image, name, domain, message, link }: Props) => {
   return (
-    <div className="carouselDiv  mt-2 box-border flex w-[400px]  gap-x-[18px]  rounded-[10px] bg-white px-6 py-4 text-start font-sans font-normal shadow-gray transition duration-300 hover:shadow-blue ">
+    <div className="carouselDiv  mt-2 box-border flex w-[330px]  gap-x-[18px]  rounded-[10px] bg-white px-6 py-4 text-start font-sans font-normal shadow-gray transition duration-300 hover:shadow-blue ">
       <Image
         src={image}
         style={imgStyle}
@@ -30,7 +30,7 @@ const LeadsCard = ({ image, name, domain, message, link }: Props) => {
           <h1 className="text-2xl font-bold leading-8 hover:cursor-pointer">{name}</h1>
         </Link>
         <p className="mb-2 text-xl leading-[27px]">{domain}</p>
-        <p className="text-[15px] capitalize leading-5">{message}</p>
+        {/* <p className="text-[15px] capitalize leading-5">{message}</p> */}
       </div>
     </div>
   );

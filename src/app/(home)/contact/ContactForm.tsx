@@ -46,7 +46,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="mt-16 flex flex-col items-center justify-center gap-12">
+    <div className="mt-16 flex flex-col items-center justify-center gap-12 ">
       <div className="grid w-full max-w-sm items-center gap-1.5">
         <Label htmlFor="name">Name</Label>
         <Input
