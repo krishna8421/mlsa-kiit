@@ -492,6 +492,7 @@ export const EVENTS2023 = [
     isButton: false,
     isHero: false,
     link: "",
+    description: "An unique event which included designing your own squid game using computer vision.",
   },
   {
     bgColor: "#9CFFE1",
@@ -502,6 +503,8 @@ export const EVENTS2023 = [
     isButton: false,
     isHero: false,
     link: "",
+    description: "Event with an array of captivating experiences based on Computer vision which included Fruit Ninja and Squid games.",
+
   },
   {
     bgColor: "#FFCC9C",
@@ -512,6 +515,7 @@ export const EVENTS2023 = [
     isButton: false,
     isHero: false,
     link: "",
+    description: "KALKI provided amazing experiences ranging from VR games with robotic or non-controller gameplay to movies and 2D games.",
   },
   {
     bgColor: "#8860D0",
@@ -522,6 +526,7 @@ export const EVENTS2023 = [
     isButton: false,
     isHero: false,
     link: "",
+    description: "The most popular scavenger hunt with twisted techy questions that left our audience both overly excited and baffled.",
   },
 ];
 
@@ -535,6 +540,7 @@ export const EVENTS2022 = [
     isButton: false,
     isHero: false,
     link: "",
+    description: "An online fast-track program aimed at equipping engineering students with standout skills.",
   },
   {
     bgColor: "#9CE1FF",
@@ -544,6 +550,7 @@ export const EVENTS2022 = [
     numParticipants: "533 Participants",
     isButton: false,
     link: "",
+    description: "A beginner-friendly workshop to spread awareness about Open-Source and HacktoberFest.",
   },
   {
     bgColor: "#D9FF9C",
@@ -554,6 +561,7 @@ export const EVENTS2022 = [
     isButton: false,
     isHero: false,
     link: "",
+    description: "A one-day DevOps Workshop aimed at raising awareness about the concept of operating DevOps.",
   },
   {
     bgColor: "#E3AFBC",
@@ -564,6 +572,7 @@ export const EVENTS2022 = [
     isButton: false,
     isHero: false,
     link: "",
+    description: "It was a captivating machine learning and data visualisation workshop which used the unique concept of no code tech.",
   },
   {
     bgColor: "#EE4C7C",
@@ -573,6 +582,7 @@ export const EVENTS2022 = [
     numParticipants: "516 Participants",
     isButton: false,
     link: "",
+    description: "It was a two-day hackathon focused on frontend design.",
   },
   {
     bgColor: "#EDC7B7",
@@ -582,6 +592,7 @@ export const EVENTS2022 = [
     numParticipants: "283 Participants",
     isButton: false,
     link: "",
+    description: "An all-in-one Workshop on Flutter starting from basics to creating both a minor and a major project.",
   },
 ];
 
@@ -594,6 +605,7 @@ export const EVENTS2021 = [
     numParticipants: "366 Participants",
     isButton: false,
     link: "",
+    description: "A competitive programming event with fun packed interactive sessions and no barrier on programming languages.",
   },
   {
     bgColor: "#9CE1FF",
@@ -604,6 +616,7 @@ export const EVENTS2021 = [
     isButton: false,
     isHero: false,
     link: "",
+    description: "This workshop provided an accessible introduction to Open-Source and HacktoberFest.",
   },
   {
     bgColor: "#D9FF9C",
@@ -614,6 +627,7 @@ export const EVENTS2021 = [
     isButton: false,
     isHero: false,
     link: "",
+    description: "A specialised program intended to empower engineering students by providing them with tech and non-tech skills.",
   },
   {
     bgColor: "#66FCF1",
@@ -624,6 +638,7 @@ export const EVENTS2021 = [
     isButton: false,
     isHero: false,
     link: "",
+    description: "The most awaited hackathon that enables you to construct a labyrinth of ideas, create a project and enable sustainability.",
   },
   {
     bgColor: "#7395AE",
@@ -634,6 +649,7 @@ export const EVENTS2021 = [
     isButton: false,
     isHero: false,
     link: "",
+    description: "A two-day hackathon for every ML lover with loads of quizzes and prediction games and amazing prizes.",
   },
   {
     bgColor: "#379683",
@@ -644,6 +660,7 @@ export const EVENTS2021 = [
     isButton: false,
     isHero: false,
     link: "",
+    description: "An unique event where participants celebrated their problem-solving skills and got rewarded for it.",
   },
   {
     bgColor: "#B1A296",
@@ -654,6 +671,7 @@ export const EVENTS2021 = [
     isButton: false,
     isHero: false,
     link: "",
+    description: "Data Dive Desc....",
   },
 ];
 
@@ -667,6 +685,7 @@ export const EVENTS2020 = [
     isButton: false,
     isHero: false,
     link: "",
+    description: "Green Hack Desc....",
   },
   {
     bgColor: "#379683",
@@ -677,6 +696,7 @@ export const EVENTS2020 = [
     isButton: false,
     isHero: false,
     link: "",
+    description: "Provided engineering students with a unique program designed to equip them with exceptional skills with projects.",
   },
   {
     bgColor: "#8EE4AF",
@@ -687,6 +707,7 @@ export const EVENTS2020 = [
     isButton: false,
     isHero: false,
     link: "",
+    description: "With a focus on beginners, this workshop sought to promote Open-Source and HacktoberFest.",
   },
 ];
 

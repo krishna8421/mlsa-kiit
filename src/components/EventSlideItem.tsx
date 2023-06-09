@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
 
 interface EventSlideItemProps {
@@ -9,6 +8,7 @@ interface EventSlideItemProps {
   date: any;
   numParticipants: string;
   link: string;
+  description: string;
   isButton: boolean;
   isHero?: boolean;
 }
@@ -33,6 +33,7 @@ const EventSlideItem: React.FC<EventSlideItemProps> = ({
   date,
   numParticipants,
   link,
+  description,
   isButton,
   isHero,
 }) => {
@@ -62,10 +63,13 @@ const EventSlideItem: React.FC<EventSlideItemProps> = ({
             isHero ? "h-[105px]" : "h-[71px] md:h-[134px]"
           }`}
         ></Image>
-        <div className="ml-1 pt-3 md:ml-[12px]">
+        <div className="ml-1 pt-3 md:ml-[16px]">
           <div>
             <h2 className="text-xs md:text-lg">{ProjectName}</h2>
-            <div className="mt-1.5 flex flex-col text-xs font-[350] leading-[20px] md:text-[16px]">
+            <div className="flex flex-col text-xs font-[350] leading-[20px] md:text-[16px]">
+              <span className="">{description}</span>
+            </div>
+            <div className="mt-1 flex flex-col text-xs font-[350] leading-[20px] md:text-[16px]">
               <span className="">{formatDate(date)}</span>
               <span className="">{formatDate(numParticipants)}</span>
             </div>
