@@ -58,13 +58,13 @@ const Blogs = () => {
         <div className="mx-auto mt-16 flex max-w-[1066px] px-2 justify-between text-base font-medium text-gray-400 md:text-lg">
           <h1>BLOGS</h1>
           <div className="flex gap-6">
-            <Link href={INSTAGRAM_URL} target="_blank">
+            <Link className="hover:text-[#286FD9]" href={INSTAGRAM_URL} target="_blank">
               <BsInstagram />
             </Link>
-            <Link href={LINKEDIN_URL} target="_blank">
+            <Link className="hover:text-[#286FD9]" href={LINKEDIN_URL} target="_blank">
               <BsLinkedin />
             </Link>
-            <Link href={TWITTER_URL} target="_blank">
+            <Link className="hover:text-[#286FD9]" href={TWITTER_URL} target="_blank">
               <BsTwitter />
             </Link>
           </div>

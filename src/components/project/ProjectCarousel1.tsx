@@ -25,40 +25,84 @@ const ProjectCarousel1 = () => {
     <div className="mx-auto mt-5 w-[350px] text-center sm:ml-10 sm:w-auto md:ml-[89px]">
       <Swiper
         spaceBetween={18}
-        slidesPerView={3}
-        // cssMode={true}
+        slidesPerView={4}
+        cssMode={true}
         mousewheel={true}
-        className=" border-2 border-red-500 px-3"
+        className="px-3"
         loop={false}
         navigation={true}
         modules={[Navigation]}
-        centerInsufficientSlides={true}
+        // centerInsufficientSlides={true}
+        // breakpoints={{
+        //   360: {
+        //     slidesPerView: 1,
+        //     // centeredSlides = true,
+        //     spaceBetween: 100,
+        //   },
+        //   400: {
+        //     spaceBetween: 2,
+        //     // slidesPerGroup: 1,
+        //   },
+        //   420: {
+        //     slidesPerView: 2,
+        //     spaceBetween: 2,
+        //   },
+        //   786: {
+        //     slidesPerView: 3,
+        //     spaceBetween: 100,
+        //     // slidesPerGroup: 2,
+        //   },
+        //   1000: {
+        //     slidesPerView: 3,
+        //     spaceBetween: 40,
+        //   },
+        //   1400: {
+        //     // slidesPerView: 2,
+        //     slidesPerGroup: 3,
+        //   },
+        // }}
         breakpoints={{
-          360: {
+          320: {
             slidesPerView: 1,
-            // centeredSlides = true,
             spaceBetween: 100,
           },
-          400: {
-            spaceBetween: 2,
-            // slidesPerGroup: 1,
+          // when window width is >= 480px
+          480: {
+            slidesPerView: 1.3,
+            spaceBetween: 30,
           },
-          420: {
-            slidesPerView: 2,
-            spaceBetween: 2,
+          500: {
+            slidesPerView:1.7,
+            spaceBetween: 30,
           },
-          786: {
-            slidesPerView: 3,
-            spaceBetween: 100,
-            // slidesPerGroup: 2,
+          // when window width is >= 640px
+          640: {
+            slidesPerView: 2.1,
+            spaceBetween: 30,
+          },
+          800: {
+            slidesPerView: 2.4,
+            spaceBetween: 30,
+          },
+          900: {
+            slidesPerView: 2.7,
+            spaceBetween: 30,
           },
           1000: {
-            slidesPerView: 3,
-            spaceBetween: 40,
+            slidesPerView: 3.1,
+            spaceBetween: 100,
           },
-          1400: {
-            // slidesPerView: 2,
-            slidesPerGroup: 3,
+          1100 :{
+            slidesPerView: 3.4,
+            spaceBetween: 100,
+          },
+          1200: {
+            slidesPerView: 3.4,
+            spaceBetween: 50,
+          },
+          1240: {
+            slidesPerView:4,
+            spaceBetween:40,
           },
         }}
       >

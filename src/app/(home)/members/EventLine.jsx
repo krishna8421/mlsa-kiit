@@ -2,7 +2,7 @@ const EventLine = ({ name, lineNum }) => {
     return (
         <div className="mx-auto flex w-[90vw] items-center justify-between">
             <div className="flex w-full items-center pr-8">
-                <div className="flex h-[4vw] w-[4vw] items-center justify-center rounded-[100%] bg-[#083475] text-white md:text-2xl lg:text-[25px] 2xl:text-[2.1vw]">
+                <div className="flex h-[2.5rem] w-[3rem] items-center justify-center rounded-[100%] bg-[#083475] text-white md:text-xl lg:text-[15px] xl:text-[20px] 2xl:text-[20px]">
                     {lineNum}
 
                 </div>

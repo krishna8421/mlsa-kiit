@@ -70,13 +70,28 @@ const page = () => {
 
       {/* Cloud team */}
       <CardSection team={cloud} lineNum={4} teamName={"Cloud Team"} />
+      {/* Youtube team */}
+      <CardSection team={YT} lineNum={5} teamName={"Youtube Team"} />
+      {/* Creative Team*/}
+      <CardSection team={Creative} lineNum={6} teamName={"Creative Team"} />
+      
+      <CardSection team={GraphicDesign} lineNum={7} teamName={"Graphic Designing Team"} />
+      <CardSection team={MachineLearning} lineNum={8} teamName={"Machine Learning Team"} />
+      <CardSection team={Marketing} lineNum={9} teamName={"Marketing Team"} />
+      <CardSection team={videoediting} lineNum={10} teamName={"Video Editing Team"} />
+
+
+
+
+
+
 
 
 
 
 
       {/* Youtube team */}
-      <div className="w-[80vw] ml-[10vw] mr-[10vw] mt-5 ">
+      {/* <div className="w-[80vw] ml-[10vw] mr-[10vw] mt-5 ">
         <EventLine name="Youtube Team" lineNum={5} />
         <div className="w-full grid gap-x-8 lg:gap-y-4 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 xsm:grid-cols-2 ">
           {YT.map((item, index) => {
@@ -87,18 +102,18 @@ const page = () => {
                   className="w-full  h-full z-10"
                   src={item.img}
                   alt={item.name}
-                />
-                <div className="absolute w-full h-[30%] flex justify-center items-center gradientImageHover z-20 bottom-0 text-center  ">
-                  <p className="text-white" > {item.name}</p>
+                /> */}
+                {/* <div className="absolute w-full h-[30%] flex justify-center items-center gradientImageHover z-20 bottom-0 text-center  ">
+                  <p className="text-white" > {item.name}</p> */}
                   {/* <p className="text-white" > {item.domain}</p> */}
-                </div>
+                {/* </div>
               </div>
             )
-          })}
-        </div>
-      </div>
+          })} */}
+        {/* </div>
+      </div> */}
       {/* Creative Team*/}
-      <div className="w-[80vw] ml-[10vw] mr-[10vw] mt-5 ">
+      {/* <div className="w-[80vw] ml-[10vw] mr-[10vw] mt-5 ">
         <EventLine name="Creative Team" lineNum={6} />
         <div className="w-full grid gap-x-8 lg:gap-y-4 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 xsm:grid-cols-2 ">
           {Creative.map((item, index) => {
@@ -113,12 +128,12 @@ const page = () => {
                 <div className="absolute w-full h-[30%] flex justify-center items-center gradientImageHover z-20 bottom-0 text-center  ">
                   <p className="text-white" > {item.name}</p>
                   {/* <p className="text-white" > {item.domain}</p> */}
-                </div>
+                {/* </div>
               </div>
             )
           })}
         </div>
-      </div>
+      </div> */}
 
       {/* Graphic dDesign team */}
       {/* <div className="w-[80vw] ml-[10vw] mr-[10vw] mt-5 ">
@@ -142,9 +157,8 @@ const page = () => {
           })}
         </div>
       </div> */}
-      <CardSection team={GraphicDesign} lineNum={7} teamName={"Graphic Design"} />
       {/* MAchine Learning */}
-      <div className="w-[80vw] ml-[10vw] mr-[10vw] mt-5 ">
+      {/* <div className="w-[80vw] ml-[10vw] mr-[10vw] mt-5 ">
         <EventLine name="ML Team" lineNum={8} />
         <div className="w-full grid gap-x-8 lg:gap-y-4 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 xsm:grid-cols-2 ">
           {MachineLearning.map((item, index) => {
@@ -157,16 +171,16 @@ const page = () => {
                   alt={item.name}
                 />
                 <div className="absolute w-full h-[30%] flex justify-center items-center gradientImageHover z-20 bottom-0 text-center  ">
-                  <p className="text-white" > {item.name}</p>
+                  <p className="text-white" > {item.name}</p> */}
                   {/* <p className="text-white" > {item.domain}</p> */}
-                </div>
+                {/* </div>
               </div>
             )
           })}
         </div>
-      </div>
+      </div> */}
       {/* Marketing */}
-      <div className="w-[80vw] ml-[10vw] mr-[10vw] mt-5 ">
+      {/* <div className="w-[80vw] ml-[10vw] mr-[10vw] mt-5 ">
         <EventLine name="Marketing Team" lineNum={9} />
         <div className="w-full grid gap-x-8 lg:gap-y-4 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 xsm:grid-cols-2 ">
           {Marketing.map((item, index) => {
@@ -179,16 +193,16 @@ const page = () => {
                   alt={item.name}
                 />
                 <div className="absolute w-full h-[30%] flex justify-center items-center gradientImageHover z-20 bottom-0 text-center  ">
-                  <p className="text-white" > {item.name}</p>
+                  <p className="text-white" > {item.name}</p> */}
                   {/* <p className="text-white" > {item.domain}</p> */}
-                </div>
+                {/* </div>
               </div>
             )
           })}
         </div>
-      </div>
+      </div> */}
       {/* videoediting */}
-      <div className="w-[80vw] ml-[10vw] mr-[10vw] mt-5 ">
+      {/* <div className="w-[80vw] ml-[10vw] mr-[10vw] mt-5 ">
         <EventLine name="Video Editing Team" lineNum={10} />
         <div className="w-full grid gap-x-8 lg:gap-y-4 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 xsm:grid-cols-2 ">
           {videoediting.map((item, index) => {
@@ -201,14 +215,14 @@ const page = () => {
                   alt={item.name}
                 />
                 <div className="absolute w-full h-[30%] flex justify-center items-center gradientImageHover z-20 bottom-0 text-center  ">
-                  <p className="text-white" > {item.name}</p>
+                  <p className="text-white" > {item.name}</p> */}
                   {/* <p className="text-white" > {item.domain}</p> */}
-                </div>
+                {/* </div>
               </div>
             )
           })}
-        </div>
-      </div>
+        </div> */}
+      {/* </div> */}
 
     </>
   )
