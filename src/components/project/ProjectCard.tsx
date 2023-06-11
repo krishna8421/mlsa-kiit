@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import Link from "next/link";
 import { AiOutlineGithub } from "react-icons/ai";
 
 interface Props {
@@ -89,9 +88,9 @@ const ProjectCard = ({
                 className="absolute right-[-24px] ml-2 h-6 w-6 rounded-full bg-white px-1 py-2"
               ></Image>
             </div>
-            <Link href={link}>
+            <a href={link} target="_blank">
               <AiOutlineGithub className=" h-6 w-6 text-white" />
-            </Link>
+            </a>
           </div>
         </div>
       </div>

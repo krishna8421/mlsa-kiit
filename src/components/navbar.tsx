@@ -34,7 +34,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed left-0 right-0 top-0 z-40 m-auto w-screen max-w-[1920px] px-6 py-3 ${
+      className={`fixed left-0 right-0 top-0 z-40 m-auto w-screen px-6 py-3 lg:max-w-[1920px] ${
         showBackground ? "backdrop-blur-md" : ""
       }`}
     >

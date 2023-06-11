@@ -14,6 +14,9 @@ const CardSection = ({ team, lineNum, teamName }) => {
                                 className="w-full  h-full z-10"
                                 src={item.img}
                                 alt={item.name}
+                                sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 25vw"
+                            // width={500}
+                            // height={500}
                             />
                             <div className="absolute w-full h-[30%] flex justify-center items-center gradientImageHover z-20 bottom-0 text-center  ">
                                 <p className="text-white md:text-sm"> {item.name}</p>

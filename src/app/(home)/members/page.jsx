@@ -42,6 +42,9 @@ const page = () => {
                     className="h-7 w-7 md:h-10 md:w-10"
                   ></Image>
                 </div>
+                <p className="mt-4 w-[70vw] text-sm font-normal md:text-xl lg:w-[542px] lg:text-2xl 2xl:w-[55vw]">
+                  The strength of a community lies in the diversity of its talents, each member contributing their unique skills to create something extraordinary.
+                </p>
               </div>
             </div>
           </div>
@@ -71,9 +74,9 @@ const page = () => {
       {/* Creative Team*/}
       <CardSection team={Creative} lineNum={6} teamName={"Creative Team"} />
       {/* GD team */}
-      <CardSection team={GraphicDesign} lineNum={7} teamName={"Graphic Designing Team"} />
+      <CardSection team={GraphicDesign} lineNum={7} teamName={"GD Team"} />
       {/* ML team */}
-      <CardSection team={MachineLearning} lineNum={8} teamName={"Machine Learning Team"} />
+      <CardSection team={MachineLearning} lineNum={8} teamName={"ML Team"} />
       {/* Marketing Team */}
       <CardSection team={Marketing} lineNum={9} teamName={"Marketing Team"} />
       {/* Video Editing Team */}
