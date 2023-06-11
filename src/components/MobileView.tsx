@@ -4,21 +4,34 @@ import { YOUTUBE_URL } from "@/constants";
 import NavbarItem from "./NavbarItem";
 
 type MobileMenuProps = {
-    visible?: boolean
-}
+  visible?: boolean;
+};
 
-const MobileView = ({visible}: MobileMenuProps) => {
-    if (!visible) {
-        return null;
-    }
+const MobileView = ({ visible }: MobileMenuProps) => {
+  if (!visible) {
+    return null;
+  }
   return (
     <>
-      <div className="fixed md:hidden font-semibold flex flex-col gap-2 right-[24px] pb-3 bg-gradient-blue w-[160px] mt-2 pt-2 text-center rounded-md">
-        <NavbarItem href="/events" mobileView={true} >Events</NavbarItem>
-        <NavbarItem href="/projects" mobileView={true}>Projects</NavbarItem>
-        <NavbarItem href="/blogs" mobileView={true}>Blog</NavbarItem>
-        <NavbarItem href="/gallerys" mobileView={true}>Gallery</NavbarItem>
-        <NavbarItem href={YOUTUBE_URL} mobileView={true}>Youtube</NavbarItem>
+      <div className="fixed right-[24px] mt-2 flex w-[160px] flex-col gap-2 rounded-md bg-gradient-blue pb-3 pt-2 text-center font-semibold md:hidden">
+        <NavbarItem href="/events" mobileView={true}>
+          Events
+        </NavbarItem>
+        <NavbarItem href="/projects" mobileView={true}>
+          Projects
+        </NavbarItem>
+        <NavbarItem href="/blogs" mobileView={true}>
+          Blog
+        </NavbarItem>
+        <NavbarItem href="/members" mobileView={true}>
+          Members
+        </NavbarItem>
+        <NavbarItem href="/gallerys" mobileView={true}>
+          Gallery
+        </NavbarItem>
+        <NavbarItem href={YOUTUBE_URL} mobileView={true}>
+          Youtube
+        </NavbarItem>
         <NavbarItem href="/contact" type="button" mobileView={true}>
           Contact
         </NavbarItem>

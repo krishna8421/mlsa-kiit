@@ -15,13 +15,12 @@ const NavbarItem = ({
   className = "",
   mobileView,
 }: NavbarItemProps) => {
-
   if (type === "button") {
     return (
       <Link href={href}>
         <button
           className={`2xl:text-md rounded-full bg-gradient-blue px-7 py-2 text-sm
-          ${mobileView ? "drop-shadow-md": "text-white"}`}
+          ${mobileView ? "text-white drop-shadow-md" : "text-white"}`}
         >
           {children}
         </button>
@@ -30,9 +29,7 @@ const NavbarItem = ({
   }
 
   return (
-    <Link
-      href={href}
-    >
+    <Link href={href}>
       <div
         className={`2xl:text-md  cursor-pointer text-sm transition hover:text-gray-500
         ${className} ${mobileView && "w-full text-center text-white"} 

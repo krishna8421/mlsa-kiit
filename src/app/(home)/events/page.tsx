@@ -1,5 +1,4 @@
 import EventSlideItem from "@/components/EventSlideItem";
-import EventsHero from "@/components/EventsHero";
 import { EVENTS2020, EVENTS2021, EVENTS2022, EVENTS2023 } from "@/constants";
 import Image from "next/image";
 import React from "react";
@@ -38,12 +37,14 @@ const Events = () => {
   return (
     <>
       <div className="m-auto max-w-[1920px]">
-        <EventsHero
+        {/* for live events */}
+        {/* <EventsHero
           eventName="Android Development Submit"
           eventDate="12 March 2023"
           lastDate="9 March 2023"
           isLive={true}
-        />
+        /> */}
+
         <div className="mb-4 mt-16 flex items-center justify-center gap-8 md:mb-0">
           <h1 className="font-semibold md:text-2xl lg:text-[25px] 2xl:text-[2.1vw]">
             Our Past

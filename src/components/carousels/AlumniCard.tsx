@@ -36,8 +36,8 @@ const AlumniCard = ({ image, name, position, company, message }: Props) => {
         />
         <div className="pl-28">
           <h1 className="text-lg sm:text-2xl ">{name}</h1>
-          <h2 className="leading-6 sm:text-lg lg:text-[15px]">{position}</h2>
           <h2 className=" leading-6 lg:text-lg">{company}</h2>
+          <h2 className="leading-6 sm:text-lg lg:text-[15px]">{position}</h2>
         </div>
       </div>
       <p className="leading-4 sm:text-lg sm:text-xs sm:leading-6 lg:text-lg">

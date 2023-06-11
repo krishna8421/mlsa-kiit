@@ -38,6 +38,8 @@
     --swiper-navigation-color: #0f0f0f;
     --swiper-navigation-size: 1rem;
     /* --swiper-navigation-backgound: rgba(35, 63, 146, 0.8); */
+
+    font-family: "Segoe UI"
   }
 
   .dark {
@@ -78,9 +80,11 @@
   * {
     @apply border-border;
   }
+
   html {
     overflow-x: hidden;
   }
+
   body {
     @apply bg-background text-foreground;
     font-feature-settings: "rlig" 1, "calt" 1;
@@ -186,4 +190,3 @@
   margin: 0 0 0 17px;
   border-radius: 50%;
 }
-
