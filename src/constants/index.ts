@@ -1131,7 +1131,7 @@ export const ARVR = [
   },
   {
     id: 2,
-    img: "/members/PRITAM KUMAR PAL.png",
+    img: "/members/pritam.png",
     name: "Pritam Kumar Pal",
     domain: "AR/VR",
   },
