@@ -26,26 +26,47 @@ const OurBlogs = () => {
         modules={[Navigation]}
         centeredSlides={true}
         breakpoints={{
-          360: {
+          320: {
             slidesPerView: 1,
             spaceBetween: 100,
           },
-          400: {
-            spaceBetween: 2,
-            // slidesPerGroup: 1,
+          // when window width is >= 480px
+          480: {
+            slidesPerView: 1.3,
+            spaceBetween: 30,
           },
-          420: {
-            slidesPerView: 2,
-            spaceBetween: 2,
+          500: {
+            slidesPerView: 1.7,
+            spaceBetween: 30,
           },
-          786: {
-            slidesPerView: 3,
+          // when window width is >= 640px
+          640: {
+            slidesPerView: 2.1,
+            spaceBetween: 30,
+          },
+          800: {
+            slidesPerView: 2.4,
+            spaceBetween: 30,
+          },
+          900: {
+            slidesPerView: 2.7,
+            spaceBetween: 30,
+          },
+          1000: {
+            slidesPerView: 3.1,
             spaceBetween: 100,
-            // slidesPerGroup: 2,
           },
-          1400: {
-            // slidesPerView: 2,
-            slidesPerGroup: 3,
+          1100: {
+            slidesPerView: 3.4,
+            spaceBetween: 100,
+          },
+          1200: {
+            slidesPerView: 3.4,
+            spaceBetween: 50,
+          },
+          1240: {
+            slidesPerView: 4,
+            spaceBetween: 40,
           },
         }}
       >

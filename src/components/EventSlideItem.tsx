@@ -66,12 +66,12 @@ const EventSlideItem: React.FC<EventSlideItemProps> = ({
         <div className="ml-1 pt-3 md:ml-[16px]">
           <div>
             <h2 className="text-xs md:text-lg">{ProjectName}</h2>
-            <div className="flex flex-col text-xs font-[350] leading-[20px] md:text-[16px]">
+            <div className="flex flex-col font-[450] leading-[20px] xsm:hidden md:text-[12px] lg:block lg:text-[14px] ">
               <span className="">{description}</span>
             </div>
-            <div className="mt-1 flex flex-col text-xs font-[350] leading-[20px] md:text-[16px]">
+            <div className="mt-1 flex text-xs font-[350] leading-[20px] xsm:flex-col md:text-[12px] lg:flex-row lg:justify-between lg:text-[12px]">
               <span className="">{formatDate(date)}</span>
-              <span className="">{formatDate(numParticipants)}</span>
+              <span className=""> {formatDate(numParticipants)}</span>
             </div>
           </div>
           {/* <div className="mt-3 cursor-pointer text-xs font-normal md:text-lg">

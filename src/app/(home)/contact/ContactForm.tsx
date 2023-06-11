@@ -84,7 +84,11 @@ const ContactForm = () => {
           <p className="text-lg text-red-500">{error}</p>
         </div>
       </div>
-      <Button className="bg-gradient-blue hover:bg-[#286FD9]" disabled={isLoading} onClick={isLoading ? () => {} : sendMail}>
+      <Button
+        className="2xl:text-md rounded-full  bg-gradient-blue px-7 py-2 text-sm hover:bg-[#286FD9]"
+        disabled={isLoading}
+        onClick={isLoading ? () => {} : sendMail}
+      >
         {isLoading ? (
           <>
             <Loader2 className="mr-2 h-4 w-4 animate-spin" />

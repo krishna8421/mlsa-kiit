@@ -18,10 +18,10 @@ const ProjectCommuntiy = () => {
         ></DomainCard>
         <DomainCard
           isHome={false}
-          logo={"20+"}
+          logo={2}
           heading="Project Wing"
           about={
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble"
+            "MLSA organizes one such event annually whereby we offer you to be a part of our team and get hands-on experience in building industrial level projects by our side. This is aimed at providing you with an exposure to unleash your ideas and discover your potential."
           }
         />
       </div>

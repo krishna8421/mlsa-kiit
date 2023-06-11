@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { RiHeart2Fill } from "react-icons/ri";
-import { ARVR, AndroidDevelopment, Creative, GraphicDesign, MachineLearning, Marketing, WebDevelopment, YT, cloud } from "../../../constants/index";
-import { videoediting } from "../mem/mem";
+import { ARVR, AndroidDevelopment, Creative, GraphicDesign, MachineLearning, Marketing, WebDevelopment, YT, cloud, videoediting } from "../../../constants/index";
+
 import "./index.css";
 
 import CardSection from "./CardSection";
@@ -18,7 +18,7 @@ const page = () => {
                 alt="project hero white background"
                 width={1920}
                 height={1080}
-                className="absolute left-0 right-0 h-full max-w-[1270px]"
+                className="absolute left-0 right-0 h-full max-w-full"
               ></Image>
               <Image
                 src="/projects/projectHero.png"
