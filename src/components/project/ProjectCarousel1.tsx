@@ -42,7 +42,7 @@ const ProjectCarousel1 = () => {
             spaceBetween: 30,
           },
           500: {
-            slidesPerView:1.7,
+            slidesPerView: 1.7,
             spaceBetween: 30,
           },
           640: {
@@ -61,7 +61,7 @@ const ProjectCarousel1 = () => {
             slidesPerView: 3.1,
             spaceBetween: 100,
           },
-          1100 :{
+          1100: {
             slidesPerView: 3.4,
             spaceBetween: 100,
           },
@@ -70,8 +70,8 @@ const ProjectCarousel1 = () => {
             spaceBetween: 50,
           },
           1240: {
-            slidesPerView:4,
-            spaceBetween:40,
+            slidesPerView: 4,
+            spaceBetween: 40,
           },
         }}
       >
@@ -90,7 +90,7 @@ const ProjectCarousel1 = () => {
                 // tech={project.tech}
                 techStack1={project.techStack1}
                 techStack2={project.techStack2}
-                link="#"
+                link={project.github}
                 techImg={project.techImg}
                 techImg2={project.techImg2}
               />
