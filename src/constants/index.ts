@@ -511,7 +511,7 @@ export const EVENTS2023 = [
     isHero: false,
     link: "",
     description:
-      "An unique event which included designing your own squid game using computer vision.",
+      "A unique event which included designing your own squid game using computer vision.",
   },
   {
     bgColor: "#9CFFE1",
@@ -692,7 +692,7 @@ export const EVENTS2021 = [
     isHero: false,
     link: "",
     description:
-      "An unique event where participants celebrated their problem-solving skills and got rewarded for it.",
+      "A unique event where participants celebrated their problem-solving skills and got rewarded for it.",
   },
   {
     bgColor: "#B1A296",
