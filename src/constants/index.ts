@@ -1040,6 +1040,12 @@ export const WebDevelopment = [
     domain: "Web Development",
   },
   {
+    id: 11,
+    img: "/members/ANKIT1.jpg",
+    name: "Ankit Kumar",
+    domain: "Web Development",
+  },
+  {
     id: 4,
     img: "/members/anshul.jpg",
     name: "Anshul Kumar",
