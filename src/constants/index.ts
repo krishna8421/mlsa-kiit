@@ -538,7 +538,7 @@ export const EVENTS2023 = [
       "KALKI provided amazing experiences ranging from VR games with robotic or non-controller gameplay to movies and 2D games.",
   },
   {
-    bgColor: "#8860D0",
+    bgColor: "#7395AE",
     img: "/eventImages/kalkiScav.png",
     ProjectName: "KALKI Scavenger Hunt",
     date: " 11th FEBRUARY 2023",
@@ -720,7 +720,7 @@ export const EVENTS2020 = [
     description: "",
   },
   {
-    bgColor: "#379683",
+    bgColor: "#7395AE",
     img: "/eventImages/projectWing2020.jpg",
     ProjectName: "Project Wing 1.0",
     date: "OCTOBER 2020",

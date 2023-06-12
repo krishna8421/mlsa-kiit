@@ -15,7 +15,7 @@ const FeatureProject = () => {
           height={1000}
           className="h-[131px]  w-[131px] mix-blend-multiply sm:ml-5 sm:h-[261px] sm:w-[261px] "
         />
-        <Link href="/">
+        {/* <Link href="/">
           <button className="absolute bottom-[10px] left-[10px] flex h-7 w-[100px] items-center justify-center rounded-[102px] bg-white transition duration-300 ease-in-out hover:scale-[1.15] sm:left-[5vw] sm:h-[52px] sm:w-[160px] md:h-[40px] md:w-[140px]">
             <AiFillPlayCircle className="h-6 w-6 text-[#F94545] md:h-[45px]  md:w-[45px]" />{" "}
             <p className="pl-1 pr-3 text-[10px] font-semibold text-black sm:text-[15px] ">
@@ -23,16 +23,16 @@ const FeatureProject = () => {
               Watch Demo
             </p>
           </button>
-        </Link>
+        </Link> */}
         <div className="flex cursor-default flex-col   justify-between pr-4  pt-5 text-right text-xl font-[350px]">
           <div className="flex flex-col">
             <h1 className="text-[15px] font-semibold leading-5 sm:text-3xl">Bubble Pod</h1>
             <div className="duration-50 mb-2 mt-1 h-[2px] w-full bg-white-line transition hover:bg-white sm:mt-2 "></div>
             <p className="text-xs sm:text-xl">Languages Used</p>
             <p className="text-xs sm:text-xl">React, Flask Backend</p>
-            <Link href="" className="self-end">
+            {/* <Link href="" className="self-end">
               <AiOutlineGithub className="mt-2 h-6 w-6" />
-            </Link>
+            </Link> */}
           </div>
           <span className="mb-4 text-xs text-[#BED8FF] sm:text-xl ">
             Project Is Under Development

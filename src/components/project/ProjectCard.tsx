@@ -1,4 +1,7 @@
 "use client";
+// import { Link } from "lucide-react";
+// import Head from "next/head";
+import Link from "next/link";
 import Image from "next/image";
 import { AiOutlineGithub } from "react-icons/ai";
 
@@ -30,6 +33,8 @@ const ProjectCard = ({
     backgroundColor: bgColor,
   };
   return (
+    <div>
+      <Link href={link}>
     <div
       className={`mr-5 h-[302px] w-[304px] overflow-hidden rounded-[10px] border-2 border-[1.6px] border-black border-white text-start transition duration-300 ease-in-out hover:border-[1.6px] hover:border-black hover:shadow-project xsm:ml-5 lg:m-3 `}
       style={maindivBG}
@@ -95,6 +100,10 @@ const ProjectCard = ({
         </div>
       </div>
     </div>
+    </Link>
+    </div>
+    
+    
   );
 };
 

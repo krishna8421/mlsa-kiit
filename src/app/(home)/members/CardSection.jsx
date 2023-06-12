@@ -11,7 +11,7 @@ const CardSection = ({ team, lineNum, teamName }) => {
                         <div className="w-[90%] lg:h-[40vh] md:h-[15vh] sm:h-[40vh] xsm:h-[20vh] mt-3 relative  " key={item.id} >
                             <Image
                                 fill
-                                className="w-full  h-full z-10"
+                                className="w-full  h-full z-10 object-cover"
                                 src={item.img}
                                 alt={item.name}
                                 sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 25vw"

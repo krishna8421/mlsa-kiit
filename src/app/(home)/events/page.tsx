@@ -90,7 +90,7 @@ const Events = () => {
         <div className="mb-4 mt-16 flex items-center justify-center gap-8 md:mb-0">
           <h1 className="font-semibold md:text-2xl lg:text-[25px] 2xl:text-[2.1vw]">
             Our Past
-            <span className="ml-2 text-[#286FD9]">Successful Events</span>
+            <span className="ml-2 text-[#286FD9]">Events</span>
           </h1>
           <RiHeart2Fill className="text-lg text-[#286FD9]" />
         </div>
