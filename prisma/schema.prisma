@@ -2,16 +2,8 @@ generator client {
   provider = "prisma-client-js"
 }
 
-generator docs {
-  provider = "node node_modules/prisma-docs-generator"
-}
-
-generator dbml {
-  provider = "prisma-dbml-generator"
-}
-
 datasource db {
-  provider = "postgres"
+  provider = "mongodb"
   url      = env("DATABASE_URL")
 }
 
@@ -49,10 +41,10 @@ enum ROLE {
   PR_CR
 }
 
-model Member {
-  id            String  @id @default(uuid())
+model User {
+  id            String  @id @default(auto()) @map("_id") @db.ObjectId
   name          String
-  personalEmail String  @unique
+  email String  @unique
   kiitEmail     String  @unique
   password      String
   imageUrl      String
@@ -66,13 +58,13 @@ model Member {
 }
 
 model ContactUs {
-  id              String   @id @default(uuid())
+  id              String   @id @default(auto()) @map("_id") @db.ObjectId
   name            String
   email           String
   message         String
   issue_resolved  Boolean? @default(false)
-  memberId        String
-  issueResolvedBy Member?  @relation(fields: [memberId], references: [id])
+  userId        String   @db.ObjectId
+  issueResolvedBy User?  @relation(fields: [userId], references: [id])
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
@@ -85,18 +77,18 @@ model ContactUs {
 // So for now we will only store the data of the students and not
 // use it for any other purpose.
 
-model Students {
-  id            String @id @default(uuid())
-  name          String
-  rollNumber    Int    @unique
-  currentYear   Int
-  branch        String
-  kiitEmail     String @unique
-  personalEmail String
-  phoneNumber   Int
-  linkedin      String
-  github        String
-}
+// model Students {
+//   id            String @id @default(auto()) @map("_id") @db.ObjectId
+//   name          String
+//   rollNumber    Int    @unique
+//   currentYear   Int
+//   branch        String
+//   kiitEmail     String @unique
+//   personalEmail String
+//   phoneNumber   Int
+//   linkedin      String
+//   github        String
+// }
 
 // model Event {
 //     id          String        @id @default(uuid())
@@ -125,3 +117,47 @@ model Students {
 //   Github                String @unique
 //   expectationsFromEvent String
 // }
+
+// MLSA APP API REQUIREMENTS
+
+// Events : 
+// Name
+// Total registration
+// Event Image
+// Event description
+// Registration ID (To generate a unique QR code per user)
+// Is current user registered
+// Event Date
+// Event venue
+// Registration link
+// Event host
+// Name
+// Contact
+// Event Sponsors 
+// Logo
+// Name
+// Description
+// List of previous events
+
+// Blogs :
+// Blog image
+// Blog name
+// Blog tagline
+// Blog link
+
+// User :
+// User ID 
+// User profile image
+// User name 
+// User email
+// User roll number
+// User branch
+// User year
+// User coupons 
+// Coupon Image
+// (Coupon id will be same as user id)
+
+// List of user registered events
+
+// About 
+// Every detail that is in the website.

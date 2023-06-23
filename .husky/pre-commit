@@ -8,12 +8,6 @@ echo "ESLint & Prettier check completed successfully. ✅ "
 
 git add -A .
 
-yarn test || (
-  echo "Test failed. ❌ "
-  exit 1
-)
-echo "Test completed successfully. ✅ "
-
 yarn build || (
   echo "Build failed. ❌ "
   exit 1

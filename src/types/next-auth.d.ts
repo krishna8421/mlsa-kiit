@@ -1,13 +1,20 @@
+import { type POSITION, type ROLE } from "@prisma/client";
 import { type DefaultSession } from "next-auth";
+import { type DefaultUser } from "next-auth";
+
+interface IUser extends DefaultUser {
+  role: ROLE;
+  position: POSITION;
+}
 
 declare module "next-auth" {
-  /**
-   * Returned by `useSession`, `getSession` and received as a prop on the `SessionProvider` React Context
-   */
-  // eslint-disable-next-line no-unused-vars
-  interface Session {
-    user?: {
-      id: string;
-    } & DefaultSession["user"];
+  interface User extends IUser {}
+
+  interface Session extends DefaultSession {
+    user?: User;
   }
+}
+
+declare module "next-auth/jwt" {
+  interface JWT extends IUser {}
 }
