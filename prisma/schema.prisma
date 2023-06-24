@@ -57,6 +57,16 @@ model User {
   issueResolved ContactUs[]
 }
 
+model Blogs {
+  id          String  @id @default(auto()) @map("_id") @db.ObjectId
+  title       String
+  author      String
+  description String
+  imageUrl    String
+  link        String
+  date        String
+}
+
 model ContactUs {
   id              String   @id @default(auto()) @map("_id") @db.ObjectId
   name            String
