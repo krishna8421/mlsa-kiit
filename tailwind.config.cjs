@@ -8,7 +8,9 @@ module.exports = {
     "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {boxShadow: {
+      'magenta': '0 0 25px 10px #00a6ff',
+    },},
   },
   darkMode: "class",
   plugins: [nextui()],

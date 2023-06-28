@@ -1,10 +1,6 @@
-import { Button } from "@nextui-org/button";
-
-export default function Home() {
-  return (
-    <main>
-      Home page
-      <Button color="primary">Click me</Button>
-    </main>
-  );
+import Landing from "@/components/Landing";
+import ScrollAnimationCode from "@/components/ScrollAnimationCode";
+export default function Home(){
+  return (<div><Landing/>
+  <ScrollAnimationCode/></div>);
 }
