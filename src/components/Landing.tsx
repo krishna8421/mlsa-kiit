@@ -1,7 +1,7 @@
 
 function Landing() {
   return (
-    <div className='h-screen'>Landing pagge</div>
+    <div className='h-screen w-screen overflow-hidden'>Landing pagge</div>
   )
 }
 

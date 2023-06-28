@@ -58,7 +58,7 @@ const ScrollAnimationCode: React.FC = () => {
   }, []);
 
   return (
-    <div className='flex overflow-hidden w-[100vw] max-w-full'>
+    <div className='flex overflow-hidden w-screen]'>
       <motion.div className='flex justify-centre'
       initial={{ opacity: 0, y:2000 }}//before scrolling position of slider
       animate={controls}//refer to line 20
@@ -67,7 +67,7 @@ const ScrollAnimationCode: React.FC = () => {
     ><Slider/>
     </motion.div>
     {/* Completed slider animation */}
-    <motion.div
+    <motion.div className='flex overflow-hidden'
     initial={{ opacity: 0, x: 1000, y:100 }}//initial position of text with opacity 0
     animate={textControls}//text conntrol animation triggered.
     transition={{ duration: 3 }} >
