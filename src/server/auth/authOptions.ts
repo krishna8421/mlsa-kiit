@@ -33,11 +33,11 @@ export const authOptions: NextAuthOptions = {
         try {
           user = await prisma.user.findUnique({
             where: {
-              email: email,
+              personalEmail: email,
             },
           });
-        } catch (_error) {
-          throw new Error("User not found. Please Register.");
+        } catch (_err) {
+          throw new Error("Something went wrong. Please try again.");
         }
 
         if (!user) {
@@ -46,28 +46,28 @@ export const authOptions: NextAuthOptions = {
 
         const isValid = await comparePassword(password, user.password);
         if (!isValid) {
-          throw new Error("Wrong credentials. Try again.");
+          throw new Error("Wrong credentials. Please try again.");
         }
         return user;
       },
     }),
   ],
-  callbacks: {
-    async jwt({ token, user }) {
-      if (user) {
-        token.role = user.role;
-        token.position = user.position;
-      }
-      return token;
-    },
-    async session({ session, token }) {
-      if (token && session.user) {
-        session.user.role = token.role;
-        session.user.position = token.position;
-      }
-      return session;
-    },
-  },
+  // callbacks: {
+  //   async jwt({ token, user }) {
+  //     if (user) {
+  //       token.role = user.role;
+  //       token.position = user.position;
+  //     }
+  //     return token;
+  //   },
+  //   async session({ session, token }) {
+  //     if (token && session.user) {
+  //       session.user.role = token.role;
+  //       session.user.position = token.position;
+  //     }
+  //     return session;
+  //   },
+  // },
   pages: {
     // signIn: "/admin/auth",
     signIn: "*",

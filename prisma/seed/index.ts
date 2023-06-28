@@ -17,15 +17,15 @@ export async function seed() {
   await prisma.user.create({
     data: {
       name: "Krishna Kumar",
-      email: "dev@krishnaaa.com",
-      kiitEmail: "2105203",
+      personalEmail: "dev@krishnaaa.com",
+      kiitEmail: "2105203@kiit.ac.in",
+      phoneNumber: "8603808548",
       password: hashedPassword,
-      imageUrl: "https://github.com/krishna8421.png",
       githubUrl: "https://github.com/krishna8421",
       linkedinUrl: "http://linkedin.com/in/krishnaaa8421/",
       portfolioUrl: "http://krishnaaa.com",
-      position: "MEMBER",
-      role: "BACKEND",
+      currentYear: 3,
+      branch: "CSE",
     },
   });
 

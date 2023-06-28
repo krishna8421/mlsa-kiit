@@ -21,17 +21,20 @@
     "@nextui-org/react": "^0.0.0-dev-v2-20230622022515",
     "@prisma/client": "^4.16.1",
     "@tanstack/react-query": "^4.29.1",
+    "@types/validator": "^13.7.17",
     "axios": "^1.4.0",
     "bcrypt": "^5.1.0",
     "framer-motion": "^10.12.16",
     "lodash": "^4.17.21",
-    "next": "^13.2.4",
+    "next": "^13.4.7",
     "next-auth": "^4.22.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hot-toast": "^2.4.1",
     "react-icons": "^4.8.0",
-    "zod": "^3.21.4"
+    "validator": "^13.9.0",
+    "zod": "^3.21.4",
+    "zustand": "^4.3.8"
   },
   "devDependencies": {
     "@types/bcrypt": "^5.0.0",

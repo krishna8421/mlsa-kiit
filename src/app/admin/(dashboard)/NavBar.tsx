@@ -1,27 +1,56 @@
 "use client";
 
-import { Avatar } from "@nextui-org/react";
-import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem} from "@nextui-org/react";
-import Logo from "@/components/Logo"
+import Logo from "@/components/Logo";
+import { Avatar, Dropdown, DropdownItem, DropdownMenu, DropdownTrigger } from "@nextui-org/react";
+import { User } from "@prisma/client";
+import { signOut } from "next-auth/react";
 
+interface IProps {
+  user: User;
+}
 
-const NavBar = () => {
+const NavBar = ({ user }: IProps) => {
+  console.log(user);
   return (
-    <nav className="flex justify-between items-center p-4 border-b border-gray-700">
-      <Logo/>
+    <nav className="flex items-center justify-between border-b border-gray-700 p-4">
+      <Logo />
       <Dropdown>
-      <DropdownTrigger>
-      <Avatar className="cursor-pointer" color="primary" isBordered radius="full" src="https://github.com/krishna8421.png" />
-      </DropdownTrigger>
-      <DropdownMenu aria-label="Static Actions">
-        <DropdownItem key="new">New file</DropdownItem>
-        <DropdownItem key="copy">Copy link</DropdownItem>
-        <DropdownItem key="edit">Edit file</DropdownItem>
-        <DropdownItem key="delete" className="text-danger" color="danger">
-          Delete file
-        </DropdownItem>
-      </DropdownMenu>
-    </Dropdown>
+        <DropdownTrigger>
+          <Avatar
+            as="button"
+            className="transition-transform"
+            color="primary"
+            isBordered
+            radius="full"
+            src={`${user.githubUrl}.png`}
+          />
+        </DropdownTrigger>
+        <DropdownMenu aria-label="User Actions">
+          <DropdownItem
+            key="profile"
+            className="h-14 gap-2"
+          // startContent=
+          >
+            <p className="font-bold">Signed in as</p>
+            <p className="font-bold">{user.personalEmail}</p>
+          </DropdownItem>
+          <DropdownItem key="settings" showDivider>
+            Settings
+          </DropdownItem>
+          <DropdownItem key="team_settings">Team Settings</DropdownItem>
+          <DropdownItem key="analytics" showDivider>
+            Analytics
+          </DropdownItem>
+          <DropdownItem key="system">System</DropdownItem>
+          <DropdownItem key="configurations">Configurations</DropdownItem>
+          <DropdownItem key="help_and_feedback" showDivider>
+            Help & Feedback
+          </DropdownItem>
+          <DropdownItem key="logout" showDivider color="danger" onPress={() => signOut()}>
+            Log Out
+          </DropdownItem>
+        </DropdownMenu>
+      </Dropdown>
     </nav>
   );
 };
