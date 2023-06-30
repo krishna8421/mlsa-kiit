@@ -3,11 +3,81 @@ generator client {
 }
 
 datasource db {
-  provider = "mongodb"
-  url      = env("DATABASE_URL")
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+
+model User {
+  id            String  @id @default(uuid())
+  name          String
+  personalEmail String  @unique
+  kiitEmail     String  @unique
+  phoneNumber   String?
+  password      String
+  githubUrl     String
+  linkedinUrl   String
+  portfolioUrl  String?
+  currentYear   Int
+  branch        String
+  isMember      Boolean @default(false)
+
+  registeredEvents Event[] @relation("UserRegisteredEvents")
+}
+
+model Member {
+  id       String @id @default(uuid())
+  imageUrl String
+
+  hostedEvents Event[]  @relation("EventHosted")
+  position     POSITION @default(MEMBER)
+  role         ROLE
+}
+
+model Event {
+  id              String   @id @default(uuid())
+  name            String
+  imageUrl        String
+  description     String
+  date            DateTime
+  venue           String
+  hosts           Member[] @relation("EventHosted")
+  sponsors        String[]
+  registeredUsers User[]   @relation("UserRegisteredEvents")
+}
+
+model Sponsors {
+  id          String @id @default(uuid())
+  name        String
+  logoUrl     String
+  description String
+  link        String
+}
+
+model ContactUs {
+  id             String   @id @default(uuid())
+  name           String
+  email          String
+  message        String
+  issue_resolved Boolean? @default(false)
+  userId         String
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Blogs {
+  id          String @id @default(uuid())
+  title       String
+  author      String
+  description String
+  imageUrl    String
+  link        String
+  date        String
 }
 
 enum POSITION {
+  // For Internal Members
   LEAD //  Anvit Dubey
   VICE_LEAD //  Saniya Bhargav
   TECH_LEAD // Prashant Upadhyay, Atig Purohit, Akshita Sah
@@ -16,8 +86,8 @@ enum POSITION {
   CONTENT_LEAD //  Aradhya Kumar
   MARKETING_LEAD //  Ayush Raj
   PR_CR_LEAD //  Rishab Barik // Public Relations and Corporate Relations
-  MEMBER //  All others
   ALUMNI //  Past Members
+  MEMBER //  All others
 }
 
 enum ROLE {
@@ -40,124 +110,3 @@ enum ROLE {
   // Marketing Team
   PR_CR
 }
-
-model User {
-  id            String  @id @default(auto()) @map("_id") @db.ObjectId
-  name          String
-  email String  @unique
-  kiitEmail     String  @unique
-  password      String
-  imageUrl      String
-  githubUrl     String
-  linkedinUrl   String
-  portfolioUrl  String?
-
-  position      POSITION    @default(MEMBER)
-  role          ROLE
-  issueResolved ContactUs[]
-}
-
-model ContactUs {
-  id              String   @id @default(auto()) @map("_id") @db.ObjectId
-  name            String
-  email           String
-  message         String
-  issue_resolved  Boolean? @default(false)
-  userId        String   @db.ObjectId
-  issueResolvedBy User?  @relation(fields: [userId], references: [id])
-
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
-}
-
-// When a student registers for an event, we create a Student 
-// record of him/her in the Students table and all event records
-// that he/she is registered for in the Events table.
-// Caviat: Student will use it to get details of other students.
-// So for now we will only store the data of the students and not
-// use it for any other purpose.
-
-// model Students {
-//   id            String @id @default(auto()) @map("_id") @db.ObjectId
-//   name          String
-//   rollNumber    Int    @unique
-//   currentYear   Int
-//   branch        String
-//   kiitEmail     String @unique
-//   personalEmail String
-//   phoneNumber   Int
-//   linkedin      String
-//   github        String
-// }
-
-// model Event {
-//     id          String        @id @default(uuid())
-//     EventMember EventMember[]
-// }
-
-// model EventMember {
-//     id       String @id @default(uuid())
-//     eventId  String
-//     memberId String
-//     event    Event  @relation(fields: [eventId], references: [id], onDelete: Cascade)
-//     member   Member @relation(fields: [memberId], references: [id], onDelete: Cascade)
-// }
-
-// model EventRegistration {
-//   id                    String @id @default(auto()) @map("_id") @db.ObjectId
-//   eventId               String
-//   name                  String
-//   roll                  Int    @unique
-//   currentYear           Int
-//   Branch                String
-//   kiitEmail             String @unique
-//   personalEmail         String @unique
-//   phoneNumber           String @unique
-//   linkedin              String @unique
-//   Github                String @unique
-//   expectationsFromEvent String
-// }
-
-// MLSA APP API REQUIREMENTS
-
-// Events : 
-// Name
-// Total registration
-// Event Image
-// Event description
-// Registration ID (To generate a unique QR code per user)
-// Is current user registered
-// Event Date
-// Event venue
-// Registration link
-// Event host
-// Name
-// Contact
-// Event Sponsors 
-// Logo
-// Name
-// Description
-// List of previous events
-
-// Blogs :
-// Blog image
-// Blog name
-// Blog tagline
-// Blog link
-
-// User :
-// User ID 
-// User profile image
-// User name 
-// User email
-// User roll number
-// User branch
-// User year
-// User coupons 
-// Coupon Image
-// (Coupon id will be same as user id)
-
-// List of user registered events
-
-// About 
-// Every detail that is in the website.

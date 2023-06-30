@@ -1,202 +1,202 @@
 [
   {
     "date": "May 26, 2023",
-    "writer": "Mithul goswami",
+    "author": "Mithul goswami",
     "title": "Unlocking the power of AI: Exploring Machine Learning in BARD and Chat GPT",
     "link": "https://medium.com/msackiit/unlocking-the-power-of-ai-exploring-machine-learning-in-bard-and-chat-gpt-4aa3d0ad91e4",
-    "img": "/blogs/unlocking.png",
-    "summary": "This blog delves into BARD and ChatGPT, popular AI chatbots known for natural language interactions and personalization."
+    "imageUrl": "/blogs/unlocking.png",
+    "description": "This blog delves into BARD and ChatGPT, popular AI chatbots known for natural language interactions and personalization."
   },
   {
     "date": "May 5, 2023",
-    "writer": "Tanvi Upadhyay",
+    "author": "Tanvi Upadhyay",
     "title": "Cryptocurrency and Legal Ethics",
     "link": "https://medium.com/msackiit/cryptocurrency-and-legal-ethics-733b2ea6e9dc",
-    "img": "/blogs/crypto.jpg",
-    "summary": "This blog throws light on how money has evolved from commodity to conventional currency, and now to cryptocurrency, increasing not only unique features but also risks for users."
+    "imageUrl": "/blogs/crypto.jpg",
+    "description": "This blog throws light on how money has evolved from commodity to conventional currency, and now to cryptocurrency, increasing not only unique features but also risks for users."
   },
   {
     "date": "April 20, 2023",
-    "writer": "Sakshi Pathak",
+    "author": "Sakshi Pathak",
     "title": "Can Machines See? Understanding Computer Vision",
     "link": "https://medium.com/msackiit/cryptocurrency-and-legal-ethics-733b2ea6e9dc",
-    "img": "/blogs/canMachineSee.jpg",
-    "summary": "This blog depicts how computer vision enables machines to understand and interpret visual data, leading to advancements in various fields like autonomous vehicles and biometrics."
+    "imageUrl": "/blogs/canMachineSee.jpg",
+    "description": "This blog depicts how computer vision enables machines to understand and interpret visual data, leading to advancements in various fields like autonomous vehicles and biometrics."
   },
   {
     "date": "January 13, 2023",
-    "writer": "Sachi Verma",
-    "title": "2022! And that’s a WRAP!",
+    "author": "Sachi Verma",
+    "title": "2022! And that's a WRAP!",
     "link": "https://medium.com/msackiit/2022-and-thats-a-wrap-393def75a4f0",
-    "img": "/blogs/wrap.png",
-    "summary": "This blog dives into Microsoft Student Community, KIIT Chapter’s  memorable year in 2022 with events like FlutterVerse, Frontend with Benefits, and Project Wing."
+    "imageUrl": "/blogs/wrap.png",
+    "description": "This blog dives into Microsoft Student Community, KIIT Chapter's  memorable year in 2022 with events like FlutterVerse, Frontend with Benefits, and Project Wing."
   },
   {
     "date": "August 28, 2022",
-    "writer": "Diyanshi Sharma",
+    "author": "Diyanshi Sharma",
     "title": "DevOps — The Next Big Thing",
     "link": "https://medium.com/msackiit/devops-the-next-big-thing-50d0d432ef56",
-    "img": "/blogs/devops.png",
-    "summary": "This blog demonstrates how DevOps is gaining momentum as a crucial software development approach, offering opportunities and transforming industries.Low-code development and serverless architecture are shaping the landscape."
+    "imageUrl": "/blogs/devops.png",
+    "description": "This blog demonstrates how DevOps is gaining momentum as a crucial software development approach, offering opportunities and transforming industries.Low-code development and serverless architecture are shaping the landscape."
   },
   {
     "date": "August 19, 2022",
-    "writer": "Sachi Verma",
+    "author": "Sachi Verma",
     "title": "A Dive into DevOps",
     "link": "https://medium.com/msackiit/a-dive-into-devops-c4be586cb5f6",
-    "img": "/blogs/devopsDive.png",
-    "summary": "This Blog teaches us about DevOps, which  is a key that combines software development with practices and tools of information technology, for efficient and high-quality software development."
+    "imageUrl": "/blogs/devopsDive.png",
+    "description": "This Blog teaches us about DevOps, which  is a key that combines software development with practices and tools of information technology, for efficient and high-quality software development."
   },
   {
     "date": "May 2, 2022",
-    "writer": "Dikshika",
+    "author": "Dikshika",
     "title": "Must not miss in May (Tech Version)",
     "link": "https://medium.com/msackiit/must-not-miss-in-may-tech-version-37311760ad3",
-    "img": "/blogs/mustNot.png",
-    "summary": "This blog highlights technological prospects in May, including LFN Mentorship, Call for Code, Microsoft Build, IBM Quantum Spring Challenge, and OSOC."
+    "imageUrl": "/blogs/mustNot.png",
+    "description": "This blog highlights technological prospects in May, including LFN Mentorship, Call for Code, Microsoft Build, IBM Quantum Spring Challenge, and OSOC."
   },
   {
     "date": "March 8, 2022",
-    "writer": "Dikshika",
+    "author": "Dikshika",
     "title": "Tech Opportunities for Women, you dare not miss!",
     "link": "https://medium.com/msackiit/tech-opportunities-for-women-you-dare-not-miss-2ed9f1e9cae",
-    "img": "/blogs/womenTech.png",
-    "summary": "This blog gives a roundup of conferences, coding events, scholarships, and mentorship programmes empowering women in technology."
+    "imageUrl": "/blogs/womenTech.png",
+    "description": "This blog gives a roundup of conferences, coding events, scholarships, and mentorship programmes empowering women in technology."
   },
   {
     "date": "March 4, 2022",
-    "writer": "Sachi Verma",
+    "author": "Sachi Verma",
     "title": "Women in Technology (Timeline)",
     "link": "https://medium.com/msackiit/women-in-technology-e43d21f52379",
-    "img": "/blogs/womenInTech.webp",
-    "summary": "This blog educates us about the Inspirational contributions in tech by remarkable women like Ada Lovelace, Hedy Lamarr, Grace Hopper, Elizabeth Feinler, and Evelyn Berezin."
+    "imageUrl": "/blogs/womenInTech.webp",
+    "description": "This blog educates us about the Inspirational contributions in tech by remarkable women like Ada Lovelace, Hedy Lamarr, Grace Hopper, Elizabeth Feinler, and Evelyn Berezin."
   },
   {
     "date": "March 1, 2022",
-    "writer": "Diyanshi Sharma",
-    "title": "Shark Tank’s take on Start-up and Tech",
+    "author": "Diyanshi Sharma",
+    "title": "Shark Tank's take on Start-up and Tech",
     "link": "https://medium.com/msackiit/shark-tanks-take-on-start-up-and-tech-393ff652239b",
-    "img": "/blogs/sharkTank.png",
-    "summary": "Shark Tank India features tech startups demonstrating innovative AI, ML, and app-based solutions, emphasizing their role in entrepreneurship."
+    "imageUrl": "/blogs/sharkTank.png",
+    "description": "Shark Tank India features tech startups demonstrating innovative AI, ML, and app-based solutions, emphasizing their role in entrepreneurship."
   },
   {
     "date": "February 19, 2022",
-    "writer": "Mayank Jain",
+    "author": "Mayank Jain",
     "title": "Competitive Programming Algorithms Every Beginner Must Know",
     "link": "https://medium.com/msackiit/competitive-programming-algorithms-every-beginner-must-know-2d14ce00540a",
-    "img": "/blogs/competitiveProgramming.webp",
-    "summary": ""
+    "imageUrl": "/blogs/competitiveProgramming.webp",
+    "description": ""
   },
   {
     "date": "February 15, 2022",
-    "writer": "Dawar Shafaque",
+    "author": "Dawar Shafaque",
     "title": "How can a simple bug cost a business millions?",
     "link": "https://medium.com/msackiit/how-can-a-simple-bug-cost-a-business-millions-65ddd011c4da",
-    "img": "/blogs/simpleBug.webp",
-    "summary": ""
+    "imageUrl": "/blogs/simpleBug.webp",
+    "description": ""
   },
   {
     "date": "February 4, 2022",
-    "writer": "Saniya Bhargav",
+    "author": "Saniya Bhargav",
     "title": "AR/VR: The New Real?",
     "link": "https://medium.com/msackiit/ar-vr-the-new-real-571daf113cf6",
-    "img": "/blogs/arVr.webp",
-    "summary": ""
+    "imageUrl": "/blogs/arVr.webp",
+    "description": ""
   },
   {
     "date": "January 19, 2022",
-    "writer": "Saniya Bhargav",
+    "author": "Saniya Bhargav",
     "title": "The Community Talks — Our Experience at MSC, KiiT Chapter",
     "link": "https://medium.com/msackiit/the-community-talks-our-experience-at-msc-412bd7e59cbb",
-    "img": "/blogs/communityTabs.webp",
-    "summary": ""
+    "imageUrl": "/blogs/communityTabs.webp",
+    "description": ""
   },
   {
     "date": "January 14, 2022",
-    "writer": "Aditya Sinha",
+    "author": "Aditya Sinha",
     "title": "My Recruitment Process at MSC, KiiT Chapter",
     "link": "https://medium.com/msackiit/my-recruitment-process-at-msc-kiit-chapter-2db152527f0a",
-    "img": "/blogs/mlsaRecruitment.webp",
-    "summary": ""
+    "imageUrl": "/blogs/mlsaRecruitment.webp",
+    "description": ""
   },
   {
     "date": "January 7, 2022",
-    "writer": "Divyam Pradhan",
+    "author": "Divyam Pradhan",
     "title": "5 Apps to help you focus better",
     "link": "https://medium.com/msackiit/5-apps-to-help-you-focus-better-3ec35bfb46ac",
-    "img": "/blogs/fiveApps.webp",
-    "summary": ""
+    "imageUrl": "/blogs/fiveApps.webp",
+    "description": ""
   },
   {
     "date": "December 24, 2021",
-    "writer": "Aditya Sinha",
+    "author": "Aditya Sinha",
     "title": "Top 5 Techs You Must Know This Christmas",
     "link": "https://medium.com/msackiit/top-5-techs-you-must-know-this-christmas-ad781f77c876",
-    "img": "/blogs/topfiveTech.webp",
-    "summary": ""
+    "imageUrl": "/blogs/topfiveTech.webp",
+    "description": ""
   },
   {
     "date": "December 17, 2021",
-    "writer": "Akshita Agarwal",
-    "title": "Stuck in Programming- Here’s What You Need To Do",
+    "author": "Akshita Agarwal",
+    "title": "Stuck in Programming- Here's What You Need To Do",
     "link": "https://medium.com/msackiit/stuck-in-programming-heres-what-you-need-to-do-c78c15235e1",
-    "img": "/blogs/stuckInProgramming.jpg",
-    "summary": ""
+    "imageUrl": "/blogs/stuckInProgramming.jpg",
+    "description": ""
   },
   {
     "date": "November 12, 2021",
-    "writer": "Aditya Sinha",
+    "author": "Aditya Sinha",
     "title": "Blockchain Explained",
     "link": "https://medium.com/msackiit/blockchain-explained-75a2074e4e6b",
-    "img": "/blogs/blockchainExplained.png",
-    "summary": ""
+    "imageUrl": "/blogs/blockchainExplained.png",
+    "description": ""
   },
   {
     "date": "November 10, 2021",
-    "writer": "Soumayan Pal",
+    "author": "Soumayan Pal",
     "title": "What is Text Similarity and How to Implement it ?",
     "link": "https://medium.com/msackiit/what-is-text-similarity-and-how-to-implement-it-c74c8b641883",
-    "img": "/blogs/textSimilarity.webp",
-    "summary": ""
+    "imageUrl": "/blogs/textSimilarity.webp",
+    "description": ""
   },
   {
     "date": "August 27, 2021",
-    "writer": "1 Sagnik Ghosh ",
+    "author": "1 Sagnik Ghosh ",
     "title": "Image Classification App using TensorFlow Lite & Flutter",
     "link": "https://medium.com/msackiit/tensorflow-flutter-22061fff6761",
-    "img": "/blogs/imageClassification.png",
-    "summary": ""
+    "imageUrl": "/blogs/imageClassification.png",
+    "description": ""
   },
   {
     "date": "June 7, 2021",
-    "writer": "Animesh Pathak",
+    "author": "Animesh Pathak",
     "title": "The DevOps Roadmap-Docker",
     "link": "https://medium.com/msackiit/the-devops-roadmap-docker-6b4b4836c977",
-    "img": "/blogs/devopsRoadmap.webp",
-    "summary": ""
+    "imageUrl": "/blogs/devopsRoadmap.webp",
+    "description": ""
   },
   {
     "date": "June 4, 2021",
-    "writer": "MLSA KIIT",
-    "title": "Microsoft’s blending into trendy coding innovation",
+    "author": "MLSA KIIT",
+    "title": "Microsoft's blending into trendy coding innovation",
     "link": "https://medium.com/msackiit/microsofts-blending-into-trendy-coding-innovation-380afa1a757d",
-    "img": "",
-    "summary": ""
+    "imageUrl": "/blogs/",
+    "description": ""
   },
   {
     "date": "April 30, 2021",
-    "writer": "MLSA KIIT",
+    "author": "MLSA KIIT",
     "title": "Decoding the Facebook Privacy Breach",
     "link": "https://medium.com/@msckiit/decoding-the-facebook-privacy-breach-5393d3e3b2b7",
-    "img": "/blogs/facebookPrivacy.png",
-    "summary": ""
+    "imageUrl": "/blogs/facebookPrivacy.png",
+    "description": ""
   },
   {
     "date": "April 14, 2021",
-    "writer": "MLSA KIIT",
+    "author": "MLSA KIIT",
     "title": "5G Explained! What is 5G and how does it work?",
     "link": "https://medium.com/@msckiit/5g-explained-what-is-5g-and-how-does-it-work-9f4efd3d2bca",
-    "img": "/blogs/5gExplained.png",
-    "summary": ""
+    "imageUrl": "/blogs/5gExplained.png",
+    "description": ""
   }
 ]

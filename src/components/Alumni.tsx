@@ -1,8 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
-// import AlumuniCard from "./AlumniCard";
-import AlumniCard from "./AlumniCard";
+import AlumuniCard from "./AlumniCard";
+
 // import "swiper/swiper-bundle.min.css";
 
 const OUR_ALUMNI = [
@@ -67,18 +67,21 @@ const OurAlumuni = () => {
     // fetachAlumni();
   });
   return (
-    <div className=" ">
-      <div className="py-5  text-center">
-        <h1 className="mb-14 text-[45px] font-semibold">
-          Message From <span className="text-[#3B61CF]">Our Alumni</span>
+    <div className="  pl-20 my-[253px]">
+
+        <h1 className="mb-14 text-[2.8rem] font-semibold">
+          Message From <span className="bg-gradient-to-r from-purple-500 to-blue-500 text-transparent bg-clip-text">Our Alumni</span>
         </h1>
-        
-        <div className="flex overflow-x-scroll">
+        <div className="scrollC flex overflow-x-scroll">
           {OUR_ALUMNI.map((Lead, index) => {
-            return <AlumniCard  key={index} {...Lead} />;
+            return (
+              <div key={index} className="">
+                <AlumuniCard  {...Lead} />
+              </div>
+            );
           })}
         </div>
-      </div>
+   
     </div>
   );
 };

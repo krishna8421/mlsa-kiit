@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.wdt {
+  width: 240px;
+}
+.shadowCard::-webkit-scrollbar {
+  display: none;
+}
+.scrollC::-webkit-scrollbar {
+  display: none;
+  /* background-color: #a03bcf, #6f5bff; */
+  
+}

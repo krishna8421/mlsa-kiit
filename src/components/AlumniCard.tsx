@@ -9,33 +9,39 @@ interface Props {
   message: string;
 }
 const imgStyle: any = {
-  height: 83,
-  width: 83,
+  height: 53,
+  width: 53,
   objectFit: "cover",
   objectPosition: "center",
 };
 
-const AlumniCard = ({ image, name, position, company, message }: Props) => {
+const AlumuniCard = ({ image, name, position, company, message }: Props) => {
   return (
-    <div className="text-black mx-3 my-10 box-border flex w-[600px]  flex-col rounded-[10px] bg-white px-5 py-4 text-start  font-sans font-normal">
-      <div className="relative pb-7 flex ">
-        <Image
-          src={image}
-          height={84}
-          width={84}
-          className="   rounded-full "
-          style={imgStyle}
-          alt="name"
-        />
-        <div className="">
-          <h1 className="text-2xl ">{name}</h1>
-          <h2 className="text-lg leading-6">{position}</h2>
-          <h2 className=" text-lg leading-6">{company}</h2>
+    <div className="scrollC w-[500px] h-[270px]">
+      <div className="backdrop-blur-[5px] mx-3 my-10 box-border flex flex-col rounded-[10px] border-[1px] border-solid border-white bg-[#25252580] px-5 py-4 text-start font-sans  font-normal text-white">
+        <div className="flex pb-7 ">
+          <Image
+            src={image}
+            height={84}
+            width={84}
+            className="  rounded-full "
+            style={imgStyle}
+            alt="name"
+          />
+          <div className="pl-6">
+            <h1 className="text-2xl ">{name}</h1>
+            <h2 className="text-lg leading-6">
+              {position} {company}
+            </h2>
+          </div>
+        </div>
+        <div className="flex px-3">
+          <div className="h-[100px] w-[2px] bg-blue-600 text-blue-600">.</div>
+          <p className="pl-5 text-lg leading-6">{message}</p>
         </div>
       </div>
-      <p className="text-lg leading-6">{message}</p>
     </div>
   );
 };
 
-export default AlumniCard;
+export default AlumuniCard;
