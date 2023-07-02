@@ -1,6 +1,12 @@
-import Landing from "@/components/Landing";
+import About from "@/components/About";
+import Hero from "@/components/Hero";
 import ScrollAnimationCode from "@/components/ScrollAnimationCode";
-export default function Home(){
-  return (<div className="overflow-x-hidden"><Landing/>
-  <ScrollAnimationCode/></div>);
+export default function Home() {
+  return (
+    <div>
+      <Hero />
+      <About />
+      <ScrollAnimationCode />
+    </div>
+  );
 }
