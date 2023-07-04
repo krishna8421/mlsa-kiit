@@ -15,7 +15,7 @@ module.exports = {
       aboutLogoShadowBlue:
         "0px 0px 14px 7px rgba(55, 124, 236, .5), 0 2px 4px -1px rgba(35, 63, 146, 0.8)",
       aboutContainerShadow:
-        "0px 0px 50px 15px rgba(160,32,240,0.2), 0 0px 60px 30px rgba(55,124,236,0.1)",
+        "0px 0px 30px 10px rgba(132, 89, 226, 0.4)",
     },
     extend: {},
   },

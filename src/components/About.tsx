@@ -20,7 +20,7 @@ const About: React.FC = () => {
     }, 0);
 
     return () => clearTimeout(timer);
-  }, []);
+  });
   const controls = useAnimation();
 
   useEffect(() => {
@@ -61,11 +61,11 @@ const About: React.FC = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  });
 
   return (
     <>
-      <div className="mx-auto flex sm:ml-[80px]">
+      <div className="mx-auto flex -translate-y-[60vh] md:-translate-y-[30vh] sm:ml-[80px]">
         <motion.div
           className="flex justify-center"
           initial={{ opacity: 0, y: 1000 }} //before scrolling position of slider
@@ -90,11 +90,11 @@ const About: React.FC = () => {
             animate={textControls} //text conntrol animation triggered.
             transition={{ duration: 1 }}
           >
-            <div className="ml-12 text-white">
-              <h1 className="js-build-in-item text-4xl font-semibold">
+            <div className="sm:ml-12 text-white">
+              <h1 className="js-build-in-item text-2xl md:text-3xl lg:text-4xl font-semibold">
                 About<span className="ml-1 text-[#3B61CF]">Us</span>
               </h1>
-              <p className="mt-6 text-xl leading-6 text-[#7d8590]">
+              <p className="mt-6 text-md md:text-xl leading- md:leading-6 text-[#7d8590]">
                 We have been doing projects
                 <br />
                 and events since 2017
@@ -113,7 +113,7 @@ const About: React.FC = () => {
               <AboutCard
                 icon={<FaEye className="text-[30px] md:text-[40px]"></FaEye>}
                 label="Vision"
-                Classname="md:max-h-[340px] md:w-[25vw] max-w-[310px] w-[100%] md:min-w-[260px] "
+                Classname="md:max-h-[340px] md:w-[25vw] sm:max-w-[310px] w-[100%] md:min-w-[260px] "
                 content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates officia sit blanditiis dignissimos vitae minus magnam modi repellat, officiis totam alias odio ducimus iste iusto beatae consectetur, tenetur quae eius?"
               />
             </motion.div>
@@ -127,7 +127,7 @@ const About: React.FC = () => {
               <AboutCard
                 icon={<TbTargetArrow className=" text-[30px] md:text-[40px]"></TbTargetArrow>}
                 label="Goal"
-                Classname="md:w-[25vw] max-h-[340px] max-w-[320px] w-[100%] md:min-w-[260px]"
+                Classname="md:max-h-[340px] md:w-[25vw] sm:max-w-[310px] w-[100%] md:min-w-[260px]"
                 content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates officia sit blanditiis dignissimos vitae minus magnam modi repellat, officiis totam alias odio ducimus iste iusto beatae consectetur, tenetur quae eius?"
               />
             </motion.div>
@@ -143,7 +143,7 @@ const About: React.FC = () => {
                   <BsFillRocketTakeoffFill className="text-[30px] md:text-[40px]"></BsFillRocketTakeoffFill>
                 }
                 label="Mission"
-                Classname="md:w-[25vw] max-h-[340px] max-w-[320px] w-[100%] md:min-w-[260px]"
+                Classname="md:max-h-[340px] md:w-[25vw] sm:max-w-[310px] w-[100%] md:min-w-[260px]"
                 content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates officia sit blanditiis dignissimos vitae minus magnam modi repellat, officiis totam alias odio ducimus iste iusto beatae consectetur, tenetur quae eius?"
               />
             </motion.div>
