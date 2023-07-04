@@ -16,7 +16,7 @@ const ScrollAnimationCode: React.FC = () => {
     }, 0);
 
     return () => clearTimeout(timer);
-  }, []);
+  });
   const controls = useAnimation();
   useEffect(() => {
     const handleScroll = () => {
@@ -24,7 +24,6 @@ const ScrollAnimationCode: React.FC = () => {
       const windowHeight = window.innerHeight; //determines the height of the  device the user is using
       window.addEventListener("scroll", function () {
         var scrollPosition = window.scrollY;
-        var element = document.getElementById("myElement"); //gets the circle on top of slider
         if (scrollPosition > windowHeight / 1.3) {
           const element = document.getElementById("myElement"); // gets the circle on top of the slider
 
@@ -53,7 +52,7 @@ const ScrollAnimationCode: React.FC = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  });
 
   return (
     <div className="w-screen] flex overflow-hidden">
