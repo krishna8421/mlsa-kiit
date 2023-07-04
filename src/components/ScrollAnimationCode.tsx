@@ -59,7 +59,7 @@ const ScrollAnimationCode: React.FC = () => {
   }, []);
 
   return (
-    <div className='flex overflow-hidden w-[100vw] max-w-full'>
+    <div className='flex overflow-hidden  w-[100vw] max-w-full'>
       <motion.div className='flex justify-centre'
       initial={{ opacity: 0, y:2000 }}//before scrolling position of slider
       animate={controls}//refer to line 20
@@ -74,9 +74,9 @@ const ScrollAnimationCode: React.FC = () => {
     transition={{ duration: 3 }} >
     {/* <Sponsors/> */}
     
-    <div className='overflow-visible'>
+   
      <OurAlumuni/>
-     </div>
+   
   </motion.div>
   {/* Text animation(can be changed)*/}
     </div>

@@ -12,14 +12,15 @@
 //     </main>
 //   );
 // =======
-import OurAlumuni from "@/components/Alumni";
+// import OurAlumuni from "@/components/Alumni";
 import ContactUs from "@/components/ContactUs";
 import Landing from "@/components/Landing";
-// import ScrollAnimationCode from "@/components/ScrollAnimationCode";
+import ScrollAnimationCode from "@/components/ScrollAnimationCode";
 export default function Home(){
   return (<div><Landing/>
   <ContactUs/>
-  <OurAlumuni/>
+  {/* <OurAlumuni/> */}
+  <ScrollAnimationCode/>
   </div>);
 // >>>>>>> 52ec67a61a0921ec9574da54013d5a2f0c5cd574
 }
