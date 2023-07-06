@@ -9,21 +9,21 @@ const Hero = () => {
 
   return (
     <>
-      <div className="relative h-screen">
+      <div className="relative h-[140vh] overflow-x-hidden">
         <div
-          className="z-1 absolute left-[-50%] top-[-60%] h-[1100px] w-[1100px] rounded-full bg-gradient-to-r 
+          className="z-1 absolute left-[-50%] top-[-60%] h-[700px] md:h-[1100px] w-[100vw] md:w-[1100px] rounded-full bg-gradient-to-r 
         from-[#c273eb]/80 to-transparent blur-3xl"
         ></div>
         <div
-          className="z-1 absolute left-[-10%] top-[-30%] h-[900px] w-[700px] rounded-full 
+          className="z-1 absolute left-[-10%] top-[-30%] h-[700px] md:h-[900px] w-[50vw] md:w-[700px] rounded-full 
         bg-gradient-to-l from-[#4662e0]/40 to-transparent opacity-80 blur-3xl"
         ></div>
         <div
-          className="z-1 absolute right-[-35%] top-[20%] h-[900px] w-[1100px] rounded-full bg-gradient-to-l 
+          className="z-1 absolute right-[-35%] top-[5%] h-[70vh] md:h-[900px] w-[70vw] md:w-[80vw] rounded-full bg-gradient-to-l 
         from-[#c273eb]/50 to-transparent blur-3xl"
         ></div>
         <div
-          className="z-1 absolute right-[-35%] top-[20%] h-[900px] w-[1100px] rounded-full bg-gradient-to-l 
+          className="z-1 absolute right-[-35%] top-[5%] h-[50vh] md:h-[900px] w-[70vw] md:w-[1100px] rounded-full bg-gradient-to-l 
         from-[#4662e0]/40 to-transparent blur-3xl"
         ></div>
         <EventHome
@@ -31,7 +31,7 @@ const Hero = () => {
           eventName="Flutter Verse 2.0"
           registrationClosed={false}
         />
-        <div className="z-29 absolute flex h-screen w-screen flex-col items-center justify-center font-semibold text-2xl text-white delay-100 duration-150 transition-all  md:text-4xl lg:leading-[40px] 2xl:leading-[6vh]">
+        <div className="z-29 absolute flex h-[90vh] md:h-screen w-screen flex-col items-center justify-center font-semibold text-2xl text-white delay-100 duration-150 transition-all md:text-4xl lg:leading-[40px] 2xl:leading-[6vh]">
           <div className="flex">
             Microsoft Learn
             <HeroTextAnimation texts={MlsaTexts} />

@@ -1,5 +1,6 @@
 import React from "react";
 
+
 interface Props {
   isHome: boolean;
   logo: React.ReactNode | number;
