@@ -26,6 +26,7 @@
 // // >>>>>>> 52ec67a61a0921ec9574da54013d5a2f0c5cd574
 // =======
 import About from "@/components/About";
+// import FeatureProject from "@/components/EventsHero";
 import Hero from "@/components/Hero";
 import ScrollAnimationCode from "@/components/ScrollAnimationCode";
 export default function Home() {
@@ -33,6 +34,7 @@ export default function Home() {
     <div>
       <Hero />
       <About />
+      {/* <FeatureProject/> */}
       <ScrollAnimationCode />
     </div>
   );
