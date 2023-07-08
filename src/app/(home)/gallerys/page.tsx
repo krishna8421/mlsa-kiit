@@ -5,6 +5,7 @@ import Image from "next/image";
 // import GalleryHeroCarousel from "@/components/gallery/GalleryHeroCarousel";
 import { useEffect, useState } from "react";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
+import GalleryCards from "@/components/gallery/GalleryCards";
 
 const Gallery = () => {
   const [rojectsCounter, setProjectsCounter] = useState(0);
@@ -98,6 +99,7 @@ const Gallery = () => {
         </div>
       </div>
       <GalleryFadeShow />
+      <GalleryCards />
     </>
   );
 };

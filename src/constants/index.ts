@@ -1272,3 +1272,90 @@ export const YT = [
     domain: "Youtube Hosting",
   },
 ];
+
+export const GALLERY = [
+  {
+    id: 1,
+    img: "/Gallery/Devops/1.JPG",
+    name: "Devops",
+    domain: "Youtube Hosting",
+  },
+  {
+    id: 2,
+    img: "/Gallery/Eyespy/2.JPG",
+    name: "Eyespy Squid",
+    domain: "Youtube Hosting",
+  },
+  {
+    id: 3,
+    img: "/Gallery/Devops/2.JPG",
+    name: "Devops",
+    domain: "Youtube Hosting",
+  },
+  {
+    id: 4,
+    img: "/Gallery/Frontend/4.png",
+    name: "Frontend With Benefit",
+    domain: "Youtube Hosting",
+  },
+  {
+    id: 5,
+    img: "/Gallery/Projectwing/1.png",
+    name: "Project Wing",
+    domain: "Youtube Hosting",
+  },
+  {
+    id: 6,
+    img: "/Gallery/Eyespy/3.JPG",
+    name: "Eyespy Squid",
+    domain: "Youtube Hosting",
+  },
+  {
+    id: 7,
+    img: "/Gallery/Devops/3.JPG",
+    name: "Devops",
+    domain: "Youtube Hosting",
+  },
+  {
+    id: 8,
+    img: "/Gallery/Frontend/5.png",
+    name: "Frontend With Benefit",
+    domain: "Youtube Hosting",
+  },
+  {
+    id: 9,
+    img: "/Gallery/Eyespy/4.JPG",
+    name: "Eyespy Squid",
+    domain: "Youtube Hosting",
+  },
+  {
+    id: 10,
+    img: "/Gallery/Projectwing/2.png",
+    name: "Project Wing",
+    domain: "Youtube Hosting",
+  },
+  {
+    id: 11,
+    img: "/Gallery/Frontend/6.png",
+    name: "Frontend With Benefit",
+    domain: "Youtube Hosting",
+  },
+  {
+    id: 12,
+    img: "/Gallery/Devops/4.JPG",
+    name: "devops",
+    domain: "Youtube Hosting",
+  },
+  {
+    id: 13,
+    img: "/Gallery/Eyespy/5.JPG",
+    name: "Eyespy Squid",
+    domain: "Youtube Hosting",
+  },
+  {
+    id: 14,
+    img: "/Gallery/Frontend/7.png",
+    name: "Frontend With Benefit",
+    domain: "Youtube Hosting",
+  },
+];
