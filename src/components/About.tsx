@@ -65,7 +65,7 @@ const About: React.FC = () => {
 
   return (
     <>
-      <div className="mx-auto flex -translate-y-[60vh] md:-translate-y-[30vh] sm:ml-[80px]">
+      <div className="mx-auto flex -translate-y-[60vh] md:-translate-y-[30vh] sm:ml-[80px] overflow-hidden pt-8">
         <motion.div
           className="flex justify-center"
           initial={{ opacity: 0, y: 1000 }} //before scrolling position of slider
