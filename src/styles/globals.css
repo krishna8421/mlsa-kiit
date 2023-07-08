@@ -64,4 +64,132 @@ body {
   -webkit-animation-timing-function: ease-in-out;
   animation-timing-function: ease-in-out;
 }
-/* >>>>>>> b2b7caee71d5078d3f4c57ff0a0ad45539e8dc11 */
+
+
+
+
+
+.tech-stack-container {
+    background: white;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+  }
+  
+  /* .tech-stack-container::before {
+    background: #5bc236;
+    content: "";
+    position: absolute;
+  } */
+  
+  .tech-stack-container::after {
+    content: "";
+    width: 38px;
+    height: 38px;
+    position: absolute;
+    margin: 0px 0 0 20px;
+    border-radius: 50%;
+    margin-top: -2px;
+  }
+  
+  @media only screen and (max-width: 976px) {
+  
+  .tech-stack-container {
+    width: 17px;
+    height: 17px;
+    }
+  
+  .tech-stack-container::after {
+    width: 19.3px;
+    height: 19.3px;
+    margin: 0px 0 0 10px;
+    margin-top: -1px;
+  
+  }
+  }
+  
+  .gradient-border:hover {
+    --borderWidth: 2.5px;
+    position: relative;
+  }
+  .gradient-border:after {
+    content: '';
+    position: absolute;
+    top: calc(-1 * var(--borderWidth));
+    left: calc(-1 * var(--borderWidth));
+    height: calc(100% + var(--borderWidth) * 2);
+    width: calc(100% + var(--borderWidth) * 2);
+    background: linear-gradient(60deg, #FF2EAB, #EDBA03);
+    border-radius: 15px;
+    z-index: -1;
+    animation: animatedgradient 1s ease alternate infinite;
+    background-size: 300% 300%;
+  }
+  
+  @media only screen and (max-width: 976px) {
+    .gradient-border:after{
+      border-radius:5px;
+    }
+    .gradient-border:hover {
+      --borderWidth: 1.5px;
+    }
+  }
+  
+  @media only screen and (max-width: 1440px) {
+    .gradient-border:after{
+      border-radius: 8px;
+    }
+  }
+  
+  
+  @keyframes animatedgradient {
+      0% {
+          background-position: 0% 50%;
+      }
+      50% {
+          background-position: 100% 50%;
+      }
+      100% {
+          background-position: 0% 50%;
+      }
+  }
+
+/* Register now animation */
+  @keyframes zoomToNormal{  
+    0%{
+  
+      font-size: 0;
+      transform: scale(0);
+    }
+    50% {
+  
+      font-size: 70px;
+      transform: scale(1.2);
+    }
+    100%{
+  
+      font-size: 50px;
+      transform: scale(1);
+    }
+  }
+  .registerNow{
+  
+    animation-name: zoomToNormal;
+  
+    animation-duration: 2s;
+  
+    animation-timing-function: ease-in-out; 
+  
+    animation-fill-mode: forwards;
+  
+    transform-origin: center;
+  }
+.jj{
+  background: linear-gradient(360deg, #000 0%, rgba(0, 0, 0, 0.00) 100%);
+}
+.swiper-button-prev::before{
+  width: 5px;
+  height: 5px;
+  background-color: rgba(0, 0, 0, 0);
+}
+

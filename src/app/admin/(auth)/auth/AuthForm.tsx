@@ -19,7 +19,7 @@ const AuthForm = () => {
     password: "",
   });
   return (
-    <Card isBlurred className="px-4" radius="2xl" shadow="lg">
+    <Card isBlurred className="px-4"  shadow="lg">
       <Toaster position="bottom-right" reverseOrder={false} />
       <CardBody>
         <h1 className="p-4 text-center text-2xl font-bold">Login</h1>

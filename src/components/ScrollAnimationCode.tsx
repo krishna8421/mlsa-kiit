@@ -1,16 +1,9 @@
 "use client";
-// <<<<<<< HEAD
-// import { motion, useAnimation } from 'framer-motion';
-// import React, { useEffect } from 'react';
-// import Slider from './Slider';
-// // import Sponsors from './Sponsors';
-// import OurAlumuni from './Alumni';
-// =======
+
 import { motion, useAnimation } from "framer-motion";
 import React, { useEffect } from "react";
 import Slider from "./Slider";
 import Sponsors from "./Sponsors";
-// >>>>>>> b2b7caee71d5078d3f4c57ff0a0ad45539e8dc11
 const ScrollAnimationCode: React.FC = () => {
   const textControls = useAnimation();
   const sliderControls = useAnimation();
@@ -63,28 +56,6 @@ const ScrollAnimationCode: React.FC = () => {
   });
 
   return (
-// <<<<<<< HEAD
-//     <div className='flex overflow-hidden  w-[100vw] max-w-full'>
-//       <motion.div className='flex justify-centre'
-//       initial={{ opacity: 0, y:2000 }}//before scrolling position of slider
-//       animate={controls}//refer to line 20
-//       transition={{ duration: 2.5 }} //slider duration for popping up. if you are changinng duration then make sure to change delay of glow adder so thatt  the gow starts after animation is complete
-//       onAnimationComplete={handleSliderAnimationComplete}
-//     ><Slider/>
-//     </motion.div>
-//     {/* Completed slider animation */}
-//     <motion.div
-//     initial={{ opacity: 0, x: 1000, y:100 }}//initial position of text with opacity 0
-//     animate={textControls}//text conntrol animation triggered.
-//     transition={{ duration: 3 }} >
-//     {/* <Sponsors/> */}
-    
-   
-//      <OurAlumuni/>
-   
-//   </motion.div>
-//   {/* Text animation(can be changed)*/}
-// =======
     <div className="w-screen] flex overflow-hidden">
       <motion.div
         className="justify-centre flex"
@@ -105,7 +76,7 @@ const ScrollAnimationCode: React.FC = () => {
         <Sponsors />
       </motion.div>
       {/* Text animation(can be changed)*/}
-{/* >>>>>>> b2b7caee71d5078d3f4c57ff0a0ad45539e8dc11 */}
+
     </div>
   );
 };

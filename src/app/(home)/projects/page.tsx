@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import { FaSearch } from "react-icons/fa";
 import "@/styles/globals.css"
+import Project from "@/components/Project"
 
 const Projects = () => {
   const [projectsCounter, setProjectsCounter] = useState(0);
@@ -74,6 +75,7 @@ const Projects = () => {
           </span>
         </div>
       </div>
+      <Project />
     </>
   );
 };

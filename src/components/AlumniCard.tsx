@@ -17,8 +17,9 @@ const imgStyle: any = {
 
 const AlumuniCard = ({ image, name, position, company, message }: Props) => {
   return (
-    <div className="scrollC w-[500px] h-[270px]">
-      <div className="backdrop-blur-[5px] mx-3 my-10 box-border flex flex-col rounded-[10px] border-[1px] border-solid border-white bg-[#25252580] px-5 py-4 text-start font-sans  font-normal text-white">
+    <div className=" w-[500px] h-[320px]">
+      
+      <div className="backdrop-blur-[5px]  hover:shadow-blue2 mx-3 my-24 box-border flex flex-col rounded-[10px] border-[1px] border-solid border-white bg-[#25252580] px-5 py-4 text-start font-sans  font-normal text-white">
         <div className="flex pb-7 ">
           <Image
             src={image}
@@ -40,7 +41,8 @@ const AlumuniCard = ({ image, name, position, company, message }: Props) => {
           <p className="pl-5 text-lg leading-6">{message}</p>
         </div>
       </div>
-    </div>
+      </div>
+      
   );
 };
 

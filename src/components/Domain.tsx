@@ -1,19 +1,13 @@
 "use client";
 
-import { OUR_ALUMNI } from "@/constants";
+import { OUR_DOMAINS } from "@/constants";
 import Image from "next/image";
-import AlumuniCard from "./AlumniCard";
-import { Navigation } from "swiper";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/swiper-bundle.min.css";
-
+import DomainCard from "./DomainCard";
 import { motion, useAnimation } from "framer-motion";
-
 import React, { useEffect } from "react";
-import "swiper/swiper-bundle.min.css";
 
 
-const Alumni1: React.FC = () => {
+const Domain: React.FC = () => {
   const textControls = useAnimation();
   const sliderControls = useAnimation();
   const handleSliderAnimationComplete = () => {
@@ -72,9 +66,28 @@ const Alumni1: React.FC = () => {
 
   return (
     <>
+    {/* <div className="mb-[100px] flex flex-col items-center justify-center">
+      <h1 className="mb-12 text-center text-xl font-semibold md:mb-0 md:text-3xl lg:leading-[40px] 2xl:text-[2.1vw] 2xl:leading-[6vh]">
+        Our <span className="text-[#3B61CF]">Domain</span>
+      </h1>
+      <div className="flex w-[325px] flex-wrap gap-7 md:w-[672px] lg:w-[1020px]">
+        {OUR_DOMAINS.map((domain, index) => {
+          return (
+            <DomainCard
+              key={index}
+              logo={<Image src={domain.imgSrc} alt="support" width={500} height={500}></Image>}
+              heading={domain.name}
+              about={domain.about}
+            ></DomainCard>
+          );
+        })}
+      </div>
+    </div> */}
 
 <div className="min-h-[100px] h-auto md:pb-[222px] pb-[128px] relative z-0 flex flex-row max-w-[1920px] justify-center items-center mx-auto">
-
+<div className="h-[439px] w-[439px] absolute z-10 rounded full -top-[300px] -left-[578px]">
+<Image src="/domainLogos/Rectangle.png" alt="gradient" width={739} height={739} className="object-fit h-[739px] w-[739px] rounded-full bg-no-repeat object-cover blur-[155.5px]"></Image>
+</div>
 
 <div className="mx-auto flex -translate-y-[60vh] md:-translate-y-[30vh] sm:ml-[80px]">
         <motion.div
@@ -94,7 +107,14 @@ const Alumni1: React.FC = () => {
             <div className="h-full w-[5px]  bg-gradient-to-b from-[#533BD0] to-transparent duration-700 transition lg:h-[80vh]"></div>
           </div>
         </motion.div>
+{/* <div className="h-full ml-[7px] sm:ml-[31px] md:ml-[53px] 2xl:[120px] flex flex-col items-center ">
+ <div className="md:w-[84px] md:h-[84px] w-[48] h-[48] border border-cyan-300">
+    <Image src="/domainLogos/Dot.png" alt="no img" width={84} height={84} className="object-contain -scale-150 md:w-[84px] md:h-[84px] sm:w-[48] sm:h-[48] w-[35px] h-[35px]"></Image>
+    </div>
+  <div className="h-full  z-20 -mx-10 w-[2px] bg-[blue] ">
 
+  </div>
+</div> */}
 <div className="">
 <motion.div
             initial={{ opacity: 0, x: 1000, y: 0 }} //initial position of text with opacity 0
@@ -102,94 +122,31 @@ const Alumni1: React.FC = () => {
             transition={{ duration: 1 }}
           >
 <h1 className="sm:mb-[7px] ml-[11px] sm:ml-[15px] lg:ml-[30px] 2xl:ml-[53px] text-[12px] sm:text-[18px] font-semibold md:mb-[20px] md:text-3xl items-start text-[#FFFFFF] 2xl:text-[2.1vw] ">
-  Message From <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#A03BCF] to-[#6F5BFF]">Our Alumni</span>
+  Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#A03BCF] to-[#6F5BFF]">Domain</span>
 </h1>
 </motion.div>
 
-<div className="flex   flex-wrap justify-center items-center 2xl:gap-7 pl-[11px] sm:pl-[23px] md:pl-[36px] 2xl:pl-[77px]">
-
-                    {/* <h1>Hi</h1> */}
-<Swiper
-          spaceBetween={10}
-          // slidesPerView={2.5}
-          cssMode={true}
-          mousewheel={true}
-          className="sm:ml-20 "
-          loop={false}
-          navigation={true}
-          modules={[Navigation]}
-          // centeredSlides={true}
-          // centerInsufficientSlides={true}
-          breakpoints={{
-            320: {
-              slidesPerView: 1,
-              spaceBetween: 100,
-            },
-            // when window width is >= 480px
-            480: {
-              slidesPerView: 1,
-              spaceBetween: 30,
-            },
-            // when window width is >= 640px
-            640: {
-              slidesPerView: 1.8,
-              spaceBetween: 80,
-            },
-            760: {
-              slidesPerView: 1.9,
-              spaceBetween: 180,
-            },
-            800: {
-              slidesPerView: 2.1,
-              spaceBetween: 150,
-            },
-            820: {
-              slidesPerView: 2.5,
-              spaceBetween: 350,
-            },
-            900: {
-              slidesPerView: 2.1,
-              spaceBetween: 220,
-            },
-            1000: {
-              slidesPerView:2.4,
-              // slidesPerView:'auto',
-              spaceBetween: 280,
-            },
-            1200: {
-              slidesPerView: 3.2,
-              // slidesPerView:'auto',
-              spaceBetween: 450,
-            },
-            1400: {
-              slidesPerView: 3.4,
-              spaceBetween: 150,
-            },
-          }}
-        >
-          {OUR_ALUMNI.map((Lead, index) => {
-
-            return (
-             
-              <SwiperSlide key={index} className="  sm:w-[460px]">
-                <motion.div
-                    // key={index}
-                    // className="flex justify-center"
-                    initial={{ opacity: 0, y: 1000 }} 
-                    animate={controls} 
-                    transition={{ duration: 1.2 }} 
-                    onAnimationComplete={handleSliderAnimationComplete}
-                  >
-                 
-                
-                  <AlumuniCard {...Lead} />
-                  </motion.div>
-                  
-              </SwiperSlide>
-            );
-          })}
-        </Swiper>
-        {/* </motion.div> */}
+<div className="flex   flex-wrap justify-center items-center gap-4 md:gap-5 2xl:gap-7 pl-[11px] sm:pl-[23px] md:pl-[36px] 2xl:pl-[77px]">
+  {OUR_DOMAINS.map((domain, index) => {
+    return (
+      <motion.div
+              key={index}
+              // className="flex justify-center"
+              initial={{ opacity: 0, y: 1000 }} 
+              animate={controls} 
+              transition={{ duration: 1.2 }} 
+              onAnimationComplete={handleSliderAnimationComplete}
+            >
+      <DomainCard
+        isHome={true}
+        key={index}
+        logo={<Image src={domain.imgSrc} alt="support" width={500} height={500}></Image>}
+        heading={domain.name}
+        about={domain.about}
+      ></DomainCard>
+      </motion.div>
+    );
+  })}
   
 </div>
 </div>
@@ -199,4 +156,4 @@ const Alumni1: React.FC = () => {
   );
 };
 
-export default Alumni1;
+export default Domain;
