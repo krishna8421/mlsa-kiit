@@ -67,10 +67,10 @@ const Project: React.FC  = () => {
     let bgIndex: number = 0;
   const bgColorArr: Array<string> = ["#DBAEFF", "#9CE1FF", "#D9FF9C", "#FFCC9C"];
 
-  const [showMoreClick, setShowMoreClick] = useState(3); 
+  const [showMoreClick, setShowMoreClick] = useState(4); 
 
   const changeShowMore = () => {
-    setShowMoreClick(showMoreClick + 2);
+    setShowMoreClick(showMoreClick + 3);
   };
 
   return (
