@@ -30,7 +30,11 @@ module.exports = {
       "3xl": "1750px",
       "4xl": "1990px",
     },
-    extend: {},
+    extend: {
+      borderRadius: {
+        imageradius:"15px",
+      },
+    },
   },
   darkMode: "class",
   plugins: [nextui()],
