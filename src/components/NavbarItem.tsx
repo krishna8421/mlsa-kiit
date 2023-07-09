@@ -6,6 +6,7 @@ interface NavbarItemProps extends ILayoutProps {
   type?: "button" | "link";
   className?: string;
   mobileView?: boolean;
+  external?: boolean;
 }
 
 const NavbarItem = ({
@@ -14,12 +15,13 @@ const NavbarItem = ({
   type = "link",
   className = "",
   mobileView,
+  external=false
 }: NavbarItemProps) => {
   if (type === "button") {
     return (
       <Link href={href}>
         <button
-          className={`2xl:text-md rounded-full bg-gradient-blue px-7 py-1.5 text-md bg-gradient-to-r from-[#0070C5] to-[#3BABCF] 
+          className={`2xl:text-[1vw] rounded-full bg-gradient-blue px-7 py-1.5 text-md bg-gradient-to-r from-[#0070C5] to-[#3BABCF] 
           ${mobileView ? "text-white drop-shadow-md" : "text-white"}`}
         >
           {children}
@@ -29,9 +31,9 @@ const NavbarItem = ({
   }
 
   return (
-    <Link href={href}>
+    <Link href={href} target={`${external ? "_blank": ""}`}>
       <div
-        className={`2xl:text-md cursor-pointer text-sm transition hover:text-gray-500
+        className={`2xl:text-[1vw] text-md  cursor-pointer text-sm transition hover:text-[#0070C5]
         ${className} ${mobileView && "w-full text-center text-white"} 
       `}
       >
