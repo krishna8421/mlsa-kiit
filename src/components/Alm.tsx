@@ -3,14 +3,14 @@
 import { OUR_ALUMNI } from "@/constants";
 import Image from "next/image";
 import AlumuniCard from "./AlumniCard";
-import { Navigation } from "swiper";
+import { Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/swiper-bundle.min.css";
+// import "swiper/swiper-bundle.min.css";
 
 import { motion, useAnimation } from "framer-motion";
 
 import React, { useEffect } from "react";
-import "swiper/swiper-bundle.min.css";
+// import "swiper/swiper-bundle.min.css";
 
 
 const Alumni1: React.FC = () => {

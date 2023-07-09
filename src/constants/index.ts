@@ -2,7 +2,7 @@ export const SITE_NAME = "MLSA, KIIT Chapter";
 export const SITE_NAME_FULL = "Microsoft Learn Student Ambassador, KIIT Chapter";
 export const SITE_URL = "https://mlsakiit.tech";
 export const SITE_DESCRIPTION = `${SITE_NAME} is a community of students who are interested in learning about the latest technologies and trends in the field of computer science and technology.`;
-export const QUOTE = "We encourage young minds to pursue knowledge and excellence in unique ways.";
+export const QUOTE = "We encsage young minds to pursue knowledge and excellence in unique ways.";
 export const MEDIUM_BLOG_URL = "https://medium.com/msackiit";
 export const LINKEDIN_URL = "https://www.linkedin.com/company/msckiit/mycompany/";
 export const GITHUB_URL = "";
@@ -49,6 +49,70 @@ export const HERO_SECTION_EVENTS = [
   },
 ];
 export const OUR_PROJECTS1 = [
+  {
+    img: "/projects/browser.png",
+    ProjectName: "Tango Charlie Browser",
+    techStack1: "Flutter",
+    techStack2: "Firebase",
+    techImg: "/projects/Flutter.png",
+    techImg2: "/projects/Firebase.png",
+    github: "https://github.com/MLSAKIIT/TangoBrowser",
+  },
+
+  {
+    img: "/projects/debaterX.png",
+    ProjectName: "DebaterX",
+    techStack1: "Flutter",
+    techStack2: "Firebse",
+    techImg: "/projects/Flutter.png",
+    techImg2: "/projects/Firebase.png",
+    github: "https://github.com/MLSAKIIT/DebaterX",
+  },
+  {
+    img: "/projects/codeportal.png",
+    ProjectName: "Code Portal",
+    techStack1: "Flutter",
+    techStack2: "Firebse",
+    techImg: "/projects/Flutter.png",
+    techImg2: "/projects/Firebase.png",
+    github: "https://github.com/MLSAKIIT/MSC-Codeportal",
+  },
+  {
+    img: "/projects/algorithmve.png",
+    ProjectName: "Algorithm VE",
+    techStack1: "Flutter",
+    techStack2: "Firebse",
+    techImg: "/projects/NextJs.png",
+    techImg2: "/projects/Firebase.png",
+    github: "https://github.com/MLSAKIIT/Algorithm-VE",
+  },
+  // {
+  //   img: "/projects/project1.png",
+  //   ProjectName: "OS",
+  //   techStack1: "Flutter",
+  //   techStack2: "Firebse",
+  //   techImg: "/projects/Flutter.png",
+  //   techImg2: "/projects/Firebase.png",
+  //   github: "#",
+  // },
+  {
+    img: "/projects/missonmars.png",
+    ProjectName: "Mission Mars",
+    techStack1: "Flutter",
+    techStack2: "Firebse",
+    techImg: "/projects/NextJs.png",
+    techImg2: "/projects/Firebase.png",
+    github: "https://github.com/MLSAKIIT/MissionMars",
+  },
+  {
+    img: "/projects/transcriptor.png",
+    ProjectName: "Transcriptor",
+    techStack1: "Mern",
+    techStack2: "ML, Python",
+    techImg: "/projects/Python.png",
+    techImg2: "/projects/Firebase.png",
+    github: "https://github.com/MLSAKIIT/The-Transcripter",
+  },
   {
     img: "/projects/browser.png",
     ProjectName: "Tango Charlie Browser",
@@ -1205,6 +1269,93 @@ export const YT = [
     id: 4,
     img: "/members/bhoomika.jpg",
     name: "Bhoomika",
+    domain: "Youtube Hosting",
+  },
+];
+
+export const GALLERY = [
+  {
+    id: 1,
+    img: "/Gallery/Devops/1.JPG",
+    name: "Devops",
+    domain: "Youtube Hosting",
+  },
+  {
+    id: 2,
+    img: "/Gallery/Eyespy/2.JPG",
+    name: "Eyespy Squid",
+    domain: "Youtube Hosting",
+  },
+  {
+    id: 3,
+    img: "/Gallery/Devops/2.JPG",
+    name: "Devops",
+    domain: "Youtube Hosting",
+  },
+  {
+    id: 4,
+    img: "/Gallery/Frontend/4.png",
+    name: "Frontend With Benefit",
+    domain: "Youtube Hosting",
+  },
+  {
+    id: 5,
+    img: "/Gallery/Projectwing/1.png",
+    name: "Project Wing",
+    domain: "Youtube Hosting",
+  },
+  {
+    id: 6,
+    img: "/Gallery/Eyespy/3.JPG",
+    name: "Eyespy Squid",
+    domain: "Youtube Hosting",
+  },
+  {
+    id: 7,
+    img: "/Gallery/Devops/3.JPG",
+    name: "Devops",
+    domain: "Youtube Hosting",
+  },
+  {
+    id: 8,
+    img: "/Gallery/Frontend/5.png",
+    name: "Frontend With Benefit",
+    domain: "Youtube Hosting",
+  },
+  {
+    id: 9,
+    img: "/Gallery/Eyespy/4.JPG",
+    name: "Eyespy Squid",
+    domain: "Youtube Hosting",
+  },
+  {
+    id: 10,
+    img: "/Gallery/Projectwing/2.png",
+    name: "Project Wing",
+    domain: "Youtube Hosting",
+  },
+  {
+    id: 11,
+    img: "/Gallery/Frontend/6.png",
+    name: "Frontend With Benefit",
+    domain: "Youtube Hosting",
+  },
+  {
+    id: 12,
+    img: "/Gallery/Devops/4.JPG",
+    name: "devops",
+    domain: "Youtube Hosting",
+  },
+  {
+    id: 13,
+    img: "/Gallery/Eyespy/5.JPG",
+    name: "Eyespy Squid",
+    domain: "Youtube Hosting",
+  },
+  {
+    id: 14,
+    img: "/Gallery/Frontend/7.png",
+    name: "Frontend With Benefit",
     domain: "Youtube Hosting",
   },
 ];

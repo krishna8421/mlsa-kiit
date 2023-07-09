@@ -1,9 +1,9 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Navigation } from "swiper";
+import { Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/swiper-bundle.min.css";
+// import "swiper/swiper-bundle.min.css";
 import AlumuniCard from "./AlumniCard";
 import { OUR_ALUMNI } from "@/constants";
 

@@ -44,11 +44,14 @@ module.exports = {
       md: "768px",
       lg: "976px",
       "2xl": "1440px",
-      "3xl": "1990px",
-      "4xl": "1750px",
+      "3xl": "1750px",
+      "4xl": "1990px",
     },
-    extend: {},
-// >>>>>>> b2b7caee71d5078d3f4c57ff0a0ad45539e8dc11
+    extend: {
+      borderRadius: {
+        imageradius:"15px",
+      },
+    },
   },
   darkMode: "class",
   plugins: [nextui()],
