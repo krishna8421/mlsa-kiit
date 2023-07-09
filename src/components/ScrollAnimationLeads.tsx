@@ -1,6 +1,6 @@
 "use client";
 import { motion, useAnimation } from "framer-motion";
-import { useEffect } from "react";
+import React,{ useEffect } from "react";
 import OurLeads from "./OurLeads";
 import Slider from "./Slider";
 
