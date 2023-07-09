@@ -87,9 +87,9 @@ const JoinUs: React.FC = () => {
             </div>
             
             
-            <div className="h-[40vh] w-[5px]  bg-gradient-to-b from-[#3BABCF] to-transparent duration-700 transition lg:h-[80vh]">
+            <div className="h-[350px] sm:h-[500px] w-[5px]  bg-gradient-to-b from-[#3BABCF] to-transparent duration-700 transition ">
 
-            <Image src='/joinus.svg' alt="vector" height={80} width={50} className="absolute  top-40"/>
+            <Image src='/joinus.svg' alt="vector" height={80} width={50} className="absolute h-[30%] w-[8%] sm:w-[5%] sm:h-[40%] top-[23%]"/>
             </div>
             
            
@@ -99,22 +99,22 @@ const JoinUs: React.FC = () => {
 <div className="  w-[85vw] ">
 
 
-<div className="flex  justify-between w-full items-center gap-4 md:gap-5 2xl:gap-7 pl-[11px] sm:pl-[23px] md:pl-[36px] 2xl:pl-[77px]">
+<div className="flex  justify-between w-full items-center  pl-[11px] sm:pl-[9px] md:pl-[16px] 2xl:pl-[57px]">
   
       <motion.div
               
-              className="flex justify-between"
+              // className="flex justify-between flex-nowrap"
               initial={{ opacity: 0, y: 1000 }} 
               animate={controls} 
               transition={{ duration: 1.2 }} 
               onAnimationComplete={handleSliderAnimationComplete}
             >
-      <div className="mt-6 flex h-[339px] font-bold mr-10 justify-between items-center ">
-      <div className="w-[150%] ">
-        <div className="pl-[80px] pt-[70px] text-2xl md:text-3xl lg:text-4xl font-semibold">
+      <div className="mt-6 flex  font-bold  md:mr-10 justify-between items-center ">
+      <div className=" ">
+        <div className="pl-6 sm:pl-[40px] md:pl-[60px] lg:pl-[80px] pt-[70px] text-sm sm:text-lg md:text-2xl lg:text-4xl font-semibold">
           <h1 className="bg-gradient-to-r  from-[#0070C5] to-[#3BABCF] text-transparent bg-clip-text">Join</h1>
           <div className="duration-50 my-2  h-[4px] w-[140%] bg-gradient-to-r from-[#456FDC] to-transparent  sm:my-3 "></div>
-          <div className="mt-2 h-[2px] w-[78%] bg-gradient-blue text-blue-500">.</div>
+          
           <h1>
             Micrsoft Learn <span className=" bg-gradient-to-r  from-[#0070C5] to-[#3BABCF] text-transparent bg-clip-text">Student</span>
           </h1>
@@ -122,7 +122,7 @@ const JoinUs: React.FC = () => {
           <h1 className="font-normal">KIIT Chapter</h1>
         </div>
         <Link href="#" className="">
-          <button className="text-md my-[15px] ml-[82px]  flex items-center justify-center whitespace-nowrap rounded-[100px]  bg-gradient-to-r  from-[#0070C5] to-[#3BABCF] px-4 py-[7px]  text-white ">
+          <button className="text-xs md:text-sm lg:text-md my-[15px]  ml-5 sm:ml-[42px] md:ml-[62px] lg:ml-[82px]  flex items-center justify-center whitespace-nowrap rounded-[100px]  bg-gradient-to-r font-normal from-[#0070C5] to-[#3BABCF] px-4 py-[7px]  text-white ">
             Contact Us
           </button>
         </Link>
@@ -131,17 +131,17 @@ const JoinUs: React.FC = () => {
     </div>
       </motion.div>
       <motion.div
-        className="flex justify-between"
+        className="flex w-[40%] justify-end"
         initial={{ opacity: 0, y: 1000 }} 
         animate={controls} 
         transition={{ duration: 1.4 }} 
         onAnimationComplete={handleSliderAnimationComplete}
       
       >
-        <div className="flex justify-center items-center  ">
+        
 
-        <Image width={400} height={300} src="/mlsaLogo.png" alt="rectangle " className="w-[120%]  h-[100%] pt-16" />
-        </div>
+        <Image width={400} height={300} src="/mlsaLogo.png" alt="rectangle " className="w-full h-[100%] pt-16 pr-6" />
+        
       </motion.div>
 
   
