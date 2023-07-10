@@ -72,10 +72,9 @@ const Project: React.FC  = () => {
   };
 
   return (
-    // md:ml-[5.98vw] 3xl:ml-[115px]
-    <div className=" max-w-[1920px] mx-auto r">
-      <div className=" mx-auto "> 
-        <div className="w-[90vw] md:pb-[291.5px] 3xl:gap-[50px] gap-[2.6vw] mt-11 pb-[128px] flex flex-wrap items-center justify-center md:items-start md:justify-around  3xl: mx-auto">
+    <div className=" max-w-[1920px] mx-auto pb-[30px]">
+      <div className=" mx-auto w-[90vw] "> 
+        <div className="w-full pb-[25px] 3xl:gap-[50px] gap-[2.6vw] mt-11  flex flex-wrap items-center justify-around  mx-auto">
         {OUR_PROJECTS1.map((project, index) => {
             {if(index + 1 < showMoreClick){
                 {
@@ -96,11 +95,9 @@ const Project: React.FC  = () => {
                         bgColor={`${bgColorArr[bgIndex++]}`}
                         img={project.img}
                         ProjectName={project.ProjectName}
-                        // tech={project.tech}
                         techStack1={project.techStack1}
                         techStack2={project.techStack2}
-                        link="#"
-                        //insert link here
+                        link={project.github}
                         techImg={project.techImg}
                         techImg2={project.techImg2}
                       />
@@ -124,7 +121,7 @@ const Project: React.FC  = () => {
            {/* </div> */}
            {/* </motion.div> */}
           </div>
-          <div className="flex items-center justify-center">
+          <div className="flex items-center justify-center  cursor-pointer group" onClick={changeShowMore}>
                  <div className={`h-[1px] w-[100%] my-auto bg-[#FFFFFF] group-hover:bg-gray-300 ${
                     showMoreClick >= OUR_PROJECTS1.length ? "hidden" : "visible"
                  }`}></div>
@@ -135,7 +132,7 @@ const Project: React.FC  = () => {
                   >
                     View More
                   </div>
-                 </div>    
+          </div>    
           
         </div>
     </div>
