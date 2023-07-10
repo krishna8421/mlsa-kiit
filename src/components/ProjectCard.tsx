@@ -1,8 +1,10 @@
 "use client";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect } from "react";
 import { AiOutlineGithub } from "react-icons/ai";
-
 interface Props {
   bgColor: string;
   img: string;
@@ -27,17 +29,26 @@ const ProjectCard = ({
   const containerStyle = {
     width: "calc(100% - 2vw)",
   };
-  
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
-    <div className="relative hover:shadow-blue3  md:hover:shadow-blue2  pb-3 md:pb-5 min-h-[23.75vw] 3xl:min-h-[456px] w-[300px] md:w-[24.39vw] z-20 group 3xl:w-[27vw] rounded-[7px] lg:rounded-[15px] lg:w-[20vw]  border border-[#878787] text-start transition duration-300 ease-in-out backdrop-blur-[5px] bg-[#25252580] sm:w-[25.8vw] smm:w-[250px]">
-      <div className="transition duration-300 ease-in-out hidden group-hover:block top-[0px] left-[0px] absolute w-[300px] md:w-[30vw] md:h-[30vw] -z-40">
-        <Image src="/Projects/Rectangle (6).svg"
+    <div
+      data-aos="zoom-in"
+      data-aos-delay="700"
+      // data-aos-easing="ease-in-back"
+      className="hover:shadow-blue3 group  relative  z-20 min-h-[23.75vw] w-[300px] rounded-[7px] border border-[#878787] bg-[#25252580] pb-3 text-start backdrop-blur-[5px] duration-300 ease-in-out  transition smm:w-[250px] sm:w-[25.8vw] md:w-[24.39vw] md:pb-5 md:hover:shadow-blue2 lg:w-[20vw] lg:rounded-[15px] 3xl:min-h-[456px] 3xl:w-[27vw]"
+    >
+      <div className="absolute left-[0px] top-[0px] -z-40 hidden w-[300px] duration-300 ease-in-out transition group-hover:block md:h-[30vw] md:w-[30vw]">
+        <Image
+          src="/Projects/Rectangle (6).svg"
           alt="event item"
           width={555}
           height={555}
-          className=" w-full h-full object-fit rounded-full"></Image>
+          className=" object-fit h-full w-full rounded-full"
+        ></Image>
         {/* <div className="h-[25vw] w-[25vw] hidden group-hover:visible absolute top-[5vw] left-[5vw] rounded-full bg-blue-300 -z-10 "></div> */}
-      {/* <style jsx>{`
+        {/* <style jsx>{`
                   .hover-shadow{
                     border-radius: 553.5px;
                     background: url("/domainLogos/Rectangle (5).png"), cover no-repeat;
@@ -54,12 +65,14 @@ const ProjectCard = ({
           alt="event item"
           width={1440}
           height={720}
-          className="h-[100px] md:h-[11.04vw] 3xl:h-[212px] w-full rounded-[10px] "
+          className="h-[100px] w-full rounded-[10px] md:h-[11.04vw] 3xl:h-[212px] "
         ></Image>
-        <div className=" ml-[.57vw] 3xl:ml-[11px] pt-[1.45vw] 3xl:pt-7 text-[#FFF]">
+        <div className=" ml-[.57vw] pt-[1.45vw] text-[#FFF] 3xl:ml-[11px] 3xl:pt-7">
           <div>
-            <h2 className="cursor-pointer text-[15px] lg:text-[1.1rem] sm:text-[0.7rem] md:text-[1rem] 2xl:text-3xl font-normal leading-normal capitalize">{ProjectName}</h2>
-            <div className=" mt-[.62vw] 3xl:mt-3 flex cursor-default flex-col text-[13px] lg:text-[18px] 2xl:text-[25px] font-[350] leading-normal">
+            <h2 className="cursor-pointer text-[15px] font-normal capitalize leading-normal sm:text-[0.7rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-3xl">
+              {ProjectName}
+            </h2>
+            <div className=" mt-[.62vw] flex cursor-default flex-col text-[13px] font-[350] leading-normal lg:text-[18px] 2xl:text-[25px] 3xl:mt-3">
               <span>{techStack1}</span>
               <span>{techStack2}</span>
             </div>
@@ -67,7 +80,7 @@ const ProjectCard = ({
           <div className="mt-[15px] flex items-center justify-between">
             <div className="relative flex w-16 ">
               <div className="tech-stack-container relative">
-              <style jsx>{`
+                <style jsx>{`
                   .tech-stack-container::after {
                     // background-color: black;
                     background-color: #252525;
@@ -78,7 +91,7 @@ const ProjectCard = ({
                   alt="tech stack image"
                   width={100}
                   height={100}
-                  className="tech-stack-left absolute left-[1.5px] top-[3.8px] h-[10px] w-[10px] lg:left-[3px] lg:top-[7.5px] lg:h-[21px] lg:w-[21px] bg-white rounded-full"
+                  className="tech-stack-left absolute left-[1.5px] top-[3.8px] h-[10px] w-[10px] rounded-full bg-white lg:left-[3px] lg:top-[7.5px] lg:h-[21px] lg:w-[21px]"
                 ></Image>
               </div>
               <div className="tech-stack-container relative ml-[-5px] lg:ml-[-10px]">
@@ -92,7 +105,7 @@ const ProjectCard = ({
                   alt="tech stack image"
                   width={100}
                   height={100}
-                  className="tech-stack-left absolute left-[3px] top-[3px] h-[11.5px] w-[11.5px] lg:left-[6px] lg:top-[6px] lg:h-[23px] lg:w-[23px] bg-white rounded-full"
+                  className="tech-stack-left absolute left-[3px] top-[3px] h-[11.5px] w-[11.5px] rounded-full bg-white lg:left-[6px] lg:top-[6px] lg:h-[23px] lg:w-[23px]"
                 ></Image>
               </div>
               {/* <Image
@@ -104,7 +117,7 @@ const ProjectCard = ({
               ></Image> */}
             </div>
             <Link href={link}>
-              <AiOutlineGithub className=" mr-2 h-[17px] w-[17px] lg:h-[35px] lg:w-[35px] text-white" />
+              <AiOutlineGithub className=" mr-2 h-[17px] w-[17px] text-white lg:h-[35px] lg:w-[35px]" />
             </Link>
           </div>
         </div>

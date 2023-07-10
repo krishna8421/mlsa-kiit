@@ -22,6 +22,7 @@
     "@prisma/client": "^4.16.1",
     "@tanstack/react-query": "^4.29.1",
     "@types/validator": "^13.7.17",
+    "aos": "^3.0.0-beta.6",
     "axios": "^1.4.0",
     "bcrypt": "^5.1.0",
     "formik": "^2.4.2",
