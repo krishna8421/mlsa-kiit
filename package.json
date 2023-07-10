@@ -42,6 +42,7 @@
     "zustand": "^4.3.8"
   },
   "devDependencies": {
+    "@types/aos": "^3.0.4",
     "@types/bcrypt": "^5.0.0",
     "@types/lodash": "^4.14.192",
     "@types/node": "^18.15.11",
