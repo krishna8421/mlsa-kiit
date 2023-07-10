@@ -1,4 +1,5 @@
 "use client";
+
 import { motion, useAnimation } from "framer-motion";
 import React, { useEffect } from "react";
 import Slider from "./Slider";
@@ -75,6 +76,7 @@ const ScrollAnimationCode: React.FC = () => {
         <Sponsors />
       </motion.div>
       {/* Text animation(can be changed)*/}
+
     </div>
   );
 };

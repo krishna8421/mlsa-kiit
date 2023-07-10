@@ -34,19 +34,23 @@ const NavBar = ({ user }: IProps) => {
             <p className="font-bold">Signed in as</p>
             <p className="font-bold">{user.personalEmail}</p>
           </DropdownItem>
-          <DropdownItem key="settings" showDivider>
+          {/* <DropdownItem key="settings" showDivider> */}
+          <DropdownItem key="settings" >
             Settings
           </DropdownItem>
           <DropdownItem key="team_settings">Team Settings</DropdownItem>
-          <DropdownItem key="analytics" showDivider>
+          {/* <DropdownItem key="analytics" showDivider> */}
+          <DropdownItem key="analytics" >
             Analytics
           </DropdownItem>
           <DropdownItem key="system">System</DropdownItem>
           <DropdownItem key="configurations">Configurations</DropdownItem>
-          <DropdownItem key="help_and_feedback" showDivider>
+          {/* <DropdownItem key="help_and_feedback" showDivider> */}
+          <DropdownItem key="help_and_feedback" >
             Help & Feedback
           </DropdownItem>
-          <DropdownItem key="logout" showDivider color="danger" onPress={() => signOut()}>
+          {/* <DropdownItem key="logout" showDivider color="danger" onPress={() => signOut()}> */}
+          <DropdownItem key="logout"  color="danger" onPress={() => signOut()}>
             Log Out
           </DropdownItem>
         </DropdownMenu>

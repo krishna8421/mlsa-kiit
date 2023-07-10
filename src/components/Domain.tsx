@@ -85,9 +85,9 @@ const Domain: React.FC = () => {
     </div> */}
 
 <div className="min-h-[100px] h-auto md:pb-[222px] pb-[128px] relative z-0 flex flex-row max-w-[1920px] justify-center items-center mx-auto">
-<div className="h-[439px] w-[439px] absolute z-10 rounded full -top-[300px] -left-[578px]">
+{/* <div className="h-[439px] w-[439px] absolute z-10 rounded full -top-[300px] -left-[578px]">
 <Image src="/domainLogos/Rectangle.png" alt="gradient" width={739} height={739} className="object-fit h-[739px] w-[739px] rounded-full bg-no-repeat object-cover blur-[155.5px]"></Image>
-</div>
+</div> */}
 
 <div className="mx-auto flex -translate-y-[60vh] md:-translate-y-[30vh] sm:ml-[80px]">
         <motion.div
@@ -117,24 +117,24 @@ const Domain: React.FC = () => {
 </div> */}
 <div className="">
 <motion.div
-            initial={{ opacity: 0, x: 1000, y: 0 }} //initial position of text with opacity 0
+            initial={{ opacity: 0, x: 500, y: 0 }} //initial position of text with opacity 0
             animate={textControls} //text conntrol animation triggered.
-            transition={{ duration: 1 }}
+            transition={{ duration: 0.5 }}
           >
 <h1 className="sm:mb-[7px] ml-[11px] sm:ml-[15px] lg:ml-[30px] 2xl:ml-[53px] text-[12px] sm:text-[18px] font-semibold md:mb-[20px] md:text-3xl items-start text-[#FFFFFF] 2xl:text-[2.1vw] ">
   Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#A03BCF] to-[#6F5BFF]">Domain</span>
 </h1>
 </motion.div>
 
-<div className="flex   flex-wrap justify-center items-center gap-4 md:gap-5 2xl:gap-7 pl-[11px] sm:pl-[23px] md:pl-[36px] 2xl:pl-[77px]">
+<div className="flex w-[80vw]  flex-wrap  gap-4 md:gap-5 2xl:gap-7 pl-[11px] sm:pl-[23px] md:pl-[77px] 2xl:pl-[47px]">
   {OUR_DOMAINS.map((domain, index) => {
     return (
       <motion.div
               key={index}
               className="flex justify-center"
-              initial={{ opacity: 0, y: 1000 }} 
+              initial={{ opacity: 0, y: 100 }} 
               animate={controls} 
-              transition={{ duration: 1.2 }} 
+              transition={{ duration: 0.5+ (index*0.1) }} 
               onAnimationComplete={handleSliderAnimationComplete}
             >
       <DomainCard

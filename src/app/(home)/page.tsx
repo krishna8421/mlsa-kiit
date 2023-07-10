@@ -1,16 +1,38 @@
+
 import About from "@/components/About";
-import Domain from "@/components/Domain";
+
+
+// import OurAlumuni from "@/components/Alumni";
+import Alumni1 from "@/components/Alm";
+import JoinUs from "@/components/JoinUs";
+import OurLeads from "@/components/OurLeads";
 import Hero from "@/components/Hero";
-import ScrollAnimationCode from "@/components/ScrollAnimationCode";
 import ScrollAnimationLead from "@/components/ScrollAnimationLeads";
+import Domain from "@/components/Domain"
+
+
+
+import ScrollAnimationCode from "@/components/ScrollAnimationCode";
+
 export default function Home() {
   return (
     <div>
       <Hero />
       <About />
+
       <Domain />
-      <ScrollAnimationLead/>
+      {/* <OurLeads/> */}
+      <JoinUs />
+      {/* <ScrollAnimationLead/> */}
+      {/* <OurAlumuni/> */}
+      <Alumni1 />
+      {/* <ScrollAnimationCode/> */}
+
+      <Domain />
+      <ScrollAnimationLead />
       <ScrollAnimationCode />
+
     </div>
-  );
+  )
 }
+

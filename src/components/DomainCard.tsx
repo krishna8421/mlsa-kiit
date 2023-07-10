@@ -29,7 +29,7 @@ const DomainCard = ({ isHome,logo, heading, about }: Props) => {
 <div
         className={`${
           isHome ? "4xl:h-[319px] 4xl:max-w-[450px] " : " h-[120%] shadow-blue"
-        } relative rounded-[5px]  group lg:rounded-[8px] 2xl:rounded-[15px] pb-2 pt-[10.93px] pr-[6.53px] md:pr-[17px] bg-[#111] gradient-border border-[#838383] border  transition duration-300 hover:shadow-blue h-180px md:h-[200px] xl:h-[235px] 2xl:h-[280px] 2xl:max-w-[380px] sm:max-w-[191px] max-w-[138px] h-[121px] md:max-w-[280px] lg:max-w-[280px] md:mt-[60px] 2xl:mt-[122px] sm:mt-[44px] mt-[38px] `}
+        } relative rounded-[5px]  lg:rounded-[8px] 2xl:rounded-[15px] pb-2 pt-[10.93px] pr-[6.53px] md:pr-[17px] bg-[#111]  border-[#838383] border gradient-border  transition duration-100 hover:shadow-blue h-180px md:h-[200px] xl:h-[235px] 2xl:h-[280px] 2xl:max-w-[380px] sm:max-w-[191px] max-w-[138px] h-[121px] md:max-w-[280px] lg:max-w-[280px] md:mt-[60px] 2xl:mt-[122px] sm:mt-[44px] mt-[38px] `}
       >
         <div
           className={`${
