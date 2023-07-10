@@ -31,7 +31,7 @@ const GalleryFadeShowCard = ({ imgArray, title, num, timer }: GalleryFadeShowCar
   }, []);
 
   return (
-    <div className="relative h-[35vh] max-h-[600px] group overflow-hidden border border-gray-400 mb-[15px] w-full md:w-[40vw] lg:w-[22vw] 4xl:w-[400px] rounded-lg object-cover object-center">
+    <div className="relative h-[35vh] lg:h-[55vh] max-h-[600px] group overflow-hidden border border-gray-400 mb-[15px] w-full md:w-[40vw] lg:w-[22vw] 4xl:w-[400px] rounded-lg object-cover object-center">
       {imgArray.slice()
         .map((pic, index) => (
           <Image
