@@ -11,7 +11,7 @@ const Hero = () => {
   return (
     <>
       
-      <div className="absolute top-0 h-full w-full max-w-[1920px] mx-auto">
+      <div className="absolute inset-0 max-w-[1920px] mx-auto">
         <Image
           src="/heroLeft.png"
           alt="hero left gradient"
