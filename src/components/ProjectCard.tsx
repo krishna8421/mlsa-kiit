@@ -1,8 +1,10 @@
 "use client";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect } from "react";
 import { AiOutlineGithub } from "react-icons/ai";
-
 interface Props {
   bgColor: string;
   img: string;
@@ -27,7 +29,9 @@ const ProjectCard = ({
   const containerStyle = {
     width: "calc(100% - 2vw)",
   };
-  
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <div className="relative hover:shadow-blue3  md:hover:shadow-blue2 pb-3 md:pb-5 min-h-[23.75vw] 3xl:min-h-[456px] z-20 group w-[300px] sm:w-[25.8vw] smm:w-[250px] md:w-[24.39vw] lg:w-[20vw] 3xl:w-[27vw] 4xl:w-[526px] rounded-[7px] lg:rounded-[15px]   border border-[#878787] text-start transition duration-300 ease-in-out backdrop-blur-[5px] bg-[#25252580] ">
       <div className="transition duration-300 ease-in-out hidden group-hover:block top-[0px] left-[0px] absolute w-[300px] sm:w-[25.8vw] smm:w-[250px] md:w-[24.39vw] lg:w-[20vw] 3xl:w-[27vw] 4xl:w-[526px] min-h-[23.75vw] 3xl:min-h-[456px] -z-40">
@@ -37,7 +41,7 @@ const ProjectCard = ({
           height={555}
           className=" w-full h-full blur-[150px] object-fit rounded-full"></Image>
         {/* <div className="h-[25vw] w-[25vw] hidden group-hover:visible absolute top-[5vw] left-[5vw] rounded-full bg-blue-300 -z-10 "></div> */}
-      {/* <style jsx>{`
+        {/* <style jsx>{`
                   .hover-shadow{
                     border-radius: 553.5px;
                     background: url("/domainLogos/Rectangle (5).png"), cover no-repeat;
@@ -52,11 +56,13 @@ const ProjectCard = ({
         <Image
           src={img}
           alt="event item"
-          width={1920}
-          height={1080}
-          className="h-[100px] md:h-[11.04vw] 3xl:h-[212px] w-full rounded-[10px] "
+          // <!-- <<<<<<< main -->
+          width={1440}
+          height={720}
+          className="h-[100px] w-full rounded-[10px] md:h-[11.04vw] 3xl:h-[212px] "
+        // <!-- >>>>>>> main -->
         ></Image>
-        <div className=" ml-[.57vw] 3xl:ml-[11px] pt-[1.45vw] 3xl:pt-7 text-[#FFF]">
+        <div className=" ml-[.57vw] pt-[1.45vw] text-[#FFF] 3xl:ml-[11px] 3xl:pt-7">
           <div>
             <h2 className="cursor-pointer text-[15px] lg:text-[1.1rem] sm:text-[0.7rem] md:text-[1rem] 2xl:text-2xl 3xl:text-3xl font-normal leading-normal capitalize">{ProjectName}</h2>
             <div className=" mt-[.62vw] 3xl:mt-3 flex cursor-default flex-col text-[13px] lg:text-[18px] 2xl:text-[20px] font-[350] leading-normal">
@@ -67,7 +73,7 @@ const ProjectCard = ({
           <div className="mt-[15px] flex items-center justify-between">
             <div className="relative flex w-16 ">
               <div className="tech-stack-container relative">
-              <style jsx>{`
+                <style jsx>{`
                   .tech-stack-container::after {
                     // background-color: black;
                     background-color: #252525;
