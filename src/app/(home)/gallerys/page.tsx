@@ -43,7 +43,7 @@ const Gallery = () => {
 
   return (
     <>
-      <div className="flex 2xl:h-screen mt-[60px] md:mt-[120px] 2xl:mt-[0px] 2xl:items-center md:pl-16 3xl:pl-16 max-w-[1920px] mx-auto">
+      <div className="flex 2xl:h-screen mt-[100px] md:mt-[120px] 2xl:mt-[0px] 2xl:items-center md:pl-16 3xl:pl-16 max-w-[1920px] mx-auto">
         <div className="flex md:flex-row flex-col justify-between pb-[45px] md:pb-[100px] 2xl:pb-[0px] w-full ">
         <div className="flex flex-col items-center md:items-start">
           <h1 className="bg-gradient-to-b from-[#5051F9] to-[#AE86E0] bg-clip-text text-2xl font-bold text-transparent md:text-4xl lg:text-5xl  3xl:text-7xl h-[2rem] md:h-[2.8rem] lg:h-[3.6rem] 3xl:h-[5.2rem]">
@@ -63,7 +63,7 @@ const Gallery = () => {
             </div>
           </div>
         </div>
-        <div className="relative mx-auto md:mx-[0px] mt-0 pt-0 md:mr-[7vw] h-[27vh] lg:h-[30vh] 2xl:h-[65vh] w-[250px] md:w-[40%] object-cover lg:max-h-[600px] 3xl:w-[45%]">
+        <div className="relative mx-auto md:mx-[0px] mt-0 pt-[30px] md:ml-[0px] md:pt-0 md:mr-[7vw] h-[27vh] lg:h-[30vh] 2xl:h-[65vh] w-[250px] md:w-[40%] object-cover lg:max-h-[600px] 3xl:w-[45%]">
           <div className="absolute inset-0 z-50 flex h-full w-full items-center justify-between px-8 text-2xl">
             <BsChevronLeft className="shadow-xl cursor-pointer" onClick={LeftChevronClick} />
             <BsChevronRight className="cursor-pointer" onClick={RightChevronClick} />

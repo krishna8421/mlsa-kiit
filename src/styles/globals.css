@@ -75,21 +75,38 @@ body {
     margin-top: -2px;
   }
   
-  @media only screen and (max-width: 976px) {
+  @media only screen and (max-width: 1750px) {
   
-  .tech-stack-container {
-    width: 17px;
-    height: 17px;
+    .tech-stack-container {
+      width: 25px;
+      height: 25px;
+      }
+    
+    .tech-stack-container::after {
+      width: 27px;
+      height: 27px;
+      margin: 0px 0 0 12px;
+      margin-top: -1px;
+    
     }
-  
-  .tech-stack-container::after {
-    width: 19.3px;
-    height: 19.3px;
-    margin: 0px 0 0 10px;
-    margin-top: -1px;
-  
   }
-  }
+
+  @media only screen and (max-width: 976px) {
+
+    .tech-stack-container {
+      width: 17px;
+      height: 17px;
+      }
+    
+    .tech-stack-container::after {
+      width: 19.3px;
+      height: 19.3px;
+      margin: 0px 0 0 10px;
+      margin-top: -1px;
+    
+    }
+
+    }
   
   .gradient-border:hover {
     --borderWidth: 2.5px;
