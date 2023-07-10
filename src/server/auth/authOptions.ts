@@ -19,7 +19,7 @@ export const authOptions: NextAuthOptions = {
         password: { label: "Password", type: "password" },
       },
       async authorize(credentials) {
-        console.log({ credentials });
+        // console.log({ credentials });
 
         if (!credentials?.email || !credentials?.password) {
           if (!credentials?.email && !credentials?.password)
@@ -55,22 +55,24 @@ export const authOptions: NextAuthOptions = {
       },
     }),
   ],
-  // callbacks: {
-  //   async jwt({ token, user }) {
-  //     if (user) {
-  //       token.role = user.role;
-  //       token.position = user.position;
-  //     }
-  //     return token;
-  //   },
-  //   async session({ session, token }) {
-  //     if (token && session.user) {
-  //       session.user.role = token.role;
-  //       session.user.position = token.position;
-  //     }
-  //     return session;
-  //   },
-  // },
+  callbacks: {
+    async jwt({ token, user }) {
+      if (user) {
+        // token.role = user.role;
+        // token.position = user.position;
+        token.personalEmail = user.personalEmail;
+      }
+      return token;
+    },
+    async session({ session, token }) {
+      if (token && session.user) {
+        // session.user.role = token.role;
+        // session.user.position = token.position;
+        session.user.personalEmail = token.personalEmail;
+      }
+      return session;
+    },
+  },
   pages: {
     // signIn: "/admin/auth",
     signIn: "*",

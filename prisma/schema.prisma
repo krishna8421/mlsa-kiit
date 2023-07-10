@@ -21,17 +21,20 @@ model User {
   currentYear   Int
   branch        String
   isMember      Boolean @default(false)
+  member        Member?
 
   registeredEvents Event[] @relation("UserRegisteredEvents")
 }
 
 model Member {
   id       String @id @default(uuid())
+  userId   String @unique
   imageUrl String
 
   hostedEvents Event[]  @relation("EventHosted")
   position     POSITION @default(MEMBER)
   role         ROLE
+  user         User    @relation(fields: [userId], references: [id])
 }
 
 model Event {
@@ -64,7 +67,6 @@ model ContactUs {
   email          String
   message        String
   issue_resolved Boolean? @default(false)
-  userId         String
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt

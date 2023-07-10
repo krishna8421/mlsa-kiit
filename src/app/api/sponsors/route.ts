@@ -3,18 +3,16 @@ import { NextResponse } from "next/server";
 
 export const GET = async () => {
   try {
-    const blogs = await prisma.blog.findMany({
+    const sponsors = await prisma.sponsor.findMany({
       select: {
-        title: true,
-        author: true,
+        name: true,
+        logoUrl: true,
         description: true,
-        imageUrl: true,
         link: true,
-        date: true,
       },
     });
 
-    return NextResponse.json({ blogs });
+    return NextResponse.json({ sponsors });
   } catch (error) {
     return NextResponse.json({
       error: true,
