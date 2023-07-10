@@ -35,7 +35,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed left-0 right-0 top-0 z-40 m-auto w-screen px-2 py-4 lg:max-w-[1920px] lg:px-6 ${
+      className={`fixed left-0 right-0 top-0 z-40 m-auto w-screen py-4 pl-2 pr-4 sm:pl-4 sm:pr-6 lg:pl-6 lg:pr-10 lg:max-w-[1920px] ${
         showBackground ? "backdrop-blur-md" : ""
       }`}
     >
@@ -48,7 +48,7 @@ const Navbar = () => {
               width={400}
               height={400}
               loading="eager"
-              className="h-[35px] w-[140px] md:h-[50px] md:w-[197px]"
+              className="h-[35px] w-[140px] md:h-[40px] md:w-[160px] lg:h-[50px] lg:w-[197px]"
             />
           </Link>
           {/* <span className="bg-gradient-to-r from-[#0070C5] to-[#3BABCF] bg-clip-text text-[20px] font-semibold text-transparent lg:text-[1.7vw]">
@@ -65,7 +65,7 @@ const Navbar = () => {
           <NavbarItem href="/blogs">Blog</NavbarItem>
           <NavbarItem href="/gallerys">Gallery</NavbarItem>
           <NavbarItem href="/members">Members</NavbarItem>
-          <NavbarItem href={YOUTUBE_URL}>Youtube</NavbarItem>
+          <NavbarItem href={YOUTUBE_URL} external={true}>Youtube</NavbarItem>
           <NavbarItem href="/contact" type="button">
             Contact
           </NavbarItem>
