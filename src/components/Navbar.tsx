@@ -62,7 +62,7 @@ const Navbar = () => {
         <div className="hidden gap-6 text-white md:flex md:items-center lg:gap-8">
           <NavbarItem href="/events">Events</NavbarItem>
           <NavbarItem href="/projects">Projects</NavbarItem>
-          <NavbarItem href="/blogs">Blog</NavbarItem>
+          <NavbarItem href="https://medium.com/msackiit" external={true}>Blog</NavbarItem>
           <NavbarItem href="/gallerys">Gallery</NavbarItem>
           <NavbarItem href="/members">Members</NavbarItem>
           <NavbarItem href={YOUTUBE_URL} external={true}>Youtube</NavbarItem>
