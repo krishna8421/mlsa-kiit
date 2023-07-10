@@ -13,6 +13,7 @@ import Domain from "@/components/Domain"
 
 
 import ScrollAnimationCode from "@/components/ScrollAnimationCode";
+import OurAlumuni from "@/components/Alumni";
 
 export default function Home() {
   return (
@@ -21,14 +22,13 @@ export default function Home() {
       <About />
 
       <Domain />
-      {/* <OurLeads/> */}
+      <OurLeads/>
       <JoinUs />
-      {/* <ScrollAnimationLead/> */}
-      {/* <OurAlumuni/> */}
+      <ScrollAnimationLead/>
+      <OurAlumuni/>
       <Alumni1 />
-      {/* <ScrollAnimationCode/> */}
+      <ScrollAnimationCode/>
 
-      <Domain />
       <ScrollAnimationLead />
       <ScrollAnimationCode />
 

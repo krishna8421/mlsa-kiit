@@ -8,7 +8,6 @@ module.exports = {
     "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-
     boxShadow: {
       magenta: "0 0 25px 10px #00a6ff",
       dotShadowBlue:
@@ -24,6 +23,7 @@ module.exports = {
       sm: "480px",
       md: "768px",
       lg: "976px",
+      xl: "1200px",
       "2xl": "1440px",
       "3xl": "1750px",
       "4xl": "1990px",

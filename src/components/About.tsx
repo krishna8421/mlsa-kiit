@@ -65,88 +65,83 @@ const About: React.FC = () => {
 
   return (
     <>
-      <div className="mx-auto flex -translate-y-[60vh] md:-translate-y-[30vh] sm:ml-[80px] overflow-hidden pt-8">
-        <motion.div
-          className="flex justify-center"
-          initial={{ opacity: 0, y: 1000 }} //before scrolling position of slider
-          animate={controls} //refer to line 20
-          transition={{ duration: 1 }} //slider duration for popping up. if you are changinng duration then make sure to change delay of glow adder so thatt  the gow starts after animation is complete
-          onAnimationComplete={handleSliderAnimationComplete}
-        >
+      <div className="mx-auto flex w-screen max-w-[1920px] -translate-y-[10%] overflow-hidden bg-transparent pl-8 pt-12 md:pl-[50px] lg:pl-[80px]">
+        <div className="flex w-full">
+          {/* <motion.div */}
+          {/* className="flex justify-center"
+            initial={{ opacity: 0, y: 1000 }} //before scrolling position of slider
+            animate={controls} //refer to line 20
+            transition={{ duration: 1 }} //slider duration for popping up. if you are changinng duration then make sure to change delay of glow adder so thatt  the gow starts after animation is complete
+            onAnimationComplete={handleSliderAnimationComplete}
+          > */}
           <div className="flex flex-col items-center">
             <div
-              className="flex h-[41px] w-[41px] items-center justify-center rounded-full bg-blue-600 bg-gradient-to-b from-[#0957cc] to-[#fff]/30 shadow-dotShadowBlue duration-700 transition 
+              className="flex h-[31px] w-[31px] md:h-[41px] md:w-[41px] items-center justify-center rounded-full bg-blue-600 bg-gradient-to-b from-[#0957cc] to-[#fff]/30 shadow-dotShadowBlue duration-700 transition 
               "
             >
               <div className="h-[12px] w-[12px] self-center rounded-full bg-white"></div>
             </div>
-            <div className="h-full w-[5px] bg-gradient-to-b from-[#4b8ff4] to-transparent duration-700 transition lg:h-[80vh]"></div>
+            <div className="h-full w-[3px] md:w-[5px] bg-gradient-to-b from-[#4b8ff4] to-transparent duration-700 transition lg:h-[80vh]"></div>
           </div>
-        </motion.div>
+          {/* </motion.div> */}
 
-        <div className="w-full">
-          <motion.div
-            initial={{ opacity: 0, x: 1000, y: 0 }} //initial position of text with opacity 0
-            animate={textControls} //text conntrol animation triggered.
-            transition={{ duration: 1 }}
-          >
-            <div className="sm:ml-12 text-white">
-              <h1 className="js-build-in-item text-2xl md:text-3xl lg:text-4xl font-semibold">
+          <div className="w-full">
+            <div className="ml-12 text-white sm:ml-12">
+              <h1 className="js-build-in-item text-2xl font-semibold md:text-3xl lg:text-4xl">
                 About<span className="ml-1 text-[#3B61CF]">Us</span>
               </h1>
-              <p className="mt-6 text-md md:text-xl leading- md:leading-6 text-[#7d8590]">
+              <p className="text-md md:mt-6 text-[#7d8590] md:text-xl md:leading-6">
                 We have been doing projects
                 <br />
                 and events since 2017
               </p>
             </div>
-          </motion.div>
-
-          <div className="mt-16 flex flex-wrap justify-center gap-8 overflow-hidden py-8 pr-5 sm:pr-0 md:h-[70vh] xl:ml-[7vw] xl:justify-normal xl:pl-8">
-            <motion.div
-              className="flex justify-center"
-              initial={{ opacity: 0, y: 1000 }} //before scrolling position of slider
-              animate={controls} //refer to line 20
-              transition={{ duration: 1 }} //slider duration for popping up. if you are changinng duration then make sure to change delay of glow adder so thatt  the gow starts after animation is complete
-              onAnimationComplete={handleSliderAnimationComplete}
-            >
-              <AboutCard
-                icon={<FaEye className="text-[30px] md:text-[40px]"></FaEye>}
-                label="Vision"
-                Classname="md:max-h-[340px] md:w-[25vw] sm:max-w-[310px] w-[100%] md:min-w-[260px] "
-                content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates officia sit blanditiis dignissimos vitae minus magnam modi repellat, officiis totam alias odio ducimus iste iusto beatae consectetur, tenetur quae eius?"
-              />
-            </motion.div>
-            <motion.div
-              className="flex justify-center"
-              initial={{ opacity: 0, y: 1000 }} //before scrolling position of slider
-              animate={controls} //refer to line 20
-              transition={{ duration: 1.2 }} //slider duration for popping up. if you are changinng duration then make sure to change delay of glow adder so thatt  the gow starts after animation is complete
-              onAnimationComplete={handleSliderAnimationComplete}
-            >
-              <AboutCard
-                icon={<TbTargetArrow className=" text-[30px] md:text-[40px]"></TbTargetArrow>}
-                label="Goal"
-                Classname="md:max-h-[340px] md:w-[25vw] sm:max-w-[310px] w-[100%] md:min-w-[260px]"
-                content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates officia sit blanditiis dignissimos vitae minus magnam modi repellat, officiis totam alias odio ducimus iste iusto beatae consectetur, tenetur quae eius?"
-              />
-            </motion.div>
-            <motion.div
-              className="flex justify-center"
-              initial={{ opacity: 0, y: 1000 }} //before scrolling position of slider
-              animate={controls} //refer to line 20
-              transition={{ duration: 1.4 }} //slider duration for popping up. if you are changinng duration then make sure to change delay of glow adder so thatt  the gow starts after animation is complete
-              onAnimationComplete={handleSliderAnimationComplete}
-            >
-              <AboutCard
-                icon={
-                  <BsFillRocketTakeoffFill className="text-[30px] md:text-[40px]"></BsFillRocketTakeoffFill>
-                }
-                label="Mission"
-                Classname="md:max-h-[340px] md:w-[25vw] sm:max-w-[310px] w-[100%] md:min-w-[260px]"
-                content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates officia sit blanditiis dignissimos vitae minus magnam modi repellat, officiis totam alias odio ducimus iste iusto beatae consectetur, tenetur quae eius?"
-              />
-            </motion.div>
+            <div className="flex flex-col md:flex-row md:flex-wrap gap-[60px] md:ml-[90px] mt-[100px] sm:ml-12 mr-4">
+              {/* <motion.div
+                className="flex justify-center"
+                initial={{ opacity: 0, y: 1000 }} //before scrolling position of slider
+                animate={controls} //refer to line 20
+                transition={{ duration: 1 }} //slider duration for popping up. if you are changinng duration then make sure to change delay of glow adder so thatt  the gow starts after animation is complete
+                onAnimationComplete={handleSliderAnimationComplete}
+              > */}
+                <AboutCard
+                  icon={<FaEye className="text-[30px] md:text-[40px]"></FaEye>}
+                  label="Vision"
+                  Classname=""
+                 content="Microsoft Student Community, KIIT Chapter, is a technical community dedicatedly working towards elevating the coding culture of Kalinga Institute of Industrial Technology, Bhubaneswar by providing opportunities to students to work on projects and boost their analytical and logical skills along with the coding."  
+                />
+              {/* </motion.div> */}
+              {/* <motion.div
+                className="flex justify-center"
+                initial={{ opacity: 0, y: 1000 }} //before scrolling position of slider
+                animate={controls} //refer to line 20
+                transition={{ duration: 1.3 }} //slider duration for popping up. if you are changinng duration then make sure to change delay of glow adder so thatt  the gow starts after animation is complete
+                onAnimationComplete={handleSliderAnimationComplete}
+              > */}
+                <AboutCard
+                  icon={<TbTargetArrow className=" text-[30px] md:text-[40px]"></TbTargetArrow>}
+                  label="Goal"
+                  Classname=""
+                  content="Microsoft Student Community, KIIT Chapter, is a technical community dedicatedly working towards elevating the coding culture of Kalinga Institute of Industrial Technology, Bhubaneswar by providing opportunities to students to work on projects and boost their analytical and logical skills along with the coding."
+                />
+              {/* </motion.div> */}
+              {/* <motion.div
+                className="flex justify-center"
+                initial={{ opacity: 0, y: 1000 }} //before scrolling position of slider
+                animate={controls} //refer to line 20
+                transition={{ duration: 1.5 }} //slider duration for popping up. if you are changinng duration then make sure to change delay of glow adder so thatt  the gow starts after animation is complete
+                onAnimationComplete={handleSliderAnimationComplete}
+              > */}
+                <AboutCard
+                  icon={
+                    <BsFillRocketTakeoffFill className="text-[30px] md:text-[40px]"></BsFillRocketTakeoffFill>
+                  }
+                  label="Mission"
+                  Classname=""
+                content="Microsoft Student Community, KIIT Chapter, is a technical community dedicatedly working towards elevating the coding culture of Kalinga Institute of Industrial Technology, Bhubaneswar by providing opportunities to students to work on projects and boost their analytical and logical skills along with the coding."  
+                />
+              {/* </motion.div> */}
+            </div>
           </div>
         </div>
       </div>
