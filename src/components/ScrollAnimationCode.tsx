@@ -63,7 +63,7 @@ const ScrollAnimationCode: React.FC = () => {
         transition={{ duration: 2.5 }} //slider duration for popping up. if you are changinng duration then make sure to change delay of glow adder so thatt  the gow starts after animation is complete
         onAnimationComplete={handleSliderAnimationComplete}
       >
-        <Slider />
+        <Slider/>
       </motion.div>
       {/* Completed slider animation */}
       <motion.div

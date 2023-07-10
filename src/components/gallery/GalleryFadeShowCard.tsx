@@ -10,15 +10,15 @@ type GalleryImage = {
 };
 
 type GalleryFadeShowCardProps = {
-  imgArray: GalleryImage[]; 
+  imgArray: GalleryImage[];
   title: string,
-  num: number,
+  num: string,
   timer: number,
 }
 
 const GalleryFadeShowCard = ({ imgArray, title, num, timer }: GalleryFadeShowCardProps) => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  console.log('index',currentIndex % imgArray.length)
+  console.log('index', currentIndex % imgArray.length)
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -31,7 +31,7 @@ const GalleryFadeShowCard = ({ imgArray, title, num, timer }: GalleryFadeShowCar
   }, []);
 
   return (
-    <div className="relative h-[65vh] max-h-[600px] group overflow-hidden w-[22vw] rounded-lg object-cover object-center">
+    <div className="relative h-[35vh] lg:h-[55vh] max-h-[600px] group overflow-hidden border border-gray-400 mb-[15px] w-full md:w-[40vw] lg:w-[22vw] 4xl:w-[400px] rounded-lg object-cover object-center">
       {imgArray.slice()
         .map((pic, index) => (
           <Image
@@ -47,11 +47,12 @@ const GalleryFadeShowCard = ({ imgArray, title, num, timer }: GalleryFadeShowCar
           ></Image>
         ))}
       <div className="absolute bottom-0 h-[25%] w-full bg-gradient-to-t from-black to-transparent"></div>
+
       <div className="absolute inset-0 flex h-full w-full justify-between">
         <div className="self-end pb-4 pl-4 text-xl md:text-2xl xl:text-3xl font-medium">{title}</div>
         <div className="bg-gradient-to-l from-black to-transparent flex flex-col items-end justify-center gap-4">
           <div className="mr-[13px] h-[75%] w-[1px] bg-white opacity-50"></div>
-          <div className="text-hollow -rotate-90 transform text-2xl md:text-3xl xl:text-4xl">0{num}.</div>
+          <div className="text-hollow transform text-2xl md:text-3xl xl:text-4xl"><Image src={num} alt=".."></Image></div>
         </div>
       </div>
     </div>
