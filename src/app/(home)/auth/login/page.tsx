@@ -1,7 +1,7 @@
-// import LoginForm from "./LoginForm"
+import LoginForm from "./LoginForm"
 
-// const Login = () => {
-//   return <LoginForm/>
-// }
+const Login = () => {
+  return <LoginForm/>
+}
 
-// export default Login
+export default Login
