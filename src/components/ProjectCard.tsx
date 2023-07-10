@@ -35,8 +35,8 @@ const ProjectCard = ({
   return (
     <div
       data-aos="zoom-in"
-      data-aos-delay="700"
-      // data-aos-easing="ease-in-back"
+      data-aos-delay="1300"
+      data-aos-easing="linear"
       className="hover:shadow-blue3 group  relative  z-20 min-h-[23.75vw] w-[300px] rounded-[7px] border border-[#878787] bg-[#25252580] pb-3 text-start backdrop-blur-[5px] duration-300 ease-in-out  transition smm:w-[250px] sm:w-[25.8vw] md:w-[24.39vw] md:pb-5 md:hover:shadow-blue2 lg:w-[20vw] lg:rounded-[15px] 3xl:min-h-[456px] 3xl:w-[27vw]"
     >
       <div className="absolute left-[0px] top-[0px] -z-40 hidden w-[300px] duration-300 ease-in-out transition group-hover:block md:h-[30vw] md:w-[30vw]">
@@ -63,15 +63,11 @@ const ProjectCard = ({
         <Image
           src={img}
           alt="event item"
-<!-- <<<<<<< main -->
+          // <!-- <<<<<<< main -->
           width={1440}
           height={720}
           className="h-[100px] w-full rounded-[10px] md:h-[11.04vw] 3xl:h-[212px] "
-=======
-<!--           width={1920}
-          height={1080}
-          className="h-[100px] md:h-[11.04vw] 3xl:h-[212px] w-full rounded-[10px] " -->
-<!-- >>>>>>> main -->
+        // <!-- >>>>>>> main -->
         ></Image>
         <div className=" ml-[.57vw] pt-[1.45vw] text-[#FFF] 3xl:ml-[11px] 3xl:pt-7">
           <div>
