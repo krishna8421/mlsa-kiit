@@ -29,12 +29,15 @@ export const authOptions: NextAuthOptions = {
         }
 
         const { email, password } = credentials;
+
+        const whereCheck = email.endsWith("@kiit.ac.in")
+          ? { kiitEmail: email }
+          : { personalEmail: email };
+
         let user;
         try {
           user = await prisma.user.findUnique({
-            where: {
-              personalEmail: email,
-            },
+            where: whereCheck,
           });
         } catch (_err) {
           throw new Error("Something went wrong. Please try again.");

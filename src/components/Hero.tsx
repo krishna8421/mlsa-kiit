@@ -9,7 +9,7 @@ const Hero = () => {
 
   return (
     <>
-      <div className="relative h-[140vh] overflow-x-hidden">
+      <div className="relative h-[140vh] overflow-x-hidden max-w-[1920px] w-screen mx-auto">
         <div
           className="z-1 absolute left-[-50%] top-[-60%] h-[700px] md:h-[1100px] w-[100vw] md:w-[1100px] rounded-full bg-gradient-to-r 
         from-[#c273eb]/80 to-transparent blur-3xl"

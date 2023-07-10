@@ -29,13 +29,13 @@ const ProjectCard = ({
   };
   
   return (
-    <div className=" relative hover:shadow-blue3 md:hover:shadow-blue2  pb-3 md:pb-5 min-h-[23.75vw] 3xl:min-h-[456px] w-[300px] md:w-[27.39vw] z-20 group 3xl:w-[526px] rounded-[7px] lg:rounded-[15px] border border-[#878787] text-start transition duration-300 ease-in-out backdrop-blur-[5px] bg-[#25252580]">
+    <div className="relative hover:shadow-blue3  md:hover:shadow-blue2  pb-3 md:pb-5 min-h-[23.75vw] 3xl:min-h-[456px] w-[300px] md:w-[24.39vw] z-20 group 3xl:w-[27vw] rounded-[7px] lg:rounded-[15px] lg:w-[20vw]  border border-[#878787] text-start transition duration-300 ease-in-out backdrop-blur-[5px] bg-[#25252580] sm:w-[25.8vw] smm:w-[250px]">
       <div className="transition duration-300 ease-in-out hidden group-hover:block top-[0px] left-[0px] absolute w-[300px] md:w-[30vw] md:h-[30vw] -z-40">
         <Image src="/Projects/Rectangle (6).svg"
           alt="event item"
           width={555}
           height={555}
-          className=" w-full h-full object-fit rounded-full blur-[90px]"></Image>
+          className=" w-full h-full object-fit rounded-full"></Image>
         {/* <div className="h-[25vw] w-[25vw] hidden group-hover:visible absolute top-[5vw] left-[5vw] rounded-full bg-blue-300 -z-10 "></div> */}
       {/* <style jsx>{`
                   .hover-shadow{
@@ -52,13 +52,13 @@ const ProjectCard = ({
         <Image
           src={img}
           alt="event item"
-          width={1440}
-          height={720}
+          width={1920}
+          height={1080}
           className="h-[100px] md:h-[11.04vw] 3xl:h-[212px] w-full rounded-[10px] "
         ></Image>
         <div className=" ml-[.57vw] 3xl:ml-[11px] pt-[1.45vw] 3xl:pt-7 text-[#FFF]">
           <div>
-            <h2 className="cursor-pointer text-[15px] lg:text-2xl 2xl:text-3xl font-normal leading-normal capitalize">{ProjectName}</h2>
+            <h2 className="cursor-pointer text-[15px] lg:text-[1.1rem] sm:text-[0.7rem] md:text-[1rem] 2xl:text-3xl font-normal leading-normal capitalize">{ProjectName}</h2>
             <div className=" mt-[.62vw] 3xl:mt-3 flex cursor-default flex-col text-[13px] lg:text-[18px] 2xl:text-[25px] font-[350] leading-normal">
               <span>{techStack1}</span>
               <span>{techStack2}</span>
