@@ -1,8 +1,8 @@
 "use client";
 
-import { OUR_PROJECTS1 } from "@/constants";
 import { motion, useAnimation } from "framer-motion";
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
+import { OUR_PROJECTS1 } from "@/constants";
 import ProjectCard from "./ProjectCard";
 import {useState} from "react";
 const Project: React.FC  = () => {
@@ -46,7 +46,7 @@ const Project: React.FC  = () => {
         }
       });
 
-      if (scrollPosition > windowHeight / 1.3) {
+      if (scrollPosition > windowHeight / 2.3) {
         controls.start({ opacity: 1, y: 0, x: 0 }); //Final position for slider
       } else {
         controls.start({ opacity: 0, y: 1300, x: 0 }); //Initial starting positionn for slider
@@ -62,7 +62,7 @@ const Project: React.FC  = () => {
     };
   });
 
-  let bgIndex: number = 0;
+    let bgIndex: number = 0;
   const bgColorArr: Array<string> = ["#DBAEFF", "#9CE1FF", "#D9FF9C", "#FFCC9C"];
 
   const [showMoreClick, setShowMoreClick] = useState(9); 
@@ -72,18 +72,26 @@ const Project: React.FC  = () => {
   };
 
   return (
+    // md:ml-[5.98vw] 3xl:ml-[115px]
     <div className=" max-w-[1920px] mx-auto r">
       <div className=" mx-auto "> 
         <div className="w-[90vw] md:pb-[291.5px] 3xl:gap-[50px] gap-[2.6vw] mt-11 pb-[128px] flex flex-wrap items-center justify-center md:items-start md:justify-around  3xl: mx-auto">
         {OUR_PROJECTS1.map((project, index) => {
             {if(index + 1 < showMoreClick){
                 {
-                  if (bgIndex > 3) {
-                    bgIndex = 0;
-                  }
+                    if (bgIndex > 3) {
+                      bgIndex = 0;
+                    }
                 }
                   
                   return (
+            //   <motion.div
+            //   className="flex items-center justify-center"
+            //   initial={{ opacity: 0, y: 1000 }} //before scrolling position of slider
+            //   // animate={controls} //refer to line 20
+            //   transition={{ duration: 1.2 }} //slider duration for popping up. if you are changinng duration then make sure to change delay of glow adder so thatt  the gow starts after animation is complete
+            //   // onAnimationComplete={handleSliderAnimationComplete}
+            // >
                       <ProjectCard
                         bgColor={`${bgColorArr[bgIndex++]}`}
                         img={project.img}
@@ -97,6 +105,7 @@ const Project: React.FC  = () => {
                         techImg2={project.techImg2}
                       />
                   
+                    // </motion.div>
                   );
             }}
         })}
@@ -129,9 +138,8 @@ const Project: React.FC  = () => {
                  </div>    
           
         </div>
-      </div>
     </div>
-
+    
 
 
 
