@@ -71,7 +71,6 @@ const RegisterForm = () => {
     <Card
       isBlurred
       className="px-4 mb-20 m-4"
-      radius="2xl"
       shadow="lg"
     >
       <CardBody>
