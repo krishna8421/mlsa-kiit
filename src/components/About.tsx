@@ -67,13 +67,13 @@ const About: React.FC = () => {
     <>
       <div className="mx-auto flex w-screen max-w-[1920px] -translate-y-[10%] overflow-hidden bg-transparent pl-8 pt-12 md:pl-[50px] lg:pl-[80px]">
         <div className="flex w-full">
-          {/* <motion.div */}
-          {/* className="flex justify-center"
+          <motion.div
+          className="flex justify-center"
             initial={{ opacity: 0, y: 1000 }} //before scrolling position of slider
             animate={controls} //refer to line 20
             transition={{ duration: 1 }} //slider duration for popping up. if you are changinng duration then make sure to change delay of glow adder so thatt  the gow starts after animation is complete
             onAnimationComplete={handleSliderAnimationComplete}
-          > */}
+          >
           <div className="flex flex-col items-center">
             <div
               className="flex h-[31px] w-[31px] md:h-[41px] md:w-[41px] items-center justify-center rounded-full bg-blue-600 bg-gradient-to-b from-[#0957cc] to-[#fff]/30 shadow-dotShadowBlue duration-700 transition 
@@ -83,7 +83,7 @@ const About: React.FC = () => {
             </div>
             <div className="h-full w-[3px] md:w-[5px] bg-gradient-to-b from-[#4b8ff4] to-transparent duration-700 transition lg:h-[80vh]"></div>
           </div>
-          {/* </motion.div> */}
+          </motion.div>
 
           <div className="w-full">
             <div className="ml-12 text-white sm:ml-12">
@@ -97,41 +97,41 @@ const About: React.FC = () => {
               </p>
             </div>
             <div className="flex flex-col md:flex-row md:flex-wrap gap-[60px] md:ml-[90px] mt-[100px] sm:ml-12 mr-4">
-              {/* <motion.div
+              <motion.div
                 className="flex justify-center"
                 initial={{ opacity: 0, y: 1000 }} //before scrolling position of slider
                 animate={controls} //refer to line 20
                 transition={{ duration: 1 }} //slider duration for popping up. if you are changinng duration then make sure to change delay of glow adder so thatt  the gow starts after animation is complete
                 onAnimationComplete={handleSliderAnimationComplete}
-              > */}
+              >
                 <AboutCard
                   icon={<FaEye className="text-[30px] md:text-[40px]"></FaEye>}
                   label="Vision"
                   Classname=""
                  content="Microsoft Student Community, KIIT Chapter, is a technical community dedicatedly working towards elevating the coding culture of Kalinga Institute of Industrial Technology, Bhubaneswar by providing opportunities to students to work on projects and boost their analytical and logical skills along with the coding."  
                 />
-              {/* </motion.div> */}
-              {/* <motion.div
+              </motion.div>
+              <motion.div
                 className="flex justify-center"
                 initial={{ opacity: 0, y: 1000 }} //before scrolling position of slider
                 animate={controls} //refer to line 20
                 transition={{ duration: 1.3 }} //slider duration for popping up. if you are changinng duration then make sure to change delay of glow adder so thatt  the gow starts after animation is complete
                 onAnimationComplete={handleSliderAnimationComplete}
-              > */}
+              >
                 <AboutCard
                   icon={<TbTargetArrow className=" text-[30px] md:text-[40px]"></TbTargetArrow>}
                   label="Goal"
                   Classname=""
                   content="Microsoft Student Community, KIIT Chapter, is a technical community dedicatedly working towards elevating the coding culture of Kalinga Institute of Industrial Technology, Bhubaneswar by providing opportunities to students to work on projects and boost their analytical and logical skills along with the coding."
                 />
-              {/* </motion.div> */}
-              {/* <motion.div
+              </motion.div>
+              <motion.div
                 className="flex justify-center"
                 initial={{ opacity: 0, y: 1000 }} //before scrolling position of slider
                 animate={controls} //refer to line 20
                 transition={{ duration: 1.5 }} //slider duration for popping up. if you are changinng duration then make sure to change delay of glow adder so thatt  the gow starts after animation is complete
                 onAnimationComplete={handleSliderAnimationComplete}
-              > */}
+              >
                 <AboutCard
                   icon={
                     <BsFillRocketTakeoffFill className="text-[30px] md:text-[40px]"></BsFillRocketTakeoffFill>
@@ -140,7 +140,7 @@ const About: React.FC = () => {
                   Classname=""
                 content="Microsoft Student Community, KIIT Chapter, is a technical community dedicatedly working towards elevating the coding culture of Kalinga Institute of Industrial Technology, Bhubaneswar by providing opportunities to students to work on projects and boost their analytical and logical skills along with the coding."  
                 />
-              {/* </motion.div> */}
+              </motion.div>
             </div>
           </div>
         </div>
