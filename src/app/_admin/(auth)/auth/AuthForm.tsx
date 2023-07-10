@@ -19,7 +19,7 @@ const AuthForm = () => {
     password: "",
   });
   return (
-    <Card isBlurred className="px-4" radius="2xl" shadow="lg">
+    <Card isBlurred className="px-4" shadow="lg">
       <Toaster position="bottom-right" reverseOrder={false} />
       <CardBody>
         <h1 className="p-4 text-center text-2xl font-bold">Login</h1>
@@ -36,7 +36,7 @@ const AuthForm = () => {
             // errorMessage="Please enter a valid email"
             className="max-w-xs"
             value={formData.email}
-            onChange={(e) => {
+            onChange={(e:any) => {
               setFormData({
                 ...formData,
                 email: e.target.value,
@@ -55,7 +55,7 @@ const AuthForm = () => {
             // errorMessage="Please enter a valid email"
             className="max-w-xs py-8"
             value={formData.password}
-            onChange={(e) => {
+            onChange={(e:any) => {
               setFormData({
                 ...formData,
                 password: e.target.value,
