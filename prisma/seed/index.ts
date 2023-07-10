@@ -29,8 +29,8 @@ export async function seed() {
     },
   });
 
-  await prisma.blogs.deleteMany({});
-  await prisma.blogs.createMany({
+  await prisma.blog.deleteMany({});
+  await prisma.blog.createMany({
     data: blogsData,
   });
 }

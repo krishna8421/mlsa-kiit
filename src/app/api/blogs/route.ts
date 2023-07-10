@@ -3,7 +3,7 @@ import { NextResponse } from "next/server";
 
 export const GET = async (_req: Request) => {
   try {
-    const blogs = await prisma.blogs.findMany({
+    const blogs = await prisma.blog.findMany({
       select: {
         title: true,
         author: true,

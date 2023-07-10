@@ -35,23 +35,27 @@ model Member {
 }
 
 model Event {
-  id              String   @id @default(uuid())
-  name            String
-  imageUrl        String
-  description     String
-  date            DateTime
-  venue           String
-  hosts           Member[] @relation("EventHosted")
-  sponsors        String[]
-  registeredUsers User[]   @relation("UserRegisteredEvents")
+  id                String    @id @default(uuid())
+  name              String
+  imageUrl          String
+  description       String
+  startDate         DateTime
+  registerStartDate DateTime
+  registerEndDate   DateTime
+  venue             String
+  hosts             Member[]  @relation("EventHosted")
+  sponsors          Sponsor[]
+  registeredUsers   User[]    @relation("UserRegisteredEvents")
 }
 
-model Sponsors {
+model Sponsor {
   id          String @id @default(uuid())
   name        String
   logoUrl     String
   description String
   link        String
+
+  Event Event[]
 }
 
 model ContactUs {
@@ -66,7 +70,7 @@ model ContactUs {
   updatedAt DateTime @updatedAt
 }
 
-model Blogs {
+model Blog {
   id          String @id @default(uuid())
   title       String
   author      String
