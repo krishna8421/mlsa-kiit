@@ -31,7 +31,7 @@ const GalleryFadeShowCard = ({ imgArray, title, num, timer }: GalleryFadeShowCar
   }, []);
 
   return (
-    <div className="relative h-[65vh] max-h-[600px] group overflow-hidden border border-gray-400 mb-[15px] w-full md:w-[40vw] lg:w-[22vw] 4xl:w-[400px] rounded-lg object-cover object-center">
+    <div className="relative h-[35vh] max-h-[600px] group overflow-hidden border border-gray-400 mb-[15px] w-full md:w-[40vw] lg:w-[22vw] 4xl:w-[400px] rounded-lg object-cover object-center">
       {imgArray.slice()
         .map((pic, index) => (
           <Image
@@ -48,7 +48,7 @@ const GalleryFadeShowCard = ({ imgArray, title, num, timer }: GalleryFadeShowCar
         ))}
       <div className="absolute bottom-0 h-[25%] w-full bg-gradient-to-t from-black to-transparent"></div>
 
-      <div className="absolute inset-0 flex h-full w-full justify-around">
+      <div className="absolute inset-0 flex h-full w-full justify-between">
         <div className="self-end pb-4 pl-4 text-xl md:text-2xl xl:text-3xl font-medium">{title}</div>
         <div className="bg-gradient-to-l from-black to-transparent flex flex-col items-end justify-center gap-4">
           <div className="mr-[13px] h-[75%] w-[1px] bg-white opacity-50"></div>

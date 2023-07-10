@@ -33,22 +33,6 @@ const Gallery = () => {
           {
             if (index + 1 < showMoreClick) {
               return (<>
-                <div
-                  className="z-1 absolute left-[-70%] top-[-70%] h-[600px] md:h-[800px] w-[100vw] md:w-[1100px] rounded-full bg-gradient-to-r 
-        from-[#c273eb]/30 to-transparent blur-3xl"
-                ></div>
-                <div
-                  className="z-1 absolute left-[-40%] top-[-70%] h-[600px] md:h-[800px] w-[50vw] md:w-[700px] rounded-full 
-        bg-gradient-to-l from-[#4662e0]/20 to-transparent opacity-80 blur-3xl"
-                ></div>
-                <div
-                  className="z-1 absolute right-[-35%] top-[5%] h-[70vh] md:h-[900px] w-[70vw] md:w-[80vw] rounded-full bg-gradient-to-l 
-        from-[#c273eb]/5 to-transparent blur-3xl"
-                ></div>
-                <div
-                  className="z-1 absolute right-[-35%] top-[5%] h-[50vh] md:h-[900px] w-[70vw] md:w-[1100px] rounded-full bg-gradient-to-l 
-        from-[#4662e0]/4 to-transparent blur-3xl"
-                ></div>
                 <div key={index} className="relative group gallery-gradient overflow-hidden rounded-[10px] lg:rounded-[15px]  w-full h-[300px] sm:h-[22vw] lg:h-[19.21vw] 3xl:h-[369px]">
                   {/* <LightGallery 
                         speed={500}
