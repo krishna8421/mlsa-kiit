@@ -36,7 +36,7 @@ const AuthForm = () => {
             // errorMessage="Please enter a valid email"
             className="max-w-xs"
             value={formData.email}
-            onChange={(e: any) => {
+            onChange={(e:any) => {
               setFormData({
                 ...formData,
                 email: e.target.value,
@@ -55,7 +55,7 @@ const AuthForm = () => {
             // errorMessage="Please enter a valid email"
             className="max-w-xs py-8"
             value={formData.password}
-            onChange={(e: any) => {
+            onChange={(e:any) => {
               setFormData({
                 ...formData,
                 password: e.target.value,
