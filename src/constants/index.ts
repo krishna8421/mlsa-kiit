@@ -565,18 +565,18 @@ export const OUR_SPONSORS = [
 ];
 
 export const EVENTS2023 = [
-  {
-    bgColor: "#9CE7FF",
-    img: "/eventImages/eyeSpySquid.jpg",
-    ProjectName: "Eye S.py Squid",
-    date: "16th APRIL 2023",
-    numParticipants: "1368 Participants",
-    isButton: false,
-    isHero: false,
-    link: "",
-    description:
-      "A unique event which included designing your own squid game using computer vision.",
-  },
+  // {
+  //   bgColor: "#9CE7FF",
+  //   img: "/eventImages/eyeSpySquid.jpg",
+  //   ProjectName: "Eye S.py Squid",
+  //   date: "16th APRIL 2023",
+  //   numParticipants: "1368 Participants",
+  //   isButton: false,
+  //   isHero: false,
+  //   link: "",
+  //   description:
+  //     "A unique event which included designing your own squid game using computer vision.",
+  // },
   {
     bgColor: "#9CFFE1",
     img: "/eventImages/kalkiComp.png",
