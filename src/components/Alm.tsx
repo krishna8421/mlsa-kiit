@@ -75,7 +75,7 @@ const Alumni1: React.FC = () => {
 
   return (
     <>
-      <div className="mx-auto flex -translate-y-[60vh] ml-[25px] md:-translate-y-[30vh] sm:ml-[80px]">
+      <div className="mx-auto flex pl-4 md:pl-[50px] lg:pl-[80px] xl:pl-[90px] 2xl:pl-[130px]">
         <motion.div
           className="flex justify-center"
           initial={{ opacity: 0, y: 1000 }} //before scrolling position of slider
