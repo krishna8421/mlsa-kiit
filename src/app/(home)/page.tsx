@@ -21,18 +21,11 @@ export default function Home() {
     <div>
       <Hero />
       <About />
-
       <Domain />
-      <OurLeads/>
-      <JoinUs />
       <ScrollAnimationLead/>
-      <OurAlumuni/>
+      <JoinUs />
       <Alumni1 />
       <ScrollAnimationCode/>
-
-      <ScrollAnimationLead />
-      <ScrollAnimationCode />
-
     </div>
   )
 }
