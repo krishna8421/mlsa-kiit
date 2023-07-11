@@ -14,7 +14,7 @@ const page = () => {
 
                 <div className=" flex flex-row">
                     <div className="relative">
-                        <img src="./eyeSpySquid.jpg" className="w-[680px] h-[300px] ml-[0.22rem] mb-[1.5rem] rounded relative group hover:shadow-blue2" />
+                        <img src="./eyeSpySquid.jpg" alt="image" className="w-[680px] h-[300px] ml-[0.22rem] mb-[1.5rem] rounded relative group hover:shadow-blue2" />
                         {/* <Image alt="image" src="/eyeSpySquid.jpg" width={800} height={300} className="ml-[0.22rem] mb-[1rem] rounded relative group" /> */}
                         <div className="absolute bottom-[45px] left-[18px] text-base 3xl:text-3xl font-medium">16th APRIL 2023</div>
                         <div className="absolute bottom-[26px] left-[18px] text-base 3xl:text-3xl font-medium">1368 Participants</div>
