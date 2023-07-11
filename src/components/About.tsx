@@ -86,7 +86,7 @@ const About: React.FC = () => {
           </motion.div>
 
           <div className="w-full">
-            <div className="2xl:ml-12 xl:ml-8 text-white sm:ml-12">
+            <div className="2xl:ml-12 xl:ml-8 ml-4 text-white sm:ml-12">
               <h1 className="js-build-in-item text-2xl font-semibold md:text-3xl lg:text-4xl">
                 About<span className="ml-1 text-[#3B61CF]">Us</span>
               </h1>
