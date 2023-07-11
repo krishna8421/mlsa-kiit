@@ -19,7 +19,7 @@ const EventHero = () => {
               alt="feature Image"
               width={1000}
               height={1000}
-              className="h-[125px]  w-[131px]  sm:ml-14 sm:h-[125px] sm:w-[130px] "
+              className="h-[125px] object-fit w-[131px]  sm:ml-14 sm:h-[125px] sm:w-[130px] "
             />
             <div className="flex cursor-default flex-col  items-end justify-between pr-3 pt-3  text-right text-xl font-normal capitalize">
               <div className="flex flex-col">

@@ -1,10 +1,10 @@
 "use client";
 import Image from "next/image";
-import { SetStateAction, useState } from "react";
-import InstaIcon from "../../public/instagram.svg";
-import FacebookIcon from "../../public/facebook.svg";
-import LinkdIcon from "../../public/LinkedIn.svg";
 import Link from "next/link";
+import { useState } from "react";
+import LinkdIcon from "../../public/LinkedIn.svg";
+import FacebookIcon from "../../public/facebook.svg";
+import InstaIcon from "../../public/instagram.svg";
 interface Props {
   image: string;
   name: string;
@@ -25,14 +25,12 @@ const LeadsCard = ({ image, name, domain, index }: Props) => {
     setShowDetail(!showDetail);
   };
   return (
-    // shadow-[10px_10px_130px_30px_#50CAFF]
-    // border-2 border-blue-400
     <div className="h-[26rem] w-[14rem]  rounded-imageradius" >
-      <div className="relative h-[20rem] w-full rounded-imageradius mt-[4rem] z-10 hover:shadow-[5px_5px_80px_10px_#50CAFF]" onClick={handleImageClick}>
+      <div className="relative h-[20rem] w-full rounded-imageradius mt-[4rem] z-10 hover:shadow-[5px_5px_80px_5px_#50CAFF] " onClick={handleImageClick}>
         <Image
           src={image}
           style={imgStyle}
-          className="h-full w-full rounded-imageradius border border-[#5F5E5E]"
+          className="h-full w-full rounded-imageradius border border-[#5F5E5E] grayscale"
           width={700}
           height={700}
           alt="name"
@@ -55,16 +53,16 @@ const LeadsCard = ({ image, name, domain, index }: Props) => {
           </div>
         </Link>
         <Link href={""}>
-        <div className="bg-[#111111] bg-opacity-50 flex h-[3rem] w-[3rem] items-center justify-center rounded-[6rem] border border-[#3D3D3D] backdrop-blur-[17.5px] hover:bg-[#3D3D3D]">
-          <Image src={LinkdIcon} alt="icon" />
-        </div>
+          <div className="bg-[#111111] bg-opacity-50 flex h-[3rem] w-[3rem] items-center justify-center rounded-[6rem] border border-[#3D3D3D] backdrop-blur-[17.5px] hover:bg-[#3D3D3D]">
+            <Image src={LinkdIcon} alt="icon" />
+          </div>
         </Link>
         <Link href={""}>
-        <div className="bg-[#111111] bg-opacity-50 flex h-[3rem] w-[3rem] items-center justify-center rounded-[6rem] border border-[#3D3D3D] backdrop-blur-[17.5px] hover:bg-[#3D3D3D]">
-          <Image src={FacebookIcon} alt="icon" />
-        </div>
+          <div className="bg-[#111111] bg-opacity-50 flex h-[3rem] w-[3rem] items-center justify-center rounded-[6rem] border border-[#3D3D3D] backdrop-blur-[17.5px] hover:bg-[#3D3D3D]">
+            <Image src={FacebookIcon} alt="icon" />
+          </div>
         </Link>
-        
+
       </div>
     </div>
   );
