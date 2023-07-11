@@ -55,7 +55,7 @@ const ScrollAnimationLead: React.FC = () => {
     };
   });
   return (
-    <div className="mb-12 flex w-screen">
+    <div className="mb-12 pl-4 md:pl-[50px] lg:pl-[80px] xl:pl-[90px] 2xl:pl-[130px] flex w-screen">
       <motion.div
         className="justify-centre flex"
         initial={{ opacity: 0, y: 2000 }} //before scrolling position of slider

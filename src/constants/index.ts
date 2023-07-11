@@ -506,9 +506,9 @@ export const OUR_LEADS = [
 
 export const OUR_SPONSORS = [
   {
-    name: "UiPath",
-    site: "https://www.uipath.com/",
-    image: "/sponsors/uiPath.png",
+    name: "PrepBytes",
+    site: "https://www.prepbytes.com/",
+    image: "/sponsors/prepbytes.png",
     w: 130,
     h: 130,
   },
@@ -517,7 +517,7 @@ export const OUR_SPONSORS = [
     site: "https://www.redbull.com/in-en/",
     image: "/sponsors/redBull.png",
 
-    w: 264,
+    w: 140,
     h: 88,
   },
   {
@@ -535,9 +535,9 @@ export const OUR_SPONSORS = [
     h: 130,
   },
   {
-    name: "SymblAI",
-    site: "https://symbl.ai/",
-    image: "/sponsors/symbolAI.png",
+    name: "zuno",
+    site: "https://www.foundit.in/zuno/",
+    image: "/sponsors/zuno.png",
     w: 149,
     h: 41,
   },
@@ -548,35 +548,42 @@ export const OUR_SPONSORS = [
     w: 146,
     h: 55,
   },
-  // {
-  //   name: "SawoLabs",
-  //   site: "https://sawolabs.com/",
-  //   image: "/sponsors/sawolabs.png",
-  //   w: 500,
-  //   h: 500,
-  // },
-  // {
-  //   name: "Koii",
-  //   site: "https://koii.network/",
-  //   image: "/sponsors/koii.png",
-  //   w: 500,
-  //   h: 500,
-  // },
+  {
+    name: "SawoLabs",
+    site: "https://sawolabs.com/",
+    image: "/sponsors/sawolabs.png",
+    w: 146,
+    h: 500,
+  },
+  {
+    name: "Devfolio",
+    site: "https://devfolio.co/",
+    image: "/sponsors/devfolio.png",
+    w: 146,
+    h: 500,
+  },
+  {
+    name: "GeeksforGeeks",
+    site: "https://www.geeksforgeeks.org/",
+    image: "/sponsors/gfk.png",
+    w: 146,
+    h: 500,
+  },
 ];
 
 export const EVENTS2023 = [
-  {
-    bgColor: "#9CE7FF",
-    img: "/eventImages/eyeSpySquid.jpg",
-    ProjectName: "Eye S.py Squid",
-    date: "16th APRIL 2023",
-    numParticipants: "1368 Participants",
-    isButton: false,
-    isHero: false,
-    link: "",
-    description:
-      "A unique event which included designing your own squid game using computer vision.",
-  },
+  // {
+  //   bgColor: "#9CE7FF",
+  //   img: "/eventImages/eyeSpySquid.jpg",
+  //   ProjectName: "Eye S.py Squid",
+  //   date: "16th APRIL 2023",
+  //   numParticipants: "1368 Participants",
+  //   isButton: false,
+  //   isHero: false,
+  //   link: "",
+  //   description:
+  //     "A unique event which included designing your own squid game using computer vision.",
+  // },
   {
     bgColor: "#9CFFE1",
     img: "/eventImages/kalkiComp.png",
