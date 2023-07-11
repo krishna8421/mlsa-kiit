@@ -1,0 +1,10 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+yarn db:generate
+
+if [ -f yarn.lock ]; then
+  if ! git diff --quiet HEAD yarn.lock; then
+    yarn
+  fi
+fi
