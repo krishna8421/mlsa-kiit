@@ -4,7 +4,7 @@ import { EVENTS2020, EVENTS2021, EVENTS2022, EVENTS2023 } from "@/constants";
 import Image from "next/image";
 import { useState } from "react";
 
-const page = () => {
+const EventCard = () => {
     const [check, setcheck] = useState(false);
 
     return (
@@ -114,4 +114,4 @@ const page = () => {
     )
 }
 
-export default page;
+export default EventCard;
