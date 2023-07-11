@@ -30,7 +30,7 @@ const About: React.FC = () => {
 
       window.addEventListener("scroll", function () {
         var scrollPosition = window.scrollY;
-        if (scrollPosition > windowHeight / 1.3) {
+        if (scrollPosition > windowHeight / 2.5) {
           const element = document.getElementById("myElement"); // gets the circle on top of the slider
 
           if (element) {
@@ -47,10 +47,8 @@ const About: React.FC = () => {
         }
       });
 
-      if (scrollPosition > windowHeight / 1.5) {
+      if (scrollPosition > (windowHeight/5)) {
         controls.start({ opacity: 1, y: 0, x: 0 }); //Final position for slider
-      } else {
-        controls.start({ opacity: 0, y: 900, x: 0 }); //Initial starting positionn for slider
       }
     };
     console.log("scroll", window.scrollY);
