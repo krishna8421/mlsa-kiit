@@ -1,6 +1,6 @@
-import { GALLERY } from "@/constants";
 import Image from "next/image";
 import { useState } from "react";
+import { GALLERY } from "@/constants";
 // import LightGallery from 'lightgallery/react';
 // import { LightGallery } from "lightgallery/lightgallery";
 // import "lightgallery/css/lightgallery.css";
@@ -34,7 +34,7 @@ const Gallery = () => {
             if (index + 1 < showMoreClick) {
               return (<>
                 <div key={index} className="relative group gallery-gradient overflow-hidden rounded-[10px] lg:rounded-[15px]  w-full h-[300px] sm:h-[22vw] lg:h-[19.21vw] 3xl:h-[369px]">
-                  {/* <LightGallery 
+                  {/* <LightGallery g
                         speed={500}
                         plugins={[lgThumbnail,lgAutoplay,lgZoom]}> */}
                   <Image src={gallery.img} width={555} height={355} className="block z-10 w-full h-full object-cover transition duration-700 group-hover:scale-105 " alt="gallery"></Image>

@@ -1124,7 +1124,7 @@ export const WebDevelopment = [
   },
   {
     id: 5,
-    img: "/members/akshat.jpg",
+    img: "/members/Untitled.png",
     name: "Akshat Srivastava ",
     domain: "Web Development",
   },
@@ -1283,72 +1283,72 @@ export const YT = [
 export const GALLERY = [
   {
     id: 1,
-    img: "/Gallery/Devops/1.JPG",
+    img: "/gallery/Devops/1.JPG",
     name: "Devops",
   },
   {
     id: 2,
-    img: "/Gallery/Eyespy/2.JPG",
+    img: "/gallery/Eyespy/2.JPG",
     name: "Eyespy Squid",
   },
   {
     id: 3,
-    img: "/Gallery/Devops/2.JPG",
+    img: "/gallery/Devops/2.JPG",
     name: "Devops",
   },
   {
     id: 4,
-    img: "/Gallery/Frontend/4.png",
+    img: "/gallery/Frontend/4.png",
     name: "Frontend With Benefit",
   },
   {
     id: 5,
-    img: "/Gallery/Projectwing/1.png",
+    img: "/gallery/Projectwing/1.png",
     name: "Project Wing",
   },
   {
     id: 6,
-    img: "/Gallery/Eyespy/3.JPG",
+    img: "/gallery/Eyespy/3.JPG",
     name: "Eyespy Squid",
   },
   {
     id: 7,
-    img: "/Gallery/Devops/3.JPG",
+    img: "/gallery/Devops/3.JPG",
     name: "Devops",
   },
   {
     id: 8,
-    img: "/Gallery/Frontend/5.png",
+    img: "/gallery/Frontend/5.png",
     name: "Frontend With Benefit",
   },
   {
     id: 9,
-    img: "/Gallery/Eyespy/4.JPG",
+    img: "/gallery/Eyespy/4.JPG",
     name: "Eyespy Squid",
   },
   {
     id: 10,
-    img: "/Gallery/Projectwing/2.png",
+    img: "/gallery/Projectwing/2.png",
     name: "Project Wing",
   },
   {
     id: 11,
-    img: "/Gallery/Frontend/6.png",
+    img: "/gallery/Frontend/6.png",
     name: "Frontend With Benefit",
   },
   {
     id: 12,
-    img: "/Gallery/Devops/4.JPG",
+    img: "/gallery/Devops/4.JPG",
     name: "devops",
   },
   {
     id: 13,
-    img: "/Gallery/Eyespy/5.JPG",
+    img: "/gallery/Eyespy/5.JPG",
     name: "Eyespy Squid",
   },
   {
     id: 14,
-    img: "/Gallery/Frontend/7.png",
+    img: "/gallery/Frontend/7.png",
     name: "Frontend With Benefit",
   },
 ];

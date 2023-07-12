@@ -39,7 +39,7 @@ const Alumni1: React.FC = () => {
 
       window.addEventListener("scroll", function () {
         var scrollPosition = window.scrollY;
-        if (scrollPosition > windowHeight / .4) {
+        if (scrollPosition > windowHeight / .24) {
           const element = document.getElementById("myElement"); // gets the circle on top of the slider
 
           if (element) {
@@ -56,7 +56,7 @@ const Alumni1: React.FC = () => {
         }
       });
 
-      if (scrollPosition > windowHeight / .4) {
+      if (scrollPosition > windowHeight / .24) {
         controls.start({ opacity: 1, y: 0, x: 0 }); //Final position for slider
       } else {
         controls.start({ opacity: 0, y: 100, x: 0 }); //Initial starting positionn for slider

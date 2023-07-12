@@ -39,7 +39,7 @@ const Leads: React.FC = () => {
 
             window.addEventListener("scroll", function () {
                 var scrollPosition = window.scrollY;
-                if (scrollPosition > windowHeight / .9) {
+                if (scrollPosition > windowHeight / .4) {
                     const element = document.getElementById("myElement"); // gets the circle on top of the slider
 
                     if (element) {
@@ -56,10 +56,10 @@ const Leads: React.FC = () => {
                 }
             });
 
-            if (scrollPosition > windowHeight / .8) {
+            if (scrollPosition > windowHeight / .4) {
                 controls.start({ opacity: 1, y: 0, x: 0 }); //Final position for slider
             } else {
-                controls.start({ opacity: 0, y: 1300, x: 0 }); //Initial starting positionn for slider
+                controls.start({ opacity: 0, y: 200, x: 0 }); //Initial starting positionn for slider
             }
         };
         console.log("scroll", window.scrollY);
@@ -75,10 +75,10 @@ const Leads: React.FC = () => {
 
     return (
         <>
-            <div className="mx-auto mb-20 flex -translate-y-[60vh] ml-[25px] md:-translate-y-[30vh] sm:ml-[80px]">
+            <div className="mx-auto mt-24  flex  ml-[25px]  sm:ml-[80px]">
                 <motion.div
                     className="flex justify-center"
-                    initial={{ opacity: 0, y: 1000 }} //before scrolling position of slider
+                    initial={{ opacity: 0, y: 230 }} //before scrolling position of slider
                     animate={controls} //refer to line 20
                     transition={{ duration: 1 }} //slider duration for popping up. if you are changinng duration then make sure to change delay of glow adder so thatt  the gow starts after animation is complete
                     onAnimationComplete={handleSliderAnimationComplete}
@@ -90,7 +90,7 @@ const Leads: React.FC = () => {
                         >
                             <div className="h-[12px] w-[12px] self-center rounded-full bg-white"></div>
                         </div>
-                        <div className="h-[30vh] md:h-[60vh] w-[5px]  bg-gradient-to-b from-[#2CC4F5] to-transparent duration-700 transition lg:h-[80vh]"></div>
+                        <div className=" w-[5px]  bg-gradient-to-b from-[#2CC4F5] to-transparent duration-700 transition h-full"></div>
                     </div>
                 </motion.div>
 
@@ -106,12 +106,12 @@ const Leads: React.FC = () => {
                     </motion.div>
 
 
-                    <div className=" md:pl-8">
+                    <div className="md:ml-8 ">
                         <Swiper
                             className="px-3 md:ml-20"
                             spaceBetween={10}
                             slidesPerView={1}
-                            centeredSlides={true}
+                            // centeredSlides={true}
                             cssMode={true}
                             loop={false}
                             mousewheel={true}
@@ -153,7 +153,7 @@ const Leads: React.FC = () => {
                                     <SwiperSlide key={index}>
                                         <motion.div
                                             // key={index}
-                                            // className="flex justify-center"
+                                            className="mx-5 md:mx-14"
                                             initial={{ opacity: 0, y: 800 }}
                                             animate={controls}
                                             transition={{ duration: 0.5 + (index * 0.1) }}
