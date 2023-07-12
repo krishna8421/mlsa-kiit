@@ -1,5 +1,3 @@
-
-
 import "@/styles/globals.css";
 import Image from "next/image";
 import { useEffect, useState } from "react";
@@ -12,7 +10,7 @@ type GalleryImage = {
 type GalleryFadeShowCardProps = {
   imgArray: GalleryImage[];
   title: string,
-  num: string,
+  num: number,
   timer: number,
 }
 
@@ -52,7 +50,7 @@ const GalleryFadeShowCard = ({ imgArray, title, num, timer }: GalleryFadeShowCar
         <div className="self-end pb-4 pl-4 text-xl md:text-2xl xl:text-3xl font-medium">{title}</div>
         <div className="bg-gradient-to-l from-black to-transparent flex flex-col items-end justify-center gap-4">
           <div className="mr-[13px] h-[75%] w-[1px] bg-white opacity-50"></div>
-          <div className="text-hollow transform text-2xl md:text-3xl xl:text-4xl"><Image src={num} alt=".."></Image></div>
+          <div className="transform text-2xl md:text-3xl xl:text-4xl -rotate-90 number-gap font-bold text-gray-300">0{num}.</div>
         </div>
       </div>
     </div>
