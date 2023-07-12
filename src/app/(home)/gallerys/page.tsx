@@ -3,9 +3,9 @@
 import GalleryFadeShow from "@/components/gallery/GalleryFadeShow";
 import Image from "next/image";
 // import GalleryHeroCarousel from "@/components/gallery/GalleryHeroCarousel";
+import GalleryCards from "@/components/gallery/GalleryCards";
 import { useEffect, useState } from "react";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
-import GalleryCards from "@/components/gallery/GalleryCards";
 
 const Gallery = () => {
   const [rojectsCounter, setProjectsCounter] = useState(0);
@@ -43,6 +43,24 @@ const Gallery = () => {
 
   return (
     <>
+      <div className="absolute inset-0 max-w-[1920px] mx-auto">
+        <Image
+          src="/heroLeft.png"
+          alt="hero left gradient"
+          width={700}
+          height={700}
+          className="z-1 absolute left-[-10rem] top-0 h-[60%] w-[80%] md:h-full md:w-[50%] max-w-[1920px] "
+        />
+        <div className="z-2 absolute right-0 top-[11rem] h-[120vh] w-[50%] max-w-[1920px] lg:h-[150vh] lg:w-[40%]">
+          <Image
+            src="/heroRight.png"
+            alt="hero right gradient"
+            width={1000}
+            height={800}
+            className="h-full w-full"
+          />
+        </div>
+      </div>
       <div className="flex 2xl:h-screen mt-[100px] md:mt-[120px] 2xl:mt-[0px] 2xl:items-center md:pl-16 3xl:pl-16 max-w-[1920px] mx-auto">
         <div className="flex md:flex-row flex-col justify-between pb-[45px] md:pb-[100px] 2xl:pb-[0px] w-full ">
           <div className="flex flex-col items-center md:items-start">
