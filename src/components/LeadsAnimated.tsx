@@ -1,15 +1,13 @@
 "use client";
 
 // import { OUR_ALUMNI } from "@/constants";
-import Image from "next/image";
 import { OUR_LEADS } from "@/constants";
-import LeadsCard from "./LeadsCard";
-import AlumuniCard from "./AlumniCard";
-import { Autoplay, Navigation } from "swiper/modules";
-import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/bundle";
 import "swiper/css/pagination";
+import { Autoplay, Navigation } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+import LeadsCard from "./LeadsCard";
 // import "swiper/swiper-bundle.min.css";
 
 import { motion, useAnimation } from "framer-motion";
@@ -113,7 +111,7 @@ const Leads: React.FC = () => {
                             className="px-3 md:ml-20"
                             spaceBetween={10}
                             slidesPerView={1}
-                            // centeredSlides={true}
+                            centeredSlides={true}
                             cssMode={true}
                             loop={false}
                             mousewheel={true}
@@ -125,6 +123,8 @@ const Leads: React.FC = () => {
                             breakpoints={{
                                 350: {
                                     slidesPerView: 1,
+                                    spaceBetween: 10,
+
                                 },
                                 640: {
                                     slidesPerView: 2.3,
