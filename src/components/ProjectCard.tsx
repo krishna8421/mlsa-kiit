@@ -57,11 +57,11 @@ const ProjectCard = ({
         <Image
           src={img}
           alt="event item"
-          // <!-- <<<<<<< main -->
+
           width={1440}
           height={720}
           className="h-[100px] w-full rounded-[10px] md:h-[11.04vw] 3xl:h-[212px] "
-        // <!-- >>>>>>> main -->
+
         ></Image>
         <div className=" ml-[.57vw] pt-[1.45vw] text-[#FFF] 3xl:ml-[11px] 3xl:pt-7">
           <div>

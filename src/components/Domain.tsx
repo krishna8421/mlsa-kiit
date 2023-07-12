@@ -47,10 +47,10 @@ const Domain: React.FC = () => {
         }
       });
 
-      if (scrollPosition > windowHeight / .8) {
+      if (scrollPosition > windowHeight / .7) {
         controls.start({ opacity: 1, y: 0, x: 0 }); //Final position for slider
       } else {
-        controls.start({ opacity: 0, y: 1300, x: 0 }); //Initial starting positionn for slider
+        controls.start({ opacity: 0, y: 200, x: 0 }); //Initial starting positionn for slider
       }
     };
     console.log("scroll", window.scrollY);
@@ -91,30 +91,23 @@ const Domain: React.FC = () => {
 
         <div className="mx-auto flex w-full h-full">
           <motion.div
-          className="flex justify-center"
-          initial={{ opacity: 0, y: 1000 }} //before scrolling position of slider
-          animate={controls} //refer to line 20
-          transition={{ duration: 1 }} //slider duration for popping up. if you are changinng duration then make sure to change delay of glow adder so thatt  the gow starts after animation is complete
-          onAnimationComplete={handleSliderAnimationComplete}
-        >
-          <div className="flex flex-col items-center ">
-            <div
-              className="flex h-[41px] w-[41px] items-center justify-center rounded-full bg-[#A93BCF] bg-gradient-to-b from-[#473BCF]  to-[#fff]/30 shadow-dotShadowBlue duration-700 transition 
+            className="flex justify-center"
+            initial={{ opacity: 0, y: 300 }} //before scrolling position of slider
+            animate={controls} //refer to line 20
+            transition={{ duration: 0.6 }} //slider duration for popping up. if you are changinng duration then make sure to change delay of glow adder so thatt  the gow starts after animation is complete
+            onAnimationComplete={handleSliderAnimationComplete}
+          >
+            <div className="flex flex-col items-center ">
+              <div
+                className="flex h-[41px] w-[41px] items-center justify-center rounded-full bg-[#A93BCF] bg-gradient-to-b from-[#473BCF]  to-[#fff]/30 shadow-dotShadowBlue duration-700 transition 
               "
-            >
-              <div className="h-[12px] w-[12px] self-center rounded-full bg-white"></div>
+              >
+                <div className="h-[12px] w-[12px] self-center rounded-full bg-white"></div>
+              </div>
+              <div className=" w-[5px]  bg-gradient-to-b from-[#533BD0] to-transparent duration-700 transition h-full"></div>
             </div>
-            <div className="h-full w-[5px]  bg-gradient-to-b from-[#533BD0] to-transparent duration-700 transition lg:h-[80vh]"></div>
-          </div>
           </motion.div>
-          {/* <div className="h-full ml-[7px] sm:ml-[31px] md:ml-[53px] 2xl:[120px] flex flex-col items-center ">
- <div className="md:w-[84px] md:h-[84px] w-[48] h-[48] border border-cyan-300">
-    <Image src="/domainLogos/Dot.png" alt="no img" width={84} height={84} className="object-contain -scale-150 md:w-[84px] md:h-[84px] sm:w-[48] sm:h-[48] w-[35px] h-[35px]"></Image>
-    </div>
-  <div className="h-full  z-20 -mx-10 w-[2px] bg-[blue] ">
 
-  </div>
-</div> */}
           <div className="">
             {/* <motion.div
             initial={{ opacity: 0, x: 500, y: 0 }} //initial position of text with opacity 0
@@ -130,20 +123,20 @@ const Domain: React.FC = () => {
               {OUR_DOMAINS.map((domain, index) => {
                 return (
                   <motion.div
-                          key={index}
-                          className="flex justify-center"
-                          initial={{ opacity: 0, y: 100 }} 
-                          animate={controls} 
-                          transition={{ duration: 1.1 + (index*0.1) }} 
-                          onAnimationComplete={handleSliderAnimationComplete}
-                        >
-                  <DomainCard
-                    isHome={true}
                     key={index}
-                    logo={<Image src={domain.imgSrc} alt="support" width={500} height={500}></Image>}
-                    heading={domain.name}
-                    about={domain.about}
-                  ></DomainCard>
+                    className="flex justify-center"
+                    initial={{ opacity: 0, y: 200 }}
+                    animate={controls}
+                    transition={{ duration: 0.5 + (index * 0.1) }}
+                    onAnimationComplete={handleSliderAnimationComplete}
+                  >
+                    <DomainCard
+                      isHome={true}
+                      key={index}
+                      logo={<Image src={domain.imgSrc} alt="support" width={500} height={500}></Image>}
+                      heading={domain.name}
+                      about={domain.about}
+                    ></DomainCard>
                   </motion.div>
                 );
               })}

@@ -33,6 +33,11 @@ module.exports = {
       borderRadius: {
         imageradius: "15px",
       },
+      lineHeight: {
+        '1': '5px',
+        '2': '8px',
+        // '12': '3rem',
+      },
       keyframes: {
         fadeinout: {
           "0%": {

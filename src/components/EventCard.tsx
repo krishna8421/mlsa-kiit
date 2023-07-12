@@ -14,7 +14,7 @@ const EventCard = () => {
 
                 <div className=" flex flex-row">
                     <div className="relative">
-                        <img src="./eyeSpySquid.jpg" alt="image" className="w-[680px] h-[300px] ml-[0.22rem] mb-[1.5rem] rounded relative group hover:shadow-blue2" />
+                        <img src="./eyeSpySquid.jpg" alt="image" className="w-[680px] h-[300px] ml-[0.22rem] mb-[1.5rem] rounded relative object-cover object-center group hover:shadow-blue2" />
                         {/* <Image alt="image" src="/eyeSpySquid.jpg" width={800} height={300} className="ml-[0.22rem] mb-[1rem] rounded relative group" /> */}
                         <div className="absolute bottom-[45px] left-[18px] text-base 3xl:text-3xl font-medium drop-shadow-2xl">16th APRIL 2023</div>
                         <div className="absolute bottom-[26px] left-[18px] text-base 3xl:text-3xl font-medium drop-shadow-2xl">1368 Participants</div>
@@ -22,7 +22,7 @@ const EventCard = () => {
                         <div className=" text-gray-600 absolute bottom-[26px] right-[16px] text-base 3xl:text-base font-medium">View More</div>
                     </div>
 
-                    <h1 style={{ marginTop: "-0.7rem", fontSize: "1.75rem", fontWeight: "600", background: "linear-gradient(to bottom,#5051F9, #DFDFFF)", marginLeft: "2.5rem", WebkitTextFillColor: "transparent", WebkitBackgroundClip: "text", letterSpacing: "1px" }}>Recently At <br /> <span style={{ background: "linear-gradient(to bottom,#5051F9, #DFDFFF)", WebkitTextFillColor: "transparent", WebkitBackgroundClip: "text", letterSpacing: "0px" }}> MLSA</span></h1>
+                    <h1 className="text-2xl md:text-3xl lg:text-4xl" style={{ marginTop: "-0.7rem", fontWeight: "600", background: "linear-gradient(to bottom,#5051F9, #DFDFFF)", marginLeft: "2.5rem", WebkitTextFillColor: "transparent", WebkitBackgroundClip: "text", letterSpacing: "1px" }}>Recently At <br /> <span style={{ background: "linear-gradient(to bottom,#5051F9, #DFDFFF)", WebkitTextFillColor: "transparent", WebkitBackgroundClip: "text", letterSpacing: "0px" }} className="text-3xl md:text-4xl lg:text-5xl"> MLSA</span></h1>
                 </div>
                 <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 mx-auto gap-4 ">
                     {EVENTS2023.map((event, index) => {
@@ -31,7 +31,7 @@ const EventCard = () => {
 
                             <div key={index} className="relative group gallery-gradient overflow-hidden rounded-[4px] lg:rounded-[4px]  w-full h-[300px] sm:h-[22vw] lg:h-[19.21vw] 3xl:h-[369px]">
 
-                                <Image src={event.img} width={555} height={355} className="block z-10 w-full h-full object-cover transition duration-700 " alt="gallery"></Image>
+                                <Image src={event.img} width={555} height={355} className="block z-10 w-full h-full object-cover object-center transition duration-700 " alt="gallery"></Image>
 
                                 <div className="absolute bottom-16 left-4 z-50 text-white text-xl 3xl:text-3xl font-normal ">{event.ProjectName}</div>
                                 <div className="absolute bottom-9 left-4 z-50 text-white text-base 3xl:text-3xl font-normal ">{event.date}</div>

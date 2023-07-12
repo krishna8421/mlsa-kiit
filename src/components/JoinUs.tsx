@@ -21,6 +21,8 @@ const JoinUs: React.FC = () => {
     return () => clearTimeout(timer);
   });
   const controls = useAnimation();
+  const controls2 = useAnimation();
+  const controls3 = useAnimation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -46,10 +48,15 @@ const JoinUs: React.FC = () => {
         }
       });
 
-      if (scrollPosition > windowHeight / .8) {
-        controls.start({ opacity: 1, y: 0, x: 0 }); //Final position for slider
+      if (scrollPosition > windowHeight / .6) {
+        controls.start({ opacity: 1, y: 0, x: 0 });
+        controls2.start({ opacity: 1, y: 0, x: 0 });
+        controls3.start({ opacity: 1, y: 0, x: 0 });
+        // } //Final position for slider
       } else {
-        controls.start({ opacity: 0, y: 1300, x: 0 }); //Initial starting positionn for slider
+        controls.start({ opacity: 0, y: 260, x: 0 }); //Initial starting positionn for slider
+        controls2.start({ opacity: 0, y: 0, x: 50 });
+        controls3.start({ opacity: 0, y: 0, x: 0 });
       }
     };
     console.log("scroll", window.scrollY);
@@ -72,9 +79,9 @@ const JoinUs: React.FC = () => {
         <div className="flex pt-12 pl-4 md:pl-[50px] lg:pl-[80px] xl:pl-[90px] 2xl:pl-[130px] w-full">
           <motion.div
             className="flex justify-center"
-            initial={{ opacity: 0, y: 1000 }} //before scrolling position of slider
+            initial={{ opacity: 0, y: 260 }} //before scrolling position of slider
             animate={controls} //refer to line 20
-            transition={{ duration: 1 }} //slider duration for popping up. if you are changinng duration then make sure to change delay of glow adder so thatt  the gow starts after animation is complete
+            transition={{ duration: 0.5 }} //slider duration for popping up. if you are changinng duration then make sure to change delay of glow adder so thatt  the gow starts after animation is complete
             onAnimationComplete={handleSliderAnimationComplete}
           >
             <div className="flex flex-col items-center">
@@ -102,8 +109,8 @@ const JoinUs: React.FC = () => {
 
                 // className="flex justify-between flex-nowrap"
                 initial={{ opacity: 0 }}
-                animate={controls}
-                transition={{ duration: 1.2 }}
+                animate={controls3}
+                transition={{ duration: 0.9 }}
                 onAnimationComplete={handleSliderAnimationComplete}
               >
                 <div className="mt-6 flex  font-bold  md:mr-10 justify-between items-center ">
@@ -130,8 +137,8 @@ const JoinUs: React.FC = () => {
               <motion.div
                 className="flex w-[40%] justify-end"
                 initial={{ opacity: 0, x: 50 }}
-                animate={controls}
-                transition={{ duration: 1.4 }}
+                animate={controls2}
+                transition={{ duration: 0.6 }}
                 onAnimationComplete={handleSliderAnimationComplete}
 
               >
