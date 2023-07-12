@@ -1,11 +1,11 @@
 "use client";
 
-import { motion, useAnimation } from "framer-motion";
-import React, { useEffect } from "react";
 import { OUR_PROJECTS1 } from "@/constants";
+import { useAnimation } from "framer-motion";
+import React, { useEffect, useState } from "react";
 import ProjectCard from "./ProjectCard";
-import {useState} from "react";
-const Project: React.FC  = () => {
+import Image from "next/image";
+const Project: React.FC = () => {
 
   const textControls = useAnimation();
   const sliderControls = useAnimation();
@@ -62,51 +62,72 @@ const Project: React.FC  = () => {
     };
   });
 
-    let bgIndex: number = 0;
+  let bgIndex: number = 0;
   const bgColorArr: Array<string> = ["#DBAEFF", "#9CE1FF", "#D9FF9C", "#FFCC9C"];
 
-  const [showMoreClick, setShowMoreClick] = useState(9); 
+  const [showMoreClick, setShowMoreClick] = useState(9);
 
   const changeShowMore = () => {
     setShowMoreClick(showMoreClick + 3);
   };
 
   return (
-    <div className=" max-w-[1920px] mx-auto pb-[30px]">
-      <div className=" mx-auto w-[90vw] "> 
-        <div className="w-full pb-[25px] 3xl:gap-[50px] gap-[2.6vw] mt-11  flex flex-wrap items-center justify-around  mx-auto">
-        {OUR_PROJECTS1.map((project, index) => {
-            {if(index + 1 < showMoreClick){
-                {
+    <>
+      <div className="absolute inset-0 max-w-[1920px] mx-auto">
+        <Image
+          src="/heroLeft.png"
+          alt="hero left gradient"
+          width={700}
+          height={700}
+          className="z-1 absolute left-[-10rem] top-0 h-[60%] w-[80%] md:h-full md:w-[50%] max-w-[1920px] "
+        />
+        <div className="z-2 absolute right-0 top-[21rem] h-[120vh] w-[50%] max-w-[1920px] lg:h-[120vh] lg:w-[40%]">
+          <Image
+            src="/heroRight.png"
+            alt="hero right gradient"
+            width={1000}
+            height={800}
+            className="h-full w-full"
+          />
+        </div>
+      </div>
+      <div className=" max-w-[1920px] mx-auto pb-[30px]">
+        <div className=" mx-auto w-[90vw] ">
+          <div className="w-full pb-[25px] 3xl:gap-[50px] gap-[2.6vw] mt-11  flex flex-wrap items-center justify-around  mx-auto">
+            {OUR_PROJECTS1.map((project, index) => {
+              {
+                if (index + 1 < showMoreClick) {
+                  {
                     if (bgIndex > 3) {
                       bgIndex = 0;
                     }
-                }
-                  
+                  }
+
                   return (
-            //   <motion.div
-            //   className="flex items-center justify-center"
-            //   initial={{ opacity: 0, y: 1000 }} //before scrolling position of slider
-            //   // animate={controls} //refer to line 20
-            //   transition={{ duration: 1.2 }} //slider duration for popping up. if you are changinng duration then make sure to change delay of glow adder so thatt  the gow starts after animation is complete
-            //   // onAnimationComplete={handleSliderAnimationComplete}
-            // >
-                      <ProjectCard
-                        bgColor={`${bgColorArr[bgIndex++]}`}
-                        img={project.img}
-                        ProjectName={project.ProjectName}
-                        techStack1={project.techStack1}
-                        techStack2={project.techStack2}
-                        link={project.github}
-                        techImg={project.techImg}
-                        techImg2={project.techImg2}
-                      />
-                  
+                    //   <motion.div
+                    //   className="flex items-center justify-center"
+                    //   initial={{ opacity: 0, y: 1000 }} //before scrolling position of slider
+                    //   // animate={controls} //refer to line 20
+                    //   transition={{ duration: 1.2 }} //slider duration for popping up. if you are changinng duration then make sure to change delay of glow adder so thatt  the gow starts after animation is complete
+                    //   // onAnimationComplete={handleSliderAnimationComplete}
+                    // >
+                    <ProjectCard
+                      bgColor={`${bgColorArr[bgIndex++]}`}
+                      img={project.img}
+                      ProjectName={project.ProjectName}
+                      techStack1={project.techStack1}
+                      techStack2={project.techStack2}
+                      link={project.github}
+                      techImg={project.techImg}
+                      techImg2={project.techImg2}
+                    />
+
                     // </motion.div>
                   );
-            }}
-        })}
-             {/* <motion.div
+                }
+              }
+            })}
+            {/* <motion.div
               className={`mx-auto mt-[30px] md:mt-[90px] flex w-full cursor-pointer group items-center mr-[5.8vw] 3xl:mr-[0px]`}
               initial={{ opacity: 0, y: 1000 }} //before scrolling position of slider
               animate={controls} //refer to line 20
@@ -114,31 +135,29 @@ const Project: React.FC  = () => {
               onAnimationComplete={handleSliderAnimationComplete}
               onClick={changeShowMore}
             > */}
-           {/* <div className={`mx-auto mt-[30px] md:mt-[90px] flex w-full cursor-pointer group items-center mr-[5.8vw] 3xl:mr-[0px]`}
+            {/* <div className={`mx-auto mt-[30px] md:mt-[90px] flex w-full cursor-pointer group items-center mr-[5.8vw] 3xl:mr-[0px]`}
                  onClick={changeShowMore}> */}
-             
-                   
-           {/* </div> */}
-           {/* </motion.div> */}
+
+
+            {/* </div> */}
+            {/* </motion.div> */}
           </div>
           <div className="flex items-center justify-center  cursor-pointer group" onClick={changeShowMore}>
-                 <div className={`h-[1px] w-[100%] my-auto bg-[#FFFFFF] group-hover:bg-gray-300 ${
-                    showMoreClick >= OUR_PROJECTS1.length ? "hidden" : "visible"
-                 }`}></div>
-                  <div
-                    className={`flex-shrink-0  ml-2 text-[17px] lg:text-[20px] 2xl:text-[25px] 3xl:-[35px] capitalize font-normal leading-none text-white transition duration-300 group-hover:text-[#828282] ${
-                        showMoreClick >= OUR_PROJECTS1.length ? "hidden" : "visible"
-                     } `}
-                  >
-                    View More
-                  </div>
-          </div>    
-          
+            <div className={`h-[1px] w-[100%] my-auto bg-[#FFFFFF] group-hover:bg-gray-300 ${showMoreClick >= OUR_PROJECTS1.length ? "hidden" : "visible"
+              }`}></div>
+            <div
+              className={`flex-shrink-0  ml-2 text-[17px] lg:text-[20px] 2xl:text-[25px] 3xl:-[35px] capitalize font-normal leading-none text-white transition duration-300 group-hover:text-[#828282] ${showMoreClick >= OUR_PROJECTS1.length ? "hidden" : "visible"
+                } `}
+            >
+              View More
+            </div>
+          </div>
+
         </div>
-    </div>
-    
+      </div>
 
 
+    </>
 
   )
 }
