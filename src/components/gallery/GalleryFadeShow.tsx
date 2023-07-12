@@ -1,7 +1,3 @@
-import four from "../../../public/gallery/numbers/four.svg";
-import one from "../../../public/gallery/numbers/one.svg";
-import three from "../../../public/gallery/numbers/three.svg";
-import two from "../../../public/gallery/numbers/two.svg";
 import GalleryFadeShowCard from "./GalleryFadeShowCard";
 import { Devops_GALLERY, Eyespy_GALLERY, Frontend_GALLERY, ProjectWing_GALLERY } from "./data";
 // import two from "./gallery/numbers/two.svg";
