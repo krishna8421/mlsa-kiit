@@ -109,7 +109,7 @@ const About: React.FC = () => {
                   icon={<FaEye className="text-[30px] md:text-[40px]"></FaEye>}
                   label="Vision"
                   Classname=""
-                  content="Microsoft Student Community, KIIT Chapter, is a technical community dedicatedly working towards elevating the coding culture of Kalinga Institute of Industrial Technology, Bhubaneswar by providing opportunities to students to work on projects and boost their analytical and logical skills along with the coding."
+                  content="MLSA envisions a world where everyone has access to the benefits of technology. We believe that technology has the potential to be an effective tool for education.We are committed to educating everyone about various tech stacks, thus keeping them updated. "
                 />
               </motion.div>
               <motion.div
@@ -123,7 +123,7 @@ const About: React.FC = () => {
                   icon={<TbTargetArrow className=" text-[30px] md:text-[40px]"></TbTargetArrow>}
                   label="Goal"
                   Classname=""
-                  content="Microsoft Student Community, KIIT Chapter, is a technical community dedicatedly working towards elevating the coding culture of Kalinga Institute of Industrial Technology, Bhubaneswar by providing opportunities to students to work on projects and boost their analytical and logical skills along with the coding."
+                  content="Connecting people with technology and assisting them in using it to enhance their lives are the two main objectives of MLSA. In order to achieve this, we organize events, work on projects, and educate everyone on various tech stacks."
                 />
               </motion.div>
               <motion.div
@@ -139,7 +139,7 @@ const About: React.FC = () => {
                   }
                   label="Mission"
                   Classname=""
-                  content="Microsoft Student Community, KIIT Chapter, is a technical community dedicatedly working towards elevating the coding culture of Kalinga Institute of Industrial Technology, Bhubaneswar by providing opportunities to students to work on projects and boost their analytical and logical skills along with the coding."
+                  content={` The mission of MLSA is "Tech for All".We empower individuals to embrace the digital world with confidence through engaging events, innovative projects, and meaningful connections. We are dedicated to bridging the technological divides, ensuring that no one is left behind.`}
                 />
               </motion.div>
             </div>

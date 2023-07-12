@@ -75,7 +75,7 @@ const Leads: React.FC = () => {
 
     return (
         <>
-            <div className="mx-auto mt-24  flex  ml-[25px]  sm:ml-[80px]">
+            <div className="mx-auto mt-24  flex ml-4  md:ml-[50px] lg:ml-[80px]">
                 <motion.div
                     className="flex justify-center"
                     initial={{ opacity: 0, y: 230 }} //before scrolling position of slider
@@ -85,7 +85,7 @@ const Leads: React.FC = () => {
                 >
                     <div className="flex flex-col items-center">
                         <div
-                            className="flex h-[41px] w-[41px] items-center justify-center rounded-full bg-[#2CC4F5] bg-gradient-to-b from-[#20FF87]  to-[#fff]/30 shadow-dotShadowBlue duration-700 transition 
+                            className="flex h-[30px] w-[30px] md:h-[41px] md:w-[41px] items-center justify-center rounded-full bg-[#2CC4F5] bg-gradient-to-b from-[#20FF87]  to-[#fff]/30 shadow-dotShadowBlue duration-700 transition 
               "
                         >
                             <div className="h-[12px] w-[12px] self-center rounded-full bg-white"></div>
@@ -153,7 +153,7 @@ const Leads: React.FC = () => {
                                     <SwiperSlide key={index}>
                                         <motion.div
                                             // key={index}
-                                            className="mx-5 md:mx-14"
+                                            className="mx-4 md:mx-8 lg:mx-14"
                                             initial={{ opacity: 0, y: 800 }}
                                             animate={controls}
                                             transition={{ duration: 0.5 + (index * 0.1) }}

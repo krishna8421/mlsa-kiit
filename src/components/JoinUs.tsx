@@ -74,7 +74,7 @@ const JoinUs: React.FC = () => {
     <>
 
 
-      <div className="min-h-[100px]  mt-[80px] pb-20 relative z-0 flex flex-row max-w-[1920px] justify-center items-center mx-auto ">
+      <div className="min-h-[100px]  mt-[80px] pb-8 md:pb-20 relative z-0 flex flex-row max-w-[1920px] justify-center items-center mx-auto ">
 
         <div className="flex pt-12 pl-4 md:pl-[50px] lg:pl-[80px] xl:pl-[90px] 2xl:pl-[130px] w-full">
           <motion.div
@@ -86,14 +86,14 @@ const JoinUs: React.FC = () => {
           >
             <div className="flex flex-col items-center">
               <div
-                className="flex h-[41px] w-[41px] items-center justify-center rounded-full bg-[#3BABCF] bg-gradient-to-b from-[#3B61CF]  to-[#fff]/30 shadow-dotShadowBlue duration-700 transition 
+                className="flex h-[30px] w-[30px] md:h-[41px] md:w-[41px] items-center justify-center rounded-full bg-[#3BABCF] bg-gradient-to-b from-[#3B61CF]  to-[#fff]/30 shadow-dotShadowBlue duration-700 transition 
               "
               >
                 <div className="h-[12px] w-[12px] self-center rounded-full bg-white"></div>
               </div>
 
 
-              <div className="h-[350px] sm:h-[500px] w-[5px]  bg-gradient-to-b from-[#3BABCF] to-transparent duration-700 transition ">
+              <div className="h-[330px] md:h-[500px] w-[5px]  bg-gradient-to-b from-[#3BABCF] to-transparent duration-700 transition ">
 
                 <Image src='/joinus.svg' alt="vector" height={80} width={50} className="absolute h-[30%] w-[8%] sm:w-[5%] sm:h-[40%] top-[23%]" />
               </div>
