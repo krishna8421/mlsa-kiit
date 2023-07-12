@@ -21,8 +21,8 @@ body {
 .projectsAnimation {
   -webkit-animation-name: zoomOut;
   animation-name: zoomOut;
-  -webkit-animation-duration: 2s; 
-  animation-duration: 2s; 
+  -webkit-animation-duration: 1s; 
+  animation-duration: 1s; 
   -webkit-animation-timing-function: ease-out; 
   animation-timing-function: ease-out; 
 }
@@ -44,8 +44,8 @@ body {
 .projectsHeroSlideIn {
   -webkit-animation-name: slideIn;
   animation-name: slideIn;
-  -webkit-animation-duration: 2s; 
-  animation-duration: 2s; 
+  -webkit-animation-duration: 1.4s; 
+  animation-duration: 1.4s; 
   -webkit-animation-timing-function: ease-in-out;
   animation-timing-function: ease-in-out;
 }
