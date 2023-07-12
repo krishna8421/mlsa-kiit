@@ -10,7 +10,6 @@ const MlsaTexts = ["Student", "text2", "text3", "Student"];
 const Hero = () => {
   return (
     <>
-      
       <div className="absolute inset-0 max-w-[1920px] mx-auto">
         <Image
           src="/heroLeft.png"
@@ -28,6 +27,13 @@ const Hero = () => {
             className="h-full w-full"
           />
         </div>
+          <Image
+            src="/heroVector.png"
+            alt="hero vector"
+            width={1920}
+            height={1080}
+            className="h-1/2 top-[20%] lg:top-0 lg:h-full w-full absolute"
+          />
       </div>
       <div className="relative mx-auto h-screen w-screen  max-w-[1920px] overflow-x-hidden overflow-hidden">
         <div className="absolute left-0 right-0 top-0 z-30 flex justify-center">

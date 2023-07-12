@@ -73,24 +73,6 @@ const Project: React.FC = () => {
 
   return (
     <>
-      <div className="absolute inset-0 max-w-[1920px] mx-auto">
-        <Image
-          src="/heroLeft.png"
-          alt="hero left gradient"
-          width={700}
-          height={700}
-          className="z-1 absolute left-[-10rem] top-0 h-[60%] w-[80%] md:h-full md:w-[50%] max-w-[1920px] "
-        />
-        <div className="z-2 absolute right-0 top-[21rem] h-[120vh] w-[50%] max-w-[1920px] lg:h-[120vh] lg:w-[40%]">
-          <Image
-            src="/heroRight.png"
-            alt="hero right gradient"
-            width={1000}
-            height={800}
-            className="h-full w-full"
-          />
-        </div>
-      </div>
       <div className=" max-w-[1920px] mx-auto pb-[30px]">
         <div className=" mx-auto w-[90vw] ">
           <div className="w-full pb-[25px] 3xl:gap-[50px] gap-[2.6vw] mt-11  flex flex-wrap items-center justify-around  mx-auto">
