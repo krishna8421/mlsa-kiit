@@ -4,7 +4,7 @@ function Sponsors() {
   return (
     // <<<<<<< HEAD
     <div className="flex flex-col md:ml-20 overflow-x-hidden">
-      <span className="text-4xl font-inter font-semibold capitalize">
+      <span className="text-4xl font-inter 2xl:text-[2.1vw] font-semibold capitalize">
 
         {/* <div className="flex flex-col m-12">
       <span className="text-3xl font-inter font-semibold capitalize text-[12px] sm:text-[18px] font-semibold md:mb-[20px] md:text-3xl items-start text-[#FFFFFF] 2xl:text-[2.1vw]"> */}
