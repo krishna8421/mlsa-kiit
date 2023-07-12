@@ -34,7 +34,7 @@ const Members = () => {
         <Image src="/Rectangle-shadow.svg" width={400} height={400} alt="members" className="hidden sm:block absolute right-0 top-[-370px] "></Image>
           
           <Webdev />
-          {/* <Appdev />
+          <Appdev />
           <Videoediting/>
           <Marketing />
           <MachineLearning />
@@ -42,7 +42,7 @@ const Members = () => {
           <Creative />
           <Arvr />
           <Cloud />
-          <Youtube /> */}
+          <Youtube />
 
 
         </div>
