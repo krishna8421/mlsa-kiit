@@ -24,7 +24,7 @@ export default function Home() {
       <About />
       <Domain />
       {/* <ScrollAnimationLead /> */}
-      {/* <Leads /> */}
+      <Leads />
       <JoinUs />
       <Alumni1 />
       <ScrollAnimationCode />
