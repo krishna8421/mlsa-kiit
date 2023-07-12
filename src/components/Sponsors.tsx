@@ -16,7 +16,7 @@ function Sponsors() {
       x: 100,
     },
     visible: {
-      opacity: 1,
+      opacity: 5,
       x: 0,
       transition: {
         duration: 1,
@@ -33,8 +33,8 @@ function Sponsors() {
       opacity: 1,
       y: 0,
       transition: {
-        duration: 1,
-        staggerChildren: 0.2,
+        duration: 2,
+        staggerChildren: 0.25,
       },
     },
   };
@@ -55,8 +55,8 @@ function Sponsors() {
     <div className="flex flex-col m-12">
       <motion.span
         ref={ref}
-        className="text-3xl font-inter font-semibold capitalize text-[20px] sm:text-[20px] font-semibold md:mb-[20px] md:text-3xl items-start text-[#FFFFFF] 2xl:text-[2.1vw] mt-[17px]"
-        initial="hidden"
+        className="text-3xl font-inter font-semibold capitalize text-[24px] sm:text-[24px] font-semibold md:mb-[20px] md:text-3xl items-start text-[#FFFFFF] 2xl:text-[2.1vw] mt-[17px] text-[24px]"
+        initial={{opacity:0,y:0,x:70}}
         animate={controls}
         variants={titleVariants}
       >

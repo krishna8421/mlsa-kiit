@@ -54,10 +54,10 @@ const OurAlumuni = () => {
         }
       });
 
-      if (scrollPosition > windowHeight / .8) {
+      if (scrollPosition > windowHeight / .7) {
         controls.start({ opacity: 1, y: 0, x: 0 }); //Final position for slider
       } else {
-        controls.start({ opacity: 0, y: 1300, x: 0 }); //Initial starting positionn for slider
+        controls.start({ opacity: 0, y: 1800, x: 0 }); //Initial starting positionn for slider
       }
     };
     console.log("scroll", window.scrollY);

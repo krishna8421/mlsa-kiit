@@ -19,6 +19,7 @@ const ScrollAnimationLead: React.FC = () => {
     return () => clearTimeout(timer);
   });
   const controls = useAnimation();
+  const controls1 = useAnimation();
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY; //determines how much the user has scrolled
@@ -43,8 +44,10 @@ const ScrollAnimationLead: React.FC = () => {
       });
       if (scrollPosition > windowHeight / 1.3) {
         controls.start({ opacity: 1, y: 70, x: 0 }); //Final position for slider
+        controls1.start({ opacity: 1, y: 70, x: 0 }); //Final position for slider
       } else {
         controls.start({ opacity: 0, y: 200, x: 0 }); //Initial starting positionn for slider
+        controls1.start({ opacity: 0, y: 0, x: 150 }); //Initial starting positionn for slider
       }
     };
 
