@@ -31,7 +31,7 @@ const JoinUs: React.FC = () => {
 
       window.addEventListener("scroll", function () {
         var scrollPosition = window.scrollY;
-        if (scrollPosition > windowHeight / .9) {
+        if (scrollPosition > windowHeight / .3) {
           const element = document.getElementById("myElement"); // gets the circle on top of the slider
 
           if (element) {
@@ -48,7 +48,7 @@ const JoinUs: React.FC = () => {
         }
       });
 
-      if (scrollPosition > windowHeight / .6) {
+      if (scrollPosition > windowHeight / .3) {
         controls.start({ opacity: 1, y: 0, x: 0 });
         controls2.start({ opacity: 1, y: 0, x: 0 });
         controls3.start({ opacity: 1, y: 0, x: 0 });
@@ -74,7 +74,7 @@ const JoinUs: React.FC = () => {
     <>
 
 
-      <div className="min-h-[100px] mt-[200px] pb-20 relative z-0 flex flex-row max-w-[1920px] justify-center items-center mx-auto ">
+      <div className="min-h-[100px]  mt-[80px] pb-20 relative z-0 flex flex-row max-w-[1920px] justify-center items-center mx-auto ">
 
         <div className="flex pt-12 pl-4 md:pl-[50px] lg:pl-[80px] xl:pl-[90px] 2xl:pl-[130px] w-full">
           <motion.div

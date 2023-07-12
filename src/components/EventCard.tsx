@@ -16,10 +16,10 @@ const EventCard = () => {
                     <div className="relative">
                         <img src="./eyeSpySquid.jpg" alt="image" className="w-[680px] h-[300px] ml-[0.22rem] mb-[1.5rem] rounded relative object-cover object-center group hover:shadow-blue2" />
                         {/* <Image alt="image" src="/eyeSpySquid.jpg" width={800} height={300} className="ml-[0.22rem] mb-[1rem] rounded relative group" /> */}
-                        <div className="absolute bottom-[45px] left-[18px] text-base 3xl:text-3xl font-medium drop-shadow-2xl">16th APRIL 2023</div>
-                        <div className="absolute bottom-[26px] left-[18px] text-base 3xl:text-3xl font-medium drop-shadow-2xl">1368 Participants</div>
-                        <div className="absolute bottom-[72px] left-[18px] text-xl 3xl:text-3xl font-medium drop-shadow-2xl">Eye S.py Squid</div>
-                        <div className=" text-gray-600 absolute bottom-[26px] right-[16px] text-base 3xl:text-base font-medium">View More</div>
+                        <div className="absolute bottom-[45px] left-[18px] text-base 3xl:text-3xl font-medium drop-shadow-2xl" style={{ textShadow: " 1.5px 1.5px black" }}>16th APRIL 2023</div>
+                        <div className="absolute bottom-[26px] left-[18px] text-base 3xl:text-3xl font-medium drop-shadow-2xl" style={{ textShadow: " 1.5px 1.5px black" }}>1368 Participants</div>
+                        <div className="absolute bottom-[72px] left-[18px] text-xl 3xl:text-3xl font-medium drop-shadow-2xl" style={{ textShadow: " 1.5px 1.5px black" }}>Eye S.py Squid</div>
+                        <div className=" text-gray-600 absolute bottom-[26px] right-[16px] text-base 3xl:text-base font-medium" style={{ textShadow: " 0.5px 0.5px gray" }} >View More</div>
                     </div>
 
                     <h1 className="text-2xl md:text-3xl lg:text-4xl" style={{ marginTop: "-0.7rem", fontWeight: "600", background: "linear-gradient(to bottom,#5051F9, #DFDFFF)", marginLeft: "2.5rem", WebkitTextFillColor: "transparent", WebkitBackgroundClip: "text", letterSpacing: "1px" }}>Recently At <br /> <span style={{ background: "linear-gradient(to bottom,#5051F9, #DFDFFF)", WebkitTextFillColor: "transparent", WebkitBackgroundClip: "text", letterSpacing: "0px" }} className="text-3xl md:text-4xl lg:text-5xl"> MLSA</span></h1>
