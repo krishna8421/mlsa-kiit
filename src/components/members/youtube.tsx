@@ -13,25 +13,17 @@ const imgStyle: any = {
     objectPosition: "center",
     objectFit: "cover",
   };
-const youtube = () => {
-  
-  return (
-    
-    <div className="max-w-[1920px] mx-auto flex">
-        <div className="ml-[10px] sm:ml-[20px] md:ml-[60px] lg:ml-[120px]">
 
-        </div>
-        <div className="flex flex-col">
-            <div className="text-[16px] md:text-2xl lg:text-3xl mb-[30px] leading-normal text-[#FFF] font-semibold ">Youtube</div>
-            <div className="grid mr-0 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 w-full gap-2 md:gap-4 lg:gap-8">
-                {YT.map((into, index) => {
-                    const [showDetail, setShowDetail] = useState(false);
+
+  const Item = ({into}:any)=>{
+    const [showDetail, setShowDetail] = useState(false)
 
                     const handleImageClick = () => {
                         setShowDetail(!showDetail);
                       };
-                        return( 
-                        <div className="h-[250px] md:h-[300px] lg:h-[350px] 2xl:h-[400px]   w-full rounnded-xl"  key={index}>
+
+                      return(
+                        <div className="h-[250px] md:h-[300px] lg:h-[350px] 2xl:h-[400px]   w-full rounnded-xl" >
                             <div className="image-members rounded-xl z-10 relative h-[210px] md:h-[250px] lg:h-[290px] 2xl:h-[340px] w-full" onClick={handleImageClick}>
                                <Image 
                                src={into.img}
@@ -75,8 +67,24 @@ const youtube = () => {
                         );
                               
                               
-                        })}
-                   
+                        }
+                      
+  
+const youtube = () => {
+  
+  return (
+    
+    <div className="max-w-[1920px] mx-auto flex">
+        <div className="ml-[10px] sm:ml-[20px] md:ml-[60px] lg:ml-[120px]">
+
+        </div>
+        <div className="flex flex-col">
+            <div className="text-[16px] md:text-2xl lg:text-3xl mb-[30px] leading-normal text-[#FFF] font-semibold ">Youtube</div>
+            <div className="grid mr-0 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 w-full gap-2 md:gap-4 lg:gap-8">
+                
+                   {YT.map((into, index) => {
+                    return <Item into={into} key={index} />
+                   })}
                 
             </div>
         </div>
