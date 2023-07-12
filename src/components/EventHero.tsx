@@ -8,6 +8,25 @@ const anotherHand = Just_Another_Hand({
 });
 const EventHero = () => {
   return (
+    <>    
+          <div className="absolute inset-0 max-w-[1920px] mx-auto">
+        <Image
+          src="/heroLeft.png"
+          alt="hero left gradient"
+          width={700}
+          height={700}
+          className="z-1 absolute left-0 top-0 h-[60%] w-[80%] md:h-full md:w-[50%] max-w-[1920px] "
+        />
+        <div className="z-20 absolute right-0 top-[22rem] h-[120vh] w-[50%] max-w-[1920px] lg:h-[100vh] lg:w-[40%]">
+          <Image
+            src="/heroRight.png"
+            alt="hero right gradient"
+            width={1000}
+            height={800}
+            className="h-full w-full z-8"
+          />
+        </div>
+      </div>
     <div className="relative">
       <div className=" no-repeat h-[92vh] w-full bg-[url('/EventHero.png')] bg-cover  bg-center bg-no-repeat">
         <div className="  mx-auto h-[100px] w-[93%]  text-right text-white">
@@ -64,6 +83,8 @@ const EventHero = () => {
         <h2 className=" mx-[19px] text-[33px]">Our Past successfull events</h2>
       </div>
     </div>
+    </>
+
   );
 };
 
