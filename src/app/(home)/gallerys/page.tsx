@@ -61,15 +61,15 @@ const Gallery = () => {
           />
         </div>
       </div>
-      <div className="flex 2xl:h-screen mt-[100px] md:mt-[120px] 2xl:mt-[0px] 2xl:items-center md:pl-16 3xl:pl-16 max-w-[1920px] mx-auto">
+      <div className="flex 2xl:h-screen mt-[100px] md:mt-[120px] 2xl:mt-[30px] 2xl:items-center md:pl-16 3xl:pl-16 max-w-[1920px] mx-auto">
         <div className="flex md:flex-row flex-col justify-between pb-[45px] md:pb-[100px] 2xl:pb-[0px] w-full ">
           <div className="flex flex-col items-center md:items-start">
-            <h1 className="bg-gradient-to-b from-[#5051F9] to-[#AE86E0] bg-clip-text text-2xl font-bold text-transparent md:text-4xl lg:text-5xl  3xl:text-7xl h-[2rem] md:h-[2.8rem] lg:h-[3.6rem] 3xl:h-[5.2rem]">
+            <h1 className="bg-gradient-to-b from-[#5051F9] to-[#AE86E0] bg-clip-text  font-bold text-transparent text-[30px] sm:text-4xl lg:text-5xl  3xl:text-7xl h-[2.8rem]  md:h-[3rem] lg:h-[3.6rem] 3xl:h-[5.2rem]">
               Gallery
             </h1>
             <div className="text-md mt-1 lg:mt-2 md:text-lg lg:text-xl">
-              <p className="text-xl md:text-[27px] 2xl:text-3xl 3xl:text-[40px]">Out Past Successful Events</p>
-              <div className=" mt-[18px] md:mt-[30px] lg:mt-[58px]  flex md:gap-16 justify-between md:justify-start ">
+              <p className="text-xl md:tracking-wider md:text-[27px] 2xl:text-4xl 3xl:text-[40px]">Out Past Successful Events</p>
+              <div className=" mt-[18px] md:mt-[30px] lg:mt-[58px]  flex md:gap-14 3xl:gap-16 justify-between md:justify-start ">
                 <div className="flex flex-col">
                   <span className="bg-gradient-to-b from-[#5051F9] to-[#AE86E0] bg-clip-text text-transparent text-2xl font-bold md:text-3xl 3xl:text-5xl">{rojectsCounter}+</span>
                   <span className="bg-gradient-to-b from-[#5051F9] to-[#AE86E0] bg-clip-text text-transparent text-xl md:text-2xl 3xl:text-4xl">Members</span>
@@ -81,7 +81,7 @@ const Gallery = () => {
               </div>
             </div>
           </div>
-          <div className="relative mx-auto md:mx-[0px] mt-0 pt-[30px] md:ml-[0px] md:pt-0 md:mr-[7vw] h-[27vh] lg:h-[30vh] 2xl:h-[65vh] w-[250px] md:w-[40%] object-cover lg:max-h-[600px] 3xl:w-[45%]">
+          <div className="relative mx-auto md:mx-[0px] mt-[23px] md:ml-[0px] md:mt-0 md:mr-[7vw] h-[345px] sm:h-[350px] lg:h-[430px] 2xl:h-[500px] 3xl:h-[600px] -translate-x-3 sm:-translate-x-6 md:-translate-x-0 w-[80vw] sm:w-[75vw] md:w-[40%] object-cover lg:max-h-[600px] 3xl:w-[45%]">
             <div className="absolute inset-0 z-50 flex h-full w-full items-center justify-between px-8 text-2xl">
               <BsChevronLeft className="shadow-xl cursor-pointer" onClick={LeftChevronClick} />
               <BsChevronRight className="cursor-pointer" onClick={RightChevronClick} />

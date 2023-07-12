@@ -49,13 +49,13 @@ const Item = ({into}:any)=>{
                           
                           <div className="flex items-center gap-[2px] md:gap-1 ">
                           <Link href={"/"}>
-                              <Image src={InstaIcon} alt="icon" className="h-[15px] w-[15px] md:h-[17px] md:w-[17px] 2xl:h-[24px] 2xl:w-[24px]"/>
+                              <Image src={InstaIcon} alt="icon" className="hover:scale-125 transition delay-100 h-[15px] w-[15px] md:h-[17px] md:w-[17px] 2xl:h-[24px] 2xl:w-[24px]"/>
                           </Link>
                           <Link href={""}>
-                           <Image src={LinkdIcon} alt="icon" className="h-[15px] w-[15px] md:h-[17px] md:w-[17px] 2xl:h-[24px] 2xl:w-[24px]"/>
+                           <Image src={LinkdIcon} alt="icon" className="hover:scale-125 transition delay-100 h-[15px] w-[15px] md:h-[17px] md:w-[17px] 2xl:h-[24px] 2xl:w-[24px]"/>
                            </Link>
                           <Link href={""}>
-                            <Image src={GithubIcon} alt="icon" className="h-[15px] w-[15px] md:h-[17px] md:w-[17px] 2xl:h-[24px] 2xl:w-[24px]"/>
+                            <Image src={GithubIcon} alt="icon" className="hover:scale-125 transition delay-100 h-[15px] w-[15px] md:h-[17px] md:w-[17px] 2xl:h-[24px] 2xl:w-[24px]"/>
                           </Link>
                           </div>
                           

@@ -7,7 +7,7 @@ import { Devops_GALLERY, Eyespy_GALLERY, Frontend_GALLERY, ProjectWing_GALLERY }
 // import two from "./gallery/numbers/two.svg";
 const GalleryFadeShow = () => {
   return (
-    <div className="max-w-[1920px] grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 mx-auto pt-[80px] p-[5vw] ">
+    <div className="max-w-[1920px] grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 mx-auto lg:pt-[80px] p-[5vw] ">
       <GalleryFadeShowCard imgArray={ProjectWing_GALLERY} title="Project Wing" num={one} timer={5000} />
       <GalleryFadeShowCard imgArray={Frontend_GALLERY} title="Frontend With Benefits" num={two} timer={10000} />
       <GalleryFadeShowCard imgArray={Devops_GALLERY} title="DevOps" num={four} timer={8000} />

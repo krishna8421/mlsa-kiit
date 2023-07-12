@@ -29,7 +29,7 @@ const imgStyle: any = {
                                <Image 
                                src={into.img}
                                style={imgStyle}
-                               className="h-full z-20 w-full rounded-xl"
+                               className="h-full w-full rounded-xl"
                                width={700}
                                height={700}
                                alt="name"
@@ -37,7 +37,7 @@ const imgStyle: any = {
                                 
                             </div>
 
-                            <div className={showDetail ? "-translate-y-[70px] lg:-translate-y-16 scale-100 2xl:-translate-y-14 pb-[5px] md:pb-[5px] backdrop-blur-[5px] bg-[#25252580] min-h-[100px] w-full p-[3px] flex rounded-[10px] justify-between items-end transition  transform ease-in-out delay-400 z-10" : " flex items-center backdrop-blur-[5px] bg-[#25252580] scale-0 min-h-[100px] justify-between transition transform ease-in-out delay-400  -translate-y-40 z-0"}>
+                            <div className={showDetail ? "-translate-y-[70px] lg:-translate-y-16 scale-100 2xl:-translate-y-14 pb-[5px] md:pb-[5px] backdrop-blur-[5px] bg-[#25252580] min-h-[100px] w-full p-[3px] flex rounded-[10px] justify-between items-end transition  transform ease-in-out delay-400 z-20" : " flex items-center backdrop-blur-[5px] bg-[#25252580] scale-0 min-h-[100px] justify-between transition transform ease-in-out delay-400  -translate-y-40 z-0"}>
                             <div className="flex items-center relative w-full justify-between">
                             <div className="bottom-[-10px] md:bottom-[-15px] left-[0%] absolute w-[200px] h-[20px] z-40">
                             <Image src="/Subtract.png"
@@ -50,13 +50,13 @@ const imgStyle: any = {
                             
                             <div className="flex items-center gap-[2px] md:gap-1 ">
                             <Link href={"/"}>
-                                <Image src={InstaIcon} alt="icon" className="h-[15px] w-[15px] md:h-[17px] md:w-[17px] 2xl:h-[24px] 2xl:w-[24px]"/>
+                                <Image src={InstaIcon} alt="icon" className="hover:scale-125 transition delay-100 h-[15px] w-[15px] md:h-[17px] md:w-[17px] 2xl:h-[24px] 2xl:w-[24px]"/>
                             </Link>
                             <Link href={""}>
-                             <Image src={LinkdIcon} alt="icon" className="h-[15px] w-[15px] md:h-[17px] md:w-[17px] 2xl:h-[24px] 2xl:w-[24px]"/>
+                             <Image src={LinkdIcon} alt="icon" className="hover:scale-125  transition delay-100 h-[15px] w-[15px] md:h-[17px] md:w-[17px] 2xl:h-[24px] 2xl:w-[24px]"/>
                              </Link>
                             <Link href={""}>
-                              <Image src={GithubIcon} alt="icon" className="h-[15px] w-[15px] md:h-[17px] md:w-[17px] 2xl:h-[24px] 2xl:w-[24px]"/>
+                              <Image src={GithubIcon} alt="icon" className="hover:scale-125  transition delay-100 h-[15px] w-[15px] md:h-[17px] md:w-[17px] 2xl:h-[24px] 2xl:w-[24px]"/>
                             </Link>
                             </div>
                             
