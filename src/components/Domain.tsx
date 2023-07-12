@@ -47,7 +47,7 @@ const Domain: React.FC = () => {
         }
       });
 
-      if (scrollPosition > windowHeight / .9) {
+      if (scrollPosition > windowHeight / .8) {
         controls.start({ opacity: 1, y: 0, x: 0 });
         controls1.start({ opacity: 1, y: 0, x: 0 }); //Final position for slider
       } else {

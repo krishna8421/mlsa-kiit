@@ -56,7 +56,7 @@ const Alumni1: React.FC = () => {
         }
       });
 
-      if (scrollPosition > windowHeight / .35) {
+      if (scrollPosition > windowHeight / .2) {
         controls.start({ opacity: 1, y: 0, x: 0 }); //Final position for slider
         controls1.start({ opacity: 1, y: 0, x: 0 }); //Final position for slider
       } else {

@@ -48,7 +48,7 @@ const JoinUs: React.FC = () => {
         }
       });
 
-      if (scrollPosition > windowHeight / .47) {
+      if (scrollPosition > windowHeight / .27) {
         controls.start({ opacity: 1, y: 0, x: 0 });
         controls2.start({ opacity: 1, y: 0, x: 0 });
         controls3.start({ opacity: 1, y: 0, x: 0 });

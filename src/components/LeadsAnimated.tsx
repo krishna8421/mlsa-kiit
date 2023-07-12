@@ -31,6 +31,7 @@ const Leads: React.FC = () => {
         return () => clearTimeout(timer);
     });
     const controls = useAnimation();
+    const controls1 = useAnimation();
 
     useEffect(() => {
         const handleScroll = () => {
@@ -58,8 +59,11 @@ const Leads: React.FC = () => {
 
             if (scrollPosition > windowHeight / .4) {
                 controls.start({ opacity: 1, y: 0, x: 0 }); //Final position for slider
+                controls1.start({ opacity: 1, y: 0, x: 0 }); //Final position for slider
             } else {
                 controls.start({ opacity: 0, y: 200, x: 0 }); //Initial starting positionn for slider
+                controls1.start({ opacity: 0, y: 0, x: 150 }); //Initial starting positionn for slider
+                
             }
         };
         console.log("scroll", window.scrollY);
@@ -97,7 +101,7 @@ const Leads: React.FC = () => {
                 <div className="overflow-hidden">
                     <motion.div
                         initial={{ opacity: 0 }} //initial position of text with opacity 0
-                        animate={textControls} //text conntrol animation triggered.
+                        animate={controls1} //text conntrol animation triggered.
                         transition={{ duration: 1.5 }}
                     >
                         <h1 className="sm:mb-[7px] ml-[11px] sm:ml-[15px] lg:ml-[30px] 2xl:ml-[53px] text-[12px] sm:text-[18px] font-semibold md:mb-[20px] md:text-4xl items-start text-[#FFFFFF] 2xl:text-[2.1vw] ">

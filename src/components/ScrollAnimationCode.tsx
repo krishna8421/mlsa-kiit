@@ -41,7 +41,7 @@ const ScrollAnimationCode: React.FC = () => {
           }
         }
       });
-      if (scrollPosition > windowHeight / .23) {
+      if (scrollPosition > windowHeight / .185) {
         controls.start({ opacity: 1, y: 70, x: 0 }); //Final position for slider
       }
     };
