@@ -1,4 +1,4 @@
-import { getServerSession } from "next-auth";
+import { getServerSession } from "@/server/auth";
 import SignOut from "./SignOut"
 import Link from "next/link";
 

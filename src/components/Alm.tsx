@@ -75,7 +75,7 @@ const Alumni1: React.FC = () => {
 
   return (
     <>
-    <div className="mx-auto flex -translate-y-[60vh] ml-[25px] md:-translate-y-[30vh] sm:ml-[80px]">
+      <div className="mx-auto flex pl-4 md:pl-[50px] lg:pl-[80px] xl:pl-[90px] 2xl:pl-[130px]">
         <motion.div
           className="flex justify-center"
           initial={{ opacity: 0, y: 1000 }} //before scrolling position of slider
@@ -94,130 +94,130 @@ const Alumni1: React.FC = () => {
           </div>
         </motion.div>
 
-    <div className="overflow-hidden">
-      <motion.div
-                  initial={{ opacity: 0, x: 1000, y: 0 }} //initial position of text with opacity 0
-                  animate={textControls} //text conntrol animation triggered.
-                  transition={{ duration: 1 }}
-                >
-                <h1 className="sm:mb-[7px] ml-[11px] sm:ml-[15px] lg:ml-[30px] 2xl:ml-[53px] text-[12px] sm:text-[18px] font-semibold md:mb-[20px] md:text-4xl items-start text-[#FFFFFF] 2xl:text-[2.1vw] ">
-                  Message From <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#A03BCF] to-[#6F5BFF]">Our Alumni</span>
-                </h1>
-      </motion.div>
+        <div className="overflow-hidden">
+          <motion.div
+            initial={{ opacity: 0 }} //initial position of text with opacity 0
+            animate={textControls} //text conntrol animation triggered.
+            transition={{ duration: 1.5 }}
+          >
+            <h1 className="sm:mb-[7px] ml-[11px] sm:ml-[15px] lg:ml-[30px] 2xl:ml-[53px] text-[12px] sm:text-[18px] font-semibold md:mb-[20px] md:text-4xl items-start text-[#FFFFFF] 2xl:text-[2.1vw] ">
+              Message From <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#A03BCF] to-[#6F5BFF]">Our Alumni</span>
+            </h1>
+          </motion.div>
 
 
-      <div className=" md:pl-8">
-      <Swiper
-                spaceBetween={10}
-                // slidesPerView={2.5}
-                cssMode={true}
-                mousewheel={true}
-                // className="sm:pl-40 "
-                loop={false}
-                navigation={true}
-                modules={[Navigation]}
-                // centeredSlides={true}
-                // centerInsufficientSlides={true}
-                breakpoints={{
-                  300: {
-                    slidesPerView: 1,
-                    // spaceBetween: 100,
-                  },
-                  382: {
-                    slidesPerView: 1.2,
-                    // spaceBetween: 100,
-                  },
-                  437: {
-                    slidesPerView: 1.4,
-                    // spaceBetween: 100,
-                  },
-                  480: {
-                    slidesPerView: 1.3,
-                    // spaceBetween: 100,
-                  },
-                  516: {
-                    slidesPerView: 1.5,
-                    // spaceBetween: 100,
-                  },
-                  570: {
-                    slidesPerView: 1.7,
-                    // spaceBetween: 100,
-                  },
-                  // when window width is >= 480px
-                  624: {
-                    slidesPerView: 1.9,
-                    // spaceBetween: 30,
-                  },
-                  // when window width is >= 640px
-                  692: {
-                    slidesPerView: 2.1,
-                    // spaceBetween: 80,
-                  },
-                  768: {
-                    slidesPerView: 1.3,
-                    // spaceBetween: 180,
-                  },
-                  800: {
-                    slidesPerView: 1.4,
-                    // spaceBetween: 150,
-                  },
-                  820: {
-                    slidesPerView: 1.4,
-                    // spaceBetween: 150,
-                  },
-                  900: {
-                    slidesPerView: 1.6,
-                    // spaceBetween: 150,
-                  },
-                  1000: {
-                    slidesPerView:1.9,
-                    // slidesPerView:'auto',
-                    // spaceBetween: 150,
-                  },
-                  1100: {
-                    slidesPerView:2.1,
-                    // slidesPerView:'auto',
-                    // spaceBetween: 150,
-                  },
-                  1200: {
-                    slidesPerView: 2.3,
-                    // slidesPerView:'auto',
-                    // spaceBetween: 180,
-                  },
-                  1400: {
-                    slidesPerView: 2.7,
-                    // spaceBetween: 150,
-                  },
-                }}
-              >
-                {OUR_ALUMNI.map((Lead, index) => {
+          <div className=" md:pl-8">
+            <Swiper
+              spaceBetween={10}
+              // slidesPerView={2.5}
+              cssMode={true}
+              mousewheel={true}
+              // className="sm:pl-40 "
+              loop={false}
+              navigation={true}
+              modules={[Navigation]}
+              // centeredSlides={true}
+              // centerInsufficientSlides={true}
+              breakpoints={{
+                300: {
+                  slidesPerView: 1,
+                  // spaceBetween: 100,
+                },
+                382: {
+                  slidesPerView: 1.2,
+                  // spaceBetween: 100,
+                },
+                437: {
+                  slidesPerView: 1.4,
+                  // spaceBetween: 100,
+                },
+                480: {
+                  slidesPerView: 1.3,
+                  // spaceBetween: 100,
+                },
+                516: {
+                  slidesPerView: 1.5,
+                  // spaceBetween: 100,
+                },
+                570: {
+                  slidesPerView: 1.7,
+                  // spaceBetween: 100,
+                },
+                // when window width is >= 480px
+                624: {
+                  slidesPerView: 1.9,
+                  // spaceBetween: 30,
+                },
+                // when window width is >= 640px
+                692: {
+                  slidesPerView: 2.1,
+                  // spaceBetween: 80,
+                },
+                768: {
+                  slidesPerView: 1.3,
+                  // spaceBetween: 180,
+                },
+                800: {
+                  slidesPerView: 1.4,
+                  // spaceBetween: 150,
+                },
+                820: {
+                  slidesPerView: 1.4,
+                  // spaceBetween: 150,
+                },
+                900: {
+                  slidesPerView: 1.6,
+                  // spaceBetween: 150,
+                },
+                1000: {
+                  slidesPerView: 1.9,
+                  // slidesPerView:'auto',
+                  // spaceBetween: 150,
+                },
+                1100: {
+                  slidesPerView: 2.1,
+                  // slidesPerView:'auto',
+                  // spaceBetween: 150,
+                },
+                1200: {
+                  slidesPerView: 2.3,
+                  // slidesPerView:'auto',
+                  // spaceBetween: 180,
+                },
+                1400: {
+                  slidesPerView: 2.7,
+                  // spaceBetween: 150,
+                },
+              }}
+            >
+              {OUR_ALUMNI.map((Lead, index) => {
 
-                  return (
-                  
-                    <SwiperSlide key={index} className=" sm:w-[260px] md:w-[460px]">
-                      <motion.div
-                          // key={index}
-                          // className="flex justify-center"
-                          initial={{ opacity: 0, y: 600 }} 
-                          animate={controls} 
-                          transition={{ duration: 1+(index*0.1) }} 
-                          onAnimationComplete={handleSliderAnimationComplete}
-                        >
-                      
-                      
-                        <AlumuniCard {...Lead} />
-                        </motion.div>
-                        
-                    </SwiperSlide>
-                  );
-                })}
-              </Swiper>
-              </div>
+                return (
 
-  </div>
-</div>
+                  <SwiperSlide key={index} className=" sm:w-[260px] md:w-[460px]">
+                    <motion.div
+                      // key={index}
+                      // className="flex justify-center"
+                      initial={{ opacity: 0, y: 600 }}
+                      animate={controls}
+                      transition={{ duration: 1 + (index * 0.1) }}
+                      onAnimationComplete={handleSliderAnimationComplete}
+                    >
 
-</>
+
+                      <AlumuniCard {...Lead} />
+                    </motion.div>
+
+                  </SwiperSlide>
+                );
+              })}
+            </Swiper>
+          </div>
+
+        </div>
+      </div>
+
+    </>
   );
 };
 

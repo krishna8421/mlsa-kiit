@@ -5,6 +5,7 @@ import { type DefaultUser } from "next-auth";
 interface IUser extends DefaultUser {
   // role: ROLE;
   // position: POSITION;
+  personalEmail: string;
 }
 
 declare module "next-auth" {

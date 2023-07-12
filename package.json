@@ -22,6 +22,7 @@
     "@prisma/client": "^4.16.1",
     "@tanstack/react-query": "^4.29.1",
     "@types/validator": "^13.7.17",
+    "aos": "^2.3.4",
     "axios": "^1.4.0",
     "bcrypt": "^5.1.0",
     "formik": "^2.4.2",
@@ -32,7 +33,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hot-toast": "^2.4.1",
-    "react-icons": "^4.8.0",
+    "react-icons": "^4.10.1",
     "scrollmagic": "^2.0.8",
     "swiper": "^10.0.4",
     "validator": "^13.9.0",
@@ -41,6 +42,7 @@
     "zustand": "^4.3.8"
   },
   "devDependencies": {
+    "@types/aos": "^3.0.4",
     "@types/bcrypt": "^5.0.0",
     "@types/lodash": "^4.14.192",
     "@types/node": "^18.15.11",
@@ -65,5 +67,10 @@
   "lint-staged": {
     "**/*.{ts,js}": "eslint --cache --cache-location .next/cache/eslint/ --fix",
     "**/*.{ts,js,md,json}": "prettier --write"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "yarn": ">=1.22.0",
+    "npm": "use-yarn"
   }
 }

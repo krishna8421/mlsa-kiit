@@ -1,7 +1,7 @@
 import { prisma } from "@/server/db";
 import { NextResponse } from "next/server";
 
-export const GET = async (_req: Request) => {
+export const GET = async () => {
   try {
     const blogs = await prisma.blog.findMany({
       select: {
