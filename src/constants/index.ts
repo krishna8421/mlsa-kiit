@@ -1124,7 +1124,7 @@ export const WebDevelopment = [
   },
   {
     id: 5,
-    img: "/members/akshat.jpg",
+    img: "/members/Untitled.png",
     name: "Akshat Srivastava ",
     domain: "Web Development",
   },
