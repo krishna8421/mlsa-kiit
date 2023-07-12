@@ -36,6 +36,7 @@ const ProjectCard = ({
     <div data-aos="zoom-in-up" data-aos-easing="linear"
       data-aos-delay="700" className="relative hover:shadow-blue3  md:hover:shadow-blue2 pb-3 md:pb-5 min-h-[23.75vw] 3xl:min-h-[456px] z-20 group w-[300px] sm:w-[25.8vw] smm:w-[250px] md:w-[24.39vw] lg:w-[20vw] 3xl:w-[27vw] 4xl:w-[526px] rounded-[7px] lg:rounded-[15px]   border border-[#878787] text-start transition duration-300 ease-in-out backdrop-blur-[5px] bg-[#25252580] ">
       <div className="transition duration-300 ease-in-out hidden group-hover:block top-[0px] left-[0px] absolute w-[300px] sm:w-[25.8vw] smm:w-[250px] md:w-[24.39vw] lg:w-[20vw] 3xl:w-[27vw] 4xl:w-[526px] min-h-[23.75vw] 3xl:min-h-[456px] -z-40">
+      
         <Image src="/Projects/Rectangle (6).svg"
           alt="event item"
           width={555}
