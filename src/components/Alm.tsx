@@ -39,7 +39,7 @@ const Alumni1: React.FC = () => {
 
       window.addEventListener("scroll", function () {
         var scrollPosition = window.scrollY;
-        if (scrollPosition > windowHeight / .9) {
+        if (scrollPosition > windowHeight / .4) {
           const element = document.getElementById("myElement"); // gets the circle on top of the slider
 
           if (element) {
@@ -56,10 +56,10 @@ const Alumni1: React.FC = () => {
         }
       });
 
-      if (scrollPosition > windowHeight / .8) {
+      if (scrollPosition > windowHeight / .4) {
         controls.start({ opacity: 1, y: 0, x: 0 }); //Final position for slider
       } else {
-        controls.start({ opacity: 0, y: 1300, x: 0 }); //Initial starting positionn for slider
+        controls.start({ opacity: 0, y: 100, x: 0 }); //Initial starting positionn for slider
       }
     };
     console.log("scroll", window.scrollY);
@@ -78,7 +78,7 @@ const Alumni1: React.FC = () => {
       <div className="mx-auto flex pl-4 md:pl-[50px] lg:pl-[80px] xl:pl-[90px] 2xl:pl-[130px]">
         <motion.div
           className="flex justify-center"
-          initial={{ opacity: 0, y: 1000 }} //before scrolling position of slider
+          initial={{ opacity: 0, y: 200 }} //before scrolling position of slider
           animate={controls} //refer to line 20
           transition={{ duration: 1 }} //slider duration for popping up. if you are changinng duration then make sure to change delay of glow adder so thatt  the gow starts after animation is complete
           onAnimationComplete={handleSliderAnimationComplete}
@@ -98,9 +98,9 @@ const Alumni1: React.FC = () => {
           <motion.div
             initial={{ opacity: 0 }} //initial position of text with opacity 0
             animate={textControls} //text conntrol animation triggered.
-            transition={{ duration: 1.5 }}
+            transition={{ duration: 1 }}
           >
-            <h1 className="sm:mb-[7px] ml-[11px] sm:ml-[15px] lg:ml-[30px] 2xl:ml-[53px] text-[12px] sm:text-[18px] font-semibold md:mb-[20px] md:text-4xl items-start text-[#FFFFFF] 2xl:text-[2.1vw] ">
+            <h1 className="sm:mb-[7px] ml-[11px] sm:ml-[15px] lg:ml-[30px] 2xl:ml-[53px] text-xl font-semibold md:mb-[20px] md:text-4xl items-start text-[#FFFFFF] 2xl:text-[2.1vw] ">
               Message From <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#A03BCF] to-[#6F5BFF]">Our Alumni</span>
             </h1>
           </motion.div>
@@ -124,15 +124,15 @@ const Alumni1: React.FC = () => {
                   // spaceBetween: 100,
                 },
                 382: {
-                  slidesPerView: 1.2,
+                  slidesPerView: 1.1,
                   // spaceBetween: 100,
                 },
                 437: {
-                  slidesPerView: 1.4,
+                  slidesPerView: 1.3,
                   // spaceBetween: 100,
                 },
                 480: {
-                  slidesPerView: 1.3,
+                  slidesPerView: 1.4,
                   // spaceBetween: 100,
                 },
                 516: {
@@ -157,35 +157,48 @@ const Alumni1: React.FC = () => {
                   slidesPerView: 1.3,
                   // spaceBetween: 180,
                 },
-                800: {
-                  slidesPerView: 1.4,
-                  // spaceBetween: 150,
-                },
+                // 800: {
+                //   slidesPerView: 1.3,
+                //   // spaceBetween: 150,
+                // },
                 820: {
-                  slidesPerView: 1.4,
+                  slidesPerView: 1.5,
                   // spaceBetween: 150,
                 },
                 900: {
-                  slidesPerView: 1.6,
+                  slidesPerView: 1.7,
                   // spaceBetween: 150,
                 },
                 1000: {
-                  slidesPerView: 1.9,
+                  slidesPerView: 1.8,
                   // slidesPerView:'auto',
                   // spaceBetween: 150,
                 },
                 1100: {
-                  slidesPerView: 2.1,
+                  slidesPerView: 2.0,
                   // slidesPerView:'auto',
                   // spaceBetween: 150,
                 },
                 1200: {
-                  slidesPerView: 2.3,
+                  slidesPerView: 2.2,
+                  // slidesPerView:'auto',
+                  // spaceBetween: 180,
+                },
+                1290: {
+                  slidesPerView: 2.4,
                   // slidesPerView:'auto',
                   // spaceBetween: 180,
                 },
                 1400: {
-                  slidesPerView: 2.7,
+                  slidesPerView: 2.6,
+                  // spaceBetween: 150,
+                },
+                1600: {
+                  slidesPerView: 2.9,
+                  // spaceBetween: 150,
+                },
+                1800: {
+                  slidesPerView: 3.3,
                   // spaceBetween: 150,
                 },
               }}
@@ -198,9 +211,9 @@ const Alumni1: React.FC = () => {
                     <motion.div
                       // key={index}
                       // className="flex justify-center"
-                      initial={{ opacity: 0, y: 600 }}
+                      initial={{ opacity: 0, y: 100 }}
                       animate={controls}
-                      transition={{ duration: 1 + (index * 0.1) }}
+                      transition={{ duration: 0.5 + (index * 0.2) }}
                       onAnimationComplete={handleSliderAnimationComplete}
                     >
 
