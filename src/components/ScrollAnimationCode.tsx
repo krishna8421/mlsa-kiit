@@ -31,7 +31,7 @@ const ScrollAnimationCode: React.FC = () => {
           if (element) {
             setTimeout(() => {
               element.classList.add("shadow-magenta"); // Glow adder for slider
-            }, 2500); // adds delay to the glow so that the glow starts after animation is complete
+            }, 0); // adds delay to the glow so that the glow starts after animation is complete
           }
         } else {
           const element = document.getElementById("myElement"); // gets the circle on top of the slider
@@ -65,16 +65,15 @@ const ScrollAnimationCode: React.FC = () => {
         onAnimationComplete={handleSliderAnimationComplete}
       >
         <Slider/>
+        
       </motion.div>
       {/* Completed slider animation */}
-      <motion.div
+      <div
         className="flex overflow-hidden"
-        initial={{ opacity: 0, x: 1000, y: 100 }} //initial position of text with opacity 0
-        animate={textControls} //text conntrol animation triggered.
-        transition={{ duration: 3 }}
+        
       >
         <Sponsors />
-      </motion.div>
+      </div>
       {/* Text animation(can be changed)*/}
 
     </div>
