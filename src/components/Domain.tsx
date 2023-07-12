@@ -91,7 +91,7 @@ const Domain: React.FC = () => {
 <Image src="/domainLogos/Rectangle.png" alt="gradient" width={739} height={739} className="object-fit h-[739px] w-[739px] rounded-full bg-no-repeat object-cover blur-[155.5px]"></Image>
 </div> */}
 
-        <div className="mx-auto flex w-full h-full">
+        <div className="mx-auto border border-red-500 flex w-full h-full">
           <motion.div
             className="flex justify-center"
             initial={{ opacity: 0, y: 300 }} //before scrolling position of slider
@@ -110,7 +110,7 @@ const Domain: React.FC = () => {
             </div>
           </motion.div>
 
-          <div className="">
+          <div className="border border-red-500 w-full">
             {/* <motion.div
             initial={{ opacity: 0, x: 500, y: 0 }} //initial position of text with opacity 0
             animate={textControls} //text conntrol animation triggered.
@@ -121,7 +121,7 @@ const Domain: React.FC = () => {
             </h1>
             {/* </motion.div> */}
 
-            <div className="flex w-full 2xl:w-[100%] 3xl:w-[90%] flex-wrap gap-4 md:gap-5 2xl:gap-[30px] pl-8 md:pl-10 lg:pl-12 xl:w-[90%] 2xl:pl-[70px] pb-8 ">
+            <div className="border border-red-500 w-[98%] md:w-[90%] lg:w-[98%] xl:w-[80%] 2xl:w-[90%] 3xl:w-[80%] 4xl:w-[90%] grid items-center justify-center lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4 md:gap-5 2xl:gap-[30px] pl-8 md:pl-10 lg:pl-12 2xl:pl-[70px] pb-8 ">
               {OUR_DOMAINS.map((domain, index) => {
                 return (
                   <motion.div
