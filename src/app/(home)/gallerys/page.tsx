@@ -5,7 +5,7 @@ import Image from "next/image";
 // import GalleryHeroCarousel from "@/components/gallery/GalleryHeroCarousel";
 import GalleryCards from "@/components/gallery/GalleryCards";
 import { useEffect, useState } from "react";
-import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
+import { BiSolidChevronRightCircle, BiSolidChevronLeftCircle } from "react-icons/bi";
 
 const Gallery = () => {
   const [rojectsCounter, setProjectsCounter] = useState(0);
@@ -83,8 +83,8 @@ const Gallery = () => {
           </div>
           <div className="relative mx-auto md:mx-[0px] mt-[23px] md:ml-[0px] md:mt-0 md:mr-[7vw] h-[345px] sm:h-[350px] lg:h-[430px] 2xl:h-[500px] 3xl:h-[600px] -translate-x-3 sm:-translate-x-6 md:-translate-x-0 w-[80vw] sm:w-[75vw] md:w-[40%] object-cover lg:max-h-[600px] 3xl:w-[45%]">
             <div className="absolute inset-0 z-50 flex h-full w-full items-center justify-between px-8 text-2xl">
-              <BsChevronLeft className="shadow-xl cursor-pointer" onClick={LeftChevronClick} />
-              <BsChevronRight className="cursor-pointer" onClick={RightChevronClick} />
+              <BiSolidChevronLeftCircle className="shadow-xl cursor-pointer" onClick={LeftChevronClick} />
+              <BiSolidChevronRightCircle  className="cursor-pointer" onClick={RightChevronClick} />
             </div>
             <Image
               src="/gallery/hero/1.png"
@@ -112,7 +112,7 @@ const Gallery = () => {
               height={1080}
               className={`absolute top-1/2 z-10 -translate-x-1/2 -translate-y-1/2 duration-2000 ease-out transition-all
               ${pictureState > 0 ? "left-[62%] h-[90%] w-[90%]" : "left-[73%] h-[80%] w-[80%]"} 
-              ${pictureState > 1 ? "left-[50%] h-full w-full scale-[113%]" : ""}
+              ${pictureState > 1 ? "left-[49.8%] h-full w-full scale-[105%]" : ""}
             `}
             />
           </div>
