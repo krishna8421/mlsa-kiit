@@ -2,8 +2,8 @@ import { OUR_SPONSORS } from "@/constants";
 
 function Sponsors() {
   return (
-    <div className="flex flex-col overflow-x-hidden">
-      <span className="text-3xl font-inter font-semibold capitalize">
+    <div className="flex flex-col md:ml-20 overflow-x-hidden">
+      <span className="text-4xl font-inter font-semibold capitalize">
         Our{' '}
         <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#21FD8B] to-[#2CC4F2]">
           Sponsors

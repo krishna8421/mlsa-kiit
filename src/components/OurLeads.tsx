@@ -10,7 +10,7 @@ import LeadsCard from "./LeadsCard";
 const OurLeads = () => {
   return (
     <div className="box-border w-[85vw]">
-      <h1 className="ml-9 text-lg font-semibold text-[#ffffff] md:text-3xl">
+      <h1 className="ml-9 text-lg font-semibold text-[#ffffff] md:text-5xl mb-8">
         Our{" "}
         <span className="bg-gradient-to-r from-[#21FD8B] to-[#2CC4F2] bg-clip-text text-transparent">
           Leads

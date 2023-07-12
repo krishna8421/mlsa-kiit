@@ -20,7 +20,7 @@ const EventHero = () => {
               width={1000}
               height={1000}
 
-              className=" ml-6 sm:ml-14 h-[95px] w-[100px] md:h-[115px] md:w-[120px] lg:h-[125px] lg:w-[130px] " />
+              className=" ml-6 sm:ml-10 h-[95px] w-[100px] md:h-[115px] md:w-[120px] lg:h-[125px] lg:w-[130px] " />
 
 
 
