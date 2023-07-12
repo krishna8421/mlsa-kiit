@@ -1,6 +1,6 @@
 "use client";
 import { motion, useAnimation } from "framer-motion";
-import React,{ useEffect } from "react";
+import React, { useEffect } from "react";
 import OurLeads from "./OurLeads";
 import Slider from "./Slider";
 
@@ -8,7 +8,7 @@ const ScrollAnimationLead: React.FC = () => {
   const textControls = useAnimation();
   const sliderControls = useAnimation();
   const handleSliderAnimationComplete = () => {
-    textControls.start({ opacity: 1, x: 30, y: 100 }); //determines final  positionn of text after completion of animation
+    textControls.start({ opacity: 1, x: 0, y: 100 }); //determines final  positionn of text after completion of animation
   };
 
   useEffect(() => {
@@ -44,7 +44,7 @@ const ScrollAnimationLead: React.FC = () => {
       if (scrollPosition > windowHeight / 1.3) {
         controls.start({ opacity: 1, y: 70, x: 0 }); //Final position for slider
       } else {
-        controls.start({ opacity: 0, y: 2000, x: 0 }); //Initial starting positionn for slider
+        controls.start({ opacity: 0, y: 200, x: 0 }); //Initial starting positionn for slider
       }
     };
 
@@ -58,19 +58,19 @@ const ScrollAnimationLead: React.FC = () => {
     <div className="mb-12 pl-4 md:pl-[50px] lg:pl-[80px] xl:pl-[90px] 2xl:pl-[130px] flex w-screen">
       <motion.div
         className="justify-centre flex"
-        initial={{ opacity: 0, y: 2000 }} //before scrolling position of slider
+        initial={{ opacity: 0, y: 200 }} //before scrolling position of slider
         animate={controls} //refer to line 20
-        transition={{ duration: 2.5 }} //slider duration for popping up. if you are changinng duration then make sure to change delay of glow adder so thatt  the gow starts after animation is complete
+        transition={{ duration: 1 }} //slider duration for popping up. if you are changinng duration then make sure to change delay of glow adder so thatt  the gow starts after animation is complete
         onAnimationComplete={handleSliderAnimationComplete}
       >
         <Slider />
       </motion.div>
       {/* Completed slider animation */}
       <motion.div
-        className="flex overflow-hidden"
-        initial={{ opacity: 0, x: 1000, y: 100 }} //initial position of text with opacity 0
+        className="flex overflow-hidden md:ml-16"
+        initial={{ opacity: 0 }} //initial position of text with opacity 0
         animate={textControls} //text conntrol animation triggered.
-        transition={{ duration: 3 }}
+        transition={{ duration: 1.5 }}
       >
         <OurLeads />
       </motion.div>

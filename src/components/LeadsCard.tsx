@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
+// #50CAFF
 import { useState } from "react";
 import LinkdIcon from "../../public/LinkedIn.svg";
 import FacebookIcon from "../../public/facebook.svg";
@@ -25,8 +26,8 @@ const LeadsCard = ({ image, name, domain, index }: Props) => {
     setShowDetail(!showDetail);
   };
   return (
-    <div className="h-[26rem] w-[14rem]  rounded-imageradius" >
-      <div className="relative h-[20rem] w-full rounded-imageradius mt-[4rem] z-10 hover:shadow-[5px_5px_80px_5px_#50CAFF] " onClick={handleImageClick}>
+    <div className="h-[26rem]  w-[14rem]  rounded-imageradius" >
+      <div className="relative h-[20rem] w-full rounded-imageradius mt-[4rem] z-10 hover:shadow-[2px_0px_70px_10px_#4b94b3]  transition-all" onClick={handleImageClick}>
         <Image
           src={image}
           style={imgStyle}

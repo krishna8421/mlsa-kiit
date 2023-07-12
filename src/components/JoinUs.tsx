@@ -74,7 +74,7 @@ const JoinUs: React.FC = () => {
     <>
 
 
-      <div className="min-h-[100px] mt-[200px] pb-20 relative z-0 flex flex-row max-w-[1920px] justify-center items-center mx-auto ">
+      <div className="min-h-[100px]  mt-[80px] pb-20 relative z-0 flex flex-row max-w-[1920px] justify-center items-center mx-auto ">
 
         <div className="flex pt-12 pl-4 md:pl-[50px] lg:pl-[80px] xl:pl-[90px] 2xl:pl-[130px] w-full">
           <motion.div
