@@ -31,7 +31,7 @@ const Alumni1: React.FC = () => {
     return () => clearTimeout(timer);
   });
   const controls = useAnimation();
-
+  const controls1 = useAnimation();
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY; //determines how much the user has scrolled
@@ -39,7 +39,7 @@ const Alumni1: React.FC = () => {
 
       window.addEventListener("scroll", function () {
         var scrollPosition = window.scrollY;
-        if (scrollPosition > windowHeight / .4) {
+        if (scrollPosition > windowHeight / .37) {
           const element = document.getElementById("myElement"); // gets the circle on top of the slider
 
           if (element) {
@@ -56,10 +56,12 @@ const Alumni1: React.FC = () => {
         }
       });
 
-      if (scrollPosition > windowHeight / .4) {
+      if (scrollPosition > windowHeight / .35) {
         controls.start({ opacity: 1, y: 0, x: 0 }); //Final position for slider
+        controls1.start({ opacity: 1, y: 0, x: 0 }); //Final position for slider
       } else {
-        controls.start({ opacity: 0, y: 100, x: 0 }); //Initial starting positionn for slider
+        controls.start({ opacity: 0, y: 700, x: 0 }); //Initial starting positionn for slider
+        controls1.start({ opacity: 0, y: 0, x: 150 }); //Initial starting positionn for slider
       }
     };
     console.log("scroll", window.scrollY);
@@ -97,7 +99,7 @@ const Alumni1: React.FC = () => {
         <div className="overflow-hidden">
           <motion.div
             initial={{ opacity: 0 }} //initial position of text with opacity 0
-            animate={textControls} //text conntrol animation triggered.
+            animate={controls1} //text conntrol animation triggered.
             transition={{ duration: 1 }}
           >
             <h1 className="sm:mb-[7px] ml-[11px] sm:ml-[15px] lg:ml-[30px] 2xl:ml-[53px] text-xl font-semibold md:mb-[20px] md:text-4xl items-start text-[#FFFFFF] 2xl:text-[2.1vw] ">
@@ -211,7 +213,7 @@ const Alumni1: React.FC = () => {
                     <motion.div
                       // key={index}
                       // className="flex justify-center"
-                      initial={{ opacity: 0, y: 100 }}
+                      initial={{ opacity: 0, y: 300 }}
                       animate={controls}
                       transition={{ duration: 0.5 + (index * 0.2) }}
                       onAnimationComplete={handleSliderAnimationComplete}

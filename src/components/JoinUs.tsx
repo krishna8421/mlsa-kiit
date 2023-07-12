@@ -31,7 +31,7 @@ const JoinUs: React.FC = () => {
 
       window.addEventListener("scroll", function () {
         var scrollPosition = window.scrollY;
-        if (scrollPosition > windowHeight / .9) {
+        if (scrollPosition > windowHeight / .2) {
           const element = document.getElementById("myElement"); // gets the circle on top of the slider
 
           if (element) {
@@ -48,7 +48,7 @@ const JoinUs: React.FC = () => {
         }
       });
 
-      if (scrollPosition > windowHeight / .6) {
+      if (scrollPosition > windowHeight / .47) {
         controls.start({ opacity: 1, y: 0, x: 0 });
         controls2.start({ opacity: 1, y: 0, x: 0 });
         controls3.start({ opacity: 1, y: 0, x: 0 });
@@ -81,7 +81,7 @@ const JoinUs: React.FC = () => {
             className="flex justify-center"
             initial={{ opacity: 0, y: 260 }} //before scrolling position of slider
             animate={controls} //refer to line 20
-            transition={{ duration: 0.5 }} //slider duration for popping up. if you are changinng duration then make sure to change delay of glow adder so thatt  the gow starts after animation is complete
+            transition={{ duration: 1.5 }} //slider duration for popping up. if you are changinng duration then make sure to change delay of glow adder so thatt  the gow starts after animation is complete
             onAnimationComplete={handleSliderAnimationComplete}
           >
             <div className="flex flex-col items-center">
@@ -110,19 +110,19 @@ const JoinUs: React.FC = () => {
                 // className="flex justify-between flex-nowrap"
                 initial={{ opacity: 0 }}
                 animate={controls3}
-                transition={{ duration: 0.9 }}
+                transition={{ duration: 1.5 }}
                 onAnimationComplete={handleSliderAnimationComplete}
               >
                 <div className="mt-6 flex  font-bold  md:mr-10 justify-between items-center ">
                   <div className=" ">
-                    <div className="pl-6 sm:pl-[40px] md:pl-[60px] lg:pl-[80px] pt-[70px] text-sm sm:text-lg md:text-2xl lg:text-4xl font-semibold">
+                    <div className="pl-6 sm:pl-[40px] md:pl-[60px] lg:pl-[80px] pt-[70px] text-sm sm:text-lg md:text-2xl lg:text-4xl font-semibold text-[24px]">
                       <h1 className="bg-gradient-to-r  from-[#0070C5] to-[#3BABCF] text-transparent bg-clip-text">Join</h1>
                       <div className="duration-50 my-2  h-[4px] w-[140%] bg-gradient-to-r from-[#456FDC] to-transparent  sm:my-3 "></div>
 
                       <h1>
-                        Micrsoft Learn <span className=" bg-gradient-to-r  from-[#0070C5] to-[#3BABCF] text-transparent bg-clip-text">Student</span>
+                        Microsoft Learn <span className=" bg-gradient-to-r  from-[#0070C5] to-[#3BABCF] text-transparent bg-clip-text">Student</span>
                       </h1>
-                      <h1>Amabasder</h1>
+                      <h1>Ambassador</h1>
                       <h1 className="font-normal">KIIT Chapter</h1>
                     </div>
                     <Link href="#" className="">
@@ -138,7 +138,7 @@ const JoinUs: React.FC = () => {
                 className="flex w-[40%] justify-end"
                 initial={{ opacity: 0, x: 50 }}
                 animate={controls2}
-                transition={{ duration: 0.6 }}
+                transition={{ duration: 2 }}
                 onAnimationComplete={handleSliderAnimationComplete}
 
               >

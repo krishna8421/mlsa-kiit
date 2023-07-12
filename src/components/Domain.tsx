@@ -22,7 +22,7 @@ const Domain: React.FC = () => {
     return () => clearTimeout(timer);
   });
   const controls = useAnimation();
-
+  const controls1 = useAnimation();
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY; //determines how much the user has scrolled
@@ -47,10 +47,12 @@ const Domain: React.FC = () => {
         }
       });
 
-      if (scrollPosition > windowHeight / .7) {
-        controls.start({ opacity: 1, y: 0, x: 0 }); //Final position for slider
+      if (scrollPosition > windowHeight / .9) {
+        controls.start({ opacity: 1, y: 0, x: 0 });
+        controls1.start({ opacity: 1, y: 0, x: 0 }); //Final position for slider
       } else {
-        controls.start({ opacity: 0, y: 200, x: 0 }); //Initial starting positionn for slider
+        controls.start({ opacity: 0, y: 200, x: 0 });
+        controls1.start({ opacity: 0, y: 0, x: 140 }); //Initial starting positionn for slider
       }
     };
     console.log("scroll", window.scrollY);
@@ -84,7 +86,7 @@ const Domain: React.FC = () => {
       </div>
     </div> */}
 
-      <div className="min-h-[100px] pl-8 overflow-y-hidden pt-10 md:pl-[50px] lg:pl-[80px] xl:pl-[90px] 2xl:pl-[130px] mt-[20px] h-auto md:pb[2px] pb-[1px] relative z-0 flex flex-row max-w-[1920px] justify-center items-center mx-auto">
+      <div className="overflow-hidden min-h-[100px] pl-8 overflow-y-hidden pt-10 md:pl-[50px] lg:pl-[80px] xl:pl-[90px] 2xl:pl-[130px] mt-[20px] h-auto md:pb[2px] pb-[1px] relative z-0 flex flex-row max-w-[1920px] justify-center items-center mx-auto">
         {/* <div className="h-[439px] w-[439px] absolute z-10 rounded full -top-[300px] -left-[578px]">
 <div className="md:pb-[222px] pb-[128px] relative z-0 flex flex-row justify-center items-center mx-auto">
 {/* <div className="h-[439px] w-[439px] absolute z-10 rounded full -top-[300px] -left-[578px]">
@@ -111,15 +113,16 @@ const Domain: React.FC = () => {
           </motion.div>
 
           <div className="">
-            {/* <motion.div
-            initial={{ opacity: 0, x: 500, y: 0 }} //initial position of text with opacity 0
-            animate={textControls} //text conntrol animation triggered.
-            transition={{ duration: 0.5 }}
-          > */}
-            <h1 className="sm:mb-[7px] ml-[11px] sm:ml-[15px] lg:ml-[30px] 2xl:ml-[53px] text-[12px] sm:text-[18px] font-semibold md:mb-[20px] md:text-3xl items-start text-[#FFFFFF] 2xl:text-[2.1vw] ">
+            <motion.div
+            initial={{ opacity: 0, x: 70, y: 0 }} //initial position of text with opacity 0
+            animate={controls1} //text conntrol animation triggered.
+            transition={{ duration: 1 }}
+            onAnimationComplete={handleSliderAnimationComplete}
+          >
+            <h1 className="sm:mb-[7px] ml-[11px] sm:ml-[15px] lg:ml-[30px] 2xl:ml-[53px] text-[24px] sm:text-[18px] font-semibold md:mb-[20px] md:text-3xl items-start text-[#FFFFFF] 2xl:text-[2.4vw] ">
               Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#A03BCF] to-[#6F5BFF]">Domain</span>
             </h1>
-            {/* </motion.div> */}
+            </motion.div>
 
             <div className="flex w-full 2xl:w-[100%] 3xl:w-[90%] flex-wrap gap-4 md:gap-5 2xl:gap-[30px] pl-8 md:pl-10 lg:pl-12 xl:w-[90%] 2xl:pl-[70px] pb-8 ">
               {OUR_DOMAINS.map((domain, index) => {
@@ -127,7 +130,7 @@ const Domain: React.FC = () => {
                   <motion.div
                     key={index}
                     className="flex justify-center"
-                    initial={{ opacity: 0, y: 200 }}
+                    initial={{ opacity: 0, y: 100 }}
                     animate={controls}
                     transition={{ duration: 0.5 + (index * 0.1) }}
                     onAnimationComplete={handleSliderAnimationComplete}
