@@ -301,37 +301,37 @@ export const OUR_DOMAINS = [
   {
     name: "Technical",
     about:
-      "MLSA being a technical community, the Technical domain behaves as the core of all innovations and ideas that are worked with. The domain comprises members remarkable in the field of technology and are skilled to work wonders with tech.",
+      "Our tech-savvy team of innovators and problem solvers who harness the power of technology to shape the future. With their expertise in cutting-edge tools and technologies, they create seamless digital experiences, thus making learning lively and fun",
     imgSrc: "/domainLogos/ComputerSupport.png",
   },
   {
     name: "Creative",
     about:
-      "A cohort of elite minds, full of colors and designs. This domain is responsible for exhibiting the creativity of the community by showcasing the skills and talent to make something dull and boring appear colorful, innovative and catchy.",
+      "Our team of imaginative minds breathes life into ideas, crafting captivating concepts with their boundless creativity. With their diverse skill sets, they transform visions into stunning and thought-provoking works of art, leaving audiences awestruck",
     imgSrc: "/domainLogos/PaintBrush.png",
   },
   {
     name: "Operations",
     about:
-      " Tranquility is where innovation thrives. And to maintain the peaceful environment in the community,  the domain of Operations ensures that the coordination among the members is stable and our ship sails smoothly even through storms.",
+      "Our operations team is the backbone of our society, ensuring that everything runs smoothly behind the scenes. With their exceptional organizational skills, they handle logistics, coordination, and resource management, enabling the seamless execution of our projects and initiatives.",
     imgSrc: "/domainLogos/Idea.png",
   },
   {
     name: "Marketing",
     about:
-      "The connection our community has with the outside world for sponsorships and branding, is to be attributed to the domain of Marketing. The people in this domain are exceptionally persuasive and ensure that the community stays well funded.",
+      "A team of strategic minds who are responsible for amplifying the voice of MLSA. Through their creative thinking, deep market insights and with their expertly devised innovative strategies they help us link with the audience and the corporate world",
     imgSrc: "/domainLogos/Omnichannel.png",
   },
   {
     name: "Youtube",
     about:
-      "It is the domain of Youtube hosting that engages with the audience through visual content and interviews that keep people updated about tech. It links us to the outside world and lets them know what is cooking inside the community of MLSA.",
+      "A team of creative minds harnessing their skillset to bring ideas to life. Through their mastery of video storytelling, exceptional editing skills, and a thorough understanding of the YouTube platform, they craft amazing content that keeps viewers engaged.",
     imgSrc: "/domainLogos/TVShow.png",
   },
   {
-    name: "Graphics",
+    name: "Design",
     about:
-      "The domain of Graphics aims in elevating the quality of the content overall. It is the responsibility of this domain to creatively add the requisite graphics in our website and socials. It is their innovative work that helps the audience engage better with us.",
+      "A team of visionary artists breathing life into ideas through their exceptional skill set. With their keen eye for aesthetics and creative expertise, they transform concepts into stunning visual experiences.",
     imgSrc: "/domainLogos/Vector.png",
   },
 ];
@@ -811,7 +811,7 @@ export const EVENTS2020 = [
 
 // members
 
-export const videoediting = [
+export const videoedit = [
   {
     id: 1,
     img: "/members/pratik.JPG",
@@ -850,7 +850,7 @@ export const videoediting = [
   },
 ];
 
-export const Marketing = [
+export const Marketing1 = [
   {
     id: 1,
     img: "/members/YASHASWINI SARANGI.jpg",
@@ -1207,7 +1207,7 @@ export const ARVR = [
   },
 ];
 
-export const cloud = [
+export const Cloud = [
   {
     id: 1,
     img: "/members/Archit Gupta.jpg",

@@ -84,12 +84,12 @@ const Domain: React.FC = () => {
       </div>
     </div> */}
 
-<div className="min-h-[100px] h-auto md:pb-[222px] pb-[128px] relative z-0 flex flex-row max-w-[1920px] justify-center items-center mx-auto">
+<div className="md:pb-[222px] pb-[128px] relative z-0 flex flex-row justify-center items-center mx-auto">
 {/* <div className="h-[439px] w-[439px] absolute z-10 rounded full -top-[300px] -left-[578px]">
 <Image src="/domainLogos/Rectangle.png" alt="gradient" width={739} height={739} className="object-fit h-[739px] w-[739px] rounded-full bg-no-repeat object-cover blur-[155.5px]"></Image>
 </div> */}
 
-<div className="mx-auto flex -translate-y-[60vh] md:-translate-y-[30vh] sm:ml-[80px]">
+<div className="mx-auto flex w-full -translate-y-[60vh] md:-translate-y-[30vh] sm:ml-[80px] ">
         <motion.div
           className="flex justify-center"
           initial={{ opacity: 0, y: 1000 }} //before scrolling position of slider
@@ -107,26 +107,25 @@ const Domain: React.FC = () => {
             <div className="h-full w-[5px]  bg-gradient-to-b from-[#533BD0] to-transparent duration-700 transition lg:h-[80vh]"></div>
           </div>
         </motion.div>
-{/* <div className="h-full ml-[7px] sm:ml-[31px] md:ml-[53px] 2xl:[120px] flex flex-col items-center ">
- <div className="md:w-[84px] md:h-[84px] w-[48] h-[48] border border-cyan-300">
-    <Image src="/domainLogos/Dot.png" alt="no img" width={84} height={84} className="object-contain -scale-150 md:w-[84px] md:h-[84px] sm:w-[48] sm:h-[48] w-[35px] h-[35px]"></Image>
-    </div>
-  <div className="h-full  z-20 -mx-10 w-[2px] bg-[blue] ">
 
-  </div>
-</div> */}
-<div className="">
+
+
+<div className="flex flex-col items-center w-full">
 <motion.div
             initial={{ opacity: 0, x: 500, y: 0 }} //initial position of text with opacity 0
             animate={textControls} //text conntrol animation triggered.
-            transition={{ duration: 0.5 }}
+            transition={{ duration: .5 }}
+            className="mr-auto"
           >
 <h1 className="sm:mb-[7px] ml-[11px] sm:ml-[15px] lg:ml-[30px] 2xl:ml-[53px] text-[12px] sm:text-[18px] font-semibold md:mb-[20px] md:text-3xl items-start text-[#FFFFFF] 2xl:text-[2.1vw] ">
   Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#A03BCF] to-[#6F5BFF]">Domain</span>
 </h1>
 </motion.div>
 
-<div className="flex w-[80vw]  flex-wrap  gap-4 md:gap-5 2xl:gap-7 pl-[11px] sm:pl-[23px] md:pl-[77px] 2xl:pl-[47px]">
+
+
+
+  <div className=" ml-2 3xl:ml-5 mr-3 grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 lg:max-w-[1000px] 2xl:max-w-[1300px] 3xl:max-w-[1300px] 4xl:max-w-[1400px]  items-center gap-4 md:gap-5 2xl:gap-7">
   {OUR_DOMAINS.map((domain, index) => {
     return (
       <motion.div
@@ -134,7 +133,7 @@ const Domain: React.FC = () => {
               className="flex justify-center"
               initial={{ opacity: 0, y: 100 }} 
               animate={controls} 
-              transition={{ duration: 0.5+ (index*0.1) }} 
+              transition={{ duration: 1.2 + (index*0.2) }} 
               onAnimationComplete={handleSliderAnimationComplete}
             >
       <DomainCard
@@ -148,11 +147,11 @@ const Domain: React.FC = () => {
     );
   })}
   
-</div>
-</div>
-</div>
-</div>
-</>
+       </div>
+      </div>
+    </div>
+  </div>
+ </>
   );
 };
 
