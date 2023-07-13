@@ -22,18 +22,18 @@ const Item = ({ into }: any) => {
   };
 
   return (
-    <div className="h-[250px] md:h-[300px] lg:h-[350px] 2xl:h-[400px]   w-full rounnded-xl" >
-      <div className="image-members rounded-xl z-10 relative h-[210px] md:h-[250px] lg:h-[290px] 2xl:h-[340px] w-full" onClick={handleImageClick}>
-        <Image
-          src={into.img}
-          style={imgStyle}
-          className="h-full z-20 w-full rounded-xl"
-          width={700}
-          height={700}
-          alt="name"
-        ></Image>
+    <div className="h-[220px] md:h-[270px] lg:h-[350px] 2xl:h-[400px] w-full rounded-md md:rounded-xl" >
+        <div className="image-members rounded-md md:rounded-xl hover:cursor-pointer z-10 relative h-[175px] md:h-[230px] lg:h-[290px] 2xl:h-[340px] w-full" onClick={handleImageClick}>
+          <Image
+            src={into.img}
+            style={imgStyle}
+            className={showDetail ? "h-full z-30  w-full rounded-t-md rounded-b-none md:rounded-t-xl md:rounded-b-none":"h-full z-30  w-full rounded-md md:rounded-xl"}
+            width={700}
+            height={700}
+            alt="name"
+          ></Image>
 
-      </div>
+        </div>
 
       <div className={showDetail ? "-translate-y-[70px] lg:-translate-y-16 scale-100 2xl:-translate-y-14 pb-[5px] md:pb-[8px] backdrop-blur-[5px] bg-[#25252580] min-h-[105px] w-full p-[5px]  flex rounded-[10px] justify-between items-end transition  transform ease-in-out delay-400 z-10" : " flex items-center backdrop-blur-[5px] bg-[#25252580] scale-0 min-h-[100px] justify-between transition transform ease-in-out delay-400  -translate-y-40 z-0"}>
         <div className="flex items-center relative w-full justify-between">
@@ -48,13 +48,13 @@ const Item = ({ into }: any) => {
 
           <div className="flex items-center gap-[2px] md:gap-1 ">
             <Link href={"/"}>
-              <Image src={InstaIcon} alt="icon" className="h-[15px] w-[15px] md:h-[17px] md:w-[17px] 2xl:h-[24px] 2xl:w-[24px]" />
+              <Image src={InstaIcon} alt="icon" className="hover:scale-110 transition duration-100 h-[15px] w-[15px] md:h-[17px] md:w-[17px] 2xl:h-[24px] 2xl:w-[24px]" />
             </Link>
             <Link href={""}>
-              <Image src={LinkdIcon} alt="icon" className="h-[15px] w-[15px] md:h-[17px] md:w-[17px] 2xl:h-[24px] 2xl:w-[24px]" />
+              <Image src={LinkdIcon} alt="icon" className="hover:scale-110 transition duration-100 h-[15px] w-[15px] md:h-[17px] md:w-[17px] 2xl:h-[24px] 2xl:w-[24px]" />
             </Link>
             <Link href={""}>
-              <Image src={GithubIcon} alt="icon" className="h-[15px] w-[15px] md:h-[17px] md:w-[17px] 2xl:h-[24px] 2xl:w-[24px]" />
+              <Image src={GithubIcon} alt="icon" className="hover:scale-110 transition duration-100 h-[15px] w-[15px] md:h-[17px] md:w-[17px] 2xl:h-[24px] 2xl:w-[24px]" />
             </Link>
           </div>
 
@@ -83,7 +83,7 @@ const youtube = () => {
 
         </div>
         <div className="flex flex-col">
-          <div className="text-[16px] md:text-2xl lg:text-3xl mb-[30px] leading-normal text-transparent text-white font-semibold ">Youtube</div>
+          <div className="text-[16px] md:text-2xl lg:text-3xl mb-[30px] leading-normal text-transparent text-white font-normal ">Youtube</div>
           <div className="grid mr-0 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 w-full gap-2 md:gap-4 lg:gap-8">
 
             {YT.map((into, index) => {

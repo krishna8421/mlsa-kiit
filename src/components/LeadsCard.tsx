@@ -31,7 +31,7 @@ const LeadsCard = ({ image, name, domain, index }: Props) => {
         <Image
           src={image}
           style={imgStyle}
-          className="h-full w-full rounded-imageradius border border-[#5F5E5E] grayscale"
+          className="h-full  w-full rounded-imageradius border border-[#5F5E5E] grayscale"
           width={700}
           height={700}
           alt="name"

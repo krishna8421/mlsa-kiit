@@ -103,7 +103,7 @@ const About: React.FC = () => {
                 and events since 2017
               </p>
             </motion.div>
-            <div className="flex flex-col md:flex-row md:flex-wrap gap-[40px] xl:gap-[30px] 2xl:gap-[50px] md:ml-[60px] mt-[100px] sm:ml-12  mr-4 ">
+            <div className="flex flex-col md:flex-row md:flex-wrap gap-[40px] xl:gap-[30px] 2xl:gap-[50px] md:ml-[60px] mt-[50px] md:mt-[100px] sm:ml-12  mr-4 ">
               <motion.div
                 className="flex justify-center"
                 initial={{ opacity: 0, y: 1000 }} //before scrolling position of slider
