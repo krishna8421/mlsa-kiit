@@ -33,7 +33,7 @@ const NavbarItem = ({
   return (
     <Link href={href} target={`${external ? "_blank" : ""}`}>
       <div
-        className={`2xl:text-[1vw] text-md  cursor-pointer rounded-lg text-sm p-2   transition hover:bg-[#ffffff33] font-semibold hover:text-[#0000008a]
+        className={`2xl:text-[1vw] text-md  cursor-pointer rounded-lg text-sm p-2   transition hover:bg-[#ffffff48] font-semibold hover:text-[#000000a9]
         ${className} ${mobileView && "w-full text-center text-white"} 
       `}
       >

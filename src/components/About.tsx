@@ -94,7 +94,7 @@ const About: React.FC = () => {
               animate={controls1} //refer to line 20
               transition={{ duration: 1 }} //slider duration for popping up. if you are changinng duration then make sure to change delay of glow adder so thatt  the gow starts after animation is complete
               onAnimationComplete={handleSliderAnimationComplete}>
-              <h1 className="js-build-in-item text-2xl font-semibold md:text-3xl lg:text-4xl">
+              <h1 className="js-build-in-item text-xl font-semibold md:text-4xl 2xl:text-[2.1vw]">
                 About<span className="ml-1 text-[#3B61CF]">Us</span>
               </h1>
               <p className="text-md md:mt-6 text-[#7d8590] md:text-xl md:leading-6">

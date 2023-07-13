@@ -101,7 +101,7 @@ const Domain: React.FC = () => {
           >
             <div className="flex flex-col items-center ">
               <div
-                className="flex h-[41px] w-[41px] items-center justify-center rounded-full bg-[#A93BCF] bg-gradient-to-b from-[#473BCF]  to-[#fff]/30 shadow-dotShadowBlue duration-700 transition 
+                className="flex h-[30px] w-[30px] md:h-[41px] md:w-[41px] items-center justify-center rounded-full bg-[#A93BCF] bg-gradient-to-b from-[#473BCF]  to-[#fff]/30 shadow-dotShadowBlue duration-700 transition 
               "
               >
                 <div className="h-[12px] w-[12px] self-center rounded-full bg-white"></div>
@@ -116,7 +116,7 @@ const Domain: React.FC = () => {
             animate={textControls} //text conntrol animation triggered.
             transition={{ duration: 0.5 }}
           > */}
-            <h1 className="sm:mb-[7px] ml-[11px] sm:ml-[15px] lg:ml-[30px] 2xl:ml-[53px] text-[12px] sm:text-[18px] font-semibold md:mb-[20px] md:text-4xl items-start text-[#FFFFFF] 2xl:text-[2.1vw] ">
+            <h1 className="sm:mb-[7px] ml-[11px] sm:ml-[15px] lg:ml-[30px] 2xl:ml-[53px] text-[12px]  font-semibold md:mb-[20px]  items-start text-[#FFFFFF] md:text-4xl text-xl  2xl:text-[2.1vw] ">
               Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#A03BCF] to-[#6F5BFF]">Domain</span>
             </h1>
             {/* </motion.div> */}
