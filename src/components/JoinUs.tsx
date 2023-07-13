@@ -31,7 +31,7 @@ const JoinUs: React.FC = () => {
 
       window.addEventListener("scroll", function () {
         var scrollPosition = window.scrollY;
-        if (scrollPosition > windowHeight / .3) {
+        if (scrollPosition > windowHeight / .2) {
           const element = document.getElementById("myElement"); // gets the circle on top of the slider
 
           if (element) {
@@ -48,7 +48,7 @@ const JoinUs: React.FC = () => {
         }
       });
 
-      if (scrollPosition > windowHeight / .3) {
+      if (scrollPosition > windowHeight / .27) {
         controls.start({ opacity: 1, y: 0, x: 0 });
         controls2.start({ opacity: 1, y: 0, x: 0 });
         controls3.start({ opacity: 1, y: 0, x: 0 });
@@ -74,26 +74,26 @@ const JoinUs: React.FC = () => {
     <>
 
 
-      <div className="min-h-[100px]  mt-[80px] pb-20 relative z-0 flex flex-row max-w-[1920px] justify-center items-center mx-auto ">
+      <div className="min-h-[100px]  mt-[80px] pb-8 md:pb-20 relative z-0 flex flex-row max-w-[1920px] justify-center items-center mx-auto ">
 
         <div className="flex pt-12 pl-4 md:pl-[50px] lg:pl-[80px] xl:pl-[90px] 2xl:pl-[130px] w-full">
           <motion.div
             className="flex justify-center"
             initial={{ opacity: 0, y: 260 }} //before scrolling position of slider
             animate={controls} //refer to line 20
-            transition={{ duration: 0.5 }} //slider duration for popping up. if you are changinng duration then make sure to change delay of glow adder so thatt  the gow starts after animation is complete
+            transition={{ duration: 1.5 }} //slider duration for popping up. if you are changinng duration then make sure to change delay of glow adder so thatt  the gow starts after animation is complete
             onAnimationComplete={handleSliderAnimationComplete}
           >
             <div className="flex flex-col items-center">
               <div
-                className="flex h-[41px] w-[41px] items-center justify-center rounded-full bg-[#3BABCF] bg-gradient-to-b from-[#3B61CF]  to-[#fff]/30 shadow-dotShadowBlue duration-700 transition 
+                className="flex h-[30px] w-[30px] md:h-[41px] md:w-[41px] items-center justify-center rounded-full bg-[#3BABCF] bg-gradient-to-b from-[#3B61CF]  to-[#fff]/30 shadow-dotShadowBlue duration-700 transition 
               "
               >
                 <div className="h-[12px] w-[12px] self-center rounded-full bg-white"></div>
               </div>
 
 
-              <div className="h-[350px] sm:h-[500px] w-[5px]  bg-gradient-to-b from-[#3BABCF] to-transparent duration-700 transition ">
+              <div className="h-[330px] md:h-[500px] w-[5px]  bg-gradient-to-b from-[#3BABCF] to-transparent duration-700 transition ">
 
                 <Image src='/joinus.svg' alt="vector" height={80} width={50} className="absolute h-[30%] w-[8%] sm:w-[5%] sm:h-[40%] top-[23%]" />
               </div>
@@ -110,19 +110,19 @@ const JoinUs: React.FC = () => {
                 // className="flex justify-between flex-nowrap"
                 initial={{ opacity: 0 }}
                 animate={controls3}
-                transition={{ duration: 0.9 }}
+                transition={{ duration: 1.5 }}
                 onAnimationComplete={handleSliderAnimationComplete}
               >
                 <div className="mt-6 flex  font-bold  md:mr-10 justify-between items-center ">
                   <div className=" ">
-                    <div className="pl-6 sm:pl-[40px] md:pl-[60px] lg:pl-[80px] pt-[70px] text-sm sm:text-lg md:text-2xl lg:text-4xl font-semibold">
+                    <div className="pl-6 sm:pl-[40px] md:pl-[60px] lg:pl-[80px] pt-[70px] text-sm sm:text-lg md:text-2xl lg:text-4xl font-semibold text-[24px]">
                       <h1 className="bg-gradient-to-r  from-[#0070C5] to-[#3BABCF] text-transparent bg-clip-text">Join</h1>
                       <div className="duration-50 my-2  h-[4px] w-[140%] bg-gradient-to-r from-[#456FDC] to-transparent  sm:my-3 "></div>
 
                       <h1>
-                        Micrsoft Learn <span className=" bg-gradient-to-r  from-[#0070C5] to-[#3BABCF] text-transparent bg-clip-text">Student</span>
+                        Microsoft Learn <span className=" bg-gradient-to-r  from-[#0070C5] to-[#3BABCF] text-transparent bg-clip-text">Student</span>
                       </h1>
-                      <h1>Amabasder</h1>
+                      <h1>Ambassador</h1>
                       <h1 className="font-normal">KIIT Chapter</h1>
                     </div>
                     <Link href="#" className="">
@@ -138,7 +138,7 @@ const JoinUs: React.FC = () => {
                 className="flex w-[40%] justify-end"
                 initial={{ opacity: 0, x: 50 }}
                 animate={controls2}
-                transition={{ duration: 0.6 }}
+                transition={{ duration: 2 }}
                 onAnimationComplete={handleSliderAnimationComplete}
 
               >

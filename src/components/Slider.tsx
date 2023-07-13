@@ -8,7 +8,7 @@ const Slider = () => {
             >
               <div className="h-[12px] w-[12px] self-center rounded-full bg-white"></div>
             </div>
-            <div className="h-full w-[5px]  bg-gradient-to-b from-[#2CC4F5] to-transparent duration-700 transition lg:h-[80vh]"></div>
+            <div className="h-full w-[5px]  bg-gradient-to-b from-[#2CC4F5] to-transparent duration-700 transition lg:h-[90vh]"></div>
           </div>
     );
 };

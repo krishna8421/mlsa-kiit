@@ -31,6 +31,7 @@ const Leads: React.FC = () => {
         return () => clearTimeout(timer);
     });
     const controls = useAnimation();
+    const controls1 = useAnimation();
 
     useEffect(() => {
         const handleScroll = () => {
@@ -58,8 +59,11 @@ const Leads: React.FC = () => {
 
             if (scrollPosition > windowHeight / .4) {
                 controls.start({ opacity: 1, y: 0, x: 0 }); //Final position for slider
+                controls1.start({ opacity: 1, y: 0, x: 0 }); //Final position for slider
             } else {
                 controls.start({ opacity: 0, y: 200, x: 0 }); //Initial starting positionn for slider
+                controls1.start({ opacity: 0, y: 0, x: 150 }); //Initial starting positionn for slider
+                
             }
         };
         console.log("scroll", window.scrollY);
@@ -75,7 +79,7 @@ const Leads: React.FC = () => {
 
     return (
         <>
-            <div className="mx-auto mt-24  flex  ml-[25px]  sm:ml-[80px]">
+            <div className="mx-auto mt-24  flex ml-4  md:ml-[50px] lg:ml-[80px]">
                 <motion.div
                     className="flex justify-center"
                     initial={{ opacity: 0, y: 230 }} //before scrolling position of slider
@@ -85,7 +89,7 @@ const Leads: React.FC = () => {
                 >
                     <div className="flex flex-col items-center">
                         <div
-                            className="flex h-[41px] w-[41px] items-center justify-center rounded-full bg-[#2CC4F5] bg-gradient-to-b from-[#20FF87]  to-[#fff]/30 shadow-dotShadowBlue duration-700 transition 
+                            className="flex h-[30px] w-[30px] md:h-[41px] md:w-[41px] items-center justify-center rounded-full bg-[#2CC4F5] bg-gradient-to-b from-[#20FF87]  to-[#fff]/30 shadow-dotShadowBlue duration-700 transition 
               "
                         >
                             <div className="h-[12px] w-[12px] self-center rounded-full bg-white"></div>
@@ -97,7 +101,7 @@ const Leads: React.FC = () => {
                 <div className="overflow-hidden">
                     <motion.div
                         initial={{ opacity: 0 }} //initial position of text with opacity 0
-                        animate={textControls} //text conntrol animation triggered.
+                        animate={controls1} //text conntrol animation triggered.
                         transition={{ duration: 1.5 }}
                     >
                         <h1 className="sm:mb-[7px] ml-[11px] sm:ml-[15px] lg:ml-[30px] 2xl:ml-[53px] text-[12px] sm:text-[18px] font-semibold md:mb-[20px] md:text-4xl items-start text-[#FFFFFF] 2xl:text-[2.1vw] ">
@@ -153,7 +157,7 @@ const Leads: React.FC = () => {
                                     <SwiperSlide key={index}>
                                         <motion.div
                                             // key={index}
-                                            className="mx-5 md:mx-14"
+                                            className="mx-4 md:mx-8 lg:mx-14"
                                             initial={{ opacity: 0, y: 800 }}
                                             animate={controls}
                                             transition={{ duration: 0.5 + (index * 0.1) }}

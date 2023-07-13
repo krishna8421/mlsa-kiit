@@ -275,13 +275,13 @@ export const ABOUT_US = {
   title: "ABOUT US",
   heading: "We have been doing projects and events since 2017.",
   description:
-    "Microsoft Learn Student Ambassador, KIIT Chapter is a community dedicated towards promoting technology by engaging enthusiastic individuals to innovate and exhibit their knowledge and skills in the field of technology. It brings together bright-minded individuals and keen learners passionate about techware and offers them a platform to both learn and implement their ideas thereby living up to their motto of “tech for all”. Be it workshops, podcasts or hackathons, we conduct many such fun-filled tech activities with the aim to aid shape the future of tech-minded individuals in turn helping them realize their true potential. It is our determination to preserve the reputation and legacy of our esteemed organization and with this belief, we continue to strive for nothing less but the best.",
+    "MLSA envisions a world where everyone has access to the benefits of technology. We believe that technology has the potential to be an effective tool for education.We are committed to educating everyone about various tech stacks, thus keeping them updated.",
   our_vision:
     "Our vision is to elevate the coding culture of Kalinga Institute of Industrial Technology, Bhubaneswar by providing opportunities to students to work on projects and boost their analytical and logical skills along with the coding.",
   our_goal:
-    "Our goal is to encourage young minds to pursue knowledge in unique ways. Our Project Wing is dedicated to provide the exposure to industrial projects.Our Mission",
+    "Connecting people with technology and assisting them in using it to enhance their lives are the two main objectives of MLSA. In order to achieve this, we organize events, work on projects, and educate everyone on various tech stacks.",
   our_mission:
-    "Our mission is to host purpose driven events,to promote sustainable technology and overall growth of students.",
+    "The mission of MLSA is Tech for All .We empower individuals to embrace the digital world with confidence through engaging events, innovative projects, and meaningful connections. We are dedicated to bridging the technological divides, ensuring that no one is left behind.",
 };
 
 export const CONTACT_US = {
@@ -301,31 +301,31 @@ export const OUR_DOMAINS = [
   {
     name: "Technical",
     about:
-      "Our tech-savvy team of innovators and problem solvers who harness the power of technology to shape the future. With their expertise in cutting-edge tools and technologies, they create seamless digital experiences, thus making learning lively and fun",
+      "Our tech-savvy team of innovators and problem solvers. With their expertise in cutting-edge tools and technologies, they create seamless digital experiences, thus making learning lively and fun",
     imgSrc: "/domainLogos/ComputerSupport.png",
   },
   {
     name: "Creative",
     about:
-      "Our team of imaginative minds breathes life into ideas, crafting captivating concepts with their boundless creativity. With their diverse skill sets, they transform visions into stunning and thought-provoking works of art, leaving audiences awestruck",
+      "Our team of imaginative minds who breathe life into ideas with their boundless creativity. With their diverse skill sets, they transform visions into stunning works of art, leaving audiences awestruck      ",
     imgSrc: "/domainLogos/PaintBrush.png",
   },
   {
     name: "Operations",
     about:
-      "Our operations team is the backbone of our society, ensuring that everything runs smoothly behind the scenes. With their exceptional organizational skills, they handle logistics, coordination, and resource management, enabling the seamless execution of our projects and initiatives.",
+      "Our operations team is the backbone of our society. With their exceptional organizational skills, they handle logistics, coordination, and resource management, enabling seamless execution of projects and initiatives.",
     imgSrc: "/domainLogos/Idea.png",
   },
   {
     name: "Marketing",
     about:
-      "A team of strategic minds who are responsible for amplifying the voice of MLSA. Through their creative thinking, deep market insights and with their expertly devised innovative strategies they help us link with the audience and the corporate world",
+      "Our team of zealous minds who amplify the voice of MLSA, helping us link with the audience and corporate world. Their creative thinking, market insights, and innovative tactics drive our success.",
     imgSrc: "/domainLogos/Omnichannel.png",
   },
   {
     name: "Youtube",
     about:
-      "A team of creative minds harnessing their skillset to bring ideas to life. Through their mastery of video storytelling, exceptional editing skills, and a thorough understanding of the YouTube platform, they craft amazing content that keeps viewers engaged.",
+      "A team of creative minds who bring our ideas to life. Through their mastery of video storytelling, exceptional editing skills, and a deep understanding of YouTube, they craft engaging content to captivate viewers",
     imgSrc: "/domainLogos/TVShow.png",
   },
   {
