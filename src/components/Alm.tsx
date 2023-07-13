@@ -56,7 +56,7 @@ const Alumni1: React.FC = () => {
         }
       });
 
-      if (scrollPosition > windowHeight / .2) {
+      if (scrollPosition > windowHeight / .27) {
         controls.start({ opacity: 1, y: 0, x: 0 }); //Final position for slider
         controls1.start({ opacity: 1, y: 0, x: 0 }); //Final position for slider
       } else {
@@ -102,7 +102,7 @@ const Alumni1: React.FC = () => {
             animate={controls1} //text conntrol animation triggered.
             transition={{ duration: 1 }}
           >
-            <h1 className="sm:mb-[7px] ml-[11px] sm:ml-[15px] lg:ml-[30px] 2xl:ml-[53px] text-xl font-semibold md:mb-[20px] md:text-4xl items-start text-[#FFFFFF] 2xl:text-[2.1vw] ">
+            <h1 className="sm:mb-[7px] ml-[11px] sm:ml-[15px] lg:ml-[30px] md:text-4xl  2xl:text-[2.1vw]  2xl:ml-[53px] text-xl font-semibold md:mb-[20px] items-start text-[#FFFFFF] ">
               Message From <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#A03BCF] to-[#6F5BFF]">Our Alumni</span>
             </h1>
           </motion.div>

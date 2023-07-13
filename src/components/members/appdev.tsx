@@ -72,14 +72,10 @@ const Item = ({ into }: any) => {
 const appdev = () => {
 
   return (
-    <div className="flex">
+    <div className="flex pl-3">
       <div className="flex flex-col items-center">
-        <div
-          className="flex w-[30px] h-[30px] md:h-[41px] md:w-[41px] items-center justify-center rounded-full bg-[#2CC4F5] bg-gradient-to-b from-[#20FF87]  to-[#fff]/30 shadow-dotShadowBlue duration-700 transition 
-              "
-        >
-          <div className="h-[12px] w-[12px] self-center rounded-full bg-white"></div>
-        </div>
+        <div className="h-[15px] w-[15px] shadow-dotShadowCyan self-center rounded-full bg-white"></div>
+
         <div className=" w-[5px]  bg-gradient-to-b from-[#2CC4F5] to-transparent duration-700 transition h-full"></div>
       </div>
       <div className="max-w-[1920px] mx-auto flex">

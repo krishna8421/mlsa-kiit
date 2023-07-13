@@ -36,8 +36,8 @@ const EventHero = () => {
                 // src="/eventImages/android.png"
                 src='/Mask.png'
                 alt="feature Image"
-                width={1000}
-                height={1000}
+                width={150}
+                height={150}
 
                 className=" ml-6 sm:ml-10 h-[95px] w-[100px] md:h-[115px] md:w-[120px] lg:h-[125px] lg:w-[130px] " />
 

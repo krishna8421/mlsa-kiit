@@ -55,8 +55,8 @@ function Sponsors() {
     <div className="flex flex-col m-12">
       <motion.span
         ref={ref}
-        className="text-3xl font-inter font-semibold capitalize text-[24px] sm:text-[24px] font-semibold md:mb-[20px] md:text-3xl items-start text-[#FFFFFF] 2xl:text-[2.1vw] mt-[17px] text-[24px]"
-        initial={{opacity:0,y:0,x:70}}
+        className=" font-inter font-semibold capitalize  2xl:text-[2.1vw]  2xl:ml-[53px] text-xl md:mb-[20px] md:text-4xl items-start text-[#FFFFFF]  mt-[17px] "
+        initial={{ opacity: 0, y: 0, x: 70 }}
         animate={controls}
         variants={titleVariants}
       >
