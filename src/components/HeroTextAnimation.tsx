@@ -26,7 +26,7 @@ const HeroTextAnimation = ({ texts }: HeroTextAnimationProps) => {
               setTranslation((prevTranslation) => prevTranslation + 100);
             }, currentText.length * 100);
           }
-        }, i * 300);
+        }, i * 200);
       }
 
       currentIndex = (currentIndex + 1) % texts.length;
@@ -36,7 +36,7 @@ const HeroTextAnimation = ({ texts }: HeroTextAnimationProps) => {
       }
     };
 
-    intervalId = setInterval(animateText, texts.length * 450);
+    intervalId = setInterval(animateText, texts.length * 550);
 
     return () => {
       clearInterval(intervalId);
