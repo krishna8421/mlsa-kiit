@@ -27,11 +27,11 @@ const LeadsCard = ({ image, name, domain, index }: Props) => {
   };
   return (
     <div className="h-[26rem]  w-[14rem]  rounded-imageradius" >
-      <div className="relative h-[20rem] w-full rounded-imageradius mt-[4rem] z-10 hover:shadow-[2px_0px_70px_10px_#4b94b3]  transition-all" onClick={handleImageClick}>
+      <div className="relative hover:cursor-pointer h-[20rem] w-full rounded-imageradius mt-[4rem] z-10 hover:shadow-[2px_0px_70px_10px_#4b94b3]  transition-all" onClick={handleImageClick}>
         <Image
           src={image}
           style={imgStyle}
-          className="h-full w-full rounded-imageradius border border-[#5F5E5E] grayscale"
+          className="h-full  w-full rounded-imageradius border border-[#5F5E5E] grayscale"
           width={700}
           height={700}
           alt="name"
