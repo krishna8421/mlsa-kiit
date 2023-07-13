@@ -246,3 +246,7 @@ body {
     opacity: 4;
     content: '';
 }
+
+.custom-font {
+  font-family: "Roboto", sans-serif;
+}
