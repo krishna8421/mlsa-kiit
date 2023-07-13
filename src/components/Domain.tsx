@@ -121,7 +121,7 @@ const Domain: React.FC = () => {
             </h1>
             {/* </motion.div> */}
 
-            <div className="flex w-full 2xl:w-[100%] 3xl:w-[90%] flex-wrap gap-4 md:gap-5 2xl:gap-[30px] pl-8 md:pl-10 lg:pl-12 xl:w-[90%] 2xl:pl-[70px] pb-8 ">
+            <div className="flex w-full 2xl:w-[100%] 3xl:w-[90%] flex-wrap gap-2 md:gap-5 2xl:gap-[30px]  md:pl-10 lg:pl-12 xl:w-[90%] 2xl:pl-[70px] pb-8 ">
               {OUR_DOMAINS.map((domain, index) => {
                 return (
                   <motion.div
