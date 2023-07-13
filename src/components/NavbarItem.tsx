@@ -15,7 +15,7 @@ const NavbarItem = ({
   type = "link",
   className = "",
   mobileView,
-  external=false
+  external = false
 }: NavbarItemProps) => {
   if (type === "button") {
     return (
@@ -29,11 +29,11 @@ const NavbarItem = ({
       </Link>
     );
   }
-
+  // #0070C5
   return (
-    <Link href={href} target={`${external ? "_blank": ""}`}>
+    <Link href={href} target={`${external ? "_blank" : ""}`}>
       <div
-        className={`2xl:text-[1vw] text-md  cursor-pointer text-sm transition hover:text-[#0070C5]
+        className={`2xl:text-[1vw] text-md  cursor-pointer rounded-lg text-sm p-2   transition hover:bg-[#ffffff33] font-semibold hover:text-[#0000008a]
         ${className} ${mobileView && "w-full text-center text-white"} 
       `}
       >

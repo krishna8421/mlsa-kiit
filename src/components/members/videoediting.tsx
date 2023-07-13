@@ -73,12 +73,10 @@ const videoediting = () => {
 
   return (
 
-    <div className="flex">
+    <div className="flex pl-3">
       <div className="flex flex-col items-center">
-        <div
-          className="flex w-[30px] h-[30px] md:h-[41px] md:w-[41px] items-center justify-center rounded-full bg-[#3BABCF] bg-gradient-to-b from-[#3B61CF]  to-[#fff]/30 shadow-dotShadowBlue duration-700 transition " >
-          <div className="h-[12px] w-[12px] self-center rounded-full bg-white"></div>
-        </div>
+        <div className="h-[15px] w-[15px] shadow-dotShadowBlue2 self-center rounded-full bg-white"></div>
+
         <div className="h-full w-[5px]  bg-gradient-to-b from-[#3BABCF] to-transparent duration-700 transition ">
         </div>
       </div>

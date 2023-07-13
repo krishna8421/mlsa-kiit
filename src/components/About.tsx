@@ -68,7 +68,7 @@ const About: React.FC = () => {
 
   return (
     <>
-      <div className="overflow-hidden mx-auto flex w-screen max-w-[1920px] overflow-y-hidden bg-transparent pt-12 pl-8 md:pl-[50px] lg:pl-[80px] xl:pl-[90px] 2xl:pl-[130px]">
+      <div className="overflow-hidden mx-auto flex w-screen max-w-[1920px] overflow-y-hidden bg-transparent pt-12 pl-4 md:pl-[50px] lg:pl-[80px] xl:pl-[90px] 2xl:pl-[130px]">
         <div className="flex w-full h-full pb-[80px] md:pb-[110px] xl:pb-[150px]">
           <motion.div
             className="flex justify-center"
@@ -90,10 +90,10 @@ const About: React.FC = () => {
 
           <div className="w-full">
             <motion.div className="2xl:ml-12 xl:ml-8 ml-4 text-white sm:ml-12"
-            initial={{opacity:0,x:70,y:0}}
-            animate={controls1} //refer to line 20
-                transition={{ duration: 1 }} //slider duration for popping up. if you are changinng duration then make sure to change delay of glow adder so thatt  the gow starts after animation is complete
-                onAnimationComplete={handleSliderAnimationComplete}>
+              initial={{ opacity: 0, x: 70, y: 0 }}
+              animate={controls1} //refer to line 20
+              transition={{ duration: 1 }} //slider duration for popping up. if you are changinng duration then make sure to change delay of glow adder so thatt  the gow starts after animation is complete
+              onAnimationComplete={handleSliderAnimationComplete}>
               <h1 className="js-build-in-item text-2xl font-semibold md:text-3xl lg:text-4xl">
                 About<span className="ml-1 text-[#3B61CF]">Us</span>
               </h1>
@@ -103,7 +103,7 @@ const About: React.FC = () => {
                 and events since 2017
               </p>
             </motion.div>
-            <div className="flex flex-col md:flex-row md:flex-wrap gap-[40px] xl:gap-[30px] 2xl:gap-[50px] md:ml-[60px] mt-[100px] sm:ml-12  mr-4 ">
+            <div className="flex flex-col md:flex-row md:flex-wrap gap-[40px] xl:gap-[30px] 2xl:gap-[50px] md:ml-[60px] mt-[50px] md:mt-[100px] sm:ml-12  mr-4 ">
               <motion.div
                 className="flex justify-center"
                 initial={{ opacity: 0, y: 1000 }} //before scrolling position of slider

@@ -63,7 +63,7 @@ const Leads: React.FC = () => {
             } else {
                 controls.start({ opacity: 0, y: 200, x: 0 }); //Initial starting positionn for slider
                 controls1.start({ opacity: 0, y: 0, x: 150 }); //Initial starting positionn for slider
-                
+
             }
         };
         console.log("scroll", window.scrollY);
@@ -79,7 +79,7 @@ const Leads: React.FC = () => {
 
     return (
         <>
-            <div className="mx-auto mt-24  flex ml-4  md:ml-[50px] lg:ml-[80px]">
+            <div className=" mt-24  flex pl-4  md:pl-[50px] lg:pl-[80px] xl:pl-[90px] 2xl:pl-[80px] ">
                 <motion.div
                     className="flex justify-center"
                     initial={{ opacity: 0, y: 230 }} //before scrolling position of slider
@@ -104,7 +104,7 @@ const Leads: React.FC = () => {
                         animate={controls1} //text conntrol animation triggered.
                         transition={{ duration: 1.5 }}
                     >
-                        <h1 className="sm:mb-[7px] ml-[11px] sm:ml-[15px] lg:ml-[30px] 2xl:ml-[53px] text-[12px] sm:text-[18px] font-semibold md:mb-[20px] md:text-4xl items-start text-[#FFFFFF] 2xl:text-[2.1vw] ">
+                        <h1 className="sm:mb-[7px] ml-[11px] sm:ml-[15px] lg:ml-[30px] 2xl:ml-[53px] text-[12px] text-xl  font-semibold md:mb-[20px] md:text-4xl items-start text-[#FFFFFF] 2xl:text-[2.1vw] ">
                             Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#21FD8B] to-[#2CC4F2]">Leads</span>
                         </h1>
                     </motion.div>

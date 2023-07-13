@@ -39,7 +39,7 @@ const GalleryFadeShowCard = ({ imgArray, title, num, timer }: GalleryFadeShowCar
             width={700}
             height={700}
             loading="lazy"
-            className={`absolute inset-0 h-full group-hover:scale-105 transition-all opacity-1 duration-2000 ease-in-out w-full rounded-lg object-cover transform
+            className={`scale[80%] absolute inset-0 h-full group-hover:scale-105 transition-all opacity-1 duration-2000 ease-in-out w-full rounded-lg object-cover object-center transform
             ${index === currentIndex ? "opacity-1" : "opacity-0"}
           `}
           ></Image>

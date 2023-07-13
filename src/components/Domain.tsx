@@ -84,7 +84,7 @@ const Domain: React.FC = () => {
       </div>
     </div> */}
 
-      <div className="min-h-[100px] pl-8 overflow-y-hidden pt-10 md:pl-[50px] lg:pl-[80px] xl:pl-[90px] 2xl:pl-[130px] mt-[20px] h-auto md:pb[222px] relative z-0 flex flex-row max-w-[1920px] justify-center items-center mx-auto">
+      <div className="min-h-[100px] pl-4 overflow-y-hidden pt-10 md:pl-[50px] lg:pl-[80px] xl:pl-[90px] 2xl:pl-[130px] mt-[20px] h-auto md:pb[222px] pb-[128px] relative z-0 flex flex-row max-w-[1920px] justify-center items-center mx-auto">
         {/* <div className="h-[439px] w-[439px] absolute z-10 rounded full -top-[300px] -left-[578px]">
 <div className="md:pb-[222px] pb-[128px] relative z-0 flex flex-row justify-center items-center mx-auto">
 {/* <div className="h-[439px] w-[439px] absolute z-10 rounded full -top-[300px] -left-[578px]">
