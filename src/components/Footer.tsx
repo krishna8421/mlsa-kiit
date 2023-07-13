@@ -87,7 +87,7 @@ const Footer = () => {
                 <p className="text-center">2023 MLSA KIIT</p>
               </span>
               <span className="hidden md:block"> | </span>
-              <p>DESIGNED BY MSC KIIT TEAM</p>
+              <p>DESIGNED BY MLSA KIIT TEAM</p>
             </div>
           </div>
         </div>
