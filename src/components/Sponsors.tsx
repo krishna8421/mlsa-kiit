@@ -82,7 +82,7 @@ function Sponsors() {
             <motion.img
               src={sponsor.image}
               alt={sponsor.name}
-              width={180}
+              width={250}
               height={500}
               className="grayscale-img hover:grayscale-0 max-w-full h-auto filter grayscale m-[30px]"
             />

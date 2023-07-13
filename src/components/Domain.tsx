@@ -94,14 +94,14 @@ const Domain: React.FC = () => {
         <div className="mx-auto flex w-full h-full">
           <motion.div
             className="flex justify-center"
-            initial={{ opacity: 0, y: 300 }} //before scrolling position of slider
+            initial={{ opacity: 0, y: 150 }} //before scrolling position of slider
             animate={controls} //refer to line 20
             transition={{ duration: 0.6 }} //slider duration for popping up. if you are changinng duration then make sure to change delay of glow adder so thatt  the gow starts after animation is complete
             onAnimationComplete={handleSliderAnimationComplete}
           >
             <div className="flex flex-col items-center ">
               <div
-                className="flex h-[41px] w-[41px] items-center justify-center rounded-full bg-[#A93BCF] bg-gradient-to-b from-[#473BCF]  to-[#fff]/30 shadow-dotShadowBlue duration-700 transition 
+                className="flex h-[30px] w-[30px] md:h-[41px] md:w-[41px] items-center justify-center rounded-full bg-[#A93BCF] bg-gradient-to-b from-[#473BCF]  to-[#fff]/30 shadow-dotShadowBlue duration-700 transition 
               "
               >
                 <div className="h-[12px] w-[12px] self-center rounded-full bg-white"></div>
@@ -116,8 +116,8 @@ const Domain: React.FC = () => {
             animate={textControls} //text conntrol animation triggered.
             transition={{ duration: 0.5 }}
           > */}
-            <h1 className="js-build-in-item text-2xl ml-4 font-semibold md:text-3xl lg:text-4xl">
-              Our<span className=" ml-1 text-[#3B61CF]"> Domain</span>
+            <h1 className="sm:mb-[7px] ml-[11px] sm:ml-[15px] lg:ml-[30px] 2xl:ml-[53px] text-[12px]  font-semibold md:mb-[20px]  items-start text-[#FFFFFF] md:text-4xl text-xl  2xl:text-[2.1vw] ">
+              Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#A03BCF] to-[#6F5BFF]">Domain</span>
             </h1>
             {/* </motion.div> */}
 

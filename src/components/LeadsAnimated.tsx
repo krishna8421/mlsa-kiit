@@ -32,6 +32,7 @@ const Leads: React.FC = () => {
     });
     const controls = useAnimation();
     const controls1 = useAnimation();
+    const controls2 = useAnimation();
 
     useEffect(() => {
         const handleScroll = () => {
@@ -60,9 +61,11 @@ const Leads: React.FC = () => {
             if (scrollPosition > windowHeight / .4) {
                 controls.start({ opacity: 1, y: 0, x: 0 }); //Final position for slider
                 controls1.start({ opacity: 1, y: 0, x: 0 }); //Final position for slider
+                controls1.start({ opacity: 1, y: 0, x: 0 });
             } else {
                 controls.start({ opacity: 0, y: 200, x: 0 }); //Initial starting positionn for slider
-                controls1.start({ opacity: 0, y: 0, x: 150 }); //Initial starting positionn for slider
+                controls2.start({ opacity: 0, y: 0, x: 150 }); //Initial starting positionn for slider
+                controls2.start({ opacity: 0, y: 0, x: 0 });
 
             }
         };
@@ -104,71 +107,76 @@ const Leads: React.FC = () => {
                         animate={controls1} //text conntrol animation triggered.
                         transition={{ duration: 1.5 }}
                     >
-                        <h1 className="sm:mb-[7px] ml-[11px] sm:ml-[15px] lg:ml-[30px] 2xl:ml-[53px] text-[12px] text-xl  font-semibold md:mb-[20px] md:text-4xl items-start text-[#FFFFFF] 2xl:text-[2.1vw] ">
+                        <h1 className="sm:mb-[7px] ml-[11px] sm:ml-[15px] lg:ml-[30px] 2xl:ml-[53px]  text-xl  font-semibold md:mb-[20px] md:text-4xl items-start text-[#FFFFFF] 2xl:text-[2.1vw] ">
                             Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#21FD8B] to-[#2CC4F2]">Leads</span>
                         </h1>
                     </motion.div>
 
 
                     <div className="md:ml-8 ">
-                        <Swiper
-                            className="px-3 md:ml-20"
-                            spaceBetween={10}
-                            slidesPerView={1}
-                            // centeredSlides={true}
-                            cssMode={true}
-                            loop={false}
-                            mousewheel={true}
-                            navigation={true}
-                            // autoplay={{
-                            //   delay: 2500,
-                            //   disableOnInteraction: true,
-                            // }}
-                            breakpoints={{
-                                350: {
-                                    slidesPerView: 1,
-                                    spaceBetween: 10,
+                        <motion.div
+                            initial={{ opacity: 0 }} //initial position of text with opacity 0
+                            animate={controls1} //text conntrol animation triggered.
+                            transition={{ duration: 4 }}>
+                            <Swiper
+                                className="px-3 md:ml-20"
+                                spaceBetween={10}
+                                slidesPerView={1}
+                                // centeredSlides={true}
+                                cssMode={true}
+                                loop={false}
+                                mousewheel={true}
+                                navigation={true}
+                                // autoplay={{
+                                //   delay: 2500,
+                                //   disableOnInteraction: true,
+                                // }}
+                                breakpoints={{
+                                    350: {
+                                        slidesPerView: 1,
+                                        spaceBetween: 10,
 
-                                },
-                                640: {
-                                    slidesPerView: 2.3,
-                                    spaceBetween: 10,
-                                },
-                                768: {
-                                    slidesPerView: 3,
-                                    spaceBetween: 10,
-                                },
-                                1024: {
-                                    slidesPerView: 4,
-                                },
-                                1280: {
-                                    slidesPerView: 4.7,
-                                    spaceBetween: 10,
-                                },
-                                1440: {
-                                    slidesPerView: 5.7,
-                                    spaceBetween: 5,
-                                },
-                            }}
-                            modules={[Autoplay, Navigation]}
-                        >
-                            {OUR_LEADS.map((Lead, index) => {
-                                return (
-                                    <SwiperSlide key={index}>
-                                        <motion.div
-                                            // key={index}
-                                            className="mx-4 md:mx-8 lg:mx-14"
-                                            initial={{ opacity: 0, y: 800 }}
-                                            animate={controls}
-                                            transition={{ duration: 0.5 + (index * 0.1) }}
-                                            onAnimationComplete={handleSliderAnimationComplete}
-                                        >
-                                            <LeadsCard {...Lead} index={index} />
-                                        </motion.div>
-                                    </SwiperSlide>
-                                );
-                            })}
-                        </Swiper>
+                                    },
+                                    640: {
+                                        slidesPerView: 2.3,
+                                        spaceBetween: 10,
+                                    },
+                                    768: {
+                                        slidesPerView: 3,
+                                        spaceBetween: 10,
+                                    },
+                                    1024: {
+                                        slidesPerView: 4,
+                                    },
+                                    1280: {
+                                        slidesPerView: 4.7,
+                                        spaceBetween: 10,
+                                    },
+                                    1440: {
+                                        slidesPerView: 5.7,
+                                        spaceBetween: 5,
+                                    },
+                                }}
+                                modules={[Autoplay, Navigation]}
+                            >
+                                {OUR_LEADS.map((Lead, index) => {
+                                    return (
+                                        <SwiperSlide key={index}>
+                                            <motion.div
+                                                // key={index}
+                                                className="mx-4 md:mx-8 lg:mx-14"
+                                                initial={{ opacity: 0, y: 800 }}
+                                                animate={controls}
+                                                transition={{ duration: 0.5 + (index * 0.1) }}
+                                                onAnimationComplete={handleSliderAnimationComplete}
+                                            >
+                                                <LeadsCard {...Lead} index={index} />
+                                            </motion.div>
+                                        </SwiperSlide>
+                                    );
+                                })}
+                            </Swiper>
+                        </motion.div>
                     </div>
 
                 </div>

@@ -9,7 +9,7 @@ const config = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    domains: ["avatars.githubusercontent.com", "drive.google.com", "api.qrserver.com"],
+    domains: ["avatars.githubusercontent.com", "drive.google.com", "api.qrserver.com", "raw.githubusercontent.com"],
   },
 };
 
