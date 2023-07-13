@@ -79,12 +79,9 @@ const webdev = () => {
 
     <div className="flex">
       <div className="flex flex-col items-center ">
-        <div
-          className="flex w-[30px] h-[30px] md:h-[41px] md:w-[41px] items-center justify-center rounded-full bg-[#A93BCF] bg-gradient-to-b from-[#473BCF]  to-[#fff]/30 shadow-dotShadowBlue duration-700 transition 
-              "
-        >
-          <div className="h-[12px] w-[12px] self-center rounded-full bg-white"></div>
-        </div>
+
+        <div className="h-[15px] w-[15px] shadow-dotShadowPurple self-center rounded-full bg-white"></div>
+
         <div className=" w-[5px]  bg-gradient-to-b from-[#533BD0] to-transparent duration-700 transition h-full"></div>
       </div>
       <div className="max-w-[1920px] mx-auto flex">

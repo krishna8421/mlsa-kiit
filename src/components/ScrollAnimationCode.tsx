@@ -57,18 +57,18 @@ const ScrollAnimationCode: React.FC = () => {
     <div className="w-screen flex pl-4 md:pl-[50px] lg:pl-[80px] xl:pl-[90px] 2xl:pl-[130px] pb-[100px] ">
       <motion.div
         className="justify-centre flex"
-        initial={{ opacity: 0, y: 3000 }} //before scrolling position of slider
+        initial={{ opacity: 0, y: 200 }} //before scrolling position of slider
         animate={controls} //refer to line 20
         transition={{ duration: 1 }} //slider duration for popping up. if you are changinng duration then make sure to change delay of glow adder so thatt  the gow starts after animation is complete
         onAnimationComplete={handleSliderAnimationComplete}
       >
-        <Slider/>
-        
+        <Slider />
+
       </motion.div>
       {/* Completed slider animation */}
       <div
         className="flex overflow-hidden"
-        
+
       >
         <Sponsors />
       </div>

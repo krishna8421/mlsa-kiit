@@ -12,6 +12,14 @@ module.exports = {
       magenta: "0 0 25px 10px #00a6ff",
       dotShadowBlue:
         "0px 0px 40px 20px rgba(55, 124, 236, .5), 0 2px 4px -1px rgba(35, 63, 146, 0.8)",
+        dotShadowPurple:
+        "0px 0px 55px 20px #A93BCF, 0 2px 4px -1px rgba(35, 63, 146, 0.8)",
+        dotShadowBlue2:
+        "0px 0px 30px 25px rgba(55, 124, 236, .5), 0 2px 4px -1px rgba(35, 63, 146, 0.8)",
+        dotShadowCyan:
+        "0px 0px 60px 15px #20FF87, 0 2px 4px -1px rgba(35, 63, 146, 0.8)",
+      
+      
       aboutLogoShadowBlue:
         "0px 0px 14px 7px rgba(55, 124, 236, .5), 0 2px 4px -1px rgba(35, 63, 146, 0.8)",
       mobileAboutShadow:
