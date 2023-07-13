@@ -116,12 +116,12 @@ const Domain: React.FC = () => {
             animate={textControls} //text conntrol animation triggered.
             transition={{ duration: 0.5 }}
           > */}
-            <h1 className="sm:mb-[7px] ml-[11px] sm:ml-[15px] lg:ml-[30px] 2xl:ml-[53px] text-[12px] sm:text-[18px] font-semibold md:mb-[20px] md:text-4xl items-start text-[#FFFFFF] 2xl:text-[2.1vw] ">
-              Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#A03BCF] to-[#6F5BFF]">Domain</span>
+            <h1 className="js-build-in-item text-2xl ml-4 font-semibold md:text-3xl lg:text-4xl">
+              Our<span className=" ml-1 text-[#3B61CF]"> Domain</span>
             </h1>
             {/* </motion.div> */}
 
-            <div className="flex w-full 2xl:w-[100%] 3xl:w-[90%] flex-wrap gap-4 md:gap-5 2xl:gap-[30px] pl-8 md:pl-10 lg:pl-12 xl:w-[90%] 2xl:pl-[70px] pb-8 ">
+            <div className="flex w-full 2xl:w-[100%] 3xl:w-[90%] flex-wrap gap-2 md:gap-5 2xl:gap-[30px]  md:pl-10 lg:pl-12 xl:w-[90%] 2xl:pl-[70px] pb-8 ">
               {OUR_DOMAINS.map((domain, index) => {
                 return (
                   <motion.div
