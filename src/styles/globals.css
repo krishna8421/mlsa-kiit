@@ -124,7 +124,7 @@ body {
     background: linear-gradient(60deg, #FF2EAB, #EDBA03);
     border-radius: 15px;
     z-index: -1;
-    /* background-color: #4b94b3; */
+    /* background-color: #50cbff69; */
     animation-delay: 0.5s;
     animation: animatedgradient 1s ease alternate infinite;
     background-size: 300% 300%;
