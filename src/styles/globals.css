@@ -124,7 +124,7 @@ body {
     background: linear-gradient(60deg, #FF2EAB, #EDBA03);
     border-radius: 15px;
     z-index: -1;
-    /* background-color: #4b94b3; */
+    /* background-color: #50cbff69; */
     animation-delay: 0.5s;
     animation: animatedgradient 1s ease alternate infinite;
     background-size: 300% 300%;
@@ -145,6 +145,28 @@ body {
     }
   }
   
+  .swiper-button-next,
+.swiper-button-prev {
+  background-position: center;
+  background-size: 32px;
+  background-repeat: no-repeat;
+  padding: 18px;
+  border-radius: 100%;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.swiper-button-prev {
+  background-image: url("/swiper-js/left-arrow.png");
+}
+
+.swiper-button-next {
+  background-image: url("/swiper-js/right-arrow.png");
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  content: "" !important;
+}
   
   @keyframes animatedgradient {
       0% {
@@ -241,7 +263,7 @@ body {
     position: absolute;
     top: 0px;
     left: 0px;
-    z-index: 30;
+    z-index: 20;
     background: linear-gradient(360deg, rgba(0, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0.00) 100%), -112.972px 0px / 242.22% 100% no-repeat;
     opacity: 4;
     content: '';
