@@ -206,7 +206,7 @@ body {
     top: 0px;
     left: 0px;
     z-index: 30;
-    background: linear-gradient(360deg, #000 0%, rgba(0, 0, 0, 0.00) 20%) ,transparent 50% / cover no-repeat;
+    background: linear-gradient(360deg, #000 0%, rgba(0, 0, 0, 0.00) 60%) ,transparent 50% / cover no-repeat;
     opacity: 2;
     content: '';
 }
