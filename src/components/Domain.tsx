@@ -94,7 +94,7 @@ const Domain: React.FC = () => {
         <div className="mx-auto flex w-full h-full">
           <motion.div
             className="flex justify-center"
-            initial={{ opacity: 0, y: 300 }} //before scrolling position of slider
+            initial={{ opacity: 0, y: 150 }} //before scrolling position of slider
             animate={controls} //refer to line 20
             transition={{ duration: 0.6 }} //slider duration for popping up. if you are changinng duration then make sure to change delay of glow adder so thatt  the gow starts after animation is complete
             onAnimationComplete={handleSliderAnimationComplete}
