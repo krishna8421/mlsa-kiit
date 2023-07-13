@@ -83,8 +83,8 @@ const EventHero = () => {
 
         </div>
         <div className="text-left  text-3xl md:text-4xl lg:text-5xl px-10 absolute bottom-[-3px] jj w-[100vw]">
-          <h1 className="mx-[19px] bg-gradient-to-br from-[#5051F9]  to-[#DFDFFF] leading-20 font-semibold text-transparent bg-clip-text">Events</h1>
-          <h2 className=" mx-[19px] text-[18px] md:text-[25px] lg:py-1 lg:text-[33px]">Our past successful events</h2>
+          <h1 className="mx-[-10px] lg:mx-[19px] bg-gradient-to-br from-[#5051F9]  to-[#DFDFFF] leading-20 font-semibold text-transparent bg-clip-text">Events</h1>
+          <h2 className="mx-[-10px] lg:mx-[19px] text-[18px] md:text-[25px] lg:py-1 lg:text-[33px]">Our past successful events</h2>
         </div>
       </div>
     </>
