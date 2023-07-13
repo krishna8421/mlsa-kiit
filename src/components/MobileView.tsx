@@ -13,7 +13,7 @@ const MobileView = ({ visible }: MobileMenuProps) => {
   }
   return (
     <>
-      <div className="bg-gradient-to-b from-[#042179] to-[#949fc0] fixed right-[24px] mt-2 flex w-[160px] flex-col gap-2 rounded-md pb-3 pt-2 text-center font-semibold md:hidden">
+      <div className="bg-gradient-to-b from-[#042179] to-[#949fc0] fixed right-[24px] mt-2 flex w-[190px] flex-col gap-2 rounded-md pb-3 pt-2 text-center font-semibold md:hidden">
         <NavbarItem href="/events" mobileView={true}>
           Events
         </NavbarItem>
