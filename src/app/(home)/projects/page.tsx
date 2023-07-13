@@ -92,20 +92,7 @@ const Projects = () => {
             </div>
           </div>
         </div>
-        <div className={`mt-16 flex h-[45px] w-1/3 min-w-[340px] items-center justify-between rounded-full border-[1px] border-[#878787] bg-[#252525] bg-opacity-50 pl-2 pr-1 md:h-[50px] ${isFirstScroll ? 'animate-[fadeinout_2s]' : 'animate-[fadeinout_12s]'}`}>
-          <span className="px-2 ">
-            <FaSearch className="text-center text-sm text-[#aba8a8] md:text-base" />
-          </span>
-          <input
-            type="search"
-            id="search-input"
-            placeholder="Search Projects here"
-            className="h-full w-full border-none bg-[#252525] bg-opacity-0 px-2 text-sm outline-none md:text-base"
-          />
-          <span className="flex h-[85%] items-center rounded-full bg-[#86A1FF] px-6 py-2 text-center text-base md:text-lg">
-            Search
-          </span>
-        </div>
+        <div className="mt-6 w-1/3 h-[1px] bg-[#d1d5db] md:h-[2px] rounded-full "></div>
       </div>
       <Project />
     </>
