@@ -65,7 +65,7 @@ const Navbar = () => {
           <NavbarItem href="/gallerys">Gallery</NavbarItem>
           <NavbarItem href="/members">Members</NavbarItem>
           <NavbarItem href={YOUTUBE_URL} external={true}>Youtube</NavbarItem>
-          <NavbarItem href="/contact" type="button">
+          <NavbarItem href="/schemas/contactUs.ts" type="button">
             Contact
           </NavbarItem>
         </div>
