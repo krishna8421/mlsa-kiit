@@ -76,19 +76,19 @@ const Projects = () => {
         </h1>
         <div className="text-md mt-2 md:text-lg lg:text-xl">
           <p className={`${isFirstScroll && 'animate-[fadeinout_1s'} text-center`}>
-            <span>We Are Proud Of Our </span>
+            <span>We are proud of our </span>
             <span className="bg-gradient-to-b from-[#5051F9] to-[#AE86E0] bg-clip-text font-semibold text-transparent">
-              Community Members
+              community members
             </span>
           </p>
           <div className="mt-4 flex animate-[fadeinout_4s] justify-between bg-gradient-to-b from-[#5051F9] to-[#AE86E0] bg-clip-text text-transparent">
             <div className="flex flex-col ">
               <span className="text-2xl font-bold md:text-3xl">{projectsCounter}+</span>
-              <span className="text-xl font-semibold md:text-2xl">Finished Projects</span>
+              <span className="text-xl font-semibold md:text-2xl">Finished projects</span>
             </div>
             <div className="flex flex-col">
               <span className="text-2xl font-bold md:text-3xl">{sponsersCounter}+</span>
-              <span className="text-xl font-semibold md:text-2xl">Sponsers</span>
+              <span className="text-xl font-semibold md:text-2xl">Sponsors</span>
             </div>
           </div>
         </div>
