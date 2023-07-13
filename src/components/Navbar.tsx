@@ -58,7 +58,7 @@ const Navbar = () => {
           {!showMobileMenu ? <AiOutlineMenu /> : <VscChromeClose />}
           <MobileView visible={showMobileMenu} />
         </div>
-        <div className="hidden gap-6 text-white md:flex md:items-center lg:gap-8">
+        <div className="hidden gap-4 md:gap-1 text-white md:flex md:items-center lg:gap-6">
           <NavbarItem href="/events">Events</NavbarItem>
           <NavbarItem href="/projects">Projects</NavbarItem>
           <NavbarItem href="https://medium.com/msackiit" external={true}>Blog</NavbarItem>

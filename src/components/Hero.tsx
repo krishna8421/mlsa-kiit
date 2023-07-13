@@ -35,7 +35,7 @@ const Hero = () => {
             className="h-[40%] top-[25%] lg:top-0 lg:h-full w-full absolute"
           />
       </div>
-      <div className="relative mx-auto h-[80vh] md:h-screen w-screen  max-w-[1920px] overflow-x-hidden overflow-hidden">
+      <div className="relative mx-auto h-[75vh] md:h-[85vh] lg:h-screen w-screen  max-w-[1920px] overflow-x-hidden overflow-hidden">
         <div className="absolute left-0 right-0 top-0 z-30 flex justify-center">
           <EventHome
             Classname="z-30 mt-[100px]"
