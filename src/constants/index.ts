@@ -62,7 +62,7 @@ export const OUR_PROJECTS1 = [
   },
 
   {
-    img: "/projects/debaterX.png",
+    img: "/projects/debate.webp",
     ProjectName: "DebaterX",
     techStack1: "Jupyter Notebook",
     techStack2: "Python",
@@ -73,7 +73,7 @@ export const OUR_PROJECTS1 = [
     github: "https://github.com/MLSAKIIT/DebaterX",
   },
   {
-    img: "/projects/codeportal.png",
+    img: "/projects/code.webp",
     ProjectName: "Code Portal",
     techStack1: "Javascript",
     techStack2: "CSS",
@@ -84,7 +84,7 @@ export const OUR_PROJECTS1 = [
     github: "https://github.com/MLSAKIIT/MSC-Codeportal",
   },
   {
-    img: "/projects/algorithmve.png",
+    img: "/projects/algo.png",
     ProjectName: "Algorithm VE",
     techStack1: "ReactJS",
     techStack2: "SCSS",
@@ -104,17 +104,6 @@ export const OUR_PROJECTS1 = [
   //   github: "#",
   // },
   {
-    img: "/projects/flutterverse.png",
-    ProjectName: "Flutterverse",
-    techStack1: "Dart",
-    techStack2: "Java",
-    techImg:
-      "https://raw.githubusercontent.com/get-icon/geticon/fc0f660daee147afb4a56c64e12bde6486b73e39/icons/dart.svg",
-    techImg2:
-      "https://raw.githubusercontent.com/get-icon/geticon/fc0f660daee147afb4a56c64e12bde6486b73e39/icons/java.svg",
-    github: "https://github.com/MLSAKIIT/FlutterVerse",
-  },
-  {
     img: "/projects/daedarus.png",
     ProjectName: "DaeDarus",
     techStack1: "ReactJS",
@@ -126,7 +115,18 @@ export const OUR_PROJECTS1 = [
     github: "https://github.com/MLSAKIIT/DaeDarus-Website",
   },
   {
-    img: "/projects/featureProject.png",
+    img: "/projects/flutter.webp",
+    ProjectName: "Flutterverse",
+    techStack1: "Dart",
+    techStack2: "Java",
+    techImg:
+      "https://raw.githubusercontent.com/get-icon/geticon/fc0f660daee147afb4a56c64e12bde6486b73e39/icons/dart.svg",
+    techImg2:
+      "https://raw.githubusercontent.com/get-icon/geticon/fc0f660daee147afb4a56c64e12bde6486b73e39/icons/java.svg",
+    github: "https://github.com/MLSAKIIT/FlutterVerse",
+  },
+  {
+    img: "/projects/project1.png",
     ProjectName: "BubblePod",
     techStack1: "Flask",
     techStack2: "SQL",
@@ -134,6 +134,16 @@ export const OUR_PROJECTS1 = [
       "https://raw.githubusercontent.com/get-icon/geticon/fc0f660daee147afb4a56c64e12bde6486b73e39/icons/flask.svg",
     techImg2: "https://www.vectorlogo.zone/logos/sqlite/sqlite-icon.svg",
     github: "https://github.com/MLSAKIIT/Bubblepod-backend",
+  },
+  {
+    img: "/projects/ddos.jpg",
+    ProjectName: "DDOS Project Wing",
+    techStack1: "Python",
+    techStack2: "Numpy",
+    techImg:
+      "https://raw.githubusercontent.com/get-icon/geticon/fc0f660daee147afb4a56c64e12bde6486b73e39/icons/python.svg",
+    techImg2: "https://www.vectorlogo.zone/logos/numpy/numpy-icon.svg",
+    github: "https://github.com/MLSAKIIT/DDoS-project-wing",
   },
   {
     img: "/projects/fing.jpg",
@@ -147,17 +157,7 @@ export const OUR_PROJECTS1 = [
     github: "https://github.com/MLSAKIIT/FingSurfers",
   },
   {
-    img: "/projects/ddos.jpg",
-    ProjectName: "DDOS Project Wing",
-    techStack1: "Python",
-    techStack2: "Numpy",
-    techImg:
-      "https://raw.githubusercontent.com/get-icon/geticon/fc0f660daee147afb4a56c64e12bde6486b73e39/icons/python.svg",
-    techImg2: "https://www.vectorlogo.zone/logos/numpy/numpy-icon.svg",
-    github: "https://github.com/MLSAKIIT/DDoS-project-wing",
-  },
-  {
-    img: "/projects/resume.png",
+    img: "/projects/resume.webp",
     ProjectName: "Resume Nest",
     techStack1: "Dart",
     techStack2: "NodeJS",
