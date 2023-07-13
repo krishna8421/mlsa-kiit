@@ -827,7 +827,7 @@ export const videoedit = [
   },
   {
     id: 2,
-    img: "/members/Shresth Rakesh Kumar.jpg",
+    img: "/members/Shresth Rakesh Kumar.JPG",
     name: "Shresth Rakesh Kumar",
     domain: "Video Editing",
   },
