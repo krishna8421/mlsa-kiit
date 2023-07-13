@@ -19,7 +19,8 @@ import Youtube from "@/components/members/youtube"
 
 
 const Members = () => {
-  return (<>
+  return (
+  <>
     <div className="wrapper-outer h-[100vh]">
       <div className="wrapper h-full overflow-x-hidden ">
 
@@ -46,7 +47,7 @@ const Members = () => {
         </div>
       </div>
     </div>
-
+    
   </>
   )
 }
