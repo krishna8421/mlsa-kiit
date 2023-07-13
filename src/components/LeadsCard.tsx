@@ -26,7 +26,7 @@ const LeadsCard = ({ image, name, domain, index }: Props) => {
     setShowDetail(!showDetail);
   };
   return (
-    <div className="h-[26rem]  w-[14rem]  rounded-imageradius" >
+    <div className="h-[26rem] hover:cursor-pointer w-[14rem]  rounded-imageradius" >
       <div className="relative hover:cursor-pointer h-[20rem] w-full rounded-imageradius mt-[4rem] z-10 hover:shadow-[2px_0px_70px_10px_#4b94b3]  transition-all" onClick={handleImageClick}>
         <Image
           src={image}
