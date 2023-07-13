@@ -1106,7 +1106,7 @@ export const WebDevelopment = [
   },
   {
     id: 3,
-    img: "/members/MANISH KUMAR.webp",
+    img: "/members/MANISH KUMAR.png",
     name: "Manish Kumar",
     domain: "Web Development",
   },
