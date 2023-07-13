@@ -30,7 +30,7 @@ const Item = ({ into }: any) => {
           <Image
             src={into.img}
             style={imgStyle}
-            className={showDetail ? "h-full z-30  w-full rounded-t-md rounded-b-none md:rounded-t-xl md:rounded-b-none":"h-full z-30  w-full rounded-md md:rounded-xl"}
+            className={showDetail ? "h-full z-30  w-full rounded-t-md rounded-b-none md:rounded-t-xl md:rounded-b-none" : "h-full z-30  w-full rounded-md md:rounded-xl"}
             width={700}
             height={700}
             alt="name"
@@ -77,8 +77,8 @@ const webdev = () => {
 
   return (
 
-    <div className="flex">
-      <div className="flex flex-col items-center ">
+    <div className="flex ">
+      <div className="flex flex-col items-center px-2 md:px-0 ">
 
         <div className="h-[15px] w-[15px] shadow-dotShadowPurple self-center rounded-full bg-white"></div>
 

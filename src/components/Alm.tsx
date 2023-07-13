@@ -37,10 +37,16 @@ const Alumni1: React.FC = () => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY; //determines how much the user has scrolled
       const windowHeight = window.innerHeight; //determines the height of the  device the user is using
+      let num: number;
+      if (windowHeight > 750) {
+        num = 0.34
+      } else {
+        num = 0.21
+      }
 
       window.addEventListener("scroll", function () {
         var scrollPosition = window.scrollY;
-        if (scrollPosition > windowHeight / .37) {
+        if (scrollPosition > windowHeight / .39) {
           const element = document.getElementById("myElement"); // gets the circle on top of the slider
 
           if (element) {
@@ -57,12 +63,12 @@ const Alumni1: React.FC = () => {
         }
       });
 
-      if (scrollPosition > windowHeight / .27) {
+      if (scrollPosition > windowHeight / num) {
         controls.start({ opacity: 1, y: 0, x: 0 }); //Final position for slider
         controls1.start({ opacity: 1, y: 0, x: 0 });
         controls2.start({ opacity: 1, y: 0, x: 0 }); //Final position for slider
       } else {
-        controls.start({ opacity: 0, y: 700, x: 0 }); //Initial starting positionn for slider
+        controls.start({ opacity: 0, y: 500, x: 0 }); //Initial starting positionn for slider
         controls1.start({ opacity: 0, y: 0, x: 150 }); //Initial starting positionn for slider
         controls2.start({ opacity: 0, y: 0, x: 0 });
       }
@@ -83,7 +89,7 @@ const Alumni1: React.FC = () => {
       <div className="mx-auto flex pl-4 md:pl-[50px] lg:pl-[80px] xl:pl-[90px] 2xl:pl-[130px]">
         <motion.div
           className="flex justify-center"
-          initial={{ opacity: 0, y: 200 }} //before scrolling position of slider
+          initial={{ opacity: 0, y: 250 }} //before scrolling position of slider
           animate={controls} //refer to line 20
           transition={{ duration: 1 }} //slider duration for popping up. if you are changinng duration then make sure to change delay of glow adder so thatt  the gow starts after animation is complete
           onAnimationComplete={handleSliderAnimationComplete}
