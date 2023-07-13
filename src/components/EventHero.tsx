@@ -62,7 +62,7 @@ const EventHero = () => {
                   <p className="py-1 lg:py-2 text-xs font-[100px] md:text-base lg:text-[18px]">Last day to register</p>
                 </div>
 
-                <button className=" mb-[15px]  flex w-[35%] items-center justify-center whitespace-nowrap rounded-[100px] bg-gradient-to-r from-[#0070C5] to-[#3BABCF]    py-1 md:py-2 text-[9px] md:text-xs lg:text-[11px]   ">
+                <button className=" mb-[15px]  flex w-[35%] items-center justify-center whitespace-nowrap rounded-[100px] bg-gradient-to-r from-[#0070C5] to-[#3BABCF]    py-1 md:py-2 text-[7px] md:text-xs lg:text-[11px]   ">
                   Register Now
                 </button>
               </div>
@@ -82,9 +82,9 @@ const EventHero = () => {
           </div>
 
         </div>
-        <div className="text-left  text-3xl md:text-4xl lg:text-5xl capitalize  px-10 absolute bottom-[-3px] jj w-[100vw]">
-          <h1 className="mx-[19px] bg-gradient-to-br from-[#5051F9]  to-[#DFDFFF] leading-20 font-semibold text-transparent bg-clip-text">Events</h1>
-          <h2 className=" mx-[19px] text-[18px] md:text-[25px] lg:py-1 lg:text-[33px]">Our Past successful events</h2>
+        <div className="text-left  text-3xl md:text-4xl lg:text-5xl px-10 absolute bottom-[-3px] jj w-[100vw]">
+          <h1 className="mx-[-10px] lg:mx-[19px] bg-gradient-to-br from-[#5051F9]  to-[#DFDFFF] leading-20 font-semibold text-transparent bg-clip-text">Events</h1>
+          <h2 className="mx-[-10px] lg:mx-[19px] text-[18px] md:text-[25px] lg:py-1 lg:text-[33px]">Our past successful events</h2>
         </div>
       </div>
     </>
