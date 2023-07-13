@@ -94,7 +94,7 @@ const About: React.FC = () => {
             animate={controls1} //refer to line 20
                 transition={{ duration: 1 }} //slider duration for popping up. if you are changinng duration then make sure to change delay of glow adder so thatt  the gow starts after animation is complete
                 onAnimationComplete={handleSliderAnimationComplete}>
-              <h1 className="js-build-in-item text-2xl font-semibold md:text-3xl lg:text-4xl">
+              <h1 className="js-build-in-item text-3xl font-semibold lg:text-4xl">
                 About<span className="ml-1 text-[#3B61CF]">Us</span>
               </h1>
               <p className="text-md md:mt-6 text-[#7d8590] md:text-xl md:leading-6">
@@ -103,7 +103,7 @@ const About: React.FC = () => {
                 and events since 2017
               </p>
             </motion.div>
-            <div className="flex flex-col md:flex-row md:flex-wrap gap-[40px] xl:gap-[30px] 2xl:gap-[50px] md:ml-[60px] mt-[100px] sm:ml-12  mr-4 ">
+            <div className="flex flex-col md:flex-row md:flex-wrap gap-[40px] xl:gap-[30px] 2xl:gap-[50px] md:ml-[60px] mt-[50px] md:mt-[100px] sm:ml-12  mr-4 ">
               <motion.div
                 className="flex justify-center"
                 initial={{ opacity: 0, y: 1000 }} //before scrolling position of slider

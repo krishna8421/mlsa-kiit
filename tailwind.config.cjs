@@ -14,7 +14,9 @@ module.exports = {
         "0px 0px 40px 20px rgba(55, 124, 236, .5), 0 2px 4px -1px rgba(35, 63, 146, 0.8)",
       aboutLogoShadowBlue:
         "0px 0px 14px 7px rgba(55, 124, 236, .5), 0 2px 4px -1px rgba(35, 63, 146, 0.8)",
-      aboutContainerShadow: "0px 0px 30px 10px rgba(132, 89, 226, 0.4)",
+      mobileAboutShadow:
+        "0px 0px 9px 3px rgba(55, 124, 236, .5), 0 2px 4px -1px rgba(35, 63, 146, 0.8)",
+      aboutContainerShadow: "0px 0px 5px 5px rgba(132, 89, 226, 0.4)",
       blue: "1px 1px 20px 7px rgba(59, 171, 207, 0.2), -1px -1px 20px 1px rgba(35, 63, 146, 0.8)",
       blue2: " 4px 4px 100px -20px rgba(130, 98, 245, 0.8)",
       blue3: " 6px 6px 90px -10px rgba(130, 98, 245, 0.8)",

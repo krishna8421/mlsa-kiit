@@ -66,8 +66,8 @@ const ProjectCard = ({
         ></Image>
         <div className=" ml-[.57vw] pt-[1.45vw] text-[#FFF] 3xl:ml-[11px] 3xl:pt-7">
           <div>
-            <h2 className="cursor-pointer text-[15px] lg:text-[1.1rem] sm:text-[0.7rem] md:text-[1rem] 2xl:text-2xl 3xl:text-3xl font-normal leading-normal capitalize">{ProjectName}</h2>
-            <div className=" mt-[.62vw] 3xl:mt-3 flex cursor-default flex-col text-[13px] lg:text-[18px] 2xl:text-[20px] font-[350] leading-normal">
+            <h2 className="cursor-pointer text-[15px] lg:text-[1.1rem] sm:text-[0.7rem] md:text-[1rem] 2xl:text-xl 3xl:text-3xl font-normal leading-normal capitalize">{ProjectName}</h2>
+            <div className=" mt-[.62vw] 3xl:mt-3 flex cursor-default flex-col text-[13px] lg:text-[15px] 2xl:text-[18px] font-[350] leading-normal">
               <span>{techStack1}</span>
               <span>{techStack2}</span>
             </div>
