@@ -1212,7 +1212,7 @@ export const ARVR = [
   },
 ];
 
-export const Cloud = [
+export const CloudTeam = [
   {
     id: 1,
     img: "/members/Archit Gupta.jpg",

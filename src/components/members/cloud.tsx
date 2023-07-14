@@ -1,6 +1,6 @@
 "use client";
 
-import { Cloud } from "@/constants";
+import { CloudTeam } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
 import React,{ useState } from "react";
@@ -68,7 +68,7 @@ const Item = ({ into, isActive, onClick }: any) => {
 }
 
 
-const cloud:any = () => {
+const Cloud:any = () => {
   const [activeCard, setActiveCard] = useState(null);
 
   const handleCardClick = (into: any) => {
@@ -90,7 +90,7 @@ const cloud:any = () => {
           <div className="text-[16px] md:text-2xl lg:text-3xl mb-[30px] leading-normal text-white font-semibold ">Cloud</div>
           <div className="grid mr-0 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 w-full gap-2 md:gap-4 lg:gap-8">
 
-            {Cloud.map((into, index) => {
+            {CloudTeam.map((into, index) => {
               return <Item into={into} key={index} isActive={into === activeCard}
                 onClick={() => handleCardClick(into)} />
             })}
@@ -103,4 +103,4 @@ const cloud:any = () => {
   )
 }
 
-export default cloud
+export default Cloud
