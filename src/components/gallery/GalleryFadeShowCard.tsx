@@ -16,7 +16,6 @@ type GalleryFadeShowCardProps = {
 
 const GalleryFadeShowCard = ({ imgArray, title, num, timer }: GalleryFadeShowCardProps) => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  console.log('index', currentIndex % imgArray.length)
 
   useEffect(() => {
     const intervalId = setInterval(() => {
