@@ -36,7 +36,7 @@ const LeadsCard = ({ image, name, domain, index }: Props) => {
           height={700}
           alt="name"
         />
-        <div className="absolute bottom-0 left-0 h-full w-full rounded-imageradius bg-gradient-to-t from-black via-transparent to-transparent">
+        <div className="cursor-pointer absolute bottom-0 left-0 h-full w-full rounded-imageradius bg-gradient-to-t from-black via-transparent to-transparent">
           {" "}
         </div>
         <div className="absolute bottom-4 w-full">
