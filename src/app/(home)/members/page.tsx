@@ -1,15 +1,15 @@
 "use client";
 
-import Appdev from "@/components/members/appdev";
-import Arvr from "@/components/members/arvr";
-import Creative from "@/components/members/cerative";
-import Cloud from "@/components/members/cloud";
-import GraphicDesign from "@/components/members/graphicdesign";
-import MachineLearning from "@/components/members/machinelearning";
-import Marketing from "@/components/members/marketing";
-import Videoediting from "@/components/members/videoediting";
-import Webdev from "@/components/members/webdev";
-import Youtube from "@/components/members/youtube";
+import Appdev from "@/components/members/Appdev";
+import Arvr from "@/components/members/Arvr";
+import Creative from "@/components/members/Cerative";
+import Cloud from "@/components/members/Cloud";
+import GraphicDesign from "@/components/members/Graphicdesign";
+import MachineLearning from "@/components/members/Machinelearning";
+import Marketing from "@/components/members/Marketing";
+import Videoediting from "@/components/members/Videoediting";
+import Webdev from "@/components/members/Webdev";
+import Youtube from "@/components/members/Youtube";
 import Image from "next/image";
 
 
