@@ -68,7 +68,7 @@ const Item = ({ into,isActive,onClick }: any) => {
 }
 
 
-const youtube:any = () => {
+const Youtube:any = () => {
   const [activeCard, setActiveCard] = useState(null);
 
   const handleCardClick = (into: any) => {
@@ -102,4 +102,4 @@ const youtube:any = () => {
   )
 }
 
-export default youtube
+export default Youtube

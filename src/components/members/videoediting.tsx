@@ -67,7 +67,7 @@ const Item = ({ into, isActive, onClick }: any) => {
 }
 
 
-const videoediting:any= () => {
+const Videoediting:any= () => {
   const [activeCard, setActiveCard] = useState(null);
 
   const handleCardClick = (into: any) => {
@@ -103,4 +103,4 @@ const videoediting:any= () => {
   )
 }
 
-export default videoediting
+export default Videoediting

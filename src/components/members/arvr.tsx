@@ -68,7 +68,7 @@ const Item = ({ into, isActive, onClick }: any) => {
 }
 
 
-const arvr:any = () => {
+const Arvr:any = () => {
   const [activeCard, setActiveCard] = useState(null);
 
   const handleCardClick = (into: any) => {
@@ -102,4 +102,4 @@ const arvr:any = () => {
   )
 }
 
-export default arvr
+export default Arvr

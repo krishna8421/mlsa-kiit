@@ -72,7 +72,7 @@ const Item = ({ into, isActive, onClick }: any) => {
 }
 
 
-const webdev:any = () => {
+const Webdev:any = () => {
   const [activeCard, setActiveCard] = useState(null);
 
   const handleCardClick = (into: any) => {
@@ -108,4 +108,4 @@ const webdev:any = () => {
   )
 }
 
-export default webdev
+export default Webdev

@@ -2,7 +2,7 @@
 
 import Appdev from "@/components/members/Appdev";
 import Arvr from "@/components/members/Arvr";
-import Creative from "@/components/members/Cerative";
+import Creative from "@/components/members/Creative";
 import Cloud from "@/components/members/Cloud";
 import GraphicDesign from "@/components/members/Graphicdesign";
 import MachineLearning from "@/components/members/Machinelearning";

@@ -66,7 +66,7 @@ const Item = ({ into, isActive, onClick }: any) => {
 }
 
 
-const appdev: any = () => {
+const Appdev: any = () => {
   const [activeCard, setActiveCard] = useState(null);
 
   const handleCardClick = (into: any) => {
@@ -100,4 +100,4 @@ const appdev: any = () => {
   )
 }
 
-export default appdev
+export default Appdev

@@ -68,7 +68,7 @@ const Item = ({ into, isActive, onClick }: any) => {
 }
 
 
-const graphicdesign:any = () => {
+const Graphicdesign:any = () => {
   const [activeCard, setActiveCard] = useState(null);
 
   const handleCardClick = (into: any) => {
@@ -103,4 +103,4 @@ const graphicdesign:any = () => {
   )
 }
 
-export default graphicdesign
+export default Graphicdesign

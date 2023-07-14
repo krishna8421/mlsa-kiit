@@ -1032,7 +1032,7 @@ export const GraphicDesign = [
   },
 ];
 
-export const Creative = [
+export const CreativeTeam = [
   {
     id: 1,
     img: "/members/DAWAR SHAFAQUE.jpg",
