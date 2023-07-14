@@ -3,7 +3,6 @@
 import { WebDevelopment } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
 import GithubIcon from "../../../public/Github.svg";
 import LinkdIcon from "../../../public/LinkedIn.svg";
 import InstaIcon from "../../../public/instagram.svg";
