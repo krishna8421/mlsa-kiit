@@ -10,25 +10,27 @@ const EventCard = () => {
     return (
         <>
 
-            <div className="max-w-[1920px] pt-[100px] bg-black mx-auto p-[5vw]  ">
+            <div className="max-w-[1920px] md:pt-[100px] bg-black mx-auto p-[5vw]  ">
 
-                <div className=" flex flex-row">
+                <div className=" flex flex-col-reverse  md:flex-row">
                     <div className="relative">
-                        <img src="./eyeSpySquid.jpg" alt="image" className="w-[680px] h-[300px] ml-[0.22rem] mb-[1.5rem] rounded relative object-cover object-center group hover:shadow-blue2 hover:delay-500 hover:ease-in-out" />
+                        <img src="./eyeSpySquid.jpg" alt="image" className="w-[680px] h-[300px] ml-[0.22rem] mb-[1.5rem] rounded-[20px] md:rounded relative object-cover object-center group hover:shadow-blue2 hover:delay-500 hover:ease-in-out" />
                         {/* <Image alt="image" src="/eyeSpySquid.jpg" width={800} height={300} className="ml-[0.22rem] mb-[1rem] rounded relative group" /> */}
                         <div className="absolute bottom-[45px] left-[18px] text-base 3xl:text-3xl font-medium drop-shadow-2xl" style={{ textShadow: " 1.5px 1.5px black", lineHeight: "normal" }}>16th April 2023</div>
                         <div className="absolute bottom-[26px] left-[18px] text-base 3xl:text-3xl font-medium drop-shadow-2xl" style={{ textShadow: " 1.5px 1.5px black", lineHeight: "normal" }}>1368 Participants</div>
                         <div className="absolute bottom-[72px] left-[18px] text-xl 3xl:text-3xl font-medium drop-shadow-2xl" style={{ textShadow: " 1.5px 1.5px black", lineHeight: "normal" }}>Eye S.py Squid</div>
                     </div>
-
-                    <h1 className="text-2xl md:text-3xl lg:text-4xl" style={{ marginTop: "-0.7rem", fontWeight: "600", background: "linear-gradient(to bottom,#5051F9, #DFDFFF)", marginLeft: "2.5rem", WebkitTextFillColor: "transparent", WebkitBackgroundClip: "text", letterSpacing: "1px" }}>Recently at <br /> <span style={{ background: "linear-gradient(to bottom,#5051F9, #DFDFFF)", WebkitTextFillColor: "transparent", WebkitBackgroundClip: "text", letterSpacing: "0px" }} className="text-3xl md:text-4xl lg:text-5xl"> MLSA</span></h1>
+                    <div className="flex md:flex-col  ml-3 md:ml-[2.5rem]  " >
+                        <h1 className="text-2xl md:text-3xl lg:text-4xl pb-4 mt-[-0.7rem] font-semibold bg-gradient-to-br from-[#5051F9] to-[#DFDFFF]  bg-clip-text text-transparent tracking-[1px]">Recently at </h1>
+                        <h1 className="text-2xl ml-2 md:ml-[0px] mt-[-0.7rem] pb-4 md:text-3xl lg:text-4xl bg-gradient-to-b font-semibold from-[#5051F9] to-[#DFDFFF]  bg-clip-text text-transparent tracking-[1px]"> MLSA</h1>
+                    </div>
                 </div>
                 <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 mx-auto gap-4 ">
                     {EVENTS2023.map((event, index) => {
 
                         return (<>
 
-                            <div key={index} className="relative group gallery-gradient overflow-hidden rounded-[4px] lg:rounded-[4px]  w-full h-[300px] sm:h-[22vw] lg:h-[19.21vw] 3xl:h-[369px]">
+                            <div key={index} className="relative group gallery-gradient overflow-hidden rounded-[20px] md:rounded-[4px]  w-full h-[300px] sm:h-[22vw] lg:h-[19.21vw] 3xl:h-[369px]">
 
                                 <Image src={event.img} width={555} height={355} className="block z-10 w-full h-full object-cover object-center transition duration-700 " alt="gallery"></Image>
 
@@ -47,7 +49,7 @@ const EventCard = () => {
 
                         return (<>
                             {check == true ? (
-                                <div key={index} className="relative group gallery-gradient overflow-hidden rounded-[10px] lg:rounded-[7px]  w-full h-[300px] sm:h-[22vw] lg:h-[19.21vw] 3xl:h-[369px]">
+                                <div key={index} className="relative group gallery-gradient overflow-hidden rounded-[20px] md:rounded-[7px]  w-full h-[300px] sm:h-[22vw] lg:h-[19.21vw] 3xl:h-[369px]">
 
                                     <Image src={event.img} width={555} height={355} className="block z-10 w-full h-full object-cover transition duration-700 " alt="gallery"></Image>
 
