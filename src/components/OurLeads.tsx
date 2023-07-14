@@ -24,7 +24,7 @@ const OurLeads = () => {
         className="px-3 md:ml-20"
         spaceBetween={10}
         slidesPerView={1}
-        // centeredSlides={true}
+        centeredSlides={true}
         cssMode={true}
         loop={false}
         mousewheel={true}

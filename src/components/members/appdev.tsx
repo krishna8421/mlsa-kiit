@@ -3,21 +3,18 @@
 import { AndroidDevelopment } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
-import React,{ useState } from "react";
+import { useState } from "react";
 import GithubIcon from "../../../public/Github.svg";
 import LinkdIcon from "../../../public/LinkedIn.svg";
 import InstaIcon from "../../../public/instagram.svg";
-
 const imgStyle: any = {
   objectPosition: "center",
   objectFit: "cover",
 };
 
 const Item = ({ into, isActive, onClick }: any) => {
-  const [showDetail, setShowDetail] = useState(false)
 
   const handleImageClick = () => {
-    // setShowDetail(!showDetail);
     onClick();
   };
 
@@ -69,7 +66,7 @@ const Item = ({ into, isActive, onClick }: any) => {
 }
 
 
-const appdev:any = () => {
+const appdev: any = () => {
   const [activeCard, setActiveCard] = useState(null);
 
   const handleCardClick = (into: any) => {
