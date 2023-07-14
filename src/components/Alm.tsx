@@ -38,11 +38,14 @@ const Alumni1: React.FC = () => {
       const scrollPosition = window.scrollY; //determines how much the user has scrolled
       const windowHeight = window.innerHeight; //determines the height of the  device the user is using
       let num: number;
-      if (windowHeight > 750) {
-        num = 0.34
+      if (windowHeight > 720) {
+        num = 0.39
+      } else if (windowHeight > 650) {
+        num = 0.25
       } else {
         num = 0.21
       }
+      console.log("J " + num)
 
       window.addEventListener("scroll", function () {
         var scrollPosition = window.scrollY;
