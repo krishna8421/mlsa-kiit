@@ -67,7 +67,7 @@ const Item = ({ into, isActive, onClick }: any) => {
 }
 
 
-const Machinelearning:React.FC = () => {
+const Machinelearning:any = () => {
   const [activeCard, setActiveCard] = useState(null);
 
   const handleCardClick = (into: any) => {

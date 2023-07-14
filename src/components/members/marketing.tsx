@@ -69,7 +69,7 @@ const Item = ({ into, isActive, onClick }: any) => {
 }
 
 
-const Marketing:React.FC = () => {
+const Marketing:any = () => {
   const [activeCard, setActiveCard] = useState(null);
 
   const handleCardClick = (into: any) => {

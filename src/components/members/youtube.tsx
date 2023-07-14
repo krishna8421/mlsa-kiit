@@ -68,7 +68,7 @@ const Item = ({ into,isActive,onClick }: any) => {
 }
 
 
-const youtube: React.FC = () => {
+const youtube:any = () => {
   const [activeCard, setActiveCard] = useState(null);
 
   const handleCardClick = (into: any) => {

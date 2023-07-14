@@ -72,7 +72,7 @@ const Item = ({ into, isActive, onClick }: any) => {
 }
 
 
-const webdev:React.FC = () => {
+const webdev:any = () => {
   const [activeCard, setActiveCard] = useState(null);
 
   const handleCardClick = (into: any) => {
