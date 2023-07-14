@@ -8,11 +8,12 @@ import "swiper/css/pagination";
 import { Autoplay, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import LeadsCard from "./LeadsCard";
+
 // import "swiper/swiper-bundle.min.css";
 
 import { motion, useAnimation } from "framer-motion";
 
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 // import "swiper/swiper-bundle.min.css";
 
 
@@ -78,7 +79,12 @@ const Leads: React.FC = () => {
             window.removeEventListener("scroll", handleScroll);
         };
     });
+    // const [activeIndex, setActiveIndex] = useState(-1);
+    const [activeCard, setActiveCard] = useState(null);
 
+    const handleCardClick = (Lead: any) => {
+        setActiveCard(Lead === activeCard ? null : Lead);
+    };
 
     return (
         <>
@@ -122,15 +128,11 @@ const Leads: React.FC = () => {
                                 className="px-3 md:ml-20"
                                 spaceBetween={10}
                                 slidesPerView={1}
-                                // centeredSlides={true}
+                                centeredSlides={true}
                                 cssMode={true}
                                 loop={false}
                                 mousewheel={true}
                                 navigation={true}
-                                // autoplay={{
-                                //   delay: 2500,
-                                //   disableOnInteraction: true,
-                                // }}
                                 breakpoints={{
                                     350: {
                                         slidesPerView: 1,
@@ -170,7 +172,9 @@ const Leads: React.FC = () => {
                                                 transition={{ duration: 0.5 + (index * 0.1) }}
                                                 onAnimationComplete={handleSliderAnimationComplete}
                                             >
-                                                <LeadsCard {...Lead} index={index} />
+                                                <LeadsCard {...Lead} index={index} isActive={Lead === activeCard}
+                                                    onClick={() => handleCardClick(Lead)}
+                                                />
                                             </motion.div>
                                         </SwiperSlide>
                                     );
