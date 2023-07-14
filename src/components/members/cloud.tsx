@@ -3,7 +3,7 @@
 import { Cloud } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import React,{ useState } from "react";
 import GithubIcon from "../../../public/Github.svg";
 import LinkdIcon from "../../../public/LinkedIn.svg";
 import InstaIcon from "../../../public/instagram.svg";
@@ -68,7 +68,7 @@ const Item = ({ into, isActive, onClick }: any) => {
 }
 
 
-const cloud = () => {
+const cloud:React.FC = () => {
   const [activeCard, setActiveCard] = useState(null);
 
   const handleCardClick = (into: any) => {

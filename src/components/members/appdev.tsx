@@ -3,7 +3,7 @@
 import { AndroidDevelopment } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import React,{ useState } from "react";
 import GithubIcon from "../../../public/Github.svg";
 import LinkdIcon from "../../../public/LinkedIn.svg";
 import InstaIcon from "../../../public/instagram.svg";
@@ -69,7 +69,7 @@ const Item = ({ into, isActive, onClick }: any) => {
 }
 
 
-const appdev = () => {
+const appdev:React.FC = () => {
   const [activeCard, setActiveCard] = useState(null);
 
   const handleCardClick = (into: any) => {

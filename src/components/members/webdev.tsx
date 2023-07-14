@@ -2,6 +2,7 @@
 
 import { WebDevelopment } from "@/constants";
 import Image from "next/image";
+import React ,{useState} from "react";
 import Link from "next/link";
 import GithubIcon from "../../../public/Github.svg";
 import LinkdIcon from "../../../public/LinkedIn.svg";
@@ -71,7 +72,7 @@ const Item = ({ into, isActive, onClick }: any) => {
 }
 
 
-const webdev = () => {
+const webdev:React.FC = () => {
   const [activeCard, setActiveCard] = useState(null);
 
   const handleCardClick = (into: any) => {
