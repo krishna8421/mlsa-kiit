@@ -30,9 +30,9 @@ const JoinUs: React.FC = () => {
       const windowHeight = window.innerHeight; //determines the height of the  device the user is using
       let num: number;
       if (windowHeight > 720) {
-        num = 0.41
+        num = 0.39
       } else if (windowHeight > 650) {
-        num = 0.27
+        num = 0.29
       } else {
         num = 0.24
       }
