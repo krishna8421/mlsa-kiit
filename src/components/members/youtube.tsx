@@ -47,13 +47,13 @@ const Item = ({ into }: any) => {
           <div className="text-[12px] lg:text-[16.5px] 2xl:text-[20px] text-white rounded-lg p-1  font-normal leading-none capitalize">{into.name}</div>
 
           <div className="flex items-center gap-[2px] md:gap-1 ">
-            <Link href={"/"}>
+            <Link href={into.instagram ||""}>
               <Image src={InstaIcon} alt="icon" className="hover:scale-110 transition duration-100 h-[15px] w-[15px] md:h-[17px] md:w-[17px] 2xl:h-[24px] 2xl:w-[24px]" />
             </Link>
-            <Link href={""}>
+            <Link href={into.linkedIn || ""}>
               <Image src={LinkdIcon} alt="icon" className="hover:scale-110 transition duration-100 h-[15px] w-[15px] md:h-[17px] md:w-[17px] 2xl:h-[24px] 2xl:w-[24px]" />
             </Link>
-            <Link href={""}>
+            <Link href={into.github || ""}>
               <Image src={GithubIcon} alt="icon" className="hover:scale-110 transition duration-100 h-[15px] w-[15px] md:h-[17px] md:w-[17px] 2xl:h-[24px] 2xl:w-[24px]" />
             </Link>
           </div>

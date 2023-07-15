@@ -50,13 +50,13 @@ const Item = ({ into }: any) => {
             <div className="text-[12px] lg:text-[16.5px] 2xl:text-[20px] text-[#FFF] font-normal leading-none capitalize">{into.name}</div>
 
             <div className="flex items-center gap-[2px] md:gap-1 ">
-              <Link href={into.instagram || ""} target="_blank">
+              <Link href={into.instagram ||""} target="_blank">
                 <Image src={InstaIcon} alt="icon" className="hover:scale-110 transition duration-100 h-[15px] w-[15px] md:h-[17px] md:w-[17px] 2xl:h-[24px] 2xl:w-[24px]" />
               </Link>
-              <Link href={into.LinkedIn || ""} target="_blank">
+              <Link href={into.linkedIn || ""} target="_blank">
                 <Image src={LinkdIcon} alt="icon" className="hover:scale-110 transition duration-100 h-[15px] w-[15px] md:h-[17px] md:w-[17px] 2xl:h-[24px] 2xl:w-[24px]" />
               </Link>
-              <Link href={into.Github || ""} target="_blank">
+              <Link href={into.github || ""} target="_blank">
                 <Image src={GithubIcon} alt="icon" className="hover:scale-110 transition duration-100 h-[15px] w-[15px] md:h-[17px] md:w-[17px] 2xl:h-[24px] 2xl:w-[24px]" />
               </Link>
             </div>
