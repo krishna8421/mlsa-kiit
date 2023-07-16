@@ -22,19 +22,19 @@ const Item = ({ into }: any) => {
   };
 
   return (
-<div className="h-[220px] md:h-[270px] lg:h-[350px] 2xl:h-[400px] w-full rounded-md md:rounded-xl" >
-        <div className="image-members rounded-md md:rounded-xl hover:cursor-pointer z-10 relative h-[175px] md:h-[230px] lg:h-[290px] 2xl:h-[340px] w-full" onClick={handleImageClick}>
-          <Image
-            src={into.img}
-            style={imgStyle}
-            className={showDetail ? "h-full z-30  w-full rounded-t-md rounded-b-none md:rounded-t-xl md:rounded-b-none":"h-full z-30  w-full rounded-md md:rounded-xl"}
-            width={700}
-            height={700}
-            alt="name"
-          ></Image>
+    <div className="h-[220px] md:h-[270px] lg:h-[350px] 2xl:h-[400px] w-full rounded-md md:rounded-xl" >
+      <div className="image-members rounded-md md:rounded-xl hover:cursor-pointer z-10 relative h-[175px] md:h-[230px] lg:h-[290px] 2xl:h-[340px] w-full" onClick={handleImageClick}>
+        <Image
+          src={into.img}
+          style={imgStyle}
+          className={showDetail ? "h-full z-30  w-full rounded-t-md rounded-b-none md:rounded-t-xl md:rounded-b-none" : "h-full z-30  w-full rounded-md md:rounded-xl"}
+          width={700}
+          height={700}
+          alt="name"
+        ></Image>
 
-        </div>
-        
+      </div>
+
       <div className={showDetail ? "-translate-y-[70px] lg:-translate-y-16 scale-100 2xl:-translate-y-14 pb-[5px] md:pb-[5px] backdrop-blur-[5px] bg-[#25252580] min-h-[100px] w-full p-[3px] flex rounded-[10px] justify-between items-end transition  transform ease-in-out delay-400 z-10" : " flex items-center backdrop-blur-[5px] bg-[#25252580] scale-0 min-h-[100px] justify-between transition transform ease-in-out delay-400  -translate-y-40 z-0"}>
         <div className="flex items-center relative w-full justify-between">
           <div className="bottom-[-10px] md:bottom-[-15px] left-[0%] absolute w-[200px] h-[20px] z-40">
@@ -72,8 +72,8 @@ const Item = ({ into }: any) => {
 const Marketing = () => {
 
   return (
-    <div className="flex pl-3">
-      <div className="flex flex-col items-center ">
+    <div className="flex ">
+      <div className="flex flex-col items-center px-2 md:px-0">
         <div className="h-[15px] w-[15px] shadow-dotShadowPurple self-center rounded-full bg-white"></div>
 
         <div className=" w-[5px]  bg-gradient-to-b from-[#533BD0] to-transparent duration-700 transition h-full"></div>

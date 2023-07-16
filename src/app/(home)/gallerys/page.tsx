@@ -15,11 +15,11 @@ const Gallery = () => {
 
   useEffect(() => {
     const numCounter = () => {
-      if (rojectsCounter < 80) {
+      if (rojectsCounter < 10) {
         setProjectsCounter((num) => num + 1);
       }
 
-      if (sponsersCounter < 300) {
+      if (sponsersCounter < 20) {
         setSponsersCounter((num) => num + 1);
       }
     };
@@ -68,15 +68,15 @@ const Gallery = () => {
               Gallery
             </h1>
             <div className="text-md mt-1 lg:mt-2 md:text-lg lg:text-xl">
-              <p className="text-xl md:tracking-wider md:text-[25px] 2xl:text-4xl 3xl:text-[40px]">Out past successful events</p>
+              <p className="text-xl md:tracking-wider md:text-[25px] 2xl:text-4xl 3xl:text-[40px]">Our beautiful memories</p>
               <div className=" mt-[18px] md:mt-[30px] lg:mt-[58px]  flex md:gap-14 3xl:gap-16 justify-between md:justify-start ">
                 <div className="flex flex-col">
                   <span className="bg-gradient-to-b from-[#5051F9] to-[#AE86E0] bg-clip-text text-transparent text-2xl font-bold md:text-3xl 3xl:text-5xl">{rojectsCounter}+</span>
-                  <span className="bg-gradient-to-b from-[#5051F9] to-[#AE86E0] bg-clip-text text-transparent text-xl md:text-2xl 3xl:text-4xl">Members</span>
+                  <span className="bg-gradient-to-b from-[#5051F9] to-[#AE86E0] bg-clip-text text-transparent text-xl md:text-2xl 3xl:text-4xl">Sponsors</span>
                 </div>
                 <div className="flex flex-col">
                   <span className="bg-gradient-to-b from-[#5051F9] to-[#AE86E0] bg-clip-text text-transparent text-2xl font-bold md:text-3xl  3xl:text-5xl">{sponsersCounter}+</span>
-                  <span className="bg-gradient-to-b from-[#5051F9] to-[#AE86E0] bg-clip-text text-transparent text-xl md:text-2xl  3xl:text-4xl">Participants</span>
+                  <span className="bg-gradient-to-b from-[#5051F9] to-[#AE86E0] bg-clip-text text-transparent text-xl md:text-2xl  3xl:text-4xl">Events</span>
                 </div>
               </div>
             </div>
