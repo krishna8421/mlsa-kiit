@@ -14,7 +14,7 @@ const Projects = () => {
         setProjectsCounter((num) => num + 1);
       }
 
-      if (sponsersCounter < 10) {
+      if (sponsersCounter < 63) {
         setSponsersCounter((num) => num + 1);
       }
     };
@@ -87,13 +87,15 @@ const Projects = () => {
               <span className="text-xl font-semibold md:text-2xl">Finished projects</span>
             </div>
             <div className="flex flex-col">
-              <span className="text-2xl font-bold md:text-3xl">{sponsersCounter}+</span>
-              <span className="text-xl font-semibold md:text-2xl">Sponsors</span>
+              <span className="text-2xl font-bold md:text-3xl">{sponsersCounter}</span>
+              <span className="text-xl font-semibold md:text-2xl">Members</span>
             </div>
           </div>
         </div>
-        <div className="mt-6 w-1/3 h-[1px] bg-[#d1d5db] md:h-[2px] rounded-full "></div>
-      </div>
+        <div className="mt-8 w-3/4 h-[1px] bg-[#d1d5db] md:h-[2px] rounded-full lg:hidden"></div>
+        <div className="mt-6 w-1/4 h-[1px] bg-[#d1d5db] md:h-[2px] rounded-full hidden lg:block"></div>
+
+        </div>
       <Project />
     </>
   );

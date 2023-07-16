@@ -11,7 +11,9 @@ interface Props {
   name: string;
   domain: string;
   message: string;
-  link: string;
+  // gitlink: string;
+  // linkedinlink: string;
+  // instalink: string;
   index: number;
 }
 const imgStyle: any = {
@@ -27,7 +29,7 @@ const LeadsCard = ({ image, name, domain, index }: Props) => {
   };
   return (
     <div className="h-[26rem]  w-[14rem]  rounded-imageradius" >
-      <div className="relative h-[20rem] w-full rounded-imageradius mt-[4rem] z-10 hover:shadow-leadsCardShadow  transition-all" onClick={handleImageClick}>
+      <div className="relative h-[20rem] hover:cursor-pointer w-full rounded-imageradius mt-[4rem] z-10 hover:shadow-leadsCardShadow  transition-all" onClick={handleImageClick}>
         <Image
           src={image}
           style={imgStyle}
@@ -36,7 +38,7 @@ const LeadsCard = ({ image, name, domain, index }: Props) => {
           height={700}
           alt="name"
         />
-        <div className="absolute bottom-0 left-0 h-full w-full rounded-imageradius bg-gradient-to-t from-black via-transparent to-transparent">
+        <div className="cursor-pointer absolute bottom-0 left-0 h-full w-full rounded-imageradius bg-gradient-to-t from-black via-transparent to-transparent">
           {" "}
         </div>
         <div className="absolute bottom-4 w-full">
