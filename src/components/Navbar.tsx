@@ -35,7 +35,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed left-0 right-0 top-0 z-40  w-screen max-w-full py-4 pl-2 pr-4 sm:pl-4 sm:pr-6 lg:pl-6 lg:pr-10 lg:max-w-[1920px] ${showBackground ? "backdrop-blur-md" : ""
+      className={`mx-auto fixed left-0 right-0 top-0 z-50 w-screen max-w-full py-4 pl-2 pr-4 sm:pl-4 sm:pr-6 lg:pl-6 lg:pr-10 lg:max-w-[1920px] ${showBackground ? "backdrop-blur-md" : ""
         }`}
     >
       <div className="flex items-center justify-between">
@@ -58,7 +58,7 @@ const Navbar = () => {
           {!showMobileMenu ? <AiOutlineMenu /> : <VscChromeClose />}
           <MobileView visible={showMobileMenu} />
         </div>
-        <div className="hidden gap-6 text-white md:flex md:items-center lg:gap-8">
+        <div className="hidden gap-4 md:gap-1 text-white md:flex md:items-center lg:gap-6">
           <NavbarItem href="/events">Events</NavbarItem>
           <NavbarItem href="/projects">Projects</NavbarItem>
           <NavbarItem href="https://medium.com/msackiit" external={true}>Blog</NavbarItem>

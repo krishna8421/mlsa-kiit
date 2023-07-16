@@ -21,8 +21,8 @@ body {
 .projectsAnimation {
   -webkit-animation-name: zoomOut;
   animation-name: zoomOut;
-  -webkit-animation-duration: 2s; 
-  animation-duration: 2s; 
+  -webkit-animation-duration: 1s; 
+  animation-duration: 1s; 
   -webkit-animation-timing-function: ease-out; 
   animation-timing-function: ease-out; 
 }
@@ -44,8 +44,8 @@ body {
 .projectsHeroSlideIn {
   -webkit-animation-name: slideIn;
   animation-name: slideIn;
-  -webkit-animation-duration: 2s; 
-  animation-duration: 2s; 
+  -webkit-animation-duration: 1.4s; 
+  animation-duration: 1.4s; 
   -webkit-animation-timing-function: ease-in-out;
   animation-timing-function: ease-in-out;
 }
@@ -124,6 +124,7 @@ body {
     background: linear-gradient(60deg, #FF2EAB, #EDBA03);
     border-radius: 15px;
     z-index: -1;
+    /* background-color: #50cbff69; */
     animation-delay: 0.5s;
     animation: animatedgradient 1s ease alternate infinite;
     background-size: 300% 300%;
@@ -144,6 +145,28 @@ body {
     }
   }
   
+  .swiper-button-next,
+.swiper-button-prev {
+  background-position: center;
+  background-size: 32px;
+  background-repeat: no-repeat;
+  padding: 18px;
+  border-radius: 100%;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.swiper-button-prev {
+  background-image: url("/swiper-js/left-arrow.png");
+}
+
+.swiper-button-next {
+  background-image: url("/swiper-js/right-arrow.png");
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  content: "" !important;
+}
   
   @keyframes animatedgradient {
       0% {
@@ -205,8 +228,47 @@ body {
     top: 0px;
     left: 0px;
     z-index: 30;
-    background: linear-gradient(360deg, #000 0%, rgba(0, 0, 0, 0.00) 20%) ,transparent 50% / cover no-repeat;
+    background: linear-gradient(360deg, #000 0%, rgba(0, 0, 0, 0.00) 60%) ,transparent 50% / cover no-repeat;
     opacity: 2;
     content: '';
 }
 
+.wrapper{
+  perspective:1px;
+}
+.parallax-bg{
+  transform:translate3d(0,0,-1px) scale(2);
+  background-position:center center;
+  /* background-image: url(../../public/members/members.png); */
+}
+.parallax-section{
+  transform-style:preserve-3d;
+}
+
+.teams-gradient::after{
+  width: 100%;
+  height: 300px;
+  position: absolute;
+  bottom: 50px;
+  left: 0px;
+  z-index: 20;
+  opacity: 4;
+  content: '';
+  background: linear-gradient(360deg, #000 0%, rgba(0, 0, 0, 0.00) 100%);
+}
+
+.image-members::after{
+  width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 20;
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0.00) 100%), -112.972px 0px / 242.22% 100% no-repeat;
+    opacity: 4;
+    content: '';
+}
+
+.custom-font {
+  font-family: "Roboto", sans-serif;
+}

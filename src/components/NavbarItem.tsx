@@ -15,7 +15,7 @@ const NavbarItem = ({
   type = "link",
   className = "",
   mobileView,
-  external=false
+  external = false
 }: NavbarItemProps) => {
   if (type === "button") {
     return (
@@ -29,15 +29,20 @@ const NavbarItem = ({
       </Link>
     );
   }
-
+  // #0070C5
   return (
-    <Link href={href} target={`${external ? "_blank": ""}`}>
-      <div
-        className={`2xl:text-[1vw] text-md  cursor-pointer text-sm transition hover:text-[#0070C5]
+    <Link href={href} target={`${external ? "_blank" : ""}`}>
+      <div className="flex flex-col items-center group ">
+        <div className="bg-white w-full h-[2px] -translate-y-[-10px] group-hover:-translate-y-0 opacity-0 group-hover:opacity-70 trasnition-opacity duration-300"></div>
+        <div
+          className={`2xl:text-[1vw] text-md  cursor-pointer text-sm md:px-2 lg:px-4 font-medium group-hover:bg-[#111]/30 py-1.5 transition duration-300 hover:duration-500 ease-in-out
         ${className} ${mobileView && "w-full text-center text-white"} 
       `}
-      >
-        {children}
+        >
+          {children}
+        </div>
+        <div className="bg-white w-full h-[2px] translate-y-[-10px] group-hover:translate-y-0 opacity-0 group-hover:opacity-70 trasnition-opacity duration-300"></div>
+
       </div>
     </Link>
   );

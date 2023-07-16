@@ -1,5 +1,3 @@
-
-
 import "@/styles/globals.css";
 import Image from "next/image";
 import { useEffect, useState } from "react";
@@ -12,13 +10,12 @@ type GalleryImage = {
 type GalleryFadeShowCardProps = {
   imgArray: GalleryImage[];
   title: string,
-  num: string,
+  num: number,
   timer: number,
 }
 
 const GalleryFadeShowCard = ({ imgArray, title, num, timer }: GalleryFadeShowCardProps) => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  console.log('index', currentIndex % imgArray.length)
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -41,7 +38,7 @@ const GalleryFadeShowCard = ({ imgArray, title, num, timer }: GalleryFadeShowCar
             width={700}
             height={700}
             loading="lazy"
-            className={`absolute inset-0 h-full group-hover:scale-105 transition-all opacity-1 duration-2000 ease-in-out w-full rounded-lg object-cover transform
+            className={`scale[80%] absolute inset-0 h-full group-hover:scale-105 transition-all opacity-1 duration-2000 ease-in-out w-full rounded-lg object-cover object-center transform
             ${index === currentIndex ? "opacity-1" : "opacity-0"}
           `}
           ></Image>
@@ -52,7 +49,7 @@ const GalleryFadeShowCard = ({ imgArray, title, num, timer }: GalleryFadeShowCar
         <div className="self-end pb-4 pl-4 text-xl md:text-2xl xl:text-3xl font-medium">{title}</div>
         <div className="bg-gradient-to-l from-black to-transparent flex flex-col items-end justify-center gap-4">
           <div className="mr-[13px] h-[75%] w-[1px] bg-white opacity-50"></div>
-          <div className="text-hollow transform text-2xl md:text-3xl xl:text-4xl"><Image src={num} alt=".."></Image></div>
+          <div className="transform text-2xl md:text-3xl xl:text-4xl -rotate-90 number-gap font-bold text-gray-300">0{num}.</div>
         </div>
       </div>
     </div>
