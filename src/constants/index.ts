@@ -1287,7 +1287,7 @@ export const GALLERY = [
   {
     id: 2,
     img: "/gallery/Eyespy/2.JPG",
-    name: "Eyespy Squid",
+    name: "Eye S.py Squid",
   },
   {
     id: 3,
@@ -1297,7 +1297,7 @@ export const GALLERY = [
   {
     id: 4,
     img: "/gallery/Frontend/4.png",
-    name: "Frontend With Benefit",
+    name: "Frontend With Benefits",
   },
   {
     id: 5,
@@ -1307,7 +1307,7 @@ export const GALLERY = [
   {
     id: 6,
     img: "/gallery/Eyespy/3.JPG",
-    name: "Eyespy Squid",
+    name: "Eye S.py Squid",
   },
   {
     id: 7,
@@ -1317,12 +1317,12 @@ export const GALLERY = [
   {
     id: 8,
     img: "/gallery/Frontend/5.png",
-    name: "Frontend With Benefit",
+    name: "Frontend With Benefits",
   },
   {
     id: 9,
     img: "/gallery/Eyespy/4.JPG",
-    name: "Eyespy Squid",
+    name: "Eye S.py Squid",
   },
   {
     id: 10,
@@ -1332,21 +1332,21 @@ export const GALLERY = [
   {
     id: 11,
     img: "/gallery/Frontend/6.png",
-    name: "Frontend With Benefit",
+    name: "Frontend With Benefits",
   },
   {
     id: 12,
     img: "/gallery/Devops/4.JPG",
-    name: "devops",
+    name: "Devops",
   },
   {
     id: 13,
     img: "/gallery/Eyespy/5.JPG",
-    name: "Eyespy Squid",
+    name: "Eye S.py Squid",
   },
   {
     id: 14,
     img: "/gallery/Frontend/7.png",
-    name: "Frontend With Benefit",
+    name: "Frontend With Benefits",
   },
 ];
