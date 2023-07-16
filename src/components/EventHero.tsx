@@ -28,7 +28,7 @@ const EventHero = () => {
         </div>
       </div>
       <div className="relative">
-        <div className=" no-repeat h-[88vh] w-full bg-[url('/EventHero.png')] bg-cover  bg-center bg-no-repeat">
+        <div className=" no-repeat h-[400px] md:h-[88vh] w-full bg-[url('/EventHero.png')] bg-cover  bg-center bg-no-repeat">
           <div className="  mx-auto h-[100px] w-[93%]  text-right text-white">
             .
             <div className="  mx-auto mt-[5rem]  border-[1px] border-[#858585] border-solid flex items-center   justify-between rounded-xl bg-[#25252580] text-white shadow-gray  lg:w-[100%] ">
@@ -62,7 +62,7 @@ const EventHero = () => {
                   <p className="py-1 lg:py-2 text-xs font-[100px] md:text-base lg:text-[18px]">Last day to register</p>
                 </div>
 
-                <button className=" mb-[15px]  flex w-[35%] items-center justify-center whitespace-nowrap rounded-[100px] bg-gradient-to-r from-[#0070C5] to-[#3BABCF]    py-1 md:py-2 text-[7px] md:text-xs lg:text-[11px]   ">
+                <button className=" mb-[15px]  flex w-[39%] items-center justify-center whitespace-nowrap rounded-[100px] bg-gradient-to-r from-[#0070C5] to-[#3BABCF]  px-2  py-1 lg:py-2 text-[7px] md:text-xs lg:text-[11px]   ">
                   Register Now
                 </button>
               </div>

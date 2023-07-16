@@ -13,7 +13,7 @@ const OurLeads = () => {
 
       {/* <h1 className="ml-9 text-lg font-semibold text-[#ffffff] md:text-5xl mb-8"> */}
 
-      <h1 className="ml-9 text-lg font-semibold text-[#ffffff] md:text-3xl text-[12px] sm:text-[18px] font-semibold md:mb-[20px] md:text-3xl items-start text-[#FFFFFF] 2xl:text-[2.1vw]">
+      <h1 className="ml-9 text-lg font-semibold text-[#ffffff] md:text-3xl text-[12px] sm:text-[18px] font-semibold md:mb-[20px] md:text-4xl items-start text-[#FFFFFF] 2xl:text-[2.1vw]">
 
         Our{" "}
         <span className="bg-gradient-to-r from-[#21FD8B] to-[#2CC4F2] bg-clip-text text-transparent">

@@ -28,6 +28,14 @@ const JoinUs: React.FC = () => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY; //determines how much the user has scrolled
       const windowHeight = window.innerHeight; //determines the height of the  device the user is using
+      let num: number;
+      if (windowHeight > 720) {
+        num = 0.39
+      } else if (windowHeight > 650) {
+        num = 0.29
+      } else {
+        num = 0.24
+      }
 
       window.addEventListener("scroll", function () {
         var scrollPosition = window.scrollY;
@@ -48,7 +56,7 @@ const JoinUs: React.FC = () => {
         }
       });
 
-      if (scrollPosition > windowHeight / .27) {
+      if (scrollPosition > windowHeight / num) {
         controls.start({ opacity: 1, y: 0, x: 0 });
         controls2.start({ opacity: 1, y: 0, x: 0 });
         controls3.start({ opacity: 1, y: 0, x: 0 });
@@ -72,10 +80,7 @@ const JoinUs: React.FC = () => {
 
   return (
     <>
-
-
-      <div className="min-h-[100px] mt-[40px] md:mt-[80px] pb-8 md:pb-20 relative z-0 flex flex-row max-w-[1920px] justify-center items-center mx-auto ">
-
+      <div className="min-h-[100px]  md:mt-[80px] pb-8 md:pb-20 relative z-0 flex flex-row max-w-[1920px] justify-center items-center mx-auto ">
         <div className="flex pt-12 pl-4 md:pl-[50px] lg:pl-[80px] xl:pl-[90px] 2xl:pl-[130px] w-full">
           <motion.div
             className="flex justify-center"
