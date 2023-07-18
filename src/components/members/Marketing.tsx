@@ -1,26 +1,25 @@
 "use client";
 
-import React from "react";
-import Link from "next/link"
-import Image from "next/image"
-import { Creative } from "@/constants";
-import { useState } from "react";
-import InstaIcon from "../../../public/instagram.svg";
+import { Marketing1 } from "@/constants";
+import Image from "next/image";
+import Link from "next/link";
+import React,{ useState } from "react";
 import GithubIcon from "../../../public/Github.svg";
 import LinkdIcon from "../../../public/LinkedIn.svg";
+import InstaIcon from "../../../public/instagram.svg";
 
 const imgStyle: any = {
   objectPosition: "center",
   objectFit: "cover",
 };
 
-
-const Item = ({ into }: any) => {
-  const [showDetail, setShowDetail] = useState(false)
+const Item = ({ into, isActive, onClick }: any) => {
 
   const handleImageClick = () => {
-    setShowDetail(!showDetail);
+    onClick();
+
   };
+
 
   return (
     <div className="h-[220px] md:h-[270px] lg:h-[350px] 2xl:h-[400px] w-full rounded-md md:rounded-xl" >
@@ -28,7 +27,7 @@ const Item = ({ into }: any) => {
         <Image
           src={into.img}
           style={imgStyle}
-          className={showDetail ? "h-full z-30  w-full rounded-t-md rounded-b-none md:rounded-t-xl md:rounded-b-none" : "h-full z-30  w-full rounded-md md:rounded-xl"}
+          className={isActive ? "h-full z-30  w-full rounded-t-md rounded-b-none md:rounded-t-xl md:rounded-b-none" : "h-full z-30  w-full rounded-md md:rounded-xl"}
           width={700}
           height={700}
           alt="name"
@@ -36,7 +35,7 @@ const Item = ({ into }: any) => {
 
       </div>
 
-      <div className={showDetail ? "-translate-y-[70px] lg:-translate-y-16 scale-100 2xl:-translate-y-14 pb-[5px] md:pb-[5px] backdrop-blur-[5px] bg-[#25252580] min-h-[100px] w-full p-[3px] flex rounded-[10px] justify-between items-end transition  transform ease-in-out delay-400 z-10" : " flex items-center backdrop-blur-[5px] bg-[#25252580] scale-0 min-h-[100px] justify-between transition transform ease-in-out delay-400  -translate-y-40 z-0"}>
+      <div className={isActive ? "-translate-y-[70px] lg:-translate-y-16 scale-100 2xl:-translate-y-14 pb-[5px] md:pb-[5px] backdrop-blur-[5px] bg-[#25252580] min-h-[100px] w-full p-[3px] flex rounded-[10px] justify-between items-end transition  transform ease-in-out delay-400 z-10" : " flex items-center backdrop-blur-[5px] bg-[#25252580] scale-0 min-h-[100px] justify-between transition transform ease-in-out delay-400  -translate-y-40 z-0"}>
         <div className="flex items-center relative w-full justify-between">
           <div className="bottom-[-10px] md:bottom-[-15px] left-[0%] absolute w-[200px] h-[20px] z-40">
             <Image src="/Subtract.png"
@@ -70,8 +69,12 @@ const Item = ({ into }: any) => {
 }
 
 
-const creative = () => {
+const Marketing:any = () => {
+  const [activeCard, setActiveCard] = useState(null);
 
+  const handleCardClick = (into: any) => {
+    setActiveCard(into === activeCard ? null : into);
+  };
   return (
     <div className="flex ">
       <div className="flex flex-col items-center px-2 md:px-0">
@@ -84,11 +87,12 @@ const creative = () => {
 
         </div>
         <div className="flex flex-col">
-          <div className="text-[16px] md:text-2xl lg:text-3xl mb-[30px] leading-normal text-[#FFF] font-semibold ">Creative</div>
+          <div className="text-[16px] md:text-2xl lg:text-3xl mb-[30px] leading-normal text-[#FFF] font-semibold ">Marketing</div>
           <div className="grid mr-0 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 w-full gap-2 md:gap-4 lg:gap-8">
 
-            {Creative.map((into, index) => {
-              return <Item into={into} key={index} />
+            {Marketing1.map((into, index) => {
+              return <Item into={into} key={index} isActive={into === activeCard}
+                onClick={() => handleCardClick(into)} />
             })}
 
           </div>
@@ -99,4 +103,4 @@ const creative = () => {
   )
 }
 
-export default creative
+export default Marketing

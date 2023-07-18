@@ -33,7 +33,7 @@ const Gallery = () => {
           {
             if (index + 1 < showMoreClick) {
               return (<>
-                <div key={index} className="relative group gallery-gradient overflow-hidden rounded-[10px] lg:rounded-[15px]  w-full h-[300px] sm:h-[22vw] lg:h-[19.21vw] 3xl:h-[369px]">
+                <div key={index} className="border-2  border-[#5F5E5E;] relative group gallery-gradient overflow-hidden rounded-[10px] lg:rounded-[15px]  w-full h-[300px] sm:h-[22vw] lg:h-[19.21vw] 3xl:h-[369px]">
                   {/* <LightGallery g
                         speed={500}
                         plugins={[lgThumbnail,lgAutoplay,lgZoom]}> */}

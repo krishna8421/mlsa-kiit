@@ -1,7 +1,7 @@
 "use client";
 import { motion, useAnimation } from "framer-motion";
 import React, { useEffect } from "react";
-import OurLeads from "./OurLeads";
+// import OurLeads from "./OurLeads";
 import Slider from "./Slider";
 
 const ScrollAnimationLead: React.FC = () => {
@@ -75,7 +75,7 @@ const ScrollAnimationLead: React.FC = () => {
         animate={textControls} //text conntrol animation triggered.
         transition={{ duration: 1.5 }}
       >
-        <OurLeads />
+        {/* <OurLeads /> */}
       </motion.div>
       {/* Text animation(can be changed)*/}
     </div>

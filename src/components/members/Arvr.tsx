@@ -1,13 +1,12 @@
 "use client";
 
-import React from "react";
-import Link from "next/link"
-import Image from "next/image"
-import { GraphicDesign } from "@/constants";
-import { useState } from "react";
-import InstaIcon from "../../../public/instagram.svg";
+import { ARVR } from "@/constants";
+import Image from "next/image";
+import Link from "next/link";
+import React,{ useState } from "react";
 import GithubIcon from "../../../public/Github.svg";
 import LinkdIcon from "../../../public/LinkedIn.svg";
+import InstaIcon from "../../../public/instagram.svg";
 
 const imgStyle: any = {
   objectPosition: "center",
@@ -15,11 +14,10 @@ const imgStyle: any = {
 };
 
 
-const Item = ({ into }: any) => {
-  const [showDetail, setShowDetail] = useState(false)
+const Item = ({ into, isActive, onClick }: any) => {
 
   const handleImageClick = () => {
-    setShowDetail(!showDetail);
+    onClick();
   };
 
   return (
@@ -28,7 +26,7 @@ const Item = ({ into }: any) => {
         <Image
           src={into.img}
           style={imgStyle}
-          className={showDetail ? "h-full z-30  w-full rounded-t-md rounded-b-none md:rounded-t-xl md:rounded-b-none" : "h-full z-30  w-full rounded-md md:rounded-xl"}
+          className={isActive ? "h-full z-30  w-full rounded-t-md rounded-b-none md:rounded-t-xl md:rounded-b-none" : "h-full z-30  w-full rounded-md md:rounded-xl"}
           width={700}
           height={700}
           alt="name"
@@ -36,7 +34,7 @@ const Item = ({ into }: any) => {
 
       </div>
 
-      <div className={showDetail ? "-translate-y-[70px] lg:-translate-y-16 scale-100 2xl:-translate-y-14 pb-[5px] md:pb-[5px] backdrop-blur-[5px] bg-[#25252580] min-h-[100px] w-full p-[3px] flex rounded-[10px] justify-between items-end transition  transform ease-in-out delay-400 z-10" : " flex items-center backdrop-blur-[5px] bg-[#25252580] scale-0 min-h-[100px] justify-between transition transform ease-in-out delay-400  -translate-y-40 z-0"}>
+      <div className={isActive ? "-translate-y-[70px] lg:-translate-y-16 scale-100 2xl:-translate-y-14 pb-[5px] md:pb-[5px] backdrop-blur-[5px] bg-[#25252580] min-h-[100px] w-full p-[3px] flex rounded-[10px] justify-between items-end transition  transform ease-in-out delay-400 z-10" : " flex items-center backdrop-blur-[5px] bg-[#25252580] scale-0 min-h-[100px] justify-between transition transform ease-in-out delay-400  -translate-y-40 z-0"}>
         <div className="flex items-center relative w-full justify-between">
           <div className="bottom-[-10px] md:bottom-[-15px] left-[0%] absolute w-[200px] h-[20px] z-40">
             <Image src="/Subtract.png"
@@ -51,7 +49,7 @@ const Item = ({ into }: any) => {
             <Link href={into.instagram ||""}>
               <Image src={InstaIcon} alt="icon" className="hover:scale-110 transition duration-100 h-[15px] w-[15px] md:h-[17px] md:w-[17px] 2xl:h-[24px] 2xl:w-[24px]" />
             </Link>
-            <Link href={into.linkedIn || ""}>
+            <Link href={into.liknedIn || ""}>
               <Image src={LinkdIcon} alt="icon" className="hover:scale-110 transition duration-100 h-[15px] w-[15px] md:h-[17px] md:w-[17px] 2xl:h-[24px] 2xl:w-[24px]" />
             </Link>
             <Link href={into.github || ""}>
@@ -70,26 +68,30 @@ const Item = ({ into }: any) => {
 }
 
 
-const graphicdesign = () => {
+const Arvr:any = () => {
+  const [activeCard, setActiveCard] = useState(null);
 
+  const handleCardClick = (into: any) => {
+    setActiveCard(into === activeCard ? null : into);
+  };
   return (
     <div className="flex ">
       <div className="flex flex-col items-center px-2 md:px-0">
-        <div className="h-[15px] w-[15px] shadow-dotShadowBlue2 self-center rounded-full bg-white"></div>
+        <div className="h-[15px] w-[15px] shadow-dotShadowCyan self-center rounded-full bg-white"></div>
 
-        <div className="h-full w-[5px]  bg-gradient-to-b from-[#3BABCF] to-transparent duration-700 transition ">
-        </div>
+        <div className=" w-[5px]  bg-gradient-to-b from-[#2CC4F5] to-transparent duration-700 transition h-full"></div>
       </div>
       <div className="max-w-[1920px] mx-auto flex">
         <div className="ml-[5px] sm:ml-[10px] md:ml-[40px] lg:ml-[70px]">
 
         </div>
         <div className="flex flex-col">
-          <div className="text-[16px] md:text-2xl lg:text-3xl mb-[30px] leading-normal text-[#FFF] font-semibold ">Graphic Design</div>
+          <div className="text-[16px] md:text-2xl lg:text-3xl mb-[30px] leading-normal text-[#FFF] font-semibold ">ARVR</div>
           <div className="grid mr-0 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 w-full gap-2 md:gap-4 lg:gap-8">
 
-            {GraphicDesign.map((into, index) => {
-              return <Item into={into} key={index} />
+            {ARVR.map((into, index) => {
+              return <Item into={into} key={index} isActive={into === activeCard}
+                onClick={() => handleCardClick(into)} />
             })}
 
           </div>
@@ -100,4 +102,4 @@ const graphicdesign = () => {
   )
 }
 
-export default graphicdesign
+export default Arvr
