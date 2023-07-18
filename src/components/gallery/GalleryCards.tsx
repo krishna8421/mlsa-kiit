@@ -1,6 +1,6 @@
+import { GALLERY } from "@/constants";
 import Image from "next/image";
 import { useState } from "react";
-import { GALLERY } from "@/constants";
 // import LightGallery from 'lightgallery/react';
 // import { LightGallery } from "lightgallery/lightgallery";
 // import "lightgallery/css/lightgallery.css";
