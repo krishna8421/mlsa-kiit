@@ -1,7 +1,7 @@
 import { OUR_SPONSORS } from "@/constants";
 import { motion, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
+import { useInView } from "react-intersection-observer";
 
 function Sponsors() {
   const controls = useAnimation();
@@ -77,7 +77,7 @@ function Sponsors() {
             href={sponsor.site}
             target="_blank"
             rel="noopener noreferrer"
-            className="w-[45%] lg:w-[300px]"
+            className="w-[43%] lg:w-[300px]"
             variants={logoVariants}
           >
             <motion.img

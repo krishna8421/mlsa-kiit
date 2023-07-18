@@ -4,7 +4,6 @@ import Project from "@/components/Project";
 import "@/styles/globals.css";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import { FaSearch } from "react-icons/fa";
 const Projects = () => {
   const [projectsCounter, setProjectsCounter] = useState(0);
   const [sponsersCounter, setSponsersCounter] = useState(0);
@@ -19,7 +18,7 @@ const Projects = () => {
       }
     };
 
-    const intervalId = setInterval(numCounter, 120);
+    const intervalId = setInterval(numCounter, 17);
 
     return () => clearInterval(intervalId);
   }, [projectsCounter, sponsersCounter]);
@@ -95,7 +94,7 @@ const Projects = () => {
         <div className="mt-8 w-3/4 h-[1px] bg-[#d1d5db] md:h-[2px] rounded-full lg:hidden"></div>
         <div className="mt-6 w-1/4 h-[1px] bg-[#d1d5db] md:h-[2px] rounded-full hidden lg:block"></div>
 
-        </div>
+      </div>
       <Project />
     </>
   );
