@@ -47,13 +47,13 @@ const Item = ({ into, isActive, onClick }: any) => {
           <div className="text-[12px] lg:text-[16.5px] 2xl:text-[20px] text-[#FFF] font-normal leading-none capitalize">{into.name}</div>
 
           <div className="flex items-center gap-[2px] md:gap-1 ">
-            <Link href={"/"}>
+            <Link href={into.instagram ||""}>
               <Image src={InstaIcon} alt="icon" className="hover:scale-110 transition duration-100 h-[15px] w-[15px] md:h-[17px] md:w-[17px] 2xl:h-[24px] 2xl:w-[24px]" />
             </Link>
-            <Link href={""}>
+            <Link href={into.linkedIn || ""}>
               <Image src={LinkdIcon} alt="icon" className="hover:scale-110 transition duration-100 h-[15px] w-[15px] md:h-[17px] md:w-[17px] 2xl:h-[24px] 2xl:w-[24px]" />
             </Link>
-            <Link href={""}>
+            <Link href={into.github || ""}>
               <Image src={GithubIcon} alt="icon" className="hover:scale-110 transition duration-100 h-[15px] w-[15px] md:h-[17px] md:w-[17px] 2xl:h-[24px] 2xl:w-[24px]" />
             </Link>
           </div>
@@ -76,8 +76,8 @@ const Marketing:any = () => {
     setActiveCard(into === activeCard ? null : into);
   };
   return (
-    <div className="flex pl-3">
-      <div className="flex flex-col items-center ">
+    <div className="flex ">
+      <div className="flex flex-col items-center px-2 md:px-0">
         <div className="h-[15px] w-[15px] shadow-dotShadowPurple self-center rounded-full bg-white"></div>
 
         <div className=" w-[5px]  bg-gradient-to-b from-[#533BD0] to-transparent duration-700 transition h-full"></div>

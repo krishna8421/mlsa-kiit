@@ -6,8 +6,10 @@ import { BsFillRocketTakeoffFill } from "react-icons/bs";
 import { FaEye } from "react-icons/fa";
 import { TbTargetArrow } from "react-icons/tb";
 import AboutCard from "./AboutCard";
+import {useSession} from "next-auth/react"
 
 const About: React.FC = () => {
+
   const textControls = useAnimation();
   const sliderControls = useAnimation();
   const handleSliderAnimationComplete = () => {

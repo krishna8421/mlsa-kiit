@@ -1,7 +1,7 @@
 import { OUR_SPONSORS } from "@/constants";
 import { motion, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
+import { useInView } from "react-intersection-observer";
 
 function Sponsors() {
   const controls = useAnimation();
@@ -55,7 +55,7 @@ function Sponsors() {
     <div className="flex flex-col m-12">
       <motion.span
         ref={ref}
-        className=" font-inter font-semibold capitalize  2xl:text-[2.1vw]  2xl:ml-[53px] text-xl md:mb-[20px] md:text-4xl items-start text-[#FFFFFF]  mt-[17px] "
+        className=" font-inter font-semibold capitalize  2xl:text-[2.1vw]  2xl:ml-[3px] text-xl md:mb-[20px] md:text-4xl items-start text-[#FFFFFF]  mt-[17px] "
         initial={{ opacity: 0, y: 0, x: 70 }}
         animate={controls}
         variants={titleVariants}
@@ -66,7 +66,7 @@ function Sponsors() {
         </span>
       </motion.span>
       <motion.div
-        className="flex flex-wrap justify-center mt-[20px] ml-[-37px]"
+        className="flex flex-wrap mt-[20px] w-full justify-start lg:justify-center  gap-8"
         initial="hidden"
         animate={controls}
         variants={imageVariants}
@@ -77,14 +77,13 @@ function Sponsors() {
             href={sponsor.site}
             target="_blank"
             rel="noopener noreferrer"
+            className="w-[43%] lg:w-[300px]"
             variants={logoVariants}
           >
             <motion.img
               src={sponsor.image}
               alt={sponsor.name}
-              width={250}
-              height={500}
-              className="grayscale-img hover:grayscale-0 max-w-full h-auto filter grayscale m-[30px]"
+              className="grayscale-img hover:grayscale-0 max-w-full w-full h-full filter grayscale"
             />
           </motion.a>
         ))}

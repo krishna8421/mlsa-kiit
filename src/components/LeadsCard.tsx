@@ -11,7 +11,9 @@ interface Props {
   name: string;
   domain: string;
   message: string;
-  link: string;
+  linkedIn: string;
+  instagram: string;
+  facebook: string;
   index: number;
   isActive: boolean;
   onClick: Function;
@@ -20,7 +22,7 @@ const imgStyle: any = {
   objectPosition: "center",
   objectFit: "cover",
 };
-const LeadsCard = ({ image, name, domain, index, isActive, onClick }: Props) => {
+const LeadsCard = ({ image, name, domain, index, isActive, onClick, instagram, linkedIn, facebook}: Props) => {
   const [showDetail, setShowDetail] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -37,7 +39,7 @@ const LeadsCard = ({ image, name, domain, index, isActive, onClick }: Props) => 
   };
   return (
     <div className="h-[26rem]  w-[14rem]  rounded-imageradius" >
-      <div className="relative h-[20rem] w-full rounded-imageradius mt-[4rem] z-10 hover:shadow-leadsCardShadow  transition-all" onClick={handleImageClick}>
+      <div className="relative h-[20rem] hover:cursor-pointer w-full rounded-imageradius mt-[4rem] z-10 hover:shadow-leadsCardShadow  transition-all" onClick={handleImageClick}>
         <Image
           src={image}
           style={imgStyle}
@@ -46,7 +48,7 @@ const LeadsCard = ({ image, name, domain, index, isActive, onClick }: Props) => 
           height={700}
           alt="name"
         />
-        <div className="absolute bottom-0 left-0 h-full w-full rounded-imageradius bg-gradient-to-t from-black via-transparent to-transparent">
+        <div className="cursor-pointer absolute bottom-0 left-0 h-full w-full rounded-imageradius bg-gradient-to-t from-black via-transparent to-transparent">
           {" "}
         </div>
         <div className="absolute bottom-4 w-full">
@@ -58,17 +60,17 @@ const LeadsCard = ({ image, name, domain, index, isActive, onClick }: Props) => 
       </div>
       {/* -translate-y-32 */}
       <div className={isActive ? "mt-[1.4rem] flex items-center justify-evenly transition transform ease-in-out delay-400 z-10" : " flex  items-center justify-evenly mt-[1.4rem] transition transform ease-in-out delay-400  -translate-y-32 z-0"}>
-        <Link href={"/"}>
+        <Link href={instagram} target="_blank">
           <div className="bg-[#111111] bg-opacity-50 flex h-[3rem] w-[3rem] items-center justify-center rounded-[6rem] border border-[#3D3D3D] backdrop-blur-[17.5px] hover:bg-[#3D3D3D]">
             <Image src={InstaIcon} alt="icon" />
           </div>
         </Link>
-        <Link href={""}>
+        <Link href={linkedIn} target="_blank">
           <div className="bg-[#111111] bg-opacity-50 flex h-[3rem] w-[3rem] items-center justify-center rounded-[6rem] border border-[#3D3D3D] backdrop-blur-[17.5px] hover:bg-[#3D3D3D]">
             <Image src={LinkdIcon} alt="icon" />
           </div>
         </Link>
-        <Link href={""}>
+        <Link href={facebook} target="_blank">
           <div className="bg-[#111111] bg-opacity-50 flex h-[3rem] w-[3rem] items-center justify-center rounded-[6rem] border border-[#3D3D3D] backdrop-blur-[17.5px] hover:bg-[#3D3D3D]">
             <Image src={FacebookIcon} alt="icon" />
           </div>

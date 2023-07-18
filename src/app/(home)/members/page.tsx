@@ -35,6 +35,7 @@ const Members = () => {
         <div className="parallax-section pt-[45px] md:pt-[100px] bg-black -mt-1 min-h-[100vh] lg:pl-[50px] md:pl-[20px] pl-[10px] lg:pr-[50px] md:pr-[30px] pr-[10px]  w-[100vw] relative overflow-hidden">
 
 
+
           <Webdev />
           <div className="relative">
             <Image src="/Rectangle-shadow.svg" height={300} width={300} alt="members" className=" rotate-180 absolute left-[-50px] bottom-[-554px] z-30"></Image>
@@ -69,7 +70,7 @@ const Members = () => {
         </div>
       </div>
     </div>
-
+    
   </>
   )
 }
