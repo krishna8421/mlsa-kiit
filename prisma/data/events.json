@@ -1,0 +1,182 @@
+[
+  {
+    "name": "Eye S.py Squid",
+    "imageUrl": "/eventImages/eyeSpySquid.jpg",
+    "description": "A unique event which included designing your own squid game using computer vision.",
+    "startDate": "2023-04-16T00:00:00Z",
+    "registerStartDate": "2023-04-16T00:00:00Z",
+    "registerEndDate": "2023-04-16T00:00:00Z",
+    "venue": ""
+  },
+  {
+    "name": "KALKI Computer Vision",
+    "imageUrl": "/eventImages/kalkiComp.png",
+    "description": "Event with an array of captivating experiences based on Computer vision which included Fruit Ninja and Squid games.",
+    "startDate": "2023-02-11T00:00:00Z",
+    "registerStartDate": "2023-02-11T00:00:00Z",
+    "registerEndDate": "2023-02-11T00:00:00Z",
+    "venue": ""
+  },
+  {
+    "name": "KALKI AR/VR",
+    "imageUrl": "/eventImages/kalkiAR.png",
+    "description": "KALKI provided amazing experiences ranging from VR games with robotic or non-controller gameplay to movies and 2D games.",
+    "startDate": "2023-02-11T00:00:00Z",
+    "registerStartDate": "2023-02-11T00:00:00Z",
+    "registerEndDate": "2023-02-11T00:00:00Z",
+    "venue": ""
+  },
+  {
+    "name": "KALKI Scavenger Hunt",
+    "imageUrl": "/eventImages/kalkiScav.png",
+    "description": "The most popular scavenger hunt with twisted techy questions that left our audience both overly excited and baffled.",
+    "startDate": "2023-02-11T00:00:00Z",
+    "registerStartDate": "2023-02-11T00:00:00Z",
+    "registerEndDate": "2023-02-11T00:00:00Z",
+    "venue": ""
+  },
+  {
+    "name": "Project Wing 3.0",
+    "imageUrl": "/eventImages/projectWing3.png",
+    "description": "An online fast-track program aimed at equipping engineering students with standout skills.",
+    "startDate": "2022-11-13T00:00:00Z",
+    "registerStartDate": "2022-11-13T00:00:00Z",
+    "registerEndDate": "2022-11-13T00:00:00Z",
+    "venue": ""
+  },
+  {
+    "name": "HacktoberFest 2022",
+    "imageUrl": "/eventImages/hacktoberFest2022.png",
+    "description": "A beginner-friendly workshop to spread awareness about Open-Source and HacktoberFest.",
+    "startDate": "2022-10-15T00:00:00Z",
+    "registerStartDate": "2022-10-15T00:00:00Z",
+    "registerEndDate": "2022-10-15T00:00:00Z",
+    "venue": ""
+  },
+  {
+    "name": "DevOps Workshop",
+    "imageUrl": "/eventImages/devops.jpg",
+    "description": "A one-day DevOps Workshop aimed at raising awareness about the concept of operating DevOps.",
+    "startDate": "2022-09-03T00:00:00Z",
+    "registerStartDate": "2022-09-03T00:00:00Z",
+    "registerEndDate": "2022-09-03T00:00:00Z",
+    "venue": ""
+  },
+  {
+    "name": "DataByte",
+    "imageUrl": "/eventImages/databyte.jpg",
+    "description": "It was a captivating machine learning and data visualization workshop which used the unique concept of no code tech.",
+    "startDate": "2022-05-07T00:00:00Z",
+    "registerStartDate": "2022-05-07T00:00:00Z",
+    "registerEndDate": "2022-05-07T00:00:00Z",
+    "venue": ""
+  },
+  {
+    "name": "FrontEnd with Benefits",
+    "imageUrl": "/eventImages/frontendWithBenefits.jpg",
+    "description": "It was a two-day hackathon focused on frontend design.",
+    "startDate": "2021-03-27T00:00:00Z",
+    "registerStartDate": "2021-03-27T00:00:00Z",
+    "registerEndDate": "2021-03-27T00:00:00Z",
+    "venue": ""
+  },
+  {
+    "name": "FlutterVerse",
+    "imageUrl": "/eventImages/flutterVerse.png",
+    "description": "An all-in-one Workshop on Flutter starting from basics to creating both a minor and a major project.",
+    "startDate": "2022-02-01T00:00:00Z",
+    "registerStartDate": "2022-02-01T00:00:00Z",
+    "registerEndDate": "2022-02-01T00:00:00Z",
+    "venue": ""
+  },
+  {
+    "name": "Code Vibe",
+    "imageUrl": "/eventImages/codeVibe.jpg",
+    "description": "A competitive programming event with fun packed interactive sessions and no barrier on programming languages.",
+    "startDate": "2021-11-21T00:00:00Z",
+    "registerStartDate": "2021-11-21T00:00:00Z",
+    "registerEndDate": "2021-11-21T00:00:00Z",
+    "venue": ""
+  },
+  {
+    "name": "HacktoberFest 2021",
+    "imageUrl": "/eventImages/hacktoberFest2021.jpg",
+    "description": "This workshop provided an accessible introduction to Open-Source and HacktoberFest.",
+    "startDate": "2021-10-01T00:00:00Z",
+    "registerStartDate": "2021-10-01T00:00:00Z",
+    "registerEndDate": "2021-10-01T00:00:00Z",
+    "venue": ""
+  },
+  {
+    "name": "Project Wing 2.0",
+    "imageUrl": "/eventImages/projectWing2021.jpg",
+    "description": "A specialised program intended to empower engineering students by providing them with tech and non-tech skills.",
+    "startDate": "2021-10-01T00:00:00Z",
+    "registerStartDate": "2021-10-01T00:00:00Z",
+    "registerEndDate": "2021-10-01T00:00:00Z",
+    "venue": ""
+  },
+  {
+    "name": "DeaDarus Hackathon",
+    "imageUrl": "/eventImages/daedarusHack.jpg",
+    "description": "The most awaited hackathon that enables you to construct a labyrinth of ideas, create a project and enable sustainability.",
+    "startDate": "2021-08-13T00:00:00Z",
+    "registerStartDate": "2021-08-13T00:00:00Z",
+    "registerEndDate": "2021-08-13T00:00:00Z",
+    "venue": ""
+  },
+  {
+    "name": "MLathon",
+    "imageUrl": "/eventImages/Mlathon.jpg",
+    "description": "A two-day hackathon for every ML lover with loads of quizzes and prediction games and amazing prizes.",
+    "startDate": "2021-06-25T00:00:00Z",
+    "registerStartDate": "2021-06-25T00:00:00Z",
+    "registerEndDate": "2021-06-25T00:00:00Z",
+    "venue": ""
+  },
+  {
+    "name": "Code-In-Turn",
+    "imageUrl": "/eventImages/codeInTurn.jpg",
+    "description": "A unique event where participants celebrated their problem-solving skills and got rewarded for it.",
+    "startDate": "2021-04-02T00:00:00Z",
+    "registerStartDate": "2021-04-02T00:00:00Z",
+    "registerEndDate": "2021-04-02T00:00:00Z",
+    "venue": ""
+  },
+  {
+    "name": "Data Dive",
+    "imageUrl": "/eventImages/greenHack.jpg",
+    "description": "",
+    "startDate": "2021-03-06T00:00:00Z",
+    "registerStartDate": "2021-03-06T00:00:00Z",
+    "registerEndDate": "2021-03-06T00:00:00Z",
+    "venue": ""
+  },
+  {
+    "name": "Green Hack",
+    "imageUrl": "/eventImages/greenHack.jpg",
+    "description": "",
+    "startDate": "2020-12-01T00:00:00Z",
+    "registerStartDate": "2020-12-01T00:00:00Z",
+    "registerEndDate": "2020-12-01T00:00:00Z",
+    "venue": ""
+  },
+  {
+    "name": "Project Wing 1.0",
+    "imageUrl": "/eventImages/projectWing2020.jpg",
+    "description": "Provided engineering students with a unique program designed to equip them with exceptional skills with projects.",
+    "startDate": "2020-10-01T00:00:00Z",
+    "registerStartDate": "2020-10-01T00:00:00Z",
+    "registerEndDate": "2020-10-01T00:00:00Z",
+    "venue": ""
+  },
+  {
+    "name": "HacktoberFest 2020",
+    "imageUrl": "/eventImages/hacktoberFest2020.png",
+    "description": "With a focus on beginners, this workshop sought to promote Open-Source and HacktoberFest.",
+    "startDate": "2020-10-01T00:00:00Z",
+    "registerStartDate": "2020-10-01T00:00:00Z",
+    "registerEndDate": "2020-10-01T00:00:00Z",
+    "venue": ""
+  }
+]
