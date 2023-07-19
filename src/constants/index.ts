@@ -420,9 +420,9 @@ export const OUR_LEADS = [
     name: "Saniya Bhargav",
     domain: "Vice Lead",
     message: "lending my hands in developing a better technical society",
-    facebook: "",
+    facebook: "https://github.com/SaniyaBhargav",
     linkedIn: "https://www.linkedin.com/in/saniya-bhargav-a660111bb",
-    instagram: "",
+    instagram: "https://www.instagram.com/saniya_bhargav_/",
   },
   {
     image: "/BgColored_Leads/swastika_bg.png",
@@ -440,7 +440,7 @@ export const OUR_LEADS = [
     message: "lending my hands in developing a better technical society",
     linkedIn: "https://www.linkedin.com/in/prashant-upadhyay254/",
     facebook: "",
-    instagram: "",
+    instagram: "https://instagram.com/_.biscut_?igshid=MzNlNGNkZWQ4Mg==",
   },
   {
     image: "/BgColored_Leads/atig_bg.png",
@@ -448,8 +448,8 @@ export const OUR_LEADS = [
     domain: "Tech Lead",
     message: "lending my hands in developing a better technical society",
     linkedIn: "https://www.linkedin.com/in/atig-purohit-a83233183/",
-    facebook: "",
-    instagram: "",
+    facebook: "https://github.com/AtigPurohit",
+    instagram: "https://instagram.com/x.___mysterious___.x?igshid=MzNlNGNkZWQ4Mg==",
   },
   {
     image: "/Leads/mayank.png",
@@ -457,8 +457,8 @@ export const OUR_LEADS = [
     domain: "Creative Lead",
     message: "lending my hands in developing a better technical society",
     linkedIn: "https://www.linkedin.com/in/mayank-jain-688409208/",
-    facebook: "",
-    instagram: "",
+    facebook: "https://github.com/mayankjain25",
+    instagram: "https://www.instagram.com/jain.mayank25/",
   },
   {
     image: "/BgColored_Leads/aradhya_bg.png",
@@ -466,8 +466,8 @@ export const OUR_LEADS = [
     domain: "Content Lead",
     message: "lending my hands in developing a better technical society",
     linkedIn: "https://www.linkedin.com/in/aradhya-kumar-84078a21b/",
-    facebook: "",
-    instagram: "",
+    facebook: "https://github.com/Aradhya0",
+    instagram: "https://instagram.com/aradhyasaumay?igshid=ZDc4ODBmNjlmNQ==",
   },
   {
     image: "/BgColored_Leads/sagar_bg.png",
@@ -475,8 +475,8 @@ export const OUR_LEADS = [
     domain: "Treasurer",
     message: "lending my hands in developing a better technical society",
     linkedIn: "https://www.linkedin.com/in/sagar-satapathy-a4579b173/",
-    facebook: "",
-    instagram: "",
+    facebook: "https://github.com/wishsagarks",
+    instagram: "https://www.instagram.com/freaking_wish/",
   },
   {
     image: "/BgColored_Leads/ayush_bg.png",
@@ -522,8 +522,8 @@ export const OUR_LEADS = [
     domain: "App Lead",
     message: "lending my hands in developing a better technical society",
     linkedIn: "https://www.linkedin.com/in/eshaan-anand2911/",
-    facebook: "",
-    instagram: "",
+    facebook: "https://github.com/eshaananand",
+    instagram: "https://www.instagram.com/eshaananand/",
   },
 ];
 
