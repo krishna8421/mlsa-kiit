@@ -96,7 +96,7 @@ const Gallery = () => {
             `}
             />
             <Image
-              src="/gallery/hero/2.png"
+              src="/gallery/hero/3.png"
               alt="project hero image"
               width={1080}
               height={1080}
@@ -111,13 +111,13 @@ const Gallery = () => {
               ${pictureState === 2 ? "left-[48.9%] h-full w-full scale-[90%] -translate-x-[62%]" : "left-[56%] h-[79%]"}
             `}>
               <Image
-                src="/gallery/hero/4.jpg"
+                src="/gallery/hero/2.png"
                 alt="project hero image"
                 width={1080}
                 height={1080}
                 className="object fit rounded-xl h-full"     
               />
-              <div className="absolute inset-0 bg-[#111]/30 w-full h-full"></div>
+              <div className="absolute inset-0 bg[#111]/30 w-full h-full"></div>
             </div>
           </div>
         </div>

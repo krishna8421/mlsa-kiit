@@ -45,7 +45,6 @@ const Alumni1: React.FC = () => {
       } else {
         num = 0.21
       }
-      console.log("J " + num)
 
       window.addEventListener("scroll", function () {
         var scrollPosition = window.scrollY;
@@ -76,8 +75,6 @@ const Alumni1: React.FC = () => {
         controls2.start({ opacity: 0, y: 0, x: 0 });
       }
     };
-    console.log("scroll", window.scrollY);
-    console.log("inner", window.innerHeight);
 
     window.addEventListener("scroll", handleScroll);
 
