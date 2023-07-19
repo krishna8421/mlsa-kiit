@@ -32,7 +32,7 @@ const JoinUs: React.FC = () => {
       if (windowHeight > 720) {
         num = 0.39
       } else if (windowHeight > 650) {
-        num = 0.29
+        num = 0.28
       } else {
         num = 0.24
       }
@@ -63,7 +63,7 @@ const JoinUs: React.FC = () => {
         // } //Final position for slider
       } else {
         controls.start({ opacity: 0, y: 260, x: 0 }); //Initial starting positionn for slider
-        controls2.start({ opacity: 0, y: 0, x: 50 });
+        controls2.start({ opacity: 0, y: 90, x: 0 });
         controls3.start({ opacity: 0, y: 0, x: 0 });
       }
     };
@@ -110,7 +110,7 @@ const JoinUs: React.FC = () => {
 
               <motion.div
 
-                // className="flex justify-between flex-nowrap"
+                className="w-[48%] md:w-[60%]"
                 initial={{ opacity: 0 }}
                 animate={controls3}
                 transition={{ duration: 1.5 }}
@@ -137,17 +137,13 @@ const JoinUs: React.FC = () => {
                 </div>
               </motion.div>
               <motion.div
-                className="flex w-[40%] justify-end"
-                initial={{ opacity: 0, x: 50 }}
+                className="flex w-[50%] md:w-[40%] justify-end"
+                initial={{ opacity: 0, y: 90 }}
                 animate={controls2}
-                transition={{ duration: 2 }}
+                transition={{ duration: 1.5 }}
                 onAnimationComplete={handleSliderAnimationComplete}
-
               >
-
-
-                <Image width={400} height={300} src="/mlsaLogo.png" alt="rectangle " className="w-full h-[100%] pt-16 pr-6" />
-
+                <Image width={400} height={300} src="/mlsaLogo.png" alt="rectangle " className="w-full h-[100%] pt-16 md:pr-6" />
               </motion.div>
 
 
