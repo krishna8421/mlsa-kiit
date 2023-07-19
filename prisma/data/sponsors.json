@@ -1,0 +1,57 @@
+[
+    {
+      "name": "PrepBytes",
+      "link": "https://www.prepbytes.com/",
+      "logoUrl": "/sponsors/prepbytes.png",
+      "description":""
+    },
+    {
+      "name": "RedBull",
+      "link": "https://www.redbull.com/in-en/",
+      "logoUrl": "/sponsors/redBull.png",
+      "description":""
+
+    },
+    {
+      "name": "Snapchat",
+      "link": "https://www.snapchat.com/en-GB",
+      "logoUrl": "/sponsors/snapchat.png",
+      "description":""
+    },
+    {
+      "name": "JetBrains",
+      "link": "https://www.jetbrains.com/",
+      "logoUrl": "/sponsors/jetBrains.png",
+      "description":""
+    },
+    {
+      "name": "zuno",
+      "link": "https://www.foundit.in/zuno/",
+      "logoUrl": "/sponsors/zuno.png",
+      "description":""
+    },
+    {
+      "name": "Coding Ninjas",
+      "link": "https://www.codingninjas.com/",
+      "logoUrl": "/sponsors/codingNinja.png",
+      "description":""
+    },
+    {
+      "name": "SawoLabs",
+      "link": "https://sawolabs.com/",
+      "logoUrl": "/sponsors/sawolabs.png",
+      "description":""
+    },
+    {
+      "name": "Devfolio",
+      "link": "https://devfolio.co/",
+      "logoUrl": "/sponsors/devfolio.png",
+      "description":""
+    },
+    {
+      "name": "GeeksforGeeks",
+      "link": "https://www.geeksforgeeks.org/",
+      "logoUrl": "/sponsors/gfk.png",
+      "description":""
+    }
+  ]
