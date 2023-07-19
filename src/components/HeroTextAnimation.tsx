@@ -38,15 +38,11 @@ const HeroTextAnimation = ({ texts }: HeroTextAnimationProps) => {
   }, [texts]);
 
   return (
-    <div className={`ml-2 flex w-[180px] overflow-hidden text-[#3B61CF]`}>
+    <div className={`ml-2 flex w-[177px] overflow-hidden text-[#3B61CF]`}>
       {texts.map((text, index) => (
         <span
           key={index}
           className={`w-full flex-shrink-0 duration-1000 ease-in-out transition-transform`}
-          // style={{
-          //   transform: `translateX(${-translation}%)`,
-          //   whiteSpace: "nowrap",
-          // }}
         >
           {textAnimation}
         </span>

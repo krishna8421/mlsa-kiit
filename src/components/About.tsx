@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, useAnimation } from "framer-motion";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { BsFillRocketTakeoffFill } from "react-icons/bs";
 import { FaEye } from "react-icons/fa";
 import { TbTargetArrow } from "react-icons/tb";
@@ -9,6 +9,7 @@ import AboutCard from "./AboutCard";
 import { useSession } from "next-auth/react"
 
 const About: React.FC = () => {
+  
 
   const textControls = useAnimation();
   const sliderControls = useAnimation();
@@ -58,8 +59,6 @@ const About: React.FC = () => {
         controls1.start({ opacity: 0, y: 0, x: 150 });
       }
     };
-    console.log("scroll", window.scrollY);
-    console.log("inner", window.innerHeight);
 
     window.addEventListener("scroll", handleScroll);
 
