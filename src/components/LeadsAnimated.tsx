@@ -8,11 +8,12 @@ import "swiper/css/pagination";
 import { Autoplay, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import LeadsCard from "./LeadsCard";
+
 // import "swiper/swiper-bundle.min.css";
 
 import { motion, useAnimation } from "framer-motion";
 
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 // import "swiper/swiper-bundle.min.css";
 
 
@@ -38,10 +39,21 @@ const Leads: React.FC = () => {
         const handleScroll = () => {
             const scrollPosition = window.scrollY; //determines how much the user has scrolled
             const windowHeight = window.innerHeight; //determines the height of the  device the user is using
+            // const windowW
+            console.log(windowHeight)
+            let num: number;
+            if (windowHeight > 750) {
+                num = 0.6
+            } else {
+                num = 0.41
+            }
+            // if(windowHeight.)
+
 
             window.addEventListener("scroll", function () {
                 var scrollPosition = window.scrollY;
-                if (scrollPosition > windowHeight / .4) {
+                // console.log(num)
+                if (scrollPosition > windowHeight / num) {
                     const element = document.getElementById("myElement"); // gets the circle on top of the slider
 
                     if (element) {
@@ -58,7 +70,7 @@ const Leads: React.FC = () => {
                 }
             });
 
-            if (scrollPosition > windowHeight / .4) {
+            if (scrollPosition > windowHeight / num) {
                 controls.start({ opacity: 1, y: 0, x: 0 }); //Final position for slider
                 controls1.start({ opacity: 1, y: 0, x: 0 }); //Final position for slider
                 controls1.start({ opacity: 1, y: 0, x: 0 });
@@ -78,11 +90,16 @@ const Leads: React.FC = () => {
             window.removeEventListener("scroll", handleScroll);
         };
     });
+    // const [activeIndex, setActiveIndex] = useState(-1);
+    const [activeCard, setActiveCard] = useState(null);
 
+    const handleCardClick = (Lead: any) => {
+        setActiveCard(Lead === activeCard ? null : Lead);
+    };
 
     return (
         <>
-            <div className=" mt-24  flex pl-4  md:pl-[50px] lg:pl-[80px] xl:pl-[90px] 2xl:pl-[80px] ">
+            <div className="  md:mt-24  flex pl-4  md:pl-[50px] lg:pl-[80px] xl:pl-[90px] 2xl:pl-[80px] ">
                 <motion.div
                     className="flex justify-center"
                     initial={{ opacity: 0, y: 230 }} //before scrolling position of slider
@@ -122,31 +139,41 @@ const Leads: React.FC = () => {
                                 className="px-3 md:ml-20"
                                 spaceBetween={10}
                                 slidesPerView={1}
-                                // centeredSlides={true}
+                                centeredSlides={true}
                                 cssMode={true}
                                 loop={false}
                                 mousewheel={true}
                                 navigation={true}
-                                // autoplay={{
-                                //   delay: 2500,
-                                //   disableOnInteraction: true,
-                                // }}
                                 breakpoints={{
                                     350: {
-                                        slidesPerView: 1,
+                                        slidesPerView: 1.2,
                                         spaceBetween: 10,
 
+                                    },
+                                    400: {
+                                        slidesPerView: 1.5,
+                                        spaceBetween: 10,
+
+                                    },
+                                    519: {
+                                        slidesPerView: 2,
+                                        spaceBetween: 10,
                                     },
                                     640: {
                                         slidesPerView: 2.3,
                                         spaceBetween: 10,
                                     },
                                     768: {
+                                        slidesPerView: 2.6,
+                                        spaceBetween: 10,
+                                    },
+                                    857: {
                                         slidesPerView: 3,
                                         spaceBetween: 10,
                                     },
                                     1024: {
-                                        slidesPerView: 4,
+                                        slidesPerView: 3.6,
+                                        spaceBetween: 10,
                                     },
                                     1280: {
                                         slidesPerView: 4.7,
@@ -170,7 +197,9 @@ const Leads: React.FC = () => {
                                                 transition={{ duration: 0.5 + (index * 0.1) }}
                                                 onAnimationComplete={handleSliderAnimationComplete}
                                             >
-                                                <LeadsCard {...Lead} index={index} />
+                                                <LeadsCard {...Lead} index={index} isActive={Lead === activeCard}
+                                                    onClick={() => handleCardClick(Lead)}
+                                                />
                                             </motion.div>
                                         </SwiperSlide>
                                     );

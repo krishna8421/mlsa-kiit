@@ -1,13 +1,12 @@
 "use client";
 
-import React from "react";
-import Link from "next/link"
-import Image from "next/image"
 import { WebDevelopment } from "@/constants";
-import { useState } from "react";
-import InstaIcon from "../../../public/instagram.svg";
+import Image from "next/image";
+import React ,{useState} from "react";
+import Link from "next/link";
 import GithubIcon from "../../../public/Github.svg";
 import LinkdIcon from "../../../public/LinkedIn.svg";
+import InstaIcon from "../../../public/instagram.svg";
 
 const imgStyle: any = {
   objectPosition: "center",
@@ -16,11 +15,11 @@ const imgStyle: any = {
 
 
 
-const Item = ({ into }: any) => {
-  const [showDetail, setShowDetail] = useState(false)
+const Item = ({ into, isActive, onClick }: any) => {
 
   const handleImageClick = () => {
-    setShowDetail(!showDetail);
+    onClick();
+
   };
 
   return (
@@ -30,7 +29,7 @@ const Item = ({ into }: any) => {
           <Image
             src={into.img}
             style={imgStyle}
-            className={showDetail ? "h-full z-30  w-full rounded-t-md rounded-b-none md:rounded-t-xl md:rounded-b-none":"h-full z-30  w-full rounded-md md:rounded-xl"}
+            className={isActive ? "h-full z-30  w-full rounded-t-md rounded-b-none md:rounded-t-xl md:rounded-b-none" : "h-full z-30  w-full rounded-md md:rounded-xl"}
             width={700}
             height={700}
             alt="name"
@@ -38,7 +37,7 @@ const Item = ({ into }: any) => {
 
         </div>
 
-        <div className={showDetail ? "-translate-y-[70px] lg:-translate-y-16 scale-100 2xl:-translate-y-14 pb-[5px] md:pb-[5px] backdrop-blur-[5px] bg-[#25252580] min-h-[100px] w-full p-[3px] flex rounded-[10px] justify-between items-end transition  transform ease-in-out delay-400 z-10" : " flex items-center backdrop-blur-[5px] bg-[#25252580] scale-0 min-h-[100px] justify-between transition transform ease-in-out delay-400  -translate-y-40 z-0"}>
+        <div className={isActive ? "-translate-y-[70px] lg:-translate-y-16 scale-100 2xl:-translate-y-14 pb-[5px] md:pb-[5px] backdrop-blur-[5px] bg-[#25252580] min-h-[100px] w-full p-[3px] flex rounded-[10px] justify-between items-end transition  transform ease-in-out delay-400 z-10" : " flex items-center backdrop-blur-[5px] bg-[#25252580] scale-0 min-h-[100px] justify-between transition transform ease-in-out delay-400  -translate-y-40 z-0"}>
           <div className="flex items-center relative w-full justify-between">
             <div className="bottom-[0px] sm:bottom-[-10px] md:bottom-[-15px] left-[-15px] sm:left-[0%] absolute w-[200px] h-[20px] z-40">
               <Image src="/Subtract.png"
@@ -50,13 +49,13 @@ const Item = ({ into }: any) => {
             <div className="text-[12px] lg:text-[16.5px] 2xl:text-[20px] text-[#FFF] font-normal leading-none capitalize">{into.name}</div>
 
             <div className="flex items-center gap-[2px] md:gap-1 ">
-              <Link href={"/"}>
+              <Link href={into.instagram ||""} target="_blank">
                 <Image src={InstaIcon} alt="icon" className="hover:scale-110 transition duration-100 h-[15px] w-[15px] md:h-[17px] md:w-[17px] 2xl:h-[24px] 2xl:w-[24px]" />
               </Link>
-              <Link href={""}>
+              <Link href={into.linkedIn || ""} target="_blank">
                 <Image src={LinkdIcon} alt="icon" className="hover:scale-110 transition duration-100 h-[15px] w-[15px] md:h-[17px] md:w-[17px] 2xl:h-[24px] 2xl:w-[24px]" />
               </Link>
-              <Link href={""}>
+              <Link href={into.github || ""} target="_blank">
                 <Image src={GithubIcon} alt="icon" className="hover:scale-110 transition duration-100 h-[15px] w-[15px] md:h-[17px] md:w-[17px] 2xl:h-[24px] 2xl:w-[24px]" />
               </Link>
             </div>
@@ -73,12 +72,16 @@ const Item = ({ into }: any) => {
 }
 
 
-const webdev = () => {
+const Webdev:any = () => {
+  const [activeCard, setActiveCard] = useState(null);
 
+  const handleCardClick = (into: any) => {
+    setActiveCard(into === activeCard ? null : into);
+  };
   return (
 
-    <div className="flex">
-      <div className="flex flex-col items-center ">
+    <div className="flex ">
+      <div className="flex flex-col items-center px-2 md:px-0 ">
 
         <div className="h-[15px] w-[15px] shadow-dotShadowPurple self-center rounded-full bg-white"></div>
 
@@ -93,7 +96,8 @@ const webdev = () => {
           <div className="grid mr-0 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 w-full gap-2 md:gap-4 lg:gap-8">
 
             {WebDevelopment.map((into, index) => {
-              return <Item into={into} key={index} />
+              return <Item into={into} key={index} isActive={into === activeCard}
+                onClick={() => handleCardClick(into)} />
             })}
 
           </div>
@@ -104,4 +108,4 @@ const webdev = () => {
   )
 }
 
-export default webdev
+export default Webdev

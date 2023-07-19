@@ -4,7 +4,7 @@ import { prisma } from "@/server/db";
 
 export const GET = async () => {
   const session = await getServerSession();
-
+  console.log({ session });
   if (!session?.user?.personalEmail) {
     return NextResponse.json({
       error: true,
