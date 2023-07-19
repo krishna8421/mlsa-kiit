@@ -50,7 +50,7 @@ const Footer = () => {
                 />
                 <Socials
                   logo={<FaLinkedinIn />}
-                  src="https://www.instragram.com/mlsa-kiit"
+                  src="https://www.linkedin.com/company/msckiit/mycompany/"
                 />
               </div>
             </div>

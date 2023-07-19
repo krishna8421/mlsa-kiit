@@ -52,8 +52,6 @@ const Project: React.FC = () => {
         controls.start({ opacity: 0, y: 1300, x: 0 }); //Initial starting positionn for slider
       }
     };
-    console.log("scroll", window.scrollY);
-    console.log("inner", window.innerHeight);
 
     window.addEventListener("scroll", handleScroll);
 

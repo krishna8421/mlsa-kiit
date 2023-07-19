@@ -32,7 +32,7 @@ const JoinUs: React.FC = () => {
       if (windowHeight > 720) {
         num = 0.39
       } else if (windowHeight > 650) {
-        num = 0.29
+        num = 0.28
       } else {
         num = 0.24
       }
@@ -63,12 +63,10 @@ const JoinUs: React.FC = () => {
         // } //Final position for slider
       } else {
         controls.start({ opacity: 0, y: 260, x: 0 }); //Initial starting positionn for slider
-        controls2.start({ opacity: 0, y: 0, x: 50 });
+        controls2.start({ opacity: 0, y: 90, x: 0 });
         controls3.start({ opacity: 0, y: 0, x: 0 });
       }
     };
-    console.log("scroll", window.scrollY);
-    console.log("inner", window.innerHeight);
 
     window.addEventListener("scroll", handleScroll);
 
@@ -112,13 +110,13 @@ const JoinUs: React.FC = () => {
 
               <motion.div
 
-                // className="flex justify-between flex-nowrap"
+                className="w-[48%] md:w-[60%]"
                 initial={{ opacity: 0 }}
                 animate={controls3}
                 transition={{ duration: 1.5 }}
                 onAnimationComplete={handleSliderAnimationComplete}
               >
-                <div className="mt-6 flex  font-bold  md:mr-10 justify-between items-center ">
+                <div className="mt-6 flex font-bold  md:mr-10 justify-between items-center ">
                   <div className=" ">
                     <div className="pl-6 sm:pl-[40px] md:pl-[60px] lg:pl-[80px] pt-[70px] text-sm sm:text-lg md:text-2xl lg:text-4xl font-semibold text-[24px]">
                       <h1 className="bg-gradient-to-r  from-[#0070C5] to-[#3BABCF] text-transparent bg-clip-text">Join</h1>
@@ -130,27 +128,22 @@ const JoinUs: React.FC = () => {
                       <h1>Ambassador</h1>
                       <h1 className="font-normal">KIIT Chapter</h1>
                     </div>
-                    <Link href="#" className="">
+                    <Link href="/auth/login" className="">
                       <button className="text-xs md:text-sm lg:text-md my-[15px]  ml-5 sm:ml-[42px] md:ml-[62px] lg:ml-[82px]  flex items-center justify-center whitespace-nowrap rounded-[100px]  bg-gradient-to-r font-normal from-[#0070C5] to-[#3BABCF] px-4 py-[7px]  text-white ">
                         Contact Us
                       </button>
                     </Link>
                   </div>
-
                 </div>
               </motion.div>
               <motion.div
-                className="flex w-[40%] justify-end"
-                initial={{ opacity: 0, x: 50 }}
+                className="flex w-[50%] md:w-[40%] justify-end"
+                initial={{ opacity: 0, y: 90 }}
                 animate={controls2}
-                transition={{ duration: 2 }}
+                transition={{ duration: 1.5 }}
                 onAnimationComplete={handleSliderAnimationComplete}
-
               >
-
-
-                <Image width={400} height={300} src="/mlsaLogo.png" alt="rectangle " className="w-full h-[100%] pt-16 pr-6" />
-
+                <Image width={400} height={300} src="/mlsaLogo.png" alt="rectangle " className="w-full h-[100%] pt-16 md:pr-6" />
               </motion.div>
 
 

@@ -1,14 +1,15 @@
 "use client";
 
 import { motion, useAnimation } from "framer-motion";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { BsFillRocketTakeoffFill } from "react-icons/bs";
 import { FaEye } from "react-icons/fa";
 import { TbTargetArrow } from "react-icons/tb";
 import AboutCard from "./AboutCard";
-import {useSession} from "next-auth/react"
+import { useSession } from "next-auth/react"
 
 const About: React.FC = () => {
+  
 
   const textControls = useAnimation();
   const sliderControls = useAnimation();
@@ -58,8 +59,6 @@ const About: React.FC = () => {
         controls1.start({ opacity: 0, y: 0, x: 150 });
       }
     };
-    console.log("scroll", window.scrollY);
-    console.log("inner", window.innerHeight);
 
     window.addEventListener("scroll", handleScroll);
 
@@ -74,7 +73,7 @@ const About: React.FC = () => {
         <div className="flex w-full h-full pb-[80px] md:pb-[110px] xl:pb-[150px]">
           <motion.div
             className="flex justify-center"
-            initial={{ opacity: 0, y: 1000 }} //before scrolling position of slider
+            initial={{ opacity: 0, y: 700 }} //before scrolling position of slider
             animate={controls} //refer to line 20
             transition={{ duration: 2 }} //slider duration for popping up. if you are changinng duration then make sure to change delay of glow adder so thatt  the gow starts after animation is complete
             onAnimationComplete={handleSliderAnimationComplete}

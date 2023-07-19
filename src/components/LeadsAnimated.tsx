@@ -40,7 +40,6 @@ const Leads: React.FC = () => {
             const scrollPosition = window.scrollY; //determines how much the user has scrolled
             const windowHeight = window.innerHeight; //determines the height of the  device the user is using
             // const windowW
-            console.log(windowHeight)
             let num: number;
             if (windowHeight > 750) {
                 num = 0.6
@@ -81,9 +80,6 @@ const Leads: React.FC = () => {
 
             }
         };
-        console.log("scroll", window.scrollY);
-        console.log("inner", window.innerHeight);
-
         window.addEventListener("scroll", handleScroll);
 
         return () => {
@@ -139,7 +135,7 @@ const Leads: React.FC = () => {
                                 className="px-3 md:ml-20"
                                 spaceBetween={10}
                                 slidesPerView={1}
-                                centeredSlides={true}
+                                // centeredSlides={true}
                                 cssMode={true}
                                 loop={false}
                                 mousewheel={true}
