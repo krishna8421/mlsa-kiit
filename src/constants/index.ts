@@ -1542,7 +1542,7 @@ export const GALLERY = [
   },
   {
     id: 5,
-    img: "/gallery/Projectwing/1.png",
+    img: "/gallery/Projectwing/1.JPG",
     name: "Project Wing",
   },
   {

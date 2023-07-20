@@ -82,40 +82,41 @@ const Gallery = () => {
             </div>
           </div>
           <div className="relative mx-auto md:mx-[0px] mt-[23px] md:ml-[0px] md:mt-0 md:mr-[7vw] h-[345px] sm:h-[350px] lg:h-[430px] 2xl:h-[500px] 3xl:h-[600px] -translate-x-3 sm:-translate-x-6 md:-translate-x-0 w-[80vw] sm:w-[75vw] md:w-[50%] object-cover lg:max-h-[600px] 2xl:max-w-[650px] 3xl:w-[45%] 3xl:max-w-[800px]">
-            <div className="absolute inset-0 z-40 flex h-full w-full items-center justify-between px-12 text-2xl">
+            <div className="w-full h-full bg-[#111]/20 absolute inset-0 z-40 rounded-2xl"></div>
+            <div className="absolute inset-0 z-40 flex h-full w-full items-center justify-between px-12 text-3xl">
               <BiSolidChevronLeftCircle className={` cursor-pointer ${pictureState === 0 ? "opacity-50" : "opacity-100"}`} onClick={LeftChevronClick} />
               <BiSolidChevronRightCircle className={` cursor-pointer ${pictureState === 2 ? "opacity-50" : "opacity-100"}`} onClick={RightChevronClick} />
             </div>
             <Image
-              src="/gallery/hero/1.png"
+              src="/gallery/hero/1.jpg"
               alt="project hero image"
               width={1080}
               height={1080}
-              className={`duration-2000 absolute left-1/2 top-1/2 z-30 h-full w-full -translate-x-1/2 -translate-y-1/2 ease-out transition-all 
+              className={`duration-2000 absolute left-1/2 top-1/2 z-30 h-full w-full rounded-2xl -translate-x-1/2 -translate-y-1/2 ease-out transition-all 
               ${pictureState > 0 ? "-translate-x-[140%] opacity-0" : "opacity-1"}
             `}
             />
             <Image
-              src="/gallery/hero/3.png"
+              src="/gallery/hero/2.jpg"
               alt="project hero image"
               width={1080}
               height={1080}
-              className={`duration-2000 absolute rounded-xl top-1/2 z-20 -translate-x-1/2 -translate-y-1/2 ease-out transition-all
-                ${pictureState > 0 ? "left-[50%] h-full w-full" : "left-[62%] h-[90%] w-[90%]"} 
+              className={`duration-2000 absolute rounded-2xl top-1/2 z-20 -translate-x-1/2 object-center -translate-y-1/2 ease-out transition-all
+                ${pictureState > 0 ? "left-[50%] h-full w-full" : "left-[60%] h-[90%] w-[90%]"} 
                 ${pictureState > 1 ? "-translate-x-[140%] opacity-0" : "opacity-1"}
               `}
             />
             <div 
             className={`absolute object-cover top-1/2 z-10 overflow-hidden -translate-x-1/2 rounded-xl -translate-y-1/2 duration-2000 ease-out transition-all
               ${pictureState > 0 ? "left-[62%] h-[90%] w-[90%]" : "left-[69%] h-[69%] w-[80%]"} 
-              ${pictureState === 2 ? "left-[48.9%] h-full w-full scale-[90%] -translate-x-[62%]" : "left-[56%] h-[79%]"}
+              ${pictureState === 2 ? "left-[48.9%] h-full w-full -translate-x-[62%]" : "left-[56%] h-[79%]"}
             `}>
               <Image
-                src="/gallery/hero/2.png"
+                src="/gallery/hero/3.jpg"
                 alt="project hero image"
                 width={1080}
                 height={1080}
-                className="object fit rounded-xl h-full"     
+                className="object fit rounded-2xl h-full"     
               />
               <div className="absolute inset-0 bg[#111]/30 w-full h-full"></div>
             </div>
