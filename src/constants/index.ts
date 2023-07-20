@@ -430,7 +430,7 @@ export const OUR_LEADS = [
     domain: "Executive",
     message: "lending my hands in developing a better technical society",
     linkedIn: "https://www.linkedin.com/in/swastika-bishnoi",
-    facebook: "",
+    facebook: "https://github.com/swastika7376",
     instagram: "https://www.instagram.com/_.swastikaa.__/",
   },
   {
