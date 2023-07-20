@@ -11,6 +11,7 @@ import Leads from "@/components/LeadsAnimated";
 import Hero from "@/components/Hero";
 import ScrollAnimationLead from "@/components/ScrollAnimationLeads";
 import Domain from "@/components/Domain"
+import CurrentLeads from "@/components/CurrentLeadsAnimated"
 
 
 
@@ -24,6 +25,7 @@ export default function Home() {
       <About />
       <Domain />
       {/* <ScrollAnimationLead /> */}
+      <CurrentLeads />
       <Leads />
       <JoinUs />
       <Alumni1 />
