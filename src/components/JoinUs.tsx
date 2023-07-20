@@ -30,7 +30,7 @@ const JoinUs: React.FC = () => {
       const windowHeight = window.innerHeight; //determines the height of the  device the user is using
       let num: number;
       if (windowHeight > 720) {
-        num = 0.39
+        num = 0.36
       } else if (windowHeight > 650) {
         num = 0.28
       } else {
@@ -58,12 +58,12 @@ const JoinUs: React.FC = () => {
 
       if (scrollPosition > windowHeight / num) {
         controls.start({ opacity: 1, y: 0, x: 0 });
-        controls2.start({ opacity: 1, y: 0, x: 0 });
+        controls2.start({ opacity: 1, y: 0, x: 0, scale: 1 });
         controls3.start({ opacity: 1, y: 0, x: 0 });
         // } //Final position for slider
       } else {
         controls.start({ opacity: 0, y: 260, x: 0 }); //Initial starting positionn for slider
-        controls2.start({ opacity: 0, y: 90, x: 0 });
+        controls2.start({ opacity: 0, y: 0, x: 0, scale: 0.5 });
         controls3.start({ opacity: 0, y: 0, x: 0 });
       }
     };
@@ -98,7 +98,7 @@ const JoinUs: React.FC = () => {
 
               <div className="h-[330px] md:h-[500px] w-[5px]  bg-gradient-to-b from-[#3BABCF] to-transparent duration-700 transition ">
 
-                <Image src='/joinus.svg' alt="vector" height={80} width={50} className="absolute h-[30%] w-[8%] sm:w-[5%] sm:h-[40%] top-[23%]" />
+                <Image src='/joinus.svg' alt="vector" height={80} width={50} className="absolute h-[30%] 2xl:w-[3.5%]  w-[8%] sm:w-[5%] sm:h-[40%] top-[35%] md:top-[23%]" />
               </div>
 
 
@@ -110,7 +110,7 @@ const JoinUs: React.FC = () => {
 
               <motion.div
 
-                className="w-[48%] md:w-[60%]"
+                className="w-[58%] md:w-[70%]"
                 initial={{ opacity: 0 }}
                 animate={controls3}
                 transition={{ duration: 1.5 }}
@@ -118,7 +118,7 @@ const JoinUs: React.FC = () => {
               >
                 <div className="mt-6 flex font-bold  md:mr-10 justify-between items-center ">
                   <div className=" ">
-                    <div className="pl-6 sm:pl-[40px] md:pl-[60px] lg:pl-[80px] pt-[70px] text-sm sm:text-lg md:text-2xl lg:text-4xl font-semibold text-[24px]">
+                    <div className="pl-6 sm:pl-[40px] md:pl-[60px] lg:pl-[80px] pt-[70px] text-sm sm:text-lg md:text-2xl lg:text-3xl font-semibold text-[24px]">
                       <h1 className="bg-gradient-to-r  from-[#0070C5] to-[#3BABCF] text-transparent bg-clip-text">Join</h1>
                       <div className="duration-50 my-2  h-[4px] w-[140%] bg-gradient-to-r from-[#456FDC] to-transparent  sm:my-3 "></div>
 
@@ -129,7 +129,7 @@ const JoinUs: React.FC = () => {
                       <h1 className="font-normal">KIIT Chapter</h1>
                     </div>
                     <Link href="/auth/login" className="">
-                      <button className="text-xs md:text-sm lg:text-md my-[15px]  ml-5 sm:ml-[42px] md:ml-[62px] lg:ml-[82px]  flex items-center justify-center whitespace-nowrap rounded-[100px]  bg-gradient-to-r font-normal from-[#0070C5] to-[#3BABCF] px-4 py-[7px]  text-white ">
+                      <button className="text-xs sm:text-sm md:text-base lg:text-lg my-[15px]  ml-5 sm:ml-[42px] md:ml-[62px] lg:ml-[82px]  flex items-center justify-center whitespace-nowrap rounded-[100px]  bg-gradient-to-r font-normal from-[#0070C5] to-[#3BABCF] px-3 py-[5px] md:px-4 md:py-[7px]  text-white ">
                         Contact Us
                       </button>
                     </Link>
@@ -137,13 +137,13 @@ const JoinUs: React.FC = () => {
                 </div>
               </motion.div>
               <motion.div
-                className="flex w-[50%] md:w-[40%] justify-end"
-                initial={{ opacity: 0, y: 90 }}
+                className="flex w-[58%] md:w-[30%] justify-end"
+                initial={{ opacity: 0, scale: 0.5 }}
                 animate={controls2}
-                transition={{ duration: 1.5 }}
+                transition={{ duration: 0.8 }}
                 onAnimationComplete={handleSliderAnimationComplete}
               >
-                <Image width={400} height={300} src="/mlsaLogo.png" alt="rectangle " className="w-full h-[100%] pt-16 md:pr-6" />
+                <Image width={400} height={400} src="/mlsaLogo2.png" alt="rectangle " className="w-[65%] h-[60%] max-w-[265px] mt-28 mr-3 md:mr-24" />
               </motion.div>
 
 
