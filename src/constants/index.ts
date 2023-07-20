@@ -411,9 +411,9 @@ export const OUR_LEADS = [
     name: "Anvit Dubey",
     domain: "Lead",
     message: "lending my hands in developing a better technical society",
-    facebook: "",
+    facebook: "https://github.com/anvbey",
     linkedIn: "https://www.linkedin.com/in/anvit-dubey-b0a205200",
-    instagram: "",
+    instagram: "https://instagram.com/dubeyji_29?igshid=MzNlNGNkZWQ4Mg==",
   },
   {
     image: "/BgColored_Leads/saniya_bg.png",
@@ -431,7 +431,7 @@ export const OUR_LEADS = [
     message: "lending my hands in developing a better technical society",
     linkedIn: "https://www.linkedin.com/in/swastika-bishnoi",
     facebook: "",
-    instagram: "",
+    instagram: "https://www.instagram.com/_.swastikaa.__/",
   },
   {
     image: "/BgColored_Leads/prashant.png",
@@ -439,7 +439,7 @@ export const OUR_LEADS = [
     domain: "Tech Lead",
     message: "lending my hands in developing a better technical society",
     linkedIn: "https://www.linkedin.com/in/prashant-upadhyay254/",
-    facebook: "",
+    facebook: "https://github.com/Prashant1709",
     instagram: "https://instagram.com/_.biscut_?igshid=MzNlNGNkZWQ4Mg==",
   },
   {
@@ -484,8 +484,8 @@ export const OUR_LEADS = [
     domain: "Marketing Lead",
     message: "lending my hands in developing a better technical society",
     linkedIn: "https://www.linkedin.com/in/ayush-raj-9a2585201/",
-    facebook: "",
-    instagram: "",
+    facebook: "https://github.com/fAyr08",
+    instagram: "https://instagram.com/ayr08?igshid=ZDc4ODBmNjlmNQ==",
   },
   {
     image: "/BgColored_Leads/akshita.png",
@@ -493,8 +493,8 @@ export const OUR_LEADS = [
     domain: "Tech Lead",
     message: "lending my hands in developing a better technical society",
     linkedIn: "https://www.linkedin.com/in/akshita-sah/",
-    facebook: "",
-    instagram: "",
+    facebook: "https://github.com/akshi0409",
+    instagram: "https://www.instagram.com/_akshita.sah_/",
   },
 
   {
@@ -503,8 +503,8 @@ export const OUR_LEADS = [
     domain: "PR/CR Lead",
     message: "lending my hands in developing a better technical society",
     linkedIn: "https://www.linkedin.com/in/rishabbarik/",
-    facebook: "",
-    instagram: "",
+    facebook: "https://github.com/RISHABBARIK1",
+    instagram: "https://www.instagram.com/rishab_barik/",
   },
   {
     // image: "/BgColored_Leads/abhinav.png",
@@ -513,8 +513,8 @@ export const OUR_LEADS = [
     domain: "Web Lead",
     message: "lending my hands in developing a better technical society",
     linkedIn: "https://www.linkedin.com/in/abhinav-prasad-697a67205/",
-    facebook: "",
-    instagram: "",
+    facebook: "https://github.com/AbhinavPrasad20",
+    instagram: "https://www.instagram.com/aaabhinavvv21/",
   },
   {
     image: "/BgColored_Leads/eshan.png",
