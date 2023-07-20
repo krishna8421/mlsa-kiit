@@ -77,7 +77,7 @@ function Sponsors() {
             href={sponsor.site}
             target="_blank"
             rel="noopener noreferrer"
-            className="w-[43%] lg:w-[300px]"
+            className="w-[40%] lg:w-[300px]"
             variants={logoVariants}
           >
             <motion.img
