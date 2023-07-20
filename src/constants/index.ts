@@ -413,8 +413,8 @@ export const OUR_LEADS = [
     message: "lending my hands in developing a better technical society",
     facebook: "",
     linkedIn: "https://www.linkedin.com/in/anvit-dubey-b0a205200",
-    instagram: "",
-    github: "",
+    instagram: "https://instagram.com/dubeyji_29?igshid=MzNlNGNkZWQ4Mg==",
+    github: "https://github.com/anvbey",
   },
   {
     image: "/BgColored_Leads/saniya_bg.png",
@@ -423,8 +423,9 @@ export const OUR_LEADS = [
     message: "lending my hands in developing a better technical society",
     facebook: "",
     linkedIn: "https://www.linkedin.com/in/saniya-bhargav-a660111bb",
-    instagram: "",
-    github: "",
+    instagram: "https://www.instagram.com/saniya_bhargav_/",
+    github: "https://github.com/SaniyaBhargav",
+
   },
   {
     image: "/BgColored_Leads/swastika_bg.png",
@@ -433,8 +434,8 @@ export const OUR_LEADS = [
     message: "lending my hands in developing a better technical society",
     linkedIn: "https://www.linkedin.com/in/swastika-bishnoi",
     facebook: "",
-    instagram: "",
-    github: "",
+    instagram: "https://www.instagram.com/_.swastikaa.__/",
+    github : "https://github.com/swastika7376",
   },
   {
     image: "/BgColored_Leads/prashant.png",
@@ -443,8 +444,8 @@ export const OUR_LEADS = [
     message: "lending my hands in developing a better technical society",
     linkedIn: "https://www.linkedin.com/in/prashant-upadhyay254/",
     facebook: "",
-    instagram: "",
-    github: "",
+    instagram: "https://instagram.com/_.biscut_?igshid=MzNlNGNkZWQ4Mg==",
+    github: "https://github.com/Prashant1709"
   },
   {
     image: "/BgColored_Leads/atig_bg.png",
@@ -453,8 +454,8 @@ export const OUR_LEADS = [
     message: "lending my hands in developing a better technical society",
     linkedIn: "https://www.linkedin.com/in/atig-purohit-a83233183/",
     facebook: "",
-    instagram: "",
-    github: "",
+    instagram: "https://instagram.com/x.___mysterious___.x?igshid=MzNlNGNkZWQ4Mg==",
+    github: "https://github.com/AtigPurohit"
   },
   {
     image: "/Leads/mayank.png",
@@ -463,8 +464,8 @@ export const OUR_LEADS = [
     message: "lending my hands in developing a better technical society",
     linkedIn: "https://www.linkedin.com/in/mayank-jain-688409208/",
     facebook: "",
-    instagram: "",
-    github: "",
+    instagram: "https://www.instagram.com/jain.mayank25/",
+    github: "https://github.com/mayankjain25"
   },
   {
     image: "/BgColored_Leads/aradhya_bg.png",
@@ -473,8 +474,8 @@ export const OUR_LEADS = [
     message: "lending my hands in developing a better technical society",
     linkedIn: "https://www.linkedin.com/in/aradhya-kumar-84078a21b/",
     facebook: "",
-    instagram: "",
-    github: "",
+    instagram: "https://instagram.com/aradhyasaumay?igshid=ZDc4ODBmNjlmNQ==",
+    github: "https://github.com/Aradhya0"
   },
   {
     image: "/BgColored_Leads/sagar_bg.png",
@@ -483,8 +484,8 @@ export const OUR_LEADS = [
     message: "lending my hands in developing a better technical society",
     linkedIn: "https://www.linkedin.com/in/sagar-satapathy-a4579b173/",
     facebook: "",
-    instagram: "",
-    github: "",
+    instagram: "https://www.instagram.com/freaking_wish/",
+    github: "https://github.com/wishsagarks"
   },
   {
     image: "/BgColored_Leads/ayush_bg.png",
@@ -493,8 +494,8 @@ export const OUR_LEADS = [
     message: "lending my hands in developing a better technical society",
     linkedIn: "https://www.linkedin.com/in/ayush-raj-9a2585201/",
     facebook: "",
-    instagram: "",
-    github: "",
+    instagram: "https://instagram.com/ayr08?igshid=ZDc4ODBmNjlmNQ==",
+    github:"https://github.com/fAyr08"
   },
   {
     image: "/BgColored_Leads/akshita.png",
@@ -503,8 +504,8 @@ export const OUR_LEADS = [
     message: "lending my hands in developing a better technical society",
     linkedIn: "https://www.linkedin.com/in/akshita-sah/",
     facebook: "",
-    instagram: "",
-    github: "",
+    instagram: "https://www.instagram.com/_akshita.sah_/",
+    github:"https://github.com/akshi0409"
   },
 
   {
@@ -514,8 +515,8 @@ export const OUR_LEADS = [
     message: "lending my hands in developing a better technical society",
     linkedIn: "https://www.linkedin.com/in/rishabbarik/",
     facebook: "",
-    instagram: "",
-    github: "",
+    instagram: "https://www.instagram.com/rishab_barik/",
+    github:"https://github.com/RISHABBARIK1"
   },
   {
     // image: "/BgColored_Leads/abhinav.png",
@@ -525,8 +526,8 @@ export const OUR_LEADS = [
     message: "lending my hands in developing a better technical society",
     linkedIn: "https://www.linkedin.com/in/abhinav-prasad-697a67205/",
     facebook: "",
-    instagram: "",
-    github: "",
+    instagram: "https://www.instagram.com/aaabhinavvv21/",
+    github:"https://github.com/AbhinavPrasad20"
   },
   {
     image: "/BgColored_Leads/eshan.png",
@@ -535,8 +536,8 @@ export const OUR_LEADS = [
     message: "lending my hands in developing a better technical society",
     linkedIn: "https://www.linkedin.com/in/eshaan-anand2911/",
     facebook: "",
-    instagram: "",
-    github: "",
+    instagram: "https://www.instagram.com/eshaananand/",
+    github:"https://github.com/eshaananand"
   },
 ];
 
@@ -1730,7 +1731,7 @@ export const GALLERY = [
   },
   {
     id: 5,
-    img: "/gallery/Projectwing/1.png",
+    img: "/gallery/Projectwing/1.JPG",
     name: "Project Wing",
   },
   {

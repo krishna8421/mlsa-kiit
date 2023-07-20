@@ -45,7 +45,7 @@ const Hero = () => {
           />
         </div>
         <div className="z-29 absolute top-0 z-0 ml-6 md:ml-0 flex h-[90vh] w-screen max-w-[1920px] flex-col items-center justify-center smmtext-lg sm:text-xl font-semibold text-white delay-100 duration-150 transition-all md:mt-8 md:h-screen md:text-4xl lg:mt-0 lg:leading-[40px] 2xl:leading-[6vh]">
-          <div className="pl-[30px] flex">
+          <div className="pl-[40px] flex">
             Microsoft Learn
             <HeroTextAnimation texts={MlsaTexts} />
           </div>

@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import LinkdIcon from "../../public/LinkedIn.svg";
-import FacebookIcon from "../../public/facebook.svg";
+import GithubIcon from "../../public/Github.svg";
 import InstaIcon from "../../public/instagram.svg";
 interface Props {
   image: string;
@@ -14,6 +14,7 @@ interface Props {
   linkedIn: string;
   instagram: string;
   facebook: string;
+  github: string;
   index: number;
   isActive: boolean;
   onClick: Function;
@@ -22,7 +23,7 @@ const imgStyle: any = {
   objectPosition: "center",
   objectFit: "cover",
 };
-const CurrentLeadsCard = ({ image, name, domain, index, isActive, onClick, instagram, linkedIn, facebook}: Props) => {
+const CurrentLeadsCard = ({ image, name, domain, index, isActive, onClick, instagram, linkedIn, facebook, github}: Props) => {
   const [showDetail, setShowDetail] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -62,9 +63,9 @@ const CurrentLeadsCard = ({ image, name, domain, index, isActive, onClick, insta
             <Image src={LinkdIcon} alt="icon" />
           </div>
         </Link>
-        <Link href={facebook} target="_blank">
+        <Link href={github} target="_blank">
           <div className="bg-[#111111] bg-opacity-50 flex h-[3rem] w-[3rem] items-center justify-center rounded-[6rem] border border-[#3D3D3D] backdrop-blur-[17.5px] hover:bg-[#3D3D3D]">
-            <Image src={FacebookIcon} alt="icon" />
+            <Image src={GithubIcon} alt="icon" />
           </div>
         </Link>
 
