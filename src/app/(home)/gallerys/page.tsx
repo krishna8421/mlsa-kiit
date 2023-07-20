@@ -100,7 +100,7 @@ const Gallery = () => {
               alt="project hero image"
               width={1080}
               height={1080}
-              className={`duration-2000 absolute top-1/2 z-20 -translate-x-1/2 -translate-y-1/2 ease-out transition-all
+              className={`duration-2000 absolute rounded-xl top-1/2 z-20 -translate-x-1/2 -translate-y-1/2 ease-out transition-all
                 ${pictureState > 0 ? "left-[50%] h-full w-full" : "left-[62%] h-[90%] w-[90%]"} 
                 ${pictureState > 1 ? "-translate-x-[140%] opacity-0" : "opacity-1"}
               `}
