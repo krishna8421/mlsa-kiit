@@ -39,11 +39,11 @@ const Alumni1: React.FC = () => {
       const windowHeight = window.innerHeight; //determines the height of the  device the user is using
       let num: number;
       if (windowHeight > 720) {
-        num = 0.33
+        num = 0.27
       } else if (windowHeight > 650) {
         num = 0.25
       } else {
-        num = 0.21
+        num = 0.168
       }
 
       window.addEventListener("scroll", function () {
