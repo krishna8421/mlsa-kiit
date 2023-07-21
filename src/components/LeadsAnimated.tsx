@@ -41,10 +41,12 @@ const Leads: React.FC = () => {
             const windowHeight = window.innerHeight; //determines the height of the  device the user is using
             // const windowW
             let num: number;
-            if (windowHeight > 750) {
-                num = 0.6
+            if (windowHeight > 720) {
+                num = 0.36
+            } else if (windowHeight > 650) {
+                num = 0.28
             } else {
-                num = 0.41
+                num = 0.26
             }
             // if(windowHeight.)
 
@@ -72,11 +74,11 @@ const Leads: React.FC = () => {
             if (scrollPosition > windowHeight / num) {
                 controls.start({ opacity: 1, y: 0, x: 0 }); //Final position for slider
                 controls1.start({ opacity: 1, y: 0, x: 0 }); //Final position for slider
-                controls1.start({ opacity: 1, y: 0, x: 0 });
+                controls2.start({ opacity: 1, y: 0, x: 0 });
             } else {
                 controls.start({ opacity: 0, y: 200, x: 0 }); //Initial starting positionn for slider
                 controls2.start({ opacity: 0, y: 0, x: 150 }); //Initial starting positionn for slider
-                controls2.start({ opacity: 0, y: 0, x: 0 });
+                controls1.start({ opacity: 0, y: 0, x: 0 });
 
             }
         };
@@ -117,7 +119,7 @@ const Leads: React.FC = () => {
                 <div className="overflow-hidden">
                     <motion.div
                         initial={{ opacity: 0 }} //initial position of text with opacity 0
-                        animate={controls1} //text conntrol animation triggered.
+                        animate={controls2} //text conntrol animation triggered.
                         transition={{ duration: 1.5 }}
                     >
                         <h1 className="sm:mb-[7px] ml-[11px] sm:ml-[15px] lg:ml-[30px] 2xl:ml-[53px]  text-xl  font-semibold md:mb-[20px] md:text-4xl items-start text-[#FFFFFF] 2xl:text-[2.1vw] ">
@@ -130,7 +132,7 @@ const Leads: React.FC = () => {
                         <motion.div
                             initial={{ opacity: 0 }} //initial position of text with opacity 0
                             animate={controls1} //text conntrol animation triggered.
-                            transition={{ duration: 4 }}>
+                            transition={{ duration: 6 }}>
                             <Swiper
                                 className="px-3 md:ml-20"
                                 spaceBetween={10}
