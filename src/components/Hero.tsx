@@ -36,7 +36,7 @@ const Hero = () => {
         />
       </div>
       <div className="relative mx-auto h-[75vh] md:h-[85vh] lg:h-screen w-screen  max-w-[1920px] overflow-x-hidden overflow-hidden">
-        <div className="absolute left-0 right-0 top-0 z-30 flex justify-center">
+        <div className="absolute left-0 right-0 top-0 z-30 flex justify-center ">
           <EventHome
             Classname="z-30 mt-[100px]"
             eventName="Our upcoming event will be notified here"
@@ -44,16 +44,16 @@ const Hero = () => {
             display={true}
           />
         </div>
-        <div className="z-29 absolute top-0 z-0 ml-6 md:ml-0 flex h-[90vh] w-screen max-w-[1920px] flex-col items-center justify-center smmtext-lg sm:text-xl font-semibold text-white delay-100 duration-150 transition-all md:mt-8 md:h-screen md:text-4xl lg:mt-0 lg:leading-[40px] 2xl:leading-[6vh]">
-          <div className="pl-[40px] flex">
+        <div className="z-29 absolute top-0 z-0 smm:ml-4 sm:ml-6 md:ml-0 flex md:gap-1 lg:gap-0 h-[90vh] w-screen max-w-[1920px] flex-col items-center justify-center text-xl smm:text-2xl sm:text-3xl font-semibold text-white transition duration-1000   md:mt-8 md:h-screen md:text-4xl lg:mt-0 leading-[30px]  lg:leading-[40px] 2xl:leading-[6vh]">
+          <div className="pl-[22px] sm:pl-[64px] flex items-center">
             Microsoft Learn
             <HeroTextAnimation texts={MlsaTexts} />
           </div>
-          <span className="mr-8 md:mr-0">Ambassadors</span>
-          <span className="font-normal mr-8 md:mr-0">KIIT Chapter</span>
+          <span className="mr-7 md:mr-0 ">Ambassadors</span>
+          <span className="font-normal mr-7  md:mr-0 mb-1 ">KIIT Chapter</span>
           <Link href="/auth/login">
             <span>
-              <button className="mr-8 md:mr-0 bg-gradient-blue rounded-full bg-gradient-to-r from-[#0070C5] to-[#3BABCF] px-4 py-1.7 text-sm text-white md:px-7 md:py-4 md:text-[22px] lg:mt-8 font-medium hover:bg-gradient-to-r hover:from-[#1e00c7] hover:to-[#52a8ff]">
+              <button className="mr-7 md:mr-0  bg-gradient-blue rounded-full bg-gradient-to-r from-[#0070C5] to-[#3BABCF] px-4 pt-[5px] pb-[7px] text-sm text-white md:px-7 md:py-4 md:text-[22px] md:mt-6 lg:mt-8 font-medium  transition-all duration-1000 hover:scale-105 ease-in-out hover:shadow-blue">
                 Join Us Now
               </button>
 
