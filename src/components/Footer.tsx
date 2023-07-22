@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { FaFacebookF, FaInstagram, FaLinkedinIn, FaPhoneAlt, FaRegCopyright, FaTwitter } from "react-icons/fa";
+import {  FaGithub, FaInstagram, FaLinkedinIn, FaPhoneAlt, FaRegCopyright, FaTwitter } from "react-icons/fa";
 import { HiMail } from "react-icons/hi";
 
 type socialsProps = {
@@ -37,16 +37,16 @@ const Footer = () => {
               <p className="mt-4 ml-2.5 text-xs lg:text-sm text-center md:text-start">WE ENCOURAGE YOUNG MINDS TO<br/>PURSUE KNOWLEDGE AND EXCELLENCE <br/>IN UNIQUE WAYS </p>
               <div className="flex gap-2 mt-8 justify-center md:justify-normal">
                 <Socials
-                  logo={<FaFacebookF />}
-                  src="https://www.instragram.com/mlsa-kiit"
+                  logo={<FaGithub />}
+                  src="https://github.com/MLSAKIIT"
                 />
                 <Socials
                   logo={<FaTwitter />}
-                  src="https://www.instragram.com/mlsa-kiit"
+                  src="https://twitter.com/msckiit"
                 />
                 <Socials
                   logo={<FaInstagram />}
-                  src="https://www.instragram.com/mlsa-kiit"
+                  src="https://www.instagram.com/mlsakiit/"
                 />
                 <Socials
                   logo={<FaLinkedinIn />}
