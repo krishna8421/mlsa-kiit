@@ -425,7 +425,6 @@ export const OUR_LEADS = [
     linkedIn: "https://www.linkedin.com/in/saniya-bhargav-a660111bb",
     instagram: "https://www.instagram.com/saniya_bhargav_/",
     github: "https://github.com/SaniyaBhargav",
-
   },
   {
     image: "/BgColored_Leads/swastika_bg.png",
@@ -435,7 +434,7 @@ export const OUR_LEADS = [
     linkedIn: "https://www.linkedin.com/in/swastika-bishnoi",
     facebook: "",
     instagram: "https://www.instagram.com/_.swastikaa.__/",
-    github : "https://github.com/swastika7376",
+    github: "https://github.com/swastika7376",
   },
   {
     image: "/BgColored_Leads/prashant.png",
@@ -445,7 +444,7 @@ export const OUR_LEADS = [
     linkedIn: "https://www.linkedin.com/in/prashant-upadhyay254/",
     facebook: "",
     instagram: "https://instagram.com/_.biscut_?igshid=MzNlNGNkZWQ4Mg==",
-    github: "https://github.com/Prashant1709"
+    github: "https://github.com/Prashant1709",
   },
   {
     image: "/BgColored_Leads/atig_bg.png",
@@ -455,7 +454,7 @@ export const OUR_LEADS = [
     linkedIn: "https://www.linkedin.com/in/atig-purohit-a83233183/",
     facebook: "",
     instagram: "https://instagram.com/x.___mysterious___.x?igshid=MzNlNGNkZWQ4Mg==",
-    github: "https://github.com/AtigPurohit"
+    github: "https://github.com/AtigPurohit",
   },
   {
     image: "/Leads/mayank.png",
@@ -465,7 +464,7 @@ export const OUR_LEADS = [
     linkedIn: "https://www.linkedin.com/in/mayank-jain-688409208/",
     facebook: "",
     instagram: "https://www.instagram.com/jain.mayank25/",
-    github: "https://github.com/mayankjain25"
+    github: "https://github.com/mayankjain25",
   },
   {
     image: "/BgColored_Leads/aradhya_bg.png",
@@ -475,7 +474,7 @@ export const OUR_LEADS = [
     linkedIn: "https://www.linkedin.com/in/aradhya-kumar-84078a21b/",
     facebook: "",
     instagram: "https://instagram.com/aradhyasaumay?igshid=ZDc4ODBmNjlmNQ==",
-    github: "https://github.com/Aradhya0"
+    github: "https://github.com/Aradhya0",
   },
   {
     image: "/BgColored_Leads/sagar_bg.png",
@@ -485,7 +484,7 @@ export const OUR_LEADS = [
     linkedIn: "https://www.linkedin.com/in/sagar-satapathy-a4579b173/",
     facebook: "",
     instagram: "https://www.instagram.com/freaking_wish/",
-    github: "https://github.com/wishsagarks"
+    github: "https://github.com/wishsagarks",
   },
   {
     image: "/BgColored_Leads/ayush_bg.png",
@@ -495,7 +494,7 @@ export const OUR_LEADS = [
     linkedIn: "https://www.linkedin.com/in/ayush-raj-9a2585201/",
     facebook: "",
     instagram: "https://instagram.com/ayr08?igshid=ZDc4ODBmNjlmNQ==",
-    github:"https://github.com/fAyr08"
+    github: "https://github.com/fAyr08",
   },
   {
     image: "/BgColored_Leads/akshita.png",
@@ -505,7 +504,7 @@ export const OUR_LEADS = [
     linkedIn: "https://www.linkedin.com/in/akshita-sah/",
     facebook: "",
     instagram: "https://www.instagram.com/_akshita.sah_/",
-    github:"https://github.com/akshi0409"
+    github: "https://github.com/akshi0409",
   },
 
   {
@@ -516,7 +515,7 @@ export const OUR_LEADS = [
     linkedIn: "https://www.linkedin.com/in/rishabbarik/",
     facebook: "",
     instagram: "https://www.instagram.com/rishab_barik/",
-    github:"https://github.com/RISHABBARIK1"
+    github: "https://github.com/RISHABBARIK1",
   },
   {
     // image: "/BgColored_Leads/abhinav.png",
@@ -527,7 +526,7 @@ export const OUR_LEADS = [
     linkedIn: "https://www.linkedin.com/in/abhinav-prasad-697a67205/",
     facebook: "",
     instagram: "https://www.instagram.com/aaabhinavvv21/",
-    github:"https://github.com/AbhinavPrasad20"
+    github: "https://github.com/AbhinavPrasad20",
   },
   {
     image: "/BgColored_Leads/eshan.png",
@@ -537,7 +536,7 @@ export const OUR_LEADS = [
     linkedIn: "https://www.linkedin.com/in/eshaan-anand2911/",
     facebook: "",
     instagram: "https://www.instagram.com/eshaananand/",
-    github:"https://github.com/eshaananand"
+    github: "https://github.com/eshaananand",
   },
 ];
 
@@ -1162,7 +1161,7 @@ export const Marketing1 = [
   },
   {
     id: 9,
-    img: "/members/GIRISH KYAL.jpg",
+    img: "/members/GIRISH KYAL1.jpg",
     name: "Girish Kayal",
     domain: "Marketing",
     github: "",
@@ -1180,7 +1179,7 @@ export const Marketing1 = [
   },
   {
     id: 11,
-    img: "/members/ANKIT KUMAR.png",
+    img: "/members/ANKIT KUMAR1.jpg",
     name: "Ankit Kumar",
     domain: "Marketing",
     github: "https://github.com/Ankit-kr13",
@@ -1445,7 +1444,7 @@ export const WebDevelopment = [
   {
     id: 2,
     img: "/members/amaan.jpg",
-    name: "Amaan Bhaati",
+    name: "Amaan Bhati",
     domain: "Web Development",
     instagram: "https://www.instagram.com/amaaanbhati/",
     github: "http://github.com/amaan-bhati",
@@ -1489,11 +1488,11 @@ export const WebDevelopment = [
   },
   {
     id: 11,
-    img: "/members/ANKIT1.jpg",
+    img: "/members/ANKIT.jpg",
     name: "Ankit Kumar",
     domain: "Web Development",
-    instagram: "https://github.com/sinEscanor",
-    github: "https://github.com/sinEscanor",
+    instagram: "https://www.instagram.com/ankit.0_/",
+    github: "https://github.com/ankit-k56",
     linkedIn: "https://www.linkedin.com/in/ankit-kumar-7a9ab3253",
   },
   {
