@@ -55,7 +55,7 @@ const Navbar = () => {
           </span> */}
         </div>
         <div onClick={toggleMobileMenu} className="md:hidden ml-2">
-          {!showMobileMenu ? <AiOutlineMenu /> : <VscChromeClose />}
+          {!showMobileMenu ? <AiOutlineMenu className="text-xl"/> : <VscChromeClose className="text-xl" />}
           <MobileView visible={showMobileMenu} />
         </div>
         <div className="hidden gap-4 md:gap-1 text-white md:flex md:items-center lg:gap-6">
@@ -66,7 +66,7 @@ const Navbar = () => {
           <NavbarItem href="/members">Members</NavbarItem>
           <NavbarItem href={YOUTUBE_URL} external={true}>Youtube</NavbarItem>
           <NavbarItem href="/auth/login" type="button">
-            Contact
+            Join Us 
           </NavbarItem>
         </div>
       </div>
