@@ -128,7 +128,7 @@ const JoinUs: React.FC = () => {
                       <h1>Ambassador</h1>
                       <h1 className="font-normal">KIIT Chapter</h1>
                     </div>
-                    <Link href="/auth/login" className="">
+                    <Link href="#footer" className="">
                       <button className="text-xs sm:text-sm md:text-base lg:text-lg my-[15px]  ml-5 sm:ml-[42px] md:ml-[62px] lg:ml-[82px]  flex items-center justify-center whitespace-nowrap rounded-[100px]  bg-gradient-to-r font-normal from-[#0070C5] to-[#3BABCF] px-3 py-[5px] md:px-4 md:py-[7px]  text-white ">
                         Contact Us
                       </button>

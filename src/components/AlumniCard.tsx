@@ -32,7 +32,7 @@ const AlumuniCard = ({ image, name, position, company, message }: Props) => {
           />
           <div className="pl-[14px] md:pl-6">
             <h1 className="text-lg md:text-2xl ">{name}</h1>
-            <h2 className="text-sm md:text-lg md:leading-6">
+            <h2 className="text-sm md:text-md md:leading-6">
               {position} {company}
             </h2>
           </div>
