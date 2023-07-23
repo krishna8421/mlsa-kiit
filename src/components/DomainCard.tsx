@@ -30,8 +30,8 @@ const DomainCard = ({ isHome, logo, heading, about }: Props) => {
           {heading}
         </h1>
         <p
-          className={`${isHome ? "md:ml-[32px]  4xl:text-xl" : "mx-5  text-xl "
-            } ml-[9px] sm:ml-[12.92px]  2xl:mt-[46px] mb-1 lg:mt-[44px] md:mt-[35px] sm:mt-[25.83px] mt-[12.35px] 2xl:leading-[26.6px] md:leading-[15px] leading-normal font-light 2xl:text-[16px] sm:text-[12px] text-[11px] text-[#c8c7c7]  transition duration-500 group-hover:text-[#FFFFFF]`}
+          className={`${isHome ? "md:ml-[32px]  4xl:text-xl" : "mx-5  pb-5 text-xl "
+            } ml-[5px] sm:ml-[12.92px] 2xl:mt-[46px] mb-1 lg:mt-[44px] md:mt-[35px] sm:mt-[25.83px] mt-[12.35px] 2xl:leading-[26.6px] md:leading-[15px] leading-normal 2xl:text-[19px] md:text-[13px] text-[8px] text-[#7d8590] transition duration-500 group-hover:text-[#FFFFFF]`}
         >
           {about}
         </p>
