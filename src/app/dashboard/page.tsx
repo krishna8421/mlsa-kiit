@@ -8,20 +8,8 @@ const Dashboard = async () => {
   return (
     <div>
       <h1>Dashboard</h1>
-      <pre>
-        <code>
-          <pre>{JSON.stringify(session, null, 2)}</pre>
-        </code>
-      </pre>
-      <SignOut />
-      <Link
-        href="/auth/login"
-      >
-        Login
-      </Link>
-
     </div>
   )
 }
 
-export default Dashboard
+export default Dashboard;

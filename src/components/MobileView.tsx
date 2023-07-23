@@ -26,7 +26,7 @@ const MobileView = ({ visible }: MobileMenuProps) => {
         <NavbarItem href="/members" mobileView={true}>
           Members
         </NavbarItem>
-        <NavbarItem href="/gallerys" mobileView={true}>
+        <NavbarItem href="/gallery" mobileView={true}>
           Gallery
         </NavbarItem>
         <NavbarItem href={YOUTUBE_URL} mobileView={true}>
