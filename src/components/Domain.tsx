@@ -90,12 +90,12 @@ const Domain: React.FC = () => {
 
           <div className="">
             
-            <h1 className="sm:mb-[7px] ml-[11px] sm:ml-[15px] lg:ml-[30px] 2xl:ml-[53px] text-[12px]  font-semibold md:mb-[20px]  items-start text-[#FFFFFF] md:text-4xl text-xl  2xl:text-[2.1vw] ">
+            <h1 className=" ml-[11px] sm:ml-[15px] lg:ml-[30px] 2xl:ml-[53px] text-[12px]  font-semibold mb-[20px]  items-start text-[#FFFFFF] md:text-4xl text-xl  2xl:text-[2.1vw] ">
               Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#A03BCF] to-[#6F5BFF]">Domains</span>
             </h1>
             {/* </motion.div> */}
 
-            <div className="flex w-full 2xl:w-[100%] 3xl:w-[90%] flex-wrap gap-4 md:gap-5 2xl:gap-[30px] sm:pl-3 md:pl-10 lg:pl-12 xl:w-[90%] 2xl:pl-[70px] pb-8 ">
+            <div className="flex w-full 2xl:w-[100%] 3xl:w-[90%] flex-wrap gap-3 md:gap-1 2xl:gap-[30px]  sm:pl-10 lg:pl-12 xl:w-[90%] 2xl:pl-[70px] pb-8 ">
               {OUR_DOMAINS.map((domain, index) => {
                 return (
                   <motion.div

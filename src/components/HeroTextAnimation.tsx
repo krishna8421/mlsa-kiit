@@ -6,7 +6,6 @@ type HeroTextAnimationProps = {
 
 const HeroTextAnimation = ({ texts }: HeroTextAnimationProps) => {
   const [textAnimation, setTextAnimation] = useState(texts[0]);
-  const [translation, setTranslation] = useState(0);
 
   useEffect(() => {
     let currentIndex = 1;
@@ -38,7 +37,7 @@ const HeroTextAnimation = ({ texts }: HeroTextAnimationProps) => {
   }, [texts]);
 
   return (
-    <div className={`ml-2 flex w-[100px] smm:w-[130px] sm:w-[177px] overflow-hidden text-transparent bg-clip-text bg-gradient-to-r from-[#45F4FF] to-[#572EFA]`}>
+    <div className={`text-start ml-2 flex overflow-hidden text-transparent bg-clip-text bg-gradient-to-r from-[#45F4FF] to-[#572EFA]`}>
       {texts.map((text, index) => (
         <span
           key={index}

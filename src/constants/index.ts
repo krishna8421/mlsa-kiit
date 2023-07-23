@@ -1161,7 +1161,7 @@ export const Marketing1 = [
   },
   {
     id: 9,
-    img: "/members/GIRISH KYAL.jpg",
+    img: "/members/GIRISH KYAL1.jpg",
     name: "Girish Kayal",
     domain: "Marketing",
     github: "",
@@ -1179,7 +1179,7 @@ export const Marketing1 = [
   },
   {
     id: 11,
-    img: "/members/ANKIT KUMAR.png",
+    img: "/members/ANKIT KUMAR1.jpg",
     name: "Ankit Kumar",
     domain: "Marketing",
     github: "https://github.com/Ankit-kr13",
@@ -1444,7 +1444,7 @@ export const WebDevelopment = [
   {
     id: 2,
     img: "/members/amaan.jpg",
-    name: "Amaan Bhaati",
+    name: "Amaan Bhati",
     domain: "Web Development",
     instagram: "https://www.instagram.com/amaaanbhati/",
     github: "http://github.com/amaan-bhati",
@@ -1488,11 +1488,11 @@ export const WebDevelopment = [
   },
   {
     id: 11,
-    img: "/members/ANKIT1.jpg",
+    img: "/members/ANKIT.jpg",
     name: "Ankit Kumar",
     domain: "Web Development",
-    instagram: "https://github.com/sinEscanor",
-    github: "https://github.com/sinEscanor",
+    instagram: "https://www.instagram.com/ankit.0_/",
+    github: "https://github.com/ankit-k56",
     linkedIn: "https://www.linkedin.com/in/ankit-kumar-7a9ab3253",
   },
   {

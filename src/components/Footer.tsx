@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { FaFacebookF, FaInstagram, FaLinkedinIn, FaPhoneAlt, FaRegCopyright, FaTwitter } from "react-icons/fa";
+import {  FaGithub, FaInstagram, FaLinkedinIn, FaPhoneAlt, FaRegCopyright, FaTwitter } from "react-icons/fa";
 import { HiMail } from "react-icons/hi";
 
 type socialsProps = {
@@ -23,7 +23,7 @@ const Socials = ({ logo, src }: socialsProps) => {
 const Footer = () => {
   return (
     <>
-      <div className="bg-[#111111] bg-opacity-70 custom-font tracking-[3px] pb-8">
+      <div id="footer" className="bg-[#111111] bg-opacity-70 custom-font tracking-[3px] pb-8">
         <div className="max-w-[1500px] mx-auto text-[#e7e4e4]">
           <div className="flex flex-col md:flex-row gap-8 md:gap-0 px-2 sm:px-4 justify-between  xl:px-16 py-8 md:py-6 xl:py-8">
             <div className="md:w-[50%] xl:w-[60%] flex flex-col items-center md:items-start">
@@ -37,16 +37,16 @@ const Footer = () => {
               <p className="mt-4 ml-2.5 text-xs lg:text-sm text-center md:text-start">WE ENCOURAGE YOUNG MINDS TO<br/>PURSUE KNOWLEDGE AND EXCELLENCE <br/>IN UNIQUE WAYS </p>
               <div className="flex gap-2 mt-8 justify-center md:justify-normal">
                 <Socials
-                  logo={<FaFacebookF />}
-                  src="https://www.instragram.com/mlsa-kiit"
+                  logo={<FaGithub />}
+                  src="https://github.com/MLSAKIIT"
                 />
                 <Socials
                   logo={<FaTwitter />}
-                  src="https://www.instragram.com/mlsa-kiit"
+                  src="https://twitter.com/msckiit"
                 />
                 <Socials
                   logo={<FaInstagram />}
-                  src="https://www.instragram.com/mlsa-kiit"
+                  src="https://www.instagram.com/mlsakiit/"
                 />
                 <Socials
                   logo={<FaLinkedinIn />}
