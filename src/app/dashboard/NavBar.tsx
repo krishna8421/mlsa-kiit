@@ -51,13 +51,16 @@ const Navbar = ({ user }: IProps) => {
               <p className="font-bold">Signed in as</p>
               <p className="font-bold">{user.personalEmail}</p>
             </DropdownItem>
+            <DropdownItem key="dashboard" onPress={() => router.push("/dashboard")} >
+              Dashboard
+            </DropdownItem>
             <DropdownItem key="my-details" onPress={() => router.push("/dashboard/my-details")} >
               My Details
             </DropdownItem>
             <DropdownItem key="qrcode" onPress={() => router.push("/dashboard/qrcode")} >
               QR Code
             </DropdownItem>
-            <DropdownItem key="contact-us" onPress={() => router.push("/contact-us")} >
+            <DropdownItem key="contact-us" onPress={() => router.push("/contact")} >
               Contact Us
             </DropdownItem>
             <DropdownItem key="logout" color="danger" onPress={() => signOut()}>

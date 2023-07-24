@@ -62,7 +62,7 @@ const Navbar = () => {
           <NavbarItem href="/events">Events</NavbarItem>
           <NavbarItem href="/projects">Projects</NavbarItem>
           <NavbarItem href="https://medium.com/msackiit" external={true}>Blog</NavbarItem>
-          <NavbarItem href="/gallerys">Gallery</NavbarItem>
+          <NavbarItem href="/gallery">Gallery</NavbarItem>
           <NavbarItem href="/members">Members</NavbarItem>
           <NavbarItem href={YOUTUBE_URL} external={true}>Youtube</NavbarItem>
           <NavbarItem href="/auth/login" type="button">
