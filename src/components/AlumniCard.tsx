@@ -38,7 +38,7 @@ const AlumuniCard = ({ image, name, position, company, message }: Props) => {
           </div>
         </div>
         <div className="flex relative pb-3 md:pb-6 md:px-3">
-          <div className=" h-[70px] md:h-24 w-[2px] bg-blue-600 text-blue-600">.</div>
+          <div className=" h-[100%] w-[2px] bg-blue-600 text-blue-600">.</div>
           <p className="pl-5 text-xs md:text-base md:leading-6">{message}</p>
         </div>
 
