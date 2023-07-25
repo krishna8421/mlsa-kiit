@@ -12,7 +12,7 @@ const Hero = () => {
       <div className="absolute inset-0 max-w-[1920px] mx-auto">
         <Image
           src="/heroLeft.png"
-          alt="hero left gradient"
+          alt=""
           width={700}
           height={700}
           className="z-1 absolute left-0 top-0 h-[60%] w-[80%] md:h-full md:w-[50%] max-w-[1920px] "
@@ -20,7 +20,7 @@ const Hero = () => {
         <div className="z-2 absolute right-0 top-0 h-[120vh] w-[50%] max-w-[1920px] lg:h-[150vh] lg:w-[40%]">
           <Image
             src="/heroRight.png"
-            alt="hero right gradient"
+            alt=""
             width={1000}
             height={800}
             className="h-[80%] md:h-full w-full"
@@ -46,11 +46,11 @@ const Hero = () => {
         <div className="w-full text-[25px] sm:text-[30px] md:text-[40px] lg:text-[55px] xl:text-[70px] leading-[35px] sm:leading-[40px] md:leading-[50px] lg:leading-[70px] xl:leading-[90px] text-center absolute top-1/2 md:-translate-y-[5%] lg:-translate-y-[35%]">
           <div className="font-bold md:font-semibold flex justify-center">
             <span>Microsoft Learn</span>
-            <span className="md:ml-3 text-start w-[120px] sm:w-[160px] md:w-[230px] lg:w-[285px] xl:w-[360px]">
+            <span className="text-start w-[120px] sm:w-[160px] md:w-[230px] lg:w-[285px] xl:w-[360px]">
               <HeroTextAnimation texts={MlsaTexts}/>
             </span>
           </div>
-          <div className="flex flex-col">
+          <div className="flex flex-col mr-4 sm:mr-8 md:mr-16 lg:mr-18 xl:mr-20">
             <span className="font-bold md:font-semibold">Ambassadors</span>
             <span>KIIT Chapter</span>
           </div>
