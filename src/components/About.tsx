@@ -69,7 +69,7 @@ const About: React.FC = () => {
 
   return (
     <>
-      <div className="overflow-hidden mx-auto flex w-screen max-w-[1920px] overflow-y-hidden bg-transparent pt-12 pl-4 md:pl-[50px] lg:pl-[80px] xl:pl-[90px] 2xl:pl-[130px]">
+      <div className="cursor-default overflow-hidden mx-auto flex w-screen max-w-[1920px] overflow-y-hidden bg-transparent pt-12 pl-4 md:pl-[50px] lg:pl-[80px] xl:pl-[90px] 2xl:pl-[130px]">
         <div className="flex w-full h-full pb-[80px] md:pb-[110px] xl:pb-[150px]">
           <motion.div
             className="flex justify-center"
