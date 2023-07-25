@@ -341,6 +341,31 @@ export const FOUNDER = {
 
 export const OUR_ALUMNI = [
   {
+    image: "/Alumni/Animesh.jpg",
+    name: "Animesh Pathak",
+    position: "DevRel engineer",
+    company: "Keploy",
+    message:
+      "The MLSA has boosted my tech skills in coding, web development, and soft skills. I made great friends and met wonderful juniors—it's more than just a tech society; it's an institution itself.",
+  },
+  {
+    image: "/Alumni/AbhinavM.jpg",
+    name: "Abhinav Mukherjee",
+    position: "SRE Intern",
+    company: "D.E. Shaw Group",
+    message:
+      "What is MLSA, KIIT? A group of strangers that work so closely and go through so many things, that the strangers become the best of your friends. PS: You can also call it a technical community.",
+  },
+  {
+    image: "/Alumni/Subhayan.jpg",
+    name: "Subhayan Das ",
+    position: "Analyst",
+    company: "Bain & Company",
+    message:
+      "My MLSA journey has been wonderful and exciting. The community feels like family, where I turned far-fetched ideas into reality. I've grown both professionally and personally, bonding with fellow members.",
+  },
+
+  {
     image: "/Alumni/pranav.jpg",
     name: "Parnav Shekar",
     position: "USI Consultant",
