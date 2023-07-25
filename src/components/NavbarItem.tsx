@@ -35,7 +35,7 @@ const NavbarItem = ({
       <div className="flex flex-col items-center group">
         <div className="bg-white w-full h-[2px] -translate-y-[-10px] group-hover:-translate-y-0 opacity-0 group-hover:opacity-70 trasnition-opacity duration-300"></div>
         <div
-          className={`2xl:text-[1vw] text-md  cursor-pointer text-sm md:px-2 lg:px-4 font-medium group-hover:bg-[#111]/30 py-1.5 transition duration-300 hover:duration-500 ease-in-out
+          className={`2xl:text-[1vw] text-md  cursor-pointer text-sm md:px-2 lg:px-4 font-medium group-hover:bg-[#111]/40 py-1.5 transition duration-300 hover:duration-500 ease-in-out
         ${className} ${mobileView && "w-full text-center text-white text-xl"} 
       `}
         >

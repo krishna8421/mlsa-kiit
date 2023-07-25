@@ -67,7 +67,7 @@ const Footer = () => {
                 </span>
                 <span className="flex items-center gap-2 group">
                   <HiMail className="group-hover:text-[#0070C5]" />
-                  <p>MSCKIIT@OUTLOOK.COM</p>
+                  <p>MlSAKIIT@OUTLOOK.COM</p>
                 </span>
               </div>
               <div className="flex flex-col gap-1.5 text-xs tracking-[2px] font-medium">
