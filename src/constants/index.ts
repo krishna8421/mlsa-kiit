@@ -1602,7 +1602,7 @@ export const ARVR = [
   },
   {
     id: 2,
-    img: "/members/pritam.png",
+    img: "/members/pritam.jpg",
     name: "Pritam Kumar Pal",
     domain: "AR/VR",
     github: "https://github.com/PritamPaul01",

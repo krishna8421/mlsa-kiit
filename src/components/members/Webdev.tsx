@@ -56,7 +56,7 @@ const Item = ({ into, isActive, onClick }: any) => {
                 <Image src={LinkdIcon} alt="icon" className="hover:scale-110 transition duration-100 h-[15px] w-[15px] md:h-[17px] md:w-[17px] 2xl:h-[24px] 2xl:w-[24px]" />
               </Link>
               <Link href={into.github || ""} target="_blank">
-                <Image src={GithubIcon} alt="icon" className="hover:scale-110 transition duration-100 h-[15px] w-[15px] md:h-[17px] md:w-[17px] 2xl:h-[24px] 2xl:w-[24px]" />
+                <Image src={GithubIcon} alt="icon" className={into.github === null ? "hidden" :  "transition duration-100 hover:scale-110 h-[15px] w-[15px] md:h-[17px] md:w-[17px] 2xl:h-[24px] 2xl:w-[24px]"} />
               </Link>
             </div>
 
