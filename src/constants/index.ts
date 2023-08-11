@@ -341,6 +341,31 @@ export const FOUNDER = {
 
 export const OUR_ALUMNI = [
   {
+    image: "/Alumni/Animesh.jpg",
+    name: "Animesh Pathak",
+    position: "DevRel engineer",
+    company: "Keploy",
+    message:
+      "The MLSA has boosted my tech skills in coding, web development, and soft skills. I made great friends and met wonderful juniors—it's more than just a tech society; it's an institution itself.",
+  },
+  {
+    image: "/Alumni/AbhinavM.jpg",
+    name: "Abhinav Mukherjee",
+    position: "SRE Intern",
+    company: "D.E. Shaw Group",
+    message:
+      "What is MLSA, KIIT? A group of strangers that work so closely and go through so many things, that the strangers become the best of your friends. PS: You can also call it a technical community.",
+  },
+  {
+    image: "/Alumni/Subhayan.jpg",
+    name: "Subhayan Das ",
+    position: "Analyst",
+    company: "Bain & Company",
+    message:
+      "My MLSA journey has been wonderful and exciting. The community feels like family, where I turned far-fetched ideas into reality. I've grown both professionally and personally, bonding with fellow members.",
+  },
+
+  {
     image: "/Alumni/pranav.jpg",
     name: "Parnav Shekar",
     position: "USI Consultant",
@@ -1161,7 +1186,7 @@ export const Marketing1 = [
   },
   {
     id: 9,
-    img: "/members/GIRISH KYAL.jpg",
+    img: "/members/GIRISH KYAL1.jpg",
     name: "Girish Kayal",
     domain: "Marketing",
     github: "",
@@ -1179,7 +1204,7 @@ export const Marketing1 = [
   },
   {
     id: 11,
-    img: "/members/ANKIT KUMAR.png",
+    img: "/members/ANKIT KUMAR1.jpg",
     name: "Ankit Kumar",
     domain: "Marketing",
     github: "https://github.com/Ankit-kr13",
@@ -1444,7 +1469,7 @@ export const WebDevelopment = [
   {
     id: 2,
     img: "/members/amaan.jpg",
-    name: "Amaan Bhaati",
+    name: "Amaan Bhati",
     domain: "Web Development",
     instagram: "https://www.instagram.com/amaaanbhati/",
     github: "http://github.com/amaan-bhati",
@@ -1488,11 +1513,11 @@ export const WebDevelopment = [
   },
   {
     id: 11,
-    img: "/members/ANKIT1.jpg",
+    img: "/members/ANKIT.jpg",
     name: "Ankit Kumar",
     domain: "Web Development",
-    instagram: "https://github.com/sinEscanor",
-    github: "https://github.com/sinEscanor",
+    instagram: "https://www.instagram.com/ankit.0_/",
+    github: "https://github.com/ankit-k56",
     linkedIn: "https://www.linkedin.com/in/ankit-kumar-7a9ab3253",
   },
   {
