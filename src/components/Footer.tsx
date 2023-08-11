@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import {  FaGithub, FaInstagram, FaLinkedinIn, FaPhoneAlt, FaRegCopyright, FaTwitter } from "react-icons/fa";
+import {  FaDiscord, FaGithub, FaInstagram, FaLinkedinIn, FaPhoneAlt, FaRegCopyright, FaTwitter } from "react-icons/fa";
 import { HiMail } from "react-icons/hi";
 
 type socialsProps = {
@@ -51,6 +51,10 @@ const Footer = () => {
                 <Socials
                   logo={<FaLinkedinIn />}
                   src="https://www.linkedin.com/company/msckiit/mycompany/"
+                />
+                <Socials
+                  logo={<FaDiscord />}
+                  src="https://discord.com/invite/P6VCP2Ry3q"
                 />
               </div>
             </div>
