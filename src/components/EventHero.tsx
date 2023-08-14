@@ -46,12 +46,12 @@ const EventHero = () => {
               <div className="flex cursor-default flex-col  items-end justify-between pr-3 pt-3  text-right md:text-lg lg:text-xl font-normal capitalize">
                 <div className="flex flex-col">
                   <h1 className="text-[15px] font-semibold md:leading-2 lg:leading-4 md:py-1 md:text-xl lg:text-2xl">
-                    Our Upcoming Event
+                    The Stark Expo
                   </h1>
 
                   <div className="my-2 flex items-center justify-end gap-1">
                     <BsCalendar4Week />
-                    <p> To be notified</p>
+                    <p>27/8/23</p>
                   </div>
                   <div className="duration-50 mb-2 mt-1 h-[2px] w-[100%] bg-gradient-to-r from-transparent to-[#ffffff]  my-1 lg:my-2 "></div>
                   <div className="flex items-center md:text-lg lg:text-xl justify-end gap-1">
@@ -61,10 +61,15 @@ const EventHero = () => {
 
                   <p className="py-1 lg:py-2 text-xs font-[100px] md:text-base lg:text-[18px]">Last day to register</p>
                 </div>
+                <div className=" flex flex-row gap-[-5]">
+                  <button className=" mb-[15px] flex w-[39%] items-center justify-center whitespace-nowrap rounded-[100px] bg-gradient-to-r from-[#0070C5] to-[#3BABCF]  px-2  py-1 lg:py-2 text-[7px] md:text-xs lg:text-[11px]   ">
+                    Know More
+                  </button>
+                  <button className=" mb-[15px] ml-[3rem]  flex w-[39%] items-center justify-center whitespace-nowrap rounded-[100px] bg-gradient-to-r from-[#0070C5] to-[#3BABCF]  px-2  py-1 lg:py-2 text-[7px] md:text-xs lg:text-[11px]   ">
+                    Register Now
+                  </button>
+                </div>
 
-                <button className=" mb-[15px]  flex w-[39%] items-center justify-center whitespace-nowrap rounded-[100px] bg-gradient-to-r from-[#0070C5] to-[#3BABCF]  px-2  py-1 lg:py-2 text-[7px] md:text-xs lg:text-[11px]   ">
-                  Register Now
-                </button>
               </div>
             </div>
             <div className={`${anotherHand.className} registerNow  mr-[9%] mt-2 md:mt-4 lg:mt-6`}>

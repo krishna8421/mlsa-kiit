@@ -35,14 +35,19 @@ const Hero = () => {
         />
       </div>
       <div className="relative mx-auto h-[75vh] md:h-[85vh] cursor-default select-none lg:h-screen w-screen  max-w-[1920px] overflow-x-hidden overflow-hidden">
+     
         <div className="absolute left-0 right-0 top-0 z-30 flex justify-center ">
           <EventHome
             Classname="z-30 mt-[100px]"
-            eventName="Our upcoming event will be notified here"
+            eventName="The Stark Expo"
             registrationClosed={true}
             display={true}
+            knowmore={true}
           />
+          
         </div>
+
+        
         <div className="w-full text-[25px] sm:text-[30px] md:text-[40px] lg:text-[55px] xl:text-[70px] leading-[35px] sm:leading-[40px] md:leading-[50px] lg:leading-[70px] xl:leading-[90px] text-center absolute top-1/2 md:-translate-y-[5%] lg:-translate-y-[35%]">
           <div className="font-bold md:font-semibold flex justify-center">
             <span>Microsoft Learn</span>
