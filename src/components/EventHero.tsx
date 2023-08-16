@@ -1,5 +1,6 @@
 import { Just_Another_Hand } from "next/font/google";
 import Image from "next/image";
+import Link from "next/link";
 import { BsCalendar4Week } from "react-icons/bs";
 import { LuAlarmClock } from "react-icons/lu";
 const anotherHand = Just_Another_Hand({
@@ -34,19 +35,19 @@ const EventHero = () => {
             <div className="  mx-auto mt-[5rem]  border-[1px] border-[#858585] border-solid flex items-center   justify-between rounded-xl bg-[#25252580] text-white shadow-gray  lg:w-[100%] ">
               <Image
                 // src="/eventImages/android.png"
-                src='/Mask.png'
+                src='/logo_metallic.png'
                 alt="feature Image"
-                width={150}
-                height={150}
+                width={350}
+                height={250}
 
-                className=" ml-6 sm:ml-10 h-[95px] w-[100px] md:h-[115px] md:w-[120px] lg:h-[125px] lg:w-[130px] " />
+                className=" ml-6 sm:ml-10 h-[111px] w-[126px] md:h-[115px] md:w-[120px] lg:h-[175px] lg:w-[230px] " />
 
 
 
               <div className="flex cursor-default flex-col  items-end justify-between pr-3 pt-3  text-right md:text-lg lg:text-xl font-normal capitalize">
                 <div className="flex flex-col">
                   <h1 className="text-[15px] font-semibold md:leading-2 lg:leading-4 md:py-1 md:text-xl lg:text-2xl">
-                    The Stark Expo
+                    Stark Expo
                   </h1>
 
                   <div className="my-2 flex items-center justify-end gap-1">
@@ -56,18 +57,23 @@ const EventHero = () => {
                   <div className="duration-50 mb-2 mt-1 h-[2px] w-[100%] bg-gradient-to-r from-transparent to-[#ffffff]  my-1 lg:my-2 "></div>
                   <div className="flex items-center md:text-lg lg:text-xl justify-end gap-1">
                     <LuAlarmClock />
-                    <p className="">To be notified</p>
+                    <p className="">25th August,12 AM</p>
                   </div>
 
                   <p className="py-1 lg:py-2 text-xs font-[100px] md:text-base lg:text-[18px]">Last day to register</p>
                 </div>
-                <div className=" flex flex-row gap-[-5]">
-                  <button className=" mb-[15px] flex w-[39%] items-center justify-center whitespace-nowrap rounded-[100px] bg-gradient-to-r from-[#0070C5] to-[#3BABCF]  px-2  py-1 lg:py-2 text-[7px] md:text-xs lg:text-[11px]   ">
-                    Know More
+                <div className=" flex flex-row gap-[2]">
+               
+                  <button className=" mb-[15px] w-[45%] items-center justify-center whitespace-nowrap rounded-[100px] bg-gradient-to-r from-[#0070C5] to-[#3BABCF]  px-2  py-1 lg:py-2 text-[7px] md:text-xs lg:text-[11px]   ">
+                  <Link href={"https://stark-expo.vercel.app/"}> Know More</Link>
                   </button>
-                  <button className=" mb-[15px] ml-[3rem]  flex w-[39%] items-center justify-center whitespace-nowrap rounded-[100px] bg-gradient-to-r from-[#0070C5] to-[#3BABCF]  px-2  py-1 lg:py-2 text-[7px] md:text-xs lg:text-[11px]   ">
-                    Register Now
+                  
+                
+                  <button className=" mb-[15px] flex w-[45%] items-center justify-center whitespace-nowrap rounded-[100px] bg-gradient-to-r from-[#0070C5] to-[#3BABCF]  px-2  py-1 lg:py-2 text-[7px] md:text-xs lg:text-[11px]   "
+                   style={{marginLeft:"0.7rem"}}>
+                  <Link href={"https://registrations-mlsa.vercel.app"}>Register Now</Link>
                   </button>
+                  
                 </div>
 
               </div>
