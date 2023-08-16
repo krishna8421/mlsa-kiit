@@ -20,7 +20,7 @@ const MobileView = ({ visible }: MobileMenuProps) => {
         <NavbarItem href="/projects" mobileView={true}>
           Projects
         </NavbarItem>
-        <NavbarItem href="/blogs" mobileView={true}>
+        <NavbarItem href="https://medium.com/msackiit" mobileView={true}>
           Blog
         </NavbarItem>
         <NavbarItem href="/members" mobileView={true}>
