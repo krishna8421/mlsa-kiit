@@ -1,11 +1,14 @@
+import Link from "next/link";
+
 type eventHomeProps = {
   Classname: string;
   eventName: string;
   registrationClosed?: boolean;
   display?: boolean;
+  knowmore?:boolean
 };
 
-const EventHome = ({ Classname, eventName, registrationClosed = false, display=true }: eventHomeProps) => {
+const EventHome = ({ Classname, eventName, registrationClosed = false, display=true,knowmore=true }: eventHomeProps) => {
   return (
     <div className={`flex w-full justify-center lg:pl-8 lg:pr-10 px-4 sm:pl-6 sm:pr-6 ${Classname}`}>
       <div className="flex py-2 md:py-0 md:h-[65px] w-full items-center justify-between rounded-md border-[1px] border-[#5f5f5f] bg-[#111111] bg-opacity-40 px-4 text-xl md:text-2xl">
@@ -14,11 +17,19 @@ const EventHome = ({ Classname, eventName, registrationClosed = false, display=t
         `}>
           {eventName}
         </div>
-        <div className={`cursor-pointer bg-gradient-to-r from-[#0070C5] to-[#3BABCF] bg-clip-text text-lg md:text-xl 2xl:text-[1.4vw] 3xl:text-[25px font-semibold text-transparent hover:from-[#3BABCF] hover:to-[#0070C5]
-        ${display ? "hidden": "block"} 
+        <div className={`ml-[46rem] cursor-pointer bg-gradient-to-r from-[#0070C5] to-[#3BABCF] bg-clip-text text-lg md:text-xl 2xl:text-[1.4vw] 3xl:text-[25px font-semibold text-transparent hover:from-[#3BABCF] hover:to-[#0070C5]
+        block 
       `}>
-          {registrationClosed ? "Registration Closed" : "Register Now"}
+          <Link href={""}> {knowmore ? "Know More" : ""}</Link>
+          
         </div>
+        <div className={`cursor-pointer bg-gradient-to-r from-[#0070C5] to-[#3BABCF] bg-clip-text text-lg md:text-xl 2xl:text-[1.4vw] 3xl:text-[25px font-semibold text-transparent hover:from-[#3BABCF] hover:to-[#0070C5]
+        block 
+      `}>
+          {registrationClosed ? "Register Now" : "Registeration Closed"}
+          
+        </div>
+        
       </div>
     </div>
   );
