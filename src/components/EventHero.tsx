@@ -52,7 +52,7 @@ const EventHero = () => {
 
                   <div className="my-2 flex items-center justify-end gap-1">
                     <BsCalendar4Week />
-                    <p>03/9/23</p>
+                    <p>3rd September, 2023</p>
                   </div>
                   <div className="duration-50 mb-2 mt-1 h-[2px] w-[100%] bg-gradient-to-r from-transparent to-[#ffffff]  my-1 lg:my-2 "></div>
                   <div className="flex items-center md:text-lg lg:text-xl justify-end gap-1">
