@@ -52,28 +52,28 @@ const EventHero = () => {
 
                   <div className="my-2 flex items-center justify-end gap-1">
                     <BsCalendar4Week />
-                    <p>27/8/23</p>
+                    <p>03/9/23</p>
                   </div>
                   <div className="duration-50 mb-2 mt-1 h-[2px] w-[100%] bg-gradient-to-r from-transparent to-[#ffffff]  my-1 lg:my-2 "></div>
                   <div className="flex items-center md:text-lg lg:text-xl justify-end gap-1">
                     <LuAlarmClock />
-                    <p className="">25th August,12 AM</p>
+                    <p className="">2nd September,12 AM</p>
                   </div>
 
                   <p className="py-1 lg:py-2 text-xs font-[100px] md:text-base lg:text-[18px]">Last day to register</p>
                 </div>
                 <div className=" flex flex-row gap-[2]">
-               
+
                   <button className=" mb-[15px] w-[45%] items-center justify-center whitespace-nowrap rounded-[100px] bg-gradient-to-r from-[#0070C5] to-[#3BABCF]  px-2  py-1 lg:py-2 text-[7px] md:text-xs lg:text-[11px]   ">
-                  <Link href={"https://stark-expo.vercel.app/"}> Know More</Link>
+                    <Link href={"https://stark-expo.vercel.app/"}> Know More</Link>
                   </button>
-                  
-                
+
+
                   <button className=" mb-[15px] flex w-[45%] items-center justify-center whitespace-nowrap rounded-[100px] bg-gradient-to-r from-[#0070C5] to-[#3BABCF]  px-2  py-1 lg:py-2 text-[7px] md:text-xs lg:text-[11px]   "
-                   style={{marginLeft:"0.7rem"}}>
-                  <Link href={"https://registrations-mlsa.vercel.app"}>Register Now</Link>
+                    style={{ marginLeft: "0.7rem" }}>
+                    <Link href={"https://registrations-mlsa.vercel.app"}>Register Now</Link>
                   </button>
-                  
+
                 </div>
 
               </div>
