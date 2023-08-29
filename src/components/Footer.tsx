@@ -63,11 +63,11 @@ const Footer = () => {
                 <h1 className="text-base mb-2 font-bold">CONTACT US</h1>
                 <span className="flex items-center gap-2 group">
                   <FaPhoneAlt className="group-hover:text-[#0070C5]" />
-                  <p>+91 080045 09825</p>
+                  <p>+91 9835990548</p>
                 </span>
                 <span className="flex items-center gap-2 group">
                   <FaPhoneAlt className="group-hover:text-[#0070C5]" />
-                  <p>+91 080031 99063</p>
+                  <p>+91 7631999254</p>
                 </span>
                 <span className="flex items-center gap-2 group">
                   <HiMail className="group-hover:text-[#0070C5]" />
