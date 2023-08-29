@@ -367,7 +367,7 @@ export const OUR_ALUMNI = [
 
   {
     image: "/Alumni/pranav.jpg",
-    name: "Parnav Shekar",
+    name: "Pranav Shekhar",
     position: "USI Consultant",
     company: "Deloitte",
     message:
