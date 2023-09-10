@@ -742,19 +742,18 @@ export const OUR_CURRENT_LEADS = [
 
 export const OUR_SPONSORS = [
   {
+    name: "zuno",
+    site: "https://www.foundit.in/zuno/",
+    image: "/sponsors/zuno.png",
+    w: 149,
+    h: 41,
+  },
+  {
     name: "PrepBytes",
     site: "https://www.prepbytes.com/",
     image: "/sponsors/prepbytes.png",
     w: 130,
     h: 130,
-  },
-  {
-    name: "RedBull",
-    site: "https://www.redbull.com/in-en/",
-    image: "/sponsors/redBull.png",
-
-    w: 140,
-    h: 88,
   },
   {
     name: "Snapchat",
@@ -770,13 +769,7 @@ export const OUR_SPONSORS = [
     w: 130,
     h: 130,
   },
-  {
-    name: "zuno",
-    site: "https://www.foundit.in/zuno/",
-    image: "/sponsors/zuno.png",
-    w: 149,
-    h: 41,
-  },
+  
   {
     name: "Coding Ninjas",
     site: "https://www.codingninjas.com/",
@@ -1343,6 +1336,15 @@ export const GraphicDesign = [
     linkedIn: "",
     instagram: "",
   },
+  {
+    id: 3,
+    img: "/members/moli.jpg",
+    name: "Moli Agarwal",
+    domain: "Graphic Design",
+    github: "https://github.com/moliagarwal",
+    linkedIn: "https://www.linkedin.com/in/moli-agarwal-6756a318b/",
+    instagram: "https://www.instagram.com/moliigargg/",
+  },
 ];
 
 export const CreativeTeam = [
@@ -1465,6 +1467,15 @@ export const WebDevelopment = [
     instagram: "",
     github: "https://github.com/022003harsh",
     linkedIn: "https://www.linkedin.com/in/harsh-raj-898340217",
+  },
+  {
+    id: 14,
+    img: "/members/adway.jpg",
+    name: "Adway Lachhiramka",
+    domain: "Web Development",
+    instagram: "https://www.instagram.com/adwayyyyy/",
+    github: "https://github.com/adway7103",
+    linkedIn: "https://in.linkedin.com/in/adway-lachhiramka-45ab791a9",
   },
   {
     id: 5,
@@ -1592,7 +1603,7 @@ export const ARVR = [
   },
   {
     id: 1,
-    img: "/members/.jpg",
+    img: "/members/aryan.jpeg",
     name: "Aryan Dhal",
     domain: "AR/VR",
     github: "https://github.com/aryandhal",
