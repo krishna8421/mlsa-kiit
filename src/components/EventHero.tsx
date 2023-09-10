@@ -32,37 +32,37 @@ const EventHero = () => {
         <div className=" no-repeat h-[400px] md:h-[88vh] w-full bg-[url('/EventHero.png')] bg-cover  bg-center bg-no-repeat">
           <div className="  mx-auto h-[100px] w-[93%]  text-right text-white">
             .
-            <div className="  mx-auto mt-[5rem]  border-[1px] border-[#858585] border-solid flex items-center   justify-between rounded-xl bg-[#25252580] text-white shadow-gray  lg:w-[100%] ">
-              <Image
+            <div className="  mx-auto mt-[5rem] h-[10rem]  border-[1px] border-[#858585] border-solid flex items-center   justify-between rounded-xl bg-[#25252580] text-white shadow-gray  lg:w-[100%] ">
+              {/* <Image
                 // src="/eventImages/android.png"
                 src='/logo_metallic.png'
                 alt="feature Image"
                 width={350}
                 height={250}
 
-                className=" ml-6 sm:ml-10 h-[111px] w-[126px] md:h-[115px] md:w-[120px] lg:h-[175px] lg:w-[230px] " />
-
+                className=" ml-6 sm:ml-10 h-[111px] w-[126px] md:h-[115px] md:w-[120px] lg:h-[175px] lg:w-[230px] " /> */}
+              <div></div>
 
 
               <div className="flex cursor-default flex-col  items-end justify-between pr-3 pt-3  text-right md:text-lg lg:text-xl font-normal capitalize">
                 <div className="flex flex-col">
                   <h1 className="text-[15px] font-semibold md:leading-2 lg:leading-4 md:py-1 md:text-xl lg:text-2xl">
-                    Stark Expo
+                    New Event Coming Soon!
                   </h1>
 
                   <div className="my-2 flex items-center justify-end gap-1">
                     <BsCalendar4Week />
-                    <p>3rd September, 2023</p>
+                    <p>Will be Notified Soon</p>
                   </div>
-                  <div className="duration-50 mb-2 mt-1 h-[2px] w-[100%] bg-gradient-to-r from-transparent to-[#ffffff]  my-1 lg:my-2 "></div>
-                  <div className="flex items-center md:text-lg lg:text-xl justify-end gap-1">
+                  {/* <div className="duration-50 mb-2 mt-1 h-[2px] w-[100%] bg-gradient-to-r from-transparent to-[#ffffff]  my-1 lg:my-2 "></div> */}
+                  {/* <div className="flex items-center md:text-lg lg:text-xl justify-end gap-1">
                     <LuAlarmClock />
                     <p className="">2nd September,12 AM</p>
-                  </div>
+                  </div> */}
 
-                  <p className="py-1 lg:py-2 text-xs font-[100px] md:text-base lg:text-[18px]">Last day to register</p>
+                  {/* <p className="py-1 lg:py-2 text-xs font-[100px] md:text-base lg:text-[18px]">Last day to register</p> */}
                 </div>
-                <div className=" flex flex-row gap-[2]">
+                {/* <div className=" flex flex-row gap-[2]">
 
                   <button className=" mb-[15px] w-[45%] items-center justify-center whitespace-nowrap rounded-[100px] bg-gradient-to-r from-[#0070C5] to-[#3BABCF]  px-2  py-1 lg:py-2 text-[7px] md:text-xs lg:text-[11px]   ">
                     <Link href={"https://stark-expo.vercel.app/"}> Know More</Link>
@@ -74,11 +74,11 @@ const EventHero = () => {
                     <Link href={"https://registrations-mlsa.vercel.app"}>Register Now</Link>
                   </button>
 
-                </div>
+                </div> */}
 
               </div>
             </div>
-            <div className={`${anotherHand.className} registerNow  mr-[9%] mt-2 md:mt-4 lg:mt-6`}>
+            {/* <div className={`${anotherHand.className} registerNow  mr-[9%] mt-2 md:mt-4 lg:mt-6`}>
               <p className="text-[27px] relative md:text-[35px] lg:text-[50px]">Register Now
                 <Image
                   width={50}
@@ -88,7 +88,7 @@ const EventHero = () => {
                   className="absolute w-[18%] h-[100%] right-[-11.8%] top-[-20px] md:top-[-25px] lg:top-[-30px]"
                 /></p>
 
-            </div>
+            </div> */}
 
           </div>
 

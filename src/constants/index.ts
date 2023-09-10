@@ -742,19 +742,18 @@ export const OUR_CURRENT_LEADS = [
 
 export const OUR_SPONSORS = [
   {
+    name: "zuno",
+    site: "https://www.foundit.in/zuno/",
+    image: "/sponsors/zuno.png",
+    w: 149,
+    h: 41,
+  },
+  {
     name: "PrepBytes",
     site: "https://www.prepbytes.com/",
     image: "/sponsors/prepbytes.png",
     w: 130,
     h: 130,
-  },
-  {
-    name: "RedBull",
-    site: "https://www.redbull.com/in-en/",
-    image: "/sponsors/redBull.png",
-
-    w: 140,
-    h: 88,
   },
   {
     name: "Snapchat",
@@ -770,13 +769,7 @@ export const OUR_SPONSORS = [
     w: 130,
     h: 130,
   },
-  {
-    name: "zuno",
-    site: "https://www.foundit.in/zuno/",
-    image: "/sponsors/zuno.png",
-    w: 149,
-    h: 41,
-  },
+  
   {
     name: "Coding Ninjas",
     site: "https://www.codingninjas.com/",
@@ -808,18 +801,18 @@ export const OUR_SPONSORS = [
 ];
 
 export const EVENTS2023 = [
-  // {
-  //   bgColor: "#9CE7FF",
-  //   img: "/eventImages/eyeSpySquid.jpg",
-  //   ProjectName: "Eye S.py Squid",
-  //   date: "16th APRIL 2023",
-  //   numParticipants: "1368 Participants",
-  //   isButton: false,
-  //   isHero: false,
-  //   link: "",
-  //   description:
-  //     "A unique event which included designing your own squid game using computer vision.",
-  // },
+  {
+    bgColor: "#9CE7FF",
+    img: "/eventImages/eyeSpySquid.jpg",
+    ProjectName: "Eye S.py Squid",
+    date: "16th APRIL 2023",
+    numParticipants: "1368 Participants",
+    isButton: false,
+    isHero: false,
+    link: "",
+    description:
+      "A unique event which included designing your own squid game using computer vision.",
+  },
   {
     bgColor: "#9CFFE1",
     img: "/eventImages/kalkiComp.png",
@@ -1100,15 +1093,6 @@ export const videoedit = [
     linkedIn: "https://www.linkedin.com/in/piyali-murmu/",
     instagram: "https://www.instagram.com/piyaalol/",
   },
-  {
-    id: 6,
-    img: "/members/V N Ayush Mudaliyar.png",
-    name: "V N Ayush Mudaliyar",
-    domain: "Video Editing",
-    github: "",
-    linkedIn: "",
-    instagram: "",
-  },
 ];
 
 export const Marketing1 = [
@@ -1269,15 +1253,6 @@ export const MachineLearning = [
     instagram: "https://www.instagram.com/mr._poised/",
   },
   {
-    id: 2,
-    img: "/members/ATIG PUROHIT.jpeg",
-    name: "Atig Purohit",
-    domain: "Machine Learning",
-    github: "https://github.com/AtigPurohit",
-    linkedIn: "https://www.linkedin.com/in/atig-purohit-a83233183",
-    instagram: "https://instagram.com/x.___mysterious___.x?igshid=MzNlNGNkZWQ4Mg==",
-  },
-  {
     id: 3,
     img: "/members/MITUL GOSWAMI.png",
     name: "Mitul Goswami",
@@ -1332,15 +1307,6 @@ export const MachineLearning = [
     instagram: "",
   },
   {
-    id: 9,
-    img: "/members/Rohan Volety.jpeg",
-    name: "Rohan Volety",
-    domain: "Machine Learning",
-    github: "https://github.com/RohanVolety",
-    linkedIn: "https://www.linkedin.com/in/rohan-volety-30a816221/",
-    instagram: "https://instagram.com/rohan_volety?igshid=MzNlNGNkZWQ4Mg==",
-  },
-  {
     id: 10,
     img: "/members/anir.jpeg",
     name: "Anirban Roy",
@@ -1369,6 +1335,15 @@ export const GraphicDesign = [
     github: "",
     linkedIn: "",
     instagram: "",
+  },
+  {
+    id: 3,
+    img: "/members/moli.jpg",
+    name: "Moli Agarwal",
+    domain: "Graphic Design",
+    github: "https://github.com/moliagarwal",
+    linkedIn: "https://www.linkedin.com/in/moli-agarwal-6756a318b/",
+    instagram: "https://www.instagram.com/moliigargg/",
   },
 ];
 
@@ -1494,6 +1469,15 @@ export const WebDevelopment = [
     linkedIn: "https://www.linkedin.com/in/harsh-raj-898340217",
   },
   {
+    id: 14,
+    img: "/members/adway.jpg",
+    name: "Adway Lachhiramka",
+    domain: "Web Development",
+    instagram: "https://www.instagram.com/adwayyyyy/",
+    github: "https://github.com/adway7103",
+    linkedIn: "https://in.linkedin.com/in/adway-lachhiramka-45ab791a9",
+  },
+  {
     id: 5,
     img: "/members/Untitled.png",
     name: "Akshat Srivastava",
@@ -1529,24 +1513,7 @@ export const WebDevelopment = [
     github: "https://github.com/garv-aga",
     linkedIn: "https://www.linkedin.com/in/garv-agarwal-351ab8164",
   },
-  {
-    id: 8,
-    img: "/members/Ashish Mishra.jpeg",
-    name: "Ashish Mishra",
-    domain: "Web Development",
-    instagram: "https://instagram.com/a_s_h__1912?utm_medium=copy_link",
-    github: "https://github.com/Ash1912",
-    linkedIn: "https://www.linkedin.com/in/ashish-kumar-mishra-616321206",
-  },
-  {
-    id: 9,
-    img: "/members/RISHABH KUMAR.jpg",
-    name: "Rishabh Kumar",
-    domain: "Web Development",
-    instagram: "https://www.instagram.com/4rishabh_kumar/?igshid=MzNlNGNkZWQ4Mg%3D%3D",
-    github: "https://github.com/Risk-Hub",
-    linkedIn: "https://www.linkedin.com/in/rohan-volety-30a816221/",
-  },
+
   {
     id: 10,
     img: "/members/pfp.jpg",
@@ -1633,6 +1600,15 @@ export const ARVR = [
     github: "https://github.com/PritamPaul01",
     linkedIn: "https://www.linkedin.com/in/pritam-pal-oo7",
     instagram: "",
+  },
+  {
+    id: 1,
+    img: "/members/aryan.jpeg",
+    name: "Aryan Dhal",
+    domain: "AR/VR",
+    github: "https://github.com/aryandhal",
+    linkedIn: "https://www.linkedin.com/in/aryan-dhal-1808a6258",
+    instagram: "https://instagram.com/aryandhal?igshid=MzMyNGUyNmU2YQ==",
   },
 ];
 

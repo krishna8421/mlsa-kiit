@@ -39,7 +39,7 @@ const Hero = () => {
         <div className="absolute left-0 right-0 top-0 z-30 flex justify-center ">
           <EventHome
             Classname="z-30 mt-[100px]"
-            eventName="Stark Expo"
+            eventName="Stay Tuned by following our socials!"
             registrationClosed={true}
             display={true}
             knowmore={true}

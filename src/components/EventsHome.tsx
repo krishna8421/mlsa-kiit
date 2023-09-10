@@ -21,13 +21,14 @@ const EventHome = ({ Classname, eventName, registrationClosed = true, display=tr
         <div className={`cursor-pointer bg-gradient-to-r from-[#0070C5] to-[#3BABCF] bg-clip-text text-lg md:text-xl 2xl:text-[1.4vw] 3xl:text-[25px font-semibold text-transparent hover:from-[#3BABCF] hover:to-[#0070C5]
         block
       `}>
-          <Link href={"https://stark-expo.vercel.app/"}> {knowmore ? "Know More" : ""}</Link>
+          {/* <Link href={"https://stark-expo.vercel.app/"}> {knowmore ? "Know More" : ""}</Link> */}
           
         </div>
         <div className={`cursor-pointer bg-gradient-to-r from-[#0070C5] to-[#3BABCF] bg-clip-text text-lg md:text-xl 2xl:text-[1.4vw] 3xl:text-[25px font-semibold text-transparent hover:from-[#3BABCF] hover:to-[#0070C5]
         block
       `}>
-          <Link href={"https://registrations-mlsa.vercel.app"}>{registrationClosed ? "Register Now" : "Registeration Closed"}</Link>
+          {/* <Link href={"https://registrations-mlsa.vercel.app"}>{registrationClosed ? "Register Now" : "Registeration Closed"}</Link> */}
+           <Link href={"https://www.instagram.com/mlsakiit/"}>Instagram</Link>
           
         </div>
         </div>
