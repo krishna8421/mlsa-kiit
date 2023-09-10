@@ -94,8 +94,7 @@ const Gallery = () => {
               height={1080}
               className={`duration-2000 absolute left-1/2 top-1/2 z-30 h-full w-full rounded-2xl -translate-x-1/2 -translate-y-1/2 ease-out transition-all 
               ${pictureState > 0 ? "-translate-x-[140%] opacity-0" : "opacity-1"}
-            `}
-            />
+            `}/>
             <Image
               src="/gallery/hero/2.jpg"
               alt="project hero image"

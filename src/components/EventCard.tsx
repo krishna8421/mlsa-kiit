@@ -14,11 +14,11 @@ const EventCard = () => {
 
                 <div className=" flex flex-col-reverse  md:flex-row">
                     <div className="relative">
-                        <img src="./eyeSpySquid.jpg" alt="image" className="w-[680px] h-[300px] ml-[0.22rem] mb-[1.5rem] rounded-[20px] md:rounded relative object-cover object-center group hover:shadow-blue2  duration-300 hover:ease-in-out" />
+                        <img src="./StarkExpo.jpg" alt="image" className="w-[680px] h-[300px] ml-[0.22rem] mb-[1.5rem] rounded-[20px] md:rounded relative object-cover object-center group hover:shadow-blue2  duration-300 hover:ease-in-out" />
                         {/* <Image alt="image" src="/eyeSpySquid.jpg" width={800} height={300} className="ml-[0.22rem] mb-[1rem] rounded relative group" /> */}
-                        <div className="absolute bottom-[45px] left-[18px] text-base 3xl:text-3xl font-medium drop-shadow-2xl" style={{ textShadow: " 1.5px 1.5px black", lineHeight: "normal" }}>16th April 2023</div>
-                        <div className="absolute bottom-[26px] left-[18px] text-base 3xl:text-3xl font-medium drop-shadow-2xl" style={{ textShadow: " 1.5px 1.5px black", lineHeight: "normal" }}>1368 Participants</div>
-                        <div className="absolute bottom-[72px] left-[18px] text-xl 3xl:text-3xl font-medium drop-shadow-2xl" style={{ textShadow: " 1.5px 1.5px black", lineHeight: "normal" }}>Eye S.py Squid</div>
+                        <div className="absolute bottom-[45px] left-[18px] text-base 3xl:text-3xl font-medium drop-shadow-2xl" style={{ textShadow: " 1.5px 1.5px black", lineHeight: "normal" }}>3rd September 2023</div>
+                        <div className="absolute bottom-[26px] left-[18px] text-base 3xl:text-3xl font-medium drop-shadow-2xl" style={{ textShadow: " 1.5px 1.5px black", lineHeight: "normal" }}>2000+ Participants</div>
+                        <div className="absolute bottom-[72px] left-[18px] text-xl 3xl:text-3xl font-medium drop-shadow-2xl" style={{ textShadow: " 1.5px 1.5px black", lineHeight: "normal" }}>Stark Expo</div>
                     </div>
                     <div className="flex md:flex-col  ml-3 md:ml-[2.5rem]  " >
                         <h1 className="text-2xl md:text-3xl lg:text-4xl pb-4 mt-[-0.7rem] font-semibold bg-gradient-to-br from-[#5051F9] to-[#DFDFFF]  bg-clip-text text-transparent tracking-[1px]">Recently at </h1>
