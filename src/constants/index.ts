@@ -749,6 +749,21 @@ export const OUR_SPONSORS = [
     h: 41,
   },
   {
+    name: "Biryani Box",
+    site: "",
+    image: "/sponsors/bb.png",
+    w: 149,
+    h: 41,
+  },
+
+  {
+    name: "zuno",
+    site: "https://www.baithack.in/",
+    image: "/sponsors/baithack.png",
+    w: 149,
+    h: 41,
+  },
+  {
     name: "PrepBytes",
     site: "https://www.prepbytes.com/",
     image: "/sponsors/prepbytes.png",
@@ -769,7 +784,7 @@ export const OUR_SPONSORS = [
     w: 130,
     h: 130,
   },
-  
+
   {
     name: "Coding Ninjas",
     site: "https://www.codingninjas.com/",
@@ -795,6 +810,13 @@ export const OUR_SPONSORS = [
     name: "GeeksforGeeks",
     site: "https://www.geeksforgeeks.org/",
     image: "/sponsors/gfk.png",
+    w: 146,
+    h: 500,
+  },
+  {
+    name: "Adda",
+    site: "",
+    image: "/sponsors/adda.png",
     w: 146,
     h: 500,
   },
@@ -1319,6 +1341,15 @@ export const MachineLearning = [
 
 export const GraphicDesign = [
   {
+    id: 4,
+    img: "/members/Akshat.jpg",
+    name: "Akshat Singh",
+    domain: "Graphic Design",
+    github: "https://github.com/Afterdie",
+    linkedIn: "https://www.linkedin.com/in/akshat-singh-a39058249",
+    instagram: "https://instagram.com/akshatsxngh?igshid=NzZlODBkYWE4Ng==",
+  },
+  {
     id: 1,
     img: "/members/ASHISH POTHAL.png",
     name: "Ashish Pothal",
@@ -1451,6 +1482,15 @@ export const WebDevelopment = [
     linkedIn: "https://www.linkedin.com/in/amaan-bhati-6a7105230/",
   },
   {
+    id: 14,
+    img: "/members/adway.jpg",
+    name: "Adway Lachhiramka",
+    domain: "Web Development",
+    instagram: "https://www.instagram.com/adwayyyyy/",
+    github: "https://github.com/adway7103",
+    linkedIn: "https://in.linkedin.com/in/adway-lachhiramka-45ab791a9",
+  },
+  {
     id: 3,
     img: "/members/anshul.jpg",
     name: "Anshul Kumar",
@@ -1468,15 +1508,7 @@ export const WebDevelopment = [
     github: "https://github.com/022003harsh",
     linkedIn: "https://www.linkedin.com/in/harsh-raj-898340217",
   },
-  {
-    id: 14,
-    img: "/members/adway.jpg",
-    name: "Adway Lachhiramka",
-    domain: "Web Development",
-    instagram: "https://www.instagram.com/adwayyyyy/",
-    github: "https://github.com/adway7103",
-    linkedIn: "https://in.linkedin.com/in/adway-lachhiramka-45ab791a9",
-  },
+
   {
     id: 5,
     img: "/members/Untitled.png",
