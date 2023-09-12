@@ -34,9 +34,9 @@ const EventCard = () => {
 
                                 <Image src={event.img} width={555} height={355} className="block z-10 w-full h-full object-cover object-center transition duration-700 " alt="gallery"></Image>
 
-                                <div className="absolute bottom-16 left-4 z-50 text-white text-xl 3xl:text-3xl font-normal ">{event.ProjectName}</div>
-                                <div className="absolute bottom-9 left-4 z-50 text-white text-base 3xl:text-3xl font-normal ">{event.date}</div>
-                                <div className="absolute bottom-4 left-4 z-50 text-white text-base 3xl:text-3xl font-normal ">{event.numParticipants}</div>
+                                <div className="absolute bottom-16 left-4 z-40 text-white text-xl 3xl:text-3xl font-normal ">{event.ProjectName}</div>
+                                <div className="absolute bottom-9 left-4 z-40 text-white text-base 3xl:text-3xl font-normal ">{event.date}</div>
+                                <div className="absolute bottom-4 left-4 z-40 text-white text-base 3xl:text-3xl font-normal ">{event.numParticipants}</div>
                             </div>
 
                         </>
