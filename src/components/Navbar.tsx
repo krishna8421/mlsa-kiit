@@ -9,7 +9,7 @@ import { VscChromeClose } from "react-icons/vsc";
 import MobileView from "./MobileView";
 import NavbarItem from "./NavbarItem";
 
-const OFFSET = 66;
+const OFFSET = 20;
 
 const Navbar = () => {
   const [showBackground, setShowBackground] = useState(false);
@@ -35,7 +35,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`mx-auto fixed left-0 right-0 top-0 z-50 w-screen max-w-full py-4 pl-2 pr-4 sm:pl-4 sm:pr-6 lg:pl-6 lg:pr-10 lg:max-w-[1920px] ${showBackground ? "backdrop-blur-md" : ""
+      className={`mx-auto fixed left-0 right-0 top-0 z-50 w-screen max-w-full py-4 pl-2 pr-4 sm:pl-4 sm:pr-6 lg:pl-6 lg:pr-10 lg:max-w-[1920px] transition-all ${showBackground ? "backdrop-blur-md" : ""
         }`}
     >
       <div className="flex items-center justify-between">
@@ -55,7 +55,7 @@ const Navbar = () => {
           </span> */}
         </div>
         <div onClick={toggleMobileMenu} className="md:hidden ml-2">
-          {!showMobileMenu ? <AiOutlineMenu className="text-xl"/> : <VscChromeClose className="text-xl" />}
+          {!showMobileMenu ? <AiOutlineMenu className="text-xl" /> : <VscChromeClose className="text-xl" />}
           <MobileView visible={showMobileMenu} />
         </div>
         <div className="hidden gap-4 md:gap-1 text-white md:flex md:items-center xl:gap-6">
@@ -66,7 +66,7 @@ const Navbar = () => {
           <NavbarItem href="/members">Members</NavbarItem>
           <NavbarItem href={YOUTUBE_URL} external={true}>Youtube</NavbarItem>
           <NavbarItem href="/auth/login" type="button">
-            Join Us 
+            Join Us
           </NavbarItem>
         </div>
       </div>

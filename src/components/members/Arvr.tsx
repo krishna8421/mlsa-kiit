@@ -47,13 +47,13 @@ const Item = ({ into, isActive, onClick }: any) => {
 
           <div className="flex items-center gap-[2px] md:gap-1 ">
             <Link href={into.instagram ||""}>
-              <Image src={InstaIcon} alt="icon" className="hover:scale-110 transition duration-100 h-[15px] w-[15px] md:h-[17px] md:w-[17px] 2xl:h-[24px] 2xl:w-[24px]" />
+              <Image src={InstaIcon} alt="icon" className={into.instagram === "" ? "hidden" :  "transition duration-100 hover:scale-110 h-[15px] w-[15px] md:h-[17px] md:w-[17px] 2xl:h-[24px] 2xl:w-[24px]"} />
             </Link>
             <Link href={into.liknedIn || ""}>
-              <Image src={LinkdIcon} alt="icon" className="hover:scale-110 transition duration-100 h-[15px] w-[15px] md:h-[17px] md:w-[17px] 2xl:h-[24px] 2xl:w-[24px]" />
+              <Image src={LinkdIcon} alt="icon" className={into.linkedIn === "" ? "hidden" :  "transition duration-100 hover:scale-110 h-[15px] w-[15px] md:h-[17px] md:w-[17px] 2xl:h-[24px] 2xl:w-[24px]"} />
             </Link>
             <Link href={into.github || ""}>
-              <Image src={GithubIcon} alt="icon" className="hover:scale-110 transition duration-100 h-[15px] w-[15px] md:h-[17px] md:w-[17px] 2xl:h-[24px] 2xl:w-[24px]" />
+            <Image src={GithubIcon} alt="icon" className={into.github === "" ? "hidden" :  "transition duration-100 hover:scale-110 h-[15px] w-[15px] md:h-[17px] md:w-[17px] 2xl:h-[24px] 2xl:w-[24px]"} />
             </Link>
           </div>
 
@@ -86,7 +86,7 @@ const Arvr:any = () => {
 
         </div>
         <div className="flex flex-col">
-          <div className="text-[16px] md:text-2xl lg:text-3xl mb-[30px] leading-normal text-[#FFF] font-semibold ">ARVR</div>
+          <div className="text-[16px] md:text-2xl lg:text-3xl mb-[30px] leading-normal text-[#FFF] font-semibold ">XR</div>
           <div className="grid mr-0 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 w-full gap-2 md:gap-4 lg:gap-8">
 
             {ARVR.map((into, index) => {
