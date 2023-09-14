@@ -1691,6 +1691,15 @@ export const CloudTeam = [
     linkedIn: "",
     instagram: "",
   },
+  {
+    id: 7,
+    img: "/members/mrinank.jpg",
+    name: "Mrinank Bhowmick",
+    domain: "Cloud and CyberSecurity",
+    github: "",
+    linkedIn: "",
+    instagram: "",
+  },
 ];
 
 export const YT = [
