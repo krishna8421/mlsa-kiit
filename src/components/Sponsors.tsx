@@ -6,7 +6,7 @@ import { useInView } from "react-intersection-observer";
 function Sponsors() {
   const controls = useAnimation();
   const [ref, inView] = useInView({
-    triggerOnce: true,
+    triggerOnce: false,
     threshold: 0.5,
   });
 
