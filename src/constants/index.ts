@@ -1342,7 +1342,7 @@ export const MachineLearning = [
 export const GraphicDesign = [
   {
     id: 4,
-    img: "/members/Akshat.jpg",
+    img: "/members/akshat.jpg",
     name: "Akshat Singh",
     domain: "Graphic Design",
     github: "https://github.com/Afterdie",
