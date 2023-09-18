@@ -1548,8 +1548,8 @@ export const WebDevelopment = [
 
   {
     id: 10,
-    img: "/members/pfp.jpg",
-    name: "Yashwardhan Singh",
+    img: "/members/yashvardhan.jpg",
+    name: "Yashvardhan Singh",
     domain: "Web Development",
     instagram: "https://instagram.com/_yash.vs_",
     github: "https://github.com/pythonicboat",
