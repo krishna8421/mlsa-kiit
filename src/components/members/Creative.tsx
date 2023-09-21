@@ -74,7 +74,7 @@ const Creative: any = () => {
     setActiveCard(into === activeCard ? null : into);
   };
   return (
-    <div className="flex pl-3">
+    <div className="flex">
       <div className="flex flex-col items-center ">
         <div className="h-[15px] w-[15px] shadow-dotShadowPurple self-center rounded-full bg-white"></div>
 
