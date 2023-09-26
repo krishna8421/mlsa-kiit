@@ -33,14 +33,15 @@ const EventHero = () => {
           <div className="mx-auto h-[100px] w-[93%]  text-right text-white">
             .
             <div className="py-4 md:py-2 mx-auto mt-[5rem]  border-[1px] border-[#858585] border-solid flex items-center   justify-between rounded-xl bg-[#25252580] text-white shadow-gray  lg:w-[100%] ">
-              <Image
-                // src="/eventImages/android.png"
-                src='/Mask.png'
-                alt="feature Image"
-                width={150}
-                height={150}
-
-                className=" ml-6 sm:ml-10 h-[95px] w-[100px] md:h-[115px] md:w-[120px] lg:h-[125px] lg:w-[130px] " />
+              <Link href={"https://hacktoberxmlsa.mlsakiit.com"} target="_blank">
+                <Image
+                  src='/octocat.png'
+                  alt="feature Image"
+                  width={150}
+                  height={150}
+                  className=" ml-6 sm:ml-10 h-[105px] w-[100px] md:h-[125px] md:w-[120px] lg:h-[150px] lg:w-[130px] " 
+                />
+              </Link>
               <div className="flex cursor-default flex-col  items-end justify-between pr-3 pt-3  text-right md:text-lg lg:text-xl font-normal capitalize">
                 <div className="flex flex-col">
                   <h1 className="text-[15px] font-semibold md:leading-2 lg:leading-4 md:py-1 md:text-xl lg:text-2xl">
