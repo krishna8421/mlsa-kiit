@@ -1704,8 +1704,8 @@ export const CloudTeam = [
     img: "/members/mrinank.jpg",
     name: "Mrinank Bhowmick",
     domain: "Cloud and CyberSecurity",
-    github: "",
-    linkedIn: "",
+    github: "https://github.com/Mrinank-Bhowmick/",
+    linkedIn: "https://www.linkedin.com/in/mrinank-bhowmick/",
     instagram: "",
   },
 ];

@@ -228,14 +228,14 @@ body {
 .wrapper{
   perspective:1px;
 }
-.parallax-bg{
+/* .parallax-bg{
   transform:translate3d(0,0,-1px) scale(2);
   background-position:center center;
-  /* background-image: url(../../public/members/members.png); */
-}
-.parallax-section{
+  background-image: url(../../public/members/members.png);
+} */
+/* .parallax-section{
   transform-style:preserve-3d;
-}
+} */
 
 .teams-gradient::after{
   width: 100%;

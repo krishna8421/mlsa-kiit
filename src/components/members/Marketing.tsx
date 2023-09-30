@@ -23,7 +23,7 @@ const Item = ({ into, isActive, onClick }: any) => {
 
   return (
     <div className="h-[220px] md:h-[270px] lg:h-[350px] 2xl:h-[400px] w-full rounded-md md:rounded-xl" >
-      <div className="image-members rounded-md md:rounded-xl hover:cursor-pointer z-10 relative h-[175px] md:h-[230px] lg:h-[290px] 2xl:h-[340px] w-full" onClick={handleImageClick}>
+      <div className="image-members rounded-md md:rounded-xl hover:cursor-pointer z-40 relative h-[175px] md:h-[230px] lg:h-[290px] 2xl:h-[340px] w-full" onClick={handleImageClick}>
         <Image
           src={into.img}
           style={imgStyle}
