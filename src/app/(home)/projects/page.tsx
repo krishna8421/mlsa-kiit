@@ -9,7 +9,7 @@ const Projects = () => {
   const [sponsersCounter, setSponsersCounter] = useState(0);
   useEffect(() => {
     const numCounter = () => {
-      if (projectsCounter < 10) {
+      if (projectsCounter < 100) {
         setProjectsCounter((num) => num + 1);
       }
 

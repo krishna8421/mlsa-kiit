@@ -65,9 +65,9 @@ const Navbar = () => {
           <NavbarItem href="/gallery">Gallery</NavbarItem>
           <NavbarItem href="/members">Members</NavbarItem>
           <NavbarItem href={YOUTUBE_URL} external={true}>Youtube</NavbarItem>
-          <NavbarItem href="/auth/login" type="button">
+          {/* <NavbarItem href="/auth/login" type="button">
             Join Us
-          </NavbarItem>
+          </NavbarItem> */}
         </div>
       </div>
     </nav>
