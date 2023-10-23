@@ -14,6 +14,15 @@ export const HERO_SECTION_EVENTS = [
   {
     bgColor: "#9CE7FF",
     img: "/EventItem1.png",
+    ProjectName: "HacktoberfestxMLSA",
+    date: "2nd October 2023",
+    numParticipants: "1037 Participants",
+    isButton: false,
+    link: "",
+  },
+  {
+    bgColor: "#9CE7FF",
+    img: "/EventItem1.png",
     ProjectName: "Eye S.py Squid",
     date: "16th APRIL 2023",
     numParticipants: "1368 Participants",
@@ -823,6 +832,18 @@ export const OUR_SPONSORS = [
 ];
 
 export const EVENTS2023 = [
+  {
+    bgColor: "#9CE7FF",
+    img: "/StarkExpo.jpg",
+    ProjectName: "Stark Expo",
+    date: "3rd SEPTEMBER 2023",
+    numParticipants: "2026 Participants",
+    isButton: false,
+    isHero: false,
+    link: "",
+    description:
+      "A unique event which included designing your own squid game using computer vision.",
+  },
   {
     bgColor: "#9CE7FF",
     img: "/eventImages/eyeSpySquid.jpg",
