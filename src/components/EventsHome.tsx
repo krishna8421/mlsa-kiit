@@ -15,13 +15,13 @@ const EventHome = ({ Classname, eventName, registrationClosed = true, display=tr
         <div className={`border-l-4 font-semibold border-green-500 py-1 pl-4 text-white  cursor-default
           ${display ? "text-base" : "text-lg md:text-xl 2xl:text-[1.4vw] 3xl:text-[25px]"} 
         `}>
-          {eventName}
+          New Event Coming soon! Stay Tuned
         </div>
         <div className=" flex flex-row gap-4 sm:text-xs md:text-xs">
         <div className={`cursor-pointer bg-gradient-to-r from-[#0070C5] to-[#3BABCF] bg-clip-text text-lg md:text-xl 2xl:text-[1.4vw] 3xl:text-[25px font-semibold text-transparent hover:from-[#3BABCF] hover:to-[#0070C5]
         block
       `}>
-          <Link href={"https://hacktoberxmlsa.mlsakiit.com/"} target="_blank"> {knowmore ? "Register Now" : ""}</Link>
+          <Link href={"https://linktr.ee/mlsakiit"} target="_blank"> {knowmore ? "Our Socials" : ""}</Link>
           
         </div>
         <div className={`cursor-pointer bg-gradient-to-r from-[#0070C5] to-[#3BABCF] bg-clip-text text-lg md:text-xl 2xl:text-[1.4vw] 3xl:text-[25px font-semibold text-transparent hover:from-[#3BABCF] hover:to-[#0070C5]
