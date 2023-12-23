@@ -68,7 +68,7 @@ const EventHero = () => {
                 </Link> */}
               </div>
             </div>
-            {/* <div className={${anotherHand.className} registerNow  mr-[9%] mt-2 md:mt-4 lg:mt-6}>
+            {/* <div className={`${anotherHand.className} registerNow  mr-[9%] mt-2 md:mt-4 lg:mt-6`}>
               <p className="text-4xl relative md:text-[35px] lg:text-5xl">Register Now
                 <Image
                   width={50}
@@ -94,3 +94,4 @@ const EventHero = () => {
 };
 
 export default EventHero;
+

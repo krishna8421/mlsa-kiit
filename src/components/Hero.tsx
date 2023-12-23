@@ -43,7 +43,7 @@ const Hero = () => {
             registrationClosed={false}
             display={true}
             registrationName="Register Now"
-          // rules="https://kryptic-hunt.mlsakiit.com/" // Add know rules link here
+          //rules="https://kryptic-hunt.mlsakiit.com/" // Add know rules link here        
           />
         </div>
         <div className="absolute left-0 right-0 top-20 smm:top-14 md:top-20 z-30 flex justify-center ">
@@ -74,3 +74,4 @@ const Hero = () => {
 };
 
 export default Hero;
+
