@@ -2,7 +2,6 @@ import { Just_Another_Hand } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
 import { BsCalendar4Week } from "react-icons/bs";
-import { LuAlarmClock } from "react-icons/lu";
 const anotherHand = Just_Another_Hand({
   subsets: ["latin"],
   weight: "400",
@@ -33,14 +32,14 @@ const EventHero = () => {
           <div className="mx-auto h-[100px] w-[93%]  text-right text-white">
             .
             <div className="py-4 md:py-2 mx-auto mt-[5rem]  border-[1px] border-[#858585] border-solid flex items-center   justify-between rounded-xl bg-[#25252580] text-white shadow-gray  lg:w-[100%] ">
-              <Link href={"https://hacktoberxmlsa.mlsakiit.com"} target="_blank">
-                {/* <Image
-                  src='/octocat.png'
+              <Link href={""} target="_blank">
+                <Image
+                  src='/mlsaLogo2.png'
                   alt="feature Image"
                   width={150}
                   height={150}
-                  className=" ml-6 sm:ml-10 h-[105px] w-[100px] md:h-[125px] md:w-[120px] lg:h-[150px] lg:w-[130px] " 
-                /> */}
+                  className=" ml-6 sm:ml-10 h-[105px] w-[100px] md:h-[125px] object-cover md:w-[120px] lg:h-[150px] lg:w-[130px] "
+                />
               </Link>
               <div className="flex cursor-default flex-col  items-end justify-between pr-3 pt-3  text-right md:text-lg lg:text-xl font-normal capitalize">
                 <div className="flex flex-col">
@@ -69,7 +68,7 @@ const EventHero = () => {
                 </Link> */}
               </div>
             </div>
-            {/* <div className={`${anotherHand.className} registerNow  mr-[9%] mt-2 md:mt-4 lg:mt-6`}>
+            {/* <div className={${anotherHand.className} registerNow  mr-[9%] mt-2 md:mt-4 lg:mt-6}>
               <p className="text-4xl relative md:text-[35px] lg:text-5xl">Register Now
                 <Image
                   width={50}
@@ -95,4 +94,3 @@ const EventHero = () => {
 };
 
 export default EventHero;
-

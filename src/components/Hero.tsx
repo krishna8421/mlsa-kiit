@@ -35,11 +35,24 @@ const Hero = () => {
         />
       </div>
       <div className="relative mx-auto h-[75vh] md:h-[85vh] cursor-default select-none lg:h-screen w-screen  max-w-[1920px] overflow-x-hidden overflow-hidden">
-        <div className="absolute left-0 right-0 top-0 z-30 flex justify-center ">
+        <div className="absolute left-0 right-0 top-0 z-40 flex justify-center ">
           <EventHome
             Classname="z-30 mt-[100px]"
-            eventName="HactoberfestxMlsa"
-            registrationClosed={true}
+            eventName="Kryptic Hunt"
+            registrationLink="https://kryptic-hunt.mlsakiit.com/"
+            registrationClosed={false}
+            display={true}
+            registrationName="Register Now"
+          // rules="https://kryptic-hunt.mlsakiit.com/" // Add know rules link here
+          />
+        </div>
+        <div className="absolute left-0 right-0 top-20 smm:top-14 md:top-20 z-30 flex justify-center ">
+          <EventHome
+            Classname="z-30 mt-[100px]"
+            eventName="Join our discord"
+            registrationLink="https://discord.gg/RU8YDMku7N"
+            registrationClosed={false}
+            registrationName="Discord"
             display={true}
           />
         </div>
@@ -47,7 +60,7 @@ const Hero = () => {
           <div className="font-bold md:font-semibold flex justify-center">
             <span>Microsoft Learn</span>
             <span className="text-start w-[120px] sm:w-[160px] md:w-[230px] lg:w-[285px] xl:w-[360px]">
-              <HeroTextAnimation texts={MlsaTexts}/>
+              <HeroTextAnimation texts={MlsaTexts} />
             </span>
           </div>
           <div className="flex flex-col mr-4 sm:mr-8 md:mr-16 lg:mr-18 xl:mr-20">
@@ -61,4 +74,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
