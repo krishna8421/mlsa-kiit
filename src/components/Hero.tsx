@@ -50,7 +50,7 @@ const Hero = () => {
           <EventHome
             Classname="z-30 mt-[100px]"
             eventName="Join our discord"
-            registrationLink="https://discord.gg/RU8YDMku7N"
+            registrationLink="https://discord.gg/BW28wXGfsZ"
             registrationClosed={false}
             registrationName="Discord"
             display={true}
