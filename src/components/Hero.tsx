@@ -49,10 +49,20 @@ const Hero = () => {
         <div className="absolute left-0 right-0 top-20 smm:top-14 md:top-20 z-30 flex justify-center ">
           <EventHome
             Classname="z-30 mt-[100px]"
-            eventName="Join our discord"
-            registrationLink="https://discord.gg/BW28wXGfsZ"
+            eventName="Kryptic Hunt Guide"
+            registrationLink="https://drive.google.com/file/d/1f5eZ9hy1GK-UnTOeJtYooRtZfGyWZL6c/view?usp=sharing"
             registrationClosed={false}
-            registrationName="Discord"
+            registrationName="Know More"
+            display={true}
+          />
+        </div>
+        <div className="absolute left-0 right-0 top-40 smm:top-28 md:top-40 z-20 flex justify-center ">
+          <EventHome
+            Classname="z-30 mt-[100px]"
+            eventName="Join our socials"
+            registrationLink="https://linktr.ee/mlsakiit"
+            registrationClosed={false}
+            registrationName="Socials"
             display={true}
           />
         </div>
