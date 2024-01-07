@@ -35,7 +35,7 @@ const Hero = () => {
         />
       </div>
       <div className="relative mx-auto h-[75vh] w-screen max-w-[1920px] cursor-default select-none overflow-hidden  overflow-x-hidden md:h-[85vh] lg:h-screen">
-        <div className="absolute left-0 right-0 top-0 z-40 flex justify-center ">
+        {/* <div className="absolute left-0 right-0 top-0 z-40 flex justify-center ">
           <EventHome
             Classname="z-30 mt-[100px]"
             eventName="Kryptic Hunt"
@@ -45,7 +45,7 @@ const Hero = () => {
             registrationName="Register Now"
             rules="https://drive.google.com/file/d/1f5eZ9hy1GK-UnTOeJtYooRtZfGyWZL6c/view?usp=sharing" // Add know rules link here
           />
-        </div>
+        </div> */}
         {/* <div className="absolute left-0 right-0 top-20 z-30 flex justify-center smm:top-14 md:top-20 ">
           <EventHome
             Classname="z-30 mt-[100px]"
@@ -56,7 +56,7 @@ const Hero = () => {
             display={true}
           />
         </div> */}
-        <div className="absolute left-0 right-0  top-36 z-20 flex justify-center md:top-40">
+        <div className="absolute left-0 right-0 top-20 z-20 flex justify-center md:top-20">
           <EventHome
             Classname="z-30 mt-[1.5rem]"
             eventName="Join our socials"
