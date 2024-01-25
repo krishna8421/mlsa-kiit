@@ -1,5 +1,4 @@
 import Link from "next/link";
-
 type eventHomeProps = {
   Classname: string;
   eventName: string;
@@ -10,7 +9,6 @@ type eventHomeProps = {
   rules?: string;
   discord?: string;
 };
-
 const EventHome = ({
   Classname,
   eventName,
@@ -51,17 +49,13 @@ const EventHome = ({
               {registrationClosed ? "Registeration Closed" : `${registrationName}`}
             </Link>
           </div>
-          <div className={`cursor-pointer bg-gradient-to-r from-[#0070C5] to-[#3BABCF] bg-clip-text text-lg md:text-xl 2xl:text-[1.4vw] 3xl:text-[25px font-semibold text-transparent hover:from-[#3BABCF] hover:to-[#0070C5]
+          {/* <div className={`cursor-pointer bg-gradient-to-r from-[#0070C5] to-[#3BABCF] bg-clip-text text-lg md:text-xl 2xl:text-[1.4vw] 3xl:text-[25px font-semibold text-transparent hover:from-[#3BABCF] hover:to-[#0070C5]
         block
-      `}>
-{/*           <Link href={"https://forms.office.com/r/DvkW3C0Ff0"}>{registrationClosed ? "Register Now" : "Registeration Closed"}</Link> */}
-            <Link href={"https://forms.office.com/r/DvkW3C0Ff0"}>Registrations are Live !</Link>
+      `}> */}
+          {/* <Link href={"https://registrations-mlsa.vercel.app"}>{registrationClosed ? "Register Now" : "Registeration Closed"}</Link>
+            <Link href={"https://www.instagram.com/mlsakiit/"}>Instagram</Link> */}
 
-          </div>
+          {/* </div> */}
         </div>
       </div>
     </div>
-  );
-};
-
-export default EventHome;
