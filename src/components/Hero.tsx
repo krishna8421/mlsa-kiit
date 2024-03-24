@@ -59,7 +59,7 @@ const Hero = () => {
         <div className="absolute left-0 right-0 top-20 z-20 flex justify-center md:top-20">
           <EventHome
             Classname="z-30 mt-[1.5rem]"
-            eventName="D3FC0N is LIVE"
+            eventName="D3FC0N is LIVE "
             registrationLink="https://linktr.ee/mlsakiit"
             registrationClosed={false}
             registrationName="Socials"
