@@ -55,7 +55,7 @@ const EventHome = ({
         block
       `}>
 {/*           <Link href={"https://forms.office.com/r/DvkW3C0Ff0"}>{registrationClosed ? "Register Now" : "Registeration Closed"}</Link> */}
-            <Link href={"https://forms.office.com/r/DvkW3C0Ff0"}>Registrations are Live !</Link>
+            <Link href={"https://register.d3fc0n.tech"}>Register Here!</Link>
 
           </div>
         </div>
