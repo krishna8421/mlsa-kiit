@@ -7,8 +7,7 @@ npx lint-staged
 echo "ESLint & Prettier check completed successfully. ✅ "
 
 git add -A .
-
-yarn build || (
+pnpm build || (
   echo "Build failed. ❌ "
   exit 1
 )

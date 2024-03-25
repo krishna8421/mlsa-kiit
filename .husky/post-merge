@@ -1,10 +1,10 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-yarn db:generate
+pnpm db:generate
 
-if [ -f yarn.lock ]; then
-  if ! git diff --quiet HEAD yarn.lock; then
-    yarn
+if [ -f pnpm-lock.yaml ]; then
+  if ! git diff --quiet HEAD pnpm-lock.yaml; then
+    pnpm install
   fi
 fi
