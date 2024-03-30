@@ -54,8 +54,8 @@ const EventHome = ({
           <div className={`cursor-pointer bg-gradient-to-r from-[#0070C5] to-[#3BABCF] bg-clip-text text-lg md:text-xl 2xl:text-[1.4vw] 3xl:text-[25px font-semibold text-transparent hover:from-[#3BABCF] hover:to-[#0070C5]
         block
       `}>
-{/*           <Link href={"https://forms.office.com/r/DvkW3C0Ff0"}>{registrationClosed ? "Register Now" : "Registeration Closed"}</Link> */}
-            <Link href={"https://register.d3fc0n.tech"}>Register Here!</Link>
+            {/*           <Link href={"https://forms.office.com/r/DvkW3C0Ff0"}>{registrationClosed ? "Register Now" : "Registeration Closed"}</Link> */}
+
 
           </div>
         </div>
