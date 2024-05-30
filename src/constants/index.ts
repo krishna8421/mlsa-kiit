@@ -6,7 +6,7 @@ export const QUOTE = "We encsage young minds to pursue knowledge and excellence 
 export const MEDIUM_BLOG_URL = "https://medium.com/msackiit";
 export const LINKEDIN_URL = "https://www.linkedin.com/company/msckiit/mycompany/";
 export const GITHUB_URL = "";
-export const TWITTER_URL = "https://twitter.com/msckiit";
+export const TWITTER_URL = "https://x.com/mlsakiit";
 export const INSTAGRAM_URL = "https://www.instagram.com/mlsakiit/";
 export const YOUTUBE_URL = "https://www.youtube.com/c/KIITKAKSHA";
 

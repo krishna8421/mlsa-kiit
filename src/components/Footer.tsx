@@ -42,7 +42,7 @@ const Footer = () => {
                 />
                 <Socials
                   logo={<FaTwitter />}
-                  src="https://twitter.com/msckiit"
+                  src="https://x.com/mlsakiit"
                 />
                 <Socials
                   logo={<FaInstagram />}
