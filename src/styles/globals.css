@@ -21,14 +21,12 @@ body {
 .projectsAnimation {
   -webkit-animation-name: zoomOut;
   animation-name: zoomOut;
-  -webkit-animation-duration: 1s; 
-  animation-duration: 1s; 
-  -webkit-animation-timing-function: ease-out; 
-  animation-timing-function: ease-out; 
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
 }
 
-
-  
 /* projects hero image animation keyframe */
 @keyframes slideIn {
   from {
@@ -44,100 +42,90 @@ body {
 .projectsHeroSlideIn {
   -webkit-animation-name: slideIn;
   animation-name: slideIn;
-  -webkit-animation-duration: 1.4s; 
-  animation-duration: 1.4s; 
+  -webkit-animation-duration: 1.4s;
+  animation-duration: 1.4s;
   -webkit-animation-timing-function: ease-in-out;
   animation-timing-function: ease-in-out;
 }
 
-
-
-
-
 .tech-stack-container {
-    background: white;
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-  }
-  
-  /* .tech-stack-container::before {
+  background: white;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+/* .tech-stack-container::before {
     background: #5bc236;
     content: "";
     position: absolute;
   } */
-  
+
+.tech-stack-container::after {
+  content: "";
+  width: 38px;
+  height: 38px;
+  position: absolute;
+  margin: 0px 0 0 20px;
+  border-radius: 50%;
+  margin-top: -2px;
+}
+
+@media only screen and (max-width: 1750px) {
+  .tech-stack-container {
+    width: 25px;
+    height: 25px;
+  }
+
   .tech-stack-container::after {
-    content: "";
-    width: 38px;
-    height: 38px;
-    position: absolute;
-    margin: 0px 0 0 20px;
-    border-radius: 50%;
-    margin-top: -2px;
+    width: 27px;
+    height: 27px;
+    margin: 0px 0 0 12px;
+    margin-top: -1px;
   }
-  
-  @media only screen and (max-width: 1750px) {
-  
-    .tech-stack-container {
-      width: 25px;
-      height: 25px;
-      }
-    
-    .tech-stack-container::after {
-      width: 27px;
-      height: 27px;
-      margin: 0px 0 0 12px;
-      margin-top: -1px;
-    
-    }
+}
+
+@media only screen and (max-width: 976px) {
+  .tech-stack-container {
+    width: 17px;
+    height: 17px;
   }
 
-  @media only screen and (max-width: 976px) {
-
-    .tech-stack-container {
-      width: 17px;
-      height: 17px;
-      }
-    
-    .tech-stack-container::after {
-      width: 19.3px;
-      height: 19.3px;
-      margin: 0px 0 0 10px;
-      margin-top: -1px;
-    
-    }
-
-    }
-  
-  .gradient-border:hover {
-    --borderWidth: 2.5px;
-    position: relative;
+  .tech-stack-container::after {
+    width: 19.3px;
+    height: 19.3px;
+    margin: 0px 0 0 10px;
+    margin-top: -1px;
   }
+}
+
+.gradient-border:hover {
+  --borderWidth: 2.5px;
+  position: relative;
+}
+.gradient-border:after {
+  content: "";
+  position: absolute;
+  top: calc(-1 * var(--borderWidth));
+  left: calc(-1 * var(--borderWidth));
+  height: calc(100% + var(--borderWidth) * 2);
+  width: calc(100% + var(--borderWidth) * 2);
+  background: linear-gradient(60deg, #ff2eab, #edba03);
+  border-radius: 15px;
+  z-index: -1;
+  /* background-color: #50cbff69; */
+  animation-delay: 0.5s;
+  animation: animatedgradient 1s ease alternate infinite;
+  background-size: 300% 300%;
+}
+
+@media only screen and (max-width: 1440px) {
   .gradient-border:after {
-    content: '';
-    position: absolute;
-    top: calc(-1 * var(--borderWidth));
-    left: calc(-1 * var(--borderWidth));
-    height: calc(100% + var(--borderWidth) * 2);
-    width: calc(100% + var(--borderWidth) * 2);
-    background: linear-gradient(60deg, #FF2EAB, #EDBA03);
-    border-radius: 15px;
-    z-index: -1;
-    /* background-color: #50cbff69; */
-    animation-delay: 0.5s;
-    animation: animatedgradient 1s ease alternate infinite;
-    background-size: 300% 300%;
+    border-radius: 8px;
   }
-  
-  
-  @media only screen and (max-width: 1440px) {
-    .gradient-border:after{
-      border-radius: 8px;
-    }
-  }
-  
-  .swiper-button-next,
+}
+
+.swiper-button-next,
 .swiper-button-prev {
   background-position: center;
   background-size: 32px;
@@ -159,74 +147,69 @@ body {
 .swiper-button-prev::after {
   content: "" !important;
 }
-  
-  @keyframes animatedgradient {
-      0% {
-          background-position: 0% 50%;
-      }
-      50% {
-          background-position: 100% 50%;
-      }
-      100% {
-          background-position: 0% 50%;
-      }
-  }
 
+@keyframes animatedgradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 
 /* Register now animation */
-  @keyframes zoomToNormal{  
-    0%{
-  
-      font-size: 0;
-      transform: scale(0);
-    }
-    50% {
-  
-      font-size: 70px;
-      transform: scale(1.2);
-    }
-    100%{
-  
-      font-size: 50px;
-      transform: scale(1);
-    }
+@keyframes zoomToNormal {
+  0% {
+    font-size: 0;
+    transform: scale(0);
   }
-  .registerNow{
-  
-    animation-name: zoomToNormal;
-  
-    animation-duration: 2s;
-  
-    animation-timing-function: ease-in-out; 
-  
-    animation-fill-mode: forwards;
-  
-    transform-origin: center;
+  50% {
+    font-size: 70px;
+    transform: scale(1.2);
   }
-.jj{
-  background: linear-gradient(360deg, #000 0%, rgba(0, 0, 0, 0.00) 100%);
+  100% {
+    font-size: 50px;
+    transform: scale(1);
+  }
 }
-.swiper-button-prev::before{
+.registerNow {
+  animation-name: zoomToNormal;
+
+  animation-duration: 2s;
+
+  animation-timing-function: ease-in-out;
+
+  animation-fill-mode: forwards;
+
+  transform-origin: center;
+}
+.jj {
+  background: linear-gradient(360deg, #000 0%, rgba(0, 0, 0, 0) 100%);
+}
+.swiper-button-prev::before {
   width: 5px;
   height: 5px;
   background-color: rgba(0, 0, 0, 0);
 }
 
-
-  .gallery-gradient::after{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    z-index: 30;
-    background: linear-gradient(360deg, #000 0%, rgba(0, 0, 0, 0.00) 60%) ,transparent 50% / cover no-repeat;
-    opacity: 2;
-    content: '';
+.gallery-gradient::after {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 30;
+  background: linear-gradient(360deg, #000 0%, rgba(0, 0, 0, 0) 60%),
+    transparent 50% / cover no-repeat;
+  opacity: 2;
+  content: "";
 }
 
-.wrapper{
-  perspective:1px;
+.wrapper {
+  perspective: 1px;
 }
 /* .parallax-bg{
   transform:translate3d(0,0,-1px) scale(2);
@@ -237,7 +220,7 @@ body {
   transform-style:preserve-3d;
 } */
 
-.teams-gradient::after{
+.teams-gradient::after {
   width: 100%;
   height: 300px;
   position: absolute;
@@ -245,22 +228,45 @@ body {
   left: 0px;
   z-index: 20;
   opacity: 4;
-  content: '';
-  background: linear-gradient(360deg, #000 0%, rgba(0, 0, 0, 0.00) 100%);
+  content: "";
+  background: linear-gradient(360deg, #000 0%, rgba(0, 0, 0, 0) 100%);
 }
 
-.image-members::after{
+.image-members::after {
   width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    z-index: 20;
-    background: linear-gradient(360deg, rgba(0, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0.00) 100%), -112.972px 0px / 242.22% 100% no-repeat;
-    opacity: 4;
-    content: '';
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 20;
+  background: linear-gradient(360deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%),
+    -112.972px 0px / 242.22% 100% no-repeat;
+  opacity: 4;
+  content: "";
 }
 
 .custom-font {
   font-family: "Roboto", sans-serif;
 }
+
+/* .back {
+  transform-style: preserve-3d;
+  transition: transform 0.3s ease;
+}
+
+.back:hover {
+  transform: rotateY(180deg);
+}
+
+
+@keyframes flipCard {
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(90deg);
+  }
+  100% {
+    transform: rotateY(180deg);
+  }
+} */

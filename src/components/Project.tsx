@@ -4,7 +4,6 @@ import { OUR_PROJECTS1 } from "@/constants";
 import { useAnimation } from "framer-motion";
 import React, { useEffect, useState } from "react";
 import ProjectCard from "./ProjectCard";
-import Image from "next/image";
 const Project: React.FC = () => {
 
   const textControls = useAnimation();
@@ -73,7 +72,7 @@ const Project: React.FC = () => {
     <>
       <div className=" max-w-[1920px] mx-auto pb-[30px]">
         <div className=" mx-auto w-[90vw] ">
-          <div className="w-full pb-[25px] 3xl:gap-[50px] gap-[2.6vw] mt-11  flex flex-wrap items-center justify-around  mx-auto">
+          <div className="w-full pb-[25px] 3xl:gap-[50px] gap-[2.6vw] mt-11  flex flex-wrap items-center justify-around mx-auto">
             {OUR_PROJECTS1.map((project, index) => {
               {
                 if (index + 1 < showMoreClick) {
