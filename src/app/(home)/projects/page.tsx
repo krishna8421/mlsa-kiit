@@ -1,8 +1,10 @@
 "use client";
 
+import LatestProjects from "@/components/LatestProjects";
 import Project from "@/components/Project";
 import "@/styles/globals.css";
 import Image from "next/image";
+
 import { useEffect, useState } from "react";
 const Projects = () => {
   const [projectsCounter, setProjectsCounter] = useState(0);
@@ -93,8 +95,9 @@ const Projects = () => {
         </div>
         <div className="mt-8 w-3/4 h-[1px] bg-[#d1d5db] md:h-[2px] rounded-full lg:hidden"></div>
         <div className="mt-6 w-1/4 h-[1px] bg-[#d1d5db] md:h-[2px] rounded-full hidden lg:block"></div>
-
       </div>
+      <br /><br />
+      <LatestProjects />
       <Project />
     </>
   );

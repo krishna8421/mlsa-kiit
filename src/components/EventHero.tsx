@@ -44,23 +44,23 @@ const EventHero = () => {
               <div className="flex cursor-default flex-col  items-end justify-between pr-3 pt-3  text-right md:text-lg lg:text-xl font-normal capitalize">
                 <div className="flex flex-col">
                   <h1 className="text-[15px] font-semibold md:leading-2 lg:leading-4 md:py-1 md:text-xl lg:text-2xl">
-                    Register for Defcon Now!
+                    Upcoming!
                   </h1>
 
                   <div className="my-2 flex items-center justify-end gap-1">
                     <BsCalendar4Week />
-                    <p>31th March,2024</p>
+                    <p>Soon!</p>
                   </div>
                   <div className="duration-50 mb-2 mt-1 h-[2px] w-[100%] bg-gradient-to-r from-transparent to-[#ffffff]  my-1 lg:my-2 "></div>
                   <div className="flex sm:flex-row sm:gap-4 sm:items-center flex-col ">
                     <p className="py-1 text-end lg:py-2 text-xs font-[100px] md:text-base">Last day to register</p>
                     <div className="flex items-center md:text-lg lg:text-xl justify-end gap-1">
-                      <p className="">30th March,2024</p>
+                      <p className=""> </p>
                     </div>
                   </div>
 
                 </div>
-                <Link href="https://register.d3fc0n.tech" target="_blank">
+                <Link href="https://linktr.ee/mlsakiit" target="_blank">
                   <button className=" mb-[15px]  flex w-full items-center justify-center  whitespace-nowrap rounded-[100px] bg-gradient-to-r from-[#0070C5] to-[#3BABCF]  px-2  py-1 text-xs lg:text-xl lg:px-8  ">
                     Register Now
                   </button>

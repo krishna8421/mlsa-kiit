@@ -6,7 +6,7 @@ export const QUOTE = "We encsage young minds to pursue knowledge and excellence 
 export const MEDIUM_BLOG_URL = "https://medium.com/msackiit";
 export const LINKEDIN_URL = "https://www.linkedin.com/company/msckiit/mycompany/";
 export const GITHUB_URL = "";
-export const TWITTER_URL = "https://twitter.com/msckiit";
+export const TWITTER_URL = "https://x.com/mlsakiit";
 export const INSTAGRAM_URL = "https://www.instagram.com/mlsakiit/";
 export const YOUTUBE_URL = "https://www.youtube.com/c/KIITKAKSHA";
 
@@ -57,6 +57,40 @@ export const HERO_SECTION_EVENTS = [
     link: "",
   },
 ];
+
+export const HERO_SECTION_PROJECTS = [
+  {
+    img: "/projects/hero_projects/img1.svg",
+    ProjectName: "BookWorm",
+    github: "https://github.com/MLSAKIIT/Bookworm",
+  },
+  {
+    img: "/projects/hero_projects/img2.svg",
+    ProjectName: "File Wizard",
+    github: "https://github.com/PythonicBoat/File-Wizard",
+  },
+  {
+    img: "/projects/hero_projects/img4.svg",
+    ProjectName: "AR Promot",
+    github: "https://github.com/aryandhal/AR-Promot",
+  },
+  {
+    img: "/projects/hero_projects/img6.svg",
+    ProjectName: "AlgoArena",
+    github: "https://github.com/MLSAKIIT/AlgoArena",
+  },
+  {
+    img: "/projects/hero_projects/img8.svg",
+    ProjectName: "Arachnet",
+    github: "https://github.com/MLSAKIIT/Arachnet",
+  },
+  {
+    img: "/projects/hero_projects/img9.svg",
+    ProjectName: "Mario RL",
+    github: "https://github.com/MLSAKIIT/Mario-RL",
+  },
+];
+
 export const OUR_PROJECTS1 = [
   {
     img: "/projects/browser.webp",
